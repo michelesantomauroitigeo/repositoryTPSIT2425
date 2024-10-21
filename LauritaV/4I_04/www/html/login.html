@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina Login</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: rgb(25, 25, 25);
+            }
+
+            nav {
+                background-color: #333;
+                padding: 20px;
+                width: 130px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                
+            }
+
+            a {
+                text-decoration: none;
+                color: #fc3af2;
+                padding: 15px 20px;
+            }
+            a:hover {
+                background-color: #575757;
+            }
+
+            h1 {
+                color: #d000ff;
+                text-align: center;
+                margin-top: 80px;
+            }
+
+            label {
+                color: #ed4eff;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="../homepage.html">Ritorna</a>
+        </nav>
+
+        <h1>Crea account</h1> <br>
+
+        <form action="/action_page.php" style="text-align: center;">
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email" value="nome@outlook.com"><br><br>
+            <label for="Password">Inserisci una password:</label><br>
+            <input type="password" id="password" name="password" minlength="6"><br><br>
+            <input type="submit" value="Invio">
+        </form>
+    </body>
+</html>
