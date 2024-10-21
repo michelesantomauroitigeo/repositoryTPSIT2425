@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Riservata</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1 style="text-align: center;">Area Riservata</h1>
+        <p style="text-align: center;">Questa sezione è riservata esclusivamente ai proprietari dell'azienda.</p>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <h2>Accesso Area Riservata</h2>
+        <p>Per accedere, inserisci le tue credenziali:</p>
+
+        <table style="margin: auto;">
+            <tr><th>Login Proprietario</th></tr>
+            <tr>
+                <td>
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="button" onclick="alert('Accesso effettuato all\'area riservata!')">Accedi</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
