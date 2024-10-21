@@ -1,0 +1,48 @@
+body {
+  background-image: url("/4I_04/www/imgs/immagine_sfondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+th {
+  border-bottom: outset;
+  border-bottom: rgb(139, 103, 36) solid;
+  font-size: 250%;
+  padding: 15px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+div.center {
+  text-align: center;
+  width: 100%;
+}
+p {
+  font-size: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-variant-caps: small-caps;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+h1 {
+  font-size: 400%;
+}
+form {
+  color: rgb(139, 103, 36);
+  font-size: 300%;
+}
+input {
+  font-size: 75%;
+}
+
+a {
+  color: whitesmoke;
+}
+
