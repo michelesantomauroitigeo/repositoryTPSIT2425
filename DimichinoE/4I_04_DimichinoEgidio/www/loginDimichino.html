@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Login - Bar Uà-Uà Dimichino</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: red;
+            color: black;
+            padding: 15px;
+            text-align: left; /* Allineamento a sinistra */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: black; /* Testo in Nero*/
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            text-align: left;
+            margin: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgb(0, 0, 0 / 0.1);
+        }
+        img {
+            position: absolute;
+            top: 19px;
+            right: 20px;
+            width: 470px; /* Dimensione dell'immagine */
+            height: auto;
+        }
+        h2 {
+            text-align: center;
+            color: #red; /* Rosso per il titolo principale */
+        }
+
+
+        footer {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bar Uà Uà Dimichino</h1>
+        <nav>
+            <ul>
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="loginDimichino.html">Login</a></li>
+                <li><a href="chiSiamo.html">Chi Siamo</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+        <img src="barUaua1.jpeg" alt="Logo Bar Uà-Uà Dimichino" style="position: absolute; top: 10px; right: 10px; width: 400px; height: auto;">
+    </header>
+    <main>
+        <h2>Login</h2>
+        <form onsubmit="return false;">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Accedi" onclick="window.location.href='area-riservata.html';">
+        </form>
+    </main>
+    <footer>
+        <p>Bar Uà Uà Dimichino, Laurenzana</p>
+    </footer>
+</body>
+</html>

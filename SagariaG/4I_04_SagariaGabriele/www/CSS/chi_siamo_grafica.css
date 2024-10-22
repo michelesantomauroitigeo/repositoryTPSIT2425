@@ -1,0 +1,185 @@
+body {
+  background-image: url("../imgs/sfondo.png");
+  padding: 20px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-align: center;
+  max-height: 1200px;
+}
+
+
+.nome-span{
+  position: relative;
+  top: -20px;
+  color: #097b47;
+  font-size: 70px;
+}
+
+.logo{
+  position: relative;
+  width: 150px; 
+  height: 150px; 
+  margin: 0 auto;
+  top:-155px;
+  left: -47%;
+}
+
+hr
+{
+   position: relative;
+   top: -170px;
+}
+
+.menu{
+  width: 288px;
+  height: 50px;
+  border-radius: 15px;
+  border: 1.3px solid;
+  background-color: #8fbc8f;
+  position: relative;
+  left: 82%;
+  top:-275px;
+}
+
+.menu__home_a{
+  position: relative;
+  left:-3%;
+  top:10px;
+  font-size: 23px;
+}
+
+.menu__prodotti_a{
+  position: relative;
+  left:2%;
+  top:10px;
+  font-size: 23px;
+}
+
+.menu__servizi_a{
+  position: relative;
+  left:7%;
+  top:10px;
+  font-size: 23px;
+}
+
+
+
+.seguici-span{
+  position: relative;
+  top: -1090px;
+  left: 3%;
+  color: #7e7d6d;
+  font-size: 53px;
+}
+
+.rettangolo {
+  width: 260px;
+  height: 70px;
+  border-radius: 15px;
+  border: 1.3px solid;
+  background-color: lightblue;
+  position: relative;
+  top:-190px;
+  left:43%;
+}
+
+.siamo_span{
+  font-size: 35px;
+  top: 0px;
+}
+
+.icon{
+  border: 1.3px solid;
+  position: relative;
+  left: 8%;
+  top: 0px;
+  height: 600px;
+  width: 600px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.store_span{
+  font-size: 35px;
+  font-style: italic;
+}
+
+.store_img{
+  width: 100px;
+  height: 100px;
+}
+
+.descrizione_p{
+  font-size: 28px;
+}
+
+.icon_1{
+  border: 1.3px solid;
+  position: relative;
+  left: 60%;
+  top: -600px;
+  height: 600px;
+  width: 600px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.map_span{
+  font-size: 35px;
+  font-style: italic;
+}
+
+.map_img{
+  width: 100px;
+  height: 100px;
+}
+
+.posto_p{
+  position: relative;
+  top:-23px;
+  font-size: 30px;
+}
+
+.contatti_p{
+  position: relative;
+  top:-25px;
+  font-size: 30px;
+}
+
+.nero{
+  opacity: 0.8;
+  position: relative;
+  left: 0%;
+  top: -320px;
+  height: 300px;
+  width: 100%;
+  background-color: black;
+}
+
+.seguici_span{
+  position: relative;
+  top:35px;
+  color: #7e7d6d;
+  font-size: 53px;
+}
+
+.img-facebook{
+  position: relative;
+  left: -5%;
+  top: 65px;
+  width: 3.5%;  
+}
+
+.img-instagram{
+  position: relative;
+  left: 0%;
+  top: 65px;
+  width: 3.5%;  
+}
+
+.img-whatsapp{
+  position: relative;
+  left: 5%;
+  top: 65px;
+  width: 3.5%;  
+}
