@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+
+header {
+    background-color: #007BFF; /* Blu */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #007BFF; /* Blu */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.image-description {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin: 20px 0; /* Aggiunge un margine sopra e sotto */
+}
+
+.image-description img {
+    margin-right: 20px; /* Spazio tra l'immagine e il testo */
+}
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra i prodotti */
+    margin: 20px 0; /* Aggiunge un margine sopra e sotto */
+}
+
+.product {
+    border: 1px solid #ccc; /* Bordo intorno a ciascun prodotto */
+    border-radius: 5px; /* Bordo arrotondato */
+    padding: 10px; /* Spazio interno */
+    margin: 10px; /* Margine tra i prodotti */
+    text-align: center; /* Centra il testo */
+}
+/* Stile per il corpo della pagina */
+
+
+/* Stile per l'intestazione */
+header {
+    background-color: #4CAF50; /* Colore di sfondo dell'intestazione */
+    color: white; /* Colore del testo */
+    padding: 20px; /* Spaziatura interna */
+    width: 100%; /* Larghezza dell'intestazione */
+    text-align: center; /* Centra il testo */
+}
+
+
+/* Stile per il corpo della pagina */
+body {
+  
+    display: flex; /* Usa flexbox per il layout */
+    flex-direction: column; /* Dispone gli elementi in colonna */
+    align-items: center; /* Centra gli elementi orizzontalmente */
+}
+
+/* Stile per l'intestazione */
+header {
+    background-color: #007BFF; /* Colore blu per l'intestazione */
+    color: white; /* Colore del testo */
+    padding: 20px; /* Spaziatura interna */
+    width: 100%; /* Larghezza dell'intestazione */
+    text-align: center; /* Centra il testo */
+}
+
+/* Stile per la sezione di login */
+section#login {
+    background-color: #007BFF; /* Colore blu per la sezione di login */
+    border-radius: 10px; /* Angoli arrotondati */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombra per dare profondità */
+    padding: 20px; /* Spaziatura interna */
+    margin: 20px; /* Margine esterno */
+    width: 300px; /* Larghezza fissa della sezione di login */
+}
+
+/* Stile per il titolo nella sezione di login */
+h2 {
+    text-align: center; /* Centra il titolo */
+    color: white; /* Colore del testo del titolo */
+}
+
+/* Stile per il gruppo di input */
+.input-group {
+    margin-bottom: 15px; /* Margine inferiore per separare gli input */
+}
+
+/* Stile per le etichette degli input */
+label {
+    display: block; /* Fa sì che l'etichetta occupi tutta la larghezza */
+    margin-bottom: 5px; /* Margine inferiore */
+    font-weight: bold; /* Grassetto per le etichette */
+    color: white; /* Colore delle etichette */
+}
+
+/* Stile per gli input di testo e password */
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Larghezza al 100% per adattarsi al contenitore */
+    padding: 10px; /* Spaziatura interna */
+    border: 1px solid #ddd; /* Bordo grigio chiaro */
+    border-radius: 5px; /* Angoli arrotondati */
+    box-sizing: border-box; /* Include padding e bordo nel calcolo della larghezza */
+}
+
+/* Stile al focus sugli input di testo e password */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4CAF50; /* Colore del bordo quando l'input è attivo */
+    outline: none; /* Rimuove il contorno predefinito */
+}
+
+/* Stile per il pulsante di accesso */
+button {
+    background-color: #4CAF50; /* Colore di sfondo del pulsante */
+    color: white; /* Colore del testo del pulsante */
+    padding: 10px; /* Spaziatura interna */
+    border: none; /* Rimuove il bordo predefinito */
+    border-radius: 5px; /* Angoli arrotondati */
+    cursor: pointer; /* Cambia il cursore quando si passa sopra il pulsante */
+    width: 100%; /* Larghezza al 100% per adattarsi al contenitore */
+    font-size: 16px; /* Dimensione del font del pulsante */
+}
+#immagine-descrizione {
+    background-image: url('../img/negozio.jpg');
+    background-size: cover; /* Copre l'intero contenitore */
+    background-position: center; /* Centra l'immagine */
+    height: 200px; /* Imposta l'altezza desiderata */
+}

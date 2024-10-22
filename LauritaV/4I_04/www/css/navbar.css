@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------------------------------------------------*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../imgs/sfondo.jpg");
+    background-size: cover;
+}
+
+/*------------------------------------------------------*/
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*------------------------------------------------------*/
+
+nav a {
+    text-decoration: none;
+    color: #fc3af2;
+    padding: 15px 20px;
+}
+
+/*------------------------------------------------------*/
+
+nav a:hover {
+    background-color: #575757;
+}
+
+/*------------------------------------------------------*/
+
+h1 {
+    color: #9000ff;
+    text-align: center;
+    margin-top: 80px;
+}
+
+/*------------------------------------------------------*/
+
+p {
+    text-align: center;
+    color: #b53afc;
+}
