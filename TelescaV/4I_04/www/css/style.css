@@ -4,8 +4,8 @@ body {
     font-family: Arial, sans-serif;
     background-image: url('../imgs/immagine.jpg'); 
     background-size: cover; 
-    height: 1200px; 
-    width: 1200px;
+    height: 1800px; 
+    width: 1890px;
     background-position: center; 
     background-repeat: no-repeat; 
 }
@@ -33,8 +33,8 @@ body {
     background: red;
     color: white;
     padding: 20px;
-     width: 100%
-     margin: 0;
+    width: 100%
+    margin: 0;
 }
 
 .title {
@@ -50,13 +50,13 @@ body {
     text-align: center;
     padding: 10px 0;
     width: 100%; 
-    margin: 0; /* Rimuovi margini per occupare tutta la larghezza */
+    margin: 0; 
 }
 
 .mini-section a {
     color: red;
     text-decoration: none;
-    margin: 0 15px;
+    margin:  15px;
 }
 
 
