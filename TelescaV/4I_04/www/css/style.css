@@ -7,6 +7,13 @@ body {
     width: 1580px;
     background-position: center;
     background-repeat: no-repeat;
+    background-image: url('../imgs/immagine.jpg'); 
+    background-size: cover; 
+    height: 1800px; 
+    width: 1890px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+
 }
 
 .logo {
@@ -30,6 +37,9 @@ body {
     color: white;
     padding: 2px;
     width: 100%;
+    padding: 20px;
+    width: 100%
+
     margin: 0;
 }
 
@@ -47,12 +57,19 @@ body {
     padding: 10px;
     margin: 20px auto;
     width: 470px;
+    padding: 10px 0;
+    width: 100%; 
+    margin: 0; 
+
 }
 
 .mini-section a {
     color: red;
     text-align: center;
     margin: 20px;
+    text-decoration: none;
+    margin:  15px;
+
 }
 
 .immagini-container {
