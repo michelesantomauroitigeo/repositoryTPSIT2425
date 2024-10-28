@@ -1,193 +1,97 @@
 <!DOCTYPE html>
-
-<head>    
-   
-    <title>Home Page</title>
-    <style>
-        body {
-            text-align: center;
-            font-family: Arial, sans-serif; /* Font più elegante */
-            background-color: #f0f0f0; /* Colore di sfondo generale */
-        }
-        hr {
-            margin: 40px 0; /* Spazio sopra e sotto la linea */
-        }
-        h1 {
-            margin-top: 0; /* Rimuovi il margine superiore */
-            font-size: 2.5em; /* Dimensione del titolo aumentata */
-            color: #333; /* Colore del testo */
-        }
-        .sfondo {
-            background: linear-gradient(to right, #ffcccb, #ffb6c1); /* Gradiente di sfondo */
-            padding: 60px 20px; /* Spazio interno aumentato */
-            border-radius: 10px; /* Angoli arrotondati */
-            margin: 20px 0; /* Spazio esterno sopra e sotto */
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Ombra leggera */
-        }
-        .destra {
-            text-align: right; /* Allinea il testo a destra */
-            padding-right: 20px; /* Aggiungi un po' di padding a destra */
-        }
-        .sinistra {
-            text-align: left; /* Allinea il testo a sinistra */
-            padding-left: 20px; /* Aggiungi un po' di padding a sinistra */
-        }
-        button {
-            margin: 20px;
-            padding: 15px 30px; /* Aggiungi padding per pulsanti più grandi */
-            font-size: 1.2em; /* Dimensione del font dei pulsanti */
-            background-color: #ff69b4; /* Colore di sfondo dei pulsanti */
-            color: white; /* Colore del testo dei pulsanti */
-            border: none; /* Rimuovi bordo */
-            border-radius: 5px; /* Angoli arrotondati dei pulsanti */
-            cursor: pointer; /* Cursore pointer al passaggio del mouse */
-            transition: background-color 0.3s; /* Transizione al passaggio del mouse */
-        }
-        button:hover {
-            background-color: #ff1493; /* Colore più scuro al passaggio del mouse */
-        }
-        .centro {
-            text-align: center; /* Allinea il testo al centro */
-        }
-        .valori-container {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-        .valore {
-            width: 30%;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .valore img {
-            margin-bottom: 15px;
-        }
-        .valore h2 {
-            margin-bottom: 10px;
-        }
-        .valore p {
-            margin-bottom: 0;
-            font-size: 16px;
-        }
-        .grande {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .testimonial-container {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 40px;
-        }
-        .testimonial {
-            width: 30%;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .testimonial p {
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <img src="imgs/logo.png" width="100" height="100" alt="Logo">
-        <p>Via Cerreta 32 | +39 329 032 3866 | info@ligrani.it</p>
-
-        <p>
-            <a href="HTML/index.html">Home</a> &nbsp;&nbsp;&nbsp;
-            <a href="HTML/ChiSiamo.html">Chi siamo</a> &nbsp;&nbsp;&nbsp;
-            <a href="HTML/Realizzazioni.html">Realizzazioni</a> &nbsp;&nbsp;&nbsp;
-            <a href="HTML/Contatti.html">Contatti</a> &nbsp;&nbsp;&nbsp;
-            <a href="HTML/Login.html">Login</a>
-        </p>
-
-        <hr> 
-<main>  
-        <div class="sfondo"> <!-- Inizio della sezione con sfondo -->
-            <h1>FIERI DEI RISULTATI RAGGIUNTI</h1>
-            <p style="font-size: 1.5em;">Per qualunque informazione non esitare a contattarci!</p>
-
-            <!-- Bottoni con link alle pagine -->
-            <a href="HTML/ChiSiamo.html"><button>Chi siamo</button></a>
-            <a href="HTML/Contatti.html"><button>Contattaci Ora!</button></a>
-        </div> <!-- Fine della sezione con sfondo -->
-
-        <hr> 
+<html>
+        <head>
         
-        <h1 class="centro">Da oltre 20 anni io e il mio<br> team siamo garanzia <br>di successo!</h1>
-        <p class="centro">Con passione e competenza, sviluppiamo progetti che trasformano la<br> tua casa in uno spazio unico e funzionale, garantendo risultati che<br> superano le aspettative.</p>
         
-        <!-- Aggiungi un div per separare il testo dall'immagine -->
-        <div style="text-align: center;">
-            <img src="imgs/living_bianco.jpg" width="500" height="300" alt="Living Room">
-        </div>
-    </main>
-        <hr>
-
-        <div class="sfondo"> <!-- Sezione con sfondo migliorato -->
-            <h1 class="centro">La tua casa, il nostro impegno</h1>
-            <p class="centro grande">Rendiamo ogni spazio unico, come te.</p>
-            
-            <div class="valori-container"> <!-- Contenitore per i valori -->
-                <div class="valore">
-                    <img src="imgs/creativita.jpg" alt="Creativita" width="80" height="80">
-                    <h2>Creativita'</h2>
-                    <p>Pensiamo fuori dagli schemi per creare soluzioni su misura.</p>
+            <title>Home Page</title>
+            <link rel="stylesheet" href="./css/style.css">
+        </head>
+        <body>
+            <header>
+                <img src="imgs/logo.png" width="100" height="100" alt="Logo">
+                <p>Via Cerreta 32 | +39 329 032 3866 | info@ligrani.it</p>
+                <p>
+                    <a href="HTML/index.html">Home</a> &nbsp;&nbsp;&nbsp;
+                    <a href="HTML/ChiSiamo.html">Chi siamo</a> &nbsp;&nbsp;&nbsp;
+                    <a href="HTML/Realizzazioni.html">Realizzazioni</a> &nbsp;&nbsp;&nbsp;
+                    <a href="HTML/Contatti.html">Contatti</a> &nbsp;&nbsp;&nbsp;
+                    <a href="HTML/Login.html">Login</a>
+                </p>
+                <hr>
+            </header>
+            <main>
+                <div class="sfondo">
+                    <h1>FIERI DEI RISULTATI RAGGIUNTI</h1>
+                    <p style="font-size: 1.5em;">Per qualunque informazione non esitare a contattarci!</p>
+                    <a href="HTML/ChiSiamo.html"><button>Chi siamo</button></a>
+                    <a href="HTML/Contatti.html"><button>Contattaci Ora!</button></a>
                 </div>
-                <div class="valore">
-                    <img src="imgs/qualita.jpeg" alt="Qualita" width="80" height="80">
-                    <h2>Qualita'</h2>
-                    <p>Materiali eccellenti e attenzione ai dettagli in ogni progetto.</p>
+
+                <hr>
+
+                <h1 class="centro">Da oltre 20 anni io e il mio<br> team siamo garanzia <br>di successo!</h1>
+                <p class="centro">Con passione e competenza, sviluppiamo progetti che trasformano la<br> tua casa in uno spazio unico e funzionale, garantendo risultati che<br> superano le aspettative.</p>
+
+                <div style="text-align: center;">
+                    <img src="imgs/living_bianco.jpg" width="500" height="300" alt="Living Room">
                 </div>
-                <div class="valore">
-                    <img src="imgs/esperienza.jpg" alt="Esperienza" width="80" height="80">
-                    <h2>Esperienza</h2>
-                    <p>Con oltre 20 anni di lavoro, garantiamo risultati che superano le aspettative.</p>
+
+                <hr>
+
+                <div class="sfondo">
+                    <h1 class="centro">La tua casa, il nostro impegno</h1>
+                    <p class="centro grande">Rendiamo ogni spazio unico, come te.</p>
+
+                    <div class="valori-container">
+                        <div class="valore">
+                            <img src="imgs/creativita.jpg" alt="Creativita" width="80" height="80">
+                            <h2>Creativita'</h2>
+                            <p>Pensiamo fuori dagli schemi per creare soluzioni su misura.</p>
+                        </div>
+                        <div class="valore">
+                            <img src="imgs/qualita.jpeg" alt="Qualita" width="80" height="80">
+                            <h2>Qualita'</h2>
+                            <p>Materiali eccellenti e attenzione ai dettagli in ogni progetto.</p>
+                        </div>
+                        <div class="valore">
+                            <img src="imgs/esperienza.jpg" alt="Esperienza" width="80" height="80">
+                            <h2>Esperienza</h2>
+                            <p>Con oltre 20 anni di lavoro, garantiamo risultati che superano le aspettative.</p>
+                        </div>
+                    </div>
+
+                    <p class="centro grande">Lascia che trasformiamo i tuoi sogni in realta'!</p>
+                    <a href="HTML/Realizzazioni.html"><button>Scopri le nostre realizzazioni</button></a>
                 </div>
-            </div>
 
-            <p class="centro grande">Lascia che trasformiamo i tuoi sogni in realta'!</p>
-            <a href="HTML/Realizzazioni.html"><button>Scopri le nostre realizzazioni</button></a>
-        </div>
+                <hr>
 
-        <hr>
-
-        <div class="sfondo"> <!-- Sezione Testimonial con sfondo -->
-            <h1 class="centro">Cosa dicono i nostri clienti</h1>
-            <div class="testimonial-container">
-                <div class="testimonial">
-                    <img src="imgs/rec1.png" alt="Cliente 1" width="100" height="100" style="border-radius: 50%;">
-                    <p>"Il team ha trasformato la mia casa in un luogo di sogno. Professionalita' e creativita' in ogni dettaglio!"</p>
-                    <p><strong>- Jhon Rossi</strong></p>
+                <div class="sfondo testimonial-section">
+                    <h1 class="centro">Cosa dicono i nostri clienti</h1>
+                    <div class="testimonial-container">
+                        <div class="testimonial">
+                            <img src="imgs/rec1.png" alt="Cliente 1" width="100" height="100" class="testimonial-img">
+                            <p>"Il team ha trasformato la mia casa in un luogo di sogno. Professionalita' e creativita' in ogni dettaglio!"</p>
+                            <p><strong>- Jhon Rossi</strong></p>
+                        </div>
+                        <div class="testimonial">
+                            <img src="imgs/rec2.png" alt="Cliente 2" width="100" height="100" class="testimonial-img">
+                            <p>"Non potevo chiedere di meglio! Ogni progetto e' stato realizzato con cura e passione. Consigliatissimi!"</p>
+                            <p><strong>- Giovanni Galasso</strong></p>
+                        </div>
+                        <div class="testimonial">
+                            <img src="imgs/rec3.png" alt="Cliente 3" width="100" height="100" class="testimonial-img">
+                            <p>"Ottimo lavoro! La mia casa ora e' funzionale e bellissima. Grazie a tutto il team per l'impegno!"</p>
+                            <p><strong>- Laura Bianchi</strong></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial">
-                    <img src="imgs/rec2.png" alt="Cliente 2" width="100" height="100" style="border-radius: 50%;">
-                    <p>"Non potevo chiedere di meglio! Ogni progetto e' stato realizzato con cura e passione. Consigliatissimi!"</p>
-                    <p><strong>- Giovanni Galasso</strong></p>
-                </div>
-                <div class="testimonial">
-                    <img src="imgs/rec3.png" alt="Cliente 3" width="100" height="100" style="border-radius: 50%;">
-                    <p>"Ottimo lavoro! La mia casa ora e' funzionale e bellissima. Grazie a tutto il team per l'impegno!"</p>
-                    <p><strong>- Laura Bianchi</strong></p>
-                </div>
-            </div>
-        </div>
 
-        <hr>
+                <hr>
 
-        <h1 class="centro">Contattaci per un preventivo gratuito!</h1>
-        <p class="centro">Siamo qui per aiutarti a realizzare i tuoi sogni.</p>
-        <a href="HTML/Contatti.html"><button>Contatti: Richiedi un Preventivo</button></a>
-    </header>
-</body>
-
-
+                <h1 class="centro">Contattaci per un preventivo gratuito!</h1>
+                <p class="centro">Siamo qui per aiutarti a realizzare i tuoi sogni.</p>
+                <a href="HTML/Contatti.html"><button>Contatti: Richiedi un Preventivo</button></a>
+            </main>
+        </body>
 </html>
