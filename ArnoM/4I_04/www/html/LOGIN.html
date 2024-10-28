@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>folliedellochef.com</title>
+    <style>
+        /* Stile per il corpo della pagina */
+        body {
+            font-family: Arial, sans-serif; /* Font di base */
+            background-color: #f9f9f9; /* Colore di sfondo chiaro */
+            margin: 0; /* Rimuove i margini */
+            padding: 20px; /* Aggiunge padding intorno al contenuto */
+        }
+
+        /* Stile per l'intestazione */
+        header {
+            display: flex; /* Disposizione flessibile per allineare gli elementi */
+            justify-content: space-between; /* Spazio tra logo e titolo */
+            align-items: center; /* Allinea verticalmente */
+            background-color: #800020; /* Colore di sfondo rosso scuro */
+            padding: 10px 20px; /* Padding interno */
+            color: white; /* Colore del testo */
+        }
+
+        /* Stile per il titolo */
+        h1 {
+            margin: 0; /* Rimuove margini */
+            font-size: 2.5em; /* Dimensione del font */
+            text-align: center; /* Centra il testo */
+            flex-grow: 1; /* Fa crescere il titolo per occupare spazio */
+        }
+
+        /* Stile per il logo */
+        .logo {
+            max-width: 100px; /* Larghezza massima del logo */
+            height: auto; /* Altezza proporzionale */
+        }
+
+        /* Stile per il contenitore del modulo */
+        .form-container {
+            background-color: white; /* Sfondo bianco */
+            padding: 20px; /* Padding interno */
+            border-radius: 8px; /* Angoli arrotondati */
+            max-width: 400px; /* Larghezza massima del modulo */
+            margin: 20px auto; /* Centra il modulo */
+        }
+
+        /* Stile per il titolo del modulo */
+        h2 {
+            text-align: center; /* Allineamento centrale */
+            margin-bottom: 20px; /* Spaziatura inferiore */
+        }
+
+        /* Stile per le etichette */
+        label {
+            font-weight: bold; /* Grassetto */
+            margin-bottom: 5px; /* Spaziatura inferiore */
+            display: block; /* Blocco completo */
+        }
+
+        /* Stile per i campi di input di testo e password */
+        input[type="text"], input[type="password"] {
+            width: 100%; /* Larghezza totale del campo */
+            padding: 10px; /* Padding interno */
+            margin: 5px 0 15px; /* Margini */
+            border: 1px solid #ccc; /* Bordo grigio */
+            border-radius: 4px; /* Angoli arrotondati */
+            font-size: 1em; /* Dimensione del font */
+        }
+
+        /* Stile per il pulsante di accesso */
+        input[type="button"] {
+            background-color: #800020; /* Colore di sfondo */
+            color: white; /* Colore del testo */
+            border: none; /* Rimuove il bordo */
+            padding: 10px 15px; /* Padding interno */
+            border-radius: 4px; /* Angoli arrotondati */
+            cursor: pointer; /* Cursore a mano */
+            font-size: 1em; /* Dimensione del font */
+            display: block; /* Disposizione a blocco */
+            margin: 0 auto; /* Centra il pulsante */
+        }
+
+        /* Cambia colore di sfondo al passaggio del mouse */
+        input[type="button"]:hover {
+            background-color: #600015; /* Colore più scuro per hover */
+        }
+
+        /* Stile per il contenitore dei link */
+        .link-container {
+            text-align: center; /* Allineamento centrale */
+            margin-top: 10px; /* Spaziatura superiore */
+        }
+
+        /* Stile per i link */
+        .link-container a {
+            color: #800020; /* Colore rosso scuro */
+            text-decoration: none; /* Rimuove la sottolineatura */
+            display: block; /* Disposizione a blocco */
+            margin: 5px 0; /* Margini verticali */
+        }
+
+        /* Sottolineatura del link al passaggio del mouse */
+        .link-container a:hover {
+            text-decoration: underline; /* Sottolinea il link */
+        }
+    </style>
+</head>
+<body>
+    <!-- Intestazione con logo e titolo -->
+    <header>
+        <h1>ACCESSO</h1>
+        <img src="../imgs/logo.png" alt="Logo" class="logo">
+    </header>
+    
+    <!-- Contenitore per il modulo di accesso -->
+    <div class="form-container">
+        <h2>LOGIN</h2> 
+        <form onsubmit="return false;">
+            <!-- Campo per l'username -->
+            <label for="fname">Username:</label>
+            <input type="text" id="fname" name="fname" required>
+            
+            <!-- Campo per la password -->
+            <label for="lname">Password:</label>
+            <input type="password" id="lname" name="lname" required>
+            
+            <!-- Pulsante per accedere -->
+            <input type="button" value="accedi" onclick="window.location.href='area riservata.html';">
+        </form>
+
+        <!-- Link per la registrazione e il recupero della password -->
+        <div class="link-container">
+            <a href="registrazioni.html">Registrazione</a>
+            <a href="recupero password.html">Recupera Password</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

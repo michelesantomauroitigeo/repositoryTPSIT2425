@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>folliedellochef.com</title>
+    <style>
+        /* Stile per il corpo della pagina */
+        body {
+            background-color: #fff; /* Colore di sfondo bianco */
+            color: #333; /* Colore del testo */
+            font-family: Arial, sans-serif; /* Font Arial */
+            margin: 0; /* Rimuove margini */
+            padding: 20px; /* Spaziatura interna */
+        }
+        
+        /* Stile per l'intestazione */
+        header {
+            background-color: #800020; /* Colore di sfondo bordeaux */
+            padding: 20px; /* Spaziatura interna */
+            position: relative; /* Posizione per ancorare elementi assoluti */
+        }
+
+        /* Stile del titolo principale */
+        h1 {
+            margin: 0; /* Rimuove margini */
+            color: white; /* Colore del testo bianco */
+            font-size: 2.5em; /* Dimensione del font */
+            text-align: left; /* Allineamento a sinistra */
+        }
+
+        /* Stile per il logo */
+        .logo {
+            position: absolute; /* Posizionamento assoluto */
+            top: 10px; /* Spazio dal bordo superiore */
+            right: 20px; /* Spazio dal bordo destro */
+            width: 50px; /* Larghezza del logo */
+            height: auto; /* Altezza automatica in proporzione */
+        }
+
+        /* Stile per i sottotitoli */
+        h2 {
+            color: #800020; /* Colore bordeaux */
+            border-bottom: 2px solid #800020; /* Bordo inferiore */
+            padding-bottom: 5px; /* Spaziatura inferiore */
+            margin-bottom: 15px; /* Spaziatura inferiore del sottotitolo */
+        }
+
+        /* Contenitore principale */
+        .container {
+            display: flex; /* Layout flessibile */
+            flex-direction: column; /* Disposizione verticale */
+            align-items: flex-start; /* Allineamento a sinistra */
+        }
+
+        /* Contenitore per la lista dei servizi */
+        .services {
+            width: 90%; /* Larghezza del contenitore */
+            margin: 20px 0; /* Margine verticale */
+        }
+
+        /* Stile per ogni servizio */
+        .service {
+            margin: 10px 0; /* Margine tra i servizi */
+        }
+
+        /* Sezione degli orari */
+        .hours {
+            width: 90%; /* Larghezza del contenitore */
+            margin-top: 30px; /* Margine superiore */
+        }
+
+        /* Stile per il testo degli orari */
+        .hours p {
+            font-size: 1.2em; /* Dimensione del font */
+            line-height: 1.5; /* Interlinea */
+            color: #800020; /* Colore bordeaux */
+            text-align: left; /* Allineamento a sinistra */
+        }
+
+        /* Stile della sezione informativa */
+        .section {
+            display: flex; /* Layout flessibile */
+            align-items: flex-start; /* Allineamento in alto */
+            justify-content: flex-start; /* Allineamento a sinistra */
+            margin-top: 30px; /* Margine superiore */
+            width: 90%; /* Larghezza della sezione */
+        }
+
+        /* Stile per l'immagine nella sezione */
+        .section img {
+            width: 400px; /* Larghezza immagine */
+            height: auto; /* Altezza automatica */
+            margin-right: 20px; /* Spaziatura a destra dell'immagine */
+            border: 2px solid #800020; /* Bordo bordeaux */
+        }
+
+        /* Stile per il contenuto testuale nella sezione */
+        .section .text {
+            max-width: 60%; /* Larghezza massima del contenuto testuale */
+        }
+
+        /* Stile per il piè di pagina */
+        footer {
+            background-color: #800020; /* Sfondo bordeaux */
+            color: white; /* Testo bianco */
+            text-align: center; /* Allineamento centrale */
+            padding: 10px; /* Spaziatura interna */
+            margin-top: 30px; /* Margine superiore */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>I NOSTRI SERVIZI</h1>
+        
+        <img src="../imgs/logo.png" alt="Logo Ristorante" class="logo">
+    </header>
+
+    <div class="container">
+        <div class="services">
+            <h2>Servizi Offerti</h2>
+            <div class="service">
+                <p><strong>Servizio Ristorante:</strong> Piatti tradizionali e innovativi preparati con ingredienti freschi e di alta qualità.</p>
+            </div>
+            <div class="service">
+                <p><strong>Catering per Eventi:</strong> Offriamo servizi di catering per matrimoni, feste private e aziendali, con menù personalizzati.</p>
+            </div>
+            <div class="service">
+                <p><strong>Asporto:</strong> Ordina i tuoi piatti preferiti e ritirali direttamente al ristorante senza attese.</p>
+            </div>
+            <div class="service">
+                <p><strong>Degustazioni:</strong> Organizziamo serate di degustazione con vini locali e internazionali, abbinati a piatti speciali.</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <p><strong>Giorni di apertura:</strong> Siamo aperti tutti i giorni tranne il martedi'.</p>
+        </div>
+
+        <!-- Orari di apertura e chiusura -->
+        <div class="hours">
+            <p><strong>Orari di Apertura:</strong> 12:00 - 16:00</p>
+            <p><strong>Orari di Cena:</strong> 19:00 - 00:00</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <img src="../imgs/fuori.jpg" alt="Immagine del locale esterno">
+        <div class="text">
+            <h2>Il nostro Locale</h2>
+            <p>
+                Le Follie dello Chef ha uno spazio all'aperto, costituito da una pergotenda approntata con qualche tavolo,
+                che rende possibile degustare il nostro cibo al calore delle lunghe sere estive.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ristorante. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
+
