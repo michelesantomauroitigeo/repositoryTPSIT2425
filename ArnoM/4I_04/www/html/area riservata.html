@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
-    
-    <title>folliedellochef.com </title>
+    <title>folliedellochef.com</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,7 +31,6 @@
             background-color: white; 
             padding: 20px;
             border-radius: 8px; 
-            
             max-width: 400px; 
             margin: 20px auto; 
         }
@@ -80,6 +78,20 @@
         .link-container a:hover {
             text-decoration: underline; 
         }
+        /* New CSS for pizza booking message */
+        .pizza-booking {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        .pizza-booking a {
+            color: #800020;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .pizza-booking a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -101,8 +113,11 @@
             <input type="text" id="surname" name="surname" placeholder="Inserisci il tuo cognome" required>
             <input type="button" value="Prenota" onclick="return false;"> 
         </form>
+    </div>
 
-        
+    <!-- New Pizza Booking Message -->
+    <div class="pizza-booking">
+        <p>Vuoi prenotare una pizza? <a href="areariservata2.html">Clicca qui</a></p>
     </div>
 </body>
 </html>

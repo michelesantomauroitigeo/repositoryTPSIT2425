@@ -6,10 +6,28 @@
 
 /*------------------------------------------------------*/
 
+html, body{
+    height: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-image: url("../imgs/sfondo.jpg");
     background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
 }
 
 /*------------------------------------------------------*/

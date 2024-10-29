@@ -1,19 +1,25 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #f4f7f6; /* un bianco leggero */
+    color: #333; /* un grigio scuro per una migliore leggibilità */
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #004080; /* un blu aziendale profondo */
+    color: white;
+    padding: 20px 40px;
     position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     margin: 0;
+    font-size: 2.8em;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 nav ul {
@@ -22,69 +28,81 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 15px;
+    display: inline-block;
+    margin-right: 25px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #66cc99; /* verde chiaro per il contrasto */
+    border-bottom: 3px solid white;
 }
 
 .logo-header {
     position: absolute;
-    top: 10px;
-    right: 20px;
-    width: 300px; /* Modifica questa larghezza in base alle tue esigenze */
+    top: 60px;
+    right: 80px;
+    width: 300px;
 }
 
 main {
-    padding: 20px;
+    padding: 60px 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 section {
-    margin: 20px 0;
+    margin: 40px 0;
+    padding: 30px;
+    border-left: 5px solid #66cc99; /* verde aziendale per accenti */
+    background-color: #f9fafb;
 }
 
 footer {
-    text-align: center ;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #004080;
+    color: white;
+    border-top: 5px solid #66cc99; /* accentua il contrasto */
 }
 
 .ceo-member {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    border: 2px solid #66cc99;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #eef5f1; /* sfondo verde chiaro per i membri */
 }
 
 .ceo-image {
-    width: 200px; /* Modifica questa larghezza in base alle tue esigenze */
+    width: 250px;
+    border-radius: 50%;
     margin-left: 20px;
+    border: 3px solid #004080; /* bordi blu aziendale per enfasi */
 }
 
-input[type="text"], input[type="password"], input[type="email"] {
-    width: 100%; /* Larghezza al 100% per i campi di input */
-    padding: 10px; /* Padding interno per i campi di input */
-    margin-top: 5px; /* Margine sopra i campi di input */
-    border: 1px solid #ccc; /* Bordo grigio chiaro per i campi di input */
+/* Pulsanti per azioni importanti */
+button {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-input[type="submit"] {
-    background-color: #28a745; /* Verde per il pulsante di invio */
-    color: white; /* Colore del testo bianco */
-    border: none; /* Rimuove il bordo del pulsante */
-    padding: 10px 20px; /* Padding interno per il pulsante */
-    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
-    margin-top: 10px; /* Margine sopra il pulsante */
-}
-
-input[type="submit"]:hover {
-    background-color: #218838; /* Verde scuro al passaggio del mouse */
-}
-
-    section {
-        margin: 10px; /* Margine ridotto per schermi piccoli */
-    }
+button:hover {
+    background-color: #66cc99; /* verde per l'interazione */
+    color: white;
 }

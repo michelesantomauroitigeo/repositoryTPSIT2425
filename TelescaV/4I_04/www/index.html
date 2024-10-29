@@ -3,56 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azienda f.lli Pace</title>
+    <title>A.S.D Lykos</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .title {
-            margin-left: 200px;
-        }
-        .profile-circle {
-            margin-right: 20px;
-        }
-    </style>
 </head>
 <body>
 
-    <div class="header">
-        <div class="title"><h1>Telesca & Pace s.r.l</h1></div>
-        <a href="login.html" class="profile-circle" title="Accedi al Profilo">P</a>
-        <a href="html/area-riservata.html" class="register-link">Area Riservata</a>
-    </div>
+    <header class="header">
+        <div class="title">
+            <div class="logo"></div>
+            <h1>A.S.D Lykos</h1>
+        </div>
+    </header>
 
-    <div class="mini-section">
-        <a href="chi-siamo.html">Chi Siamo?</a>
-        <a href="contatti.html">Contatti</a>
-        <a href="strumenti.html">Strumenti</a>
-        <a href="servizi.html">Servizi</a>
-    </div>
+    <nav class="mini-section">
+        <a href="index.html">Home</a>
+        <a href="html/societa.html">Società</a>
+        <a href="html/progetti.html">Progetti</a>
+        <a href="https://www.tuttocampo.it/Basilicata/Eccellenza/GironeA/Squadra/LykosTolve/915477/News" target="_blank">News</a>
+        <a href="html/contatti.html">Contatti</a>
+    </nav>
 
-    <table>
-        <tr><th>Login</th></tr>
-        <tr>
-            <td>
-                <label for="username">Username:</label><br>
-                <input type="text" id="username" name="username" required>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password" required>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button class="button" onclick="alert('Accesso effettuato!')">Accedi</button>
-            </td>
-        </tr>
-    </table>
-
-    <div style="text-align: center; margin-top: 20px;">
-        <a href="html/registrati.html" class="register-link">Registrati</a>
-    </div>
+    <main class="immagini-container">
+        <div class="immagine">
+            <a href="https://www.tuttocampo.it/Basilicata/Eccellenza/GironeA/Partita/8.5/cs-vultur-lykos-tolve">Partita Prima Squadra Eccellenza</a>
+            <img src="imgs/prima.png" alt="Hellas Vulture-Lykos E">
+        </div>
+        <div class="immagine">
+            <a href="https://www.tuttocampo.it/Basilicata/JunioresRegionaliU19/GironeBRegionali/Partita/1.4/viribus-potenza-1999-lykos-tolve">Partita Viribus-Lykos U19</a>
+            <img src="imgs/u19.png" alt="Viribus-Lykos u19">
+        </div>
+        <div class="immagine">
+            <a href="https://www.tuttocampo.it/Basilicata/AllieviRegionaliU17/GironeUnicoPotenza/Partita/6.1/lykos-assopotenza">Partita Lykos-Assopotenza U17</a>
+            <img src="imgs/u17.jpg" alt="Lykos-Assopotenza U17">
+        </div>
+        <div class="immagine">
+            <a href="https://www.tuttocampo.it/Basilicata/GiovanissimiRegionaliU15/GironeAPotenza/Partita/6.1/lykos-assopotenza">Partita Lykos-Assopotenza U15</a>
+            <img src="imgs/u15.jpg" alt="Lykos-Assopotenza U15">
+        </div>
+    </main>
 
 </body>
 </html>

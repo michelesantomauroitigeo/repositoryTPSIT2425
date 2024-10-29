@@ -33,11 +33,10 @@ hr
 .menu{
   width: 288px;
   height: 50px;
-  border-radius: 15px;
   border: 1.3px solid;
   background-color: #8fbc8f;
   position: relative;
-  left: 82%;
+  left: 79%;
   top:-275px;
 }
 
@@ -62,6 +61,23 @@ hr
   font-size: 23px;
 }
 
+.carrello{
+  width: 50px;
+  height: 50px;
+  border: 1.3px solid;
+  background-color: #8fbc8f;
+  position: relative;
+  left: 110%;
+  top:-25px;
+}
+
+.carrello_img{
+  width: 15%;
+  position: relative;
+  top: -75px;
+  left:69%;
+}
+
 .rettangolo {
   width: 260px;
   height: 70px;
@@ -76,7 +92,6 @@ hr
 .prototti_span{
   font-size: 35px;
   top: 0px;
-
 }
 
 .icon{
@@ -197,6 +212,7 @@ hr
   font-size: 20px;
   position: relative;
   top:-50px;
+  color: black;
 }
 
 .lente_img{
@@ -243,4 +259,9 @@ hr
   left: 5%;
   top: 65px;
   width: 3.5%;  
+}
+
+footer{
+  position: relative;
+  top:-400px;
 }
