@@ -1,91 +1,113 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
     <title>folliedellochef.com</title>
     <style>
+     /* Stile per il corpo della pagina */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5; 
-            color: #333;
-        }
+            font-family: Arial, sans-serif; /* Font di base */
+            margin: 0; /* Rimuove margini */
+            padding: 0; /* Rimuove spaziatura */
+            background-color: #f5f5f5; /* Colore di sfondo grigio chiaro */
+            color: #333; /* Colore del testo */ 
+        /* Stile per l'intestazione */
         header {
-            background-color: #800000; 
-            color: white;
-            padding: 70px 50px;
-            text-align: center;
-            border-bottom: 3px solid #600000;
-            position: relative; 
-            width: 100%; 
-            box-sizing: border-box;
+            background-color: #800000; /* Colore di sfondo rosso scuro */
+            color: white; /* Colore del testo */
+            padding: 70px 50px; /* Spaziatura interna */
+            text-align: center; /* Allineamento centrale del testo */
+            border-bottom: 3px solid #600000; /* Bordo inferiore */
+            position: relative; /* Posizione relativa per contenere logo */
+            width: 100%; /* Larghezza totale */
+            box-sizing: border-box; /* Include padding e bordi */
         }
+
+        /* Stile del titolo principale */
         h1 {
-            font-size: 36px;
-            margin: 0;
-            letter-spacing: 1px;
+            font-size: 36px; /* Dimensione del font */
+            margin: 0; /* Rimuove margini */
+            letter-spacing: 1px; /* Spaziatura tra lettere */
         }
-        
+
+        /* Stile per il logo */
         .logo {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            max-width: 70px;
+            position: absolute; /* Posizionamento assoluto */
+            top: 10px; /* Spazio dal bordo superiore */
+            right: 20px; /* Spazio dal bordo destro */
+            max-width: 70px; /* Larghezza massima del logo */
         }
+
+        /* Stile del contenitore principale */
         .container {
-            display: flex;
-            flex-direction: row;
-            padding: 70px;
-            width: 100%; 
-            background-color: white;
-          
-            border-radius: 10px;
-            box-sizing: border-box; 
-            margin-bottom: 30px; 
+            display: flex; /* Layout flessibile */
+            flex-direction: row; /* Disposizione orizzontale */
+            padding: 70px; /* Spaziatura interna */
+            width: 100%; /* Larghezza totale */
+            background-color: white; /* Colore di sfondo */
+            border-radius: 10px; /* Angoli arrotondati */
+            box-sizing: border-box; /* Include padding e bordi */
+            margin-bottom: 30px; /* Spaziatura inferiore */
         }
+
+        /* Stile per la sezione testuale */
         .text {
-            flex: 1;
-            padding: 40px;
-            line-height: 1.8;
-            text-align: left;
+            flex: 1; /* Occupa tutto lo spazio disponibile */
+            padding: 40px; /* Spaziatura interna */
+            line-height: 1.8; /* Altezza della linea */
+            text-align: left; /* Allineamento a sinistra */
         }
+
+        /* Stile per i paragrafi nella sezione testuale */
         .text p {
-            margin-bottom: 15px;
-            font-size: 16px;
+            margin-bottom: 15px; /* Spaziatura inferiore */
+            font-size: 16px; /* Dimensione del font */
         }
-        
+
+        /* Stile per il primo paragrafo */
         .text p:first-of-type {
-            font-weight: bold; 
+            font-weight: bold; /* Grassetto */
         }
+
+        /* Stile per il secondo paragrafo */
         .text p:nth-of-type(2) {
-            color: #800000; 
+            color: #800000; /* Colore rosso scuro */
         }
+
+        /* Stile per l'immagine */
         .image {
-            max-width: 350px;
-            margin-left: 20px;
-            border-radius: 10px;
+            max-width: 350px; /* Larghezza massima dell'immagine */
+            margin-left: 20px; /* Spaziatura a sinistra */
+            border-radius: 10px; /* Angoli arrotondati */
         }
+
+        /* Stile per il piè di pagina */
         footer {
-            padding: 40px;
-            text-align: center;
-            background-color: #800000;
-            color: white;
-            border-top: 3px solid #600000;
-            border-radius: 0 0 10px 10px;
-            width: 100%; 
-            box-sizing: border-box;
+            padding: 40px; /* Spaziatura interna */
+            text-align: center; /* Allineamento centrale */
+            background-color: #800000; /* Sfondo rosso scuro */
+            color: white; /* Testo bianco */
+            border-top: 3px solid #600000; /* Bordo superiore */
+            border-radius: 0 0 10px 10px; /* Angoli arrotondati in basso */
+            width: 100%; /* Larghezza totale */
+            box-sizing: border-box; /* Include padding e bordi */
         }
+
+        /* Stile per i collegamenti nel piè di pagina */
         .link {
-            margin: 0 15px;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            font-size: 16px;
+            margin: 0 15px; /* Spaziatura laterale */
+            text-decoration: none; /* Rimuove la sottolineatura */
+            color: white; /* Colore del testo */
+            font-weight: bold; /* Grassetto */
+            font-size: 16px; /* Dimensione del font */
         }
+
+        /* Stile per il collegamento al passaggio del mouse */
         .link:hover {
-            text-decoration: underline;
+            text-decoration: underline; /* Sottolineatura al passaggio del mouse */
+            
         }
     </style>
+      
 </head>
 <body>
 

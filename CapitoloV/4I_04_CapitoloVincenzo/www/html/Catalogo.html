@@ -5,13 +5,69 @@
 			div{
 				background-color: #ffff00;
 			}
+			.div2{
+				background-color: #ffff00;
+				color: black; 
+				font-size: 30px; 
+				text-align: center;
+				border: solid;
+				padding: 10px;
+				width: 1100px;
+				margin: auto;
+			}
+			.div3{
+				text-align: center;
+				width: 550px;
+				height: 260px;
+  				margin-top: 100px;
+  				margin-left: 300px;
+  				padding: 1px;
+  				float: left;
+				background-color: #ffff00;
+				border-style: solid;
+			}
+			.div4{
+				text-align: center;
+				width: 550px;
+				height: 260px;
+  				margin-top: 100px;
+  				margin-right: 300px;
+  				padding: 1px;
+  				float: right;
+				background-color: #ffff00;
+				border-style: solid;
+			}
+			ul{
+    			list-style-type: none;
+    			display: flex;
+    			gap: 120px;
+			}
+			a{
+				color: black;
+			}
 		</style>
 	</head>
 	<body bgcolor="#d3d3d3">
 		<div>
-			<img src="..\imgs\pbpz.jpeg" alt="Foto Logo" width="300" height="300" style="float: left; padding: 40px;"/>
-			<h1 style="font-size: 280px;font-family: fantasy;text-align: center; padding: 40px;"> Catalogo </h1>
+			<img src="..\imgs\pbpz.jpeg" alt="Foto Logo" width="200" height="200" style="float: left; padding: 40px;"/>
+			<h1 style="font-size: 150px;font-family: fantasy;text-align: center; padding: 40px;"> Catalogo </h1>	
 		</div>
-		<a href="..\index.html" style="color: black; float: right;"> ...Back to home page </a>
+		<div class="div2">
+			<ul>	
+				<li><a href="..\index.html" style="color: black; font-size: 30px;"> HomePage </a></li>
+				<li><a href="ChiSiamo.html" style="color: black; font-size: 30px;"> Chi siamo </a></li>
+				<li><a href="Servizi.html" style="color: black; font-size: 30px;"> Servizi </a></li>
+				<li><a href="Login.html" style="color: black; font-size: 30px;"> Log in </a></li>
+				<li><a href="Registrati.html" style="color: black; font-size: 30px;"> Registrati </a></li>
+			</ul>
+		</div>
+		<div class="div3">
+			<h1 style="font-size: 60px; text-align: center;font-family: fantasy;"> Abbigliamento </h1>
+			<a href="Abbigliamento.html" style="font-size: 30px;"> Puoi trovare diversi indumenti in diversi colori... </a> 
+		</div>
+		<div class="div4">
+			<h1 style="font-size: 60px; text-align: center;font-family: fantasy;"> Oggettistica </h1>
+			<a href="Oggettistica.html" style="font-size: 30px;"> Puoi trovare tante penne in diverse colorazioni... </a>
+		</div>
 	</body>
 </html>
