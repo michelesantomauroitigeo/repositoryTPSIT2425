@@ -1,30 +1,26 @@
-
 body {
-    margin: 0; 
+    margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('../imgs/immagine.jpg'); 
-    background-size: cover; 
-    height: 1800px; 
-    width: 1890px;
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-image: url('../imgs/immagine.jpg');
+    background-size: cover;
+    height: 1200px;
+    width: 1580px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
 
 .logo {
     width: 110px;
-    height: 130px;
+    height: 138px;
     background-image: url('../imgs/logo.png');
     background-size: cover;
     display: inline-block;
     vertical-align: middle;
 }
 
-
 .trasparente {
-    opacity: 0.9; 
+    opacity: 0.9;
 }
-
 
 .header {
     display: flex;
@@ -32,8 +28,8 @@ body {
     align-items: center;
     background: red;
     color: white;
-    padding: 20px;
-    width: 100%
+    padding: 2px;
+    width: 100%;
     margin: 0;
 }
 
@@ -43,20 +39,67 @@ body {
     text-align: left;
 }
 
-
 .mini-section {
     background: yellow;
     color: red;
     text-align: center;
-    padding: 10px 0;
-    width: 100%; 
-    margin: 0; 
+    border-radius: 8px;
+    padding: 10px;
+    margin: 20px auto;
+    width: 470px;
 }
 
 .mini-section a {
     color: red;
-    text-decoration: none;
-    margin:  15px;
+    text-align: center;
+    margin: 20px;
 }
 
+.immagini-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
 
+.immagine {
+    text-align: center;
+    width: 550px;
+}
+
+.immagine img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.immagine a {
+    color: red; 
+    display: block;
+    margin-top: 5px;
+}
+
+.immagini-container1 {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+.immagine1 {
+    text-align: center;
+    width: 500px;
+}
+
+.immagine1 a {
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+}
+
+.immagine1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+} 
