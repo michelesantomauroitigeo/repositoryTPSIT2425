@@ -4,7 +4,7 @@ body {
   margin: 0px;
   box-sizing: border-box;
   text-align: center;
-  max-height: 1200px;
+  max-height: 1500px;
 }
 
 .nome-span{
@@ -34,41 +34,55 @@ hr
   filter: brightness(85%);
   position: relative;
   left: -30%;
-  top: -120px;
+  top: -1050px;
   width: 38%;
 }
 
 .menu{
-  width: 288px;
+  width: 270px;
   height: 50px;
-  border-radius: 15px;
   border: 1.3px solid;
   background-color: #8fbc8f;
   position: relative;
-  left: 82%;
+  left: 78%;
   top:-275px;
 }
 
 .login_a{
-  text-decoration: none;
   position: relative;
   top: -15px;
   font-size: 30px;
+}
+
+.carrello{
+  width: 50px;
+  height: 50px;
+  border: 1.3px solid;
+  background-color: #8fbc8f;
+  position: relative;
+  left: 110%;
+  top:-79px;
+}
+
+.carrello_img{
+  width: 15%;
+  position: relative;
+  top: -110px;
+  left:69%;
 }
 
 .icon{
   border: 1.3px solid;
   position: relative;
   left:55%;
-  top: -480px;
+  top: -700px;
   height: 150px;
   width: 150px;
-  border-radius: 15px;
+
   background-color: white;
 }
 
 .Servizz_a{
-  text-decoration: none;
   position: relative;
   left:140%;
   top:-70px;
@@ -82,45 +96,17 @@ hr
   width: 60%;
 }
 
-.icon_1{
-  border: 1.3px solid;
-  position: relative;
-  left:55%;
-  top: -800px;
-  height: 150px;
-  width: 150px;
-  border-radius: 15px;
-  background-color: white;
-}
-
-.chi_siamo_a{
-  text-decoration: none;
-  position: relative;
-  top: -925px;
-  left: 20%;
-  color: #FF0000  ;
-  font-size: 35px;
-}
-
-.img-interrogativo{
-  position: relative;
-  top: 20px;
-  width: 75%;
-}
-
 .icon_2{
   border: 1.3px solid;
   position: relative;
   left:55%;
-  top: -700px;
+  top: -600px;
   height: 150px;
   width: 150px;
-  border-radius: 15px;
   background-color: white;
 }
 
 .Prodd_a{
-  text-decoration: none;
   position: relative;
   top: -80px;
   left: 145%;
@@ -138,7 +124,7 @@ hr
   opacity: 0.8;
   position: relative;
   left: 0%;
-  top: -500px;
+  top: 50px;
   height: 300px;
   width: 100%;
   background-color: black;
@@ -170,4 +156,54 @@ hr
   left: 5%;
   top: 65px;
   width: 3.5%;  
+}
+
+.mappa{
+  position: relative;
+  top:840px;
+}
+
+.map_span{
+  font-size: 35px;
+  font-style: italic;
+}
+
+.map_img{
+  width: 100px;
+  height: 100px;
+}
+
+.posto_p{
+  position: relative;
+  top:-23px;
+  font-size: 30px;
+}
+
+.store{
+  position: relative;
+  top:680px;
+}
+
+.store_span{
+  font-size: 35px;
+  font-style: italic;
+}
+
+.store_img{
+  position: relative;
+  top:150px
+  width: 100px;
+  height: 100px;
+}
+
+.descrizione_p{
+  font-size: 28px;
+  text-align: left;
+  top:20px;
+}
+
+.contatti_p{
+  position: relative;
+  top:850px;
+  font-size: 30px;
 }
