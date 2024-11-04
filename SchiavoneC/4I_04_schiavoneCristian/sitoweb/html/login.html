@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Storia - Agenzia Funebre Schiavone</title>
+    <title>Login - Agenzia Funebre Schiavone</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -43,8 +43,33 @@
         }
         main {
             padding: 20px;
-            max-width: 800px;
+            max-width: 600px;
             margin: auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
         }
         footer {
             text-align: center;
@@ -60,12 +85,12 @@
 
 <header>
     <h1>Agenzia Funebre Schiavone</h1>
-    <img src="logo.jpeg" alt="Logo Agenzia Funebre Schiavone">
+    <img src="../imgs/logo.jpeg" alt="Logo Agenzia Funebre Schiavone">
 </header>
 
 <nav>
     <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="login.html">Login</a></li>
         <li><a href="chi_siamo_dove_siamo.html">Chi Siamo</a></li>
         <li><a href="servizi.html">Servizi</a></li>
@@ -74,16 +99,16 @@
 </nav>
 
 <main>
-    <h2 style="text-align: center;">La Nostra Storia</h2>
-    <p>
-        L'Agenzia Funebre Schiavone è stata fondata nel 1990 a Tricarico con l'obiettivo di fornire servizi funebri con il massimo rispetto e dignità. La nostra storia inizia con la passione e l'impegno di Zio Giò, che ha sempre posto le famiglie al centro del proprio operato. Grazie alla sua dedizione, abbiamo costruito una solida reputazione, diventando un punto di riferimento nella comunità per il nostro approccio empatico e professionale.
-    </p>
-    <p>
-        Nel corso degli anni, ci siamo evoluti notevolmente, passando da realizzazioni completamente artigianali all'uso di tecnologie che rendono il nostro lavoro ancora più preciso e professionale. Siamo orgogliosi di essere l'unica agenzia funebre che costruisce bare da zero. Questa lavorazione avviene nel laboratorio di Zio Giò, dove, ogni giorno, lui apre puntuale la sua piccola attività alle 7 e chiude alle 20.
-    </p>
-    <p>
-        Il nostro team è composto da Zio Giò, Francesco e Cristian, il più giovane ma anche uno dei più determinati. La nostra attività familiare continua a evolversi, mantenendo sempre il focus sulla qualità del servizio e sul supporto alle famiglie in un momento così delicato. Siamo qui per accompagnarvi, curando ogni dettaglio con attenzione e rispetto.
-    </p>
+    <h2>Login</h2>
+    <form onsubmit="return false;">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <input type="submit" value="Accedi" onclick="window.location.href='area-riservata.html';">
+    </form>
 </main>
 
 <footer>

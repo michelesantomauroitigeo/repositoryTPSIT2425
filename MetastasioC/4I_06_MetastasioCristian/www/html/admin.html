@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <link rel="stylesheet" href="../css/adm.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amministrazione Utenti (Versione Statica)</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { padding: 10px; text-align: left; border-bottom: 1px solid #ddd; }
+    th { background-color: #f4f4f4; }
+    .form-container { margin-top: 20px; }
+    .form-container input { padding: 5px; margin: 5px 0; }
+    .form-container button { padding: 5px 10px; }
+  </style>
+</head>
+<body>
+  <h1>Sezione Amministratore</h1>
+  <h2>Utenti Registrati</h2>
+  
+  <!-- Tabella utenti -->
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Azione</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Righe degli utenti -->
+      <tr>
+        <td>1</td>
+        <td>Mario Rossi</td>
+        <td>mario.rossi@example.com</td>
+        <td><a href="#editUserForm">Modifica</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Luisa Bianchi</td>
+        <td>luisa.bianchi@example.com</td>
+        <td><a href="#editUserForm">Modifica</a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Giorgio Verdi</td>
+        <td>giorgio.verdi@example.com</td>
+        <td><a href="#editUserForm">Modifica</a></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <!-- Form per modificare un utente (Statico, non funzionale) -->
+  <div class="form-container" id="editUserForm">
+    <h2>Modifica Utente</h2>
+    <label for="editUserName">Nome:</label>
+    <input type="text" id="editUserName" placeholder="Inserisci nome"><br>
+    <label for="editUserEmail">Email:</label>
+    <input type="email" id="editUserEmail" placeholder="Inserisci email"><br>
+    <button>Salva</button>
+    <button type="button" onclick="window.location.href='#'">Annulla</button>
+  </div>
+</body>
+</html>
