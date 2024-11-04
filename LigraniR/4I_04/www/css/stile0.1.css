@@ -42,7 +42,7 @@ input[type="text"], input[type="email"] {
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box;
+    
 }
 
 button {
@@ -61,16 +61,7 @@ button:hover {
     background-color: #ff1493;
 }
 
-.link {
-    margin-top: 15px;
+
+.centro{
     text-align: center;
-}
-
-.link a {
-    color: #ff69b4;
-    text-decoration: none;
-}
-
-.link a:hover {
-    text-decoration: underline;
 }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Login Area Privata</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Stile per il bottone "Amministratore" in alto a destra */
+        .admin-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background-color: #007acc; /* Colore azzurro per il bottone */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .admin-button:hover {
+            background-color: #005b99; /* Colore più scuro per hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Bottone amministratore -->
+    <a href="admin.html" class="admin-button">Amministratore</a>
+    
+    <header>
+        <h1>Login Area Privata</h1>
+    </header>
+    
+    <section id="login">
+        <h2>Accedi</h2>
+        <form action="dashboard.html" method="post">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit">Accedi</button>
+        </form>
+        <p>Non hai un account? <a href="registration.html">Registrati qui</a></p>
+    </section>
+   
+    <footer>
+        <p>&copy; Overkids</p>
+    </footer>
+</body>
+</html>

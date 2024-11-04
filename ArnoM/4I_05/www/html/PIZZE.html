@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>lefolliedellochef.com</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #800020; /* Bordeaux */
+            color: white;
+        }
+        h2 {
+            color: #800020; /* Bordeaux */
+            border-bottom: 2px solid #800020;
+            padding-bottom: 5px;
+        }
+        .menu-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        .menu-items {
+            width: 60%;
+        }
+        .menu-items ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu-items li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .price {
+            float: right;
+            font-weight: bold;
+        }
+        .image {
+            width: 35%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #800020; 
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Pizzeria Menu</h1>
+
+    <!-- Sezione Le Rosse e Le Bianche unite -->
+    <section id="rosse-bianche" class="menu-section">
+        <div class="menu-items">
+            <h2>Le Rosse e Le Bianche</h2>
+            <ul>
+                <!-- Le Rosse -->
+                <li>Pizza Margherita <span class="price">€4.50</span><br><small>Pomodoro San Marzano Dop, fior di latte e basilico</small></li>
+                <li>Pizza Marinara <span class="price">€4.00</span><br><small>Pomodoro San Marzano Dop, aglio ed origano</small></li>
+                <li>Pizza Diavola <span class="price">€7.00</span><br><small>Pomodoro San Marzano Dop, fior di latte e salame piccante</small></li>
+                <li>Pizza 4 Stagioni <span class="price">€7.50</span><br><small>Pomodoro San Marzano Dop, fior di latte, prosciutto cotto, funghi, carciofi ed olive taggiasche</small></li>
+                <li>Calzone <span class="price">€8.00</span><br><small>Pomodoro San Marzano Dop, fior di latte, prosciutto cotto, funghi</small></li>
+                <li>Pizza Americana <span class="price">€7.50</span><br><small>Pomodoro San Marzano Dop, fior di latte, prosciutto cotto e patate fritte*</small></li>
+                <li>Pizza Capricciosa <span class="price">€8.00</span><br><small>Pomodoro San Marzano Dop, fior di latte, funghi, carciofi, prosciutto cotto, salame ed olive taggiasche</small></li>
+
+                <!-- Le Bianche -->
+                <li>Crudaiola <span class="price">€8.00</span><br><small>Fior di latte, prosciutto crudo, pomodorini, rucola e scaglie di grana</small></li>
+                <li>4 Formaggi <span class="price">€7.50</span><br><small>Fior di latte, grana padano, gorgonzola e taleggio</small></li>
+                <li>“Friarielli” <span class="price">€7.50</span><br><small>Fior di latte, salsiccia lucana e “friarielli”</small></li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="../imgs/rossa.jpg" alt="Le Rosse e Le Bianche Pizza">
+        </div>
+    </section>
+
+    <!-- Sezione Le Follie -->
+    <section id="follie" class="menu-section">
+        <div class="menu-items">
+            <h2>Le Follie</h2>
+            <ul>
+                <li>Pizzachef <span class="price">€8.00</span><br><small>Mozzarella di bufala, datterino giallo, melanzane e zucchine saltate, scaglie di grana e glassa balsamica</small></li>
+                <li>Le Follie <span class="price">€9.00</span><br><small>Pizza pane, rucola, pomodorini rossi, burratina e girello marinato</small></li>
+                <li>Delicata <span class="price">€8.00</span><br><small>Datterino giallo, ricotta di bufala, pancetta coppata e provola</small></li>
+                <li>Girasole <span class="price">€8.00</span><br><small>Fiordilatte, crema di pomodorini gialli e zafferano, salsiccia lucana e speck</small></li>
+                <li>Sapori d’autunno <span class="price">€8.00</span><br><small>Fior di latte, salsiccia lucana, funghi porcini e crema di zucca</small></li>
+                <li>Violet <span class="price">€8.00</span><br><small>Fior di latte, provola, patata viola, pomodorini gialli e rape</small></li>
+                <li>Sottobosco <span class="price">€8.00</span><br><small>Pomodoro San Marzano Dop, fior di latte, asparagi e funghi porcini</small></li>
+                <li>Sfiziosa <span class="price">€7.50</span><br><small>Mozzarella di bufala, crema di melanzane, pomodori secchi e scaglie di grana</small></li>
+                <li>Potentina <span class="price">€8.00</span><br><small>Mozzarella di bufala, salsiccia, patate al forno, peperoni cruschi</small></li>
+                <li>Pizza La Costiera <span class="price">€7.00</span><br><small>Fior di Latte, pomodorini gialli, acciughe e rosmarino</small></li>
+                <li>Pizza Cynara <span class="price">€7.00</span><br><small>Mozzarella di bufala, crema di carciofi, melanzana e pancetta</small></li>
+                <li>Pizza alla crema di tartufo nero <span class="price">€10.00</span><br><small>Mozzarella di bufala, crema di tartufo nero, funghi porcini e asparagi</small></li>
+                <li>Pizza al baccalà <span class="price">€11.00</span><br><small>Fior di latte, baccalà, friarelli, patate al forno e peperoni cruschi</small></li>
+                <li>Pizza brigante <span class="price">€8.00</span><br><small>Pomodoro, Mozzarella di bufala, salame, olive taggiasche</small></li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="../imgs/pizzafollie.jpg" alt="Le Follie Pizza">
+        </div>
+    </section>
+
+    <!-- Sezione Le Pizze del Venerdì -->
+    <section id="venerdi" class="menu-section">
+        <div class="menu-items">
+            <h2>Le Pizze del Venerdì</h2>
+            <ul>
+                <li>Sinfonia di mare <span class="price">€13.00</span><br><small>Fior di latte, patata viola, pomodorino giallo, calamari e gamberi</small></li>
+                <li>Salmone e gamberetti <span class="price">€13.00</span><br><small>Mozzarella di bufala, salmone, gamberetti, rucola e limone a fette</small></li>
+                <li>Mareterra <span class="price">€12.00</span><br><small>Fior di latte, crema di tartufo, salmone e burratina</small></li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="../imgs/pizzapesce.jpeg" alt="Le Pizze del Venerdì Pizza">
+        </div>
+    </section>
+
+    <footer>
+        <p>Note: *Prodotti preparati con materia prima surgelata all'origine.</p>
+    </footer>
+</div>
+
+</body>
+</html>
