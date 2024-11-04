@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------------------------------------------------*/
+
+html, body{
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../imgs/sfondo.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: -1;
+}
+
+/*------------------------------------------------------*/
+
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    z-index: 10;
+}
+
+/*------------------------------------------------------*/
+
+.nav-left .logo {
+    width: 40px; 
+    height: auto;
+}
+
+.nav-center {
+    display: flex;
+    gap: 20px; 
+    margin-left: 100px;
+}
+
+.nav-right a {
+    padding: 10px 15px;
+}
+
+/*------------------------------------------------------*/
+
+nav a {
+    text-decoration: none;
+    color: #fc3af2;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #575757;
+    border-radius: 10px;
+}
+
+/*------------------------------------------------------*/
+
+h1 {
+    color: #9000ff;
+    margin: 30px;
+    margin-top: 80px;
+    margin-bottom: 0%;
+    font-size: 50px;
+    text-align: center;
+}
+
+/*------------------------------------------------------*/
+.pagina {
+    max-width: 900px;
+    margin: auto;
+}
+
+.gruppo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.testo {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    color: #fc3af2;
+}
+
+.foto {
+    flex: 1;
+}
+
+.foto img {
+    width: 100%;
+    border-radius: 15px;
+    filter: opacity(75%);
+    transition: filter 0.5s ease;
+}
+
+.foto img:hover {
+    filter: opacity(100%);
+}
+
+/*------------------------------------------------*/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin-top: 260px;
+    padding: 20px 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+    text-align: center;
+    color: #b53afc;
+}
+
+footer p:last-child {
+    color: #888;
+}

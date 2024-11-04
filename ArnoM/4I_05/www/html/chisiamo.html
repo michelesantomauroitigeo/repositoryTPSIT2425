@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lefolliedellochef.com</title>
+    
+    <style>
+        /* Impostazioni generali della pagina */
+        body {
+            font-family: Arial, sans-serif; /* Tipo di font */
+            margin: 0; /* Rimuove margini di default */
+            padding: 0; /* Rimuove padding di default */
+            background-color: #f4f4f9; /* Colore di sfondo chiaro */
+            color: #333; /* Colore del testo */
+        }
+        
+        /* Stile dell'intestazione */
+        header {
+            display: flex; /* Imposta layout flessibile */
+            align-items: center; /* Allinea elementi verticalmente */
+            padding: 20px; /* Spaziatura interna */
+            background-color: #800020; /* Colore di sfondo bordeaux */
+        }
+        
+        /* Stile del logo */
+        .logo {
+            height: 120px; /* Altezza logo */
+            margin-right: 20px; /* Spaziatura a destra del logo */
+        }
+
+        /* Stile del menu di navigazione */
+        nav {
+            flex: 1; /* Occupare tutto lo spazio disponibile */
+            display: flex; /* Imposta layout flessibile */
+            justify-content: space-evenly; /* Distribuisce gli elementi uniformemente */
+        }
+        
+        /* Stile dei link di navigazione */
+        nav a {
+            color: #fff; /* Colore del testo dei link */
+            text-decoration: none; /* Rimuove sottolineatura */
+            font-weight: bold; /* Testo in grassetto */
+            font-size: 1.5em; /* Ingrandisce il font */
+            padding: 10px 20px; /* Spaziatura interna */
+            flex: 1; /* Ogni link occupa la stessa larghezza */
+            text-align: center; /* Allinea il testo al centro */
+        }
+        
+        /* Stile del titolo principale */
+        h1 {
+            text-align: center; /* Centra il testo */
+            margin-top: 20px; /* Spaziatura sopra il titolo */
+            color: #800020; /* Colore del testo bordeaux */
+        }
+        
+        /* Contenitore principale */
+        .container {
+            width: 90%; /* Larghezza del contenitore */
+            margin: 0 auto; /* Centra il contenitore */
+            padding: 20px; /* Spaziatura interna */
+        }
+        
+        /* Stile delle sezioni di contenuto */
+        .section {
+            display: flex; /* Layout flessibile */
+            align-items: center; /* Allinea elementi verticalmente */
+            justify-content: space-between; /* Spazio tra elementi */
+            margin-bottom: 40px; /* Spaziatura sotto la sezione */
+            border: 2px solid #800020; /* Bordo bordeaux */
+            padding: 20px; /* Spaziatura interna */
+            border-radius: 8px; /* Angoli arrotondati */
+            background-color: #fff; /* Sfondo bianco */
+        }
+        
+        /* Stile delle immagini nelle sezioni */
+        .section img {
+            width: 40%; /* Larghezza immagine */
+            margin-right: 20px; /* Spazio a destra dell'immagine */
+            border-radius: 8px; /* Angoli arrotondati immagine */
+        }
+        
+        /* Sezione del testo */
+        .text {
+            width: 55%; /* Larghezza contenuto testuale */
+        }
+        
+        /* Stile del piè di pagina */
+        footer {
+            text-align: center; /* Centra il testo */
+            padding: 20px; /* Spaziatura interna */
+            background-color: #800020; /* Sfondo bordeaux */
+            color: #fff; /* Colore testo bianco */
+            margin-top: 40px; /* Spaziatura sopra il footer */
+        }
+
+        /* Stile per invertire la disposizione dei contenuti nella sezione */
+        .section.reverse {
+            flex-direction: row-reverse; /* Inverte la direzione degli elementi */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="../imgs/logo.png" alt="Logo Ristorante" class="logo">
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="SERVIZI.html">Servizi</a>
+            <a href="prodotti.html">Prodotti</a>
+            <a href="LOGIN.html">Login</a>
+        </nav>
+    </header>
+
+    <h1>Chi Siamo</h1>
+
+    <div class="container">
+        <div class="section">
+            <img src="../imgs/dentro.jpg" alt="Immagine del ristorante">
+            <div class="text">
+                <h2>La nostra Storia</h2>
+                <p>
+                    Il nostro ristorante è nato nel 2019 con la passione per la cucina moderna. Da oltre 5 anni offriamo ai nostri clienti un’esperienza culinaria unica, combinando ingredienti freschi e ricette innovative.
+                </p>
+            </div>
+        </div>
+
+        <div class="section reverse">
+            <img src="../imgs/staff.jpg" alt="Immagine dello Staff">
+            <div class="text">
+                <h2>Il nostro Staff</h2>
+                <p>
+                    Il nostro team è composto da uno chef esperto e personale altamente qualificato, tutti con una forte passione per la cucina e l’ospitalità. Siamo orgogliosi di offrire un servizio amichevole e professionale.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <img src="../imgs/fuori.jpg" alt="Immagine del locale esterno">
+            <div class="text">
+                <h2>Dove ci troviamo</h2>
+                <p>
+                    Le Follie dello Chef è situato nel cuore di Potenza, precisamente in via Ponte 9 Luci 44. Il ristorante è facilmente raggiungibile sia dal centro città che dalle zone limitrofe, e dispone di comodi parcheggi nelle vicinanze.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ristorante - Tutti i diritti riservati</p>
+    </footer>
+
+</body>
+</html>
+
