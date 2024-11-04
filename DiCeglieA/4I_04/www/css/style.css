@@ -113,52 +113,101 @@ div.reserved_area {
   }
 }
 
-div.container_CH{
-  p{
-    font-size:larger;
+div.container_CH {
+  p {
+    font-size: larger;
   }
 }
 
 div.time_CH {
   border: 5px solid orange;
   width: 32%;
-  padding-left: 15px ;
+  padding-left: 15px;
   float: left;
-  height:230px;
+  height: 230px;
 }
 div.remote_CH {
   border: 5px solid orange;
-  padding-left: 15px ;
+  padding-left: 15px;
   float: left;
-  height:230px;
+  height: 230px;
   width: 31.5%;
 }
 
 div.negozi_CH {
   border: 5px solid orange;
-  padding-left: 15px ;
+  padding-left: 15px;
   float: left;
-  height:230px;
+  height: 230px;
   width: 32%;
 }
 
-div.contatti{
-  border: 5px solid white;
+div.contatti {
+  border: 5px solid rgb(221, 180, 207);
   padding-left: 15px;
+  img {
+    width: 25%;
+    padding-left: 40%;
+  }
 }
 
 div.time_PB {
   border: 5px solid yellow;
   width: 32%;
-  padding-left: 15px ;
+  padding-left: 15px;
   float: left;
-  height:230px;
+  height: 230px;
 }
 
-div.menu_PB{
+div.menu_PB {
   border: 5px solid yellow;
   width: 31%;
-  padding-left: 15px ;
+  padding-left: 15px;
   float: left;
-  height:230px;
+  height: 230px;
+}
+
+div.negozi_PB {
+  border: 5px solid yellow;
+  width: 31%;
+  padding-left: 15px;
+  float: left;
+  height: 230px;
+}
+
+
+div.product_TD{
+  border: 5px solid white;
+  width: 32%;
+  padding-left: 15px;
+  float: left;
+  height: 230px;
+
+  p{
+    font-size: 115%;
+  }
+}
+
+div.fiver_TD{
+  border: 5px solid white;
+  width: 31%;
+  padding-left: 15px;
+  float: left;
+  height: 230px;
+
+  p{
+    font-size: 125%;
+  }
+}
+
+div.vr_TD{
+  border: 5px solid white;
+  width: 32%;
+  padding-left: 15px;
+  float: left;
+  height: 230px;
+  
+  p{
+    font-size: 105%;
+  }
 }

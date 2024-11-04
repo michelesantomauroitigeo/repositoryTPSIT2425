@@ -52,7 +52,7 @@ h2 {
 
 /* Paragrafi */
 p {
-    font-size: 24px;
+    font-size: 14px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -213,7 +213,7 @@ button {
 .container-accesso {
     width: 100%;
     display: flex;
-    height: 100vh
+    height: 90vh
 }
 
 
@@ -251,13 +251,20 @@ button {
     display: block;
 }
 
-.login-form input[type="text"],
-.login-form input[type="password"] {
+.login-form input[type="text"]{
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     background-color: black;
     color: white;
+}
+.login-form input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+
 }
 
 .login-form input[type="submit"] {
@@ -267,9 +274,21 @@ button {
     color: white;
     border: none;
     border-radius: 10px;
-    font-size: 1.2em;
+    font-size: 20px;
     cursor: pointer;
 }
+.button-link {
+    display: inline-block;
+    padding: 15px 143px; 
+    background-color: #ff8a99;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 /* Footer */
 
@@ -301,5 +320,5 @@ button {
 .int-pie-soc a,
 .int-pie-scopri a {
     text-decoration: none; /* Rimuove la sottolineatura */
-    margin: 10px 0; /* Margine sopra e sotto per i link */
+    margin: 10px 0;
 }

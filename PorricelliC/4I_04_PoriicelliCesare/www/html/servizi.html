@@ -3,85 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servizi - Panificio delle Donne</title>
+    <title>Panificio delle Donne - Servizi</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            background-color: #f8f8f8;
             margin: 0;
             padding: 0;
         }
+        header {
+            background-color: #d35400;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+        .logo {
+            max-width: 150px;
+            height: auto;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
         .container {
             width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
+            margin: auto;
+            overflow: hidden;
         }
-        h1 {
-            color: #d2691e;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
-            font-size: 1.2em;
-        }
-        .highlight {
-            color: #d2691e;
-            font-weight: bold;
-        }
-        .address {
-            text-align: right;
-            margin-top: 10px;
-        }
-        .logo img {
-            display: block;
-            margin: 20px auto;
-        }
-        .back-button {
+        section {
             margin: 20px 0;
-            padding: 10px 20px;
-            background-color: #d2691e;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            font-size: 1em;
+        }
+        h2 {
+            color: #d35400;
+            border-bottom: 2px solid #d35400;
+            padding-bottom: 10px;
+        }
+        .service-item {
+            background: #fff;
+            border: 1px solid #ddd;
             border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .back-button:hover {
-            background-color: #b35916;
+        .service-item h3 {
+            font-size: 18px;
+            color: #333;
         }
-        .footer {
-            background-color: #333;
+        .service-item p {
+            font-size: 14px;
+            color: #666;
+        }
+        footer {
+            background-color: #d35400;
             color: #fff;
+            text-align: center;
             padding: 10px 0;
             margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="address">Via Borgo San Rocco 10</div> <!-- Indirizzo allineato a destra -->
+    <header>
+        <img src="immagini/pane.jpeg" alt="Logo Panificio delle Donne" class="logo">
+        <h1>Panificio delle Donne - Servizi</h1>
+    </header>
 
     <div class="container">
-        <div class="logo">
-            <img src="imgs/pane.jpeg" alt="Logo Panificio delle Donne" width="150">
-        </div>
-        <h1>Servizi del Panificio delle Donne</h1>
-        <ul>
-            <li><span class="highlight">Consegna a domicilio:</span> Offriamo il servizio di consegna a domicilio per i nostri prodotti appena sfornati.</li>
-            <li><span class="highlight">Consumazione sul posto:</span> Il nostro panificio dispone di un'area dedicata per gustare i prodotti direttamente in loco.</li>
-            <li><span class="highlight">Orari di apertura:</span> Siamo aperti dal lunedì al sabato dalle 7:30 alle 19:00.</li>
-            <li><span class="highlight">Giorno di chiusura:</span> La domenica siamo chiusi.</li>
-        </ul>
-        <button class="back-button" onclick="window.location.href='../index.html'">Torna alla Homepage</button>
+        <!-- Sezione Catering -->
+        <section id="catering">
+            <h2>Catering</h2>
+            <div class="service-item">
+                <h3>Catering per eventi</h3>
+                <p>Offriamo servizi di catering per feste, matrimoni e eventi aziendali. I nostri prodotti freschi e artigianali renderanno unico il tuo evento.</p>
+            </div>
+        </section>
+
+        <!-- Sezione Consegna a Domicilio -->
+        <section id="consegna">
+            <h2>Consegna a Domicilio</h2>
+            <div class="service-item">
+                <h3>Consegna di prodotti freschi</h3>
+                <p>Ordina i tuoi prodotti preferiti direttamente da casa e noi li consegneremo freschi e appena sfornati. Disponibile in tutta la città.</p>
+            </div>
+        </section>
+
+        <!-- Sezione Ordini Speciali -->
+        <section id="ordini-speciali">
+            <h2>Ordini Speciali</h2>
+            <div class="service-item">
+                <h3>Torte e prodotti personalizzati</h3>
+                <p>Realizziamo torte su misura e prodotti da forno per occasioni speciali. Contattaci per discutere i dettagli del tuo ordine personalizzato.</p>
+            </div>
+        </section>
+
+        <!-- Sezione Corsi di Panificazione -->
+        <section id="corsi-panificazione">
+            <h2>Corsi di Panificazione</h2>
+            <div class="service-item">
+                <h3>Lezioni di panificazione</h3>
+                <p>Partecipa ai nostri corsi per imparare l'arte della panificazione e scoprire i segreti per creare il pane perfetto. Adatto a tutti i livelli.</p>
+            </div>
+        </section>
     </div>
 
-    <div class="footer">
+    <footer>
         <p>&copy; 2024 Panificio delle Donne. Tutti i diritti riservati.</p>
-    </div>
+    </footer>
 </body>
 </html>
