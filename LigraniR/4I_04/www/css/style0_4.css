@@ -1,0 +1,32 @@
+
+body { 
+      text-align: center;
+   }
+
+ hr {
+    margin: 40px 0;
+}
+
+.sinistra {
+      text-align: left; /* Allinea il testo a sinstra */
+      padding-right: 20px; /* Aggiungi un po' di padding a destra */
+  }
+
+
+.sfondo {
+  background-color: #ffb6c1;
+      padding: 40px 20px; /* Spazio interno */
+      border-radius: 10px; /* Angoli arrotondati */
+      margin: 20px 0; /* Spazio esterno sopra e sotto */
+  }
+
+  .button {
+    margin: 20px;
+    padding: 15px 30px;
+    font-size: 40px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
