@@ -1,0 +1,327 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../imgs/immagine.jpg');
+    background-size: cover;
+    height: 1200px;
+    width: 1580px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    width: 110px;
+    height: 138px;
+    background-image: url('../imgs/logo.png');
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.trasparente {
+    opacity: 0.9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: red;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.mini-section {
+    background: yellow;
+    color: red;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 20px auto;
+    width: 470px;
+}
+
+.mini-section a {
+    color: red;
+    text-align: center;
+    margin: 20px;
+}
+
+.immagini-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.immagine {
+    text-align: center;
+    width: 550px;
+}
+
+.immagine img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.immagine a {
+    color: white;
+    display: block;
+    margin-top: 5px;
+}
+
+.immagini-container1 {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+.immagine1 {
+    text-align: center;
+    width: 550px;
+}
+
+.immagine1 a {
+    color: red;
+    display: block;
+    margin-top: 5px;
+}
+
+.immagine1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+} 
+
+
+.login-icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.shop-link {
+    color: yellow; 
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: -50%; 
+}
+
+.shop-link:hover {
+    text-decoration: underline;
+}
+
+
+.areariservata-link {
+    margin: 0 20px;
+    color: yellow;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.areariservata-link:hover {
+    text-decoration: underline;
+}
+
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #333;
+}
+
+.login-table {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.login-table td {
+    padding: 8px;
+}
+
+.login-table input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.login-table button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-table button:hover {
+    background-color: #555;
+}
+
+
+.register-link {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+
+.area-riservata-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-table th, .user-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.user-table th {
+    background-color: #333;
+    color: yellow;
+    font-weight: bold;
+}
+
+.user-table td {
+    background-color: #fff;
+    color: #333;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+.registration-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.registration-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.registration-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+.registration-table input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+
+.register-button {
+    background-color: red;
+    color: yellow;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.register-button:hover {
+    background-color: darkred;
+}
+
+
+.shop-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+ 
+.shop-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.product-image {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.product-details {
+    max-width: 600px;
+}
+
+.product-details h3 {
+    margin: 0;
+    color: red;
+}
+
+.product-details p {
+    margin: 5px 0;
+    color: #333;
+}
