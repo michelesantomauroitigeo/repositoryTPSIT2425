@@ -79,8 +79,8 @@ nav a:hover {
 
 h1 {
     color: #9000ff;
-    text-align: center;
-    margin-top: 80px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 /*------------------------------------------------------*/
@@ -88,4 +88,71 @@ h1 {
 p {
     text-align: center;
     color: #b53afc;
+}
+
+/*------------------------------------------------------*/
+
+.homepage {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 75px;
+}
+
+.contenuto {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.foto {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.foto img {
+    width: 100%;
+    border-radius: 10px;
+    filter: opacity(75%);
+    transition: filter 0.5s ease;
+}
+
+.foto img:hover {
+    filter: opacity(100%);
+}
+
+.testo {
+    margin-bottom: 20px;
+}
+
+.testo h2 {
+    color: #fc3af2;
+    margin-bottom: 10px;
+}
+
+.testo p {
+    color: white;
+}
+
+/*------------------------------------------------*/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin-top: 260px;
+    padding: 20px 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer p:last-child {
+    color: #888;
 }

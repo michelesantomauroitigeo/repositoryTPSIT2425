@@ -47,4 +47,25 @@ h1 {
 
 label {
      color: #ed4eff;
-}               
+} 
+
+/*------------------------------------------------*/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin-top: 260px;
+    padding: 20px 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer p:last-child {
+    color: #888;
+}

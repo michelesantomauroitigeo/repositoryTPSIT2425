@@ -17,7 +17,6 @@ body {
     background-position: center;
     position: relative;
     z-index: 1;
-    
 }
 
 body::before {
@@ -88,4 +87,81 @@ h1 {
 p {
     text-align: center;
     color: #b53afc;
+}
+
+/*------------------------------------------------------*/
+
+.inizio p {
+    text-align: center;
+    color: #fc3af2;
+    font-size: 20px;
+    width: 70%;
+    background-color: rgba(34, 34, 34, 0.75);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+}
+
+.inizio {
+    padding: 20px;
+    text-align: center;
+    margin: 60px;
+    margin-bottom: 0;
+}
+
+.inizio img {
+    width: 175px;
+    margin-bottom: 10px;
+}
+
+.macchinette {
+    display: flex;
+    justify-content: center;
+}
+
+.machine {
+    width: 200px;
+    margin: 20px;
+    background-color: rgba(34, 34, 34);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    color: #b53afc;
+}
+
+.machine img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.machine h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    color: #fc3af2;
+}
+
+.machine p {
+    font-size: 15px;
+    color: #ccc;
+}
+
+/*------------------------------------------------*/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin-top: 140px;
+    padding: 20px 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer p:last-child {
+    color: #888;
 }

@@ -17,7 +17,6 @@ body {
     background-position: center;
     position: relative;
     z-index: 1;
-    
 }
 
 body::before {
@@ -79,13 +78,67 @@ nav a:hover {
 
 h1 {
     color: #9000ff;
-    text-align: center;
+    margin: 30px;
     margin-top: 80px;
+    margin-bottom: 0%;
+    font-size: 50px;
+    text-align: center;
 }
 
 /*------------------------------------------------------*/
+.pagina {
+    max-width: 900px;
+    margin: auto;
+}
 
-p {
+.gruppo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.testo {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    color: #fc3af2;
+}
+
+.foto {
+    flex: 1;
+}
+
+.foto img {
+    width: 100%;
+    border-radius: 15px;
+    filter: opacity(75%);
+    transition: filter 0.5s ease;
+}
+
+.foto img:hover {
+    filter: opacity(100%);
+}
+
+/*------------------------------------------------*/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin-top: 260px;
+    padding: 20px 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
     text-align: center;
     color: #b53afc;
+}
+
+footer p:last-child {
+    color: #888;
 }
