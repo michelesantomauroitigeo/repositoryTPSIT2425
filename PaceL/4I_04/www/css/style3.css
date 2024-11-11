@@ -1,5 +1,5 @@
 body {
-	background-image: url("../imgs/Background_servizi.jpeg"); width:1600px; height:1600px; color: white;
+	background-image: url("../imgs/Background_servizi.jpeg"); color: white;
 }
 
 h1 {
@@ -8,4 +8,8 @@ h1 {
 
 div {
 	background-color: black; width: 300px;
+}
+
+p {
+	text-align:center;
 }
