@@ -2,70 +2,125 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}    
-
-/*------------------------------------------------*/
-
-body {
-    background-color: rgb(25, 25, 25);
 }
 
-/*------------------------------------------------*/
+html, body {
+    height: 100%;
+}
+/*------------------------------------------------------------*/
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../imgs/sfondo.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-nav {
-    background-color: #333;
-    padding: 20px;
-    width: 130px;
+body::before {
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: -1;
 }
 
-/*------------------------------------------------*/
+/*------------------------------------------------------------*/
 
-a {
-    text-decoration: none;
-    color: #fc3af2;
-    padding: 15px 20px;
+.login-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
-
-/*------------------------------------------------*/
-
-a:hover {
-     background-color: #575757;
-}
-
-/*------------------------------------------------*/
 
 h1 {
-    color: #d000ff;
-     text-align: center;
-     margin-top: 80px;
+    color: white;
+    text-shadow: 0px 0px 10px #fc3af2,
+                 0px 0px 20px #fc3af2,
+                 0px 0px 40px #fc3af2,
+                 0px 0px 80px #fc3af2;
+    margin-bottom: 20px;
 }
-
-/*------------------------------------------------*/
 
 label {
-     color: #ed4eff;
-} 
+    color: wheat;
+    text-shadow: 0px 0px 10px #b53afc,
+                 0px 0px 20px #b53afc,
+                 0px 0px 40px #b53afc,
+                 0px 0px 80px #b53afc;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
 
-/*------------------------------------------------*/
-
-footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    margin-top: 260px;
-    padding: 20px 10px;
-    position: relative;
-    bottom: 0;
+input[type="text"], input[type="password"] {
     width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
 }
 
-footer p {
-    margin: 5px 0;
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #9000ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-footer p:last-child {
-    color: #888;
+input[type="submit"]:hover {
+    background-color: #b53afc;
+}
+
+/*------------------------------------------------------------*/
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-shadow: 0px 0px 10px #fc3af2,
+                 0px 0px 20px #fc3af2,
+                 0px 0px 40px #fc3af2,
+                 0px 0px 80px #fc3af2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #333;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background-color: #9000ff;
+}
+
+/*------------------------------------------------------------*/
+
+.crea-account {
+    color: #fc3af2;
+    margin-bottom: 15px;
+}
+
+.crea-account a {
+    color: #fc3af2;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.crea-account a:hover {
+    color: #9000ff;
 }
