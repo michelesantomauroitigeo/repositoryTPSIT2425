@@ -1,112 +1,115 @@
 body {
   background-image: url("../imgs/sfondo.png");
-  padding: 20px;
-  margin: 0px;
-  box-sizing: border-box;
   text-align: center;
-  max-height: 1200px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
 }
 
-
-.nome-span{
-  position: relative;
-  top: -20px;
+.p-nome{
   color: #097b47;
-  font-size: 70px;
+  font-size: 60px;
+  margin-top: 15px;
+  margin-left:38px ;
+  margin-bottom: -20px;
+
 }
 
 .logo{
-  position: relative;
-  width: 150px; 
-  height: 150px; 
-  margin: 0 auto;
-  top:-155px;
-  left: -47%;
+  padding-top:15px ;
+  padding-left:15px ;
+  width: 120px;
+  height: 80px;
+ 
 }
 
-hr
-{
-   position: relative;
-   top: -170px;
+nav{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  margin: -10px;
+  padding:-10px ;
+  width: 100.3%;
 }
 
-.menu{
-  width: 288px;
-  height: 50px;
-  border: 1.3px solid;
-  background-color: #8fbc8f;
-  position: relative;
-  left: 78%;
-  top:-275px;
+.button-box{
+  display: flex;
+  align-items: center;
+  padding: 2px;
 }
 
-.menu__home_a{
-  position: relative;
-  left:-3%;
-  top:10px;
-  font-size: 23px;
+ul {
+  list-style-type: none;
+  margin-right: 15px;
+  padding-left: 5px;
+  overflow: hidden;
+  background-color: #333;
+  font-size: 20px;
+
 }
 
-.menu__prodotti_a{
-  position: relative;
-  left:2%;
-  top:10px;
-  font-size: 23px;
+li {
+  float: left;
 }
 
-.menu__servizi_a{
-  position: relative;
-  left:7%;
-  top:10px;
-  font-size: 23px;
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 5px;
+  text-decoration: none;
+  padding: 5px;
 }
 
-.carrello{
-  width: 50px;
-  height: 50px;
-  border: 1.3px solid;
-  background-color: #8fbc8f;
-  position: relative;
-  left: 110%;
-  top: -27px;
+.negozio{
+  padding-top:50px;
+  padding-right:1100px ;
+  filter: brightness(85%);  
+  width: 550px;
+  height: 550x;
 }
 
 .carrello_img{
-  width: 15%;
-  position: relative;
-  top: -75px;
-  left:69%;
+  width: 45px;
+  height: 45px;
+
 }
 
-section{
-  position: relative;
-  top:130px;
-  text-align: left;
+.menu{
+  padding-top:12px ;
 }
-select{
+
+.intestazione{
+  width: 100%;
+  background-color:#097b47;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.nominativo{
+  color: white;
+  font-size: 35px;
+  padding: 23px 105px 23px 23px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+
+
+
+div.lana select.tipo{
   font-size: 20px;
 }
 
-.lana_h2{
+div.lana h2{
   color: #097b47;
-  font-size: 40px;
-  position: relative;
-  top:-270px;
+  font-size: 42px;
+  text-align: left;
+  padding-left:35px ;
+  padding-top: 55px;
 }
 .separatore_lana {
-  position: relative;
-  top: -1170px;
-  left: -2%;
-  width: 1915px;
-  height: 3px;
-  background-color: #8fbc8f;
-  border: none; 
-}
-
-.lana_sartoria {
-  position: relative;
-  top: -1240px;
-  left: -2%;
   width: 1915px;
   height: 3px;
   background-color: #8fbc8f;
@@ -114,20 +117,28 @@ select{
 }
 
 
-.lana{
-  position: relative;
-  top:-200px;
-  font-size: 25px;
+
+
+div.lana form{
+  font-size: 28px;
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 25px;
 }
 
 .immagine_lana{
   width: 500px;
   height: 400px;
-  position: relative;
-  left:60%;
-  top:-600px;
   border-radius: 5%;
 }
+
+.prenotazione{
+  font-size: 18px;
+  color:#097b47 ;
+
+}
+
+/*
 
 .tessuti_h2{
   color: #097b47;
@@ -262,10 +273,7 @@ select{
 
 
 
-.prenotazione{
-  font-size: 18px;
 
-}
 
 .prenota{
   position: relative;
