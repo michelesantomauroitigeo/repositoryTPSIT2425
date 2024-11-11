@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     background-image: url('../imgs/immagine.jpg');
     background-size: cover;
-    height: 1200px;
-    width: 1580px;
+    height: 100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -42,15 +42,17 @@ body {
     color: red;
     text-align: center;
     border-radius: 8px;
-    padding: 10px;
-    margin: 20px auto;
-    width: 470px;
+    padding: 10px; 
+    margin: 35px auto;
+    width:40%;
 }
 
 .mini-section a {
     color: red;
     text-align: center;
     margin: 20px;
+   font-size: 1.5em;
+
 }
 
 .immagini-container {
@@ -64,6 +66,7 @@ body {
 .immagine {
     text-align: center;
     width: 550px;
+    font-size: 1.5em;
 }
 
 .immagine img {
@@ -88,6 +91,8 @@ body {
 .immagine1 {
     text-align: center;
     width: 550px;
+    font-size: 1.5em;
+ 
 }
 
 .immagine1 a {
@@ -98,7 +103,7 @@ body {
 
 .immagine1 img {
     width: 100%;
-    height: auto;
+    height: 80%;
     border-radius: 8px;
 } 
 
@@ -106,7 +111,7 @@ body {
 .login-icon {
     width: 40px;
     height: 40px;
-    background-color: white;
+    background-color: yellow;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -117,36 +122,24 @@ body {
     margin-right: 20px;
 }
 
-.shop-link {
+.link {
     color: yellow; 
     font-weight: bold;
     text-decoration: none;
-    margin-right: -50%; 
+    margin-right: 0; 
+    font-size: 2em;
 }
 
-.shop-link:hover {
+.link:hover {
     text-decoration: underline;
+   
 }
-
-
-.areariservata-link {
-    margin: 0 20px;
-    color: yellow;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1em;
-}
-
-.areariservata-link:hover {
-    text-decoration: underline;
-}
-
 
 .login-container {
     max-width: 400px;
     margin: 100px auto;
     padding: 20px;
-    background-color: #f8f8f8;
+    background-color: white;
     border-radius: 8px;
     text-align: center;
 }
@@ -202,7 +195,7 @@ body {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: white;
     border-radius: 8px;
     text-align: center;
 }
@@ -232,7 +225,7 @@ body {
 }
 
 .user-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: white;
 }
 
 
@@ -240,7 +233,7 @@ body {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: white;
     border-radius: 8px;
     text-align: center;
 }
@@ -286,7 +279,7 @@ body {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: white;
     border-radius: 8px;
 }
  
@@ -302,7 +295,8 @@ body {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: white;
+
 }
 
 .product-image {
@@ -310,6 +304,7 @@ body {
     height: auto;
     border-radius: 8px;
     margin-right: 20px;
+
 }
 
 .product-details {
@@ -324,4 +319,29 @@ body {
 .product-details p {
     margin: 5px 0;
     color: #333;
+}
+
+
+img.storia {
+    float: right;
+    width: 170px;
+    height: 200px;
+    margin-left: 20px;
+}
+
+img.palmares {
+    float: left;
+    width: 450px;
+    height: 280px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+img.staff {
+    float: right;
+    width: 450px;
+    height: 280px;
+    margin-left: 20px;
+    margin-top: -70px;
+    border-radius: 8px;
 }
