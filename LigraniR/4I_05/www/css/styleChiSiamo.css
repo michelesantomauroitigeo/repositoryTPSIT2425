@@ -1,0 +1,105 @@
+body {
+    background-color: #f7f8fc;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-align: center;
+}
+
+header {
+    background-color: #ffb6c1;
+    padding: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+}
+
+header p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav span {
+    margin: 0 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #ff69b4;
+}
+
+.sfondo, .storia, .valori {
+    background: #ffb6c1;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.storia, .valori {
+    background-color: #ffffff;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.azione {
+    margin: 40px 0;
+}
+
+.pulsante {
+    padding: 12px 24px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.pulsante:hover {
+    background-color: #ff1493;
+}
