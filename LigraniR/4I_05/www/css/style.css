@@ -39,13 +39,24 @@ header nav a:hover {
 }
 
 
-.sfondo, .storia, .valori {
+.sfondo, .storia, {
     background: #ffb6c1;
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.valore{
+    
+    background:#ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 h1, h2 {
@@ -131,3 +142,18 @@ p {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+.sfondo2 {
+
+        background-image: url('../imgs/sfondoHome.jpg'); 
+        background-size: cover; /* Adatta l'immagine per coprire l'intera area */
+        background-position: center; /* Centra l'immagine */
+        padding: 150px;
+        margin: 20px auto;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 1);
+        color: #fff; /* Colore del testo per contrastare lo sfondo */
+        text-align: center;
+    }
+
