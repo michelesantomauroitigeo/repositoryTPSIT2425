@@ -11,12 +11,15 @@
             height: 100vh;
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
+            background-image: url('https://img.freepik.com/premium-vector/hand-drawn-barber-salon-seamless-pattern_698782-809.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             text-align: center;
         }
 
         .form-container {
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white background */
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -63,6 +66,18 @@
             max-width: 100%;
             height: auto;
         }
+
+        .registrati {
+            margin-top: 20px;
+            display: block;
+            font-size: 14px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .registrati:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -75,6 +90,9 @@
     <p>Password:</p>
     <input type="text" id="password" name="password" placeholder="Inserisci la tua password" required>
     <a href="./area%20riservata.html" class="Login">Login</a>
+
+  
+    <a href="./Registrazione.html" class="registrati">Non hai un account? Registrati</a>
 </div>
 
 </body>
