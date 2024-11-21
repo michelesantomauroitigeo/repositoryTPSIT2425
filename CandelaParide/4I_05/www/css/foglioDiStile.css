@@ -1,0 +1,470 @@
+/* Stile Generale */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 30px;
+    background-color: #080808;
+    color: #fff;
+}
+
+/* Titolo principale */
+h1 {
+    text-align: center;
+    font-size: 400px;
+    font-weight: bold;
+    color: #ff8ea3;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+/* Titoli secondari */
+h2 {
+
+    font-size: 128px;
+    color: #ff8ea3;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.centro {
+    font-size: 128px;
+    color: #ff8ea3;
+    font-weight: bold;
+    text-align: center;
+}
+
+.destra {
+    font-size: 128px;
+    color: #ff8ea3;
+    font-weight: bold;
+    text-align: right;
+}
+
+.sinistra {
+    font-size: 128px;
+    color: #ff8ea3;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+
+
+/* Paragrafi */
+p {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.pcentro {
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.pdestra {
+    font-size: 24px;
+    text-align: right;
+
+
+}
+
+.psinistra {
+    font-size: 24px;
+    text-align: left;
+}
+
+
+.img-sinistra {
+    display: block;
+    float: left;
+    width: 50%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+.img-destra {
+    display: block;
+    float: right;
+    width: 50%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+
+
+button {
+    background-color: #ff8ea3;
+    color: #080808;
+    border: none;
+    padding: 20px 80px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+
+/* Sezione 1 */
+#principale {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sezione 2 */
+#chi-siamo {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.img-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    object-fit: cover;
+}
+
+.about-info-heading {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Sezione 3 */
+#cosa-facciamo {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cf-info-heading {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-orizzontale {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-centro {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+/* Sezione 3 */
+.prod-info-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-prod-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.img-prod {
+    width: 33%;
+    object-fit: cover;
+}
+
+.prod-btn {
+    height: min-content;
+    align-self: center;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: transparent;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 120px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 24px;
+}
+
+
+/* Sezione 4 index (servizi) */
+
+#servizi {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+h2.servizi{
+
+        font-size: 200px;
+        color: #ff8ea3;
+        font-weight: bold;
+        margin: 20px 0;  
+}
+
+.img-servizi {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    object-fit: cover;
+}
+
+.servizi-info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+
+}
+
+/*pagina servizi*/
+
+
+h2.servizi {
+    font-size: 200px;
+    color: #ff8ea3;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.info-servizi {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+}
+
+
+
+.mostra-servizi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.riga-servizi {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.container-img-servizi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%; 
+
+}
+
+.container-img-servizi img {
+    width: 100%;
+    height: 800px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+/* Accesso */
+
+.container-accesso {
+    width: 100%;
+    display: flex;
+    height: 90vh
+}
+
+
+.sinistra-accesso {
+    display: flex;
+    width: 50%;
+    background-color: #cdcbcb;
+    justify-content: center;
+    align-items: center;
+}
+
+.destra-accesso {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.container-admin {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    
+}
+    
+
+/* Form di accesso */
+
+
+.login-form {
+    width: 40%;
+}
+
+.login-form h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.login-form label {
+    font-size: 24px;
+    display: block;
+}
+
+.login-form input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+}
+.login-form input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.login-form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff8a99;
+    color: #080808;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.button-link {
+    display: inline-block;
+    padding: 15px 143px; 
+    background-color: #ff8a99;
+    color: #080808;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+#pie {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: center; /* Centra il contenuto verticalmente */
+}
+
+.int-pie-int {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 100%; 
+    padding: 0 20px; 
+}
+
+.int-pie-soc,
+.int-pie-scopri {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    align-items: flex-start; 
+    margin: 0 15px; 
+}
+
+.int-pie-soc a,
+.int-pie-scopri a {
+    text-decoration: none; /* Rimuove la sottolineatura */
+    margin: 10px 0;
+}
+
+
+/* Tabella utenti */
+
+ .table-stile {
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+}
+
+.table-stile h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.user-table {
+    width: 100%;
+}
+
+.user-table th {
+    background-color: #ff8a99;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Stile per le righe e celle della tabella */
+.user-table td {
+    padding: 10px;
+    border: 1px solid #080808;
+    text-align: left;
+}
+
+.user-table tr:hover {
+    background-color: #fff;
+}
+
+
+

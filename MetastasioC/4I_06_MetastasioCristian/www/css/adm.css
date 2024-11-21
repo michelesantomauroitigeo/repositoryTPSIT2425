@@ -1,0 +1,118 @@
+/* Stile generale */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff; /* Azzurro chiaro */
+  color: #333; /* Grigio scuro per contrasto */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Titoli */
+h1 {
+  color: #005b99; /* Blu scuro per il titolo principale */
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+h2 {
+  color: #007acc; /* Blu azzurro per il sottotitolo */
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Stile della tabella */
+table {
+  width: 90%;
+  max-width: 800px;
+  border-collapse: collapse;
+  background-color: white;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #007acc; /* Blu azzurro per l'intestazione */
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #e6f7ff; /* Azzurro molto chiaro per righe alternate */
+}
+
+tr:hover {
+  background-color: #cceeff; /* Azzurro medio al passaggio del mouse */
+}
+
+td a {
+  color: #005b99;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+/* Stile del form di modifica */
+.form-container {
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #007acc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.form-container h2 {
+  color: #005b99;
+  margin-bottom: 10px;
+}
+
+.form-container label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"] {
+  width: calc(100% - 12px);
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-container button {
+  padding: 8px 12px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-container button:hover {
+  background-color: #005b99;
+}
+
+.form-container button[type="button"] {
+  background-color: #ccc; /* Grigio per il pulsante Annulla */
+  color: #333;
+}
+
+.form-container button[type="button"]:hover {
+  background-color: #999;
+}

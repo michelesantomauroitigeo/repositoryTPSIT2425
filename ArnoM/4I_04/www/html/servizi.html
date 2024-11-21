@@ -17,23 +17,36 @@
             background-color: #800020; /* Colore di sfondo bordeaux */
             padding: 20px; /* Spaziatura interna */
             position: relative; /* Posizione per ancorare elementi assoluti */
-        }
-
-        /* Stile del titolo principale */
-        h1 {
-            margin: 0; /* Rimuove margini */
-            color: white; /* Colore del testo bianco */
-            font-size: 2.5em; /* Dimensione del font */
-            text-align: left; /* Allineamento a sinistra */
+            display: flex; /* Layout flessibile per distribuire elementi */
+            justify-content: space-between; /* Spazio tra logo e link */
+            align-items: center; /* Allinea al centro verticalmente */
         }
 
         /* Stile per il logo */
         .logo {
-            position: absolute; /* Posizionamento assoluto */
-            top: 10px; /* Spazio dal bordo superiore */
-            right: 20px; /* Spazio dal bordo destro */
             width: 50px; /* Larghezza del logo */
             height: auto; /* Altezza automatica in proporzione */
+        }
+
+        /* Stile per i link di navigazione */
+        .nav-links {
+            display: flex; /* Layout flessibile per i link */
+            gap: 20px; /* Spaziatura tra i link */
+        }
+
+        .nav-links a {
+            color: white; /* Colore del testo bianco */
+            text-decoration: none; /* Rimuove sottolineatura */
+            font-weight: bold; /* Testo in grassetto */
+            font-size: 1.2em; /* Dimensione del font */
+        }
+
+        /* Stile del titolo principale */
+        .main-title {
+            color: #800020; /* Colore del testo bordeaux */
+            font-size: 2.5em; /* Dimensione del font */
+            text-align: center; /* Allineamento al centro */
+            margin-top: 20px; /* Spazio sopra il titolo */
         }
 
         /* Stile per i sottotitoli */
@@ -110,10 +123,17 @@
 </head>
 <body>
     <header>
-        <h1>I NOSTRI SERVIZI</h1>
-        
         <img src="../imgs/logo.png" alt="Logo Ristorante" class="logo">
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="servizi.html">Servizi</a>
+            <a href="prodotti.html">Prodotti</a>
+            <a href="login.html">Login</a>
+        </div>
     </header>
+
+    <!-- Titolo principale sotto l'intestazione -->
+    <h1 class="main-title">I NOSTRI SERVIZI</h1>
 
     <div class="container">
         <div class="services">
@@ -159,4 +179,5 @@
     </footer>
 </body>
 </html>
+
 
