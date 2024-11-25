@@ -81,48 +81,42 @@ li a {
 }
 
 .immagini-prodotti{
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
+  margin-left: 110px;
+  margin-right: 110px;
+  margin-top: 10px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   
 }
 
-.gomitolo{
-  width: 330px;
+.sartoria{
+  width: 385px;
   height:355px;
  margin-top:50px;
  padding-right:25px ;
  border-radius: 25px;
 }
 
-.vestito{
-  width: 330px;
+.bigiotteria{
+  width: 385px;
   height:355px;
  margin-top:50px;
 }
 
-.collana{
-  width: 330px;
+.manualita{
+  width: 385px;
   height:355px;
  margin-top:50px;
  padding-left:25px ;
 }
 
-.stoffa{
-  width: 330px;
+.consulenza{
+  width: 385px;
   height:355px;
  margin-top:50px;
  padding-left:25px ;
-}
-
-.merceria{
-  border-radius: 25px;
-  width: 330px;
-  height:355px;
- margin-top:50px;
- padding-left:25px ;
+ border-radius:25px;
 }
 
 .servizi-p{
@@ -136,8 +130,8 @@ li a {
 .posizioni{
   display: flex;
   justify-content: space-between;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 120px;
+  margin-right: 120px;
   font-size: 30px;
   
 }
@@ -157,9 +151,6 @@ li a {
 .stoffe-p{
   padding-right: 70px;
 
-}
-.merceria-p{
- padding-right: 120px;
 }
 
 .nero{
