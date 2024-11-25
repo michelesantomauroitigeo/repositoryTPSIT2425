@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../CSS/grafica_servzio_ordini.css">
+     	<title>FILOLANA</title>
+	</head>
+	<body>
+		<h1> <span class="nome-span">FILOLANA</span></h1>
+     	<img src="../imgs/logo.png" alt="immagine logo" class="logo">
+      	<hr>
+      	<div class="unione">
+	      	<div class="menu">
+	        	<a href="../index.html" class="menu__home_a">Home</a>
+	        	<a href="./prodotto.html" class="menu__prodotti_a">Prodotti</a>
+	        	<a href="./servizio.html" class="menu__servizi_a">Servizi</a>
+				<div class="carrello"></div>
+		  		<a href="./login.html" class="login_a">
+			    	<img src="../imgs/carrello.png" alt="immagine carrello" class="carrello_img">
+			  	</a>
+			</div>
+		</div>
+		<div class="prenota">
+			<h1>PRENOTAZIONE SERVIZI</h1>
+		</div>
+		<section>
+			<h2 class="sartoria_h2">SARTORIA</h2>
+			<form class="sartoria">
+			    <input type="radio" id="pieghe" name="opzione">
+			    <label for="pieghe">Pieghe.</label><br>
+			    <input type="radio" id="aggiusti" name="opzione">
+			    <label for="aggiusti">Aggiusti.</label><br>
+			    <input type="radio" id="accorciare" name="opzione">
+			    <label for="accorciare">Accorciare.</label><br>
+			    <input type="radio" id="allargare" name="opzione">
+			    <label for="allargare">Allargare.</label><br>
+			    <input type="radio" id="ritocchi" name="opzione">
+			    <label for="ritocchi">Ritocchi.</label><br>
+			    <input type="radio" id="sostituzioni" name="opzione">
+			    <label for="sostituzioni">Sostituzioni.</label><br><br>
+			    <input type="radio" id="altro" name="opzione">
+			    <label for="altro">Altro:</label>
+			    <input type="text" id="altro"><br><br>
+			    <label for="tipo">Indicare il tipo di capo:</label>
+			    <select id="tipo" name="tipo">
+			      <option value="vuoto"></option>
+			      <option value="pantalone">Pantalone</option>
+			      <option value="maglia">Maglia</option>
+			      <option value="giacca">Giacca</option>
+			      <option value="gonna">Gonna</option>
+			      <option value="giubbotto">Giubbotto</option>
+			      <option value="borse">Borsa</option>
+			    </select>
+			    <label for="altro">Altro:</label>
+			    <input type="text" id="altro"><br><br>
+			    <label for="tipo">Inserire il cognome e nome:</label>
+			    <input type="text" id="cognome"><br>
+			    <label for="tipo">Inserire il numero di telefono:</label>
+			   <input type="text" id="telefono"><br>
+			   <input type="text" id="telefono"><br><br>
+			   <input type="button" onclick="alert('Prenotato correttamente')" value="PRENOTA" class="prenotazione">
+			</form>
+			<img src="../imgs/sartoria.png" alt="immagine di una macchina da cucire" class="immagine_sartoria">
+			<div class="separatore_sartoria"></div>
+
+			<h2 class="bigiotteria_h2">RIPARAZIONE BIGIOTTERIA</h2>
+			<form class="bigiotteria">
+			    <input type="radio" id="cambio" name="opzione">
+			    <label for="cambio">Cambio terminali</label><br>
+			    <input type="radio" id="aggiusti" name="opzione">
+			    <label for="aggiusti">Aggiusti.</label><br>
+			    <input type="radio" id="cambio" name="opzione">
+			    <label for="cambio">Cambio parti.</label><br>
+			    <input type="radio" id="altro" name="opzione">
+			    <label for="altro">Altro:</label>
+			    <input type="text" id="altro"><br><br>
+			    <label for="tipo">Indicare il tipo di bigiotteria:</label>
+			    <select id="tipo" name="tipo">
+			      <option value="vuoto"></option>
+			      <option value="bracciale">Bracciale</option>
+			      <option value="collane">Collane</option>
+			      <option value="orecchini">Orecchini</option>
+			      <option value="spille">Spille</option>
+			      <option value="anelli">Anelli</option>
+			    </select>
+			    <label for="altro">Altro:</label>
+			    <input type="text" id="altro"><br><br>
+			    <label for="tipo">Inserire il cognome e nome:</label>
+			    <input type="text" id="cognome"><br>
+			    <label for="tipo">Inserire il numero di telefono:</label>
+			    <input type="text" id="telefono"><br><br>
+				<input type="button" onclick="alert('Prenotato correttamente')" value="PRENOTA" class="prenotazione">
+			</form>
+			<img src="../imgs/bigiotteria.png" alt="immagine di collane, orecchini e bracciali" class="immagine_bigiotteria">
+			<div class="separatore_bigiotteria"></div>
+
+			<h2 class="manulita_h2">CORSI DI MANUALTA'</h2>
+			<form class="manualita">
+			    <input type="radio" id="lana" name="opzione">
+			    <label for="lana">Lana Cardata</label><br>
+			    <input type="radio" id="ago" name="opzione">
+			    <label for="ago">Ago Magico.</label><br>
+			    <input type="radio" id="Uncinetto" name="opzione">
+			    <label for="Uncinetto">Unicinetto.</label><br><br>
+			    <label for="altro">DOMANDE:</label>
+			    <input type="text" id="altro"><br><br>
+				<label for="data">Inserire la data di partecipazione:</label>
+  				<input type="date" id="data" name="data" min="1997-06-20"><br>
+  				<label for="tempo">Inserire l'orario che si preferisce:</label>
+				<input type="time" id="time" name="time" min="17:15" max="19:00"><br><br>
+				<label for="tipo">Inserire il cognome e nome:</label>
+			    <input type="text" id="cognome"><br>
+			    <label for="tipo">Inserire il numero di telefono:</label>
+			    <input type="text" id="telefono"><br>
+			    <input type="text" id="telefono"><br><br>
+				<input type="button" onclick="alert('Prenotato correttamente')" value="PRENOTA" class="prenotazione">
+
+			</form>
+			<img src="../imgs/manulita.png" alt="immagine di un tavolo con vari oggetti per la manulità" class="immagine_manulita">
+			<div class="separatore_manulita"></div>
+
+			<h2 class="consulenza_h2">CONSULENZA</h2>
+			<form class="consulenza">
+			    <input type="radio" id="consulenza_1" name="opzione">
+			    <label for="consulenza_1">Consulenza sulla bigiotteria.</label><br>
+			    <input type="radio" id="consulenza_2" name="opzione">
+			    <label for="consulenza_2">Consulenza sulla merceria.</label><br>
+			    <input type="radio" id="consulenza_3" name="opzione">
+			    <label for="consulenza_3">Consulenza sull'abbigliamenti.</label><br><br>
+			    <input type="radio" id="consulenza_4" name="opzione">
+			    <label for="consulenza_4">Consulenza sulla creatività.</label><br><br>
+			    <label for="altro">Altro:</label>
+			    <input type="text" id="altro"><br><br>
+			    <label for="tipo">Inserire il cognome e nome:</label>
+			    <input type="text" id="cognome"><br>
+			    <label for="tipo">Inserire il numero di telefono:</label>
+			   <input type="text" id="telefono"><br>
+			   <input type="text" id="telefono"><br><br>
+				<input type="button" onclick="alert('Prenotato correttamente')" value="PRENOTA" class="prenotazione">
+			</form>
+			<img src="../imgs/consulenza_img.png" alt="immagine di due persone che parlano" class="immagine_consulenza">
+			<div class="separatore_consulenza"></div>
+
+		</section>
+
+		<div class="nero">
+	      <h3><span class="seguici_span">SEGUITECI</span></h3>
+	      <img src="../imgs/facebook.png" alt="immagine facebook" class="img-facebook">
+	      <img src="../imgs/instagram.png" alt="immagine instagram" class="img-instagram">
+	      <img src="../imgs/whatsapp.png" alt="immagine whatsapp" class="img-whatsapp">
+	    </div>
+	    <footer>
+	        <p>&copy;2024 Filolana</p>
+	    </footer>
+	</body>
+</html>

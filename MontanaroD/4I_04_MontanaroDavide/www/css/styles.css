@@ -1,108 +1,109 @@
+
 body {
-    font-family: 'Helvetica Neue', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f7f6; /* un bianco leggero */
-    color: #333; /* un grigio scuro per una migliore leggibilità */
+    font-family: 'Helvetica Neue', sans-serif; /* Imposta il font principale della pagina */
+    margin: 0; /* Rimuove i margini di default del browser */
+    padding: 0; /* Rimuove i padding di default del browser */
+    color: #333; /* grigio scuro  */
 }
 
+
 header {
-    background-color: #004080; /* un blu aziendale profondo */
-    color: white;
-    padding: 20px 40px;
-    position: relative;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #004080; /* Blu profondo */
+    color: white; /* Colore bianco */
+    padding: 20px 40px; /* Spaziatura interna  */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra morbida sotto l'header */
+    text-align: center; /* Centra il contenuto dell'header */
 }
 
 h1 {
-    margin: 0;
-    font-size: 2.8em;
-    font-weight: bold;
-    letter-spacing: 2px;
+    margin: 0; /* Rimuove il margine di default */
+    font-size: 2.8em; /* Imposta una grandezza del font molto grande per il titolo */
+    font-weight: bold; /* Imposta il titolo come grassetto */
+    letter-spacing: 2px; /* Distanza tra le lettere per una visibilità più ampia */
+    text-transform: uppercase; /* Rende il testo tutto maiuscolo */
 }
 
+
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Rimuove i punti elenco di default */
+    padding: 0; /* Rimuove il padding di default */
+    display: flex; /* verticale */
+    justify-content: center; /* Centra gli elementi orizzontalmente */
+    margin-top: 10px; /* Aggiunge un margine sopra la lista per separare dall'header */
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 25px;
+    margin-right: 25px; /* Aggiunge spazio tra i singoli link */
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-    font-weight: 500;
-    text-transform: uppercase;
+    color: white; /* Colore bianco */
+    text-decoration: none ; /* Rimuove la sottolineatura dai link */
+    font-size: 1.2em; /* Aumenta la dimensione del testo */
+    text-transform: uppercase; /* Rende il testo dei link maiuscolo */
+    transition: color 0.3s ease; /* Aggiunge un effetto di transizione quando cambia colore */
 }
 
 nav ul li a:hover {
-    color: #66cc99; /* verde chiaro per il contrasto */
-    border-bottom: 3px solid white;
+    color: #66cc99; /* Cambia il colore del link al verde chiaro quando l'utente ci passa sopra */
 }
+
 
 .logo-header {
     position: absolute;
     top: 60px;
     right: 80px;
-    width: 300px;
+    width: 300px; /* Imposta la larghezza del logo */
 }
 
-main {
-    padding: 60px 40px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
 
 section {
-    margin: 40px 0;
-    padding: 30px;
-    border-left: 5px solid #66cc99; /* verde aziendale per accenti */
-    background-color: #f9fafb;
+    margin: 40px 0; /* Aggiunge margine sopra e sotto le sezioni */
+    padding: 30px; /* Aggiunge spaziatura interna alla sezione */
+    border-left: 5px solid #66cc99; /* Aggiunge una linea verde a sinistra per un accento visivo */
+    background-color: #f9fafb; /* Imposta un colore di sfondo molto chiaro per le sezioni */
 }
 
 footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #004080;
-    color: white;
-    border-top: 5px solid #66cc99; /* accentua il contrasto */
+    text-align: center; /* Centra il testo nel footer */
+    padding: 20px 0; /* Aggiunge spazio sopra e sotto il footer */
+    background-color: #004080; /* Imposta il blu profondo come colore di sfondo del footer */
+    color: white; /* Colore del testo bianco per il footer */
+    border-top: 5px solid #66cc99; /* Aggiunge una linea verde in alto nel footer */
 }
 
 .ceo-member {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-    border: 2px solid #66cc99;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #eef5f1; /* sfondo verde chiaro per i membri */
+    display: flex; /* Usa Flexbox per disporre i membri CEO verticalmente */
+    align-items: center; /* Allinea verticalmente gli elementi */
+    margin-bottom: 40px; /* Aggiunge spazio sotto ogni sezione del CEO */
+    padding: 20px; /* Aggiunge spaziatura interna per separare il contenuto */
+    background-color: #eef5f1; /* Colore di sfondo chiaro per ogni membro del CEO */
+    border-left: 5px solid #66cc99; /* Linea verde a sinistra per il contrasto */
+    border-radius: 10px; /* Angoli arrotondati per un aspetto più morbido */
 }
 
 .ceo-image {
-    width: 250px;
-    border-radius: 50%;
-    margin-left: 20px;
-    border: 3px solid #004080; /* bordi blu aziendale per enfasi */
+    width: 200px; /* Imposta la larghezza dell'immagine del CEO */
+    height: 200px; /* Imposta l'altezza dell'immagine del CEO */
+    border-radius: 50%; /* Rende l'immagine rotonda */
+    margin-right: 20px; /* Aggiunge spazio tra l'immagine e il testo */
+    border: 3px solid #004080; /* Aggiunge un bordo blu intorno all'immagine */
+    object-fit: cover; /* Garantisce che l'immagine riempia correttamente il cerchio */
 }
 
-/* Pulsanti per azioni importanti */
+
+
 button {
-    background-color: #004080;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1.1em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: #004080; /* Colore di sfondo blu per i pulsanti */
+    color: white; /* Colore del testo bianco */
+    padding: 12px 24px; /* Spaziatura interna per i pulsanti */
+    border: ; /* Rimuove il bordo di default */
+    border-radius: 5px; /* Aggiunge angoli arrotondati ai pulsanti */
+    cursor: pointer; /* Cambia il cursore a una mano per indicare che è cliccabile */
+    transition: background-color 111110.3s ease; /* Aggiunge una transizione per il colore di sfondo */
 }
 
 button:hover {
-    background-color: #66cc99; /* verde per l'interazione */
-    color: white;
+    background-color: #66cc99; /* Cambia il colore di sfondo del pulsante quando l'utente ci passa sopra */
+    color: white; /* Mantiene il colore del testo bianco */
 }
