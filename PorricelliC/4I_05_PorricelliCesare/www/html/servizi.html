@@ -1,74 +1,103 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
+    <!-- Imposta il set di caratteri per il documento (UTF-8, che supporta caratteri internazionali come lettere accentate) -->
     <meta charset="UTF-8">
+    
+    <!-- Imposta il comportamento del layout per dispositivi mobili, facendo sì che la pagina si adatti alla larghezza del dispositivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Titolo della pagina, che appare nella barra del browser -->
     <title>Panificio delle Donne - Servizi</title>
+    
+    <!-- Stili CSS per la formattazione della pagina -->
     <style>
+        /* Stile generale per il corpo della pagina */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif; /* Imposta il font della pagina */
+            background-color: #f8f8f8; /* Colore di sfondo chiaro per il corpo della pagina */
+            margin: 0; /* Rimuove i margini predefiniti */
+            padding: 0; /* Rimuove il padding predefinito */
         }
+        
+        /* Stile per l'intestazione della pagina (header) */
         header {
-            background-color: #d35400;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            position: relative;
+            background-color: #d35400; /* Colore di sfondo arancione per l'intestazione */
+            color: #fff; /* Colore del testo bianco */
+            text-align: center; /* Allinea il testo al centro */
+            padding: 20px 0; /* Padding superiore e inferiore per dare spazio all'interno */
+            position: relative; /* Posizione relativa per poter posizionare il logo assolutamente */
         }
+
+        /* Stile per il logo, che si trova nell'angolo in alto a sinistra */
+        
         .logo {
-            max-width: 150px;
-            height: auto;
-            position: absolute;
-            top: 10px;
-            left: 20px;
+            max-width: 150px; /* Imposta la larghezza massima del logo */
+            height: auto; /* Mantiene le proporzioni originali dell'immagine */
+            position: absolute; /* Posizione assoluta per spostare il logo all'interno dell'header */
+            top: 10px; /* Distanza dal bordo superiore */
+            left: 20px; /* Distanza dal bordo sinistro */
         }
+
+        /* Contenitore principale che gestisce il layout e le dimensioni della pagina */
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            width: 80%; /* Imposta la larghezza al 80% della pagina */
+            margin: auto; /* Centra il contenitore orizzontalmente */
+            overflow: hidden; /* Gestisce il flusso di contenuto, impedendo che vada oltre i limiti */
         }
+
+        /* Stile per le sezioni del sito */
         section {
-            margin: 20px 0;
+            margin: 20px 0; /* Aggiunge margini sopra e sotto ogni sezione */
         }
+
+        /* Stile per i titoli delle sezioni (h2) */
         h2 {
-            color: #d35400;
-            border-bottom: 2px solid #d35400;
-            padding-bottom: 10px;
+            color: #d35400; /* Colore arancione per i titoli */
+            border-bottom: 2px solid #d35400; /* Linea sottostante del titolo per separarlo dal contenuto */
+            padding-bottom: 10px; /* Spazio sotto il titolo */
         }
+
+        /* Stile per gli articoli di servizio all'interno di ogni sezione */
         .service-item {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background: #fff; /* Colore di sfondo bianco per ogni elemento di servizio */
+            border: 1px solid #ddd; /* Bordi sottili e chiari */
+            border-radius: 5px; /* Angoli arrotondati per un effetto più morbido */
+            padding: 15px; /* Padding interno per dare spazio ai contenuti */
+            margin-bottom: 20px; /* Spazio sotto ogni servizio */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Aggiunge una leggera ombra per un effetto di profondità */
         }
+
+        /* Stile per i titoli all'interno degli articoli di servizio (h3) */
         .service-item h3 {
-            font-size: 18px;
-            color: #333;
+            font-size: 18px; /* Dimensione del font per il titolo del servizio */
+            color: #333; /* Colore del testo grigio scuro per i titoli */
         }
+
+        /* Stile per i paragrafi descrittivi all'interno degli articoli di servizio */
         .service-item p {
-            font-size: 14px;
-            color: #666;
+            font-size: 14px; /* Dimensione del font per i paragrafi */
+            color: #666; /* Colore del testo grigio per i paragrafi */
         }
+
+        /* Stile per il piè di pagina (footer) */
         footer {
-            background-color: #d35400;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
+            background-color: #d35400; /* Colore di sfondo arancione per il piè di pagina */
+            color: #fff; /* Colore del testo bianco */
+            text-align: center; /* Allinea il testo al centro */
+            padding: 10px 0; /* Padding superiore e inferiore per il piè di pagina */
+            margin-top: 20px; /* Distanza tra il contenuto principale e il piè di pagina */
         }
     </style>
 </head>
 <body>
+    <!-- Intestazione della pagina con il logo e il titolo -->
     <header>
-        <img src="immagini/pane.jpeg" alt="Logo Panificio delle Donne" class="logo">
+        <img src="..\imgs\pane.jpeg" alt="Logo Panificio delle Donne" class="logo">
         <h1>Panificio delle Donne - Servizi</h1>
     </header>
 
+    <!-- Contenitore principale che contiene tutte le sezioni di servizio -->
     <div class="container">
         <!-- Sezione Catering -->
         <section id="catering">
@@ -107,6 +136,7 @@
         </section>
     </div>
 
+    <!-- Piè di pagina con il copyright -->
     <footer>
         <p>&copy; 2024 Panificio delle Donne. Tutti i diritti riservati.</p>
     </footer>

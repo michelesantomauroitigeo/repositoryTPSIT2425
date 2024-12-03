@@ -1,98 +1,42 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chi Siamo - Panificio delle Donne</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            background-color: #ffd700;
-            padding: 20px;
-            margin: 0;
-            border-radius: 5px; /* Aggiunge angoli arrotondati */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra */
-        }
-        .content {
-            margin-top: 30px;
-            font-size: 1.2em;
-            color: #333;
-            line-height: 1.5; /* Migliora la leggibilità con spaziatura tra le righe */
-            padding: 0 20px; /* Padding orizzontale per evitare che il testo tocchi i bordi */
-        }
-        .logo {
-            margin: 20px 0;
-        }
-        .staff-section {
-            display: flex; /* Utilizza flexbox per allineare il contenuto */
-            margin-top: 30px; /* Spazio sopra la sezione dello staff */
-            align-items: flex-start; /* Allinea gli elementi all'inizio */
-            justify-content: flex-start; /* Allinea a sinistra */
-        }
-        .staff-caption {
-            font-weight: bold; /* Rende il testo in grassetto */
-            font-size: 1.5em; /* Dimensione del font per "Staff" */
-            margin-right: 20px; /* Spazio a destra della didascalia */
-        }
-        .staff-image {
-            max-width: 200px; /* Imposta una larghezza massima per l'immagine dello staff */
-            height: auto; /* Mantiene le proporzioni */
-        }
-        .address {
-            text-align: right; /* Allinea a destra l'indirizzo */
-            font-size: 1.2em; /* Dimensione del font per l'indirizzo */
-            color: #333; /* Colore del testo */
-            margin-top: 20px; /* Spazio sopra l'indirizzo */
-        }
-        .footer {
-            margin-top: 50px;
-            font-size: 0.9em;
-            color: #666;
-        }
-        .back-button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #ffd700; /* Colore di sfondo del pulsante */
-            color: #333; /* Colore del testo del pulsante */
-            border: none;
-            border-radius: 5px; /* Angoli arrotondati per il pulsante */
-            cursor: pointer; /* Cambia il cursore al passaggio sopra il pulsante */
-            font-size: 1em; /* Dimensione del font del pulsante */
-        }
-        .back-button:hover {
-            background-color: #ffc107; /* Colore di sfondo al passaggio del mouse */
-        }
-    </style>
+    <!-- Collegamento al file CSS generale per la formattazione -->
+    <link rel="stylesheet" href="..\css\stile.css">
 </head>
 <body>
+    <!-- Intestazione della pagina -->
     <h1>Chi Siamo?</h1>
+
+    <!-- Contenuto principale con descrizione del panificio -->
     <div class="content">
         <p>Il Panificio delle Donne, situato in Borgo San Rocco 10 a Potenza, è un rinomato punto di riferimento per la panificazione tradizionale. Con un ambiente accogliente e familiare, questo panificio offre una varietà di prodotti da forno, tra cui pane, pizza, dolci e altre specialità locali.</p>
         <p>Il pane è particolarmente lodato per la qualità degli ingredienti e la cura artigianale impiegata nella preparazione. Il locale è molto apprezzato per il personale cordiale e l'atmosfera autentica che richiama le tradizioni del sud Italia.</p>
     </div>
-    
+
+    <!-- Sezione dedicata allo staff -->
     <div class="staff-section">
-        <div class="staff-caption">Staff</div> <!-- Didascalia sopra l'immagine dello staff -->
-        <img src="../imgs/staff.jpg" alt="Staff del Panificio delle Donne" class="staff-image"> <!-- Immagine dello staff -->
+        <!-- Didascalia per l'immagine dello staff -->
+        <div class="staff-caption">Staff</div>
+        <!-- Immagine dello staff -->
+        <img src="../imgs/staff.jpg" alt="Staff del Panificio delle Donne" class="staff-image">
     </div>
 
-    <div class="address">Via Borgo San Rocco 10</div> <!-- Indirizzo allineato a destra -->
+    <!-- Indirizzo del panificio -->
+    <div class="address">Via Borgo San Rocco 10</div>
 
+    <!-- Logo del panificio -->
     <div class="logo">
         <img src="../imgs/pane.jpeg" alt="Logo Panificio delle Donne" width="150">
     </div>
-    
+
+    <!-- Pulsante per tornare alla homepage -->
     <button class="back-button" onclick="window.location.href='../index.html'">Torna alla Homepage</button>
 
+    <!-- Footer con i diritti riservati -->
     <div class="footer">
         <p>&copy; 2024 Panificio delle Donne. Tutti i diritti riservati.</p>
     </div>
 </body>
 </html>
-

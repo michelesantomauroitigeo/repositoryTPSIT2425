@@ -1,105 +1,64 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
+    <!-- Meta tag per la codifica dei caratteri e per la responsività del sito su dispositivi mobili -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Titolo della pagina visibile sulla barra del browser -->
     <title>Panificio delle Donne</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            background-color: #ffd700;
-            padding: 20px;
-            margin: 0;
-        }
-        p {
-            font-size: 1.2em;
-            color: #333;
-        }
-        .contatti {
-            text-align: left;
-            margin-top: 100px;
-        }
-        .contatti strong {
-            font-weight: bold;
-        }
-        .logo {
-            margin: 20px 0;
-        }
-        .navigazione {
-            text-align: right;
-            margin-top: 20px;
-        }
-        .navigazione a {
-            color: #000;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-        .indirizzo {
-            text-align: left;
-            margin-top: 1px;
-            font-size: 1em;
-            color: #333;
-        }
-        .registrazione, .recupero-password {
-            margin-top: 20px;
-            text-align: left;
-        }
-        .registrazione a, .recupero-password a {
-            display: inline-block;
-            margin: 5px 0;
-            color: #d35400;
-            text-decoration: underline;
-        }
-        .footer {
-            margin-top: 50px;
-        }
-    </style>
+
+    <!-- Collegamento al file CSS per lo stile della pagina -->
+    <link rel="stylesheet" href="css\stile.css">
 </head>
 <body>
+    <!-- Titolo principale della pagina -->
     <h1>Panificio delle Donne</h1>
+    
+    <!-- Paragrafo introduttivo sulla missione del panificio -->
     <p>Benvenuti al Panificio delle Donne! Offriamo una vasta gamma di prodotti freschi e artigianali, preparati con amore e cura.</p>
     
+    <!-- Sezione per il logo del panificio -->
     <div class="logo">
+        <!-- Immagine del logo del panificio con dimensione definita -->
         <img src="imgs/pane.jpeg" alt="Logo Panificio delle Donne" width="150">
     </div>
 
+    <!-- Sezione con i dettagli di contatto -->
     <div class="contatti">
         <p><strong>Contatti:</strong></p>
+        <!-- Dettaglio del numero di telefono -->
         <p><strong>Telefono:</strong> 3425602023</p>
+        <!-- Link per inviare una email, con il link mailto che apre il client di posta -->
         <p><strong>Email:</strong> <a href="mailto:cesareporricelli90@gmail.com">cesareporricelli90@gmail.com</a></p>
     </div>
 
+    <!-- Sezione di navigazione con i link alle altre pagine del sito -->
     <div class="navigazione">
+        <!-- Link alla pagina "Chi siamo" -->
         <a href="html/chisiamo.html">CHI SIAMO</a>
+        <!-- Link alla pagina di registrazione -->
         <a href="html/registrazione.html">REGISTRAZIONE</a>
+        <!-- Link alla pagina dei prodotti -->
         <a href="html/prodotti.html">PRODOTTI</a>
+        <!-- Link alla pagina dei servizi -->
         <a href="html/servizi.html">SERVIZI</a>
     </div>
 
+    <!-- Sezione che mostra l'indirizzo del panificio -->
     <div class="indirizzo">
+        <!-- Indirizzo del panificio -->
         <strong>Via Borgo San Rocco 10</strong>
     </div>
 
-    <!-- Sezione per Registrazione e Recupero Password -->
+    <!-- Sezione per la registrazione e il recupero password -->
     <div class="registrazione">
         <h2>Registrati o Accedi</h2>
-        <p>Se non hai un account, puoi registrarti <a href="html/registrazione.html">qui</a>.</p>
-    </div>
-
-    <div class="recupero-password">
-        <h2>Recupero Password</h2>
-        <p>Hai dimenticato la password? Clicca <a href="html/recupero password.html">qui</a> per recuperarla.</p>
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2024 Panificio delle Donne. Tutti i diritti riservati.</p>
+        <!-- Link alla pagina di registrazione per chi non ha un account -->
+        <p>Se non hai un account, puoi registrarti <a href="html/registrazione.html">qui</a>.
+        </p>
+        <p>Se hai un account, puoi accedere <a href="html/accedi.html">qui</a>.
+        </p>
     </div>
 </body>
 </html>

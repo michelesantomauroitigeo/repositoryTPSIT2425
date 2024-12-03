@@ -1,172 +1,58 @@
 <!DOCTYPE html>
-
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panificio delle Donne - Prodotti</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #d35400;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            position: relative;
-        }
-        .logo {
-            max-width: 150px;
-            height: auto;
-            position: absolute;
-            top: 10px;
-            left: 20px;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        section {
-            margin: 20px 0;
-        }
-        h2 {
-            color: #d35400;
-            border-bottom: 2px solid #d35400;
-            padding-bottom: 10px;
-        }
-        .product-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .product-item {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 15px;
-            width: 30%;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .product-item img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        .product-item h3 {
-            font-size: 18px;
-            color: #333;
-        }
-        .product-item p {
-            font-size: 14px;
-            color: #666;
-        }
-        footer {
-            background-color: #d35400;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Panificio delle Donne - Servizi</title>
+    <!-- Collegamento al file CSS esterno -->
+    <link rel="stylesheet" href="..\css\stile.css">
 </head>
 <body>
+    <!-- Intestazione con logo e titolo -->
     <header>
-        <img src="../imgs/pane.jpeg" alt="Logo Panificio delle Donne" class="logo">
-        <h1>Panificio delle Donne - Prodotti</h1>
+        <img src="..\imgs\pane.jpeg" alt="Logo Panificio delle Donne" class="logo">
+        <h1>Panificio delle Donne - Servizi</h1>
     </header>
 
     <div class="container">
-        <!-- Sezione Pane -->
-        <section id="pane">
-            <h2>Pane</h2>
-            <div class="product-list">
-                <div class="product-item">
-                    <img src="../imgs/integrale.jpeg" alt="Pane Integrale">
-                    <h3>Pane Integrale</h3>
-                    <p>Pane fatto con farine integrali, ricco di fibre e gusto.</p>
-                </div>
-                <div class="product-item">
-                    <img src="../imgs/semi.jpg" alt="Pane ai Semi">
-                    <h3>Pane ai Semi</h3>
-                    <p>Una deliziosa combinazione di semi di lino, girasole e zucca.</p>
-                </div>
+        <!-- Sezione Catering -->
+        <section id="catering">
+            <h2>Catering</h2>
+            <div class="service-item">
+                <h3>Catering per eventi</h3>
+                <p>Offriamo servizi di catering per feste, matrimoni e eventi aziendali. I nostri prodotti freschi e artigianali renderanno unico il tuo evento.</p>
             </div>
         </section>
 
-        <!-- Sezione Dolci -->
-        <section id="dolci">
-            <h2>Dolci</h2>
-            <div class="product-list">
-                <div class="product-item">
-                    <img src="../imgs/croissant.jpeg" alt="Croissant">
-                    <h3>Croissant</h3>
-                    <p>Classico croissant francese al burro, perfetto per la colazione.</p>
-                </div>
-                <div class="product-item">
-                    <img src="../imgs/torta.jpeg" alt="Torta al Cioccolato">
-                    <h3>Torta al Cioccolato</h3>
-                    <p>Ricca e deliziosa torta al cioccolato fondente.</p>
-                </div>
+        <!-- Sezione Consegna a Domicilio -->
+        <section id="consegna">
+            <h2>Consegna a Domicilio</h2>
+            <div class="service-item">
+                <h3>Consegna di prodotti freschi</h3>
+                <p>Ordina i tuoi prodotti preferiti direttamente da casa e noi li consegneremo freschi e appena sfornati. Disponibile in tutta la città.</p>
             </div>
         </section>
 
-        <!-- Sezione Pasticceria -->
-        <section id="pasticceria">
-            <h2>Pasticceria</h2>
-            <div class="product-list">
-                <div class="product-item">
-                    <img src="../imgs/cannoli.jpeg" alt="Cannoli Siciliani">
-                    <h3>Cannoli Siciliani</h3>
-                    <p>Deliziosi cannoli con crema di ricotta e gocce di cioccolato.</p>
-                </div>
-                <div class="product-item">
-                    <img src="../imgs/mandorle.jpeg" alt="Biscotti alle Mandorle">
-                    <h3>Biscotti alle Mandorle</h3>
-                    <p>Biscotti artigianali alle mandorle, fragranti e croccanti.</p>
-                </div>
+        <!-- Sezione Ordini Speciali -->
+        <section id="ordini-speciali">
+            <h2>Ordini Speciali</h2>
+            <div class="service-item">
+                <h3>Torte e prodotti personalizzati</h3>
+                <p>Realizziamo torte su misura e prodotti da forno per occasioni speciali. Contattaci per discutere i dettagli del tuo ordine personalizzato.</p>
             </div>
         </section>
 
-        <!-- Sezione Prodotti da Forno Salati -->
-        <section id="prodotti-forno-salati">
-            <h2>Prodotti da Forno Salati</h2>
-            <div class="product-list">
-                <div class="product-item">
-                    <img src="../imgs/focaccia.jpeg" alt="Focaccia">
-                    <h3>Focaccia</h3>
-                    <p>Focaccia classica con olio d'oliva e sale grosso.</p>
-                </div>
-                <div class="product-item">
-                    <img src="../imgs/schiacciata.jpeg" alt="Schiacciata">
-                    <h3>Schiacciata</h3>
-                    <p>Schiacciata toscana con rosmarino, soffice e gustosa.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sezione Bevande -->
-        <section id="bevande">
-            <h2>Bevande</h2>
-            <div class="product-list">
-                <div class="product-item">
-                    <img src="../imgs/caffe.jpeg" alt="Caffè">
-                    <h3>Caffè</h3>
-                    <p>Caffè espresso italiano, perfetto per accompagnare i tuoi dolci.</p>
-                </div>
-                <div class="product-item">
-                    <img src="../imgs/succo.jpeg" alt="Succo d'Arancia">
-                    <h3>Succo d'Arancia</h3>
-                    <p>Succo d'arancia fresco, spremuto al momento.</p>
-                </div>
+        <!-- Sezione Corsi di Panificazione -->
+        <section id="corsi-panificazione">
+            <h2>Corsi di Panificazione</h2>
+            <div class="service-item">
+                <h3>Lezioni di panificazione</h3>
+                <p>Partecipa ai nostri corsi per imparare l'arte della panificazione e scoprire i segreti per creare il pane perfetto. Adatto a tutti i livelli.</p>
             </div>
         </section>
     </div>
 
+    <!-- Footer con i diritti riservati -->
     <footer>
         <p>&copy; 2024 Panificio delle Donne. Tutti i diritti riservati.</p>
     </footer>
