@@ -1,70 +1,114 @@
-/* Stili Generali */
+/* Stile Generale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f8f8f8;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-h1 {
-    background-color: #ffd700;
-    padding: 20px;
-    margin: 0;
-}
-
-/* Header */
-header {
+/* Barra di Navigazione */
+.links {
     background-color: #d35400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.links .logo img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.links a {
     color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #ffd700;
+}
+
+.links nav {
+    margin-left: 100px;
+}
+
+/* Titolo Principale */
+.titolo {
+    background-color: #ffd700;
+    color: #333;
     text-align: center;
     padding: 20px 0;
-    position: relative;
 }
 
-.logo {
-    max-width: 76px;
+.titolo h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Contenuto Principale */
+.contenuto {
+    display: flex;
+    align-items: center; /* Allinea verticalmente il testo e l'immagine */
+    justify-content: space-between; /* Distribuisce spazio tra il testo e l'immagine */
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.contenuto p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+    text-align: left; /* Allinea il testo a sinistra */
+    margin-right: 20px; /* Aggiunge uno spazio tra il testo e l'immagine */
+}
+
+.contenuto img {
     height: auto;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    width: 100%;
+    border-radius: 15px; /* Aggiunge bordi arrotondati per un tocco estetico */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Effetto ombra */
 }
 
-/* Contenitore Generale */
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
 
 section {
-    margin: 20px 0;
+    margin-bottom: 40px;
 }
 
-h2 {
-    color: #d35400;
-    border-bottom: 2px solid #d35400;
-    padding-bottom: 10px;
+/* Paragrafi */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
 }
 
-/* Lista Servizi */
-.service-item {
-    background: #fff;
-    border: 1px solid #ddd;
+/* Pulsanti */
+a.button {
+    display: inline-block;
+    background-color: #d35400;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
     border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 }
 
-.service-item h3 {
-    font-size: 18px;
-    color: #333;
-}
-
-.service-item p {
-    font-size: 14px;
-    color: #666;
+a.button:hover {
+    background-color: #c0392b;
 }
 
 /* Footer */
@@ -72,38 +116,224 @@ footer {
     background-color: #d35400;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 20px 10px;
+    width: 100%;
+    margin-top: auto; 
 }
 
-/* Form Generale */
+footer h2 {
+    margin-top: 0;
+}
+
+footer .contatti {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+footer .contatti p {
+    margin: 5px 0;
+}
+
+footer .contatti a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+footer .contatti a:hover {
+    text-decoration: underline;
+}
+
+.testo {
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+.testo p{
+    color: black;
+    font-size: 20px;
+}
+/* Sezione dello Staff */
+.staff {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.staff .staff-titolo {
+    font-size: 24px;
+    color: #d35400;
+    margin-bottom: 20px;
+}
+
+.staff .staff-immagine {
+    height: auto;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+    border-radius: 5px;
+}
+
+/* Pulsante Torna alla Homepage */
+.ritorno {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #d35400;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.ritorno:hover {
+    background-color: #c0392b;
+}
+
 form {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    margin: auto;
-}
-
-input[type="text"], input[type="email"], input[type="password"] {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    margin-left: 550px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+.centro-login {
+    margin-top: 20px;
+    text-align: center;
 }
 
-input[type="submit"] {
+/* Campi di Input */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    border-color: #d35400;
+}
+
+/* Pulsante di Invio */
+form input[type="submit"] {
     background-color: #d35400;
-    color: white;
+    color: #fff;
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 4px;
-    width: 100%;
+    transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
+form input[type="submit"]:hover {
     background-color: #c0392b;
+}
+
+/* Sezione Servizi */
+.servizi-sezione {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.servizi-elem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    flex-direction: column; /* Impostazione per i dispositivi mobili */
+}
+
+.servizi-elem h3 {
+    font-size: 20px;
+    color: #d35400;
+    margin-bottom: 10px;
+}
+
+.servizi-elem p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.servizi-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.servizi-elem {
+    flex-direction: row; /* Disposizione orizzontale per schermi più grandi */
+    text-align: left;
+}
+
+.servizi-elem img {
+    margin-right: 20px;
+}
+
+/* Stile per la sezione prodotti */
+.lista-prod {
+    display: grid;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s , box-shadow 0.3s;
+}
+
+.product-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 18px;
+    color: #d35400;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #555;
 }

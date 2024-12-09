@@ -4,56 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panificio delle Donne - Servizi</title>
-    <!-- Collegamento al file CSS esterno -->
     <link rel="stylesheet" href="..\css\stile.css">
 </head>
 <body>
     <!-- Intestazione con logo e titolo -->
-    <header>
-        <img src="..\imgs\pane.jpeg" alt="Logo Panificio delle Donne" class="logo">
-        <h1>Panificio delle Donne - Servizi</h1>
-    </header>
+    <div class="links">
+        <div class="logo">
+            <img src="../imgs/pane.jpeg" alt="Logo Panificio delle Donne">
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="chisiamo.html">Chi Siamo</a>
+            <a href="prodotti.html">Prodotti</a>
+            <a href="servizi.html">Servizi</a>
+        </nav>
+        <div class="registrazione">
+        <!-- Registrazione -->
+            <a href="registrazione.html" class="button">Registrati</a>
+            <a href="accedi.html" class="button">Accedi</a>
+        </div>
+    </div>
+
+    <h1 class="titolo">PRODOTTI</h1>
 
     <div class="container">
-        <!-- Sezione Catering -->
-        <section id="catering">
-            <h2>Catering</h2>
-            <div class="service-item">
-                <h3>Catering per eventi</h3>
-                <p>Offriamo servizi di catering per feste, matrimoni e eventi aziendali. I nostri prodotti freschi e artigianali renderanno unico il tuo evento.</p>
+    <!-- Sezione Pane -->
+    <section id="pane">
+        <h2>Pane</h2>
+        <div class="lista-prod">
+            <div class="product-item">
+                <img src="../imgs/integrale.jpeg" alt="Pane Integrale" class="product-img">
+                <h3>Pane Integrale</h3>
+                <p>Pane fatto con farine integrali, ricco di fibre e gusto.</p>
             </div>
-        </section>
+            <div class="product-item">
+                <img src="../imgs/semi.jpg" alt="Pane ai Semi" class="product-img">
+                <h3>Pane ai Semi</h3>
+                <p>Una deliziosa combinazione di semi di lino, girasole e zucca.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Sezione Consegna a Domicilio -->
-        <section id="consegna">
-            <h2>Consegna a Domicilio</h2>
-            <div class="service-item">
-                <h3>Consegna di prodotti freschi</h3>
-                <p>Ordina i tuoi prodotti preferiti direttamente da casa e noi li consegneremo freschi e appena sfornati. Disponibile in tutta la città.</p>
+    <!-- Sezione Dolci -->
+    <section id="dolci">
+        <h2>Dolci</h2>
+        <div class="lista-prod">
+            <div class="product-item">
+                <img src="../imgs/croissant.jpeg" alt="Croissant" class="product-img">
+                <h3>Croissant</h3>
+                <p>Classico croissant francese al burro, perfetto per la colazione.</p>
             </div>
-        </section>
+            <div class="product-item">
+                <img src="../imgs/torta.jpeg" alt="Torta al Cioccolato" class="product-img">
+                <h3>Torta al Cioccolato</h3>
+                <p>Ricca e deliziosa torta al cioccolato fondente.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Sezione Ordini Speciali -->
-        <section id="ordini-speciali">
-            <h2>Ordini Speciali</h2>
-            <div class="service-item">
-                <h3>Torte e prodotti personalizzati</h3>
-                <p>Realizziamo torte su misura e prodotti da forno per occasioni speciali. Contattaci per discutere i dettagli del tuo ordine personalizzato.</p>
+    <!-- Sezione Pasticceria -->
+    <section id="pasticceria">
+        <h2>Pasticceria</h2>
+        <div class="lista-prod">
+            <div class="product-item">
+                <img src="../imgs/cannoli.jpeg" alt="Cannoli Siciliani" class="product-img">
+                <h3>Cannoli Siciliani</h3>
+                <p>Deliziosi cannoli con crema di ricotta e gocce di cioccolato.</p>
             </div>
-        </section>
+            <div class="product-item">
+                <img src="../imgs/mandorle.jpeg" alt="Biscotti alle Mandorle" class="product-img">
+                <h3>Biscotti alle Mandorle</h3>
+                <p>Biscotti artigianali alle mandorle, fragranti e croccanti.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Sezione Corsi di Panificazione -->
-        <section id="corsi-panificazione">
-            <h2>Corsi di Panificazione</h2>
-            <div class="service-item">
-                <h3>Lezioni di panificazione</h3>
-                <p>Partecipa ai nostri corsi per imparare l'arte della panificazione e scoprire i segreti per creare il pane perfetto. Adatto a tutti i livelli.</p>
+    <!-- Sezione Prodotti da Forno Salati -->
+    <section id="prodotti-forno-salati">
+        <h2>Prodotti da Forno Salati</h2>
+        <div class="lista-prod">
+            <div class="product-item">
+                <img src="../imgs/focaccia.jpeg" alt="Focaccia" class="product-img">
+                <h3>Focaccia</h3>
+                <p>Focaccia classica con olio d'oliva e sale grosso.</p>
             </div>
-        </section>
+            <div class="product-item">
+                <img src="../imgs/schiacciata.jpeg" alt="Schiacciata" class="product-img">
+                <h3>Schiacciata</h3>
+                <p>Schiacciata toscana con rosmarino, soffice e gustosa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Bevande -->
+    <section id="bevande">
+        <h2>Bevande</h2>
+        <div class="lista-prod">
+            <div class="product-item">
+                <img src="../imgs/caffe.jpeg" alt="Caffè" class="product-img">
+                <h3>Caffè</h3>
+                <p>Caffè espresso italiano, perfetto per accompagnare i tuoi dolci.</p>
+            </div>
+            <div class="product-item">
+                <img src="../imgs/succo.jpeg" alt="Succo d'Arancia" class="product-img">
+                <h3>Succo d'Arancia</h3>
+                <p>Succo d'arancia fresco, spremuto al momento.</p>
+            </div>
+        </div>
+    </section>
     </div>
 
     <!-- Footer con i diritti riservati -->
     <footer>
+        <h2>Contatti</h2>
+        <div class="contatti">
+            <p><strong>Telefono:</strong> 3425602023</p>
+            <p><strong>Email:</strong> <a href="mailto:cesareporricelli90@gmail.com">cesareporricelli90@gmail.com</a></p>
+            <p><strong>Indirizzo:</strong> Via Borgo San Rocco 10</p>
+        </div>
         <p>&copy; 2024 Panificio delle Donne. Tutti i diritti riservati.</p>
     </footer>
 </body>
