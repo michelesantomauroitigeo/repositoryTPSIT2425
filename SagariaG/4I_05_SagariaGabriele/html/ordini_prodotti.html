@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../CSS/grafica_prodotti_ordini.css">
+     	<title>FILOLANA</title>
+	</head>
+	<body>
+		  <nav>
+      <img src="../imgs/logo.png" alt="immagine logo" class="logo">
+      <p class="p-nome">FILOLANA</p>
+      <div class="button-box">
+        <ul>
+          <li class="menu"><a href="../index.html">Home</a></li>
+          <li class="menu"><a href="./prodotto.html">Prodotti</a></li>
+          <li class="menu"><a href="./servizio.html">Servizi</a></li>
+          <li>
+            <a href="">
+              <img src="../imgs/carrello.png" alt="immagine carrello" class="carrello_img">
+            </a>
+          </li>
+        </ul> 
+      </div>
+    </nav>
+    
+    <div class="intestazione">
+      <h3 class="nominativo">PRENOTAZIONE PRODOTTI</h3>
+    </div>
+
+    <div class="lana">
+		<h2>LANA</h2>
+		<form >
+			<p><b>Il prezzo fa riferimento al gomitolo.</b></p>
+		    <label for="tipo">Indicare il tipo di lana:</label>
+		    <select id="tipo" name="tipo" class="tipo">
+		      <option value="vuoto"></option>
+		      <option value="bianco">Lana..........3,80€</option>
+		      <option value="nero">Cotone..........1,70€</option>
+		      <option value="Blue">Misto..........2.50€</option>
+		      <option value="Bordeaux">Lana Sintetica..........2.00€ </option>
+		      <option value="Arancio">Cotone Sintetico..........2,00€</option>
+		      <option value="Celeste">Microfibra..........3,00€</option>
+		    </select><br>
+		    <label for="tipo">Indicare il tipo di colore:</label>
+		    <select id="tipo" name="tipo" class="tipo">
+		      <option value="vuoto"></option>
+		      <option value="bianco">Bianco</option>
+		      <option value="nero">Nero</option>
+		      <option value="Blue">Blue</option>
+		      <option value="Rosso">Rosso</option>
+		      <option value="Bordeaux">Bordeaux </option>
+		      <option value="Arancio">Arancio</option>
+		      <option value="Celeste">Celeste</option>
+		      <option value="Rosa">Rosa</option>
+		      <option value="Verde">Verde</option>
+		    </select><br>
+		    <label for="altro">Richieste particolari:</label>
+		    <input type="text" id="altro"><br>
+		    <label for="altro">Indicare il numero di gomitoli:</label>
+		    <input type="text" id="altro"><br><br>
+		    <label for="tipo">Inserire il cognome e nome:</label>
+		    <input type="text" id="cognome"><br>
+		    <label for="tipo">Inserire il numero di telefono:</label>
+		   <input type="text" id="telefono"><br><br>
+		   <input type="button" onclick="alert('Prenotato correttamente')" value="PRENOTA" class="prenotazione">
+		</form>
+		<img src="../imgs/lana_img.png" alt="immagine di una macchina da cucire" class="immagine_lana">
+		<div class="separatore_lana"></div>
+	</div>
+
+	<div id="#stoffe">
+	<h2 class="tessuti_h2" >TESSUTI</h2>
+	<form class="tessuti">
+		<p><b>I tessuti vanno al metro, il prezzo scritto indica il prezzo/metro.</b></p>
+	    <input type="radio" id="cambio" name="opzione">
+	    <label for="cambio">Lino..........12,50€</label><br>
+	    <input type="radio" id="aggiusti" name="opzione">
+	    <label for="aggiusti">Cotone..........7,99€</label><br>
+	    <input type="radio" id="cambio" name="opzione">
+	    <label for="cambio">Seta..........16,99€</label><br>
+	    <input type="radio" id="altro" name="opzione">
+	    <label for="altro">Lana..........8,99€</label><br>
+	    <input type="radio" id="altro" name="opzione">
+	 	<label for="altro">Poliestere..........6,30€</label><br>
+	 	<input type="radio" id="altro" name="opzione">
+	 	<label for="altro">Velluto..........19,60€</label><br>
+	 	<input type="radio" id="altro" name="opzione">
+	 	<label for="altro">Fodera..........6,20€</label><br>
+	 	<input type="radio" id="altro" name="opzione">
+	 	<label for="altro">TNT(tessuto non tessuto)..........1,50€</label><br>
+	 	<input type="radio" id="altro" name="opzione">
+	 	<label for="altro">Felcro..........6.00€</label><br><br>
+	    <label for="tipo">Indicare il tipo di colore:</label>
+	    <select id="tipo" name="tipo">
+	      <option value="vuoto"></option>
+	      <option value="bianco">Bianco</option>
+	      <option value="nero">Nero</option>
+	      <option value="Blue">Blue</option>
+	      <option value="Rosso">Rosso</option>
+	      <option value="Bordeaux">Bordeaux </option>
+	      <option value="Arancio">Arancio</option>
+	      <option value="Celeste">Celeste</option>
+	      <option value="Rosa">Rosa</option>
+	      <option value="Verde">Verde</option>
+	    </select><br>
+	    <label for="altro">Richieste particolari:</label>
+	    <input type="text" id="altro"><br>
+	    <label for="altro">Indicare il numero di metri:</label>
+	    <input type="text" id="altro"><br><br>
+	    <label for="tipo">Inserire il cognome e nome:</label>
+	    <input type="text" id="cognome"><br>
+	    <label for="tipo">Inserire il numero di telefono:</label>
+	    <input type="text" id="telefono"><br><br>
+		<input type="button" onclick="alert('Prenotato correttamente')" value="PRENOTA" class="prenotazione">
+	</form>
+	<img src="../imgs/stoffa.png" alt="immagine di collane, orecchini e bracciali" class="immagine_tessuti">
+	<div class="separatore_tessuti"></div>
+</div>
+	<h2 class="accessori_h2" id="#accessori">ACCESSORI</h2>
+	<form class="accessori">
+		<p><b>Per Acquistare un accessorio PRESENTARSI IN NEGOZIO.</b></p>
+		<label for="tipo">Inserire il tipo di accessorio:</label>
+		<select id="tipo" name="tipo">
+	      <option value="vuoto"></option>
+	      <option value="bracciale">Bracciale</option>
+	      <option value="collana">Collana</option>
+	      <option value="orecchino">Orecchino</option>
+	      <option value="anello">Anello</option>
+	      <option value="spille">Spille </option>
+	      <option value="cinta">Cinta</option>
+	      <option value="borsa">Borsa</option>
+	    </select><br>
+	    <label for="tipo">Indicare il tipo di colore:</label>
+	    <select id="tipo" name="tipo">
+	      <option value="vuoto"></option>
+	      <option value="bianco">Bianco</option>
+	      <option value="nero">Nero</option>
+	      <option value="Blue">Blue</option>
+	      <option value="Rosso">Rosso</option>
+	      <option value="Bordeaux">Bordeaux </option>
+	      <option value="Arancio">Arancio</option>
+	      <option value="Celeste">Celeste</option>
+	      <option value="Rosa">Rosa</option>
+	      <option value="Verde">Verde</option>
+	    </select><br><br>
+		<label for="tipo">Inserire il cognome e nome:</label>
+	    <input type="text" id="cognome"><br>
+	    <label for="tipo">Inserire il numero di telefono:</label>
+	    <input type="text" id="telefono"><br><br>
+		<input type="button" onclick="alert('Prenotato correttamente')" value="PRENOTA" class="prenotazione">
+
+	</form>
+	<img src="../imgs/accessorio.png" alt="immagine di un tavolo con vari oggetti per la manulità" class="immagine_accessori">
+	<div class="separatore_accessori"></div>
+
+	<h2 class="abbigliamento_h2">ABBIGLIAMENTO</h2>
+	<form class="abbigliamento">
+		<p><b>Per Acquistare i capi di abbigliamento PRESENTARSI IN NEGOZIO.</b></p>
+		<label for="tipo">Inserire il tipo di abbigliamento:</label>
+		<select id="tipo" name="tipo">
+	      <option value="vuoto"></option>
+	      <option value="Gonna">Gonna</option>
+	      <option value="Pantalone Elenagante">Pantalone Elenagante</option>
+	      <option value="Pantalone Di Tuta">Pantalone Di Tuta</option>
+	      <option value="Giacca">Giacca</option>
+	      <option value="Maglia">Maglia</option>
+	      <option value="Cardigan">Cardigan</option>
+	      <option value="Giubbotto">Giubbotto</option>
+	    </select><br>
+	    <label for="tipo">Indicare il tipo di colore:</label>
+	    <select id="tipo" name="tipo">
+	      <option value="vuoto"></option>
+	      <option value="bianco">Bianco</option>
+	      <option value="nero">Nero</option>
+	      <option value="Blue">Blue</option>
+	      <option value="Rosso">Rosso</option>
+	      <option value="Bordeaux">Bordeaux </option>
+	      <option value="Arancio">Arancio</option>
+	      <option value="Celeste">Celeste</option>
+	      <option value="Rosa">Rosa</option>
+	      <option value="Verde">Verde</option>
+	      <option value="Panna">Panna</option>
+	    </select><br>
+	    <label for="tipo">Indicare la taglia:</label>
+	    <select id="tipo" name="tipo">
+	      <option value="vuoto"></option>
+	      <option value="XS">XS</option>
+	      <option value="S">S</option>
+	      <option value="M">M</option>
+	      <option value="L">L</option>
+	      <option value="XL">XL</option>
+	      <option value="XXL">XXL</option>
+	    </select><br><br>
+		<label for="tipo">Inserire il cognome e nome:</label>
+	    <input type="text" id="cognome"><br>
+	    <label for="tipo">Inserire il numero di telefono:</label>
+	    <input type="text" id="telefono"><br><br>
+		<input type="button" onclick="alert('Prenotato correttamente')" value="PRENOTA" class="prenotazione">
+
+	</form>
+	<img src="../imgs/abbigliamento.png" alt="immagine di due persone che parlano" class="immagine_abbigliamento">
+	<div class="separatore_abbigliamento"></div>
+
+
+	<h2 class="merceria_h2">MERCERIA</h2>
+	<form class="merceria">
+		<p><b>Fai la tua Scelta</b></p>
+	    <input type="radio" id="cambio" name="opzione">
+	    <label for="cambio">Cerniera</label><br>
+	    <label for="cambio">Tipo di cerniera</label>
+	    <select id="tipo" name="tipo">
+	      <option value="vuoto"></option>
+	      <option value="Cerniera a doppio Cursore">Cerniera a doppio Cursore</option>
+	      <option value="Cerniera a Carroarmato">Cerniera a Carroarmato</option>
+	      <option value="Cerniera">Cerniera Invisibile</option>
+	    </select><br><br>
+	    <input type="radio" id="aggiusti" name="opzione">
+	    <label for="aggiusti">Spagnoletta di filo</label><br><br>
+	    <input type="radio" id="cambio" name="opzione">
+	    <label for="cambio">Nastro di seta</label><br>
+	    <input type="radio" id="altro" name="opzione">
+	    <label for="altro">Nastro di cotone</label><br>
+	    <label for="altro">Tipo di nastro:</label>
+	    <select id="tipo" name="tipo">
+	      <option value="vuoto"></option>
+	      <option value="Cerniera a doppio Cursore">Monocolore</option>
+	      <option value="Cerniera a Carroarmato">Fantasia</option>
+	    </select><br><br>
+	    <input type="radio" id="altro" name="opzione">
+	 	<label for="altro">Elastico</label><br>
+	    <input type="radio" id="altro" name="opzione">
+	 	<label for="altro">Gros grain</label><br>
+		<label for="altro">Spessore del Gros grain/nastro/elastico</label>
+	 	<select id="tipo" name="tipo">
+	      <option value="vuoto"></option>
+	      <option value="Cerniera a doppio Cursore">0.5 cm</option>
+	      <option value="Cerniera a Carroarmato">1 cm</option>
+	      <option value="Cerniera a Carroarmato">1.5 cm</option>
+	      <option value="Cerniera a Carroarmato">2 cm</option>
+	      <option value="Cerniera a Carroarmato">2.5 cm</option>
+	      <option value="Cerniera a Carroarmato">3 cm</option>
+	      <option value="Cerniera a Carroarmato">4 cm</option>
+	      <option value="Cerniera a Carroarmato">5 cm</option>
+	      <option value="Cerniera a Carroarmato">6 cm</option>
+	    </select><br><br>
+	    <label for="altro">Richieste particolari:</label>
+	    <input type="text" id="altro"><br>
+	    <label for="altro">Indicare il numero di metri:</label>
+	    <input type="text" id="altro"><br>
+	     <label for="tipo">Indicare il tipo di colore:</label>
+	    <select id="tipo" name="tipo">
+	      <option value="vuoto"></option>
+	      <option value="bianco">Bianco</option>
+	      <option value="nero">Nero</option>
+	      <option value="Blue">Blue</option>
+	      <option value="Rosso">Rosso</option>
+	      <option value="Bordeaux">Bordeaux </option>
+	      <option value="Arancio">Arancio</option>
+	      <option value="Celeste">Celeste</option>
+	      <option value="Rosa">Rosa</option>
+	      <option value="Verde">Verde</option>
+	      <option value="Panna">Panna</option>
+	    </select><br><br>
+	    <label for="tipo">Inserire il cognome e nome:</label>
+	    <input type="text" id="cognome"><br>
+	    <label for="tipo">Inserire il numero di telefono:</label>
+	    <input type="text" id="telefono"><br><br>
+		<input type="button" onclick="alert('Prenotato correttamente')" value="PRENOTA" class="prenotazione">
+	</form>
+	<img src="../imgs/merceria.png" alt="immagine di collane, orecchini e bracciali" class="immagine_merceria">
+	<div class="separatore_merceria"></div>
+
+
+		<div class="nero">
+	      <h3><span class="seguici_span">SEGUITECI</span></h3>
+	      <img src="../imgs/facebook.png" alt="immagine facebook" class="img-facebook">
+	      <img src="../imgs/instagram.png" alt="immagine instagram" class="img-instagram">
+	      <img src="../imgs/whatsapp.png" alt="immagine whatsapp" class="img-whatsapp">
+	    </div>
+	    <footer>
+	        <p>&copy;2024 Filolana</p>
+	    </footer>
+	</body>
+</html>
