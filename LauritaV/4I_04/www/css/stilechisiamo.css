@@ -15,6 +15,7 @@ body {
     background-image: url("../imgs/sfondo.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     z-index: 1;
     display: flex;

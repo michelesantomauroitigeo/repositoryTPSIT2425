@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Specifica il tipo di documento come HTML5 -->
+    <meta charset="UTF-8"> <!-- Definisce la codifica dei caratteri come UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rende il sito responsive sui dispositivi mobili -->
+    <title>Accedi - Panificio delle Donne</title> <!-- Titolo della pagina che appare nella scheda del browser -->
+    <link rel="stylesheet" href="..\css\stile.css"> <!-- Collega il file CSS esterno per la formattazione -->
+</head>
+<body>
+    <h1 class="centro-login" >Accedi</h1> 
+    <!-- Intestazione principale della pagina -->
+
+    <!-- Modulo di registrazione -->
+    <form action="process_registration" method="POST">
+
+        <!-- Campo di input per l'email, obbligatorio -->
+        <input type="email" name="email" placeholder="Email" required>
+
+        <!-- Campo di input per la password, obbligatorio -->
+        <input type="password" name="password" placeholder="Password" required>
+
+        <!-- Pulsante per inviare il modulo -->
+        <input type="submit" value="Accedi">
+    </form>
+    <a href="../index.html" class="ritorno">Torna alla Homepage</a>
+</body>
+</html>

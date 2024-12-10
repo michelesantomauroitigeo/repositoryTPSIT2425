@@ -4,110 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panificio delle Donne - Servizi</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #d35400;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            position: relative;
-        }
-        .logo {
-            max-width: 150px;
-            height: auto;
-            position: absolute;
-            top: 10px;
-            left: 20px;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        section {
-            margin: 20px 0;
-        }
-        h2 {
-            color: #d35400;
-            border-bottom: 2px solid #d35400;
-            padding-bottom: 10px;
-        }
-        .service-item {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .service-item h3 {
-            font-size: 18px;
-            color: #333;
-        }
-        .service-item p {
-            font-size: 14px;
-            color: #666;
-        }
-        footer {
-            background-color: #d35400;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="..\css\stile.css">
 </head>
 <body>
-    <header>
-        <img src="immagini/pane.jpeg" alt="Logo Panificio delle Donne" class="logo">
-        <h1>Panificio delle Donne - Servizi</h1>
-    </header>
+    <!-- Intestazione con logo e titolo -->
+    <div class="links">
+        <div class="logo">
+            <img src="../imgs/pane.jpeg" alt="Logo Panificio delle Donne">
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="chisiamo.html">Chi Siamo</a>
+            <a href="prodotti.html">Prodotti</a>
+            <a href="servizi.html">Servizi</a>
+        </nav>
+        <div class="registrazione">
+        <!-- Registrazione -->
+            <a href="registrazione.html" class="button">Registrati</a>
+            <a href="accedi.html" class="button">Accedi</a>
+        </div>
+    </div>
+
+    <h1 class="titolo">PRODOTTI</h1>
 
     <div class="container">
         <!-- Sezione Catering -->
-        <section id="catering">
+        <section class="servizi-sezione">
             <h2>Catering</h2>
-            <div class="service-item">
+            <div class="servizi-elem">
+                <img src="../imgs/catering.jpg" alt="Servizio Catering" class="servizi-img">
                 <h3>Catering per eventi</h3>
                 <p>Offriamo servizi di catering per feste, matrimoni e eventi aziendali. I nostri prodotti freschi e artigianali renderanno unico il tuo evento.</p>
             </div>
         </section>
 
         <!-- Sezione Consegna a Domicilio -->
-        <section id="consegna">
+        <section class="servizi-sezione">
             <h2>Consegna a Domicilio</h2>
-            <div class="service-item">
+            <div class="servizi-elem">
+                <img src="../imgs/consegna.jpg" alt="Consegna a Domicilio" class="servizi-img">
                 <h3>Consegna di prodotti freschi</h3>
                 <p>Ordina i tuoi prodotti preferiti direttamente da casa e noi li consegneremo freschi e appena sfornati. Disponibile in tutta la città.</p>
             </div>
         </section>
 
         <!-- Sezione Ordini Speciali -->
-        <section id="ordini-speciali">
+        <section class="servizi-sezione">
             <h2>Ordini Speciali</h2>
-            <div class="service-item">
+            <div class="servizi-elem">
+                <img src="../imgs/torte.jpg" alt="Torte personalizzate" class="servizi-img">
                 <h3>Torte e prodotti personalizzati</h3>
                 <p>Realizziamo torte su misura e prodotti da forno per occasioni speciali. Contattaci per discutere i dettagli del tuo ordine personalizzato.</p>
             </div>
         </section>
 
         <!-- Sezione Corsi di Panificazione -->
-        <section id="corsi-panificazione">
+        <section class="servizi-sezione">
             <h2>Corsi di Panificazione</h2>
-            <div class="service-item">
+            <div class="servizi-elem">
+                <img src="../imgs/corsi.jpg" alt="Corsi di panificazione" class="servizi-img">
                 <h3>Lezioni di panificazione</h3>
                 <p>Partecipa ai nostri corsi per imparare l'arte della panificazione e scoprire i segreti per creare il pane perfetto. Adatto a tutti i livelli.</p>
             </div>
         </section>
     </div>
 
+    <!-- Footer con i diritti riservati -->
     <footer>
+        <h2>Contatti</h2>
+        <div class="contatti">
+            <p><strong>Telefono:</strong> 3425602023</p>
+            <p><strong>Email:</strong> <a href="mailto:cesareporricelli90@gmail.com">cesareporricelli90@gmail.com</a></p>
+            <p><strong>Indirizzo:</strong> Via Borgo San Rocco 10</p>
+        </div>
         <p>&copy; 2024 Panificio delle Donne. Tutti i diritti riservati.</p>
     </footer>
 </body>

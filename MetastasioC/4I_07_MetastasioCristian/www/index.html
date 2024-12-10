@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+
+  <h1>Pagina index  con Javascript</h1>
+  <h2>Cambio di un blocco di testo</h2>
+  <button type="button" onclick="myFunction()">Clicca qui!</button>
+
+  <p id="demo">Esempio</p>
+
+  <script>
+function myFunction() { 
+  document.getElementById("demo").innerHTML = "Metastasio Cristian";
+}
+</script>
+
+
+
+
+ <div> 
+  <center>
+  <h3>Cambio di immagine</h3>
+  
+  <button onclick="document.getElementById('myImage').src='imgs/pic_bulbon.gif'">Accendi la lampadina</button>
+  <img id="myImage" src="imgs/pic_bulboff.gif" style="width:100px">
+  <button onclick="document.getElementById('myImage').src='imgs/pic_bulboff.gif'">Spegni la lampadina</button>
+
+</center>
+</div>
+</body>
+</html>
+
