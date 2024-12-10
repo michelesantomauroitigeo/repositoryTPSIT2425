@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Introduzione</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <h2>Che cosa può fare Javascript?</h2>
+    <p id="testo">
+        Javascript può cambiare il contenuto di un tag,<br>
+        cambiare lo stile di un componente html,<br>
+        e nascondere componenti html o mostrare quelli nascosti.
+    </p>
+    <div class="spazio">
+        <button type="button" onclick="cambiotesto()">Prova!</button>
+        <button type="button" onclick="stile()">Cambia lo stile!</button>
+        <button type="button" onclick="nascondi()">Nascondi!</button>
+        <button type="button" onclick="mostra()">Mostra!</button>
+    </div>
+    
+    <p>Può cambiare il valore di attributi</p>
+    <img id="porta" src="imgs/chiuso.png" alt="Porta chiusa">
+    <div>
+        <button type="button" onclick="apri()">Apri</button>
+        <button type="button" onclick="chiudi()">Chiudi</button>
+    </div>
+</body>
+</html>
