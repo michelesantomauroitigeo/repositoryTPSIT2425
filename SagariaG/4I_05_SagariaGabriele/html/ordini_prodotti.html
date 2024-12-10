@@ -28,12 +28,15 @@
       <h3 class="nominativo">PRENOTAZIONE PRODOTTI</h3>
     </div>
 
+
     <div class="lana">
-		<h2>LANA</h2>
+    <span>
+    	<h2>LANA</h2>
+    </span>
 		<form >
 			<p><b>Il prezzo fa riferimento al gomitolo.</b></p>
 		    <label for="tipo">Indicare il tipo di lana:</label>
-		    <select id="tipo" name="tipo" class="tipo">
+		    <select id="tipo" name="tipo">
 		      <option value="vuoto"></option>
 		      <option value="bianco">Lana..........3,80€</option>
 		      <option value="nero">Cotone..........1,70€</option>
@@ -43,7 +46,7 @@
 		      <option value="Celeste">Microfibra..........3,00€</option>
 		    </select><br>
 		    <label for="tipo">Indicare il tipo di colore:</label>
-		    <select id="tipo" name="tipo" class="tipo">
+		    <select id="tipo" name="tipo">
 		      <option value="vuoto"></option>
 		      <option value="bianco">Bianco</option>
 		      <option value="nero">Nero</option>
@@ -65,32 +68,29 @@
 		   <input type="text" id="telefono"><br><br>
 		   <input type="button" onclick="alert('Prenotato correttamente')" value="PRENOTA" class="prenotazione">
 		</form>
-		<img src="../imgs/lana_img.png" alt="immagine di una macchina da cucire" class="immagine_lana">
+		<img src="../imgs/lana_img.png" alt="immagine di una macchina da cucire">
 		<div class="separatore_lana"></div>
 	</div>
 
-	<div id="#stoffe">
-	<h2 class="tessuti_h2" >TESSUTI</h2>
-	<form class="tessuti">
+	<div class="stoffe">
+	<span>
+    	<h2>TESSUTI</h2>
+    </span>
+	<form>
 		<p><b>I tessuti vanno al metro, il prezzo scritto indica il prezzo/metro.</b></p>
-	    <input type="radio" id="cambio" name="opzione">
-	    <label for="cambio">Lino..........12,50€</label><br>
-	    <input type="radio" id="aggiusti" name="opzione">
-	    <label for="aggiusti">Cotone..........7,99€</label><br>
-	    <input type="radio" id="cambio" name="opzione">
-	    <label for="cambio">Seta..........16,99€</label><br>
-	    <input type="radio" id="altro" name="opzione">
-	    <label for="altro">Lana..........8,99€</label><br>
-	    <input type="radio" id="altro" name="opzione">
-	 	<label for="altro">Poliestere..........6,30€</label><br>
-	 	<input type="radio" id="altro" name="opzione">
-	 	<label for="altro">Velluto..........19,60€</label><br>
-	 	<input type="radio" id="altro" name="opzione">
-	 	<label for="altro">Fodera..........6,20€</label><br>
-	 	<input type="radio" id="altro" name="opzione">
-	 	<label for="altro">TNT(tessuto non tessuto)..........1,50€</label><br>
-	 	<input type="radio" id="altro" name="opzione">
-	 	<label for="altro">Felcro..........6.00€</label><br><br>
+		<label for="tipo">Indicare il tipo di lana:</label>
+		    <select id="tipo" name="tipo">  
+		    	<option value="vuoto"></option>
+				  <option for="cambio">Lino..........12,50€</option><br>
+				  <option for="aggiusti">Cotone..........7,99€</option><br>
+				  <option for="cambio">Seta..........16,99€</option><br>
+				  <option for="altro">Lana..........8,99€</option><br>
+				 	<option for="altro">Poliestere..........6,30€</option><br>
+				 	<option for="altro">Velluto..........19,60€</option><br>
+				 	<option for="altro">Fodera..........6,20€</option><br>
+				 	<option for="altro">TNT(tessuto non tessuto)..........1,50€</option><br>
+				 	<option for="altro">Felcro..........6.00€</option><br><br>
+			 	</select><br>
 	    <label for="tipo">Indicare il tipo di colore:</label>
 	    <select id="tipo" name="tipo">
 	      <option value="vuoto"></option>
@@ -114,45 +114,49 @@
 	    <input type="text" id="telefono"><br><br>
 		<input type="button" onclick="alert('Prenotato correttamente')" value="PRENOTA" class="prenotazione">
 	</form>
-	<img src="../imgs/stoffa.png" alt="immagine di collane, orecchini e bracciali" class="immagine_tessuti">
-	<div class="separatore_tessuti"></div>
+	<img src="../imgs/stoffa.png" alt="immagine di collane, orecchini e bracciali">
 </div>
-	<h2 class="accessori_h2" id="#accessori">ACCESSORI</h2>
-	<form class="accessori">
-		<p><b>Per Acquistare un accessorio PRESENTARSI IN NEGOZIO.</b></p>
-		<label for="tipo">Inserire il tipo di accessorio:</label>
-		<select id="tipo" name="tipo">
-	      <option value="vuoto"></option>
-	      <option value="bracciale">Bracciale</option>
-	      <option value="collana">Collana</option>
-	      <option value="orecchino">Orecchino</option>
-	      <option value="anello">Anello</option>
-	      <option value="spille">Spille </option>
-	      <option value="cinta">Cinta</option>
-	      <option value="borsa">Borsa</option>
-	    </select><br>
-	    <label for="tipo">Indicare il tipo di colore:</label>
-	    <select id="tipo" name="tipo">
-	      <option value="vuoto"></option>
-	      <option value="bianco">Bianco</option>
-	      <option value="nero">Nero</option>
-	      <option value="Blue">Blue</option>
-	      <option value="Rosso">Rosso</option>
-	      <option value="Bordeaux">Bordeaux </option>
-	      <option value="Arancio">Arancio</option>
-	      <option value="Celeste">Celeste</option>
-	      <option value="Rosa">Rosa</option>
-	      <option value="Verde">Verde</option>
-	    </select><br><br>
-		<label for="tipo">Inserire il cognome e nome:</label>
-	    <input type="text" id="cognome"><br>
-	    <label for="tipo">Inserire il numero di telefono:</label>
-	    <input type="text" id="telefono"><br><br>
-		<input type="button" onclick="alert('Prenotato correttamente')" value="PRENOTA" class="prenotazione">
 
-	</form>
-	<img src="../imgs/accessorio.png" alt="immagine di un tavolo con vari oggetti per la manulità" class="immagine_accessori">
-	<div class="separatore_accessori"></div>
+
+	<!--<div class="accessori">
+	<span>	
+		<h2 class="" >ACCESSORI</h2>
+	</span>
+		<form class="accessori">
+			<p><b>Per Acquistare un accessorio PRESENTARSI IN NEGOZIO.</b></p>
+			<label for="tipo">Inserire il tipo di accessorio:</label>
+			<select id="tipo" name="tipo">
+		      <option value="vuoto"></option>
+		      <option value="bracciale">Bracciale</option>
+		      <option value="collana">Collana</option>
+		      <option value="orecchino">Orecchino</option>
+		      <option value="anello">Anello</option>
+		      <option value="spille">Spille </option>
+		      <option value="cinta">Cinta</option>
+		      <option value="borsa">Borsa</option>
+		    </select><br>
+		    <label for="tipo">Indicare il tipo di colore:</label>
+		    <select id="tipo" name="tipo">
+		      <option value="vuoto"></option>
+		      <option value="bianco">Bianco</option>
+		      <option value="nero">Nero</option>
+		      <option value="Blue">Blue</option>
+		      <option value="Rosso">Rosso</option>
+		      <option value="Bordeaux">Bordeaux </option>
+		      <option value="Arancio">Arancio</option>
+		      <option value="Celeste">Celeste</option>
+		      <option value="Rosa">Rosa</option>
+		      <option value="Verde">Verde</option>
+		    </select><br><br>
+			<label for="tipo">Inserire il cognome e nome:</label>
+		    <input type="text" id="cognome"><br>
+		    <label for="tipo">Inserire il numero di telefono:</label>
+		    <input type="text" id="telefono"><br><br>
+			<input type="button" onclick="alert('Prenotato correttamente')" value="PRENOTA" class="prenotazione">
+
+		</form>
+		<img src="../imgs/accessorio.png" alt="immagine di un tavolo con vari oggetti per la manulità" >
+	</div>
 
 	<h2 class="abbigliamento_h2">ABBIGLIAMENTO</h2>
 	<form class="abbigliamento">
@@ -271,15 +275,12 @@
 	<img src="../imgs/merceria.png" alt="immagine di collane, orecchini e bracciali" class="immagine_merceria">
 	<div class="separatore_merceria"></div>
 
-
+!-->
 		<div class="nero">
 	      <h3><span class="seguici_span">SEGUITECI</span></h3>
 	      <img src="../imgs/facebook.png" alt="immagine facebook" class="img-facebook">
 	      <img src="../imgs/instagram.png" alt="immagine instagram" class="img-instagram">
 	      <img src="../imgs/whatsapp.png" alt="immagine whatsapp" class="img-whatsapp">
 	    </div>
-	    <footer>
-	        <p>&copy;2024 Filolana</p>
-	    </footer>
 	</body>
 </html>
