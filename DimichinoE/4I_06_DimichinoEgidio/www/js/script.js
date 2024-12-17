@@ -1,4 +1,4 @@
-function semafororosso() {
+function semaforoRosso() {
   document.getElementById("Semaforo").src = "imgs/rosso.png";
 }
 function semaforoGiallo() {
