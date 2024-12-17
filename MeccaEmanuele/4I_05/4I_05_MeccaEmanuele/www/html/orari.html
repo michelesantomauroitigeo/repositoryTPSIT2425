@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orari di Apertura</title>
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/premium-vector/hand-drawn-barber-salon-seamless-pattern_698782-809.jpg');
+            background-size: cover; /* Fa sì che l'immagine copra l'intero schermo */
+            background-position: center center; /* Posiziona l'immagine al centro */
+            background-repeat: no-repeat; /* Impedisce che l'immagine si ripeta */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .orari {
+            background-color: rgba(255, 255, 255, 0.8); /* Sfondo bianco semitrasparente */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .chiuso {
+            color: #ff3333;
+            font-weight: bold;
+        }
+
+        .indietro {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .indietro:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .orari img {
+            position: absolute;
+            width: 50px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .orari .top-left {
+            top: 20px;
+            left: 20px;
+        }
+
+        .orari .top-right {
+            top: 20px;
+            right: 20px;
+        }
+
+        .orari .bottom-left {
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .orari .bottom-right {
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="orari">
+        <img class="top-left" src="https://cdn-icons-png.flaticon.com/512/66/66165.png" alt="Icona Orari">
+        <img class="top-right" src="https://cdn-icons-png.flaticon.com/512/66/66165.png" alt="Icona Orari">
+        <img class="bottom-left" src="https://cdn-icons-png.flaticon.com/512/66/66165.png" alt="Icona Orari">
+        <img class="bottom-right" src="https://cdn-icons-png.flaticon.com/512/66/66165.png" alt="Icona Orari">
+        
+        <h1>Orari di Apertura</h1>
+        <p>Lunedì: dalle 8 alle 18</p>
+        <p>Martedì: dalle 9 alle 19</p>
+        <p>Mercoledì: dalle 10 alle 20</p>
+        <p class="chiuso">Giovedì: CHIUSO</p>
+        <p>Venerdì: dalle 11 alle 17:30</p>
+        <p>Sabato: dalle 7:30 alle 13:30</p>
+        <p class="chiuso">Domenica: CHIUSO</p>
+        <a href="./area_riservata.html" class="indietro">Indietro</a>
+    </div>
+</body>
+</html>

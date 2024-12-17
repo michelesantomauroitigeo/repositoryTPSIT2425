@@ -1,0 +1,239 @@
+body {
+  background-image: url("../imgs/immagine_sfondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+th {
+  border-bottom: outset;
+  border-bottom: rgb(139, 103, 36) solid;
+  font-size: 250%;
+  padding: 15px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+div.center {
+  text-align: center;
+  width: 100%;
+}
+h1 {
+  font-size: 400%;
+
+}
+form {
+  color: rgb(139, 103, 36);
+  font-size: 300%;
+}
+input {
+  font-size: 75%;
+}
+
+a {
+  color: whitesmoke;
+}
+
+div.homelogin {
+  height: 65px;
+  position: absolute;
+  top: 2.5%;
+}
+
+div.technician {
+  border: 5px solid rgb(139, 103, 36);
+  img {
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-top: 15px;
+    height: 300px;
+  }
+  p {
+    padding-right: 20px;
+    font-size: 241%;
+    position: absolute;
+    left: 29%;
+    top: 34%;
+  }
+  h1 {
+    font-size: 200%;
+    padding-left: 5%;
+  }
+}
+
+div.design {
+  border: 5px solid white;
+
+  float: right;
+
+  border-block-end: 30;
+  img {
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    height: 250px;
+    float: right;
+  }
+  p {
+    padding-left: 20px;
+    font-size: 235%;
+  }
+  h1 {
+    font-size: 200%;
+    padding-left: 75%;
+  }
+}
+
+div.pizza {
+  border: 5px solid yellow;
+  float: left;
+  img {
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-top: 15px;
+    height: 300px;
+    float: left;
+  }
+  p {
+    padding-right: 20px;
+    font-size: 250%;
+  }
+  h1 {
+    font-size: 200%;
+    padding-left: 5%;
+  }
+}
+
+div.reserved_area {
+  h2 {
+    color: blanchedalmond;
+  }
+}
+
+div.container_CH {
+  p {
+    font-size: larger;
+  }
+}
+
+div.time_CH {
+  border: 5px solid orange;
+  width: 32%;
+  padding-left: 15px;
+  float: left;
+  height: 230px;
+}
+div.remote_CH {
+  border: 5px solid orange;
+  padding-left: 15px;
+  float: left;
+  height: 230px;
+  width: 31.5%;
+}
+
+div.negozi_CH {
+  border: 5px solid orange;
+  padding-left: 15px;
+  float: left;
+  height: 230px;
+  width: 32%;
+}
+
+div.contatti {
+  border: 5px solid rgb(221, 180, 207);
+  padding-left: 15px;
+  img {
+    width: 25%;
+    padding-left: 40%;
+  }
+}
+
+div.time_PB {
+  border: 5px solid yellow;
+  width: 32%;
+  padding-left: 15px;
+  float: left;
+  height: 230px;
+}
+
+div.menu_PB {
+  border: 5px solid yellow;
+  width: 31%;
+  padding-left: 15px;
+  float: left;
+  height: 230px;
+}
+
+div.negozi_PB {
+  border: 5px solid yellow;
+  width: 31%;
+  padding-left: 15px;
+  float: left;
+  height: 230px;
+}
+
+
+div.product_TD{
+  border: 5px solid white;
+  width: 32%;
+  padding-left: 15px;
+  float: left;
+  height: 230px;
+
+  p{
+    font-size: 115%;
+  }
+}
+
+div.fiver_TD{
+  border: 5px solid white;
+  width: 31%;
+  padding-left: 15px;
+  float: left;
+  height: 230px;
+
+  p{
+    font-size: 125%;
+  }
+}
+
+div.vr_TD{
+  border: 5px solid white;
+  width: 32%;
+  padding-left: 15px;
+  float: left;
+  height: 230px;
+  
+  p{
+    font-size: 105%;
+  }
+}
+
+#Bandiera{
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+.eng{
+  width: 100%;
+  display: flex;
+  img{
+    cursor: pointer;
+  }
+}
+.kepler{
+  text-align: center;
+  width: 100%;
+}
+#BandieraIta{
+  height: 90px;
+  width: 90px;
+}
+#bandieraEng{
+  height: 100px;
+  width: 100px;
+}
