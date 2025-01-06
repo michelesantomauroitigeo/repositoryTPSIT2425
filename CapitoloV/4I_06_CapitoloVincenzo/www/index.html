@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h1 style="font-size: 50px">Modifiche con JavaScript</h1>
+		<p style="font-size: 20px">JavaScript puo' fare varie modifiche su testi e non solo</p>
+		<p style="font-size: 20px">Nel primo caso fa scomparire, il testo nel secondo modifica il contenuto</p><br><br>
+		<p style="font-size: 35px" id="demo1">Ecco come farlo scomparire</p>
+		<button type="button" onclick="document.getElementById('demo1').style.display='none'">Scompari</button>
+		<button type="button" onclick="document.getElementById('demo1').style.display='block'">Appari</button><br><br>
+		<p style="font-size: 35px" id="demo2">Ecco come modificare il contenuto</p>
+		<button type="button" onclick='document.getElementById("demo2").innerHTML = "Vedi è stato modificato"'>Modifica</button>
+		<button type="button" onclick='document.getElementById("demo2").innerHTML = "Ecco come modificare il contenuto"'>Ripristina</button>
+	</body>
+</html>
