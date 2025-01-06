@@ -1,0 +1,48 @@
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0%;
+}
+
+nav{
+	border: 2px dashed;
+	display: flex;
+	justify-content: space-between;
+}
+
+.blocco_sinistra{
+	display: flex;
+	align-items: center;
+	margin-left:1% ;
+	margin-top:3% ;
+	margin-bottom:3% ;
+}
+
+.blocco_sinistra img{
+	width: 20%;
+	border: solid black;
+	margin-right: 1%;
+}
+
+.blocco_sinistra a{
+	font-size: 125%;
+	margin-left: 3.7%;
+}
+
+.blocco_destra{
+	display: flex;
+	align-items: center;
+	margin-top:3% ;
+	margin-bottom:3% ;
+	margin-right: 2.5%;
+}
+
+
+
+.blocco_destra a{
+	font-size: 125%;
+}
+
+.login{
+	margin-right: 30%;
+}

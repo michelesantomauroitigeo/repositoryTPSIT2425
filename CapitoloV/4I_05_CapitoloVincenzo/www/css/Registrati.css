@@ -1,0 +1,26 @@
+div{
+	background-color: #ffff00;
+}
+.div1{
+	background-color: #ffff00;
+	width: 400px;
+	height: 700px;
+	margin: auto;
+	padding: 10px;
+	border: solid;
+}
+.div2{
+	background-color: #ffff00;
+	float: left;
+	color: black; 
+	font-size: 30px; 
+	text-align: center;
+	width: 230px;
+	height: 140px;
+	border: solid;
+	padding: 10px;
+}
+form{
+	text-align: center;
+	font-size: 30px;
+}

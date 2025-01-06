@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prova JavaScript</title>
+    <link rel="stylesheet" href="../css/stile.css">
+</head>
+
+
+    <header>
+        <img src="../imgs/logo.png" width="100" height="100" alt="Logo">
+        <p>Via Cerreta 32 | +39 329 032 3866 | info@ligrani.it</p>
+        <p>
+            <span><a href="../index.html">Home</a></span>
+            <span><a href="../html/ChiSiamo.html">Chi siamo</a></span>
+            <span><a href="../html/Realizzazioni.html">Realizzazioni</a></span>
+            <span><a href="../html/Contatti.html">Contatti</a></span>
+            <span><a href="../html/Login.html">Login</a></span>
+        </p>
+    </header>
+
+<body>
+    <div class="spazio">
+        <h1 class="speciale">Quale luce preferisci nella tua casa?</h1>
+        <p id="prova">Clicca il bottone per vedere quale luce preferisci!</p>
+
+        <!-- Pulsante per la luce calda -->
+        <button id="calda" onclick="luceCalda()">Luce calda</button>
+        <img id="img" src="../imgs/luce_calda.png" alt="Immagine Luce">
+        
+        <!-- Pulsante per la luce fredda -->
+        <button id="fredda" onclick="luceFredda()">Luce fredda</button>
+
+        <br>
+        <!-- Pulsante per cambiare il testo -->
+        <button id="testo" onclick="modificaScritta()">Cambia il testo!</button>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

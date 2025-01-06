@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrazione</title>
+    <link rel="stylesheet" href="../css/registrazione.css">
+</head>
+
+<body>
+    <header>
+        <img src="../imgs/logo.png" width="100" height="100" alt="Logo">
+        <p>Via Cerreta 32 | +39 329 032 3866 | info@ligrani.it</p>
+        <p>
+            <span><a href="../index.html">Home</a></span>
+            <span><a href="../html/ChiSiamo.html">Chi siamo</a></span>
+            <span><a href="../html/Realizzazioni.html">Realizzazioni</a></span>
+            <span><a href="../html/Contatti.html">Contatti</a></span>
+            <span><a href="../html/Login.html">Login</a></span>
+        </p>
+    </header>
+
+    <section class="cont-reg">
+        <h2>Registrati</h2>
+        <form action="area_riservata.html" method="post">
+            <label for="first-name">Nome</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Inserisci il tuo nome" required>
+
+            <label for="last-name">Cognome</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Inserisci il tuo cognome" required>
+
+            <label for="birth-date">Data di Nascita</label>
+            <input type="date" id="birth-date" name="birth-date" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Inserisci la tua password" required>
+
+            <label for="confirm-password">Conferma Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Conferma la tua password" required>
+
+            <button type="submit">Registrati</button>
+        </form>
+    </section>
+</body>
+</html>
