@@ -1,0 +1,133 @@
+/* Stile globale */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f8fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #ffb6c1;
+    
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+}
+
+header p {
+    font-size: 14px;
+    color: #333;
+}
+
+header p a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+header p a:hover {
+    color: #ff69b4;
+}
+
+/* Sezione principale */
+.sfondo {
+    background-color: #ffb6c1;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.sfondo h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.sfondo p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Tabelle */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #ffb6c1;
+    color: #333;
+}
+
+/* Statistiche */
+.statistiche {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.stat {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat h2 {
+    font-size: 18px;
+    color: #ff69b4;
+}
+
+.stat p.grande {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Pulsanti */
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+/* Footer */
+footer {
+    background-color: #f7f8fc;
+    padding: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Separatore orizzontale */
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}

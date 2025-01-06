@@ -1,0 +1,17 @@
+div.center {
+    text-align: center;
+    width: 100%;
+}
+button {
+    height: 7%;
+    font-size: 20;
+}
+
+div.semaforo{
+    position: absolute;
+    top: 10%;
+    left: 41%;
+}
+#mappa{
+    cursor: pointer;
+}

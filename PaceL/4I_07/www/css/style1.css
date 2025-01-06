@@ -1,0 +1,25 @@
+body {
+        font-family: Arial;
+        background-color: white;
+}
+
+p {
+        margin-top: 5%;
+        text-align:left;
+}
+
+.container {
+        display: flex;
+        justify-content: space-around;
+        margin: 5%;
+            
+}
+
+.element {
+        background-color: white;
+            
+        text-align: center;
+        border-radius: 5%;
+        box-shadow: 0 4px 8px;
+        width: 30%;
+}
