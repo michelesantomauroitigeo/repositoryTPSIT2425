@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Web</title>
+    <link rel="stylesheet" href="css/stile.css">
+</head>
+<body>
+
+    <div class="contenitore">
+        <div class="intestazione">
+            <div class="logo">
+                <img src="imgs/nuova-immagine.png" alt="Logo Azienda" id="logo" onclick="cambiaImmagine()">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#" id="prodotti" onclick="evidenziaLink(this)">Prodotti</a></li>
+                    <li><a href="#" id="chiSiamo" onclick="evidenziaLink(this)">Chi siamo</a></li>
+                    <li><a href="#" id="contatti" onclick="evidenziaLink(this)">Contatti</a></li>
+                </ul>
+            </nav>
+
+            <div class="linkAutenticazione">
+                <a href="#" id="login" onclick="gestisciLogin(this)">Login</a>
+                <a href="#" id="registrazione" onclick="gestisciRegistrazione(this)">Registrazione</a>
+            </div>
+        </div>
+
+        <img id="nuovaImmagine" src="imgs/logo.png" alt="Immagine alternativa" style="display:none; width:9%; margin-left: 1%;">
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
