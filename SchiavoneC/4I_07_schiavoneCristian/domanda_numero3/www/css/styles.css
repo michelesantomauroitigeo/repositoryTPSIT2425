@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.articoli-collegati {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.articoli-collegati h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.cards {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 30%;
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.categoria {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.card h3 {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0 10px 0;
+}
+
+.data {
+    font-size: 12px;
+    color: #999;
+}
