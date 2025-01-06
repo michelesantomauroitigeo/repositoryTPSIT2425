@@ -6,267 +6,324 @@ body {
   margin: 0px;
 }
 
-
-.nome-span{
-  position: relative;
-  top: -20px;
+.p-nome{
   color: #097b47;
-  font-size: 70px;
+  font-size: 60px;
+  margin-top: 15px;
+  margin-left:38px ;
+  margin-bottom: -20px;
+
 }
 
 .logo{
-  position: relative;
-  width: 150px; 
-  height: 150px; 
-  margin: 0 auto;
-  top:-155px;
-  left: -47%;
+  padding-top:15px ;
+  padding-left:15px ;
+  width: 120px;
+  height: 80px;
+ 
 }
 
-hr
-{
-   position: relative;
-   top: -170px;
+nav{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  margin: -10px;
+  padding:-10px ;
+  width: 100.3%;
 }
 
-.menu{
-  width: 288px;
-  height: 50px;
-  border: 1.3px solid;
-  background-color: #8fbc8f;
-  position: relative;
-  left: 78%;
-  top:-275px;
+.button-box{
+  display: flex;
+  align-items: center;
+  padding: 2px;
 }
 
-.menu__home_a{
-  position: relative;
-  left:-3%;
-  top:10px;
-  font-size: 23px;
+ul {
+  list-style-type: none;
+  margin-right: 15px;
+  padding-left: 5px;
+  overflow: hidden;
+  background-color: #333;
+  font-size: 20px;
+
 }
 
-.menu__prodotti_a{
-  position: relative;
-  left:2%;
-  top:10px;
-  font-size: 23px;
+li {
+  float: left;
 }
 
-.menu__servizi_a{
-  position: relative;
-  left:7%;
-  top:10px;
-  font-size: 23px;
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 5px;
+  text-decoration: none;
+  padding: 5px;
 }
 
-.carrello{
-  width: 50px;
-  height: 50px;
-  border: 1.3px solid;
-  background-color: #8fbc8f;
-  position: relative;
-  left: 110%;
-  top: -27px;
+.negozio{
+  padding-top:50px;
+  padding-right:1100px ;
+  filter: brightness(85%);  
+  width: 550px;
+  height: 550x;
 }
 
 .carrello_img{
-  width: 15%;
-  position: relative;
-  top: -75px;
-  left:69%;
+  width: 45px;
+  height: 45px;
+
 }
 
-section{
-  position: relative;
-  top:130px;
-  text-align: left;
-}
-select{
-  font-size: 20px;
+.menu{
+  padding-top:12px ;
 }
 
-.sartoria_h2{
-  color: #097b47;
-  font-size: 40px;
-  position: relative;
-  top:-270px;
+.intestazione{
+  width: 100%;
+  background-color:#097b47;
+  text-align: center;
+  margin-top: 0px;
 }
 
-.separatore_sartoria {
-  position: relative;
-  top: -1140px;
-  left: -2%;
-  width: 1915px;
-  height: 3px;
-  background-color: #8fbc8f;
-  border: none; 
+.nominativo{
+  color: white;
+  font-size: 35px;
+  padding: 23px 105px 23px 23px;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 
-
-.sartoria{
-  position: relative;
-  top:-200px;
-  font-size: 25px;
-}
-
-.immagine_sartoria{
-  width: 500px;
-  height: 400px;
-  position: relative;
-  left:60%;
-  top:-600px;
-  border-radius: 5%;
-}
-
-.bigiotteria_h2{
-  color: #097b47;
-  font-size: 40px;
-  position: relative;
-  top:-500px;
-}
-
-.bigiotteria{
-  position: relative;
-  top:-360px;
-  font-size: 25px;
-}
-
-.separatore_bigiotteria {
-  position: relative;
-  top: -1200px;
-  left: -2%;
-  width: 1915px;
-  height: 3px;
-  background-color: #8fbc8f;
-  border: none; 
-}
-
-.immagine_bigiotteria{
-  width: 450px;
-  height: 380px;
-  position: relative;
-  left:60%;
-  top:-690px;
-  border-radius: 5%;
-}
-
-.manulita_h2{
-  color: #097b47;
-  font-size: 40px;
-  position: relative;
-  top:-600px;
-}
-
-.manualita{
-  position: relative;
-  top:-470px;
-  font-size: 25px;
-}
-
-
-.separatore_manulita{
-  position: relative;
-  top: -1390px;
-  left: -2%;
-  width: 1915px;
-  height: 3px;
-  background-color: #8fbc8f;
-  border: none; 
-}
-
-.immagine_manulita{
-  width: 450px;
-  height: 380px;
-  position: relative;
-  left:60%;
-  top:-810px;
-  border-radius: 5%;
-}
-
-.consulenza_h2{
-  color: #097b47;
-  font-size: 40px;
-  position: relative;
-  top:-700px;
-}
-
-.consulenza{
-  position: relative;
-  top:-600px;
-  font-size: 25px;
-}
-
-
-.separatore_consulenza{
-  position: relative;
-  top: -1500px;
-  left: -2%;
-  width: 1915px;
-  height: 3px;
-  background-color: #8fbc8f;
-  border: none; 
-}
-
-.immagine_consulenza{
-  width: 430px;
-  height: 420px;
-  position: relative;
-  left:60%;
-  top:-950px;
-  border-radius: 5%;
-}
 
 .prenotazione{
-  font-size: 18px;
+  font-size: 65%;
+}
+/*-----------------------------*/
+
+.sartoria{
+  background-color: whitesmoke;
+  border-block: 3%;
+  display: flex;
+  justify-content: space-between;
+  margin-left:7.5%;
+  margin-right: 7.5%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+div.sartoria img{
+  width: 20%;
+  height: 15%;
+  padding-top:4.5%;
+  margin-bottom: 3.5%;
+  margin-right: 4.25%;
 
 }
 
-.prenota{
-  position: relative;
-  top:-200px;
+div.sartoria h2{
+  font-size: 35px;
+ padding-left: 350%;
+
+}
+
+div.sartoria form{
+  margin-top:7.75%;
+  font-size: 22px;
+  text-align: left;
+  padding-right: 35%;
+  margin-bottom: 2.5%;
+
+}
+
+div.sartoria option{
   font-size: 20px;
 }
 
+div.sartoria label{
+  font-size: 25px;
+}
+
+
+/*-----------------*/
+.bigiotteria{
+  background-color: whitesmoke;
+  border-block: 3%;
+  display: flex;
+  justify-content: space-between;
+  margin-left:7.5%;
+  margin-right: 7.5%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+div.bigiotteria img{
+  width: 20%;
+  height: 15%;
+  padding-top:4.5%;
+  margin-bottom: 3.5%;
+  margin-right: 4.25%;
+
+}
+
+div.bigiotteria h2{
+  font-size: 35px;
+ padding-left: 260%;
+
+}
+
+div.bigiotteria form{
+  margin-top:9.75%;
+  font-size: 22px;
+  text-align: left;
+  padding-right: 35%;
+  margin-bottom: 2.5%;
+
+}
+
+div.bigiotteria option{
+  font-size: 20px;
+}
+
+div.bigiotteria label{
+  font-size: 25px;
+}
+
+
+
+/*-------------------*/
+
+.manualita{
+  background-color: whitesmoke;
+  border-block: 3%;
+  display: flex;
+  justify-content: space-between;
+  margin-left:7.5%;
+  margin-right: 7.5%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+div.manualita img{
+  width: 20%;
+  height: 15%;
+  padding-top:4.5%;
+  margin-bottom: 3.5%;
+  margin-right: 4.25%;
+
+}
+
+div.manualita h2{
+  font-size: 35px;
+ padding-left: 310%;
+
+}
+
+div.manualita form{
+  margin-top:9.75%;
+  font-size: 22px;
+  text-align: left;
+  padding-right: 35%;
+  margin-bottom: 2.5%;
+
+}
+
+div.manualita option{
+  font-size: 20px;
+}
+
+div.manualita label{
+  font-size: 25px;
+}
+
+
+
+/*-------------------*/
+.consulenza{
+  background-color: whitesmoke;
+  border-block: 3%;
+  display: flex;
+  justify-content: space-between;
+  margin-left:7.5%;
+  margin-right: 7.5%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+div.consulenza img{
+  width: 20%;
+  height: 15%;
+  padding-top:4.5%;
+  margin-bottom: 3.5%;
+  margin-right: 4.25%;
+
+}
+
+div.consulenza h2{
+  font-size: 35px;
+ padding-left: 270%;
+
+}
+
+div.consulenza form{
+  margin-top:9.75%;
+  font-size: 22px;
+  text-align: left;
+  padding-right: 35%;
+  margin-bottom: 2.5%;
+
+}
+
+div.consulenza option{
+  font-size: 20px;
+}
+
+div.consulenza label{
+  font-size: 25px;
+}
+
+
+
+/*-------------------*/
 .nero{
   opacity: 0.8;
-  position: relative;
-  left: 0%;
-  top: -200px;
   height: 300px;
   width: 100%;
   background-color: black;
 }
 
 .seguici_span{
-  position: relative;
-  top:35px;
   color: #7e7d6d;
-  font-size: 53px;
+  font-size: 50px;
+  padding-top: 60px;
 }
 
 .img-facebook{
-  position: relative;
-  left: -5%;
-  top: 65px;
   width: 3.5%;  
 }
 
 .img-instagram{
-  position: relative;
-  left: 0%;
-  top: 65px;
-  width: 3.5%;  
+  width: 3.5%; 
+  padding-left: 45px; 
 }
 
 .img-whatsapp{
-  position: relative;
-  left: 5%;
-  top: 65px;
   width: 3.5%;  
+  padding-left: 45px;
 }
 
-footer{
-  position: relative;
-  top:-280px;
+
+.invio{
+ width: 100%;
+ margin-top: 35px;
+ margin-bottom: 35px;
+ font-size: 30px;
+ background-color:#097b47 ;
+ color: white;
+ border: none;
 }
+
+
+
+
+

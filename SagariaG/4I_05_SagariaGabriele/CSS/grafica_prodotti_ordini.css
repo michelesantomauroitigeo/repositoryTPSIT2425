@@ -100,10 +100,9 @@ li a {
   font-size: 65%;
 }
 
-.prenotazione:hover{
-  background-color: green;
-  color:white;
-}
+
+
+/*-------------------*/
 
 .lana{
   background-color: whitesmoke;
@@ -119,9 +118,9 @@ li a {
 div.lana img{
   width: 20%;
   height: 15%;
-  margin-top:4.5%;
-  margin-bottom: 1.5%;
-  padding-left: 40%;
+  padding-top:4.5%;
+  margin-bottom: 3.5%;
+  margin-right: 4.25%;
 
 }
 
@@ -132,10 +131,11 @@ div.lana h2{
 }
 
 div.lana form{
-  margin-top:5%;
+  margin-top:7.75%;
   font-size: 22px;
   text-align: left;
-  padding-bottom: 1.5%;
+  padding-right: 35%;
+
 }
 
 div.lana option{
@@ -146,6 +146,8 @@ div.lana label{
   font-size: 25px;
 }
 
+/*-------------------*/
+
 .stoffe{
   background-color: whitesmoke;
   border-block: 3%;
@@ -154,21 +156,21 @@ div.lana label{
   margin-left:7.5%;
   margin-right: 7.5%;
   margin-bottom: 3%;
+  margin-top: 3%;
 }
 
 div.stoffe img{
   width: 20%;
   height: 15%;
-  margin-top:4.5%;
-  margin-bottom: 1.5%;
-  padding-left: 40%;
-  padding-right: 1.5%;
+  margin-top:5.5%;
+  margin-bottom: 3.5%;
+  margin-right: 4.25%;
 
 }
 
 div.stoffe h2{
   font-size: 35px;
- padding-left: 450%;
+  padding-left: 450%;
 
 }
 
@@ -177,6 +179,7 @@ div.stoffe form{
   font-size: 22px;
   text-align: left;
   padding-bottom: 1.5%;
+  padding-right: 36%;
 }
 
 div.stoffe option{
@@ -187,47 +190,147 @@ div.stoffe label{
   font-size: 25px;
 }
 
-.{
+/*-------------------*/
+
+.accessori{
   background-color: whitesmoke;
   border-block: 3%;
-  display: flex;
-  justify-content: space-between;
   margin-left:7.5%;
   margin-right: 7.5%;
   margin-bottom: 3%;
+  margin-top: 3%;
 }
 
-div.stoffe img{
+
+
+div.accessori img{
   width: 20%;
   height: 15%;
-  margin-top:4.5%;
-  margin-bottom: 1.5%;
-  padding-left: 40%;
-  padding-right: 1.5%;
-
+  padding-top:0.5%;
+  margin-bottom: 3.5%;
+  margin-right: 4.25%;
 }
 
-div.stoffe h2{
+div.accessori h2{
   font-size: 35px;
- padding-left: 450%;
-
+  padding-right: 7.5%;
 }
 
-div.stoffe form{
-  margin-top:5%;
+
+
+div.accessori form{
   font-size: 22px;
   text-align: left;
-  padding-bottom: 1.5%;
+  padding-top: 1.5%;
 }
 
-div.stoffe option{
+
+
+div.accessori option{
   font-size: 20px;
 }
 
-div.stoffe label{
+div.accessori label{
   font-size: 25px;
 }
 
+
+/*-------------------*/
+
+.abbigliamento{
+  background-color: whitesmoke;
+  border-block: 3%;
+  margin-left:7.5%;
+  margin-right: 7.5%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.unione{
+  display: flex;
+  justify-content: space-between;
+}
+
+div.abbigliamento img{
+  width: 20%;
+  height: 15%;
+  padding-top:0.5%;
+  margin-bottom: 3.5%;
+  margin-right: 4.25%;
+}
+
+div.abbigliamento h2{
+  font-size: 35px;
+  padding-right: 7.5%;
+}
+
+
+
+div.abbigliamento form{
+  font-size: 22px;
+  text-align: left;
+  padding-left: 10%;
+  padding-top: 1.5%;
+}
+
+
+
+div.abbigliamento option{
+  font-size: 20px;
+}
+
+div.abbigliamento label{
+  font-size: 25px;
+}
+
+/*------------------------*/
+
+
+.tessuti{
+  background-color: whitesmoke;
+  border-block: 3%;
+  /*display: flex;
+  justify-content: space-between;
+  */margin-left:7.5%;
+  margin-right: 7.5%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+
+div.tessuti img{
+  width: 20%;
+  height: 15%;
+  padding-top:4.5%;
+  margin-bottom: 1.5%;
+  margin-right: 4.25%;
+}
+
+div.tessuti h2{
+  font-size: 35px;
+  padding-right: 7.5%;
+}
+
+
+
+div.tessuti form{
+  
+  font-size: 22px;
+  text-align: left;
+  padding-left: 10%;
+}
+
+
+
+div.tessuti option{
+  font-size: 20px;
+}
+
+div.tessuti label{
+  font-size: 25px;
+}
+
+/*------------------------*/
 
 
 .nero{
@@ -255,5 +358,16 @@ div.stoffe label{
 .img-whatsapp{
   width: 3.5%;  
   padding-left: 45px;
+}
+
+
+.invio{
+ width: 100%;
+ margin-top: 35px;
+ margin-bottom: 35px;
+ font-size: 30px;
+ background-color:#097b47 ;
+ color: white;
+ border: none;
 }
 

@@ -82,6 +82,12 @@ li a {
 }
 
 
+.centrale{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 section{
   background-color:#097b47;
   border-radius: 15px;
@@ -90,14 +96,13 @@ section{
   color: white;
   margin-top: 7vh;
   margin-bottom: 12vh;
-  margin-left: 36vw;
 }
 
 h2{
   font-size: 40px;
   color: white;
-  padding-top: 25px;
-  margin-bottom: 22px;
+  padding-top: 1%;
+  margin-bottom: 2%;
 }
 
 .input_form{
