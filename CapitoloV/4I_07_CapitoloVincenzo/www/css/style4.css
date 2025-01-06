@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px dashed #333;
+}
+
+.logo img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.nav-links,
+.auth-links {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-link,
+.auth-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-link:hover,
+.auth-link:hover {
+    color: #007BFF;
+}
+
+/* Classe per evidenziare il link cliccato */
+.menu-link.highlight {
+    background-color: yellow;
+}
+
+/* Classe per ingrandire il testo */
+.auth-link.enlarged {
+    font-size: 20px;
+    font-weight: bold;
+}
