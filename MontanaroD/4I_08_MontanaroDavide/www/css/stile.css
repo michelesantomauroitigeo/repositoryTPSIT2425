@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo-alt {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+.logo:hover {
+    display: inline-block;
+}
+
+.logo-alt {
+    display: none;
+}
