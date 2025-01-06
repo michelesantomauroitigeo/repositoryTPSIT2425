@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../CSS/grafica_servzio_ordini.css">
+     	<title>FILOLANA</title>
+	</head>
+	<body>
+		  <nav>
+      <img src="../imgs/logo.png" alt="immagine logo" class="logo">
+      <p class="p-nome">FILOLANA</p>
+      <div class="button-box">
+        <ul>
+          <li class="menu"><a href="../index.html">Home</a></li>
+          <li class="menu"><a href="./prodotto.html">Prodotti</a></li>
+          <li class="menu"><a href="./servizio.html">Servizi</a></li>
+          <li>
+            <a href="login.html">
+              <img src="../imgs/carrello.png" alt="immagine carrello" class="carrello_img">
+            </a>
+          </li>
+        </ul> 
+      </div>
+    </nav>
+    
+    <div class="intestazione">
+      <h3 class="nominativo">PRENOTAZIONE SERVIZI</h3>
+    </div>
+
+		<div class="sartoria">
+			<span><h2>SARTORIA</h2></span>
+			<form>
+					<label for="tipo">Indicare il tipo di lavoro:</label>
+			    <select id="tipo" name="tipo">
+			    	<option></option>
+			    	<option>Pieghe</option>
+			    	<option>Aggiusti</option>
+			    	<option>Accorciare</option>
+			    	<option>Allargare</option>
+			    	<option>Ritocchi</option>
+			    </select><br><br>
+			    <label for="tipo">Indicare il tipo di capo:</label>
+			    <select id="tipo" name="tipo">
+			      <option value="vuoto"></option>
+			      <option value="pantalone">Pantalone</option>
+			      <option value="maglia">Maglia</option>
+			      <option value="giacca">Giacca</option>
+			      <option value="gonna">Gonna</option>
+			      <option value="giubbotto">Giubbotto</option>
+			      <option value="borse">Borsa</option>
+			    </select><br>
+			    <!--<input type="button" onclick="alert('Prenotato correttamente')" value="PRENOTA" class="prenotazione">!-->
+			</form>
+			<img src="../imgs/sartoria.png" alt="immagine di una macchina da cucire">
+		</div>
+
+
+		<div class="bigiotteria">
+			<span><h2>BIGIOTTERIA</h2></span>
+			<form>
+				 <label for="tipo">Indicare il tipo di servizio:</label>
+					<select>
+						<option></option>
+						<option>Cambio terminali</option>
+						<option>Aggiusti</option>
+						<option>Cambio parti</option>
+						<option>Altro</option>
+					</select><br><br>
+			    <label for="tipo">Indicare il tipo di bigiotteria:</label>
+			    <select id="tipo" name="tipo">
+			      <option value="vuoto"></option>
+			      <option value="bracciale">Bracciale</option>
+			      <option value="collane">Collane</option>
+			      <option value="orecchini">Orecchini</option>
+			      <option value="spille">Spille</option>
+			      <option value="anelli">Anelli</option>
+			    </select>
+			</form>
+			<img src="../imgs/bigiotteria.png" alt="immagine di collane, orecchini e bracciali">
+		</div>
+
+		<div class="manualita">
+				<span><h2>MANUALTA'</h2></span>
+				<form>
+					<label for="tipo">Indicare il tipo di servizio:</label>
+				    <select>
+				    		<option></option>
+				    		<option>Lana Cardata</option>
+				    		<option>Ago magio</option>
+				    		<option>Uncinetto</option>
+				    </select><br><br>
+				    <label for="altro">DOMANDE:</label>
+				    <input type="text" id="altro"><br><br>
+						<label for="data">Inserire la data di partecipazione:</label>
+	  				<input type="date" id="data" name="data" min="1997-06-20"><br>
+	  				<label for="tempo">Inserire l'orario che si preferisce:</label>
+					<input type="time" id="time" name="time" min="17:15" max="19:00"><br><br>
+				</form>
+				<img src="../imgs/manulita.png" alt="immagine di un tavolo con vari oggetti per la manulità">
+			</div>
+		
+		<div class="consulenza">
+			<span><h2>CONSULENZA</h2></span>
+			<form>
+					<label>Selezionare il tipo di consulenza:</label>
+					<select>
+						<option></option>
+						<option>Consulenza sulla bigiotteria.</option>
+						<option>Consulenza sulla merceria.</option>
+						<option>Consulenza sull'abbigliamento.</option>
+						<option>Consulenza sulla creatività.</option>
+					</select><br><br>
+			    <label for="altro">Altro:</label>
+			    <input type="text" id="altro"><br><br>
+			</form>
+			<img src="../imgs/consulenza.png" alt="immagine di due persone che parlano">
+		</div>
+
+		<div class="conferma">
+			<input type="button" name="ordina" value="EFFETTUA L'ORDINAZIONE" class="invio" onclick="alert('Prenotazione effettuata con successo')">
+		</div>
+
+		
+		<div class="nero">
+	      <h3><span class="seguici_span">SEGUITECI</span></h3>
+	      <img src="../imgs/facebook.png" alt="immagine facebook" class="img-facebook">
+	      <img src="../imgs/instagram.png" alt="immagine instagram" class="img-instagram">
+	      <img src="../imgs/whatsapp.png" alt="immagine whatsapp" class="img-whatsapp">
+	    </div>
+	</body>
+</html>
