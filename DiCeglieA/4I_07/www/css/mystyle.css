@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    justify-content: justify;
+}
+span{
+    padding-right: 10%;
+    border-width: 3px;
+    border-color: white;
+}
+p{
+    margin-right :3%
+}
+
