@@ -6,10 +6,10 @@ document.getElementById('form').addEventListener('submit', function(event) {
     // Rimuovi i messaggi di errore
     document.querySelectorAll('.error-message').forEach(function(error) {
         error.style.display = 'none';
-    });
+    })
 
     // Controlla se i campi sono vuoti
-    if (document.getElementById('nome').value === '') {
+    if (document.getElementById("nome").value === '') {
         document.getElementById('nome-error').textContent = 'Nome richiesto';
         document.getElementById('nome-error').style.display = 'block';
         valid = false;
