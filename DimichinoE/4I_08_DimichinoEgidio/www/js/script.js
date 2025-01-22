@@ -1,47 +1,35 @@
-document.getElementById('form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita l'invio del modulo
+document.getElementById("registrationForm").addEventListener("submit", function(event) {
+  event.preventDefault();
 
-    let valid = true;
+  // Nascondi gli errori precedenti
+  document.getElementById("usernameError").textContent = "";
+  document.getElementById("emailError").textContent = "";
+  document.getElementById("passwordError").textContent = "";
 
-    // Rimuovi i messaggi di errore
-    document.querySelectorAll('.error-message').forEach(function(error) {
-        error.style.display = 'none';
-    })
+  let valid = true;
 
-    // Controlla se i campi sono vuoti
-    if (document.getElementById("nome").value === '') {
-        document.getElementById('nome-error').textContent = 'Nome richiesto';
-        document.getElementById('nome-error').style.display = 'block';
-        valid = false;
-    }
+  // Verifica Nome utente
+  const username = document.getElementById("username").value;
+  if (username === "") {
+    document.getElementById("usernameError").textContent = "Il nome utente è obbligatorio.";
+    valid = false;
+  }
 
-    if (document.getElementById('cognome').value === '') {
-        document.getElementById('cognome-error').textContent = 'Cognome richiesto';
-        document.getElementById('cognome-error').style.display = 'block';
-        valid = false;
-    }
+  // Verifica Email
+  const email = document.getElementById("email").value;
+  if (email === "") {
+    document.getElementById("emailError").textContent = "L'email è obbligatoria.";
+    valid = false;
+  }
 
-    if (document.getElementById('codice_fiscale').value === '') {
-        document.getElementById('cf-error').textContent = 'Codice fiscale richiesto';
-        document.getElementById('cf-error').style.display = 'block';
-        valid = false;
-    }
+  // Verifica Password
+  const password = document.getElementById("password").value;
+  if (password === "") {
+    document.getElementById("passwordError").textContent = "La password è obbligatoria.";
+    valid = false;
+  }
 
-    if (document.getElementById('altezza').value === '') {
-        document.getElementById('altezza-error').textContent = 'Altezza richiesta';
-        document.getElementById('altezza-error').style.display = 'block';
-        valid = false;
-    }
-
-    if (document.getElementById('peso').value === '') {
-        document.getElementById('peso-error').textContent = 'Peso richiesto';
-        document.getElementById('peso-error').style.display = 'block';
-        valid = false;
-    }
-
-    // Se tutti i campi sono compilati, puoi inviare il modulo
-    if (valid) {
-        alert('Modulo inviato correttamente!');
-        // Qui puoi aggiungere codice per inviare il modulo effettivamente
-    }
+  if (valid) {
+    alert("Registrazione completata!");
+  }
 });
