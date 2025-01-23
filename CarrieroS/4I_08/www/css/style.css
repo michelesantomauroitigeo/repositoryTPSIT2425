@@ -4,15 +4,6 @@ body {
   padding: 20px;
 }
 
-.container {
-  background-color: white;
-  border-radius: 8px;
-  padding: 20px;
-  width: 300px;
-  margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 h2 {
   text-align: center;
 }
@@ -30,12 +21,6 @@ input {
   border-radius: 4px;
 }
 
-.error {
-  color: red;
-  font-size: 12px;
-  margin-top: 5px;
-}
-
 button {
   width: 100%;
   padding: 10px;
@@ -47,5 +32,20 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #0000ff;
+}
+
+.container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
 }
