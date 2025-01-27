@@ -1,0 +1,43 @@
+html, body {
+    height: 99%;
+    width: 99%;
+}
+body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 35%;
+    width: 15%;
+    padding: 20px;
+    margin: 20px;
+    background-color: #2bbbce;
+    border-radius: 20px;
+}
+
+label, input {
+    width: 100%;
+    height: 50%;
+}
+#invio {
+    width: 103%;
+    height: 100%;
+    background-color: #333;
+    color: aliceblue;
+}
+input.errore {
+    border: 2px solid red;
+}
+
+small {
+    display: none; 
+    color: red;
+}

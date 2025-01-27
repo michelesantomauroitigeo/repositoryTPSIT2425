@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/stile.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <div>
+            <label for="e-mail">La tua e-mail: </label><br>
+            <input type="email" id="e-mail" name="e-mail">
+            <small id="email-errore">È obbligatorio compilare il campo e-mail</small>
+        </div>
+
+        <div>
+            <label for="usern">Il tuo username: </label><br>
+            <input type="text" id="usern" name="usern">
+            <small id="usern-errore">È obbligatorio compilare il campo username</small>
+        </div>
+
+        <div>
+            <label for="pwd">Password: </label><br>
+            <input type="password" id="pwd" name="pwd">
+            <small id="pwd-errore">È obbligatorio compilare il campo password</small>
+        </div>
+
+        <div>
+            <input type="submit" id="invio" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
