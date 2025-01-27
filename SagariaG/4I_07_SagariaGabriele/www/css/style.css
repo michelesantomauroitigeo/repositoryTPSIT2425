@@ -1,0 +1,98 @@
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0%;
+	background-color: #f8f8f8;
+	font-family: Arial, sans-serif;
+}
+
+h2{
+	margin-top:0% ;
+}
+
+.unione{
+	background-color: white;
+}
+
+.blocco{
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5%;
+}
+
+.blocco_1{
+	border: 2px solid black;
+	background-color: white;
+	width: 26.1%;
+	height: 125%;
+}
+
+.blocco_1 p { 
+	padding-left: 7.5%; 
+	padding-right: 3.5%; 
+	font-size: 120%;
+	}
+
+.blocco_1 img{
+	width: 100%; 
+	height: auto
+}
+
+.blocco_1 h3 { 
+	padding-left: 7.5%; 
+	padding-right: 7.5%;
+	font-size: 85%;
+	color: gray;
+}
+
+.blocco_2{
+	border: 2px solid black;
+	background-color: white;
+	width: 26.1%;
+	height: 125%;
+}
+
+.blocco_2 p { 
+	padding-left: 7.5%; 
+	padding-right: 3.5%; 
+	font-size: 120%;
+	}
+
+.blocco_2 img{
+	width: 100%; 
+	height: auto
+}
+
+.blocco_2 h3 { 
+	padding-left: 7.5%; 
+	padding-right: 7.5%;
+	font-size: 85%;
+	color: gray;
+}
+
+
+.blocco_3{
+	border: 2px solid black;
+	background-color: white;
+	width: 25%;
+	height: 125%;
+}
+
+.blocco_3 p { 
+	padding-left: 7.5%; 
+	padding-right: 3.5%; 
+	font-size: 120%;
+	}
+
+.blocco_3 img{
+	width: 100%; 
+	height: auto
+}
+
+.blocco_3 h3 { 
+	padding-left: 7.5%; 
+	padding-right: 7.5%;
+	font-size: 85%;
+	color: gray;
+}
+

@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contenitore {
+    border: 2px dotted #000;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+.intestazione {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.linkAutenticazione {
+    display: flex;
+    gap: 20px;
+}
+
+.linkAutenticazione a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: font-size 0.3s;
+} 

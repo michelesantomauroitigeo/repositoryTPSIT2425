@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.articoli {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.articoli h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.categoria {
+    font-size: 12px;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #000;
+}
+
+.data {
+    font-size: 12px;
+    color: #999;
+}
+
+
+#logo img {
+    max-width: 100px; 
+    height: auto; 
+    cursor: pointer; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    
+}
+
+nav a:hover {
+    background-color: lightgray;
+}
+
+.destra-menu {
+    margin-left: auto; 
+    display: flex;
+    gap: 10%;
+    margin-right: 3%;
+
+}
+
+.destra-menu a {
+    
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.destra-menu a:hover {
+    background-color: lightgray;
+}
