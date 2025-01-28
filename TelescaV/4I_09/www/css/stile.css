@@ -1,0 +1,89 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: red;
+    padding: 10px 40px;
+    color: white;
+    height: 80px;
+
+}
+
+.header .logo img {
+    width: 70px;
+    height: 90px;
+    margin-right: 20px;
+}
+
+.header .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Contenitore tabella */
+.tabella-container {
+    width: 90%;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+/* Tabella */
+.tabella-dati {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.tabella-dati thead th {
+    background-color: red;
+    color: yellow;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.tabella-dati tbody td {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+
+.btn-action {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-trash::before {
+    content: "🗑️";
+}
+
+.icon-pencil::before {
+    content: "✏️";
+}
+
+
+.btn-action.complete.spunta {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
