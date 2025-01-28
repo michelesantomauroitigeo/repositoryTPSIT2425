@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Modulo Dati Anagrafici</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Modulo Dati Anagrafici</h2>
+    <form id="form" method="post">
+      <!-- Nome -->
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome"><br><br>
+      <div id="nome-error" class="error"></div>
+      
+      <!-- Cognome -->
+      <label for="cognome">Cognome:</label>
+      <input type="text" id="cognome" name="cognome"><br><br>
+      <div id="cognome-error" class="error"></div>
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <div id="email-error" class="error"></div>
+
+      <!-- Numero di Telefono -->
+      <label for="telefono">Numero di Telefono:</label>
+      <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="1234567890"><br><br>
+      <div id="telefono-error" class="error"></div>
+
+      <!-- Codice Fiscale -->
+      <label for="codice_fiscale">Codice Fiscale:</label>
+      <input type="text" id="codice_fiscale" name="codice_fiscale" maxlength="16"><br><br>
+      <div id="cf-error" class="error"></div>
+
+      <!-- Altezza -->
+      <label for="altezza">Altezza (in cm):</label>
+      <input type="number" id="altezza" name="altezza" min="50" max="250"><br><br>
+      <div id="altezza-error" class="error"></div>
+
+      <!-- Peso -->
+      <label for="peso">Peso (in kg):</label>
+      <input type="number" id="peso" name="peso" min="20" max="250" step="0.1"><br><br>
+      <div id="peso-error" class="error"></div>
+
+      <!-- Bottone invia -->
+      <button type="submit">Invia</button>
+    </form>
+  </div>
+</body>
+</html>
