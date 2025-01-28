@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#tabella-registrazione {
+    margin: 0 auto;
+    width: 60%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tabella-registrazione td {
+    padding: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 5px;
+    width: 100%;
+}
+
+.bottone button {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: yellow;
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.bottone button:hover {
+    background-color: darkred;
+}
+
+.errore {
+    color: red;
+    font-size: 0.9em;
+    text-align: left;
+}
