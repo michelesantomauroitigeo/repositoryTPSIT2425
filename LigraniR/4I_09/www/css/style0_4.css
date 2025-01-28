@@ -1,0 +1,119 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f8fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+header {
+  background-color: #ffb6c1;
+  padding: 20px;
+}
+
+header .logo {
+  width: 100px;
+  height: 100px;
+}
+
+header p {
+  font-size: 14px;
+  color: #333;
+}
+
+header p a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+header p a:hover {
+  color: #ff69b4; 
+}
+
+
+.sfondo {
+  background-color: #ffb6c1;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.sfondo h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.sfondo p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Immagini */
+img {
+  width: 400px;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+/* Lista "Come lavoriamo" */
+.sinistra {
+  text-align: left;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.sinistra ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sinistra li {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.sinistra li strong {
+  color: #ff69b4;
+}
+
+/* Pulsante */
+.button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ff1493;
+}
+
+/* Footer */
+footer {
+  background-color: #f7f8fc;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Separatore orizzontale */
+hr {
+  border: 1px solid #ddd;
+  margin: 20px 0;
+}
