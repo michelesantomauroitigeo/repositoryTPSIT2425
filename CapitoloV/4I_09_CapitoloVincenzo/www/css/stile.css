@@ -1,0 +1,73 @@
+/* Stile base per la tabella */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+/* Stile per l'intestazione della tabella */
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* Stile per le righe della tabella */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e6f7ff;
+}
+
+/* Celle */
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Pulsanti */
+button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Pulsante elimina */
+button.delete {
+    background-color: #f44336;
+    color: white;
+}
+
+button.delete:hover {
+    background-color: #d32f2f;
+}
+
+/* Pulsante modifica */
+button.edit {
+    background-color: #ff9800;
+    color: white;
+}
+
+button.edit:hover {
+    background-color: #e68900;
+}
+
+/* Pulsante abilita */
+button.enable {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button.enable:hover {
+    background-color: #45a049;
+}

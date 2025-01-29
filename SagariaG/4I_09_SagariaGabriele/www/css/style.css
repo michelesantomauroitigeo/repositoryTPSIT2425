@@ -1,0 +1,42 @@
+body {
+    background-color: #cbced1;;
+}
+
+h2{
+  text-align: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+th {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid lightgrey;
+  background-color: #074fad;
+  color: white;
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid lightgrey;
+}
+        
+#imm {
+    width: 100%;
+    max-width: 30px; 
+}
+
+#check {
+  display: block;
+  width: 33px; 
+  height: 33px;
+  display: inline-block;/* un elemento venga visualizzato come un blocco, ma in linea con altri elementi. 
+  Significa che gli elementi possono essere affiancati senza andare a capo, come avviene con gli elementi inline.*/
+}
+
+#azione{
+  width: 9%;
+}
