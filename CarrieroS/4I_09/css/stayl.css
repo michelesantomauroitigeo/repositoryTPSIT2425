@@ -1,0 +1,22 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.action-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.action-btn i {
+    font-size: 20px;
+    color: #333;
+}
