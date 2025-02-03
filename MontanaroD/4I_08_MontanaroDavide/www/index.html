@@ -6,22 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina di Registrazione</title>
     <link rel="stylesheet" href="css/stile.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <h2>Registrazione</h2>
     
-        <form action="registrazione method="POST">
+        <form onsubmit="return validaLogin()">
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
 
             <label for="cognome">Cognome</label>
             <input type="text" id="cognome" name="cognome" placeholder="Inserisci il tuo cognome" required>
-
-            <label for="dataNascita">Data di Nascita</label>
-            <input type="date" id="dataNascita" name="dataNascita" required>
-
-            <label for="residenza">Residenza</label>
-            <input type="text" id="residenza" name="residenza" placeholder="Inserisci la tua residenza">
 
             <label for="email">E-mail</label>
             <input type="email" id="email" name="email" placeholder="Inserisci la tua e-mail" required>
@@ -29,8 +24,14 @@
             <label for="telefono">N. Telefono</label>
             <input type="tel" id="telefono" name="telefono" placeholder="Inserisci il tuo numero di telefono">
 
+            <label for="residenza">Residenza</label>
+            <input type="tel" id="residenza" name="residenza" placeholder="Inserisci la tua residenza">
+
             <label for="username">Username</label>
             <input type="text" id="username" name="username" placeholder="Inserisci il tuo Username" required>
+
+            <label for="password">Password</label>
+            <input type="text" id="password" name="password" placeholder="Inserisci la tua password">
 
             <button type="submit">Registrati</button>
         </form>
