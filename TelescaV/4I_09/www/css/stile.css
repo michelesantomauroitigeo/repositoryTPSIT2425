@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     padding: 0;
@@ -28,18 +27,16 @@ body {
     font-weight: bold;
 }
 
-/* Contenitore tabella */
 .tabella-container {
     width: 90%;
     margin: 20px auto;
-    overflow-x: auto;
+
 }
 
-/* Tabella */
+
 .tabella-dati {
     width: 100%;
     border-collapse: collapse;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -57,7 +54,6 @@ body {
     padding: 10px;
     border: 1px solid #ddd;
 }
-
 
 .btn-action {
     background-color: white;
@@ -81,9 +77,8 @@ body {
     content: "✏️";
 }
 
-
 .btn-action.complete.spunta {
     background-color: green;
     color: white;
-    font-weight: bold;
+  
 }

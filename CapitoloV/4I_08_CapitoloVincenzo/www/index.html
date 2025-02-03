@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Login </title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<h1> Registrazione </h1>
+		<form onsubmit="return validaLogin()">
+			<label for="name"> Nome: </label><br>
+			<input type="text" id="nome" name="name" placeholder="Inserisci il tuo nome"><br>
+			<p id="nome-error"> È obbligatorio compilare questo campo </p>
+
+
+			<label for="surname"> Cognome: </label><br>
+			<input type="text" id="cognome" name="surname" placeholder="Inserisci il tuo cognome"><br>
+			<p id="cognome-error"> È obbligatorio compilare questo campo </p>
+
+			<label for="username"> Username: </label><br>
+			<input type="text" id="username" name="username" placeholder="Inserisci l'username"><br>
+			<p id="username-error"> È obbligatorio compilare questo campo </p>
+
+			<label for="email"> Email: </label><br>
+			<input type="email" id="email" name="email" placeholder="Inserisci la tua email"><br>
+			<p id="email-error"> È obbligatorio compilare questo campo </p>
+
+			<label for="telefono"> Numero di telefono: </label><br>
+			<input type="tel" id="telefono" name="telefono" placeholder="Inserisci il numero di telefono"><br>
+			<p id="telefono-error"> È obbligatorio compilare questo campo </p>
+
+			<label for="password"> Password: </label><br>
+			<input type="password" id="password" name="password" placeholder="Inserisci la password"><br>
+			<p id="password-error"> È obbligatorio compilare questo campo </p>
+
+			<input type="submit" id="invio" value="Invia">
+		</form>
+	</body>
+</html>
