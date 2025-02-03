@@ -1,0 +1,70 @@
+/* Stile della tabella */
+table {
+    width: 100%; /* Occupa tutta la larghezza disponibile */
+    border-collapse: collapse; /* Elimina gli spazi tra i bordi delle celle */
+    background-color: white; /* Sfondo bianco come il contenitore del modulo */
+    border-radius: 8px; /* Angoli arrotondati */
+    overflow: hidden; /* Evita che gli angoli si spostino */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra per effetto 3D */
+}
+
+/* Stile per le celle di intestazione */
+th {
+    background-color: #4CAF50; /* Sfondo verde come il pulsante */
+    color: white; /* Testo bianco */
+    padding: 12px; /* Maggiore spaziatura */
+    text-align: center; /* Allineamento del testo */
+    font-size: 16px; /* Stessa dimensione del testo del pulsante */
+    border: 1px solid #ddd; /* Bordo sottile */
+}
+
+/* Stile per le celle normali */
+td {
+    border: 1px solid #ddd; /* Bordo leggero */
+    padding: 10px; /* Spazio interno */
+    text-align: center; /* Allineamento del testo */
+    font-size: 14px; /* Testo leggermente più piccolo rispetto a th */
+}
+
+/* Effetto hover sulle righe */
+tr:hover {
+    background-color: #f1f1f1; /* Cambia il colore quando il mouse passa sopra */
+}
+
+/* Stile per i pulsanti di azione */
+.action-btn {
+    border: none; /* Rimuove il bordo */
+    background: none; /* Sfondo trasparente */
+    cursor: pointer; /* Cambia il cursore in "mano" */
+    margin: 5px; /* Spazio tra i pulsanti */
+    padding: 8px; /* Spaziatura per uniformità */
+    border-radius: 4px; /* Angoli arrotondati */
+    transition: all 0.3s ease-in-out; /* Aggiunge un effetto fluido */
+}
+
+/* Effetto hover per i pulsanti */
+.action-btn:hover {
+    background-color: #4CAF50; /* Sfondo verde come il pulsante principale */
+}
+
+/* Stile per le icone dei pulsanti */
+.action-btn i {
+    font-size: 18px; /* Dimensione coerente con gli input */
+    color: #555; /* Grigio scuro per coerenza */
+    transition: color 0.3s ease-in-out; /* Effetto colore fluido */
+}
+
+/* Cambia colore al passaggio del mouse */
+.action-btn:hover i {
+    color: white; /* Cambia colore in bianco per contrasto */
+}
+
+/* Stili responsivi per la tabella */
+@media (max-width: 500px) {
+    table {
+        font-size: 12px; /* Riduce la dimensione del testo */
+    }
+    th, td {
+        padding: 8px; /* Riduce la spaziatura */
+    }
+}

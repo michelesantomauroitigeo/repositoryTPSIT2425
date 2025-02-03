@@ -2,40 +2,39 @@ document.getElementById("form").addEventListener("submit", function(event) {
   event.preventDefault();
 
   // Nascondi gli errori precedenti
+  document.getElementById("username-error").textContent = "";
   document.getElementById("nome-error").textContent = "";
   document.getElementById("cognome-error").textContent = "";
   document.getElementById("email-error").textContent = "";
   document.getElementById("telefono-error").textContent = "";
-  document.getElementById("cf-error").textContent = "";
-  document.getElementById("altezza-error").textContent = "";
-  document.getElementById("peso-error").textContent = "";
+  document.getElementById("data-error").textContent = "";
 
   let valid = true;
 
   // Verifica Nome
   const nome = document.getElementById("nome").value;
-  if (nome === "") {
+  if (nome.trim() === "") {
     document.getElementById("nome-error").textContent = "Il nome è obbligatorio.";
     valid = false;
   }
 
   // Verifica Cognome
   const cognome = document.getElementById("cognome").value;
-  if (cognome === "") {
+  if (cognome.trim() === "") {
     document.getElementById("cognome-error").textContent = "Il cognome è obbligatorio.";
     valid = false;
   }
 
   // Verifica Email
   const email = document.getElementById("email").value;
-  if (email === "") {
+  if (email.trim() === "") {
     document.getElementById("email-error").textContent = "L'email è obbligatoria.";
     valid = false;
   }
 
   // Verifica Numero di Telefono
   const telefono = document.getElementById("telefono").value;
-  if (telefono === "") {
+  if (telefono.trim() === "") {
     document.getElementById("telefono-error").textContent = "Il numero di telefono è obbligatorio.";
     valid = false;
   } else if (!/^\d{10}$/.test(telefono)) {
@@ -43,24 +42,17 @@ document.getElementById("form").addEventListener("submit", function(event) {
     valid = false;
   }
 
-  // Verifica Codice Fiscale
-  const codiceFiscale = document.getElementById("codice_fiscale").value;
-  if (codiceFiscale === "") {
-    document.getElementById("cf-error").textContent = "Il codice fiscale è obbligatorio.";
+  // Verifica Data di Nascita
+  const data = document.getElementById("data").value;
+  if (data.trim() === "") {
+    document.getElementById("data-error").textContent = "La data di nascita è obbligatoria.";
     valid = false;
   }
 
-  // Verifica Altezza
-  const altezza = document.getElementById("altezza").value;
-  if (altezza === "") {
-    document.getElementById("altezza-error").textContent = "L'altezza è obbligatoria.";
-    valid = false;
-  }
-
-  // Verifica Peso
-  const peso = document.getElementById("peso").value;
-  if (peso === "") {
-    document.getElementById("peso-error").textContent = "Il peso è obbligatorio.";
+  // Verifica Username
+  const username = document.getElementById("username").value;
+  if (username.trim() === "") {
+    document.getElementById("username-error").textContent = "L'username è obbligatorio.";
     valid = false;
   }
 

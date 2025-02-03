@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it"> <!-- specifica la lingua del sito web -->
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style0.css">
+    <meta charset="UTF-8"> <!--definisce la codifica dei caratteri utilizzata nella pagina, UTF-8 è una codifica che supporta praticamente tutti i caratteri di tutte le lingue del mondo. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--name="viewport"  indica che il tag riguarda la configurazione del viewport (l'area visibile di una pagina su un dispositivo -->.
+    <!--content="width=device-width dice al browser di impostare la larghezza del viewport uguale alla larghezza dello schermo del dispositivo. -->
+    <!--initial-scale=1.0  imposta lo zoom iniziale della pagina su 100%. -->
+
+    <title>Registrazione</title>
+</head>
+<body>
+    <h2>Registazione</h2>
+    <form action="/submit" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="cognome">Cognome:</label>
+        <input type="text" id="cognome" name="cognome" required><br><br>
+
+        <label for="data_nascita">Data di Nascita:</label>
+        <input type="date" id="data_nascita" name="data_nascita" required><br><br>
+
+        <label for="residenza">Residenza:</label>
+        <input type="text" id="residenza" name="residenza" required><br><br>
+
+        <label for="sesso">Sesso:</label><br>
+        <input type="radio" id="maschile" name="sesso" value="Maschile">
+        <label for="maschile">Maschile</label><br>
+        <input type="radio" id="femminile" name="sesso" value="Femminile">
+        <label for="femminile">Femminile</label><br><br>
+
+        <label for="username_email">Username o Email:</label>
+        <input type="email" id="username_email" name="username_email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="conferma_password">Conferma Password:</label>
+        <input type="password" id="conferma_password" name="conferma_password" required><br><br>
+
+        <button type="submit">Registrati</button>
+    </form>
+</body>
+</html>

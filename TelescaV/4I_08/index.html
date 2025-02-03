@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione</title>
+    <link rel="stylesheet" href="css/stile.css">
+</head>
+<body>
+    <h1>Modulo di Registrazione</h1>
+    <table id="tabella-registrazione">
+        <form id="form-registrazione">
+            <tr>
+                <td><label for="nome">Nome:</label></td>
+                <td><input type="text" id="nome" name="nome"></td>
+                <td class="errore" id="errore-nome"></td>
+            </tr>
+            <tr>
+                <td><label for="cognome">Cognome:</label></td>
+                <td><input type="text" id="cognome" name="cognome"></td>
+                <td class="errore" id="errore-cognome"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email"></td>
+                <td class="errore" id="errore-email"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password"></td>
+                <td class="errore" id="errore-password"></td>
+            </tr>
+            <tr>
+                <td><label for="telefono">Numero di Telefono:</label></td>
+                <td><input type="text" id="telefono" name="telefono"></td>
+                <td class="errore" id="errore-telefono"></td>
+            </tr>
+            <tr>
+                <td><label for="indirizzo">Indirizzo:</label></td>
+                <td><input type="text" id="indirizzo" name="indirizzo"></td>
+                <td class="errore" id="errore-indirizzo"></td>
+            </tr>
+            <tr>
+                <td><label for="indirizzo-secondario">Indirizzo Secondario:</label></td>
+                <td><input type="text" id="indirizzo-secondario" name="indirizzo-secondario"></td>
+                
+            </tr>
+            <tr>
+                <td colspan="3" class="bottone">
+                    <button type="submit">Registrati</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+
+    <script src="js/validazione.js"></script>
+</body>
+</html>
