@@ -10,34 +10,34 @@
 <body>
     <div class="generale">
         <h2>Registrazione Utente</h2>
-        <form name="form"  onsubmit="return Controllo()">
+        <form name="form" method="post" onsubmit="return Controllo()">
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome">
-            <p id="errorNome">*Campo non compilato*</p>
+            <span id="errorNome">*Campo non compilato*</span>
 
             <label for="cognome">Cognome</label>
             <input type="text" id="cognome" name="cognome">
-            <p id="errorCognome">*Campo non compilato*</p>
+            <span id="errorCognome">*Campo non compilato*</span>
 
             <label for="username">Username</label>
             <input type="text" id="username" name="username">
-            <p id="errorUsername">*Campo non compilato*</p>
+            <span id="errorUsername">*Campo non compilato*</span>
 
             <label for="telefono">Telefono</label>
             <input type="text" id="telefono" name="telefono">
-            <p id="errorTelefono">*Campo non compilato*</p>
+            <span id="errorTelefono">*Campo non compilato*</span>
  
             <label for="data">Data di nascita:</label>
             <input type="text" id="data" name="data">
-            <p id="errorData">*Campo non compilato*</p>
+            <span id="errorData">*Campo non compilato*</span>
  
             <label for="email">Email</label>
             <input type="email" id="email" name="email">
-            <p id="errorEmail">*Campo non compilato*</p>
+            <span id="errorEmail">*Campo non compilato*</span>
   
             <label for="password">Password</label>
             <input type="password" id="password" name="password">
-            <p id="errorPassword">*Campo non compilato*</p>
+            <span id="errorPassword">*Campo non compilato*</span>
 
             <input type="submit" value="Registrazione" id="submit">
         </form>
