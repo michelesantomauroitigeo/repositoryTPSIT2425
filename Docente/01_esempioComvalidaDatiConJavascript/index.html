@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>
+		<link rel="stylesheet" type="text/css" href="stile.css">
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<form id="idFormRegistrazione" name="formRegistrazione" onsubmit="return verificaForm()" method="get">
+			Nome: <input type="text" name="campoNome">
+			<span id="messaggioErroreNome"></span>
+			<br/>
+			Cognome: <input type="text" name="campoCognome">
+			<span id="messaggioErroreCognome"></span>
+			<br/>
+			Data nascita: <input type="date" name="campoData">
+			<span id="messaggioErroreData"></span>
+			<br/>
+			<input type="submit" value="Invia">
+		</form>
+	</body>
+</html>
