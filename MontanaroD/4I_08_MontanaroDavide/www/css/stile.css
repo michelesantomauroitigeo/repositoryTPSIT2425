@@ -1,43 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: snow;
-}
 
-form {
-    max-width: 400px;
-    margin: auto;
-    background: white;
-    padding: 50px;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-}
-
-label {
-    font-weight: bold;
-    margin-top: 10px;
-    display: block;
-}
-
-input {
-    width: 100%;
-    padding: 8px;
-    margin: 10px 0;
-    border: 1px solid lightgray;
-    border-radius: 3px;
-}
-
-input.error {
-    border-color: red;
-    background-color: mistyrose;
-}
-
-button {
-    background-color: dodgerblue;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 14px;
+p {
+    color: red;
 }
