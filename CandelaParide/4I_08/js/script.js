@@ -1,5 +1,4 @@
-document.querySelector("form").addEventListener("submit", function (e) {
-    e.preventDefault();
+document.querySelector("form").addEventListener("submit", function () {
     console.log("invio del form funzionante");
 
     const inputs = document.querySelectorAll("input[type='text'], input[type='password']");
@@ -23,11 +22,12 @@ document.querySelector("form").addEventListener("submit", function (e) {
             input.parentNode.insertBefore(errore, input.nextSibling);
 
 
-            console.log(" Messaggio di errore funzionante ");
         } else {
             input.style.border = "1px solid black";
             console.log("Compilazione campo funzionante");
         }
     });
     console.log("Controllo dei campi completato");
+
+
 });
