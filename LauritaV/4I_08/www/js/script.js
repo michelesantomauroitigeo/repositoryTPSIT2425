@@ -34,7 +34,7 @@ function validateForm() {
         Valido = false;
     } else {
         const errorElement = document.getElementById("pwd-errore");
-        input_pwd.classList.remove('error'); 
+        input_pwd.classList.remove('errore'); 
         errorElement.style.display = 'none'; 
     }
 

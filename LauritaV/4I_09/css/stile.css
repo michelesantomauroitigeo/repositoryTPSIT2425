@@ -17,6 +17,7 @@ h1 {
         0 0 102px #ff00ff,
         0 0 151px #ff00ff;
 }
+
 /*Tabella, righe, colonne*/
 table {
     width: 100%;
@@ -55,6 +56,7 @@ tr:hover {
     cursor: pointer;
     margin-left: 10px;
 }
+
 #x-icon {
     color: red;
 }
