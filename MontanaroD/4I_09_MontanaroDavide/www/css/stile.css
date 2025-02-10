@@ -25,7 +25,6 @@ table {
     margin: 20px auto;
     border-collapse: collapse;
     background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 th {
@@ -45,11 +44,6 @@ table, th, td {
     border: 1px solid lightgray;
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-}
 
 footer {
     text-align: center;
@@ -58,3 +52,5 @@ footer {
     color: white;
     margin-top: 20px;
 }
+
+
