@@ -1,22 +1,24 @@
-
+<!DOCTYPE html>
+<html lang="it">
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area riservata</title>
+
     <style>
-    	    
         table, th, td {
-            border: 1px solid black; /dimensioni linee
+            border: 1px solid black;
         }
-        
+
         th, td {
-            padding: 8px; //grandezza spazi tabelle
+            padding: 8px;
             text-align: center;
         }
-        
-       	th {
-            background-color: yellow; //colore dati
+
+        th {
+            background-color: yellow;
         }
-        
+
         .icon-container {
             display: flex;
             justify-content: space-evenly;
@@ -29,15 +31,59 @@
             margin: 0 3px;
             cursor: pointer;
         }
-        
+
+        /*Modulo di modifica */
+        .edit-modal {
+            display: none; /* Nascosto di default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 300px;
+        }
+
+        .modal-content label {
+            font-size: 14px;
+        }
+
+        .modal-content input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .modal-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .modal-buttons button {
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+
     </style>
 </head>
+
 <body>
     <h1>Tabella Dati Persone</h1>
     <table>
-        
+        <thead>
             <tr>
-        
                 <th>Nome</th>
                 <th>Cognome</th>
                 <th>Email</th>
@@ -45,11 +91,9 @@
                 <th>Numero di Telefono</th>
                 <th>Username</th>
                 <th>Azioni</th>
-                
-                    
-        
+            </tr>
+        </thead>
         <tbody>
-            
             <tr>
                 <td>Mario</td>
                 <td>Rossi</td>
@@ -60,13 +104,10 @@
                 <td>
                     <div class="icon-container">
                         <img src="https://img.icons8.com/ios/50/000000/trash.png" alt="Cestino">
-                        <img src="https://img.icons8.com/ios/50/000000/edit.png" alt="Matita">
-                        <img src="https://png.pngtree.com/png-vector/20210214/ourmid/pngtree-pixel-sunglasses-png-image_2920183.jpg" alt="Abilitare">
+                        <img class="edit-icon" src="https://img.icons8.com/ios/50/000000/edit.png" alt="Matita" data-nome="Mario" data-cognome="Rossi">
                     </div>
                 </td>
             </tr>
-            
-
             <tr>
                 <td>Luigi</td>
                 <td>Bianchi</td>
@@ -128,9 +169,9 @@
                 </td>
             </tr>
              <tr>
-             	<td>Anna</td>
+                <td>Anna</td>
                 <td>Rossi</td>
-                <td>anna.rossi@example.com</td>								
+                <td>anna.rossi@example.com</td>                             
                 <td>22/03/1993</td>
                 <td>+39 123 567 890</td>
                 <td>anna93</td>
@@ -143,9 +184,9 @@
                 </td>
             </tr>
             <tr>
-            	<td>Giovanni</td>
-            	<td>Verdi</td>
-            	<td>giovanni.verdi@example.com</td>
+                <td>Giovanni</td>
+                <td>Verdi</td>
+                <td>giovanni.verdi@example.com</td>
                 <td>17/08/1988</td>
                 <td>+39 234 567 891</td>
                 <td>giovanni88</td>
@@ -156,8 +197,8 @@
                 </div>
             </tr>
             <tr>
-            	<td>Federica</td>
-                <td>Gialli</td>						    					
+                <td>Federica</td>
+                <td>Gialli</td>                                             
                 <td>federica.gialli@example.com</td>
                 <td>28/02/1994</td>
                 <td>+39 345 678 912</td>
@@ -171,12 +212,12 @@
                 </td>
            </tr>
            <tr>
-            	<td>Stefano</td>
-           		<td>Bianchi</td>							 				 
+                <td>Stefano</td>
+                <td>Bianchi</td>                                             
                 <td>stefano.bianchi@example.com</td>
-           		<td>10/11/1982</td>
-            	<td>+39 456 789 123</td>
-           	 	<td>stefano82</td>
+                <td>10/11/1982</td>
+                <td>+39 456 789 123</td>
+                <td>stefano82</td>
                 <td>
                     <div class="icon-container">
                         <img src="https://img.icons8.com/ios/50/000000/trash.png" alt="Cestino">
@@ -186,12 +227,12 @@
                 </td>
           </tr>
           <tr>
-          		<td>Elena</td>
-            	<td>Rossi</td>
-            	<td>elena.rossi@example.com</td>		  					
+                <td>Elena</td>
+                <td>Rossi</td>
+                <td>elena.rossi@example.com</td>                            
                 <td>05/06/1990</td>
-            	<td>+39 567 890 234</td>
-            	<td>elena90</td>
+                <td>+39 567 890 234</td>
+                <td>elena90</td>
                 <td>
                     <div class="icon-container">
                         <img src="https://img.icons8.com/ios/50/000000/trash.png" alt="Cestino">
@@ -201,9 +242,9 @@
                 </td>
           </tr>
           <tr>
-            	<td>Carlo</td>
+                <td>Carlo</td>
                 <td>Verdi</td>
-                <td>carlo.verdi@example.com</td> 			  				  
+                <td>carlo.verdi@example.com</td>                              
                 <td>13/12/1987</td>
                 <td>+39 678 901 345</td>
                 <td>carlo87</td>
@@ -217,8 +258,8 @@
           </tr>
          
           <tr>
-          		<td>Simone</td>
-                <td>Bianchi</td>			  								
+                <td>Simone</td>
+                <td>Bianchi</td>                                            
                 <td>simone.bianchi@example.com</td>
                 <td>19/01/1991</td>
                 <td>+39 789 012 456</td>
@@ -232,9 +273,9 @@
                 </td>
           </tr>
           <tr>
-            	<td>Paola</td>
-            	<td>Gialli</td>												
-                <td>paola.gialli@example.com</td>							
+                <td>Paola</td>
+                <td>Gialli</td>                                             
+                <td>paola.gialli@example.com</td>                           
                 <td>30/04/1984</td>
                 <td>+39 890 123 567</td>
                 <td>paola84</td>
@@ -246,10 +287,10 @@
                     </div>
                 </td>
           </tr>
-          <tr>	
-          		<td>Marco</td>
+          <tr>  
+                <td>Marco</td>
                 <td>Rossi</td>
-                <td>marco.rossi@example.com</td>							
+                <td>marco.rossi@example.com</td>                            
                 <td>03/07/1992</td>
                 <td>+39 901 234 678</td>
                 <td>marco92</td>
@@ -261,10 +302,10 @@
                     </div>
                 </td>
          </tr>
-         <tr>	
-         		<td>Francesca</td>
-                <td>Verdi</td>												
-                <td>francesca.verdi@example.com</td>						
+         <tr>   
+                <td>Francesca</td>
+                <td>Verdi</td>                                              
+                <td>francesca.verdi@example.com</td>                        
                 <td>14/08/1989</td>
                 <td>+39 012 345 789</td>
                 <td>francesca89</td>
@@ -276,10 +317,10 @@
                     </div>
                 </td>
         </tr>
-        <tr>	
-        		<td>Davide</td>
-                <td>Ferri</td>												
-                <td>davide.ferri@example.com</td>						
+        <tr>    
+                <td>Davide</td>
+                <td>Ferri</td>                                              
+                <td>davide.ferri@example.com</td>                       
                 <td>25/11/1995</td>
                 <td>+39 123 456 789</td>
                 <td>davide95</td>
@@ -293,9 +334,9 @@
                 
         </tr>
         <tr>
-            	<td>Maria</td>
-                <td>Rossi</td>												
-                <td>maria.rossi@example.com</td>							
+                <td>Maria</td>
+                <td>Rossi</td>                                              
+                <td>maria.rossi@example.com</td>                            
                 <td>07/09/1983</td>
                 <td>+39 234 567 890</td>
                 <td>maria83</td>
@@ -306,9 +347,57 @@
                         <img src="https://png.pngtree.com/png-vector/20210214/ourmid/pngtree-pixel-sunglasses-png-image_2920183.jpg" alt="Abilitare">
                     </div>
                 </td>
-                
-       
+        </tbody>
+
     </table>
+
+    //Modale per la modifica 
+    <div class="edit-modal" id="editModal">
+        <div class="modal-content">
+            <label for="editNome">Nome</label>
+            <input type="text" id="editNome" value="">
+            
+            <label for="editCognome">Cognome</label>
+            <input type="text" id="editCognome" value="">
+
+            <div class="modal-buttons">
+                <button id="cancelBtn">Annulla</button>
+                <button id="saveBtn">Modifica</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Riferimenti agli elementi
+        const editIcons = document.querySelectorAll('.edit-icon');
+        const editModal = document.getElementById('editModal');
+        const cancelBtn = document.getElementById('cancelBtn');
+        const saveBtn = document.getElementById('saveBtn');
+        const editNome = document.getElementById('editNome');
+        const editCognome = document.getElementById('editCognome');
+
+        // Mostra la modale quando si clicca sulla matita
+        editIcons.forEach(icon => {
+            icon.addEventListener('click', function() {
+                // Ottieni i dati del nome e cognome dalla riga
+                const nome = this.getAttribute('data-nome');
+                const cognome = this.getAttribute('data-cognome');
+
+                // Imposta i valori nei campi del modulo
+                editNome.value = nome;
+                editCognome.value = cognome;
+
+                // Mostra la modale
+                editModal.style.display = 'flex';
+            });
+        });
+
+        // Annulla l'operazione e chiudi la modale
+        cancelBtn.addEventListener('click', function() {
+            editModal.style.display = 'none';
+        });
+
+ 
+    </script>
 </body>
 </html>
-
