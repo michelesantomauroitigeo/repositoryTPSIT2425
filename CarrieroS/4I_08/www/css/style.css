@@ -1,51 +1,86 @@
+/* Impostazioni di base per il corpo della pagina */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  padding: 20px;
+  font-family: Arial, sans-serif; /* Imposta il font principale */
+  background-color: #f4f4f4; /* Colore di sfondo grigio chiaro */
+  padding: 20px; /* Spazio intorno al contenuto */
+  display: flex; /* Usa il modello di layout flessibile */
+  justify-content: center; /* Centra il contenuto orizzontalmente */
+  align-items: center; /* Centra il contenuto verticalmente */
+  height: 100vh; /* Altezza pari al 100% della finestra del browser */
 }
 
+/* Stile del titolo */
 h2 {
-  text-align: center;
+  text-align: center; /* Centra il testo */
+  color: #333; /* Colore scuro per contrasto */
 }
 
+/* Stile delle etichette dei campi */
 label {
-  display: block;
-  margin: 10px 0 5px;
+  display: block; /* Fa sì che l'etichetta occupi tutta la larghezza disponibile */
+  font-weight: bold; /* Testo in grassetto */
+  margin: 10px 0 5px; /* Spaziatura sopra e sotto */
+  color: #555; /* Colore leggermente scuro per leggibilità */
 }
 
+/* Stile per gli input */
 input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  width: 100%; /* Occupa tutta la larghezza disponibile */
+  padding: 10px; /* Spazio interno per maggiore leggibilità */
+  margin-top: 5px; /* Distanza dall'etichetta sopra */
+  border: 1px solid #ccc; /* Bordo grigio chiaro */
+  border-radius: 4px; /* Angoli arrotondati */
+  font-size: 16px; /* Dimensione del testo */
+  transition: border-color 0.3s ease-in-out; /* Animazione per il cambio di colore del bordo */
 }
 
+/* Effetto quando l'input è selezionato */
+input:focus {
+  border-color: #4CAF50; /* Cambia il colore del bordo a verde */
+  outline: none; /* Rimuove il contorno predefinito del browser */
+}
+
+/* Stile per il pulsante */
 button {
-  width: 100%;
-  padding: 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  width: 100%; /* Occupa tutta la larghezza */
+  padding: 10px; /* Spazio interno */
+  background-color: #4CAF50; /* Colore di sfondo verde */
+  color: white; /* Testo bianco */
+  border: none; /* Nessun bordo */
+  border-radius: 4px; /* Angoli arrotondati */
+  cursor: pointer; /* Cambia il cursore a "mano" quando si passa sopra */
+  font-size: 16px; /* Dimensione del testo */
+  transition: background-color 0.3s ease-in-out; /* Effetto fluido nel cambio di colore */
 }
 
+/* Effetto quando il pulsante viene passato con il mouse */
 button:hover {
-  background-color: #0000ff;
+  background-color: #0000ff; /* Cambia colore in blu */
 }
 
+/* Contenitore del modulo */
 .container {
-  background-color: white;
-  border-radius: 8px;
-  padding: 20px;
-  width: 300px;
-  margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white; /* Sfondo bianco */
+  border-radius: 8px; /* Angoli arrotondati */
+  padding: 4%; /* Spazio interno */
+  width: 100%; /* Occupa tutta la larghezza disponibile */
+  max-width: 400px; /* Larghezza massima per evitare che sia troppo grande */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra leggera per effetto 3D */
 }
 
+/* Stile per i messaggi di errore */
 .error {
-  color: red;
-  font-size: 12px;
-  margin-top: 5px;
+  color: red; /* Testo rosso per evidenziare l'errore */
+  font-size: 12px; /* Dimensione del testo più piccola */
+  display: block; /* Allinea correttamente il testo */
+  margin-top: -5px; /* Avvicina il messaggio all'input */
+  margin-bottom: 35px; /* Aggiunge spazio sotto il messaggio */
+}
+
+/* Stili responsivi: quando lo schermo è più piccolo di 500px */
+@media (max-width: 500px) {
+  .container {
+    width: 90%; /* Riduce la larghezza per adattarsi meglio agli schermi piccoli */
+    padding: 5%; /* Aggiunge più spazio interno per una migliore leggibilità */
+  }
 }

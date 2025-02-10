@@ -1,0 +1,58 @@
+/* Impostazioni generali per il corpo della tabella */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Stile per le intestazioni della tabella */
+th {
+    background-color: #4CAF50; /* Colore di sfondo verde */
+    color: white;              /* Colore del testo bianco */
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Stile per le celle della tabella */
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;    /* Bordo leggero grigio */
+    font-size: 13px;
+}
+
+/* Colore alternato per le righe */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Colore di sfondo grigio chiaro per le righe pari */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* Colore di sfondo bianco per le righe dispari */
+}
+
+/* Impostazione bordo per la tabella */
+table, th, td {
+    border: 1px solid #ddd;    /* Bordo grigio chiaro per tabella e celle */
+}
+
+/* Impostazioni per il passaggio del mouse sulle righe */
+tr:hover {
+    background-color: #ddd;   /* Colore di sfondo grigio chiaro quando si passa il mouse */
+}
+
+/* Stile per la tabella quando il testo è troppo lungo */
+td {
+    word-wrap: break-word;     /* Impedisce che il testo esca dalla cella */
+}
+
+/* Impostazioni per la larghezza delle colonne */
+th, td {
+    width: 11%;                /* Imposta una larghezza uniforme per tutte le colonne */
+}
+
+/* Stile per le righe evidenziate */
+tr.highlight {
+    background-color: #f4c542; /* Colore giallo per le righe evidenziate */
+}

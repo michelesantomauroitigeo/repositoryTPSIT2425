@@ -1,0 +1,46 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+
+.errore {
+    color: red;
+    font-size: 20px;
+}
+
+.bottone {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 45%;
+    margin-top: 2.5%;
+}
+
+#tabella-registrazione {
+    margin: 0 auto;
+    width: 60%;
+    border: 2px solid;
+    padding: 10px;
+   
+}
+
+h2{
+    text-align: center;
+    color: blue;    
+    font-size: 35px;
+
+}
+
+.input{
+    margin:auto;
+    padding:15px;
+    color: dark;
+    font-size: 25px;
+}
+
+.sezione{
+    font-size: 25px;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Login</title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        #invio {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input.errore {
+            border-color: red;
+        }
+
+        small {
+            display: none;
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form onsubmit="return validateForm()">
+        <div>
+            <label for="e-mail">La tua e-mail:</label>
+            <input type="email" id="e-mail" name="e-mail">
+            <small id="email-errore">COMPILA IL CAMPO E-MAIL</small>
+        </div>
+
+        <div>
+            <label for="usern">Il tuo username:</label>
+            <input type="text" id="usern" name="usern">
+            <small id="usern-errore">COMPILA IL CAMPO USERNAME!</small>
+        </div>
+
+        <div>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd">
+            <small id="pwd-errore">COMPILA IL CAMPO PASSWORD</small>
+        </div>
+
+        <div>
+            <input type="submit" id="invio" value="Submit">
+        </div>
+    </form>
+
+    <script>
+        function validateForm() {
+            const input_email = document.getElementById("e-mail");
+            const input_usern = document.getElementById("usern");
+            const input_pwd = document.getElementById("pwd");
+
+            let Valido = true;
+
+            if (input_email.value.trim() === '') {
+                const errorElement = document.getElementById("email-errore");
+                input_email.classList.add('errore'); 
+                errorElement.style.display = 'block'; 
+                Valido = false;
+            } else {
+                const errorElement = document.getElementById("email-errore");
+                input_email.classList.remove('errore'); 
+                errorElement.style.display = 'none'; 
+            }
+
+            if (input_usern.value.trim() === '') {
+                const errorElement = document.getElementById("usern-errore");
+                input_usern.classList.add('errore'); 
+                errorElement.style.display = 'block'; 
+                Valido = false;
+            } else {
+                const errorElement = document.getElementById("usern-errore");
+                input_usern.classList.remove('errore'); 
+                errorElement.style.display = 'none'; 
+            }
+
+            if (input_pwd.value.trim() === '') {
+                const errorElement = document.getElementById("pwd-errore");
+                input_pwd.classList.add('errore'); 
+                errorElement.style.display = 'block'; 
+                Valido = false;
+            } else {
+                const errorElement = document.getElementById("pwd-errore");
+                input_pwd.classList.remove('errore'); 
+                errorElement.style.display = 'none'; 
+            }
+
+            return Valido;
+        }
+    </script>
+</body>
+</html>
