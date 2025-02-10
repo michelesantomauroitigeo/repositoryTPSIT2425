@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="js/script.js" ></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Registrazione</h1>
+    </header>
+
+    <section id="registrazione">
+        <h2>Crea un nuovo account</h2>
+        <form onsubmit="return validaLogin()">
+            <label for="name"> Nome: </label>
+            <br> <br>
+            <input type="text" id="nome" name="name" placeholder="INSERISCI IL NOME">
+            <span id="n-errore"> È obbligatorio compilare questo campo!! </span>
+
+            <label for="name"> Cognome: </label>
+            <br> <br>
+            <input type="text" id="cognome" name="name" placeholder="INSERISCI IL COGNOME">
+            <span id="c-errore"> È obbligatorio compilare questo campo!! </span>
+             
+            <label for="name"> Email: </label>
+            <br> <br>
+            <input type="text" id="email" name="name" placeholder="INSERISCI l'EMAIL">
+            <span id="e-errore"> È obbligatorio compilare questo campo!! </span>
+
+            <label for="name"> Username: </label>
+            <br> <br>
+            <input type="text" id="username" name="name" placeholder="INSERISCI IL TUO USERNAME">
+            <span id="u-errore"> È obbligatorio compilare questo campo!! </span>
+
+            <label for="name"> Password: </label>
+            <br> <br>
+            <input type="text" id="password" name="name" placeholder="INSERISCI LA PASSWORD">
+            <span id="p-errore"> È obbligatorio compilare questo campo!! </span>
+
+            <input type="submit" id="invio" value="Invia">
+
+           </form>
+           
+</body>
+</html>

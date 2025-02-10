@@ -4,7 +4,6 @@ html, body {
 }
 body {
     display: flex;
-    align-items: flex-start;
     justify-content: center;
     align-items: center;
     background-color: #333;

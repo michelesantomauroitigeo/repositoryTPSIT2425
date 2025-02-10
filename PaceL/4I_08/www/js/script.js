@@ -3,13 +3,14 @@ function preventSubmit(event) {
     let valid = true;
 
     // Aggiungi qui la validazione dei campi
-    const nome = document.getElementById('nome').value;
-    const cognome = document.getElementById('cognome').value;
-    const dataNascita = document.getElementById('data_nascita').value;
-    const telefono = document.getElementById('telefono').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const confermaPassword = document.getElementById('conferma_password').value;
+    let nome = document.getElementById('nome').value;
+    let cognome = document.getElementById('cognome').value;
+    let dataNascita = document.getElementById('data_nascita').value;
+    let residenza = document.getElementById('residenza').value;
+    let telefono = document.getElementById('telefono').value;
+    let email = document.getElementById('email').value;
+    let password = document.getElementById('password').value;
+    let   confermaPassword = document.getElementById('conferma_password').value;
 
     // Esegui la validazione dei campi e mostra gli errori se necessario
     if (nome === "") {
@@ -24,6 +25,11 @@ function preventSubmit(event) {
 
     if (dataNascita === "") {
         document.getElementById('erroreDataNascita').textContent = "Campo obbligatorio.";
+        valid = false;
+    }
+
+    if (residenza === "") {
+        document.getElementById('erroreResidenza').textContent = "Campo obbligatorio.";
         valid = false;
     }
 
@@ -55,3 +61,53 @@ function preventSubmit(event) {
 
     return valid;
 }
+
+
+// Aggiungi l'event listener per rimuovere il messaggio di errore quando l'utente modifica un campo
+document.getElementById('nome').addEventListener('input', function() {
+    if (this.value !== "") {
+        document.getElementById('erroreNome').textContent = "";
+    }
+});
+
+document.getElementById('cognome').addEventListener('input', function() {
+    if (this.value !== "") {
+        document.getElementById('erroreCognome').textContent = "";
+    }
+});
+
+document.getElementById('data_nascita').addEventListener('input', function() {
+    if (this.value !== "") {
+        document.getElementById('erroreDataNascita').textContent = "";
+    }
+});
+
+document.getElementById('residenza').addEventListener('input', function() {
+    if (this.value !== "") {
+        document.getElementById('erroreResidenza').textContent = "";
+    }
+});
+
+document.getElementById('telefono').addEventListener('input', function() {
+    if (this.value !== "") {
+        document.getElementById('erroreTelefono').textContent = "";
+    }
+});
+
+document.getElementById('email').addEventListener('input', function() {
+    if (this.value !== "") {
+        document.getElementById('erroreEmail').textContent = "";
+    }
+});
+
+document.getElementById('password').addEventListener('input', function() {
+    if (this.value !== "") {
+        document.getElementById('errorePassword').textContent = "";
+    }
+});
+
+document.getElementById('conferma_password').addEventListener('input', function() {
+    if (this.value === document.getElementById('password').value) {
+        document.getElementById('erroreConfermaPassword').textContent = "";
+    }
+});
