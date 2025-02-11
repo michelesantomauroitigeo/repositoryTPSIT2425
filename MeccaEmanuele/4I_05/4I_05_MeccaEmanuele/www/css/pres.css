@@ -1,0 +1,97 @@
+<style>
+        body {
+            background-image: url('https://img.freepik.com/premium-vector/hand-drawn-barber-salon-seamless-pattern_698782-809.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 1200px; /* Limita la larghezza massima */
+        }
+
+        .blurred-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://img.freepik.com/premium-vector/hand-drawn-barber-salon-seamless-pattern_698782-809.jpg');
+            background-size: cover;
+            background-position: center center;
+            filter: blur(10px);
+            z-index: 0;
+        }
+
+        .content {
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        .text {
+            flex: 1;
+            padding: 30px;
+            text-align: left; /* Allinea il testo a sinistra */
+            font-size: 18px;
+            color: #333;
+            display: flex;
+            flex-direction: column; /* Consente di avere il testo su più righe */
+            height: 400px; /* Limita l'altezza del testo */
+            overflow-y: auto; /* Aggiunge una barra di scorrimento se il testo è troppo lungo */
+        }
+
+        .bold {
+            font-weight: bold;
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .indietro {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .indietro:hover {
+            background-color: #0056b3;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px; /* Aggiunge spazio attorno all'immagine */
+            flex: 1; /* Permette all'immagine di occupare la metà destra dello schermo */
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
