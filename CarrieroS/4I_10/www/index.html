@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
+    <!-- Definizione del set di caratteri e della compatibilità con i dispositivi mobili -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Collegamento al file CSS per lo stile della pagina -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Tabella Utenti</title>
+
+    <!-- Collegamento al file JavaScript con defer per eseguire lo script dopo il caricamento della pagina -->
+    <script src="js/script.js" defer></script>
+
+    <!-- Titolo della pagina -->
+    <title>Area Riservata</title>
 </head>
+
 <body>
-    <table>
+    <!-- Creazione della tabella per la visualizzazione degli utenti -->
+    <table class="Tabella_Principale">
         <thead>
+
             <!-- Intestazioni delle colonne della tabella -->
             <tr>
                 <th>ID</th>
@@ -1568,5 +1579,47 @@
             </tr>
         </tbody>
     </table>
+    <div id="Finestra_Dati">
+        <button class="chiudiFinestra">x</button>
+        <form class="Finestra-modifica">
+            <h2>Modifica dati</h2>
+            <div class="Finestra-gruppo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+
+            <div class="Finestra-gruppo">
+                <label for="cognome">Cognome</label>
+                <input type="text" id="cognome" name="cognome">
+            </div>
+
+            <div class="Finestra-gruppo">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="Finestra-gruppo">
+                <label for="telefono">Telefono</label>
+                <input type="text" id="telefono" name="telefono">
+            </div>
+
+            <div class="Finestra-gruppo">
+                <label for="data">Data</label>
+                <input type="date" id="data" name="data">
+            </div>
+
+            <div class="Finestra-gruppo">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+
+            </div>
+            <div class="contenitore_bottone">
+                <button type="button" class="modelo-bottone Bottone-Annulla">Annulla</button>
+                <button type="submit" class="modelo-bottone Bottone-Salva">Salva</button>
+            </div>
+        </form>
+
+    </div>
 </body>
+
 </html>

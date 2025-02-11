@@ -10,7 +10,7 @@ function preventSubmit(event) {
     let telefono = document.getElementById('telefono').value;
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
-    let   confermaPassword = document.getElementById('conferma_password').value;
+    let confermaPassword = document.getElementById('conferma_password').value;
 
     // Esegui la validazione dei campi e mostra gli errori se necessario
     if (nome === "") {

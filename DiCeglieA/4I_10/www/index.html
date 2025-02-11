@@ -1,11 +1,46 @@
 <html>
   <head>
-    <title>Form</title>
+    <title>Scheda Utenti</title>
     <link rel="stylesheet" href="css/mystyle.css" />
-    <script src="js/script.js"></script>
+    <script src="js/myscript.js"></script>
   </head>
 
-  <body>
+  <body >
+    <div id="modale">
+      <div id="contenuto-modale">
+        
+  <div id="modale-header">
+    <span id="chiudi" onclick="chiudiModale()">X</span>
+    <h2>Modal Header</h2>
+  </div>
+  <div id="modale-body">
+    <form class="modifica">
+        <label for="editNome">Nome</label>
+        <input type="text" id="editNome" name="nome" value="">
+        <br>
+        <label for="editCognome">Cognome</label>
+        <input type="text" id="editCognome" name="cognome" value="">
+        <br>
+        <label for="editEmail">E-mail</label>
+        <input type="email" id="editEmail" name="email" value="">
+        <br>
+        <label for="editTelefono">N. Telefono</label>
+        <input type="tel" id="editTelefono" name="telefono" value="">
+        <br>
+        <label for="editDataNascita">Data di Nascita</label>
+        <input type="date" id="editDataNascita" name="data_nascita" value="">
+        <br>
+        <label for="editUsername">Username</label>
+        <input type="text" id="editUsername" name="username" value="">
+        <br>
+        <button id="btn-Modifica">Modifica</button>
+    </form>
+  </div>
+        
+      </div>
+
+    </div>
+
     <table>
       <thead>
         <tr>
@@ -28,7 +63,7 @@
           <td>12/05/1985</td>
           <td>luca_rossi</td>
            <td>
-            <button type="button">Modifica</button>
+            <button type="button" onclick="apriModale()">Modifica</button>
             <button type="button">Elimina</button>
           </td>
           <td>
