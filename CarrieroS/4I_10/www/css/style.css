@@ -1,0 +1,304 @@
+/* Stile della tabella */
+
+table {
+    width: 100%;
+    /* Fa occupare alla tabella l'intera larghezza del contenitore */
+    border-collapse: collapse;
+    /* Unisce i bordi delle celle adiacenti */
+    background-color: white;
+    /* Imposta lo sfondo bianco per la tabella */
+    border-radius: 8px;
+    /* Arrotonda gli angoli della tabella di 8 pixel */
+    overflow: hidden;
+    /* Nasconde il contenuto che fuoriesce dai bordi arrotondati */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Aggiunge un'ombra sfumata sotto la tabella */
+}
+
+
+/* Stile per le celle di intestazione */
+
+th {
+    background-color: #4CAF50;
+    /* Colore di sfondo verde per le intestazioni */
+    color: white;
+    /* Colore del testo bianco */
+    padding: 12px;
+    /* Spaziatura interna di 12 pixel */
+    text-align: center;
+    /* Allinea il testo al centro */
+    font-size: 16px;
+    /* Dimensione del carattere */
+    border: 1px solid #ddd;
+    /* Bordo sottile grigio chiaro */
+}
+
+
+/* Stile per il pulsante elimina */
+
+button.elimina {
+    background-color: #e81d0f;
+    /* Sfondo rosso per il pulsante elimina */
+    color: white;
+    /* Testo bianco */
+}
+
+button.elimina:hover {
+    background-color: #ac0b00;
+    /* Sfondo rosso più scuro quando il mouse passa sopra */
+}
+
+
+/* Stile per il pulsante modifica */
+
+button.modifica {
+    background-color: #e5a340;
+    /* Sfondo arancione per il pulsante modifica */
+    color: white;
+    /* Testo bianco */
+}
+
+button.modifica:hover {
+    background-color: #b27f31;
+    /* Sfondo arancione più scuro quando il mouse passa sopra */
+}
+
+
+/* Stile per il pulsante abilita */
+
+button.abilita {
+    background-color: #7eeb1f;
+    /* Sfondo verde chiaro per il pulsante abilita */
+    color: white;
+    /* Testo bianco */
+}
+
+button.abilita:hover {
+    background-color: #2a750c;
+    /* Sfondo verde più scuro quando il mouse passa sopra */
+}
+
+
+/* Sfondo oscurato per overlay */
+
+body.oscuramento::before {
+    content: "";
+    /* Contenuto vuoto necessario per pseudo-elemento */
+    position: fixed;
+    /* Posizione fissa rispetto alla viewport */
+    top: 0;
+    /* Allineato in alto */
+    left: 0;
+    /* Allineato a sinistra */
+    height: 100%;
+    /* Occupa tutta l'altezza */
+    width: 100%;
+    /* Occupa tutta la larghezza */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Sfondo nero semi-trasparente */
+    z-index: 1;
+    /* Livello di sovrapposizione */
+}
+
+
+/* Stile per le celle normali della tabella */
+
+td {
+    border: 1px solid #ddd;
+    /* Bordo sottile grigio chiaro */
+    padding: 10px;
+    /* Spaziatura interna di 10 pixel */
+    text-align: center;
+    /* Allinea il testo al centro */
+    font-size: 14px;
+    /* Dimensione del carattere */
+}
+
+
+/* Effetto hover sulle righe della tabella */
+
+tr:hover {
+    background-color: #f1f1f1;
+    /* Cambia colore di sfondo al passaggio del mouse */
+}
+
+
+/* Stile per la finestra di modifica */
+
+#Finestra_Dati {
+    background: white;
+    /* Sfondo bianco */
+    padding: 30px;
+    /* Aumentato padding per più spazio interno */
+    border-radius: 10px;
+    /* Angoli arrotondati */
+    width: 400px;
+    /* Larghezza fissa invece di 50vw */
+    position: fixed;
+    /* Posizionamento fisso sullo schermo */
+    top: 50%;
+    /* Posiziona al centro verticalmente */
+    left: 50%;
+    /* Posiziona al centro orizzontalmente */
+    transform: translate(-50%, -50%);
+    /* Centra perfettamente la finestra */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Ombra più pronunciata */
+    z-index: 1000;
+    /* Assicura che sia sopra altri elementi */
+}
+
+
+/* Stile per il form all'interno della finestra */
+
+.Finestra-modifica {
+    display: flex;
+    /* Layout flex per organizzare gli elementi */
+    flex-direction: column;
+    /* Dispone gli elementi in colonna */
+    gap: 15px;
+    /* Spazio tra gli elementi */
+}
+
+
+/* Stile per i gruppi di input */
+
+.Finestra-gruppo {
+    display: flex;
+    /* Layout flex per label e input */
+    flex-direction: column;
+    /* Label sopra l'input */
+    text-align: left;
+    /* Allinea il testo a sinistra */
+    gap: 5px;
+    /* Spazio tra label e input */
+}
+
+
+/* Stile per le label */
+
+.Finestra-gruppo label {
+    font-size: 14px;
+    /* Dimensione del testo */
+    color: #333;
+    /* Colore del testo scuro */
+    font-weight: 500;
+    /* Peso del font semi-bold */
+}
+
+
+/* Stile per i campi di input */
+
+.Finestra-gruppo input,
+.Finestra-gruppo textarea {
+    padding: 8px 12px;
+    /* Spaziatura interna */
+    border: 1px solid #ddd;
+    /* Bordo sottile */
+    border-radius: 4px;
+    /* Angoli arrotondati */
+    font-size: 14px;
+    /* Dimensione del testo */
+    width: 100%;
+    /* Occupa tutta la larghezza disponibile */
+}
+
+
+/* Stile per il focus degli input */
+
+.Finestra-gruppo input:focus,
+.Finestra-gruppo textarea:focus {
+    outline: none;
+    /* Rimuove l'outline predefinito */
+    border-color: #4CAF50;
+    /* Bordo verde quando selezionato */
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+    /* Ombra verde chiaro */
+}
+
+
+/* Container per i pulsanti */
+
+.contenitore_bottone {
+    display: flex;
+    /* Layout flex per i pulsanti */
+    justify-content: flex-end;
+    /* Allinea i pulsanti a destra */
+    gap: 10px;
+    /* Spazio tra i pulsanti */
+    margin-top: 20px;
+    /* Spazio sopra i pulsanti */
+}
+
+
+/* Stile per i pulsanti nella finestra */
+
+.modelo-bottone {
+    padding: 8px 16px;
+    /* Spaziatura interna */
+    border: none;
+    /* Rimuove il bordo */
+    border-radius: 4px;
+    /* Angoli arrotondati */
+    cursor: pointer;
+    /* Cursore a manina */
+    font-weight: 500;
+    /* Peso del font semi-bold */
+    transition: background-color 0.2s;
+    /* Transizione fluida */
+}
+
+
+/* Stile per il pulsante Salva */
+
+.Bottone-Salva {
+    background-color: #4CAF50;
+    /* Verde */
+    color: white;
+}
+
+.Bottone-Salva:hover {
+    background-color: #45a049;
+    /* Verde più scuro */
+}
+
+
+/* Stile per il pulsante Annulla */
+
+.Bottone-Annulla {
+    background-color: #f44336;
+    /* Rosso */
+    color: white;
+}
+
+.Bottone-Annulla:hover {
+    background-color: #da190b;
+    /* Rosso più scuro */
+}
+
+
+/* Stile per il pulsante di chiusura */
+
+.chiudiFinestra {
+    position: absolute;
+    /* Posizionamento assoluto */
+    top: 10px;
+    /* Distanza dal top */
+    right: 10px;
+    /* Distanza da destra */
+    background: none;
+    /* Sfondo trasparente */
+    border: none;
+    /* Nessun bordo */
+    font-size: 20px;
+    /* Dimensione del font */
+    cursor: pointer;
+    /* Cursore a manina */
+    color: #666;
+    /* Colore grigio */
+}
+
+.chiudiFinestra:hover {
+    color: #333;
+    /* Grigio più scuro al hover */
+}

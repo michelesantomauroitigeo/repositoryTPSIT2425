@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <title>Tabella Persone</title>
+  <link rel="stylesheet" href="css/stile.css" />
+  <script src="js/script.js" ></script>
+</head>
+<body>
+  <div id= "finestra">    
+    <div id="visualizzazione">
+        <span onclick="chiusuraFinestra()">&times;</span>
+        <h3>Procedi a modificare qui la tua pagina!</h3>
+        <form>
+            <label for="nome">NOME:</label>
+            <input type="text" id="fname" name="fname" value="Alderano"><br>
+            <label for="cognome">COGNOME:</label>
+            <input type="text" id="lname" name="lname" value="Respighi"><br><label for="telefono">DATA DI NASCITA:</label>
+            <input type="date" id="data" name="data" value="1988-12-16"><br>
+            <label for="email">EMAIL:</label>
+            <input type="text" id="email" name="email" value="fredopertini@trapani.org"><br>
+            <label for="residenza">RESIDENZA:</label>
+            <input type="text" id="residenza" name="residenza" value="Villa d'Este (Tivoli)"><br>
+            <button type=button id="pulsanteModifica">Modifica</button>
+            <button type=button id="pulsanteElimina">Elimina</button>
+        </form>
+    </div>
+</div>
+
+  <h1>Elenco di 100 Persone</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Cognome</th>
+        <th>Data di Nascita</th>
+        <th>Email</th>
+        <th>Residenza</th>
+        <th>Azioni</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>Alderano</td>
+        <td>Respighi</td>
+        <td>1988-12-16</td>
+        <td>fredopertini@trapani.org</td>
+        <td>Villa d'Este (Tivoli)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>Erika</td>
+        <td>Galtarossa</td>
+        <td>1972-01-13</td>
+        <td>menneaagnolo@virgilio.it</td>
+        <td>Palazzo Pitti (Firenze)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>Salvi</td>
+        <td>Raurica</td>
+        <td>1946-09-25</td>
+        <td>stefanibuonauro@libero.it</td>
+        <td>Villa Adriana (Tivoli)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>4</th>
+        <td>Lodovico</td>
+        <td>Bonomo</td>
+        <td>2006-01-13</td>
+        <td>fiorino94@chiaramonte.com</td>
+        <td>Palazzo Reale (Napoli)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>5</th>
+        <td>Imelda</td>
+        <td>Gagliardi</td>
+        <td>1978-06-01</td>
+        <td>parmitanocalogero@libero.it</td>
+        <td>Castello di Miramare (Trieste)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>6</th>
+        <td>Benito</td>
+        <td>Santi</td>
+        <td>1989-02-11</td>
+        <td>soleubaldi@vodafone.it</td>
+        <td>Palazzo Ducale (Venezia)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>7</th>
+        <td>Adelmo</td>
+        <td>Basadonna</td>
+        <td>1971-06-03</td>
+        <td>giampiero54@polani.com</td>
+        <td>Villa Farnesina (Roma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>8</th>
+        <td>Gionata</td>
+        <td>Trillini</td>
+        <td>1974-04-13</td>
+        <td>borronifredo@hotmail.it</td>
+        <td>Palazzo Madama (Torino)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>9</th>
+        <td>Rossana</td>
+        <td>Altera</td>
+        <td>1995-03-20</td>
+        <td>qbramante@ciani-piccio.it</td>
+        <td>Villa Borghese (Roma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>10</th>
+        <td>Eugenia</td>
+        <td>Callegari</td>
+        <td>2005-02-04</td>
+        <td>dginese@bettoni.net</td>
+        <td>Villa Lante (Bagnaia)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>11</th>
+        <td>Tiziano</td>
+        <td>Manunta</td>
+        <td>1950-11-04</td>
+        <td>leoneadriana@golino.net</td>
+        <td>Palazzo dei Normanni (Palermo)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>12</th>
+        <td>Rosario</td>
+        <td>Satta</td>
+        <td>1955-02-08</td>
+        <td>francesco20@caironi.com</td>
+        <td>Castello Sforzesco (Milano)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>13</th>
+        <td>Giampaolo</td>
+        <td>Argan</td>
+        <td>1985-02-07</td>
+        <td>ballaricciotti@hotmail.com</td>
+        <td>Villa Giulia (Roma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>14</th>
+        <td>Camilla</td>
+        <td>Emo</td>
+        <td>1992-07-10</td>
+        <td>antonia54@hotmail.com</td>
+        <td>Palazzo Barberini (Roma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>15</th>
+        <td>Franco</td>
+        <td>Tiepolo</td>
+        <td>2006-10-20</td>
+        <td>gianlucaabatantuono@fastwebnet.it</td>
+        <td>Castello di Caccamo (Caccamo, Sicilia)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>16</th>
+        <td>Galasso</td>
+        <td>Vespucci</td>
+        <td>1997-06-19</td>
+        <td>adele18@live.com</td>
+        <td>Palazzo Doria Pamphili (Roma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>17</th>
+        <td>Massimo</td>
+        <td>Ricci</td>
+        <td>1944-12-15</td>
+        <td>grossifilippa@lercari-campise.eu</td>
+        <td>Villa Reale di Monza (Monza)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>18</th>
+        <td>Costanzo</td>
+        <td>Cantimori</td>
+        <td>1986-09-09</td>
+        <td>xmanacorda@tin.it</td>
+        <td>Palazzo Strozzi (Firenze)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>19</th>
+        <td>Benvenuto</td>
+        <td>Pedersoli</td>
+        <td>1977-06-06</td>
+        <td>uferretti@tin.it</td>
+        <td>Villa del Balbianello (Lenno, Lago di Como)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>20</th>
+        <td>Ruggero</td>
+        <td>Ferrara</td>
+        <td>1967-10-09</td>
+        <td>qtrotta@tele2.it</td>
+        <td>Palazzo Altemps (Roma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>21</th>
+        <td>Lisa</td>
+        <td>Saracino</td>
+        <td>1995-10-13</td>
+        <td>costalongaalina@castelli.it</td>
+        <td>Villa Medici (Firenze)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>22</th>
+        <td>Ugo</td>
+        <td>Monduzzi</td>
+        <td>1965-01-06</td>
+        <td>gregoriomarissa@virgilio.it</td>
+        <td>Castello di Torrechiara (Langhirano, Parma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>23</th>
+        <td>Veronica</td>
+        <td>Tommaseo</td>
+        <td>1950-11-23</td>
+        <td>michelecrespi@callegari-condoleo.it</td>
+        <td>Palazzo del Quirinale (Roma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>24</th>
+        <td>Paola</td>
+        <td>Raurica</td>
+        <td>1988-11-16</td>
+        <td>carolinacibin@niscoromni-zamengo.it</td>
+        <td>Villa Pisani (Stra, Venezia)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>25</th>
+        <td>Rossana</td>
+        <td>Bertoni</td>
+        <td>1986-08-17</td>
+        <td>nmoccia@tin.it</td>
+        <td>Villa Bellini (Catania)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>26</th>
+        <td>Stella</td>
+        <td>Cianciolo</td>
+        <td>1962-10-10</td>
+        <td>anita43@gualandi.it</td>
+        <td>Villa Chigi (Siena)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>27</th>
+        <td>Tiziano</td>
+        <td>Trezzini</td>
+        <td>1967-12-09</td>
+        <td>gustavosabatini@vivaldi.com</td>
+        <td>Palazzo del Capitano (Verona)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>28</th>
+        <td>Stefani</td>
+        <td>Sordi</td>
+        <td>1948-11-20</td>
+        <td>vmazzeo@vodafone.it</td>
+        <td>Palazzo Zambeccari (Bologna)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>29</th>
+        <td>Giovanni</td>
+        <td>Tassoni</td>
+        <td>1992-03-14</td>
+        <td>ninetta65@lucchesi-boccaccio.it</td>
+        <td>Palazzo Rospigliosi (Roma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>30</th>
+        <td>Maria</td>
+        <td>Cugia</td>
+        <td>2000-11-02</td>
+        <td>fabiotrotta@aporti.net</td>
+        <td>Palazzo Vescovile di Treviso</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>31</th>
+        <td>Santino</td>
+        <td>Crisafulli</td>
+        <td>1959-07-30</td>
+        <td>imonti@tim.it</td>
+        <td>Villa Giulia (Firenze)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>32</th>
+        <td>Gianluigi</td>
+        <td>Pisani</td>
+        <td>1991-10-18</td>
+        <td>moresibenvenuto@monduzzi.com</td>
+        <td>Villa di Poggio Imperiale (Firenze)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>33</th>
+        <td>Imelda</td>
+        <td>Natta</td>
+        <td>1978-02-27</td>
+        <td>ceciliaferrucci@verdone.it</td>
+        <td>Palazzo della Pilotta (Parma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>34</th>
+        <td>Bruno</td>
+        <td>Toninelli</td>
+        <td>1962-01-02</td>
+        <td>michela43@libero.it</td>
+        <td>esidenza di Campagna di Agnello (Sicilia)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>35</th>
+        <td>Loredana</td>
+        <td>Togliatti</td>
+        <td>2000-04-02</td>
+        <td>dallaraalfredo@yahoo.com</td>
+        <td>Palazzo Gangi (Palermo)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>36</th>
+        <td>Michelotto</td>
+        <td>Cabrini</td>
+        <td>1986-10-16</td>
+        <td>frespighi@gramsci.it</td>
+        <td>Palazzo del Vescovado (Trapani)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>37</th>
+        <td>Serafina</td>
+        <td>Cuzzocrea</td>
+        <td>1985-07-29</td>
+        <td>ottonebrenna@hotmail.com</td>
+        <td>Villa del Casale (Sicilia)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>38</th>
+        <td>Eugenia</td>
+        <td>Petrucelli</td>
+        <td>1965-10-12</td>
+        <td>ebeccaria@foa-manzoni.com</td>
+        <td>Palazzo San Giovanni (Catania)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>39</th>
+        <td>Alfredo</td>
+        <td>Dibiasi</td>
+        <td>1966-12-23</td>
+        <td>sabatinienrico@libero.it</td>
+        <td>Castello di Cagliari (Sardegna</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>40</th>
+        <td>Augusto</td>
+        <td>Fornaciari</td>
+        <td>1985-12-02</td>
+        <td>luiginarossini@live.com</td>
+        <td>Palazzo di Città (Catania)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>41</th>
+        <td>Amedeo</td>
+        <td>Tomasini</td>
+        <td>1998-07-10</td>
+        <td>bsanudo@outlook.com</td>
+        <td>Villa Romana del Casale (Piazza Armerina)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>42</th>
+        <td>Angelo</td>
+        <td>Goldstein</td>
+        <td>1955-03-13</td>
+        <td>maria56@libero.it</td>
+        <td>Villa Giulia (Catania)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>43</th>
+        <td>Dionigi</td>
+        <td>Biagiotti</td>
+        <td>1964-05-09</td>
+        <td>mirkogaliazzo@hotmail.it</td>
+        <td>Palazzo dei Normanni (Palermo)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>44</th>
+        <td>Rosaria</td>
+        <td>Cocci</td>
+        <td>1959-05-31</td>
+        <td>pmaspero@alice.it</td>
+        <td>Castello Aragonese (Cagliari)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>45</th>
+        <td>Aurora</td>
+        <td>Barcella</td>
+        <td>1987-04-18</td>
+        <td>paolo27@bacosi-rienzo.org</td>
+        <td>Monastero di San Benedetto (Subiaco)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>46</th>
+        <td>Enzo</td>
+        <td>Gibilisco</td>
+        <td>1954-10-04</td>
+        <td>verdidomenico@petrucelli.eu</td>
+        <td>Santuario di Santa Rita (Cascia)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>47</th>
+        <td>Bruno</td>
+        <td>Malipiero</td>
+        <td>1965-10-09</td>
+        <td>vzamengo@sanudo.com</td>
+        <td>Convento di Santa Maria di Leuca (Lecce)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>48</th>
+        <td>Luca</td>
+        <td>Luciani</td>
+        <td>1970-10-22</td>
+        <td>arnulfo42@libero.it</td>
+        <td>Santuario della Madonna del Sasso (Biella)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>49</th>
+        <td>Beppe</td>
+        <td>Monteverdi</td>
+        <td>1953-06-20</td>
+        <td>kferragamo@donini.it</td>
+        <td>Monastero di Sant'Anna (Roma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>50</th>
+        <td>Emma</td>
+        <td>Longhena</td>
+        <td>1976-12-20</td>
+        <td>usemitecolo@tin.it</td>
+        <td>Monastero di Bose (Biella)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>51</th>
+        <td>Matilda</td>
+        <td>Scaduto</td>
+        <td>1973-07-17</td>
+        <td>qcantimori@alice.it</td>
+        <td>Convento di San Francesco (Assisi)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>52</th>
+        <td>Geronimo</td>
+        <td>Fabrizi</td>
+        <td>1954-08-06</td>
+        <td>hoscuro@yahoo.com</td>
+        <td>Santuario di Loreto (Ancona)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>53</th>
+        <td>Alberico</td>
+        <td>Pisacane</td>
+        <td>1967-11-16</td>
+        <td>guarino93@poste.it</td>
+        <td>Abbazia di San Galgano (Siena)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>54</th>
+        <td>Angelica</td>
+        <td>Sobrero</td>
+        <td>2005-02-08</td>
+        <td>fpetrassi@libero.it</td>
+        <td>Abbazia di Montecassino (Frosinone)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>55</th>
+        <td>Liberto</td>
+        <td>Gulotta</td>
+        <td>1980-11-05</td>
+        <td>bianca22@iannotti.it</td>
+        <td>Castello di San Giusto (Trieste)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>56</th>
+        <td>Ignazio</td>
+        <td>Pedrazzini</td>
+        <td>2001-11-26</td>
+        <td>rcombi@michelangeli-giannone.eu</td>
+        <td>Castello di Lonato (Brescia)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>57</th>
+        <td>Oreste</td>
+        <td>Casalodi</td>
+        <td>2003-01-09</td>
+        <td>vcardano@giradello-mercalli.it</td>
+        <td>Castello di Bracciano (Roma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>58</th>
+        <td>Lucrezia</td>
+        <td>Emanuelli</td>
+        <td>1988-03-04</td>
+        <td>tedescodonato@libero.it</td>
+        <td>Castello di Cerenova (Cerveteri)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>59</th>
+        <td>Annamaria</td>
+        <td>Casini</td>
+        <td>1980-04-06</td>
+        <td>mariorenier@tim.it</td>
+        <td>Castello di Alviano (Terni)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>60</th>
+        <td>Ronaldo</td>
+        <td>Baglioni</td>
+        <td>1990-07-11</td>
+        <td>saliericamillo@gmail.com</td>
+        <td>Castello di Rocca di Angera (Lago Maggiore)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>61</th>
+        <td>Augusto</td>
+        <td>Pometta</td>
+        <td>1987-07-06</td>
+        <td>toninelliamleto@libero.it</td>
+        <td>Castello di Coccaglio (Brescia)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>62</th>
+        <td>Massimiliano</td>
+        <td>Fornaciari</td>
+        <td>1988-09-09</td>
+        <td>nossani@bragaglia-pezzali.it</td>
+        <td>Castello di Sorci (Arezzo)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>63</th>
+        <td>Dionigi</td>
+        <td>Satriani</td>
+        <td>1986-12-16</td>
+        <td>arnulforomano@mercati.com</td>
+        <td>Castello di Roncade (Treviso)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>64</th>
+        <td>Ranieri</td>
+        <td>Malaparte</td>
+        <td>1972-07-10</td>
+        <td>munariantonella@poste.it</td>
+        <td>Castello di Torrechiara (Parma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>65</th>
+        <td>Alderano</td>
+        <td>Contarini</td>
+        <td>1975-03-09</td>
+        <td>piergiuseppeliverotti@berengario-garrone.com</td>
+        <td>Villa delle Rose (Firenze)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>66</th>
+        <td>Luciana</td>
+        <td>Battisti</td>
+        <td>1989-06-17</td>
+        <td>valentina07@poste.it</td>
+        <td>Villa della Pergola (Alassio)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>67</th>
+        <td>Germana</td>
+        <td>Tonisto</td>
+        <td>1999-10-09</td>
+        <td>piergiuseppe15@libero.it</td>
+        <td>Villa Doria Pamphili (Roma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>68</th>
+        <td>Armando</td>
+        <td>Pavanello</td>
+        <td>1982-07-28</td>
+        <td>giorgia17@schiavone.it</td>
+        <td>Mergellina (Napoli)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>69</th>
+        <td>Alphons</td>
+        <td>Leblanc</td>
+        <td>2006-07-13</td>
+        <td>rcapecchi@ferragni.com</td>
+        <td>Villa Torlonia (Roma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>70</th>
+        <td>Raffaella</td>
+        <td>Onio</td>
+        <td>1952-04-11</td>
+        <td>fabioasprucci@poste.it</td>
+        <td>Villa di Maser (Maser)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>71</th>
+        <td>Sante</td>
+        <td>Gentili</td>
+        <td>2005-12-11</td>
+        <td>wpisaroni@gmail.com</td>
+        <td>Villa Medicea di Poggio a Caiano (Firenze)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>72</th>
+        <td>Manuel</td>
+        <td>Guinizzelli</td>
+        <td>1982-05-15</td>
+        <td>romolo95@panicucci.it</td>
+        <td>Villa di Castello (Firenze)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>73</th>
+        <td>Mariana</td>
+        <td>Ligorio</td>
+        <td>1997-06-27</td>
+        <td>palomasantorio@gmail.com</td>
+        <td>Villa Comunale (Napoli)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>74</th>
+        <td>Pier</td>
+        <td>Govoni</td>
+        <td>1945-04-10</td>
+        <td>dbacosi@galuppi.net</td>
+        <td>Villa Sciarra (Roma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>75</th>
+        <td>Mario</td>
+        <td>Filangieri</td>
+        <td>1965-09-16</td>
+        <td>pchittolini@hotmail.com</td>
+        <td>Villa Borghese (Roma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>76</th>
+        <td>Flora</td>
+        <td>Sibilia</td>
+        <td>1979-10-04</td>
+        <td>gregoriotina@gmail.com</td>
+        <td>Palazzo Einaudi (Torino)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>77</th>
+        <td>Lucio</td>
+        <td>Perini</td>
+        <td>1945-05-18</td>
+        <td>ecasarin@tin.it</td>
+        <td>Palazzo del Vescovado (Lucca)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>78</th>
+        <td>Aldo</td>
+        <td>Fuseli</td>
+        <td>1996-09-12</td>
+        <td>guaranaberenice@necci-galiazzo.com</td>
+        <td>Palazzo Chigi (Ariccia)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>79</th>
+        <td>Michelangelo</td>
+        <td>Puglisi</td>
+        <td>1957-07-24</td>
+        <td>riccardimarcello@parini.it</td>
+        <td>Palazzo Salviati (Firenze)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>80</th>
+        <td>Lucia</td>
+        <td>Puglisi</td>
+        <td>1960-08-17</td>
+        <td>camillo63@curci-siffredi.it</td>
+        <td>Palazzo Colonna (Roma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>81</th>
+        <td>Maria</td>
+        <td>Soderini</td>
+        <td>2003-10-01</td>
+        <td>emodigliani@pastine-bruscantini.org</td>
+        <td>Palazzo Corsini (Firenze)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>82</th>
+        <td>Matilda</td>
+        <td>Casini</td>
+        <td>1953-03-30</td>
+        <td>carfagnabernardo@bosio-carosone.org</td>
+        <td>Palazzo Spada (Roma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>83</th>
+        <td>Rosina</td>
+        <td>Nordio</td>
+        <td>1996-08-13</td>
+        <td>paridealfonsi@outlook.com</td>
+        <td>Palazzo Soranzo Cappello (Venezia)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>84</th>
+        <td>Orlando</td>
+        <td>Bassi</td>
+        <td>1953-08-17</td>
+        <td>milena09@live.com</td>
+        <td>Palazzo Doria Pamphili (Roma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>85</th>
+        <td>Simonetta</td>
+        <td>Pistoletto</td>
+        <td>1950-05-30</td>
+        <td>costanzo29@gigli-battisti.net</td>
+        <td>Palazzo Strozzi (Firenze)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>86</th>
+        <td>Coluccio</td>
+        <td>Traversa</td>
+        <td>1970-12-29</td>
+        <td>abategloria@bossi-guidone.org</td>
+        <td>Residenza Sant’Elisabetta (Venezia)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>87</th>
+        <td>Luca</td>
+        <td>Ossani</td>
+        <td>1983-08-25</td>
+        <td>alessia44@libero.it</td>
+        <td>Casa d’arte (Rimini)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>88</th>
+        <td>Leonardo</td>
+        <td>Redi</td>
+        <td>1984-05-13</td>
+        <td>martino10@libero.it</td>
+        <td>Casa Ronchese (Lodi)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>89</th>
+        <td>Fiorino</td>
+        <td>Soranzo</td>
+        <td>2005-05-02</td>
+        <td>golgiagostino@libero.it</td>
+        <td>Casa Gioia (Milano)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>90</th>
+        <td>Sandro</td>
+        <td>Bongiorno</td>
+        <td>1976-10-10</td>
+        <td>claudiozacchia@pizzetti-cerutti.it</td>
+        <td>Casa Zegna (Trivero)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>91</th>
+        <td>Jolanda</td>
+        <td>Morabito</td>
+        <td>2004-10-17</td>
+        <td>olivettiricciotti@yahoo.com</td>
+        <td>Casa Malaparte (Capri)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>92</th>
+        <td>Annunziata</td>
+        <td>Navarria</td>
+        <td>1993-01-28</td>
+        <td>ferdinandotrevisani@zamengo.it</td>
+        <td>Residenza Luminosa (Milano)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>93</th>
+        <td>Piermaria</td>
+        <td>Fagotto</td>
+        <td>1967-09-10</td>
+        <td>sophiagiannini@yahoo.com</td>
+        <td>Casa Bardi (Firenze)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>94</th>
+        <td>Gabriele</td>
+        <td>Stein</td>
+        <td>1950-07-26</td>
+        <td>lodovico40@libero.it</td>
+        <td>Residenza d'epoca Cavour (Torino)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>95</th>
+        <td>Elvira</td>
+        <td>Esposito</td>
+        <td>1980-01-27</td>
+        <td>stefano03@gmail.com</td>
+        <td>Palazzo Comunale (Siena)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>96</th>
+        <td>Barbara</td>
+        <td>Ruffini</td>
+        <td>1989-10-02</td>
+        <td>scondoleo@roero.it</td>
+        <td>Casa Olivetti (Ivrea)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>97</th>
+        <td>Lauretta</td>
+        <td>Vigliotti</td>
+        <td>1989-05-25</td>
+        <td>rpriuli@gmail.com</td>
+        <td>Palazzo Montecitorio (Roma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>98</th>
+        <td>Durante</td>
+        <td>Scarfoglio</td>
+        <td>1959-07-22</td>
+        <td>ocremonesi@ferraris.com</td>
+        <td>Palazzo Barberini (Roma)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+        <th>99</th>
+        <td>Ludovica</td>
+        <td>Baresi</td>
+        <td>2001-12-04</td>
+        <td>vantonini@carriera.it</td>
+        <td>Palazzo della Ragione (Padova)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      </tr>
+      <tr>
+        <th>100</th>
+        <td>Chiara</td>
+        <td>Ceravolo</td>
+        <td>1953-06-18</td>
+        <td>michela64@virgilio.it</td>
+        <td>Castello di Fenis (Aosta)</td>
+        <td>
+          <button class='elimina'>Elimina</button>
+          <button onclick="Modifica()">Modifica</button>
+          <button class='abilita'>Abilita</button>
+        </td>
+      </tr>
+      <tr>
+    </tbody>
+  </table>
+</body>
+</html>
