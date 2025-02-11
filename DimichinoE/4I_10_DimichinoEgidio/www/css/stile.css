@@ -54,6 +54,7 @@ tbody tr:hover {
 }
 #finestra{
     display: none;
+    position: fixed; //centro
     padding-top:200px ;
     left: 0;
     top: 0;
