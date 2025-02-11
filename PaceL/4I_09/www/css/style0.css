@@ -1,0 +1,47 @@
+.contenitore {
+	text-align:center;
+	background-color:gray;
+}
+
+body {
+	background-color:gray;
+}
+
+table {
+	border: solid 1px;
+	margin: auto;
+	background-color:white;
+}
+
+tr {
+	
+}
+
+td {
+	border: solid 1px;
+}
+
+th {
+	border: solid 1px;
+}
+
+.modifica {
+	padding: 15px 10px;
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+}
+
+.elimina {
+	padding: 15px 10px;
+    background-color: red;
+    color: black;
+    cursor: pointer;
+}
+
+.abilita {
+	padding: 15px 10px;
+    background-color: green;
+    color: black;
+    cursor: pointer;
+}
