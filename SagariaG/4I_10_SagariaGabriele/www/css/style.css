@@ -45,19 +45,15 @@ td {
   width: 9%;
 }
 
-.centro {
-  display: flex;
-  justify-content: center;
+
+form{
+  text-align: center;
 }
 
-
-#visualizzazione{
-  background-color: white;
-  border: solid black 1px;
-  border-radius: 25px;
-  width: 25% ;
+h3{
   text-align: center;
-  display: none;
+  margin-bottom: 3%;
+  margin-top: 0%;
 }
 
 input{
@@ -70,19 +66,41 @@ label{
   font-size: 105%;
 }
 
+
+#finestraModale{
+  display: none; 
+  position: fixed; /*Serve a mantenera il div fisso al centro della pagina indipendentemente dal suo scorrimento*/
+  padding-top: 200px; 
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+#visualizzazione{
+  background-color: white;
+  border: solid black 1px;
+  border-radius: 25px;
+  width: 22% ;
+  margin: auto;
+}
+
 #pulsanteElimina{
   margin-top: 1.5%;
   margin-bottom: 1.5%;
   marigin-right: 1.5%;
   background-color: darkred;
   color: white;
-  width: 20%;
-  font-size: 17px;
+  width: 22%;
+  font-size: 14px;
+ 
 }
 
 #pulsanteElimina:hover{
   background-color: red;
-  width: 22%;
+  width: 24%;
 }
 
 #pulsanteModifica{
@@ -91,11 +109,19 @@ label{
   marigin-right: 1.5%;
   background-color: darkgreen;
   color: white;
-  width: 20%;
-  font-size: 17px;
+  width: 22%;
+  font-size: 14px;
+  
 }
 
 #pulsanteModifica:hover{
   background-color: green;
-  width: 22%;
+  width: 24%;
+}
+
+span{
+  font-size: 38px;
+  color: red ;
+  cursor: pointer;
+  padding-left:92% ;
 }

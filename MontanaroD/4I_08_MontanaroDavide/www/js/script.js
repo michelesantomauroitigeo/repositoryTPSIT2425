@@ -1,68 +1,77 @@
-function controlloRegistrazione() {
-    const input_nome = document.getElementById("nome");
-    const input_cognome = document.getElementById("cognome");
-    const input_username = document.getElementById("username");
-    const input_email = document.getElementById("email");
-    const input_telefono = document.getElementById("telefono");
-    const input_password = document.getElementById("password");
+function verificaForm() {
+    let contaErrori = 0;
 
-    let Controllo = true; 
-
-    if (input_nome.value.trim() === '') {
-        document.getElementById("nome-error").style.display = 'block';
-        input_nome.classList.add('errore');
-        Controllo = false; 
+    let valoreCampoNome = document.forms["formRegistrazione"]["campoNome"].value;
+    if (valoreCampoNome == "") {
+        contaErrori++;
+        console.log('Attenzione, il campo non puo essere vuoto !');
+        //alert("Attenzione, il campo non puo' essere vuoto !");
+        document.getElementById("messaggioErroreNome").innerHTML = "Attenzione, il campo non puo essere vuoto !";
     } else {
-        document.getElementById("nome-error").style.display = 'none';
-        input_nome.classList.remove('errore');
+        document.getElementById("messaggioErroreNome").innerHTML = "";      
     }
 
-    if (input_cognome.value.trim() === '') {
-        document.getElementById("cognome-error").style.display = 'block';
-        input_cognome.classList.add('errore');
-        Controllo = false;
+    let valoreCampoCognome = document.forms["formRegistrazione"]["campoCognome"].value;
+        if (valoreCampoCognome == "") {
+        contaErrori++;
+        //console.log('Attenzione, il campo non puo essere vuoto !');
+        //alert("Attenzione, il campo non puo' essere vuoto !");
+        document.getElementById("messaggioErroreCognome").innerHTML = "Attenzione, il campo non puo essere vuoto !";
     } else {
-        document.getElementById("cognome-error").style.display = 'none';
-        input_cognome.classList.remove('errore');
+        document.getElementById("messaggioErroreCognome").innerHTML = "";       
     }
 
-    if (input_username.value.trim() === '') {
-        document.getElementById("username-error").style.display = 'block';
-        input_username.classList.add('errore');
-        Controllo = false;
+     let valoreCampoData = document.forms["formRegistrazione"]["campoData"].value;
+        if (valoreCampoData == "") {
+        contaErrori++;
+        //console.log('Attenzione, il campo non puo essere vuoto !');
+        //alert("Attenzione, il campo non puo' essere vuoto !");
+        document.getElementById("messaggioErroreData").innerHTML = "Attenzione, il campo non puo essere vuoto !";
     } else {
-        document.getElementById("username-error").style.display = 'none';
-        input_username.classList.remove('errore');
+        document.getElementById("messaggioErroreData").innerHTML = "";       
     }
 
-    if (input_email.value.trim() === '') {
-        document.getElementById("email-error").style.display = 'block';
-        input_email.classList.add('errore');
-        Controllo = false;
+    let valoreCampoEmail = document.forms["formRegistrazione"]["campoEmail"].value;
+        if (valoreCampoEmail == "") {
+        contaErrori++;
+        //console.log('Attenzione, il campo non puo essere vuoto !');
+        //alert("Attenzione, il campo non puo' essere vuoto !");
+        document.getElementById("messaggioErroreEmail").innerHTML = "Attenzione, il campo non puo essere vuoto !";
     } else {
-        document.getElementById("email-error").style.display = 'none';
-        input_email.classList.remove('errore');
+        document.getElementById("messaggioErroreEmail").innerHTML = "";       
     }
 
-    if (input_telefono.value.trim() === '') {
-        document.getElementById("telefono-error").style.display = 'block';
-        input_telefono.classList.add('errore');
-        Controllo = false;
+    let valoreCampoUtente = document.forms["formRegistrazione"]["campoUtente"].value;
+        if (valoreCampoUtente == "") {
+        contaErrori++;
+        //console.log('Attenzione, il campo non puo essere vuoto !');
+        //alert("Attenzione, il campo non puo' essere vuoto !");
+        document.getElementById("messaggioErroreUtente").innerHTML = "Attenzione, il campo non puo essere vuoto !";
     } else {
-        document.getElementById("telefono-error").style.display = 'none';
-        input_telefono.classList.remove('errore');
+        document.getElementById("messaggioErroreUtente").innerHTML = "";       
     }
 
-    if (input_password.value.trim() === '') {
-        document.getElementById("password-error").style.display = 'block';
-        input_password.classList.add('errore');
-        Controllo = false;
+    let valoreCampoPassword = document.forms["formRegistrazione"]["campoPassword"].value;
+        if (valoreCampoPassword == "") {
+        contaErrori++;
+        //console.log('Attenzione, il campo non puo essere vuoto !');
+        //alert("Attenzione, il campo non puo' essere vuoto !");
+        document.getElementById("messaggioErrorePassword").innerHTML = "Attenzione, il campo non puo essere vuoto !";
     } else {
-        document.getElementById("password-error").style.display = 'none';
-        input_password.classList.remove('errore');
+        document.getElementById("messaggioErrorePassword").innerHTML = "";       
     }
 
-    return Controllo; 
+    let valoreCampoTelefono = document.forms["formRegistrazione"]["campoTelefono"].value;
+        if (valoreCampoTelefono == "") {
+        contaErrori++;
+        //console.log('Attenzione, il campo non puo essere vuoto !');
+        //alert("Attenzione, il campo non puo' essere vuoto !");
+        document.getElementById("messaggioErroreTelefono").innerHTML = "Attenzione, il campo non puo essere vuoto !";
+    } else {
+        document.getElementById("messaggioErroreTelefono").innerHTML = "";       
+    }
+
+    if (contaErrori != 0) {
+        return false;
+    }
 }
-
-console.log("Errori:");
