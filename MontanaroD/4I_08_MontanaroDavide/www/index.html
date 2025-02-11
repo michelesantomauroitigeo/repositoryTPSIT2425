@@ -1,44 +1,35 @@
 
 <!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina di Registrazione</title>
-    <link rel="stylesheet" href="css/stile.css">
-    <script src="js/script.js"></script>
-</head>
-<body>
-    <h2>Registrazione</h2>
-    
-        <form onsubmit="return controlloRegistrazione()">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
-            <p id="nome-error"> È obbligatorio compilare questo campo </p>
-
-            <label for="cognome">Cognome</label>
-            <input type="text" id="cognome" name="cognome" placeholder="Inserisci il tuo cognome" required>
-            <p id="cognome-error"> È obbligatorio compilare questo campo </p>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Inserisci la tua e-mail" required>
-            <p id="email-error"> È obbligatorio compilare questo campo </p>
-
-            <label for="telefono">N.Telefono</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="Inserisci il tuo numero di telefono" required>
-            <p id="telefono-error"> È obbligatorio compilare questo campo </p>
-
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="Inserisci il tuo Username" required>
-            <p id="username-error"> È obbligatorio compilare questo campo </p>
-
-            <label for="password">Password</label>
-            <input type="text" id="password" name="password" placeholder="Inserisci la tua password" required>
-            <p id="password-error"> È obbligatorio compilare questo campo </p>
-
-            <input type="submit" id="invio" value="Registrati">
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="css/stile.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <form id="idFormRegistrazione" name="formRegistrazione" onsubmit="return verificaForm()" method="get">
+            Nome: <input type="text" name="campoNome">
+            <span id="messaggioErroreNome"></span>
+            <br/>
+            Cognome: <input type="text" name="campoCognome">
+            <span id="messaggioErroreCognome"></span>
+            <br/>
+            Data nascita: <input type="date" name="campoData">
+            <span id="messaggioErroreData"></span>
+            <br/>
+            Email: <input type="email" name="campoEmail">
+            <span id="messaggioErroreEmail"></span>
+            <br/>
+            Nome Utente: <input type="text" name="campoUtente">
+            <span id="messaggioErroreUtente"></span>
+            <br/>
+            Password: <input type="password" name="campoPassword">
+            <span id="messaggioErrorePassword"></span>
+            <br/>
+            N.Telefono: <input type="tel" name="campoTelefono">
+            <span id="messaggioErroreTelefono"></span>
+            <br/>
+            <input type="submit" value="Invia">
         </form>
-    </section>
-
-</body>
+    </body>
 </html>

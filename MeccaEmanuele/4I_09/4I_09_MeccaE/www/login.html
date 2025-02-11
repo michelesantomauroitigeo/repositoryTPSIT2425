@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>Login</title>
+
+    <link rel="stylesheet" href=" css/login.css">
+
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h2>Accedi al tuo account</h2>
+
+        <form id="loginForm" action="/submit-login" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="username">Nome utente:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Accedi</button>
+        </form>
+    </div>
+
+    <script>
+        // Funzione per la validazione del modulo
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            // Impedire il comportamento predefinito (inviare il modulo) se ci sono errori
+            event.preventDefault();
+
+            let isValid = true;
+
+            // Validazione del campo email
+            const email = document.getElementById('email');
+            const emailError = document.getElementById('emailError');
+            if (!email.value || !/\S+@\S+\.\S+/.test(email.value)) {
+                emailError.style.display = 'block';
+                isValid = false;
+            } else {
+                emailError.style.display = 'none';
+            }
+
+            // Validazione del campo username
+            const username = document.getElementById('username');
+            const usernameError = document.getElementById('usernameError');
+            if (!username.value) {
+                usernameError.style.display = 'block';
+                isValid = false;
+            } else {
+                usernameError.style.display = 'none';
+            }
+
+            // Validazione del campo password
+            const password = document.getElementById('password');
+            const passwordError = document.getElementById('passwordError');
+            if (!password.value) {
+                passwordError.style.display = 'block';
+                isValid = false;
+            } else {
+                passwordError.style.display = 'none';
+            }
+
+            // Se tutti i campi sono validi, invia il form e reindirizza alla pagina successiva
+            if (isValid) {
+                window.location.href = "html/area_riservata.html"; 
+            }
+        });
+    </script>
+
+</body>
+</html>
