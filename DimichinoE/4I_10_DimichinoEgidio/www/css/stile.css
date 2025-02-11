@@ -54,7 +54,6 @@ tbody tr:hover {
 }
 #finestra{
     display: none;
-    position: fixed; //centro
     padding-top:200px ;
     left: 0;
     top: 0;
@@ -66,9 +65,10 @@ tbody tr:hover {
 }
 
 #visualizzazione{
-    background-color: white;
+    background-color: green;
     width: 30%;
     margin: auto;
     border: solid black 1px;
+    
 
 }
