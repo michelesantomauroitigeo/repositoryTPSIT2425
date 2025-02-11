@@ -6,12 +6,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f4f4f4; /* Grigio chiaro */
+    background-color: #ffffff; /* Bianco */
 }
 
 /* Intestazione */
 header {
-    background-color: ##f4f4f9; /* Viola*/
+    background-color: #6a0dad; /* Viola */
     color: white;
     padding: 15px;
     text-align: center;
@@ -20,7 +20,7 @@ header {
 
 /* Sezione registrazione */
 section#registrazione {
-    background-color: #ffffff;
+    background-color: #ffffff; /* Bianco */
     padding: 20px;
     margin: 20px;
     width: 100%;
@@ -32,7 +32,7 @@ section#registrazione {
 /* Titolo della sezione */
 h2 {
     text-align: center;
-    color: #333;
+    color: #333333; /* Nero */
     font-size: 20px;
     margin-bottom: 15px;
 }
@@ -46,7 +46,7 @@ h2 {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
+    color: #333333; /* Nero */
 }
 
 /* Stile per gli input */
@@ -66,13 +66,13 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 input[type="password"]:focus {
-    border-color: ##f4f4f9; /* Viola al focus */
+    border-color: #6a0dad; /* Viola al focus */
     outline: none;
 }
 
 /* Stile per il pulsante di registrazione */
 button {
-    background-color: ##f4f4f9; /* Verde */
+    background-color: #6a0dad; /* Viola */
     color: white;
     padding: 10px;
     border: none;
@@ -82,21 +82,20 @@ button {
     font-size: 16px;
     font-weight: bold;
     margin-top: 10px;
- 
 }
 
-span{
-    color:red;
-    display:none;
-
+/* Messaggio di errore */
+span {
+    color: red;
+    display: none;
 }
 
-input[type="submit"]{
-
-    background-color: purple;
+/* Stile per il pulsante di invio */
+input[type="submit"] {
+    background-color: #6a0dad; /* Viola */
     border-radius: 6px;
     margin-top: 10px;
-    border: 1px solid #ddd; 
+    border: 1px solid #ddd;
     padding: 10px;
     width: 50%;
 }
