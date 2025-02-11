@@ -1,0 +1,104 @@
+<html>
+<head>
+    <title>Login</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .login-container {
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 14px;
+            display: none;
+            margin-top: -10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h2>Accedi al tuo account</h2>
+
+        <form id="loginForm" action="/submit-login" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="username">Nome utente:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Accedi</button>
+        </form>
+    </div>
+
+    <script>
+        // Funzione per la validazione del modulo
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            // Impedire il comportamento predefinito (inviare il modulo) se ci sono errori
+            event.preventDefault();
+
+            let isValid = true;
+
+            // Validazione del campo email
+            const email = document.getElementById('email');
+            const emailError = document.getElementById('emailError');
+            if (!email.value || !/\S+@\S+\.\S+/.test(email.value)) {
+                emailError.style.display = 'block';
+                isValid = false;
+            } else {
+                emailError.style.display = 'none';
+            }
+
+            // Validazione del campo username
+            const username = document.getElementById('username');
+            const usernameError = document.getElementById('usernameError');
+            if (!username.value) {
+                usernameError.style.display = 'block';
+                isValid = false;
+            } else {
+                usernameError.style.display = 'none';
+            }
+
+            // Validazione del campo password
+            const password = document.getElementById('password');
+            const passwordError = document.getElementById('passwordError');
+            if (!password.value) {
+                passwordError.style.display = 'block';
+                isValid = false;
+            } else {
+                passwordError.style.display = 'none';
+            }
+
+            // Se tutti i campi sono validi, invia il form e reindirizza alla pagina successiva
+            if (isValid) {
+                window.location.href = "html/area_riservata.html"; 
+            }
+        });
+    </script>
+
+</body>
+</html>
