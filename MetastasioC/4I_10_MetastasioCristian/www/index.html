@@ -2,7 +2,9 @@
 <html lang="it">
 <head>
     <title>Tabella Amministratore</title>
+    
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -28,7 +30,7 @@
                     <td>01/01/1990</td>
                     <td>mrossi</td>
                     <td>
-                        <button>modifica</button>
+                        <button class="edit" onclick="modifica()">modifica</button>
                         <button>assegna</button>
                         <button>elimina</button>
                     </td>
@@ -41,7 +43,7 @@
                     <td>02/02/1992</td>
                     <td>lverdi</td>
                     <td>
-                        <button>modifica</button>
+                        <button class="edit" onclick="modifica()">modifica</button>
                         <button>assegna</button>
                         <button>elimina</button>
                     </td>
@@ -53,7 +55,7 @@
                     <td>03/03/1993</td>
                     <td>abianchi</td>
                     <td>
-                        <button>modifica</button>
+                        <button class="edit" onclick="modifica()">modifica</button>
                         <button>assegna</button>
                         <button>elimina</button>
                     </td>
@@ -66,7 +68,7 @@
                     <td>04/04/1994</td>
                     <td>gmoretti</td>
                     <td>
-                        <button>modifica</button>
+                        <button class="edit" onclick="modifica()">modifica</button>
                         <button>assegna</button>
                         <button>elimina</button>
                     </td>
@@ -79,7 +81,7 @@
                     <td>05/05/1995</td>
                     <td>aesposito</td>
                     <td>
-                        <button>modifica</button>
+                        <button class="edit" onclick="modifica()">modifica</button>
                         <button>assegna</button>
                         <button>elimina</button>
                     </td>
@@ -92,7 +94,7 @@
                     <td>06/06/1996</td>
                     <td>econti</td>
                     <td>
-                        <button>modifica</button>
+                        <button class="edit" onclick="modifica()">modifica</button>
                         <button>assegna</button>
                         <button>elimina</button>
                     </td>
@@ -105,7 +107,7 @@
                     <td>07/07/1997</td>
                     <td>mricci</td>
                     <td>
-                        <button>modifica</button>
+                        <button class="edit" onclick="modifica()">modifica</button>
                         <button>assegna</button>
                         <button>elimina</button>
                     </td>
@@ -118,7 +120,7 @@
                     <td>08/08/1998</td>
                     <td>sgalli</td>
                     <td>
-                        <button>modifica</button>
+                        <button class="edit" onclick="modifica()">modifica</button>
                         <button>assegna</button>
                         <button>elimina</button>
                     </td>
@@ -126,6 +128,34 @@
             </tbody>
         </table>
     </div>
+
+      <div class="finestra">
+        <h2>Inserisci i dati</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            
+            <label for="cognome">Cognome:</label>
+            <input type="text" id="cognome" name="cognome">
+            
+            <label for="username">Nome Utente:</label>
+            <input type="text" id="username" name="username">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+
+             <label for="telefono">Telefono:</label>
+            <input type="text" id="telefono" name="telefono">
+
+             <label for="email">email:</label>
+            <input type="text" id="email" name="email">
+            
+            <button type="button" onclick="chiudiFinestra()">Chiudi</button>
+            <button type="button" onclick="chiudiFinestra()">Modifica</button>
+        </form>
+
+
+
 </body>
 </html>
 
