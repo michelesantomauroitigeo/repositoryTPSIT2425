@@ -62,6 +62,6 @@ function validaLogin() {
            nome.classList.remove('errore');
     }
 
-    return Controllo; 
+    return controllo; 
 
 }
