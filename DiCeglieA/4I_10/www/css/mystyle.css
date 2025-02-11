@@ -1,0 +1,127 @@
+body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2%;
+    background-color: rgb(249 249 249);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 1%;
+    text-align: left;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+th {
+    background-color: rgb(242, 242, 242);
+    font-weight: bold;
+}
+
+tbody tr:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+
+button {
+    padding: 1% 1.5%;
+    background-color: rgb(76, 175, 80);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(76 175 80);
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+}
+
+
+#modale {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.7); 
+  }
+  
+  #chiudi {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  
+  }
+
+  #modale-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  /* Modal Body */
+  #modale-body {padding: 2px 16px;}
+  
+  /* Modal Footer */
+  #modale-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  #contenuto-modale {
+    
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 0;
+    border: 1px solid ;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  .pulsante {
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;
+}
+label {
+    display: inline-block;
+    width: 120px;
+    margin-right: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+input {
+    width: 200px;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 4px;
+}
