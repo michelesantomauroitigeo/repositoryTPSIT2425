@@ -1,4 +1,6 @@
 function validaLogin() {
+
+    event.preventDefault();
     const nome = document.getElementById("nome");
     const cognome = document.getElementById("cognome");
     const username = document.getElementById("username");
@@ -50,7 +52,7 @@ function validaLogin() {
            nome.classList.remove('errore');
     }
    
-    if(telefono.value.trim() ==='')
+    if(password.value.trim() ==='')
     {
        document.getElementById("p-errore").style.display = 'block';
          nome.classList.add('errore');
