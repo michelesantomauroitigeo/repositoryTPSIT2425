@@ -1,0 +1,79 @@
+body{
+    font-size: 30px;
+    text-align: center;
+    background-color:#FDE8E9;
+}
+
+header {
+    text-align: center;
+    background-color: #ffb6c1;
+    padding: 20px;
+    width: 100%;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+header p {
+    font-size: 14px;
+    color: #333;
+}
+
+header p a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+header p a:hover {
+    color: #ff69b4; 
+}
+
+p span {
+    margin-right: 20px;
+}
+
+.speciale{
+    color: #1F2232;
+
+}
+
+#fredda, #calda, #testo {
+    color: white;
+    background-color: #BC9EC1;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 15px 30px;
+    cursor: pointer;
+    border: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    margin-right: 10PX ;
+    margin-left: 10PX ;
+    margin-bottom: 30px ;
+}
+
+#fredda:hover, #calda:hover, #testo:hover {
+    background-color: #9a7da1;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.spazio {
+    margin: auto;
+    margin-top: 20px;
+    width: 1000px;
+    border: 2px,solid,black;
+    border-radius: 10px;
+}
+
+#img{
+    width: 300px;
+    height: 300px;
+    border-radius: 7px;
+}
+
+
+
