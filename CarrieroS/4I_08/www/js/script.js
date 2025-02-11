@@ -34,14 +34,14 @@ document.getElementById("form").addEventListener("submit", function(event) {
 
 
     // Verifica Email
-    const telefonoElement = document.getElementById("telefono");
-    if (telefonoElement) {
-        const telefono = telefonoElement.value;
-        if (telefono.trim() === "") {
-            document.getElementById("telefono-error").textContent = "Il numero di telefono è obbligatorio.";
+    const emailElement = document.getElementById("email");
+    if (emailElement) {
+        const email = emailElement.value;
+        if (email.trim() === "") {
+            document.getElementById("email-error").textContent = "L'email è obbligatoria.";
             valid = false;
         } else if (!/^\d{10}$/.test(telefono)) {
-            document.getElementById("telefono-error").textContent = "Il numero di telefono deve essere di 10 cifre.";
+            document.getElementById("email-error").textContent = "L'email deve essere di 10 cifre.";
             valid = false;
         }
     }
