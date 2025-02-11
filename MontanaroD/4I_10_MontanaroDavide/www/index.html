@@ -5,8 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area Riservata</title>
     <link rel="stylesheet" href="css/stile.css">
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
+
+ <div id= "finestra">    
+    <div id="visualizzazione">
+        <span onclick="chiusuraFinestra()">&times;</span>
+        <h3>Modalità modifica</h3>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="fname" name="fname" value="Mario"><br>
+            <label for="cognome">Cognome:</label>
+            <input type="text" id="lname" name="lname" value="Rossi"><br>
+            <label for="email">email:</label>
+            <input type="text" id="email" name="email" value="mario.rossi@email.co"><br>
+            <label for="telefono">Numero Telefono:</label>
+            <input type="text" id="telefono" name="telefono" value="+393387600209"><br>
+            <label for="eta">Eta':</label>
+            <input type="text" id="eta" name="eta" value="35"><br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" value="mario123"><br>
+            <label for="residenza">Residenza:</label>
+            <input type="text" id="residenza" name="residenza" value="Roma"><br>
+            <button type=button id="pulsanteModifica">Modifica</button>
+            <button type=button id="pulsanteElimina">Elimina</button>
+        </form>
+    </div>
+</div>
+
+
     <h2>Benvenuto nell'Area Riservata</h2>
 
     <h3>Tabella degli Utenti Registrati</h3>
@@ -38,7 +66,8 @@
                 <td>mario123</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
+                
             </tr>
             <tr>
                 <td>2</td>
@@ -51,7 +80,7 @@
                 <td>luigi456</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>3</td>
@@ -64,7 +93,7 @@
                 <td>giovanni789</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>4</td>
@@ -77,7 +106,7 @@
                 <td>ale23</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>5</td>
@@ -90,7 +119,7 @@
                 <td>sara.f31</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>6</td>
@@ -103,7 +132,7 @@
                 <td>francesco29</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>7</td>
@@ -116,7 +145,7 @@
                 <td>anna34</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>8</td>
@@ -129,7 +158,7 @@
                 <td>paolo37</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>9</td>
@@ -142,7 +171,7 @@
                 <td>martina26</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>10</td>
@@ -155,7 +184,7 @@
                 <td>simone41</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>11</td>
@@ -181,7 +210,7 @@
                 <td>elena25</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>13</td>
@@ -194,7 +223,7 @@
                 <td>andrea38</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>14</td>
@@ -207,7 +236,7 @@
                 <td>mario123</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>15</td>
@@ -220,7 +249,7 @@
                 <td>chiara29</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>16</td> 
@@ -233,7 +262,7 @@
                 <td>marco44</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>17</td>  
@@ -246,7 +275,7 @@
                 <td>fede33</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>18</td>  
@@ -259,7 +288,7 @@
                 <td>giulia30</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>19</td>  
@@ -272,7 +301,7 @@
                 <td>davide27</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>20</td>  
@@ -285,7 +314,7 @@
                 <td>lucia42</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>21</td>  
@@ -298,7 +327,7 @@
                 <td>stefano36</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>22</td>
@@ -311,7 +340,7 @@
                 <td>riccardo39</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>23</td>
@@ -324,7 +353,7 @@
                 <td>beatrice24</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>24</td>
@@ -337,7 +366,7 @@
                 <td>gabriele34</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>25</td>
@@ -350,7 +379,7 @@
                 <td>alessia29</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>26</td>
@@ -363,7 +392,7 @@
                 <td>antonio45</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>27</td>
@@ -376,7 +405,7 @@
                 <td>valentina38</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>28</td>
@@ -389,7 +418,7 @@
                 <td>matteo33</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>29</td>
@@ -402,7 +431,7 @@
                 <td>roberta40</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>30</td>
@@ -415,7 +444,7 @@
                 <td>francesca22</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>31</td>
@@ -428,7 +457,7 @@
                 <td>vincenzo37</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>32</td>
@@ -441,7 +470,7 @@
                 <td>simona32</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>33</td>
@@ -454,7 +483,7 @@
                 <td>davide26</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>34</td>  
@@ -467,7 +496,7 @@
                 <td>isabella30</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>35</td>  
@@ -480,7 +509,7 @@
                 <td>giorgio38</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>36</td>  
@@ -493,7 +522,7 @@
                 <td>laura32</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>37</td>  
@@ -506,7 +535,7 @@
                 <td>andrea40</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>38</td>  
@@ -519,7 +548,7 @@
                 <td>stefano26</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>39</td>  
@@ -532,7 +561,7 @@
                 <td>lucia35</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>40</td>  
@@ -545,7 +574,7 @@
                 <td>giovanni44</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>41</td>  
@@ -558,7 +587,7 @@
                 <td>rita30</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>42</td>  
@@ -571,7 +600,7 @@
                 <td>francesco29</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>43</td>  
@@ -584,7 +613,7 @@
                 <td>luisa34</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>44</td>  
@@ -597,7 +626,7 @@
                 <td>mario45</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>45</td>  
@@ -610,7 +639,7 @@
                 <td>claudia28</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>46</td>  
@@ -623,7 +652,7 @@
                 <td>giovanni41</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>47</td> 
@@ -636,7 +665,7 @@
                 <td>giulia22</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>48</td>  
@@ -649,7 +678,7 @@
                 <td>marco37</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>49</td> 
@@ -662,7 +691,7 @@
                 <td>alessia26</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>50</td> 
@@ -675,7 +704,7 @@
                 <td>antonio33</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>51</td>  
@@ -688,7 +717,7 @@
                 <td>simona35</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>52</td>  
@@ -701,7 +730,7 @@
                 <td>andrea39</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>53</td>  
@@ -714,7 +743,7 @@
                 <td>lucia40</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>54</td>  
@@ -727,7 +756,7 @@
                 <td>davide31</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>55</td>  
@@ -740,7 +769,7 @@
                 <td>sara27</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>56</td>  
@@ -753,7 +782,7 @@
                 <td>matteo36</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>57</td>
@@ -766,7 +795,7 @@
                 <td>chiara29</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>58</td> 
@@ -779,7 +808,7 @@
                 <td>paolo38</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>59</td>  
@@ -792,7 +821,7 @@
                 <td>giorgia24</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>60</td>  
@@ -805,7 +834,7 @@
                 <td>fabio33</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>61</td> 
@@ -818,7 +847,7 @@
                 <td>alessandro30</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>62</td> 
@@ -831,7 +860,7 @@
                 <td>clara25</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>63</td> 
@@ -844,7 +873,7 @@
                 <td>federico27</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>64</td> 
@@ -857,7 +886,7 @@
                 <td>isabella32</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>65</td> 
@@ -870,7 +899,7 @@
                 <td>vincenzo34</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>66</td> 
@@ -883,7 +912,7 @@
                 <td>elisa30</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>67</td> 
@@ -896,7 +925,7 @@
                 <td>riccardo41</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>68</td> 
@@ -909,7 +938,7 @@
                 <td>monica28</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>69</td> 
@@ -922,7 +951,7 @@
                 <td>carlo35</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
              <tr>
                 <td>70</td>
@@ -935,7 +964,7 @@
                 <td>mario123</td>
                 <td><button>Elimina</button></a></td>
                 <td><button>Abilita</button></a></td>
-                <td><button>Modifica</button></a></td>
+                <td><button onclick="Modifica()">Modifica</button></a></td>
             </tr>
             <tr>
                 <td>71</td>
@@ -948,7 +977,7 @@
                 <td>luca456</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>72</td>
@@ -961,7 +990,7 @@
                 <td>giulia789</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>73</td>
@@ -974,7 +1003,7 @@
                 <td>alex123</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>74</td>
@@ -987,7 +1016,7 @@
                 <td>elena456</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>75</td>
@@ -1000,7 +1029,7 @@
                 <td>marco789</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>76</td>
@@ -1013,7 +1042,7 @@
                 <td>valeria123</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>77</td>
@@ -1026,7 +1055,7 @@
                 <td>davide456</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>78</td>
@@ -1039,7 +1068,7 @@
                 <td>chiara789</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>79</td>
@@ -1052,7 +1081,7 @@
                 <td>andrea123</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>80</td>
@@ -1065,7 +1094,7 @@
                 <td>serena456</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>81</td>
@@ -1078,7 +1107,7 @@
                 <td>matteo123</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>82</td>
@@ -1091,7 +1120,7 @@
                 <td>franci456</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>83</td>
@@ -1104,7 +1133,7 @@
                 <td>stefano789</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>84</td>
@@ -1117,7 +1146,7 @@
                 <td>anna123</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>85</td>
@@ -1130,7 +1159,7 @@
                 <td>fabio456</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>86</td>
@@ -1143,7 +1172,7 @@
                 <td>martina789</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>87</td>
@@ -1156,7 +1185,7 @@
                 <td>nicola123</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>88</td>
@@ -1169,7 +1198,7 @@
                 <td>giovanni456</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>89</td>
@@ -1182,7 +1211,7 @@
                 <td>simona789</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>90</td>
@@ -1195,7 +1224,7 @@
                 <td>riccardo123</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>91</td>
@@ -1208,7 +1237,7 @@
                 <td>barbara456</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>92</td>
@@ -1221,7 +1250,7 @@
                 <td>giorgio789</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>93</td>
@@ -1234,7 +1263,7 @@
                 <td>sara123</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>94</td>
@@ -1247,7 +1276,7 @@
                 <td>paolo456</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>95</td>
@@ -1260,7 +1289,7 @@
                 <td>monica789</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>96</td>
@@ -1273,7 +1302,7 @@
                 <td>alberto123</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>97</td>
@@ -1286,7 +1315,7 @@
                 <td>veronica456</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>98</td>
@@ -1299,7 +1328,7 @@
                 <td>massimo789</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>99</td>
@@ -1312,7 +1341,7 @@
                 <td>eleonora123</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
             <tr>
                 <td>100</td>
@@ -1325,7 +1354,7 @@
                 <td>gabriele456</td>
                 <td><button>Elimina</button></td>
                 <td><button>Abilita</button></td>
-                <td><button>Modifica</button></td>
+                <td><button onclick="Modifica()">Modifica</button></td>
             </tr>
 
             
