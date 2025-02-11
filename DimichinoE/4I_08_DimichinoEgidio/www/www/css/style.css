@@ -13,7 +13,7 @@ body {
 header {
     background-color: #6a0dad; /* Viola */
     color: white;
-    padding: 15px;
+    padding: 3%; /* Circa 15px in percentuale */
     text-align: center;
     width: 100%;
 }
@@ -21,31 +21,31 @@ header {
 /* Sezione registrazione */
 section#registrazione {
     background-color: #ffffff; /* Bianco */
-    padding: 20px;
-    margin: 20px;
+    padding: 5%; /* Circa 20px in percentuale */
+    margin: 5%; /* Circa 20px in percentuale */
     width: 100%;
-    max-width: 400px;
+    max-width: 80%; /* Limita la larghezza a un massimo dell'80% */
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1% 2% rgba(0, 0, 0, 0.1); /* Ombra proporzionale */
 }
 
 /* Titolo della sezione */
 h2 {
     text-align: center;
     color: #333333; /* Nero */
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 5vw; /* Dimensione del font in base alla larghezza della finestra */
+    margin-bottom: 3%; /* Circa 15px in percentuale */
 }
 
 /* Gruppi di input */
 .gruppo-input {
-    margin-bottom: 15px;
+    margin-bottom: 3%; /* Circa 15px in percentuale */
 }
 
 /* Etichette degli input */
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 1%; /* Circa 5px in percentuale */
     color: #333333; /* Nero */
 }
 
@@ -53,20 +53,18 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    margin-top: 15px;
+    margin-top: 3%; /* Circa 15px in percentuale */
     width: 100%;
-    padding: 8px;
+    padding: 2%; /* Circa 8px in percentuale */
     border: 1px solid #ddd; /* Bordo grigio chiaro */
     border-radius: 4px;
     box-sizing: border-box;
 }
 
 /* Focus sugli input */
-input[type="text"]:focus, /*Seleziona gli elementi di tipo "text" (campo di testo) quando l'utente ci clicca sopra o li seleziona.*/
-input[type="email"]:focus, /*Seleziona gli elementi di tipo "email" (campo di email).*/
-input[type="password"]:focus /*Seleziona gli elementi di tipo "password" (campo di password). */
-
-{
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="password"]:focus {
     border-color: #6a0dad; /* Viola al focus */
     outline: none;
 }
@@ -75,14 +73,14 @@ input[type="password"]:focus /*Seleziona gli elementi di tipo "password" (campo 
 button {
     background-color: #6a0dad; /* Viola */
     color: white;
-    padding: 10px;
+    padding: 2%; /* Circa 10px in percentuale */
     border: none;
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
-    font-size: 16px;
+    font-size: 4vw; /* Dimensione del font in base alla larghezza della finestra */
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 0.5%; /* Circa 2px in percentuale */
 }
 
 /* Messaggio di errore */
@@ -95,8 +93,8 @@ span {
 input[type="submit"] {
     background-color: #6a0dad; /* Viola */
     border-radius: 6px;
-    margin-top: 10px;
+    margin-top: 2%; /* Circa 10px in percentuale */
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 2%; /* Circa 10px in percentuale */
     width: 50%;
 }

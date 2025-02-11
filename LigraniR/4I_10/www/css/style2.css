@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+}
+hr {
+    margin: 40px 0;
+}
+.sfondo {
+    background-color: #f0f0f0;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+ul.sinistra {
+    text-align: left;
+    padding-right: 20px;
+    margin-bottom: 15px;
+}
+ul.sinistra li {
+    margin-bottom: 15px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ff1493;
+}

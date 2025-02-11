@@ -11,6 +11,7 @@ function Controllo() {
         validita = false;
     } else {
         nomeError.style.display = 'none';
+        controlloNome.style.border = '0.25px solid black';
     }
 
      console.log('');
@@ -24,6 +25,7 @@ function Controllo() {
         validita = false;
     } else{
         cognomeError.style.display = 'none';
+        controlloCognome.style.border = '0.25px solid black';
     }
 
     console.log('');
@@ -37,6 +39,7 @@ function Controllo() {
         validita=false;
     }else{
         telefonoError.style.display= 'none';
+        controlloTelefono.style.border = '0.25px solid black';
     }
 
     console.log('');
@@ -50,6 +53,7 @@ function Controllo() {
         validita=false;
     }else {
         usernameError.style.display='none';
+        controlloUsername.style.border = '0.25px solid black';
     }
 
     console.log('');
@@ -63,6 +67,7 @@ function Controllo() {
         validita=false;
     }else {
         dataError.style.display='none';
+        controlloData.style.border = '0.25px solid black';
     }
 
     console.log('');
@@ -76,6 +81,7 @@ function Controllo() {
         validita=false;
     }else {
         emailError.style.display='none';
+        controlloEmail.style.border = '0.25px solid black';
     }
 
     console.log('');
@@ -89,6 +95,7 @@ function Controllo() {
         validita=false;
     }else {
         passwordError.style.display='none';
+        controlloPassword.style.border = '0.25px solid black';
     }
 
     return validita;

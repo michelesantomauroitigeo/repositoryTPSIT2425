@@ -1,0 +1,945 @@
+<html>
+  <head>
+    <title>Scheda Utenti</title>
+    <link rel="stylesheet" href="css/mystyle.css" />
+    <script src="js/myscript.js"></script>
+  </head>
+
+  <body >
+    <div id="modale">
+      <div id="contenuto-modale">
+        
+  <div id="modale-header">
+    <span id="chiudi" onclick="chiudiModale()">X</span>
+    <h2>Modal Header</h2>
+  </div>
+  <div id="modale-body">
+    <form class="modifica">
+        <label for="editNome">Nome</label>
+        <input type="text" id="editNome" name="nome" value="">
+        <br>
+        <label for="editCognome">Cognome</label>
+        <input type="text" id="editCognome" name="cognome" value="">
+        <br>
+        <label for="editEmail">E-mail</label>
+        <input type="email" id="editEmail" name="email" value="">
+        <br>
+        <label for="editTelefono">N. Telefono</label>
+        <input type="tel" id="editTelefono" name="telefono" value="">
+        <br>
+        <label for="editDataNascita">Data di Nascita</label>
+        <input type="date" id="editDataNascita" name="data_nascita" value="">
+        <br>
+        <label for="editUsername">Username</label>
+        <input type="text" id="editUsername" name="username" value="">
+        <br>
+        <button id="btn-Modifica">Modifica</button>
+    </form>
+  </div>
+        
+      </div>
+
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Cognome</th>
+          <th>Mail</th>
+          <th>Telefono</th>
+          <th>Data di Nascita</th>
+          <th>Nome Utente</th>
+          <th>Azioni</th>
+          <th>Seleziona</th>
+        </tr>
+
+        </tr>
+        <tr>
+          <td>Luca</td>
+          <td>Rossi</td>
+          <td>luca.rossi@example.com</td>
+          <td>3456789012</td>
+          <td>12/05/1985</td>
+          <td>luca_rossi</td>
+           <td>
+            <button type="button" onclick="apriModale()">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Maria</td>
+          <td>Bianchi</td>
+          <td>maria.bianchi@example.com</td>
+          <td>3334567890</td>
+          <td>23/09/1990</td>
+          <td>maria_bianchi</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Giovanni</td>
+          <td>Verdi</td>
+          <td>giovanni.verdi@example.com</td>
+          <td>3229876543</td>
+          <td>15/02/1982</td>
+          <td>giovanni_verdi</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Anna</td>
+          <td>Neri</td>
+          <td>anna.neri@example.com</td>
+          <td>3661234567</td>
+          <td>30/11/1978</td>
+          <td>anna_neri</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Paolo</td>
+          <td>Gialli</td>
+          <td>paolo.gialli@example.com</td>
+          <td>3887654321</td>
+          <td>07/07/1995</td>
+          <td>paolo_gialli</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Francesca</td>
+          <td>Marrone</td>
+          <td>francesca.marrone@example.com</td>
+          <td>3456789012</td>
+          <td>12/05/1985</td>
+          <td>francesca_marrone</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Marco</td>
+          <td>Ferrari</td>
+          <td>marco.ferrari@example.com</td>
+          <td>3334567890</td>
+          <td>23/09/1990</td>
+          <td>marco_ferrari</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Laura</td>
+          <td>Russo</td>
+          <td>laura.russo@example.com</td>
+          <td>3229876543</td>
+          <td>15/02/1982</td>
+          <td>laura_russo</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Simone</td>
+          <td>Esposito</td>
+          <td>simone.esposito@example.com</td>
+          <td>3661234567</td>
+          <td>30/11/1978</td>
+          <td>simone_esposito</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Elisa</td>
+          <td>Romano</td>
+          <td>elisa.romano@example.com</td>
+          <td>3887654321</td>
+          <td>07/07/1995</td>
+          <td>elisa_romano</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Andrea</td>
+          <td>Colombo</td>
+          <td>andrea.colombo@example.com</td>
+          <td>3456789012</td>
+          <td>12/05/1985</td>
+          <td>andrea_colombo</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Chiara</td>
+          <td>Ricci</td>
+          <td>chiara.ricci@example.com</td>
+          <td>3334567890</td>
+          <td>23/09/1990</td>
+          <td>chiara_ricci</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Davide</td>
+          <td>Marino</td>
+          <td>davide.marino@example.com</td>
+          <td>3229876543</td>
+          <td>15/02/1982</td>
+          <td>davide_marino</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Valentina</td>
+          <td>Greco</td>
+          <td>valentina.greco@example.com</td>
+          <td>3661234567</td>
+          <td>30/11/1978</td>
+          <td>valentina_greco</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Roberto</td>
+          <td>Bruno</td>
+          <td>roberto.bruno@example.com</td>
+          <td>3887654321</td>
+          <td>07/07/1995</td>
+          <td>roberto_bruno</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Sara</td>
+          <td>Galli</td>
+          <td>sara.galli@example.com</td>
+          <td>3456789012</td>
+          <td>12/05/1985</td>
+          <td>sara_galli</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Fabio</td>
+          <td>Conti</td>
+          <td>fabio.conti@example.com</td>
+          <td>3334567890</td>
+          <td>23/09/1990</td>
+          <td>fabio_conti</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Elena</td>
+          <td>De Luca</td>
+          <td>elena.deluca@example.com</td>
+          <td>3229876543</td>
+          <td>15/02/1982</td>
+          <td>elena_deluca</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Giuseppe</td>
+          <td>Mancini</td>
+          <td>giuseppe.mancini@example.com</td>
+          <td>3661234567</td>
+          <td>30/11/1978</td>
+          <td>giuseppe_mancini</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Martina</td>
+          <td>Costa</td>
+          <td>martina.costa@example.com</td>
+          <td>3887654321</td>
+          <td>07/07/1995</td>
+          <td>martina_costa</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Federico</td>
+          <td>Giordano</td>
+          <td>federico.giordano@example.com</td>
+          <td>3456789012</td>
+          <td>12/05/1985</td>
+          <td>federico_giordano</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Alessia</td>
+          <td>Rizzo</td>
+          <td>alessia.rizzo@example.com</td>
+          <td>3334567890</td>
+          <td>23/09/1990</td>
+          <td>alessia_rizzo</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Stefano</td>
+          <td>Lombardi</td>
+          <td>stefano.lombardi@example.com</td>
+          <td>3229876543</td>
+          <td>15/02/1982</td>
+          <td>stefano_lombardi</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Monica</td>
+          <td>Moretti</td>
+          <td>monica.moretti@example.com</td>
+          <td>3661234567</td>
+          <td>30/11/1978</td>
+          <td>monica_moretti</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Antonio</td>
+          <td>Barbieri</td>
+          <td>antonio.barbieri@example.com</td>
+          <td>3887654321</td>
+          <td>07/07/1995</td>
+          <td>antonio_barbieri</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Giorgia</td>
+          <td>Fontana</td>
+          <td>giorgia.fontana@example.com</td>
+          <td>3456789012</td>
+          <td>12/05/1985</td>
+          <td>giorgia_fontana</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Daniele</td>
+          <td>Santoro</td>
+          <td>daniele.santoro@example.com</td>
+          <td>3334567890</td>
+          <td>23/09/1990</td>
+          <td>daniele_santoro</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Veronica</td>
+          <td>Mariani</td>
+          <td>veronica.mariani@example.com</td>
+          <td>3229876543</td>
+          <td>15/02/1982</td>
+          <td>veronica_mariani</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Riccardo</td>
+          <td>Rinaldi</td>
+          <td>riccardo.rinaldi@example.com</td>
+          <td>3661234567</td>
+          <td>30/11/1978</td>
+          <td>riccardo_rinaldi</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Silvia</td>
+          <td>Caruso</td>
+          <td>silvia.caruso@example.com</td>
+          <td>3887654321</td>
+          <td>07/07/1995</td>
+          <td>silvia_caruso</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Vincenzo</td>
+          <td>Ferri</td>
+          <td>vincenzo.ferri@example.com</td>
+          <td>3456789012</td>
+          <td>12/05/1985</td>
+          <td>vincenzo_ferri</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Eleonora</td>
+          <td>Gatti</td>
+          <td>eleonora.gatti@example.com</td>
+          <td>3334567890</td>
+          <td>23/09/1990</td>
+          <td>eleonora_gatti</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Michele</td>
+          <td>Pellegrini</td>
+          <td>michele.pellegrini@example.com</td>
+          <td>3229876543</td>
+          <td>15/02/1982</td>
+          <td>michele_pellegrini</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Claudia</td>
+          <td>Palumbo</td>
+          <td>claudia.palumbo@example.com</td>
+          <td>3661234567</td>
+          <td>30/11/1978</td>
+          <td>claudia_palumbo</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Gabriele</td>
+          <td>Sanna</td>
+          <td>gabriele.sanna@example.com</td>
+          <td>3887654321</td>
+          <td>07/07/1995</td>
+          <td>gabriele_sanna</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Rosa</td>
+          <td>Parisi</td>
+          <td>rosa.parisi@example.com</td>
+          <td>3456789012</td>
+          <td>12/05/1985</td>
+          <td>rosa_parisi</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Salvatore</td>
+          <td>Villa</td>
+          <td>salvatore.villa@example.com</td>
+          <td>3334567890</td>
+          <td>23/09/1990</td>
+          <td>salvatore_villa</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Daniela</td>
+          <td>Conte</td>
+          <td>daniela.conte@example.com</td>
+          <td>3229876543</td>
+          <td>15/02/1982</td>
+          <td>daniela_conte</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Luigi</td>
+          <td>Serra</td>
+          <td>luigi.serra@example.com</td>
+          <td>3661234567</td>
+          <td>30/11/1978</td>
+          <td>luigi_serra</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Greta</td>
+          <td>Martini</td>
+          <td>greta.martini@example.com</td>
+          <td>3887654321</td>
+          <td>07/07/1995</td>
+          <td>greta_martini</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Pietro</td>
+          <td>D'Angelo</td>
+          <td>pietro.dangelo@example.com</td>
+          <td>3456789012</td>
+          <td>12/05/1985</td>
+          <td>pietro_dangelo</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>Marchetti</td>
+          <td>beatrice.marchetti@example.com</td>
+          <td>3334567890</td>
+          <td>23/09/1990</td>
+          <td>beatrice_marchetti</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Samuele</td>
+          <td>Leone</td>
+          <td>samuele.leone@example.com</td>
+          <td>3229876543</td>
+          <td>15/02/1982</td>
+          <td>samuele_leone</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Alice</td>
+          <td>Longo</td>
+          <td>alice.longo@example.com</td>
+          <td>3661234567</td>
+          <td>30/11/1978</td>
+          <td>alice_longo</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Dario</td>
+          <td>Gentile</td>
+          <td>dario.gentile@example.com</td>
+          <td>3887654321</td>
+          <td>07/07/1995</td>
+          <td>dario_gentile</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Camilla</td>
+          <td>Martinelli</td>
+          <td>camilla.martinelli@example.com</td>
+          <td>3456789012</td>
+          <td>12/05/1985</td>
+          <td>camilla_martinelli</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Emanuele</td>
+          <td>Vitale</td>
+          <td>emanuele.vitale@example.com</td>
+          <td>3334567890</td>
+          <td>23/09/1990</td>
+          <td>emanuele_vitale</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Noemi</td>
+          <td>Coppola</td>
+          <td>noemi.coppola@example.com</td>
+          <td>3229876543</td>
+          <td>15/02/1982</td>
+          <td>noemi_coppola</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Mirko</td>
+          <td>Ferretti</td>
+          <td>mirko.ferretti@example.com</td>
+          <td>3661234567</td>
+          <td>30/11/1978</td>
+          <td>mirko_ferretti</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Serena</td>
+          <td>De Santis</td>
+          <td>serena.desantis@example.com</td>
+          <td>3887654321</td>
+          <td>07/07/1995</td>
+          <td>serena_desantis</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Massimo</td>
+          <td>Fabbri</td>
+          <td>massimo.fabbri@example.com</td>
+          <td>3456789012</td>
+          <td>12/05/1985</td>
+          <td>massimo_fabbri</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Debora</td>
+          <td>Pellegrino</td>
+          <td>debora.pellegrino@example.com</td>
+          <td>3334567890</td>
+          <td>23/09/1990</td>
+          <td>debora_pellegrino</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Gianluca</td>
+          <td>Valentini</td>
+          <td>gianluca.valentini@example.com</td>
+          <td>3229876543</td>
+          <td>15/02/1982</td>
+          <td>gianluca_valentini</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Ilaria</td>
+          <td>Piras</td>
+          <td>ilaria.piras@example.com</td>
+          <td>3661234567</td>
+          <td>30/11/1978</td>
+          <td>ilaria_piras</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Enrico</td>
+          <td>Benedetti</td>
+          <td>enrico.benedetti@example.com</td>
+          <td>3887654321</td>
+          <td>07/07/1995</td>
+          <td>enrico_benedetti</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Federica</td>
+          <td>Bernardi</td>
+          <td>federica.bernardi@example.com</td>
+          <td>3456789012</td>
+          <td>12/05/1985</td>
+          <td>federica_bernardi</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Roberta</td>
+          <td>Rossetti</td>
+          <td>roberta.rossetti@example.com</td>
+          <td>3334567890</td>
+          <td>23/09/1990</td>
+          <td>roberta_rossetti</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Alberto</td>
+          <td>Orlando</td>
+          <td>alberto.orlando@example.com</td>
+          <td>3229876543</td>
+          <td>15/02/1982</td>
+          <td>alberto_orlando</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+        <tr>
+          <td>Erika</td>
+          <td>De Angelis</td>
+          <td>erika.deangelis@example.com</td>
+          <td>3661234567</td>
+          <td>30/11/1978</td>
+          <td>erika_deangelis</td>
+           <td>
+            <button type="button">Modifica</button>
+            <button type="button">Elimina</button>
+          </td>
+          <td>
+            <input type="checkbox">
+          </td>
+        </tr>
+    </table>
+  </body>
+</html>

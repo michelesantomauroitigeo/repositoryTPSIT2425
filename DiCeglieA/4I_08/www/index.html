@@ -7,26 +7,26 @@
 
   <body>
     <div class="center">
-      <form id="form">
+      <form name="form" onsubmit="return verificaForm()" >
         <div>
           <label for="nome">Nome:</label>
-          <input type="text" id="nome" />
+          <input type="text" name="nome" />
           <label for="cognome">Cognome:</label>
-          <input type="text" id="nome" /><br />
+          <input type="text" name="cognome" /><br />
           <div id="nomeErr"></div>
         </div>
         <div>
-          <label for="Mail">Mail:</label>
-          <input type="text" id="Mail" />
-          <label for="Conferma Mail">Conferma Mail:</label>
-          <input type="text" id="ConfermaMail" /><br />
+          <label for="email">Mail:</label>
+          <input type="text" name="email" />
+          <label for="confermaEmail">Conferma Mail:</label>
+          <input type="text" name="confermaEmail" /><br />
           <div id="emailErr"></div>
         </div>
         <div>
-          <label for="Password">Password:</label>
-          <input type="password" id="password" />
-          <label for="Password">Conferma password:</label>
-          <input type="password" id="ConfermaPassword" /><br />
+          <label for="password">Password:</label>
+          <input type="password" name="password" />
+          <label for="confermaPassword">Conferma password:</label>
+          <input type="password" name="confermaPassword" /><br />
           <div id="passwordErr"></div>
           <input type="submit" value="Submit" class="pulsante" />
         </div>

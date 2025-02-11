@@ -4,7 +4,7 @@ function validateForm() {
     let password = document.getElementById("password").value;
     let telefono = document.getElementById("telefono").value;
     let nome = document.getElementById("nome").value;
-    let cognome =document.getElementById("cognome"),value;
+    let cognome =document.getElementById("surname").value;
     document.getElementById("userError").textContent = "";
     document.getElementById("passError").textContent = "";
     document.getElementById("telError").textContent = "";
@@ -25,12 +25,12 @@ function validateForm() {
         valid = false;
     }
     
-        if (username === "") {
+        if ( nome=== "") {
         document.getElementById("nameError").textContent = "Compilamento obbligatorio";
         valid = false;
     }
 
-        if (username === "") {
+        if (cognome === "") {
         document.getElementById("surnameError").textContent = "Compilamento obbligatorio";
         valid = false;
     }
