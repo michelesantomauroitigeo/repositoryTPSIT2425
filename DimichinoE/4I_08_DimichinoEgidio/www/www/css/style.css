@@ -52,8 +52,8 @@ label {
 /* Stile per gli input */
 input[type="text"],
 input[type="email"],
-input[type="tel"],
 input[type="password"] {
+    margin-top: 15px;
     width: 100%;
     padding: 8px;
     border: 1px solid #ddd; /* Bordo grigio chiaro */
@@ -62,10 +62,11 @@ input[type="password"] {
 }
 
 /* Focus sugli input */
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-input[type="password"]:focus {
+input[type="text"]:focus, /*Seleziona gli elementi di tipo "text" (campo di testo) quando l'utente ci clicca sopra o li seleziona.*/
+input[type="email"]:focus, /*Seleziona gli elementi di tipo "email" (campo di email).*/
+input[type="password"]:focus /*Seleziona gli elementi di tipo "password" (campo di password). */
+
+{
     border-color: #6a0dad; /* Viola al focus */
     outline: none;
 }
