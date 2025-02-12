@@ -46,7 +46,7 @@
                 <td>
                     <!-- Pulsanti per azioni sugli utenti -->
                     <button class="elimina" title="Elimina">&#10006;</button>
-                    <button class="modifica" title="Modifica">&#9998;</button>
+                    <button class="modifica" onclick="modifica()" title="Modifica">&#9998;</button>
                     <button class="abilita" title="Abilita">&#10004;</button>
                 </td>
             </tr>
@@ -1579,46 +1579,30 @@
             </tr>
         </tbody>
     </table>
-    <div id="Finestra_Dati">
-        <button class="chiudiFinestra">x</button>
-        <form class="Finestra-modifica">
-            <h2>Modifica dati</h2>
-            <div class="Finestra-gruppo">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome">
-            </div>
+    <div class="Finestra_Dati">
+        <h2>Dati Utente:</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
 
-            <div class="Finestra-gruppo">
-                <label for="cognome">Cognome</label>
-                <input type="text" id="cognome" name="cognome">
-            </div>
+            <label for="cognome">Cognome:</label>
+            <input type="text" id="cognome" name="cognome">
 
-            <div class="Finestra-gruppo">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-            </div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
 
-            <div class="Finestra-gruppo">
-                <label for="telefono">Telefono</label>
-                <input type="text" id="telefono" name="telefono">
-            </div>
+            <label for="telefono">Telefono:</label>
+            <input type="text" id="telefono" name="telefono">
 
-            <div class="Finestra-gruppo">
-                <label for="data">Data</label>
-                <input type="date" id="data" name="data">
-            </div>
+            <label for="data">Data di nascita:</label>
+            <input type="date" id="data" name="data">
 
-            <div class="Finestra-gruppo">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
 
-            </div>
-            <div class="contenitore_bottone">
-                <button type="button" class="modelo-bottone Bottone-Annulla">Annulla</button>
-                <button type="submit" class="modelo-bottone Bottone-Salva">Salva</button>
-            </div>
+            <button type="button" class="button_chiudi" onclick="chiudiFinestra()">Chiudi</button>
+            <button type="button" class="button_salva" onclick="chiudiFinestra()">Salva</button>
         </form>
-
     </div>
 </body>
 
