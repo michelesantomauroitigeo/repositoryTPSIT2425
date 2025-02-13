@@ -1,0 +1,139 @@
+.contenitore {
+	text-align:center;
+	background-color:black;
+  color:white;
+}
+
+body {
+	background-color:black;
+}
+
+table {
+	border: solid 1px;
+	margin: auto;
+	background-color:white;
+}
+
+thead {
+	background-color:black;
+	color:white;
+}
+
+tr {
+	
+}
+
+td {
+	border: solid 1px;
+	padding: 20px;
+}
+
+th {
+	border: solid 1px;
+}
+
+.titoloFinestraModale {
+	background-color:black;
+	color:white;
+}
+
+.modifica {
+	  padding: 15px 10px;
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+}
+
+.elimina {
+	  padding: 15px 10px;
+    background-color: red;
+    color: black;
+    cursor: pointer;
+}
+
+.abilita {
+	  padding: 15px 10px;
+    background-color: green;
+    color: black;
+    cursor: pointer;
+}
+
+.disabilita {
+    padding: 15px 10px;
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+}
+
+/* Finestra Modale (background)*/
+.finestraModaleModifica {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Finestra Modale */
+.contenutoFinestraModaleModifica {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid;
+  width: 40%; 
+  text-align:center;
+}
+
+.contenutoFinestraModaleElimina {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid;
+  width: 40%;
+  text-align:center;
+}
+
+/* Pulsante chiudi */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.confermaFinestraModale {
+	padding: 15px;
+	background-color: green;
+  cursor: pointer;
+}
+
+.annullaFinestraModale {
+  padding: 15px;
+  background-color: red;
+  cursor: pointer;
+}
+
+.finestraModaleElimina {
+  display: none;
+  position: fixed; /* Posiziona la finestra modale in linea con gli altri contenuti */
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Abilita se necessario lo scroll */
+  background-color: rgb(0, 0, 0); /* Colore del background */
+  background-color: rgba(0, 0, 0, 0.4); /* Aggiunta dell'opacità */
+}

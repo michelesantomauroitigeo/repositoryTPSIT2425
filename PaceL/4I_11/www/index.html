@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/style0.css">
+		<title>Gestione Utenti</title>
+	</head>
+	<body>
+		<div class="contenitore">
+			<h2>Gestione Utenti</h2>
+		</div>
+		<div class="finestraModaleModifica" id="idFinestraModaleModifica">
+			<div class="contenutoFinestraModaleModifica">
+				<span class="close">&times;</span>
+				<h2 class="titoloFinestraModale">Modifica dati utente</h2>
+				<form id="contenutoFormFinestraModale">
+					<label for="fname">Nome</label><br>
+					<input type="text" id="nomeFinestraModale" name="nome"><br>
+					<label for="lname">Cognome</label><br>
+					<input type="text" id="cognomeFinestraModale" name="cognome"><br>
+					<label for="fname">Data di nascita</label><br>
+					<input type="date" id="dataDiNascitaFinestraModale" name="data di nascita"><br>
+					<label for="fname">Residenza</label><br>
+					<input type="text" id="residenzaFinestraModale" name="residenza"><br>
+					<label for="fname">Telefono</label><br>
+					<input type="text" id="telefonoFinestraModale" name="telefono"><br>
+					<label for="fname">Email</label><br>
+					<input type="email" id="emailFinestraModale" name="email"><br>
+					<button class="confermaFinestraModale" onclick ="confermaFinestraModaleModifica()">Conferma</button>
+				</form>
+			</div>
+		</div>
+		<div class="finestraModaleElimina" id="idFinestraModaleElimina">
+			<div class="contenutoFinestraModaleElimina">
+				<span class="close">&times;</span>
+				<h2 class="titoloFinestraModale">Elimina Utente</h2>
+				<p id="messaggioElimina">Sei sicuro di voler eliminare questo utente?</p>
+				<button class="confermaFinestraModale">Conferma</button>
+				<button class="annullaFinestraModale">Annulla</button>
+			</div>
+		</div>
+		<table id="tabella">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Nome</th>
+					<th>Cognome</th>
+					<th>Data di nascita</th>
+					<th>Residenza</th>
+					<th>Telefono</th>
+					<th>Email</th>
+					<th>Azioni</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td id>Germana</td>
+					<td>Marchesi</td>
+					<td>20/06/1980</td>
+					<td>Milano</td>
+					<td>0313 9122892</td>
+					<td>GermanaMarchesi@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(1)">Modifica</button>
+						<button class="elimina" onclick="apriFinestraModaleElimina()">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Silvia</td>
+					<td>Bianchi</td>
+					<td>18/05/1996</td>
+					<td>Caltanissetta</td>
+					<td>4885 6122432</td>
+					<td>SilviaBianchi96@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(2)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Fabio</td>
+					<td>De Stefano</td>
+					<td>03/12/1968</td>
+					<td>Bitonto</td>
+					<td>9632 4587733</td>
+					<td>Fabio.DeStefano@fastwebnet.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(3)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Davide</td>
+					<td>Pafundi</td>
+					<td>31/10/1984</td>
+					<td>Rovigo</td>
+					<td>2455 7436615</td>
+					<td>DavidePafundi@hotmail.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(4)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Christian</td>
+					<td>Pomarico</td>
+					<td>01/07/1994</td>
+					<td>Cosenza</td>
+					<td>0496 1855345</td>
+					<td>Christian.Pomarico1@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(5)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Rocco</td>
+					<td>Milesi</td>
+					<td>15/03/1988</td>
+					<td>Lecce</td>
+					<td>8456 9442531</td>
+					<td>MilesiRocco@vodafone.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(6)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>Armando</td>
+					<td>Milanesi</td>
+					<td>08/08/1971</td>
+					<td>Milano</td>
+					<td>0219 3556482</td>
+					<td>Armando.Milanesi@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(7)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>Luisa</td>
+					<td>Marianelli</td>
+					<td>01/04/1977</td>
+					<td>Venezia</td>
+					<td>8652 4122453</td>
+					<td>LuisaMarianelli@virgilio.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(8)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>Ambra</td>
+					<td>Rossi</td>
+					<td>25/09/1993</td>
+					<td>Savona</td>
+					<td>0963 4628311</td>
+					<td>AmbraRossi.93@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(9)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>Luca</td>
+					<td>Giotto</td>
+					<td>14/11/1994</td>
+					<td>Udine</td>
+					<td>0496 7633954</td>
+					<td>Luca.Giotto@fastwebnet.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(10)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td>Carlo</td>
+					<td>Di Nuzzo</td>
+					<td>06/02/1981</td>
+					<td>Benevento</td>
+					<td>0724 8126443</td>
+					<td>Carlo.DiNuzzo@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(11)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>12</td>
+					<td>Andrea</td>
+					<td>Macchiati</td>
+					<td>23/10/1986</td>
+					<td>Roma</td>
+					<td>8551 4697725</td>
+					<td>AndreaMacchiati10@virgilio.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(12)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>13</td>
+					<td>Roberto</td>
+					<td>Marini</td>
+					<td>17/08/1995</td>
+					<td>Genova</td>
+					<td>7489 2344164</td>
+					<td>RobertoMarini@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(13)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td>Valentina</td>
+					<td>Rossi</td>
+					<td>02/03/1990</td>
+					<td>Napoli</td>
+					<td>0645 1234567</td>
+					<td>Valentina.Rossi@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(14)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td>Giorgio</td>
+					<td>Conti</td>
+					<td>05/11/1987</td>
+					<td>Torino</td>
+					<td>0142 7654321</td>
+					<td>Giorgio.Conti@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(15)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td>Martina</td>
+					<td>Ferrari</td>
+					<td>21/07/1993</td>
+					<td>Firenze</td>
+					<td>0552 1239876</td>
+					<td>Martina.Ferrari@virgilio.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(16)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>17</td>
+					<td>Alessandro</td>
+					<td>Grandi</td>
+					<td>28/01/1991</td>
+					<td>Verona</td>
+					<td>0459 8765432</td>
+					<td>Alessandro.Grandi@fastwebnet.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(17)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>18</td>
+					<td>Simone</td>
+					<td>Longo</td>
+					<td>17/09/1988</td>
+					<td>Parma</td>
+					<td>0521 6547890</td>
+					<td>Simone.Longo@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(18)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>19</td>
+					<td>Claudia</td>
+					<td>Esposito</td>
+					<td>02/02/1992</td>
+					<td>Bologna</td>
+					<td>0512 6789123</td>
+					<td>Claudia.Esposito@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(19)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>20</td>
+					<td>Francesco</td>
+					<td>Corsi</td>
+					<td>10/10/1990</td>
+					<td>Roma</td>
+					<td>0682 5491234</td>
+					<td>Francesco.Corsi@virgilio.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(20)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>21</td>
+					<td>Giulia</td>
+					<td>Ventura</td>
+					<td>30/04/1995</td>
+					<td>Perugia</td>
+					<td>0755 6782345</td>
+					<td>Giulia.Ventura@fastwebnet.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(21)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>22</td>
+					<td>Andrea</td>
+					<td>Cerboni</td>
+					<td>06/03/1989</td>
+					<td>Livorno</td>
+					<td>0586 4327654</td>
+					<td>Andrea.Cerboni@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(22)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>23</td>
+					<td>Marco</td>
+					<td>Luigi</td>
+					<td>18/06/1992</td>
+					<td>Como</td>
+					<td>0315 4768999</td>
+					<td>Marco.Luigi@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(23)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>24</td>
+					<td>Alice</td>
+					<td>Verdi</td>
+					<td>14/07/1997</td>
+					<td>Catania</td>
+					<td>0952 4387384</td>
+					<td>Alice.Verdi@virgilio.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(24)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>25</td>
+					<td>Alessia</td>
+					<td>Russo</td>
+					<td>25/04/1990</td>
+					<td>Bari</td>
+					<td>080 1234567</td>
+					<td>Alessia.Russo@mail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(25)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>26</td>
+					<td>Giorgio</td>
+					<td>Manfredi</td>
+					<td>12/02/1983</td>
+					<td>Napoli</td>
+					<td>081 2345678</td>
+					<td>Giorgio.Manfredi@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(26)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>27</td>
+					<td>Francesca</td>
+					<td>Lombardi</td>
+					<td>01/09/1995</td>
+					<td>Torino</td>
+					<td>011 3456789</td>
+					<td>Francesca.Lombardi@yahoo.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(27)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>28</td>
+					<td>Carlo</td>
+					<td>Giordano</td>
+					<td>23/05/1987</td>
+					<td>Milano</td>
+					<td>02 4567890</td>
+					<td>Carlo.Giordano@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(28)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>29</td>
+					<td>Roberta</td>
+					<td>Ferrari</td>
+					<td>06/11/1989</td>
+					<td>Genova</td>
+					<td>010 5678901</td>
+					<td>Roberta.Ferrari@outlook.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(29)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>30</td>
+					<td>Antonio</td>
+					<td>Vitali</td>
+					<td>20/03/1985</td>
+					<td>Venezia</td>
+					<td>041 6789012</td>
+					<td>Antonio.Vitali@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(30)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>31</td>
+					<td>Elena</td>
+					<td>Marino</td>
+					<td>10/12/1991</td>
+					<td>Padova</td>
+					<td>049 7890123</td>
+					<td>Elena.Marino@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(31)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>32</td>
+					<td>Luigi</td>
+					<td>Rinaldi</td>
+					<td>28/01/1982</td>
+					<td>Roma</td>
+					<td>06 8901234</td>
+					<td>Luigi.Rinaldi@yahoo.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(32)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>33</td>
+					<td>Simona</td>
+					<td>Pietro</td>
+					<td>05/10/1986</td>
+					<td>Catania</td>
+					<td>095 9012345</td>
+					<td>Simona.Pietro@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(33)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>34</td>
+					<td>Giuseppe</td>
+					<td>Esposito</td>
+					<td>11/02/1990</td>
+					<td>Napoli</td>
+					<td>081 2345670</td>
+					<td>Giuseppe.Esposito@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(34)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>35</td>
+					<td>Giorgia</td>
+					<td>Moretti</td>
+					<td>15/08/1993</td>
+					<td>Firenze</td>
+					<td>055 3216547</td>
+					<td>Giorgia.Moretti@virgilio.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(35)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>36</td>
+					<td>Matteo</td>
+					<td>Caputo</td>
+					<td>02/07/1994</td>
+					<td>Cagliari</td>
+					<td>070 9876543</td>
+					<td>Matteo.Caputo@fastwebnet.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(36)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>37</td>
+					<td>Arianna</td>
+					<td>Galli</td>
+					<td>03/11/1988</td>
+					<td>Milano</td>
+					<td>02 1234567</td>
+					<td>Arianna.Galli@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(37)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>38</td>
+					<td>Stefano</td>
+					<td>Cavalli</td>
+					<td>22/06/1990</td>
+					<td>Trieste</td>
+					<td>040 9876543</td>
+					<td>Stefano.Cavalli@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(38)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>39</td>
+					<td>Valentina</td>
+					<td>Giuliani</td>
+					<td>12/07/1985</td>
+					<td>Ferrara</td>
+					<td>0532 234567</td>
+					<td>Valentina.Giuliani@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(39)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>40</td>
+					<td>Matteo</td>
+					<td>Rossi</td>
+					<td>30/11/1992</td>
+					<td>Bologna</td>
+					<td>051 987654</td>
+					<td>Matteo.Rossi@yahoo.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(40)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>41</td>
+					<td>Lucia</td>
+					<td>Esposito</td>
+					<td>25/05/1990</td>
+					<td>Verona</td>
+					<td>045 876543</td>
+					<td>Lucia.Esposito@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(41)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>42</td>
+					<td>Francesco</td>
+					<td>Longo</td>
+					<td>10/02/1981</td>
+					<td>Perugia</td>
+					<td>075 234567</td>
+					<td>Francesco.Longo@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(42)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>43</td>
+					<td>Giulia</td>
+					<td>Conti</td>
+					<td>19/03/1996</td>
+					<td>Siena</td>
+					<td>0577 123456</td>
+					<td>Giulia.Conti@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(43)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>44</td>
+					<td>Alessandro</td>
+					<td>Ricci</td>
+					<td>01/08/1987</td>
+					<td>Rimini</td>
+					<td>0541 765432</td>
+					<td>Alessandro.Ricci@outlook.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(44)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>45</td>
+					<td>Elena</td>
+					<td>Martini</td>
+					<td>29/09/1994</td>
+					<td>Venezia</td>
+					<td>041 876543</td>
+					<td>Elena.Martini@hotmail.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(45)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>46</td>
+					<td>Gabriele</td>
+					<td>Corsi</td>
+					<td>05/01/1982</td>
+					<td>Trieste</td>
+					<td>040 432109</td>
+					<td>Gabriele.Corsi@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(46)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>47</td>
+					<td>Marco</td>
+					<td>Bianchi</td>
+					<td>17/04/1993</td>
+					<td>Cagliari</td>
+					<td>070 987654</td>
+					<td>Marco.Bianchi@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(47)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>48</td>
+					<td>Simone</td>
+					<td>De Luca</td>
+					<td>02/12/1988</td>
+					<td>Napoli</td>
+					<td>081 654321</td>
+					<td>Simone.DeLuca@virgilio.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(48)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>49</td>
+					<td>Arianna</td>
+					<td>Marini</td>
+					<td>14/06/1995</td>
+					<td>Messina</td>
+					<td>090 543210</td>
+					<td>Arianna.Marini@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(49)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>50</td>
+					<td>Stefania</td>
+					<td>Lombardo</td>
+					<td>10/02/1990</td>
+					<td>Genova</td>
+					<td>010 234567</td>
+					<td>Stefania.Lombardo@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(50)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>51</td>
+					<td>Andrea</td>
+					<td>De Santis</td>
+					<td>25/05/1987</td>
+					<td>Roma</td>
+					<td>06 123456</td>
+					<td>Andrea.DeSantis@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(51)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>52</td>
+					<td>Tommaso</td>
+					<td>Galli</td>
+					<td>13/07/1983</td>
+					<td>Napoli</td>
+					<td>081 445566</td>
+					<td>Tommaso.Galli@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(52)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>53</td>
+					<td>Federico</td>
+					<td>Pugliese</td>
+					<td>27/01/1990</td>
+					<td>Firenze</td>
+					<td>055 778899</td>
+					<td>Federico.Pugliese@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(53)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>54</td>
+					<td>Claudia</td>
+					<td>Vitali</td>
+					<td>09/11/1982</td>
+					<td>Torino</td>
+					<td>011 223344</td>
+					<td>Claudia.Vitali@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(54)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>55</td>
+					<td>Alessandra</td>
+					<td>Ferrari</td>
+					<td>15/06/1997</td>
+					<td>Milano</td>
+					<td>02 334455</td>
+					<td>Alessandra.Ferrari@hotmail.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(55)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>56</td>
+					<td>Giovanni</td>
+					<td>Rinaldi</td>
+					<td>22/02/1993</td>
+					<td>Varese</td>
+					<td>0332 667788</td>
+					<td>Giovanni.Rinaldi@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(56)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>57</td>
+					<td>Francesca</td>
+					<td>Silvestri</td>
+					<td>18/08/1986</td>
+					<td>Catania</td>
+					<td>095 998877</td>
+					<td>Francesca.Silvestri@outlook.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(57)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>58</td>
+					<td>Antonio</td>
+					<td>Vittori</td>
+					<td>04/12/1990</td>
+					<td>Rimini</td>
+					<td>0541 889900</td>
+					<td>Antonio.Vittori@virgilio.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(58)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>59</td>
+					<td>Elisabetta</td>
+					<td>Leoni</td>
+					<td>11/09/1992</td>
+					<td>Pisa</td>
+					<td>050 123654</td>
+					<td>Elisabetta.Leoni@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(59)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>60</td>
+					<td>Stefano</td>
+					<td>Pagani</td>
+					<td>21/05/1984</td>
+					<td>Perugia</td>
+					<td>075 123456</td>
+					<td>Stefano.Pagani@fastweb.net</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(60)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>61</td>
+					<td>Martina</td>
+					<td>Guerini</td>
+					<td>14/04/1995</td>
+					<td>Venezia</td>
+					<td>041 654321</td>
+					<td>Martina.Guerini@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(61)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>62</td>
+					<td>Leonardo</td>
+					<td>Giovannini</td>
+					<td>28/12/1989</td>
+					<td>Torino</td>
+					<td>011 765432</td>
+					<td>Leonardo.Giovannini@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(62)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>63</td>
+					<td>Simone</td>
+					<td>Bernardi</td>
+					<td>08/02/1985</td>
+					<td>Padova</td>
+					<td>049 2233445</td>
+					<td>Simone.Bernardi@outlook.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(63)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>64</td>
+					<td>Francesco</td>
+					<td>Giordano</td>
+					<td>10/04/1998</td>
+					<td>Livorno</td>
+					<td>0586 998877</td>
+					<td>Francesco.Giordano@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(64)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>65</td>
+					<td>Roberta</td>
+					<td>Monti</td>
+					<td>17/03/1987</td>
+					<td>La Spezia</td>
+					<td>0187 123456</td>
+					<td>Roberta.Monti@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(65)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>66</td>
+					<td>Giulia</td>
+					<td>Moretti</td>
+					<td>06/11/1991</td>
+					<td>Pescara</td>
+					<td>085 223344</td>
+					<td>Giulia.Moretti@virgilio.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(66)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>67</td>
+					<td>Alessio</td>
+					<td>Camerini</td>
+					<td>25/12/1984</td>
+					<td>Napoli</td>
+					<td>081 567890</td>
+					<td>Alessio.Camerini@fastwebnet.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(67)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>68</td>
+					<td>Valentina</td>
+					<td>Romano</td>
+					<td>20/05/1990</td>
+					<td>Napoli</td>
+					<td>081 678912</td>
+					<td>Valentina.Romano@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(68)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>69</td>
+					<td>Lorenzo</td>
+					<td>Pieretti</td>
+					<td>03/07/1989</td>
+					<td>Verona</td>
+					<td>045 876543</td>
+					<td>Lorenzo.Pieretti@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(69)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>70</td>
+					<td>Eleonora</td>
+					<td>De Luca</td>
+					<td>30/09/1994</td>
+					<td>Roma</td>
+					<td>06 334455</td>
+					<td>Eleonora.DeLuca@virgilio.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(70)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>71</td>
+					<td>Andrea</td>
+					<td>Gatti</td>
+					<td>02/02/1991</td>
+					<td>Parma</td>
+					<td>0521 334455</td>
+					<td>Andrea.Gatti@fastweb.net</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(71)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>72</td>
+					<td>Maria</td>
+					<td>Fabbri</td>
+					<td>09/10/1988</td>
+					<td>Imola</td>
+					<td>0542 667788</td>
+					<td>Maria.Fabbri@outlook.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(72)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>73</td>
+					<td>Davide</td>
+					<td>Rossi</td>
+					<td>14/09/1987</td>
+					<td>Vibo Valentia</td>
+					<td>0963 335566</td>
+					<td>Davide.Rossi@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(73)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>74</td>
+					<td>Beatrice</td>
+					<td>Martini</td>
+					<td>01/04/1993</td>
+					<td>Vicenza</td>
+					<td>0444 778899</td>
+					<td>Beatrice.Martini@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(74)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>75</td>
+					<td>Marco</td>
+					<td>Esposito</td>
+					<td>21/11/1980</td>
+					<td>Catania</td>
+					<td>095 112233</td>
+					<td>Marco.Esposito@outlook.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(75)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>76</td>
+					<td>Stefano</td>
+					<td>Verdi</td>
+					<td>13/07/1995</td>
+					<td>Bologna</td>
+					<td>051 334455</td>
+					<td>Stefano.Verdi@fastwebnet.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(76)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>77</td>
+					<td>Alice</td>
+					<td>Ferro</td>
+					<td>23/02/1992</td>
+					<td>Varese</td>
+					<td>0332 556677</td>
+					<td>Alice.Ferro@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(77)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>78</td>
+					<td>Antonio</td>
+					<td>Silva</td>
+					<td>30/06/1984</td>
+					<td>Palermo</td>
+					<td>091 445566</td>
+					<td>Antonio.Silva@virgilio.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(78)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>79</td>
+					<td>Giovanni</td>
+					<td>Morelli</td>
+					<td>18/09/1990</td>
+					<td>Reggio Calabria</td>
+					<td>0965 778899</td>
+					<td>Giovanni.Morelli@outlook.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(79)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>80</td>
+					<td>Federico</td>
+					<td>Bruni</td>
+					<td>22/04/1986</td>
+					<td>Como</td>
+					<td>031 234567</td>
+					<td>Federico.Bruni@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(80)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>81</td>
+					<td>Francesca</td>
+					<td>Greco</td>
+					<td>10/01/1985</td>
+					<td>Roma</td>
+					<td>06 223344</td>
+					<td>Francesca.Greco@fastweb.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(81)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>82</td>
+					<td>Luca</td>
+					<td>De Angelis</td>
+					<td>04/12/1994</td>
+					<td>Torino</td>
+					<td>011 556677</td>
+					<td>Luca.DeAngelis@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(82)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>83</td>
+					<td>Giorgio</td>
+					<td>Valenti</td>
+					<td>12/03/1982</td>
+					<td>Firenze</td>
+					<td>055 123456</td>
+					<td>Giorgio.Valenti@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(83)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>84</td>
+					<td>Elena</td>
+					<td>Pellegrini</td>
+					<td>23/09/1990</td>
+					<td>Venezia</td>
+					<td>041 987654</td>
+					<td>Elena.Pellegrini@outlook.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(84)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>85</td>
+					<td>Martina</td>
+					<td>Lombardi</td>
+					<td>02/07/1985</td>
+					<td>Bari</td>
+					<td>080 112233</td>
+					<td>Martina.Lombardi@fastweb.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(85)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>86</td>
+					<td>Paolo</td>
+					<td>Santoro</td>
+					<td>14/11/1988</td>
+					<td>Messina</td>
+					<td>090 445566</td>
+					<td>Paolo.Santoro@virgilio.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(86)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>87</td>
+					<td>Francesco</td>
+					<td>De Luca</td>
+					<td>05/08/1993</td>
+					<td>Pescara</td>
+					<td>085 123789</td>
+					<td>Francesco.DeLuca@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(87)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>88</td>
+					<td>Sofia</td>
+					<td>Giannetti</td>
+					<td>28/03/1990</td>
+					<td>Ravenna</td>
+					<td>0544 321098</td>
+					<td>Sofia.Giannetti@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(88)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>89</td>
+					<td>Giuseppe</td>
+					<td>Bianchi</td>
+					<td>19/01/1980</td>
+					<td>Napoli</td>
+					<td>081 445566</td>
+					<td>Giuseppe.Bianchi@fastweb.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(89)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>90</td>
+					<td>Andrea</td>
+					<td>Grassi</td>
+					<td>22/12/1987</td>
+					<td>Torino</td>
+					<td>011 233344</td>
+					<td>Andrea.Grassi@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(90)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>91</td>
+					<td>Claudia</td>
+					<td>Gallo</td>
+					<td>11/09/1995</td>
+					<td>Genova</td>
+					<td>010 556677</td>
+					<td>Claudia.Gallo@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(91)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>92</td>
+					<td>Valentina</td>
+					<td>Ricci</td>
+					<td>04/06/1992</td>
+					<td>Perugia</td>
+					<td>075 889900</td>
+					<td>Valentina.Ricci@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(92)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>93</td>
+					<td>Martina</td>
+					<td>Ferrari</td>
+					<td>22/10/1994</td>
+					<td>Roma</td>
+					<td>06 11223344</td>
+					<td>Martina.Ferrari@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(93)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>94</td>
+					<td>Simone</td>
+					<td>Ricci</td>
+					<td>07/05/1991</td>
+					<td>Milano</td>
+					<td>02 23334455</td>
+					<td>Simone.Ricci@virgilio.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(94)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>95</td>
+					<td>Cristina</td>
+					<td>Lazzaro</td>
+					<td>17/08/1983</td>
+					<td>Napoli</td>
+					<td>081 998877</td>
+					<td>Cristina.Lazzaro@outlook.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(95)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>96</td>
+					<td>Giulia</td>
+					<td>Colombo</td>
+					<td>03/04/1997</td>
+					<td>Torino</td>
+					<td>011 667788</td>
+					<td>Giulia.Colombo@fastwebnet.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(96)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>97</td>
+					<td>Alessandra</td>
+					<td>Gianelli</td>
+					<td>11/12/1980</td>
+					<td>Venezia</td>
+					<td>041 223344</td>
+					<td>Alessandra.Gianelli@libero.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(97)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>98</td>
+					<td>Riccardo</td>
+					<td>Giusti</td>
+					<td>25/05/1989</td>
+					<td>Genova</td>
+					<td>010 774455</td>
+					<td>Riccardo.Giusti@virgilio.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(98)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>99</td>
+					<td>Carolina</td>
+					<td>Donati</td>
+					<td>14/11/1995</td>
+					<td>Pescara</td>
+					<td>085 334455</td>
+					<td>Carolina.Donati@gmail.com</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(99)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+				<tr>
+					<td>100</td>
+					<td>Andrea</td>
+					<td>De Santis</td>
+					<td>21/07/1990</td>
+					<td>Vibo Valentia</td>
+					<td>0963 445566</td>
+					<td>Andrea.DeSantis@fastweb.it</td>
+					<td>
+						<button class="modifica" onclick="apriFinestraModaleModifica(100)">Modifica</button>
+						<button class="elimina">Elimina</button>
+						<button class="abilita">Abilita</button>
+						<button class="disabilita">Disabilita</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
