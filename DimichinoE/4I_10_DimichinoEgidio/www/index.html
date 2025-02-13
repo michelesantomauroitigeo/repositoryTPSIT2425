@@ -26,6 +26,16 @@
     </div>
 </div>
 
+    <div id= "finestra">    
+    <div id="visualizzazione">
+        <span onclick="chiusuraFinestra()">&times;</span>
+        <h3>Procedi qui ad eliminare la tua pagina!</h3>
+        <form>
+          <button type=button id="pulsanteElimina">Elimina</button>
+        </form>
+ </div>
+</div>
+
   <h1>Elenco di 100 Persone</h1>
   <table>
     <thead>
@@ -48,7 +58,7 @@
         <td>fredopertini@trapani.org</td>
         <td>Villa d'Este (Tivoli)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">elimina</button>
           <button onclick="Modifica()">Modifica</button>
           <button class='abilita'>Abilita</button>
         </td>
