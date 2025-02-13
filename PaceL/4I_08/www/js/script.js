@@ -48,6 +48,11 @@ function preventSubmit(event) {
         valid = false;
     }
 
+    if (confermaPassword === "") {
+        document.getElementById('erroreConfermaPassword').textContent = "Campo obbligatorio.";
+        valid = false;
+    }
+
     if (confermaPassword !== password) {
         document.getElementById('erroreConfermaPassword').textContent = "Le password non coincidono.";
         valid = false;
