@@ -34,7 +34,7 @@
                 <td>leomar</td>
                 <td>
                     <button class="delete">&#128465;</button>
-                    <button class="edit">&#128393;</button>
+                    <button class="edit" onclick="apriModale()">&#128393;</button>
                     <button class="enable">&#9989;</button>
                 </td>
             </tr>
@@ -1567,6 +1567,39 @@
                 </tr>
         </tbody>
     </table>
+    <div id="modale">
+        <div id="Contenitore-popup">
+
+            <div id="Pulante-chiudi">
+                <span id="chiudi" onclick="chiudiModale()">X</span>
+            </div>
+            <h2>Modifica Utente</h2>
+            <div id="Finestra-popup">
+                <form class="modifica">
+                    <label for="editNome">Nome</label>
+                    <input type="text" id="editNome" name="nome" value="">
+                    <br>
+                    <label for="editCognome">Cognome</label>
+                    <input type="text" id="editCognome" name="cognome" value="">
+                    <br>
+                    <label for="editEmail">E-mail</label>
+                    <input type="email" id="editEmail" name="email" value="">
+                    <br>
+                    <label for="editTelefono">N. Telefono</label>
+                    <input type="tel" id="editTelefono" name="telefono" value="">
+                    <br>
+                    <label for="editDataNascita">Data di Nascita</label>
+                    <input type="date" id="editDataNascita" name="data_nascita" value="">
+                    <br>
+                    <label for="editUsername">Username</label>
+                    <input type="text" id="editUsername" name="username" value="">
+                    <br>
+                    <button id="bottone-modifica">Modifica</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/Script.js"></script>
 </body>
 
 </html>

@@ -2,14 +2,16 @@
 var modal = document.getElementById('idFinestraModale');
 
 // Ottieni il pulsante per aprire la finestra modale
-var btn = document.getElementById('apriFinestraModale');
+var btn = document.getElementsByClassName('modifica');
 
 // Ottieni l'elemento <span> che consente di chiudere il modale
 var span = document.getElementsByClassName('close')[0];
 
-// Quando si clicca sul pulsante, si apre la finestra modale
-btn.onclick = function() {
-  modal.style.display = "block";
+for(var i = 0; i < btn.length; i ++) {
+  // Quando si clicca sul pulsante, si apre la finestra modale
+  btn[i].onclick = function() {
+    modal.style.display = "block";
+  }
 }
 
 // Quando si clicca sullo <span> (x) la finestra si chiude

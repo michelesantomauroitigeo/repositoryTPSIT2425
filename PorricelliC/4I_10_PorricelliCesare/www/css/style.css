@@ -1,0 +1,151 @@
+/* Stile della tabella - imposta la larghezza al 100% e rimuove lo spazio tra le celle */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* Stile delle celle della tabella (th e td) - aggiunge bordi, spaziatura interna e allinea il testo al centro */
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+
+/* Stile del modale (finestra popup) - nascosto di default, posizione fissa sullo schermo con sfondo semi-trasparente */
+
+
+/* Stile del modale (finestra popup) - nascosto di default, posizione fissa sullo schermo con sfondo semi-trasparente */
+
+#modale {
+    display: none;
+    /* Nasconde il modale di default */
+    position: fixed;
+    /* Mantiene il modale fisso rispetto alla viewport */
+    z-index: 1;
+    /* Assicura che il modale sia sopra altri elementi */
+    left: 0;
+    /* Posiziona il modale a sinistra dello schermo */
+    top: 0;
+    /* Posiziona il modale in alto dello schermo */
+    width: 100%;
+    /* Occupa tutta la larghezza dello schermo */
+    height: 100%;
+    /* Occupa tutta l'altezza dello schermo */
+    overflow: auto;
+    /* Aggiunge scroll se il contenuto è troppo lungo */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Sfondo semi-trasparente nero */
+}
+
+
+/* Stile del pulsante di chiusura - colore bianco, posizionato a destra con cursore pointer */
+
+#chiudi {
+    color: rgb(248, 5, 5);
+    /* Colore del testo bianco */
+    float: right;
+    /* Allinea il pulsante a destra */
+    font-size: 25px;
+    /* Dimensione del testo */
+    font-weight: bold;
+    /* Testo in grassetto */
+    cursor: pointer;
+    /* Cambia il cursore quando si passa sopra */
+}
+
+#bottone-modifica {
+    color: rgb(54, 49, 49);
+    /* Colore del testo bianco */
+    font-size: 20px;
+    /* Dimensione del testo */
+    cursor: pointer;
+    /* Cambia il cursore quando si passa sopra */
+}
+
+
+/* Stile del pulsante di chiusura alternativo - sfondo verde con testo bianco */
+
+#Pulante-chiudi {
+    padding: 4px 9px;
+    /* Spaziatura interna */
+    color: rgb(165, 10, 10);
+    /* Testo bianco */
+}
+
+
+/* Stile del contenuto della finestra popup - aggiunge spaziatura interna */
+
+#Finestra-popup {
+    padding: 4px 9px;
+    /* Spaziatura interna uniforme */
+}
+
+
+/* Stile del footer del modale - sfondo chiaro con testo bianco */
+
+#modale-footer {
+    padding: 4px 9px;
+    /* Spaziatura interna */
+    background-color: #fafcfa;
+    /* Sfondo molto chiaro */
+    color: white;
+    /* Testo bianco */
+}
+
+
+/* Stile del contenitore principale del popup - centrato con animazione di apertura */
+
+#Contenitore-popup {
+    position: relative;
+    /* Posizionamento relativo */
+    background-color: #fefefe;
+    /* Sfondo quasi bianco */
+    margin: 15% auto;
+    /* Centra verticalmente e orizzontalmente */
+    padding: 0;
+    /* Nessuna spaziatura interna */
+    border: 1px solid;
+    /* Bordo sottile */
+    width: 20%;
+    /* Larghezza del 20% dello schermo */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* Ombra 3D */
+    animation-name: animatetop;
+    /* Nome dell'animazione */
+    animation-duration: 0.4s/* Durata dell'animazione */
+}
+
+
+/* Stile delle etichette - visualizzate inline-block con larghezza fissa e allineamento a destra */
+
+label {
+    display: inline-block;
+    /* Visualizzazione inline-block */
+    width: 120px;
+    /* Larghezza fissa */
+    margin-right: 10px;
+    /* Margine destro */
+    text-align: right;
+    /* Allineamento del testo a destra */
+    font-weight: bold;
+    /* Testo in grassetto */
+}
+
+
+/* Stile degli input - larghezza fissa, spaziatura interna e bordi arrotondati */
+
+input {
+    width: 200px;
+    /* Larghezza fissa */
+    padding: 10px;
+    /* Spaziatura interna */
+    margin: 8px 0;
+    /* Margine superiore e inferiore */
+    border-radius: 4px;
+    /* Bordi arrotondati */
+}

@@ -81,25 +81,6 @@ button.abilita:hover {
 
 /* Sfondo oscurato per overlay */
 
-body.oscuramento::before {
-    content: "";
-    /* Contenuto vuoto necessario per pseudo-elemento */
-    position: fixed;
-    /* Posizione fissa rispetto alla viewport */
-    top: 0;
-    /* Allineato in alto */
-    left: 0;
-    /* Allineato a sinistra */
-    height: 100%;
-    /* Occupa tutta l'altezza */
-    width: 100%;
-    /* Occupa tutta la larghezza */
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Sfondo nero semi-trasparente */
-    z-index: 1;
-    /* Livello di sovrapposizione */
-}
-
 
 /* Stile per le celle normali della tabella */
 
@@ -123,182 +104,81 @@ tr:hover {
 }
 
 
-/* Stile per la finestra di modifica */
+/* Stile per la finestra modale dei dati */
 
-#Finestra_Dati {
-    background: white;
-    /* Sfondo bianco */
-    padding: 30px;
-    /* Aumentato padding per più spazio interno */
-    border-radius: 10px;
-    /* Angoli arrotondati */
-    width: 400px;
-    /* Larghezza fissa invece di 50vw */
+.Finestra_Dati {
+    display: none;
+    /* Nasconde inizialmente la finestra */
     position: fixed;
-    /* Posizionamento fisso sullo schermo */
+    /* Posizione fissa rispetto alla viewport */
     top: 50%;
-    /* Posiziona al centro verticalmente */
+    /* Posiziona al 50% dall'alto */
     left: 50%;
-    /* Posiziona al centro orizzontalmente */
+    /* Posiziona al 50% da sinistra */
     transform: translate(-50%, -50%);
     /* Centra perfettamente la finestra */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    /* Ombra più pronunciata */
-    z-index: 1000;
-    /* Assicura che sia sopra altri elementi */
+    background: white;
+    /* Sfondo bianco */
+    padding: 20px;
+    /* Spaziatura interna */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    /* Ombra per effetto profondità */
+    border-radius: 20px;
+    /* Angoli arrotondati */
 }
 
 
-/* Stile per il form all'interno della finestra */
+/* Stile per il titolo della finestra */
 
-.Finestra-modifica {
-    display: flex;
-    /* Layout flex per organizzare gli elementi */
-    flex-direction: column;
-    /* Dispone gli elementi in colonna */
-    gap: 15px;
-    /* Spazio tra gli elementi */
+.Finestra_Dati h2 {
+    margin-top: 0;
+    /* Rimuove il margine superiore del titolo */
 }
 
 
-/* Stile per i gruppi di input */
+/* Stile per le etichette dei campi */
 
-.Finestra-gruppo {
-    display: flex;
-    /* Layout flex per label e input */
-    flex-direction: column;
-    /* Label sopra l'input */
-    text-align: left;
-    /* Allinea il testo a sinistra */
-    gap: 5px;
-    /* Spazio tra label e input */
-}
-
-
-/* Stile per le label */
-
-.Finestra-gruppo label {
-    font-size: 14px;
-    /* Dimensione del testo */
-    color: #333;
-    /* Colore del testo scuro */
-    font-weight: 500;
-    /* Peso del font semi-bold */
+.Finestra_Dati label {
+    display: block;
+    /* Mette ogni etichetta su una nuova riga */
+    margin: 10px 0 5px;
+    /* Margini verticali per spaziatura */
 }
 
 
 /* Stile per i campi di input */
 
-.Finestra-gruppo input,
-.Finestra-gruppo textarea {
-    padding: 8px 12px;
-    /* Spaziatura interna */
-    border: 1px solid #ddd;
-    /* Bordo sottile */
-    border-radius: 4px;
-    /* Angoli arrotondati */
-    font-size: 14px;
-    /* Dimensione del testo */
+.Finestra_Dati input {
     width: 100%;
-    /* Occupa tutta la larghezza disponibile */
-}
-
-
-/* Stile per il focus degli input */
-
-.Finestra-gruppo input:focus,
-.Finestra-gruppo textarea:focus {
-    outline: none;
-    /* Rimuove l'outline predefinito */
-    border-color: #4CAF50;
-    /* Bordo verde quando selezionato */
-    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
-    /* Ombra verde chiaro */
-}
-
-
-/* Container per i pulsanti */
-
-.contenitore_bottone {
-    display: flex;
-    /* Layout flex per i pulsanti */
-    justify-content: flex-end;
-    /* Allinea i pulsanti a destra */
-    gap: 10px;
-    /* Spazio tra i pulsanti */
-    margin-top: 20px;
-    /* Spazio sopra i pulsanti */
-}
-
-
-/* Stile per i pulsanti nella finestra */
-
-.modelo-bottone {
-    padding: 8px 16px;
+    /* Larghezza massima disponibile */
+    padding: 5px;
     /* Spaziatura interna */
-    border: none;
-    /* Rimuove il bordo */
-    border-radius: 4px;
-    /* Angoli arrotondati */
-    cursor: pointer;
-    /* Cursore a manina */
-    font-weight: 500;
-    /* Peso del font semi-bold */
-    transition: background-color 0.2s;
-    /* Transizione fluida */
-}
-
-
-/* Stile per il pulsante Salva */
-
-.Bottone-Salva {
-    background-color: #4CAF50;
-    /* Verde */
-    color: white;
-}
-
-.Bottone-Salva:hover {
-    background-color: #45a049;
-    /* Verde più scuro */
-}
-
-
-/* Stile per il pulsante Annulla */
-
-.Bottone-Annulla {
-    background-color: #f44336;
-    /* Rosso */
-    color: white;
-}
-
-.Bottone-Annulla:hover {
-    background-color: #da190b;
-    /* Rosso più scuro */
+    margin-bottom: 15px;
+    /* Margine inferiore tra i campi */
+    border-radius: 7px;
+    /* Arrotondamento degli angoli */
 }
 
 
 /* Stile per il pulsante di chiusura */
 
-.chiudiFinestra {
-    position: absolute;
-    /* Posizionamento assoluto */
-    top: 10px;
-    /* Distanza dal top */
-    right: 10px;
-    /* Distanza da destra */
-    background: none;
-    /* Sfondo trasparente */
-    border: none;
-    /* Nessun bordo */
-    font-size: 20px;
-    /* Dimensione del font */
-    cursor: pointer;
-    /* Cursore a manina */
-    color: #666;
-    /* Colore grigio */
+.Finestra_Dati .button_chiudi {
+    margin-top: 10px;
+    /* Margine superiore dal contenuto */
+    background-color: #e81d0f;
+    /* Sfondo rosso */
+    border-radius: 7px;
+    /* Arrotondamento degli angoli */
 }
 
-.chiudiFinestra:hover {
-    color: #333;
-    /* Grigio più scuro al hover */
+
+/* Stile per il pulsante di salvataggio */
+
+.Finestra_Dati .button_salva {
+    margin-top: 10px;
+    /* Margine superiore dal contenuto */
+    background-color: #7eeb1f;
+    /* Sfondo verde */
+    border-radius: 7px;
+    /* Arrotondamento degli angoli */
 }
