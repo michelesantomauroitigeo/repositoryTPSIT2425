@@ -1,11 +1,14 @@
-var indiceTabella = 0;
+var indiceTabella = 0; //Variabile globale
 
+//Funzione per trovare gli elementi di una specifica riga della tabella (num) e ritornare un array
 function trovaElementoTabella(num) {
 
   var tabella = document.getElementById("tabella");
   var righe = tabella.getElementsByTagName("tr");
 
   var elementi = [];
+
+
   for(var i = 0; i < 7; i ++) {
     elementi[i] = righe[num].cells[i].innerText;
   }
