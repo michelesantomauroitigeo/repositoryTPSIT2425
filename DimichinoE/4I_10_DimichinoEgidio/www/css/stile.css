@@ -93,7 +93,8 @@ tbody tr:hover {
     margin: auto;
     border: solid black 1px;
 
-#finestra2{
+
+#finestra3{
   display: none;
     position: fixed; //centro
     padding-top:200px ;
@@ -107,7 +108,7 @@ tbody tr:hover {
     
 
 }
-#visualizzazione2{
+#visualizzazione3{
     background-color: green;
     width: 30%;
     margin: auto;

@@ -16,6 +16,7 @@ function chiusuraFinestra1(){
 }
 
 
+
 function Abilita(){
     document.getElementById('finestra2').style.display='block';
 }
@@ -23,3 +24,14 @@ function Abilita(){
 function chiusuraFinestra2(){
     document.getElementById('finestra2').style.display='none';
 }
+
+
+
+function disabilita(){
+    document.getElementById('finestra3').style.display='block';
+}
+
+function chiusuraFinestra3(){
+    document.getElementById('finestra3').style.display='none';
+}
+

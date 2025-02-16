@@ -35,16 +35,27 @@
         </form>
  </div>
 </div>
-
-<div id= "finestra2">    
+ 
+ <div id= "finestra2">    
     <div id="visualizzazione2">
         <span onclick="chiusuraFinestra2()">&times;</span>
         <h3>Procedi qui ad abilitare la tua pagina!</h3>
         <form>
-          <button type=button id="pulsanteAbilita">Abilita</button>
+          <button type=button id="pulsanteAbilita">Elimina</button>
+      </form>     
+    </div> 
+ </div>
+
+ <div id= "finestra3">    
+    <div id="visualizzazione3">
+        <span onclick="chiusuraFinestra3()">&times;</span>
+        <h3>Procedi qui per disabilitare la tua pagina!</h3>
+        <form>
+          <button type=button id="pulsanteDisabilita">Disabilita</button>
         </form>
  </div>
 </div>
+
 
   <h1>Elenco di 100 Persone</h1>
   <table>
@@ -71,7 +82,7 @@
           <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
           <button onclick="Abilita()">Abilita</button>
-          <button class='disabilita'>Disabilita</button>
+          <button onclick="disabilita()">Disabilita</button>
         </td>
       </tr>
       <tr>
