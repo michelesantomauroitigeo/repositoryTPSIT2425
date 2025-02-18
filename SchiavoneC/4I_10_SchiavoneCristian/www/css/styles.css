@@ -1,0 +1,94 @@
+/* Stili per la tabella */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Stili per le celle della tabella */
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+/* Colore di sfondo per le intestazioni */
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Colore di sfondo per le righe pari */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Colore di sfondo per il passaggio del mouse sopra le righe */
+tr:hover {
+  background-color: #e0e0e0;
+}
+
+
+
+/*azione modifica*/
+.finestra-modifica {
+    display: none;
+    position:fixed;
+    top: 18%;
+    right: 33%;
+    z-index: 1000;
+    width: 30%;
+    height: 65%;
+    background-color: #444;
+    border: 5px solid rgb(180, 179, 179);
+    border-radius: 10px;
+}
+nav {
+    height: 6%;
+    width: 100%;
+    border-bottom: 2px solid gray;
+    margin-bottom: 8%;
+}
+#icon-chiudi-finestra-modifica {
+    transition: all 0.2s ease;
+    position: absolute;
+    right: 0;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: black;
+    padding: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+#icon-chiudi-finestra-modifica:hover {
+    color: white;
+    background-color: red;
+}
+
+/*Modifiche Input*/
+.modifica {
+    margin-left: 1%;
+    color: #fa88f4;
+}
+.modifica input {
+    margin-bottom: 5%;
+    background-color: #333;
+    color: #c32cff;
+}
+#btn-Modifica {
+    background-color: #575757;
+    color: #fc3af2;
+}
+
+/*Sfondo oscurato*/
+body.oscuramento::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}

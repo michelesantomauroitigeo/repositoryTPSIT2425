@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2%;
+    background-color: rgb(249 249 249);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 1%;
+    text-align: left;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+th {
+    background-color: rgb(242, 242, 242);
+    font-weight: bold;
+}
+
+tbody tr:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+
+button {
+    padding: 1% 1.5%;
+    background-color: rgb(76, 175, 80);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(76 175 80);
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+}
+
+

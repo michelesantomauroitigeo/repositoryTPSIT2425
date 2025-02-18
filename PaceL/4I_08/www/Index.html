@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form di Registrazione</title>
+        <link rel="stylesheet" type="text/css" href="css/style0.css">
+        <script type="text/javascript" src="js/script.js" defer></script> <!-- Aggiungi defer per caricare dopo il caricamento della pagina -->
+    </head>
+    <body>
+        <div>
+            <h2>Modulo di Registrazione</h2>
+            <form id="formRegistrazione" method="post" onsubmit="return preventSubmit(event)">
+                <table>
+                    <tr>
+                        <td>Nome:</td>
+                        <td><input type="text" id="nome" name="nome"></td>
+                        <td><span id="erroreNome" class="error"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Cognome:</td>
+                        <td><input type="text" id="cognome" name="cognome"></td>
+                        <td><span id="erroreCognome" class="error"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Data di Nascita:</td>
+                        <td><input type="date" id="data_nascita" name="data_nascita"></td>
+                        <td><span id="erroreDataNascita" class="error"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Residenza:</td>
+                        <td><input type="text" id="residenza" name="residenza"></td>
+                        <td><span id="erroreResidenza" class="error"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Telefono:</td>
+                        <td><input type="tel" id="telefono" name="telefono"></td>
+                        <td><span id="erroreTelefono" class="error"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" id="email" name="email"></td>
+                        <td><span id="erroreEmail" class="error"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" id="password" name="password"></td>
+                        <td><span id="errorePassword" class="error"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Conferma Password:</td>
+                        <td><input type="password" id="conferma_password" name="conferma_password"></td>
+                        <td><span id="erroreConfermaPassword" class="error"></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit">Registrati</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="css/stile.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <h2>Modulo di Registrazione</h2>
+
+        <form id="idFormRegistrazione" name="formRegistrazione" onsubmit="return verificaForm()" method="post">
+            <table id="tabella-registrazione">
+                <tr>
+                    <td class="input">Nome:</td>
+                    <td><input type="text" name="campoNome" class="Sezione"></td>
+                    <td><span id="messaggioErroreNome" class="errore"></span></td>
+                </tr>
+                <tr>
+                    <td class="input">Cognome:</td>
+                    <td><input type="text" name="campoCognome" class="Sezione"></td>
+                    <td><span id="messaggioErroreCognome" class="errore"></span></td>
+                </tr>
+                <tr>
+                    <td  class="input">Email:</td>
+                    <td><input type="email" name="campoEmail" class="Sezione"></td>
+                    <td><span id="messaggioErroreEmail" class="errore"></span></td>
+                </tr>
+                <tr>
+                    <td class="input">Username:</td>
+                    <td><input type="text" name="campoUsername" class="Sezione"></td>
+                    <td><span id="messaggioErroreUsername" class="errore"></span></td>
+                </tr>
+                <tr>
+                    <td class="input">Password:</td>
+                    <td><input type="password" name="campoPassword" class="Sezione"></td>
+                    <td><span id="messaggioErrorePassword" class="errore"></span></td>
+                </tr>
+                <tr>
+                    <td class="input">Indirizzo:</td>
+                    <td><input type="text" name="campoIndirizzo" class="Sezione"></td>
+                    <td><span id="messaggioErroreIndirizzo" class="errore"></span></td>
+                </tr>
+                <tr>
+                    <td class="input">Data nascita:</td>
+                    <td><input type="date" name="campoData" class="Sezione"></td>
+                    <td><span id="messaggioErroreData" class="errore"></span></td>
+                </tr>
+            </table>
+                    <td>
+                        <input type="submit" value="Registrati" class="bottone">
+                    </td>
+        </form>
+    </body>
+</html>

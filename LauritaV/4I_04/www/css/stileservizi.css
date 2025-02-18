@@ -15,8 +15,12 @@ body {
     background-image: url("../imgs/sfondo.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 body::before {
@@ -151,10 +155,8 @@ footer {
     background-color: #000;
     color: #fff;
     text-align: center;
-    margin-top: 140px;
+    margin-top: auto;
     padding: 20px 10px;
-    position: relative;
-    bottom: 0;
     width: 100%;
 }
 

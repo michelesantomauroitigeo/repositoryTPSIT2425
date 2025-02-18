@@ -1,0 +1,21 @@
+body {
+	background-color:red;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+}
+
+p {
+	text-align:center; color:white;
+}
+
+table, th, td {
+	border:1px solid black; border-color:white; color:white;
+}
+
+form {
+	text-align:center; color:white;
+}
+
+h3 {
+	text-align:center;
+}

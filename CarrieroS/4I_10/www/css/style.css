@@ -1,0 +1,184 @@
+/* Stile della tabella */
+
+table {
+    width: 100%;
+    /* Fa occupare alla tabella l'intera larghezza del contenitore */
+    border-collapse: collapse;
+    /* Unisce i bordi delle celle adiacenti */
+    background-color: white;
+    /* Imposta lo sfondo bianco per la tabella */
+    border-radius: 8px;
+    /* Arrotonda gli angoli della tabella di 8 pixel */
+    overflow: hidden;
+    /* Nasconde il contenuto che fuoriesce dai bordi arrotondati */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Aggiunge un'ombra sfumata sotto la tabella */
+}
+
+
+/* Stile per le celle di intestazione */
+
+th {
+    background-color: #4CAF50;
+    /* Colore di sfondo verde per le intestazioni */
+    color: white;
+    /* Colore del testo bianco */
+    padding: 12px;
+    /* Spaziatura interna di 12 pixel */
+    text-align: center;
+    /* Allinea il testo al centro */
+    font-size: 16px;
+    /* Dimensione del carattere */
+    border: 1px solid #ddd;
+    /* Bordo sottile grigio chiaro */
+}
+
+
+/* Stile per il pulsante elimina */
+
+button.elimina {
+    background-color: #e81d0f;
+    /* Sfondo rosso per il pulsante elimina */
+    color: white;
+    /* Testo bianco */
+}
+
+button.elimina:hover {
+    background-color: #ac0b00;
+    /* Sfondo rosso più scuro quando il mouse passa sopra */
+}
+
+
+/* Stile per il pulsante modifica */
+
+button.modifica {
+    background-color: #e5a340;
+    /* Sfondo arancione per il pulsante modifica */
+    color: white;
+    /* Testo bianco */
+}
+
+button.modifica:hover {
+    background-color: #b27f31;
+    /* Sfondo arancione più scuro quando il mouse passa sopra */
+}
+
+
+/* Stile per il pulsante abilita */
+
+button.abilita {
+    background-color: #7eeb1f;
+    /* Sfondo verde chiaro per il pulsante abilita */
+    color: white;
+    /* Testo bianco */
+}
+
+button.abilita:hover {
+    background-color: #2a750c;
+    /* Sfondo verde più scuro quando il mouse passa sopra */
+}
+
+
+/* Sfondo oscurato per overlay */
+
+
+/* Stile per le celle normali della tabella */
+
+td {
+    border: 1px solid #ddd;
+    /* Bordo sottile grigio chiaro */
+    padding: 10px;
+    /* Spaziatura interna di 10 pixel */
+    text-align: center;
+    /* Allinea il testo al centro */
+    font-size: 14px;
+    /* Dimensione del carattere */
+}
+
+
+/* Effetto hover sulle righe della tabella */
+
+tr:hover {
+    background-color: #f1f1f1;
+    /* Cambia colore di sfondo al passaggio del mouse */
+}
+
+
+/* Stile per la finestra modale dei dati */
+
+.Finestra_Dati {
+    display: none;
+    /* Nasconde inizialmente la finestra */
+    position: fixed;
+    /* Posizione fissa rispetto alla viewport */
+    top: 50%;
+    /* Posiziona al 50% dall'alto */
+    left: 50%;
+    /* Posiziona al 50% da sinistra */
+    transform: translate(-50%, -50%);
+    /* Centra perfettamente la finestra */
+    background: white;
+    /* Sfondo bianco */
+    padding: 20px;
+    /* Spaziatura interna */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    /* Ombra per effetto profondità */
+    border-radius: 20px;
+    /* Angoli arrotondati */
+}
+
+
+/* Stile per il titolo della finestra */
+
+.Finestra_Dati h2 {
+    margin-top: 0;
+    /* Rimuove il margine superiore del titolo */
+}
+
+
+/* Stile per le etichette dei campi */
+
+.Finestra_Dati label {
+    display: block;
+    /* Mette ogni etichetta su una nuova riga */
+    margin: 10px 0 5px;
+    /* Margini verticali per spaziatura */
+}
+
+
+/* Stile per i campi di input */
+
+.Finestra_Dati input {
+    width: 100%;
+    /* Larghezza massima disponibile */
+    padding: 5px;
+    /* Spaziatura interna */
+    margin-bottom: 15px;
+    /* Margine inferiore tra i campi */
+    border-radius: 7px;
+    /* Arrotondamento degli angoli */
+}
+
+
+/* Stile per il pulsante di chiusura */
+
+.Finestra_Dati .button_chiudi {
+    margin-top: 10px;
+    /* Margine superiore dal contenuto */
+    background-color: #e81d0f;
+    /* Sfondo rosso */
+    border-radius: 7px;
+    /* Arrotondamento degli angoli */
+}
+
+
+/* Stile per il pulsante di salvataggio */
+
+.Finestra_Dati .button_salva {
+    margin-top: 10px;
+    /* Margine superiore dal contenuto */
+    background-color: #7eeb1f;
+    /* Sfondo verde */
+    border-radius: 7px;
+    /* Arrotondamento degli angoli */
+}

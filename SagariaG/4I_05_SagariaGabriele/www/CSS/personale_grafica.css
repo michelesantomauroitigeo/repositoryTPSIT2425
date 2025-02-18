@@ -1,0 +1,245 @@
+body {
+  background-image: url("../imgs/sfondo.png");
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+.p-nome{
+  color: #097b47;
+  font-size: 60px;
+  margin-top: 15px;
+  margin-left:38px ;
+  margin-bottom: -20px;
+
+}
+
+.logo{
+  padding-top:15px ;
+  padding-left:15px ;
+  width: 120px;
+  height: 80px;
+ 
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  margin: -10px;
+  padding:-10px ;
+  width: 100.3%;
+}
+
+.button-box{
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+ul {
+  list-style-type: none;
+  margin-right: 15px;
+  padding-left: 5px;
+  overflow: hidden;
+  background-color: #333;
+  font-size: 20px;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 5px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.negozio{
+  padding-top:50px;
+  padding-right:1100px ;
+  filter: brightness(85%);  
+  width: 550px;
+  height: 550x;
+}
+
+.carrello_img{
+  width: 45px;
+  height: 45px;
+
+}
+
+.menu{
+  padding-top:12px ;
+}
+
+.intestazione{
+  width: 100%;
+  background-color:#097b47;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.nominativo{
+  color: white;
+  font-size: 35px;
+  padding: 23px 105px 23px 23px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.info{
+  font-size: 32px;
+}
+
+.input{
+  font-size: 19px;
+}
+
+.label{
+  font-size: 25px;
+}
+
+form{
+  padding-top: 15px;
+  margin-left: 150px;
+  padding-right: 150px;
+  text-align: left;
+}
+
+.informazioni{
+  height: 350px;
+  width: 90%;
+  background-color: whitesmoke;
+  margin-left: 95px;
+}
+
+.sistemazione{
+  display: flex;
+  
+}
+
+.immagine-profilo{
+  font-size: 20px;
+  padding-left:570px;
+}
+.account{
+  height: 120px;
+  width: 120px;
+  margin-left:560px;
+  margin-top:35px;
+}
+
+.impostazioni{
+  height: 350px;
+  width: 90%;
+  background-color: whitesmoke;
+  margin-left: 95px;
+}
+
+.conferma{
+  font-size: 20px;
+  background-color: #097b47;
+  color: white;
+}
+
+.ordine{
+  height: 650px;
+  width: 90%;
+  background-color: whitesmoke;
+  margin-left: 95px;
+}
+
+.indice{
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between; 
+}
+.prodotti{
+  padding-right: 360px;
+  padding-left: 40px;
+}
+
+.specifico{
+  font-size: 23px;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.specifico-p{
+  padding-right: 60px;
+  padding-left: 40px;
+}
+
+.totale{
+  padding-right: 40px;
+}
+
+.totale-p{
+  padding-right: 40px;
+}
+
+.prezzo{
+  padding-right: 20px;
+}
+
+.fodera-p{
+  padding-right: 340px;
+  padding-left: 40px;
+}
+
+.elastico-p{
+  padding-right: 158px;
+  padding-left: 40px;
+}
+
+.Totale-p{
+  padding-left: 40px;
+}
+
+.prototti-tot{
+  padding-right:35px ;
+}
+
+.invio{
+ width: 100%;
+ margin-top: 35px;
+ font-size: 20px;
+ background-color:#097b47 ;
+ color: white;
+ border: none;
+}
+
+.nero{
+  opacity: 0.8;
+  height: 300px;
+  width: 100%;
+  background-color: black;
+}
+
+.seguici_span{
+  color: #7e7d6d;
+  font-size: 50px;
+  padding-top: 60px;
+}
+
+.img-facebook{
+  width: 3.5%;  
+}
+
+.img-instagram{
+  width: 3.5%; 
+  padding-left: 45px; 
+}
+
+.img-whatsapp{
+  width: 3.5%;  
+  padding-left: 45px;
+}

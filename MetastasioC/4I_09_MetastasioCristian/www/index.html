@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Form con Validazione</title>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" id="username">
+        <span id="userError" style="color: red;"></span>
+        <br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+        <span id="passError" style="color: red;"></span>
+        <br><br>
+                
+        <label for="telefono">telefono:</label>
+        <input type="telefono" id="telefono">
+        <span id="telError" style="color: red;"></span>
+        <br><br>
+
+        <label for="nome">nome:</label>
+        <input type="nome" id="nome">
+        <span id="nameError" style="color: red;"></span>
+        <br><br>
+
+        <label for="surname">cognome:</label>
+        <input type="surname" id="surname">
+        <span id="surnameError" style="color: red;"></span>
+        <br><br>
+        
+        
+        <button type="submit">Invia</button>
+    </form>
+</body>
+</html>

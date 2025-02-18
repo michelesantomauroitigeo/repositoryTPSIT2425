@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione</title>
+    <link rel="stylesheet" href="../css/reg.css">
+</head>
+<body>
+    <div class="registrazione">
+        <h1>Registrazione</h1>
+        
+        <form action="/submit" method="POST">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="conferma_password" placeholder="Conferma Password" required>
+            <button type="submit">Registrati</button>
+        </form>
+
+        <a href="../indext.html" class="indietro">Hai già un account? Accedi</a>
+    </div>
+</body>
+</html>

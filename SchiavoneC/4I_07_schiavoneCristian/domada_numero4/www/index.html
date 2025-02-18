@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Menu Interattivo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="menu">
+        <div class="logo" onclick="changeLogo()">
+            LOGO AZIENDA
+        </div>
+        <nav class="nav-links">
+            <a href="#" onclick="highlightLink(this)">Prodotti</a>
+            <a href="#" onclick="highlightLink(this)">Chi siamo</a>
+            <a href="#" onclick="highlightLink(this)">Contatti</a>
+        </nav>
+        <div class="auth-links">
+            <a href="#" onclick="modifyAuth(this, 'Login effettuato')">Login</a>
+            <a href="#" onclick="modifyAuth(this, 'Registrazione effettuata')">Registrazione</a>
+        </div>
+    </header>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

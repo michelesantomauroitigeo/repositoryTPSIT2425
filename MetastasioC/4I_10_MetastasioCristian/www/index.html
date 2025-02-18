@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Tabella Amministratore</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestione Informazioni Utenti</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cognome</th>
+                    <th>Email</th>
+                    <th>Telefono</th>
+                    <th>Data di Nascita</th>
+                    <th>Username</th>
+                    <th>Azioni</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mario</td>
+                    <td>Rossi</td>
+                    <td>mario.rossi@example.com</td>
+                    <td>3331234567</td>
+                    <td>01/01/1990</td>
+                    <td>mrossi</td>
+                    <td>
+                        <button class="edit" onclick="modifica()">modifica</button>
+                        <button>assegna</button>
+                        <button>elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Luigi</td>
+                    <td>Verdi</td>
+                    <td>luigi.verdi@example.com</td>
+                    <td>3332345678</td>
+                    <td>02/02/1992</td>
+                    <td>lverdi</td>
+                    <td>
+                        <button class="edit" onclick="modifica()">modifica</button>
+                        <button>assegna</button>
+                        <button>elimina</button>
+                    </td>
+                </tr>
+               <td>Anna</td>
+                    <td>Bianchi</td>
+                    <td>anna.bianchi@example.com</td>
+                    <td>3333456789</td>
+                    <td>03/03/1993</td>
+                    <td>abianchi</td>
+                    <td>
+                        <button class="edit" onclick="modifica()">modifica</button>
+                        <button>assegna</button>
+                        <button>elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Giulia</td>
+                    <td>Moretti</td>
+                    <td>giulia.moretti@example.com</td>
+                    <td>3334567890</td>
+                    <td>04/04/1994</td>
+                    <td>gmoretti</td>
+                    <td>
+                        <button class="edit" onclick="modifica()">modifica</button>
+                        <button>assegna</button>
+                        <button>elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Andrea</td>
+                    <td>Esposito</td>
+                    <td>andrea.esposito@example.com</td>
+                    <td>3335678901</td>
+                    <td>05/05/1995</td>
+                    <td>aesposito</td>
+                    <td>
+                        <button class="edit" onclick="modifica()">modifica</button>
+                        <button>assegna</button>
+                        <button>elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Elisa</td>
+                    <td>Conti</td>
+                    <td>elisa.conti@example.com</td>
+                    <td>3336789012</td>
+                    <td>06/06/1996</td>
+                    <td>econti</td>
+                    <td>
+                        <button class="edit" onclick="modifica()">modifica</button>
+                        <button>assegna</button>
+                        <button>elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Matteo</td>
+                    <td>Ricci</td>
+                    <td>matteo.ricci@example.com</td>
+                    <td>3337890123</td>
+                    <td>07/07/1997</td>
+                    <td>mricci</td>
+                    <td>
+                        <button class="edit" onclick="modifica()">modifica</button>
+                        <button>assegna</button>
+                        <button>elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Serena</td>
+                    <td>Galli</td>
+                    <td>serena.galli@example.com</td>
+                    <td>3338901234</td>
+                    <td>08/08/1998</td>
+                    <td>sgalli</td>
+                    <td>
+                        <button class="edit" onclick="modifica()">modifica</button>
+                        <button>assegna</button>
+                        <button>elimina</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+      <div class="finestra">
+        <h2>Inserisci i dati</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            
+            <label for="cognome">Cognome:</label>
+            <input type="text" id="cognome" name="cognome">
+            
+            <label for="username">Nome Utente:</label>
+            <input type="text" id="username" name="username">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+
+             <label for="telefono">Telefono:</label>
+            <input type="text" id="telefono" name="telefono">
+
+             <label for="email">email:</label>
+            <input type="text" id="email" name="email">
+            
+            <button type="button" onclick="chiudiFinestra()">Chiudi</button>
+            <button type="button" onclick="chiudiFinestra()">Modifica</button>
+        </form>
+
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,373 @@
+body {
+  background-image: url("../imgs/sfondo.png");
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+.p-nome{
+  color: #097b47;
+  font-size: 60px;
+  margin-top: 15px;
+  margin-left:38px ;
+  margin-bottom: -20px;
+
+}
+
+.logo{
+  padding-top:15px ;
+  padding-left:15px ;
+  width: 120px;
+  height: 80px;
+ 
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  margin: -10px;
+  padding:-10px ;
+  width: 100.3%;
+}
+
+.button-box{
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+ul {
+  list-style-type: none;
+  margin-right: 15px;
+  padding-left: 5px;
+  overflow: hidden;
+  background-color: #333;
+  font-size: 20px;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 5px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.negozio{
+  padding-top:50px;
+  padding-right:1100px ;
+  filter: brightness(85%);  
+  width: 550px;
+  height: 550x;
+}
+
+.carrello_img{
+  width: 45px;
+  height: 45px;
+
+}
+
+.menu{
+  padding-top:12px ;
+}
+
+.intestazione{
+  width: 100%;
+  background-color:#097b47;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.nominativo{
+  color: white;
+  font-size: 35px;
+  padding: 23px 105px 23px 23px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+
+.prenotazione{
+  font-size: 65%;
+}
+
+
+
+/*-------------------*/
+
+.lana{
+  background-color: whitesmoke;
+  border-block: 3%;
+  display: flex;
+  justify-content: space-between;
+  margin-left:7.5%;
+  margin-right: 7.5%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+div.lana img{
+  width: 20%;
+  height: 15%;
+  padding-top:4.5%;
+  margin-bottom: 3.5%;
+  margin-right: 4.25%;
+
+}
+
+div.lana h2{
+  font-size: 35px;
+ padding-left: 690%;
+
+}
+
+div.lana form{
+  margin-top:7.75%;
+  font-size: 22px;
+  text-align: left;
+  padding-right: 35%;
+
+}
+
+div.lana option{
+  font-size: 20px;
+}
+
+div.lana label{
+  font-size: 25px;
+}
+
+/*-------------------*/
+
+.stoffe{
+  background-color: whitesmoke;
+  border-block: 3%;
+  display: flex;
+  justify-content: space-between;
+  margin-left:7.5%;
+  margin-right: 7.5%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+div.stoffe img{
+  width: 20%;
+  height: 15%;
+  margin-top:5.5%;
+  margin-bottom: 3.5%;
+  margin-right: 4.25%;
+
+}
+
+div.stoffe h2{
+  font-size: 35px;
+  padding-left: 450%;
+
+}
+
+div.stoffe form{
+  margin-top:5%;
+  font-size: 22px;
+  text-align: left;
+  padding-bottom: 1.5%;
+  padding-right: 36%;
+}
+
+div.stoffe option{
+  font-size: 20px;
+}
+
+div.stoffe label{
+  font-size: 25px;
+}
+
+/*-------------------*/
+
+.accessori{
+  background-color: whitesmoke;
+  border-block: 3%;
+  margin-left:7.5%;
+  margin-right: 7.5%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+
+
+div.accessori img{
+  width: 20%;
+  height: 15%;
+  padding-top:0.5%;
+  margin-bottom: 3.5%;
+  margin-right: 4.25%;
+}
+
+div.accessori h2{
+  font-size: 35px;
+  padding-right: 7.5%;
+}
+
+
+
+div.accessori form{
+  font-size: 22px;
+  text-align: left;
+  padding-top: 1.5%;
+}
+
+
+
+div.accessori option{
+  font-size: 20px;
+}
+
+div.accessori label{
+  font-size: 25px;
+}
+
+
+/*-------------------*/
+
+.abbigliamento{
+  background-color: whitesmoke;
+  border-block: 3%;
+  margin-left:7.5%;
+  margin-right: 7.5%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.unione{
+  display: flex;
+  justify-content: space-between;
+}
+
+div.abbigliamento img{
+  width: 20%;
+  height: 15%;
+  padding-top:0.5%;
+  margin-bottom: 3.5%;
+  margin-right: 4.25%;
+}
+
+div.abbigliamento h2{
+  font-size: 35px;
+  padding-right: 7.5%;
+}
+
+
+
+div.abbigliamento form{
+  font-size: 22px;
+  text-align: left;
+  padding-left: 10%;
+  padding-top: 1.5%;
+}
+
+
+
+div.abbigliamento option{
+  font-size: 20px;
+}
+
+div.abbigliamento label{
+  font-size: 25px;
+}
+
+/*------------------------*/
+
+
+.tessuti{
+  background-color: whitesmoke;
+  border-block: 3%;
+  /*display: flex;
+  justify-content: space-between;
+  */margin-left:7.5%;
+  margin-right: 7.5%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+
+div.tessuti img{
+  width: 20%;
+  height: 15%;
+  padding-top:4.5%;
+  margin-bottom: 1.5%;
+  margin-right: 4.25%;
+}
+
+div.tessuti h2{
+  font-size: 35px;
+  padding-right: 7.5%;
+}
+
+
+
+div.tessuti form{
+  
+  font-size: 22px;
+  text-align: left;
+  padding-left: 10%;
+}
+
+
+
+div.tessuti option{
+  font-size: 20px;
+}
+
+div.tessuti label{
+  font-size: 25px;
+}
+
+/*------------------------*/
+
+
+.nero{
+  opacity: 0.8;
+  height: 300px;
+  width: 100%;
+  background-color: black;
+}
+
+.seguici_span{
+  color: #7e7d6d;
+  font-size: 50px;
+  padding-top: 60px;
+}
+
+.img-facebook{
+  width: 3.5%;  
+}
+
+.img-instagram{
+  width: 3.5%; 
+  padding-left: 45px; 
+}
+
+.img-whatsapp{
+  width: 3.5%;  
+  padding-left: 45px;
+}
+
+
+.invio{
+ width: 100%;
+ margin-top: 35px;
+ margin-bottom: 35px;
+ font-size: 30px;
+ background-color:#097b47 ;
+ color: white;
+ border: none;
+}
+

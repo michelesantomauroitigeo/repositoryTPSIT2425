@@ -3,22 +3,39 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pagina Login</title>
+        <title>Login - Distribuzione H24</title>
         <link rel="stylesheet" href="../css/paglogin.css">
     </head>
     <body>
-        <nav>
-            <a href="../index.html">Ritorna</a>
-        </nav>
 
-        <h1>Crea account</h1> <br>
+        <a href="../index.html" class="back-button">&larr; Ritorna</a>
 
-        <form action="/action_page.php" style="text-align: center;">
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email" value="nome@outlook.com"><br><br>
-            <label for="Password">Inserisci una password:</label><br>
-            <input type="password" id="password" name="password" minlength="6"><br><br>
-            <input type="submit" value="Invio">
-        </form>
+        <div class="login-container">
+
+            <h1>Login</h1>
+
+            <form action="/action_page.php">
+
+                <label for="email">Email:</label>
+
+                <br>
+                <input type="text" id="email" name="email" placeholder="nome@outlook.com">
+
+                <br><br>
+
+                <label for="password">Inserisci la tua password:</label><br>
+                <input type="password" id="password" name="password" minlength="6" 
+                placeholder="******">
+
+                <br><br>
+                
+                <p class="crea-account">Non hai un account? <br>
+                    <a href="accedi.html">Crea un account qui</a>
+                </p>
+                
+                <input type="submit" value="Invio">
+            </form>
+        </div>
+
     </body>
 </html>

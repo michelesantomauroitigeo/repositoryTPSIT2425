@@ -1,5 +1,15 @@
+.WebContainer{
+  width: 100%;
+  height: auto;
+}
+.articles{
+  width:90%; /*Takes 90% width from WebContainer*/
+  height: auto;
+  margin: auto;
+} 
+
 body {
-  background-image: url("/4I_04/www/imgs/immagine_sfondo.jpg");
+  background-image: url("../imgs/immagine_sfondo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: content-box;
