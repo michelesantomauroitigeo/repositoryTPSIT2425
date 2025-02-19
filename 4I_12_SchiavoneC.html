@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<title>Area Riservata</title>
+	<link rel="stylesheet"  href="css/stile.css">
+	<script src "js/script.js" defer></script>
+</head>
+<body>
+	<div id="finestra">
+	<div id="visualizzazione">
+    <span> onclick= "chiusuraFinestra()">&times;</span>
+    <h3>FINESTRA MODALE</h3>
+    <form>
+    	<label for="nome">Nome:</label>
+    	<input type="text" id="nome nome"name=""><br>
+    	<button type="button" id="pulsanteSava" onclick="SALVAMODIFICA()">SALVA</button>
+    </form>
+</div>
+</div>
+<h3>Gestione Contatti</h3>
+<table border="1">
+	<thead>
+		<tr>
+			<th>Nome</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Luca</td>
+			<td><button onclick="Elimina(this)">ELIMINA</button><br>
+		</tr>
+
+
+//CSS
+
+#finestra{
+	display:nome;
+	position fixed
+	padding-top 200px;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.5);
+}
+
+#visualizzazione{
+	background-color:white;
+	width:80%;
+	margin:alto;
+	border:solid black 1px;
+}
+
+#Finestra{
+	display:nome;
+}
+
+
+//JAVASCRIPT
+let rigaSelezione=null;
+functionModifica(pulsante){
+	rigaSelezionata=pulsante.closest("tr");
+	let dataCella=rigaSelezionata.getelementbytagNome("td");
+
+	document.getelementbyid("Fnome").value=dateCella[1].textcontent;
+	document.getelementbyid("Finestra")style.display="block";
+}
+
+functionElimina(pulsante){
+	
+	let rigaSelezionata=pulsante.closest("tr");
+	rigaSelezionata.remove();
+}
+
+functionChiusuraFinestra(){
+	document.getElementbyid("finestra").stye.display="nome";
+	rigaSelezionata=null;
+}

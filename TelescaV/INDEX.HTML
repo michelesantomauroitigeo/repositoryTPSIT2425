@@ -1,0 +1,57 @@
+    <form id="idForm" name="formReg" onsubmit="return verificaForm()" method="post">
+	<table id="tabella">
+		<tr>
+			<td class="input">Nome: </td>
+			<td><input type="text" name="CampoN" class="sezione"></td>
+			<td><span id="ErroreN" class="errore"></span></td>
+		<tr>
+
+		<tr>
+			<td class="input">Cognome: </td>
+			<td><input type="text" name="CampoCG" class="sezione"></td>
+			<td><span id="ErroreCG" class="errore"></span></td>
+		<tr>
+
+		<tr>
+			<td class="input">Data di nascita: </td>
+			<td><input type="date" name="CampoDN" class="sezione"></td>
+			<td><span id="ErroreD" class="errore"></span></td>
+		<tr>
+
+		<tr>
+			<td class="input">Username: </td>
+			<td><input type="text" name="CampoUs" class="sezione"></td>
+			<td><span id="ErroreUs" class="errore"></span></td>
+		<tr>
+
+		<tr>
+			<td class="input">Password: </td>
+			<td><input type="password" name="CampoPS" class="sezione"></td>
+			<td><span id="ErroreSessoPS" class="errore"></span></td>
+		<tr>
+
+		<tr>
+			<td class="input">Sesso: </td>
+			<td><input type="char" name="CampoSesso" class="sezione"></td>
+			<td><span id="ErroreSesso" class="errore"></span></td>
+		<tr>
+
+		<tr>
+			<td class="input">Numero di Telefono: </td>
+			<td><input type="number" name="CampoT" class="sezione"></td>
+			<td><span id="ErroreT" class="errore"></span></td>
+		<tr>
+
+function verificaForm(){
+	let contaErrori=0;
+}
+
+let veririficaCampoN=document.forms["formReg"]["CampoN"].value;
+if(ValoreCampoN==""){
+	contaErrori++;
+	document.getElementById("ErroreN").innerHTML ="Questo campo e' obbligatorio";
+}
+else{
+	document.getElementById("ErroreN").innerHTML="";
+}
+
