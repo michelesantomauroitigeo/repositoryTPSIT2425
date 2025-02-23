@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>
+		<link rel="stylesheet" type="text/css" href="stile.css">
+		<script type="text/javascript" src="script.js" defer></script>
+	</head>
+	<body>
+		<div id="idFinestraModale" class="classeFinestraModale">
+		  <div class="classeContenutoFinestraModale">
+		    <span class="classeChiudiFinestraModale">&times;</span>
+		    <p>Some text in the Modal..</p>
+		  </div>
+		</div>
+		<form id="idFormRegistrazione" name="formRegistrazione" onsubmit="return verificaForm()" method="get">
+			Nome: <input type="text" name="campoNome">
+			<span id="messaggioErroreNome"></span>
+			<br/>
+			Cognome: <input type="text" name="campoCognome">
+			<span id="messaggioErroreCognome"></span>
+			<br/>
+			Data nascita: <input type="date" name="campoData">
+			<span id="messaggioErroreData"></span>
+			<br/>
+			<input type="submit" value="Invia">
+			<button id="pulsanteApriFinestraModale">Apri finestra modale</button>
+		</form>
+	</body>
+</html>

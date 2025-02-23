@@ -6,97 +6,95 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f4f4f4; /* Grigio chiaro */
+    background-color: #ffffff; /* Bianco */
 }
 
 /* Intestazione */
 header {
-    background-color: ##f4f4f9; /* Viola*/
+    background-color: #6a0dad; /* Viola */
     color: white;
-    padding: 15px;
+    padding: 3%; /* Circa 15px in percentuale */
     text-align: center;
     width: 100%;
 }
 
 /* Sezione registrazione */
 section#registrazione {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 20px;
+    background-color: #ffffff; /* Bianco */
+    padding: 5%; /* Circa 20px in percentuale */
+    margin: 5%; /* Circa 20px in percentuale */
     width: 100%;
-    max-width: 400px;
+    max-width: 80%; /* Limita la larghezza a un massimo dell'80% */
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1% 2% rgba(0, 0, 0, 0.1); /* Ombra proporzionale */
 }
 
 /* Titolo della sezione */
 h2 {
     text-align: center;
-    color: #333;
-    font-size: 20px;
-    margin-bottom: 15px;
+    color: #333333; /* Nero */
+    font-size: 5vw; /* Dimensione del font in base alla larghezza della finestra */
+    margin-bottom: 3%; /* Circa 15px in percentuale */
 }
 
 /* Gruppi di input */
 .gruppo-input {
-    margin-bottom: 15px;
+    margin-bottom: 3%; /* Circa 15px in percentuale */
 }
 
 /* Etichette degli input */
 label {
     display: block;
-    margin-bottom: 5px;
-    color: #333;
+    margin-bottom: 1%; /* Circa 5px in percentuale */
+    color: #333333; /* Nero */
 }
 
 /* Stile per gli input */
 input[type="text"],
 input[type="email"],
-input[type="tel"],
 input[type="password"] {
+    margin-top: 3%; /* Circa 15px in percentuale */
     width: 100%;
-    padding: 8px;
+    padding: 2%; /* Circa 8px in percentuale */
     border: 1px solid #ddd; /* Bordo grigio chiaro */
     border-radius: 4px;
     box-sizing: border-box;
 }
 
 /* Focus sugli input */
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
+input[type="text"]:focus, 
+input[type="email"]:focus, 
 input[type="password"]:focus {
-    border-color: ##f4f4f9; /* Viola al focus */
+    border-color: #6a0dad; /* Viola al focus */
     outline: none;
 }
 
 /* Stile per il pulsante di registrazione */
 button {
-    background-color: ##f4f4f9; /* Verde */
+    background-color: #6a0dad; /* Viola */
     color: white;
-    padding: 10px;
+    padding: 2%; /* Circa 10px in percentuale */
     border: none;
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
-    font-size: 16px;
+    font-size: 4vw; /* Dimensione del font in base alla larghezza della finestra */
     font-weight: bold;
-    margin-top: 10px;
- 
+    margin-top: 0.5%; /* Circa 2px in percentuale */
 }
 
-span{
-    color:red;
-    display:none;
-
+/* Messaggio di errore */
+span {
+    color: red;
+    display: none;
 }
 
-input[type="submit"]{
-
-    background-color: purple;
+/* Stile per il pulsante di invio */
+input[type="submit"] {
+    background-color: #6a0dad; /* Viola */
     border-radius: 6px;
-    margin-top: 10px;
-    border: 1px solid #ddd; 
-    padding: 10px;
+    margin-top: 2%; /* Circa 10px in percentuale */
+    border: 1px solid #ddd;
+    padding: 2%; /* Circa 10px in percentuale */
     width: 50%;
 }

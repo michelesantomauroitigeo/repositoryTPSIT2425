@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabella di Informazioni</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+     <script type="text/javascript" src="js/script.js" defer></script>
+</head>
+<body>
+
+<div id="finestraModale">    
+    <div id="visualizzazione">
+        <h3>Modalità modifica</h3>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" ><br>
+            <label for="cognome">Cognome:</label>
+            <input type="text" id="cognome" name="lname"><br>
+            <label for="email">email:</label>
+            <input type="text" id="email" name="email"><br>
+            <label for="telefono">Numero Telefono:</label>
+            <input type="text" id="telefono" name="telefono"><br>
+            <label for="dataNascita">Data di nascita:</label>
+            <input type="text" id="dataNascita" name="dataNascita"><br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br>
+            <button type=button id="pulsanteModifica" >Salva</button>
+            <button type=button id="pulsanteElimina" onclick="chiusuraFinestra()">Annulla</button>
+        </form>
+    </div>
+</div>
+
+
+<div id="finestaModaleEliminazione">
+    <div id="finestra">
+        <h2>Sei sicuro di voler eliminare questo utente?</h2>
+        <button type="button" id="pulsanteSalva">Salva</button>
+        <button type="button" id="pulsanteAnnulla" onclick="chiusuraFinestraElinazione()">Annulla</button>
+    </div>
+</div>
+
+
+<h2>Tabella Informazioni Utenti</h2>
+
+<table>
+
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Cognome</th>
+        <th>Email</th>
+        <th>Numero di Telefono</th>
+        <th>Data di Nascita</th>
+        <th>Username</th>
+        <th>Azioni</th>
+    </tr>
+   
+    <tr>
+          <td>1</td>
+                <td>Edee</td>
+                <td>Randles</td>
+                <td>erandles0@xinhuanet.com</td>
+                <td>erandles0</td>
+                <td>433-885-1185</td>
+                <td>19/11/1977</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Rica</td>
+                <td>Briton</td>
+                <td>rbriton1@hibu.com</td>
+                <td>rbriton1</td>
+                <td>559-538-6611</td>
+                <td>16/7/1979</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Braden</td>
+                <td>Harle</td>
+                <td>bharle2@themeforest.net</td>
+                <td>bharle2</td>
+                <td>630-102-9503</td>
+                <td>10/1/1958</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Hersch</td>
+                <td>Haddleton</td>
+                <td>hhaddleton3@amazonaws.com</td>
+                <td>hhaddleton3</td>
+                <td>535-542-3728</td>
+                <td>23/9/1985</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Nora</td>
+                <td>Cootes</td>
+                <td>ncootes4@patch.com</td>
+                <td>ncootes4</td>
+                <td>512-446-8668</td>
+                <td>25/4/1968</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Hilarius</td>
+                <td>Holsey</td>
+                <td>hholsey5@nba.com</td>
+                <td>hholsey5</td>
+                <td>464-790-5254</td>
+                <td>6/1/1958</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Victoria</td>
+                <td>Prendeguest</td>
+                <td>vprendeguest6@nbcnews.com</td>
+                <td>vprendeguest6</td>
+                <td>768-601-5142</td>
+                <td>9/12/1926</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Laurens</td>
+                <td>Schiesterl</td>
+                <td>lschiesterl7@histats.com</td>
+                <td>lschiesterl7</td>
+                <td>510-894-7789</td>
+                <td>9/1/1929</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Carolan</td>
+                <td>Ronayne</td>
+                <td>cronayne8@discuz.net</td>
+                <td>cronayne8</td>
+                <td>492-721-2390</td>
+                <td>28/7/1979</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Garold</td>
+                <td>Venus</td>
+                <td>gvenus9@epa.gov</td>
+                <td>gvenus9</td>
+                <td>220-986-6924</td>
+                <td>25/3/1973</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Harland</td>
+                <td>Overnell</td>
+                <td>hovernella@bandcamp.com</td>
+                <td>hovernella</td>
+                <td>607-269-0197</td>
+                <td>27/11/1961</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Pattin</td>
+                <td>Eastam</td>
+                <td>peastamb@bloomberg.com</td>
+                <td>peastamb</td>
+                <td>353-932-1135</td>
+                <td>3/6/1967</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Sophey</td>
+                <td>Leah</td>
+                <td>sleahc@vkontakte.ru</td>
+                <td>sleahc</td>
+                <td>194-123-7202</td>
+                <td>30/7/2012</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Daisey</td>
+                <td>Knibb</td>
+                <td>dknibbd@accuweather.com</td>
+                <td>dknibbd</td>
+                <td>286-768-0516</td>
+                <td>1/1/1951</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Marvin</td>
+                <td>Chomiszewski</td>
+                <td>mchomiszewskie@indiatimes.com</td>
+                <td>mchomiszewskie</td>
+                <td>249-652-6199</td>
+                <td>5/3/1901</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Goldia</td>
+                <td>Emby</td>
+                <td>gembyf@vkontakte.ru</td>
+                <td>gembyf</td>
+                <td>589-495-9998</td>
+                <td>10/1/1925</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Simone</td>
+                <td>Breakspear</td>
+                <td>sbreakspearg@webmd.com</td>
+                <td>sbreakspearg</td>
+                <td>346-182-3710</td>
+                <td>30/9/1937</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Holly</td>
+                <td>Turone</td>
+                <td>hturoneh@gizmodo.com</td>
+                <td>hturoneh</td>
+                <td>953-118-8859</td>
+                <td>12/8/1996</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Montague</td>
+                <td>Ivers</td>
+                <td>miversi@nydailynews.com</td>
+                <td>miversi</td>
+                <td>836-198-7509</td>
+                <td>8/8/1997</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Arlin</td>
+                <td>Isaak</td>
+                <td>aisaakj@unc.edu</td>
+                <td>aisaakj</td>
+                <td>779-182-1252</td>
+                <td>14/8/1998</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Licha</td>
+                <td>Ellicock</td>
+                <td>lellicockk@tinypic.com</td>
+                <td>lellicockk</td>
+                <td>650-505-4241</td>
+                <td>20/11/1978</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Phip</td>
+                <td>Faichney</td>
+                <td>pfaichneyl@toplist.cz</td>
+                <td>pfaichneyl</td>
+                <td>223-617-3038</td>
+                <td>19/3/1992</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Freddy</td>
+                <td>Colafate</td>
+                <td>fcolafatem@cyberchimps.com</td>
+                <td>fcolafatem</td>
+                <td>110-558-3015</td>
+                <td>5/2/1948</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Lay</td>
+                <td>Kiellor</td>
+                <td>lkiellorn@t.co</td>
+                <td>lkiellorn</td>
+                <td>816-744-2297</td>
+                <td>19/5/1919</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Lorelei</td>
+                <td>Baudinet</td>
+                <td>lbaudineto@furl.net</td>
+                <td>lbaudineto</td>
+                <td>138-465-4343</td>
+                <td>19/12/1939</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>Jed</td>
+                <td>Kittles</td>
+                <td>jkittlesp@myspace.com</td>
+                <td>jkittlesp</td>
+                <td>772-483-0760</td>
+                <td>14/10/1933</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Rogers</td>
+                <td>Trelevan</td>
+                <td>rtrelevanq@upenn.edu</td>
+                <td>rtrelevanq</td>
+                <td>360-785-8810</td>
+                <td>11/6/1985</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>Emelia</td>
+                <td>Matuszynski</td>
+                <td>ematuszynskir@networksolutions.com</td>
+                <td>ematuszynskir</td>
+                <td>235-555-3104</td>
+                <td>30/12/2009</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>Jody</td>
+                <td>Oldroyd</td>
+                <td>joldroyds@topsy.com</td>
+                <td>joldroyds</td>
+                <td>795-251-2136</td>
+                <td>12/10/1921</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>Patsy</td>
+                <td>Roseby</td>
+                <td>prosebyt@princeton.edu</td>
+                <td>prosebyt</td>
+                <td>220-682-0485</td>
+                <td>26/2/1939</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>Marvin</td>
+                <td>Chomiszewski</td>
+                <td>mchomiszewskie@indiatimes.com</td>
+                <td>mchomiszewskie</td>
+                <td>249-652-6199</td>
+                <td>5/3/1901</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>Goldia</td>
+                <td>Emby</td>
+                <td>gembyf@vkontakte.ru</td>
+                <td>gembyf</td>
+                <td>589-495-9998</td>
+                <td>10/1/1925</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>Simone</td>
+                <td>Breakspear</td>
+                <td>sbreakspearg@webmd.com</td>
+                <td>sbreakspearg</td>
+                <td>346-182-3710</td>
+                <td>30/9/1937</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>Holly</td>
+                <td>Turone</td>
+                <td>hturoneh@gizmodo.com</td>
+                <td>hturoneh</td>
+                <td>953-118-8859</td>
+                <td>12/8/1996</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td>Montague</td>
+                <td>Ivers</td>
+                <td>miversi@nydailynews.com</td>
+                <td>miversi</td>
+                <td>836-198-7509</td>
+                <td>8/8/1997</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td>Arlin</td>
+                <td>Isaak</td>
+                <td>aisaakj@unc.edu</td>
+                <td>aisaakj</td>
+                <td>779-182-1252</td>
+                <td>14/8/1998</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <td>Licha</td>
+                <td>Ellicock</td>
+                <td>lellicockk@tinypic.com</td>
+                <td>lellicockk</td>
+                <td>650-505-4241</td>
+                <td>20/11/1978</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td>Phip</td>
+                <td>Faichney</td>
+                <td>pfaichneyl@toplist.cz</td>
+                <td>pfaichneyl</td>
+                <td>223-617-3038</td>
+                <td>19/3/1992</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>39</td>
+                <td>Freddy</td>
+                <td>Colafate</td>
+                <td>fcolafatem@cyberchimps.com</td>
+                <td>fcolafatem</td>
+                <td>110-558-3015</td>
+                <td>5/2/1948</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td>Lay</td>
+                <td>Kiellor</td>
+                <td>lkiellorn@t.co</td>
+                <td>lkiellorn</td>
+                <td>816-744-2297</td>
+                <td>19/5/1919</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td>Lorelei</td>
+                <td>Baudinet</td>
+                <td>lbaudineto@furl.net</td>
+                <td>lbaudineto</td>
+                <td>138-465-4343</td>
+                <td>19/12/1939</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>42</td>
+                <td>Jed</td>
+                <td>Kittles</td>
+                <td>jkittlesp@myspace.com</td>
+                <td>jkittlesp</td>
+                <td>772-483-0760</td>
+                <td>14/10/1933</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>43</td>
+                <td>Rogers</td>
+                <td>Trelevan</td>
+                <td>rtrelevanq@upenn.edu</td>
+                <td>rtrelevanq</td>
+                <td>360-785-8810</td>
+                <td>11/6/1985</td>
+                <td class="azioni">
+                    <span id="x-icon" class="icon">&#10006;</span>
+                    <span id="edit-icon" class="icon">&#9998;</span>
+                    <input type="checkbox" class="checkbox" />
+                </td>
+            </tr>
+            <tr>
+                <td>44</td>
+                <td>Emelia</td>
+                <td>Matuszynski</td>
+                <td>ematuszynskir@networksolutions.com</td>
+                <td>ematuszynskir</td>
+                <td>235-555-3104</td>
+                <td>30/12/2009</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>45</td>
+                <td>Jody</td>
+                <td>Oldroyd</td>
+                <td>joldroyds@topsy.com</td>
+                <td>joldroyds</td>
+                <td>795-251-2136</td>
+                <td>12/10/1921</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>46</td>
+                <td>Patsy</td>
+                <td>Roseby</td>
+                <td>prosebyt@princeton.edu</td>
+                <td>prosebyt</td>
+                <td>220-682-0485</td>
+                <td>26/2/1939</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>47</td>
+                <td>Licha</td>
+                <td>Ellicock</td>
+                <td>lellicockk@tinypic.com</td>
+                <td>lellicockk</td>
+                <td>650-505-4241</td>
+                <td>20/11/1978</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>48</td>
+                <td>Phip</td>
+                <td>Faichney</td>
+                <td>pfaichneyl@toplist.cz</td>
+                <td>pfaichneyl</td>
+                <td>223-617-3038</td>
+                <td>19/3/1992</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>49</td>
+                <td>Freddy</td>
+                <td>Colafate</td>
+                <td>fcolafatem@cyberchimps.com</td>
+                <td>fcolafatem</td>
+                <td>110-558-3015</td>
+                <td>5/2/1948</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>Lay</td>
+                <td>Kiellor</td>
+                <td>lkiellorn@t.co</td>
+                <td>lkiellorn</td>
+                <td>816-744-2297</td>
+                <td>19/5/1919</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>51</td>
+                <td>Lorelei</td>
+                <td>Baudinet</td>
+                <td>lbaudineto@furl.net</td>
+                <td>lbaudineto</td>
+                <td>138-465-4343</td>
+                <td>19/12/1939</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td>Jed</td>
+                <td>Kittles</td>
+                <td>jkittlesp@myspace.com</td>
+                <td>jkittlesp</td>
+                <td>772-483-0760</td>
+                <td>14/10/1933</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>53</td>
+                <td>Rogers</td>
+                <td>Trelevan</td>
+                <td>rtrelevanq@upenn.edu</td>
+                <td>rtrelevanq</td>
+                <td>360-785-8810</td>
+                <td>11/6/1985</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td>Emelia</td>
+                <td>Matuszynski</td>
+                <td>ematuszynskir@networksolutions.com</td>
+                <td>ematuszynskir</td>
+                <td>235-555-3104</td>
+                <td>30/12/2009</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>55</td>
+                <td>Jody</td>
+                <td>Oldroyd</td>
+                <td>joldroyds@topsy.com</td>
+                <td>joldroyds</td>
+                <td>795-251-2136</td>
+                <td>12/10/1921</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">/>
+                </td>
+            </tr>
+            <tr>
+                <td>56</td>
+                <td>Patsy</td>
+                <td>Roseby</td>
+                <td>prosebyt@princeton.edu</td>
+                <td>prosebyt</td>
+                <td>220-682-0485</td>
+                <td>26/2/1939</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>57</td>
+                <td>Licha</td>
+                <td>Ellicock</td>
+                <td>lellicockk@tinypic.com</td>
+                <td>lellicockk</td>
+                <td>650-505-4241</td>
+                <td>20/11/1978</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">/>
+                </td>
+            </tr>
+            <tr>
+                <td>58</td>
+                <td>Phip</td>
+                <td>Faichney</td>
+                <td>pfaichneyl@toplist.cz</td>
+                <td>pfaichneyl</td>
+                <td>223-617-3038</td>
+                <td>19/3/1992</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>59</td>
+                <td>Freddy</td>
+                <td>Colafate</td>
+                <td>fcolafatem@cyberchimps.com</td>
+                <td>fcolafatem</td>
+                <td>110-558-3015</td>
+                <td>5/2/1948</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>60</td>
+                <td>Lay</td>
+                <td>Kiellor</td>
+                <td>lkiellorn@t.co</td>
+                <td>lkiellorn</td>
+                <td>816-744-2297</td>
+                <td>19/5/1919</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">                </td>
+            </tr>
+            <tr>
+                <td>61</td>
+                <td>Lorelei</td>
+                <td>Baudinet</td>
+                <td>lbaudineto@furl.net</td>
+                <td>lbaudineto</td>
+                <td>138-465-4343</td>
+                <td>19/12/1939</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>62</td>
+                <td>Jed</td>
+                <td>Kittles</td>
+                <td>jkittlesp@myspace.com</td>
+                <td>jkittlesp</td>
+                <td>772-483-0760</td>
+                <td>14/10/1933</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>63</td>
+                <td>Rogers</td>
+                <td>Trelevan</td>
+                <td>rtrelevanq@upenn.edu</td>
+                <td>rtrelevanq</td>
+                <td>360-785-8810</td>
+                <td>11/6/1985</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">ox" />
+                </td>
+            </tr>
+            <tr>
+                <td>64</td>
+                <td>Emelia</td>
+                <td>Matuszynski</td>
+                <td>ematuszynskir@networksolutions.com</td>
+                <td>ematuszynskir</td>
+                <td>235-555-3104</td>
+                <td>30/12/2009</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>65</td>
+                <td>Jody</td>
+                <td>Oldroyd</td>
+                <td>joldroyds@topsy.com</td>
+                <td>joldroyds</td>
+                <td>795-251-2136</td>
+                <td>12/10/1921</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>66</td>
+                <td>Patsy</td>
+                <td>Roseby</td>
+                <td>prosebyt@princeton.edu</td>
+                <td>prosebyt</td>
+                <td>220-682-0485</td>
+                <td>26/2/1939</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>67</td>
+                <td>Licha</td>
+                <td>Ellicock</td>
+                <td>lellicockk@tinypic.com</td>
+                <td>lellicockk</td>
+                <td>650-505-4241</td>
+                <td>20/11/1978</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>68</td>
+                <td>Phip</td>
+                <td>Faichney</td>
+                <td>pfaichneyl@toplist.cz</td>
+                <td>pfaichneyl</td>
+                <td>223-617-3038</td>
+                <td>19/3/1992</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>69</td>
+                <td>Freddy</td>
+                <td>Colafate</td>
+                <td>fcolafatem@cyberchimps.com</td>
+                <td>fcolafatem</td>
+                <td>110-558-3015</td>
+                <td>5/2/1948</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>70</td>
+                <td>Lay</td>
+                <td>Kiellor</td>
+                <td>lkiellorn@t.co</td>
+                <td>lkiellorn</td>
+                <td>816-744-2297</td>
+                <td>19/5/1919</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>71</td>
+                <td>Lorelei</td>
+                <td>Baudinet</td>
+                <td>lbaudineto@furl.net</td>
+                <td>lbaudineto</td>
+                <td>138-465-4343</td>
+                <td>19/12/1939</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>72</td>
+                <td>Jed</td>
+                <td>Kittles</td>
+                <td>jkittlesp@myspace.com</td>
+                <td>jkittlesp</td>
+                <td>772-483-0760</td>
+                <td>14/10/1933</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>73</td>
+                <td>Rogers</td>
+                <td>Trelevan</td>
+                <td>rtrelevanq@upenn.edu</td>
+                <td>rtrelevanq</td>
+                <td>360-785-8810</td>
+                <td>11/6/1985</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>74</td>
+                <td>Emelia</td>
+                <td>Matuszynski</td>
+                <td>ematuszynskir@networksolutions.com</td>
+                <td>ematuszynskir</td>
+                <td>235-555-3104</td>
+                <td>30/12/2009</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>75</td>
+                <td>Jody</td>
+                <td>Oldroyd</td>
+                <td>joldroyds@topsy.com</td>
+                <td>joldroyds</td>
+                <td>795-251-2136</td>
+                <td>12/10/1921</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">ox" />
+                </td>
+            </tr>
+            <tr>
+                <td>76</td>
+                <td>Patsy</td>
+                <td>Roseby</td>
+                <td>prosebyt@princeton.edu</td>
+                <td>prosebyt</td>
+                <td>220-682-0485</td>
+                <td>26/2/1939</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>77</td>
+                <td>Licha</td>
+                <td>Ellicock</td>
+                <td>lellicockk@tinypic.com</td>
+                <td>lellicockk</td>
+                <td>650-505-4241</td>
+                <td>20/11/1978</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">>
+                </td>
+            </tr>
+            <tr>
+                <td>78</td>
+                <td>Phip</td>
+                <td>Faichney</td>
+                <td>pfaichneyl@toplist.cz</td>
+                <td>pfaichneyl</td>
+                <td>223-617-3038</td>
+                <td>19/3/1992</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>79</td>
+                <td>Freddy</td>
+                <td>Colafate</td>
+                <td>fcolafatem@cyberchimps.com</td>
+                <td>fcolafatem</td>
+                <td>110-558-3015</td>
+                <td>5/2/1948</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+            </tr>
+            <tr>
+                <td>80</td>
+                <td>Lay</td>
+                <td>Kiellor</td>
+                <td>lkiellorn@t.co</td>
+                <td>lkiellorn</td>
+                <td>816-744-2297</td>
+                <td>19/5/1919</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>81</td>
+                <td>Lorelei</td>
+                <td>Baudinet</td>
+                <td>lbaudineto@furl.net</td>
+                <td>lbaudineto</td>
+                <td>138-465-4343</td>
+                <td>19/12/1939</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>82</td>
+                <td>Jed</td>
+                <td>Kittles</td>
+                <td>jkittlesp@myspace.com</td>
+                <td>jkittlesp</td>
+                <td>772-483-0760</td>
+                <td>14/10/1933</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>83</td>
+                <td>Rogers</td>
+                <td>Trelevan</td>
+                <td>rtrelevanq@upenn.edu</td>
+                <td>rtrelevanq</td>
+                <td>360-785-8810</td>
+                <td>11/6/1985</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>84</td>
+                <td>Emelia</td>
+                <td>Matuszynski</td>
+                <td>ematuszynskir@networksolutions.com</td>
+                <td>ematuszynskir</td>
+                <td>235-555-3104</td>
+                <td>30/12/2009</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>85</td>
+                <td>Jody</td>
+                <td>Oldroyd</td>
+                <td>joldroyds@topsy.com</td>
+                <td>joldroyds</td>
+                <td>795-251-2136</td>
+                <td>12/10/1921</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>86</td>
+                <td>Patsy</td>
+                <td>Roseby</td>
+                <td>prosebyt@princeton.edu</td>
+                <td>prosebyt</td>
+                <td>220-682-0485</td>
+                <td>26/2/1939</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>87</td>
+                <td>Licha</td>
+                <td>Ellicock</td>
+                <td>lellicockk@tinypic.com</td>
+                <td>lellicockk</td>
+                <td>650-505-4241</td>
+                <td>20/11/1978</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>88</td>
+                <td>Phip</td>
+                <td>Faichney</td>
+                <td>pfaichneyl@toplist.cz</td>
+                <td>pfaichneyl</td>
+                <td>223-617-3038</td>
+                <td>19/3/1992</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>89</td>
+                <td>Freddy</td>
+                <td>Colafate</td>
+                <td>fcolafatem@cyberchimps.com</td>
+                <td>fcolafatem</td>
+                <td>110-558-3015</td>
+                <td>5/2/1948</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>90</td>
+                <td>Lay</td>
+                <td>Kiellor</td>
+                <td>lkiellorn@t.co</td>
+                <td>lkiellorn</td>
+                <td>816-744-2297</td>
+                <td>19/5/1919</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>91</td>
+                <td>Lorelei</td>
+                <td>Baudinet</td>
+                <td>lbaudineto@furl.net</td>
+                <td>lbaudineto</td>
+                <td>138-465-4343</td>
+                <td>19/12/1939</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>92</td>
+                <td>Jed</td>
+                <td>Kittles</td>
+                <td>jkittlesp@myspace.com</td>
+                <td>jkittlesp</td>
+                <td>772-483-0760</td>
+                <td>14/10/1933</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>93</td>
+                <td>Rogers</td>
+                <td>Trelevan</td>
+                <td>rtrelevanq@upenn.edu</td>
+                <td>rtrelevanq</td>
+                <td>360-785-8810</td>
+                <td>11/6/1985</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>94</td>
+                <td>Emelia</td>
+                <td>Matuszynski</td>
+                <td>ematuszynskir@networksolutions.com</td>
+                <td>ematuszynskir</td>
+                <td>235-555-3104</td>
+                <td>30/12/2009</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>95</td>
+                <td>Jody</td>
+                <td>Oldroyd</td>
+                <td>joldroyds@topsy.com</td>
+                <td>joldroyds</td>
+                <td>795-251-2136</td>
+                <td>12/10/1921</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>96</td>
+                <td>Patsy</td>
+                <td>Roseby</td>
+                <td>prosebyt@princeton.edu</td>
+                <td>prosebyt</td>
+                <td>220-682-0485</td>
+                <td>26/2/1939</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>97</td>
+                <td>Licha</td>
+                <td>Ellicock</td>
+                <td>lellicockk@tinypic.com</td>
+                <td>lellicockk</td>
+                <td>650-505-4241</td>
+                <td>20/11/1978</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">x" />
+                </td>
+            </tr>
+            <tr>
+                <td>98</td>
+                <td>Phip</td>
+                <td>Faichney</td>
+                <td>pfaichneyl@toplist.cz</td>
+                <td>pfaichneyl</td>
+                <td>223-617-3038</td>
+                <td>19/3/1992</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+            </tr>
+            <tr>
+                <td>99</td>
+                <td>Freddy</td>
+                <td>Colafate</td>
+                <td>fcolafatem@cyberchimps.com</td>
+                <td>fcolafatem</td>
+                <td>110-558-3015</td>
+                <td>5/2/1948</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">                </td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>Lay</td>
+                <td>Kiellor</td>
+                <td>lkiellorn@t.co</td>
+                <td>lkiellorn</td>
+                <td>816-744-2297</td>
+                <td>19/5/1919</td>
+                <td class="azioni">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+                </td>
+    </tr>
+    
+</table>
+
+</body>
+</html>

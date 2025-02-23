@@ -12,27 +12,35 @@
 <div class="accesso">
     <h2>Accesso Utente</h2>
 
-        <form onsubmit="return false" >
+        <form onsubmit="return login()" >
+            
             <label for="username">Username:</label>
             <input type="text" id="username">
+            <span id="username-errore"> Compila questo campo </span>
 
             <label for="nome">Nome:</label>
             <input type="text" id="nome">
+            <span id="nome-errore"> Compila questo campo </span>
 
             <label for="cognome">Cognome:</label>
             <input type="text" id="cognome">
+            <span id="cognome-errore"> Compila questo campo </span>
 
-            <label for="mail">Email:</label>
-            <input type="text" id="mail">
-            
+            <label for="email">Email:</label>
+            <input type="text" id="email">
+            <span id="email-errore"> Compila questo campo </span>
+
             <label for="telefono">Telefono:</label>
             <input type="text" id="telefono">
+            <span id="telefono-errore"> Compila questo campo </span>
 
             <label for="nascita">Data di nascita:</label>
-            <input type="text" id="nascita">
+            <input type="date" id="nascita">
+            <span id="nascita-errore"> Compila questo campo </span>
 
             <label for="password"> Password:</label>
             <input type="password" id="password">
+            <span id="password-errore"> Compila questo campo </span>
 
             <input type="submit" value="Invia">
 

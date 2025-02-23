@@ -1,56 +1,53 @@
+function verificaForm() {
+  var valid = true;
 
-    var valid = true;
+  if (document.forms["form"]["nome"].value === "") {
+    document.getElementById("nomeErr").textContent = "Il nome è richiesto.";
+    valid = false;
+  } else document.getElementById("nomeErr").textContent = "";
 
-    if (document.getElementById("nome").value === "") {
-        document.getElementById("NomeErr").textContent = "Il nome è richiesto.";
-        valid = false;
-    }
+  if (document.forms["form"]["cognome"].value === "") {
+    document.getElementById("nomeErr").textContent = "Il cognome è richiesto.";
+    valid = false;
+    console.log("da qua è passato");
+    console.log(valid);
+  } else document.getElementById("nomeErr").textContent = "";
 
-    if (document.getElementById("cognome").value === "") {
-        document.getElementById("nomeErr").textContent = "Il cognome è richiesto.";
-        valid = false;
-    }
+  if (document.forms["form"]["email"].value === "") {
+    document.getElementById("emailErr").textContent = "L'email è obbligatoria.";
+    valid = false;
+  } 
+  else if (document.forms["form"]["confermaEmail"].value === "") {
+    document.getElementById("emailErr").textContent = "L'email è obbligatoria.";
+    valid = false;
+  }
+  else if (document.forms["form"]["email"].value !== document.forms["form"]["confermaEmail"].value) {
+    document.getElementById("emailErr").textContent =
+      "le mail devono essere uguali";
+    valid = false;
+  } else document.getElementById("emailErr").textContent = "";
 
-    if (document.getElementById("email").value === "") {
-        document.getElementById("emailErr").textContent = "L'email è obbligatoria.";
-        valid = false;
-    }
 
-    if (document.getElementById("ConfermaEmail").value === "") {
-        document.getElementById("emailErr").textContent = "L'email è obbligatoria.";
-        valid = false;
-    }
 
-    if (
-        document.getElementById("email").value !=
-        document.getElementById("ConfermaEmail").value
-    ) {
-        document.getElementById("emailErr").textContent = "Le email non corrispondono.";
-        valid = false;
-    }
 
-    if (document.getElementById("password").value === "") {
-        document.getElementById("passwordErr").textContent = "La password è obbligatoria.";
-        valid = false;
-    }
+  if (document.forms["form"]["password"].value === "") {
+    document.getElementById("passwordErr").textContent =
+      "La password è obbligatoria.";
+    valid = false;
+  } 
 
-    if (document.getElementById("ConfermaPassword").value === "") {
-        document.getElementById("passwordErr").textContent = "La password è obbligatoria.";
-        valid = false;
-    }
+  else if (document.forms["form"]["confermaPassword"].value === "") {
+    document.getElementById("passwordErr").textContent =
+      "La password è obbligatoria.";
 
-    if (
-        document.getElementById("password").value !=
-        document.getElementById("ConfermaPassword").value
-    ) {
-        document.getElementById("passwordErr").textContent = "Le password non corrispondono.";
-        valid = false;
-    }
+    valid = false;
+  }else if (document.forms["form"]["password"].value !== document.forms["form"]["confermaPassword"].value) {
+    document.getElementById("passwordErr").textContent =
+      "le password devono essere uguali";
+    valid = false;
+  } else document.getElementById("passwordErr").textContent = "";
 
-    if (valid === true) {
-        alert("Registrazione completata!");
-    }
-;
 
-console.log("Registrazione");
-
+  console.log("Registrazione");
+  return valid;
+}

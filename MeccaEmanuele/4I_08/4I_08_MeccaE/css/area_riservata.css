@@ -1,0 +1,29 @@
+<style>
+    	    
+        table, th, td {
+            border: 1px solid black; /dimensioni linee
+        }
+        
+        th, td {
+            padding: 8px; //grandezza spazi tabelle
+            text-align: center;
+        }
+        
+       	th {
+            background-color: yellow; //colore dati
+        }
+        
+        .icon-container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .icon-container img {
+            width: 16px;
+            height: 16px;
+            margin: 0 3px;
+            cursor: pointer;
+        }
+        
+    </style>

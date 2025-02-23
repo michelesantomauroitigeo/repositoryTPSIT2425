@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabella di Informazioni</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+     <script type="text/javascript" src="js/script.js" defer></script>
+</head>
+<body>
+
+<div id="finestraModale">    
+    <div id="visualizzazione">
+        <h3>Modalità modifica</h3>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" ><br>
+            <label for="cognome">Cognome:</label>
+            <input type="text" id="cognome" name="lname"><br>
+            <label for="email">email:</label>
+            <input type="text" id="email" name="email"><br>
+            <label for="telefono">Numero Telefono:</label>
+            <input type="text" id="telefono" name="telefono"><br>
+            <label for="dataNascita">Data di nascita:</label>
+            <input type="text" id="dataNascita" name="dataNascita"><br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br>
+            <button type=button id="pulsanteModifica" >Salva</button>
+            <button type=button id="pulsanteElimina" onclick="chiusuraFinestra()">Annulla</button>
+        </form>
+    </div>
+</div>
+
+
+<div id="finestaModaleEliminazione">
+    <div id="finestra">
+        <h2>Sei sicuro di voler eliminare questo utente?</h2>
+        <button type="button" id="pulsanteSalva">Salva</button>
+        <button type="button" id="pulsanteAnnulla" onclick="chiusuraFinestraElinazione()">Annulla</button>
+    </div>
+</div>
+
+
+<h2>Tabella Informazioni Utenti</h2>
+
+<table>
+
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Cognome</th>
+        <th>Email</th>
+        <th>Numero di Telefono</th>
+        <th>Data di Nascita</th>
+        <th>Username</th>
+        <th>Azioni</th>
+    </tr>
+   
+    <tr>
+        <td>1</td>
+        <td>Marco</td>
+        <td>Felizzari</td>
+        <td>marco.felizzari@example.com</td>
+        <td>320 123 4567</td>
+        <td>12/04/1990</td>
+        <td>marco90</td>
+        <td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+            <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_1')" type="checkbox" id="check_1" class="check">
+        </td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Giulia</td>
+        <td>Luminaro</td>
+        <td>giulia.luminaro@example.com</td>
+        <td>320 234 5678</td>
+        <td>05/09/1988</td>
+        <td>giulia88</td>
+        <td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+            <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_2')" type="checkbox" id="check_2" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Francesco</td>
+        <td>Valserio</td>
+        <td>francesco.valserio@example.com</td>
+        <td>320 345 6789</td>
+        <td>22/11/1992</td>
+        <td>fran92</td>
+        <td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_3')" type="checkbox" id="check_3" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Elena</td>
+        <td>Bergalti</td>
+        <td>elena.bergalti@example.com</td>
+        <td>320 456 7890</td>
+        <td>14/06/1985</td>
+        <td>elena85</td>
+        <td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_4')" type="checkbox" id="check_4" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Luca</td>
+        <td>Quercini</td>
+        <td>luca.quercini@example.com</td>
+        <td>320 567 8901</td>
+        <td>30/01/1991</td>
+        <td>luca91</td>
+       <td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+            <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_5')" type="checkbox" id="check_5" class="check">
+        </td>
+    </tr>
+    
+    <tr>
+        <td>6</td>
+        <td>Gabriele</td>
+        <td>Lantini</td>
+        <td>gabriele.lantini@example.com</td>
+        <td>320 890 1236</td>
+        <td>12/03/1987</td>
+        <td>gab87</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+            <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_6')" type="checkbox" id="check_6" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Chiara</td>
+        <td>D'Elvano</td>
+        <td>chiara.delvano@example.com</td>
+        <td>320 901 2347</td>
+        <td>06/07/1990</td>
+        <td>chiara90</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+            <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_7')" type="checkbox" id="check_7" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Mario</td>
+        <td>Serafini</td>
+        <td>mario.serafini@example.com</td>
+        <td>320 012 3458</td>
+        <td>23/11/1986</td>
+        <td>mario86</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+            <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_8')" type="checkbox" id="check_8" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Sara</td>
+        <td>Ferrarini</td>
+        <td>sara.ferrarini@example.com</td>
+        <td>320 123 4560</td>
+        <td>15/08/1989</td>
+        <td>sara89</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+            <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_9')" type="checkbox" id="check_9" class="check">
+        </td>
+    </tr>
+    <tr >
+        <td>10</td>
+        <td>Andrea</td>
+        <td>Brindisi</td>
+        <td>andrea.brindisi@example.com</td>
+        <td>320 234 5671</td>
+        <td>02/04/1993</td>
+        <td>andre93</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_10')" type="checkbox" id="check_10" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>Gabriele</td>
+        <td>Lantini</td>
+        <td>gabriele.lantini@example.com</td>
+        <td>320 890 1236</td>
+        <td>12/03/1987</td>
+        <td>gab87</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_11')" type="checkbox" id="check_11" class="check">
+        </td>
+    </tr>
+    <tr id="riga12"> 
+        <td>12</td>
+        <td>Chiara</td>
+        <td>D'Elvano</td>
+        <td>chiara.delvano@example.com</td>
+        <td>320 901 2347</td>
+        <td>06/07/1990</td>
+        <td>chiara90</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_12')" type="checkbox" id="check_12" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>Mario</td>
+        <td>Serafini</td>
+        <td>mario.serafini@example.com</td>
+        <td>320 012 3458</td>
+        <td>23/11/1986</td>
+        <td>mario86</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_13')" type="checkbox" id="check_13" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>Sara</td>
+        <td>Ferrarini</td>
+        <td>sara.ferrarini@example.com</td>
+        <td>320 123 4560</td>
+        <td>15/08/1989</td>
+        <td>sara89</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_14')" type="checkbox" id="check_14" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>Andrea</td>
+        <td>Brindisi</td>
+        <td>andrea.brindisi@example.com</td>
+        <td>320 234 5671</td>
+        <td>02/04/1993</td>
+        <td>andre93</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_15')" type="checkbox" id="check_15" class="check">
+        </td>
+    </tr>
+    <tr >
+        <td>16</td>
+        <td>Alessia</td>
+        <td>Cordiani</td>
+        <td>alessia.cordiani@example.com</td>
+        <td>320 345 6782</td>
+        <td>18/05/1988</td>
+        <td>alessia88</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_16')" type="checkbox" id="check_16" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td>Giorgio</td>
+        <td>Lavergata</td>
+        <td>giorgio.lavergata@example.com</td>
+        <td>320 456 7893</td>
+        <td>12/10/1986</td>
+        <td>giorgio86</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_17')" type="checkbox" id="check_17" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>Francesca</td>
+        <td>Falconetti</td>
+        <td>francesca.falconetti@example.com</td>
+        <td>320 567 8904</td>
+        <td>27/07/1992</td>
+        <td>fra92</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_18')" type="checkbox" id="check_18" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td>Luca</td>
+        <td>Martolini</td>
+        <td>luca.martolini@example.com</td>
+        <td>320 678 9015</td>
+        <td>03/02/1987</td>
+        <td>luca87</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_19')" type="checkbox" id="check_19" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>Giovanna</td>
+        <td>Ornelli</td>
+        <td>giovanna.ornelli@example.com</td>
+        <td>320 789 0126</td>
+        <td>16/11/1991</td>
+        <td>giovanna91</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_20')" type="checkbox" id="check_20" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td>Davide</td>
+        <td>Roncari</td>
+        <td>davide.roncari@example.com</td>
+        <td>320 890 1237</td>
+        <td>19/06/1990</td>
+        <td>davide90</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_21')" type="checkbox" id="check_21" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>22</td>
+        <td>Chiara</td>
+        <td>Barducci</td>
+        <td>chiara.barducci@example.com</td>
+        <td>320 901 2348</td>
+        <td>04/01/1988</td>
+        <td>chiara88</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_22')" type="checkbox" id="check_22" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>23</td>
+        <td>Marco</td>
+        <td>Giovanardi</td>
+        <td>marco.giovanardi@example.com</td>
+        <td>320 012 3459</td>
+        <td>21/09/1991</td>
+        <td>marco91</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_23')" type="checkbox" id="check_23" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>24</td>
+        <td>Sara</td>
+        <td>Anzoloni</td>
+        <td>sara.anzoloni@example.com</td>
+        <td>320 123 4561</td>
+        <td>08/05/1989</td>
+        <td>sara89</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_24')" type="checkbox" id="check_24" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>25</td>
+        <td>Matteo</td>
+        <td>De'Florentis</td>
+        <td>matteo.deflorentis@example.com</td>
+        <td>320 234 5672</td>
+        <td>26/11/1993</td>
+        <td>matteo93</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_25')" type="checkbox" id="check_25" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>26</td>
+        <td>Mario</td>
+        <td>Rossi</td>
+        <td>mario.rossi@example.com</td>
+        <td>333-1234567</td>
+        <td>01/01/1980</td>
+        <td>mrossi</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_26')" type="checkbox" id="check_26" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>27</td>
+        <td>Giulia</td>
+        <td>Bianchi</td>
+        <td>giulia.bianchi@example.com</td>
+        <td>333-2345678</td>
+        <td>02/02/1985</td>
+        <td>gbianchi</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_27')" type="checkbox" id="check_27" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>28</td>
+        <td>Marco</td>
+        <td>Verdi</td>
+        <td>marco.verdi@example.com</td>
+        <td>333-3456789</td>
+        <td>03/03/1990</td>
+        <td>mverdi</td>
+        <td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_28')" type="checkbox" id="check_28" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>29</td>
+        <td>Francesca</td>
+        <td>Neri</td>
+        <td>francesca.neri@example.com</td>
+        <td>333-4567890</td>
+        <td>04/04/1995</td>
+        <td>fneri</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_29')" type="checkbox" id="check_29" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>30</td>
+        <td>Luca</td>
+        <td>Marrone</td>
+        <td>luca.marrone@example.com</td>
+        <td>333-5678901</td>
+        <td>05/05/2000</td>
+        <td>lmarrone</td>
+        <td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_30')" type="checkbox" id="check_30" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>31</td>
+        <td>Laura</td>
+        <td>Gialli</td>
+        <td>laura.gialli@example.com</td>
+        <td>333-6789012</td>
+        <td>06/06/2005</td>
+        <td>lgialli</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_31')" type="checkbox" id="check_31" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>32</td>
+        <td>Antonio</td>
+        <td>Viola</td>
+        <td>antonio.viola@example.com</td>
+        <td>333-7890123</td>
+        <td>07/07/2010</td>
+        <td>aviola</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_32')" type="checkbox" id="check_2" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>33</td>
+        <td>Chiara</td>
+        <td>Celeste</td>
+        <td>chiara.celeste@example.com</td>
+        <td>333-8901234</td>
+        <td>08/08/2015</td>
+        <td>cceleste</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_33')" type="checkbox" id="check_33" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>34</td>
+        <td>Paolo</td>
+        <td>Grigi</td>
+        <td>paolo.grigi@example.com</td>
+        <td>333-9012345</td>
+        <td>09/09/2020</td>
+        <td>pgrigi</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_34')" type="checkbox" id="check_34" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>35</td>
+        <td>Andrea</td>
+        <td>Gallo</td>
+        <td>andrea.gallo@example.com</td>
+        <td>333-5678123</td>
+        <td>01/01/1982</td>
+        <td>agallo</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_35')" type="checkbox" id="check_35" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>36</td>
+        <td>Elisa</td>
+        <td>Marino</td>
+        <td>elisa.marino@example.com</td>
+        <td>333-6789234</td>
+        <td>02/02/1988</td>
+        <td>emarino</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_36')" type="checkbox" id="check_36" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>37</td>
+        <td>Stefano</td>
+        <td>Sanna</td>
+        <td>stefano.sanna@example.com</td>
+        <td>333-7890345</td>
+        <td>03/03/1993</td>
+        <td>ssanna</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_37')" type="checkbox" id="check_37" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>38</td>
+        <td>Silvia</td>
+        <td>Russo</td>
+        <td>silvia.russo@example.com</td>
+        <td>333-8901456</td>
+        <td>04/04/1997</td>
+        <td>srusso</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_38')" type="checkbox" id="check_38" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>39</td>
+        <td>Matteo</td>
+        <td>Pellegrino</td>
+        <td>matteo.pellegrino@example.com</td>
+        <td>333-9012567</td>
+        <td>05/05/2001</td>
+        <td>mpellegrino</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_39')" type="checkbox" id="check_39" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>40</td>
+        <td>Anna</td>
+        <td>Ceroni</td>
+        <td>anna.ceroni@example.com</td>
+        <td>333-0123678</td>
+        <td>06/06/2006</td>
+        <td>aceroni</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_40')" type="checkbox" id="check_40" class="check">
+        </td>
+    </tr>
+    <tr>
+        <tr>
+        <td>41</td>
+        <td>Tommaso</td>
+        <td>De Luca</td>
+        <td>tommaso.deluca@example.com</td>
+        <td>333-1234780</td>
+        <td>07/07/2012</td>
+        <td>tdeluca</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_41')" type="checkbox" id="check_41" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>42</td>
+        <td>Federica</td>
+        <td>Costa</td>
+        <td>federica.costa@example.com</td>
+        <td>333-2345891</td>
+        <td>08/08/2015</td>
+        <td>fcosta</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_42')" type="checkbox" id="check_42" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>43</td>
+        <td>Giorgio</td>
+        <td>Pirro</td>
+        <td>giorgio.pirro@example.com</td>
+        <td>333-3456902</td>
+        <td>09/09/2019</td>
+        <td>gpirro</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_43')" type="checkbox" id="check_43" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>44</td>
+        <td>Vanessa</td>
+        <td>Fontana</td>
+        <td>vanessa.fontana@example.com</td>
+        <td>333-4567013</td>
+        <td>10/10/2023</td>
+        <td>vfontana</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_44')" type="checkbox" id="check_44" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>45</td>
+        <td>Roberto</td>
+        <td>Costa</td>
+        <td>roberto.costa@example.com</td>
+        <td>333-5678125</td>
+        <td>01/01/1984</td>
+        <td>rcosta</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_45')" type="checkbox" id="check_45" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>46</td>
+        <td>Valentina</td>
+        <td>Bianchi</td>
+        <td>valentina.bianchi@example.com</td>
+        <td>333-6789236</td>
+        <td>02/02/1990</td>
+        <td>vbianchi</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_46')" type="checkbox" id="check_45" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>47</td>
+        <td>Enrico</td>
+        <td>Gatti</td>
+        <td>enrico.gatti@example.com</td>
+        <td>333-7890347</td>
+        <td>03/03/1995</td>
+        <td>egatti</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+            <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_47')" type="checkbox" id="check_47" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>48</td>
+        <td>Laura</td>
+        <td>Ferrari</td>
+        <td>laura.ferrari@example.com</td>
+        <td>333-8901458</td>
+        <td>04/04/1999</td>
+        <td>lferrari</td>
+        <td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_48')" type="checkbox" id="check_48" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>49</td>
+        <td>Matteo</td>
+        <td>Rossi</td>
+        <td>matteo.rossi@example.com</td>
+        <td>333-9012569</td>
+        <td>05/05/2003</td>
+        <td>mrossi</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_49')" type="checkbox" id="check_49" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>50</td>
+        <td>Sara</td>
+        <td>Esposito</td>
+        <td>sara.esposito@example.com</td>
+        <td>333-0123680</td>
+        <td>06/06/2008</td>
+        <td>sesposito</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_50')" type="checkbox" id="check_50" class="check">
+        </td>
+    </tr>
+        <td>51</td>
+        <td>Fabio</td>
+        <td>Mancini</td>
+        <td>fabio.mancini@example.com</td>
+        <td>333-1234789</td>
+        <td>07/07/2011</td>
+        <td>fmancini</td>
+        <td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita('this,'check_51')" type="checkbox" id="check_51" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>52</td>
+        <td>Serena</td>
+        <td>Vitali</td>
+        <td>serena.vitali@example.com</td>
+        <td>333-2345890</td>
+        <td>08/08/2014</td>
+        <td>svitali</td>
+        <td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita('this,'check_52')" type="checkbox" id="check_52" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>53</td>
+        <td>Leonardo</td>
+        <td>Riva</td>
+        <td>leonardo.riva@example.com</td>
+        <td>333-3456901</td>
+        <td>09/09/2018</td>
+        <td>lriva</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita('this,'check_53')" type="checkbox" id="check_53" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>54</td>
+        <td>Martina</td>
+        <td>Villa</td>
+        <td>martina.villa@example.com</td>
+        <td>333-4567012</td>
+        <td>10/10/2022</td>
+        <td>mvilla</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita('this,'check_54')" type="checkbox" id="check_54" class="check">
+        </td>
+    </tr>
+
+    <tr >
+        <td>55</td>
+        <td>Giuseppe</td>
+        <td>Ferretti</td>
+        <td>giuseppe.ferretti@example.com</td>
+        <td>333-5678124</td>
+        <td>01/01/1983</td>
+        <td>gferretti</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita('this,'check_55')" type="checkbox" id="check_55" class="check">
+        </td>
+    </tr>
+    <tr >
+        <td>56</td>
+        <td>Alessandra</td>
+        <td>Martini</td>
+        <td>alessandra.martini@example.com</td>
+        <td>333-6789235</td>
+        <td>02/02/1989</td>
+        <td>amartini</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita('this,'check_56')" type="checkbox" id="check_56" class="check">
+        </td>
+    </tr>
+    <tr >
+        <td>57</td>
+        <td>Davide</td>
+        <td>Serra</td>
+        <td>davide.serra@example.com</td>
+        <td>333-7890346</td>
+        <td>03/03/1994</td>
+        <td>dserra</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita('this,'check_57')" type="checkbox" id="check_57" class="check">
+        </td>
+    </tr>
+    <tr >
+        <td>58</td>
+        <td>Chiara</td>
+        <td>Lombardi</td>
+        <td>chiara.lombardi@example.com</td>
+        <td>333-8901457</td>
+        <td>04/04/1998</td>
+        <td>clombardi</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita('this,'check_58')" type="checkbox" id="check_58" class="check">
+        </td>
+    </tr>
+    <tr >
+        <td>59</td>
+        <td>Claudio</td>
+        <td>Caruso</td>
+        <td>claudio.caruso@example.com</td>
+        <td>333-9012568</td>
+        <td>05/05/2002</td>
+        <td>ccaruso</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita('this,'check_59')" type="checkbox" id="check_59" class="check">
+        </td>
+    </tr>
+    <tr >
+        <td>60</td>
+        <td>Gabriella</td>
+        <td>Conti</td>
+        <td>gabriella.conti@example.com</td>
+        <td>333-0123679</td>
+        <td>06/06/2007</td>
+        <td>gconti</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita('this,'check_60')" type="checkbox" id="check_60" class="check">
+        </td>
+    </tr>
+    
+    
+    <tr >
+        <td>61</td>
+        <td>Alberto</td>
+        <td>Romano</td>
+        <td>alberto.romano@example.com</td>
+        <td>333-1234781</td>
+        <td>07/07/2013</td>
+        <td>aromano</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+            <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita('this,'check_61')" type="checkbox" id="check_61" class="check">
+        </td>
+    </tr>
+    <tr >
+        <td>62</td>
+        <td>Elisa</td>
+        <td>Serena</td>
+        <td>elisa.serena@example.com</td>
+        <td>333-2345892</td>
+        <td>08/08/2016</td>
+        <td>eserena</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+            <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(thisheck_62')" type="checkbox" id="check_62" class="check">
+        </td>
+    </tr>
+    <tr >
+        <td>63</td>
+        <td>Gianni</td>
+        <td>Moretti</td>
+        <td>gianni.moretti@example.com</td>
+        <td>333-3456903</td>
+        <td>09/09/2020</td>
+        <td>gmoretti</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+            <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_63')" type="checkbox" id="check_63" class="check">
+        </td>
+    </tr>
+    <tr >
+        <td>64</td>
+        <td>Elena</td>
+        <td>Mazzi</td>
+        <td>elena.mazzi@example.com</td>
+        <td>333-4567014</td>
+        <td>10/10/2024</td>
+        <td>emazzi</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+            <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_64')" type="checkbox" id="check_64" class="check">
+        </td>
+    </tr>
+
+    <tr>
+        <td>65</td>
+        <td>Giorgio</td>
+        <td>Sala</td>
+        <td>giorgio.sala@example.com</td>
+        <td>333-5678126</td>
+        <td>01/01/1985</td>
+        <td>gsala</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_65')" type="checkbox" id="check_65" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>66</td>
+        <td>Beatrice</td>
+        <td>Catalano</td>
+        <td>beatrice.catalano@example.com</td>
+        <td>333-6789237</td>
+        <td>02/02/1991</td>
+        <td>bcatalano</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_66')" type="checkbox" id="check_6" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>67</td>
+        <td>Paolo</td>
+        <td>Ferri</td>
+        <td>paolo.ferri@example.com</td>
+        <td>333-7890348</td>
+        <td>03/03/1996</td>
+        <td>pferri</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_67')" type="checkbox" id="check_67" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>68</td>
+        <td>Anna</td>
+        <td>Longo</td>
+        <td>anna.longo@example.com</td>
+        <td>333-8901459</td>
+        <td>04/04/2000</td>
+        <td>alongo</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_68')" type="checkbox" id="check_68" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>69</td>
+        <td>Nicola</td>
+        <td>Orlando</td>
+        <td>nicola.orlando@example.com</td>
+        <td>333-9012570</td>
+        <td>05/05/2004</td>
+        <td>norlando</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_69')" type="checkbox" id="check_69" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>70</td>
+        <td>Cristina</td>
+        <td>Valli</td>
+        <td>cristina.valli@example.com</td>
+        <td>333-0123681</td>
+        <td>06/06/2009</td>
+        <td>cvalli</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_70)" type="checkbox" id="check_70" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>71</td>
+        <td>Giulio</td>
+        <td>Ricci</td>
+        <td>giulio.ricci@example.com</td>
+        <td>333-1234782</td>
+        <td>07/07/2014</td>
+        <td>gricci</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_71')" type="checkbox" id="check_71" class="check">
+        </td>
+    </tr>
+    <tr id="riga72">
+        <td>72</td>
+        <td>Caterina</td>
+        <td>Bertoli</td>
+        <td>caterina.bertoli@example.com</td>
+        <td>333-2345893</td>
+        <td>08/08/2017</td>
+        <td>cbertoli</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_72')" type="checkbox" id="check_72" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>73</td>
+        <td>Vincenzo</td>
+        <td>Meli</td>
+        <td>vincenzo.meli@example.com</td>
+        <td>333-3456904</td>
+        <td>09/09/2021</td>
+        <td>vmeli</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_74')" type="checkbox" id="check_74" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>74</td>
+        <td>Giulia</td>
+        <td>Sartori</td>
+        <td>giulia.sartori@example.com</td>
+        <td>333-4567015</td>
+        <td>10/10/2025</td>
+        <td>gsartori</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_75')" type="checkbox" id="check_75" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>75</td>
+        <td>Lorenzo</td>
+        <td>Mancini</td>
+        <td>lorenzo.mancini@example.com</td>
+        <td>333-5678127</td>
+        <td>01/01/1986</td>
+        <td>lmancini</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_76')" type="checkbox" id="check_76" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>76</td>
+        <td>Martina</td>
+        <td>De Santis</td>
+        <td>martina.desantis@example.com</td>
+        <td>333-6789238</td>
+        <td>02/02/1992</td>
+        <td>mdesantis</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_77')" type="checkbox" id="check_77" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>77</td>
+        <td>Simone</td>
+        <td>Leone</td>
+        <td>simone.leone@example.com</td>
+        <td>333-7890349</td>
+        <td>03/03/1997</td>
+        <td>sleone</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_78')" type="checkbox" id="check_78" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>78</td>
+        <td>Giada</td>
+        <td>Marini</td>
+        <td>giada.marini@example.com</td>
+        <td>333-8901460</td>
+        <td>04/04/2001</td>
+        <td>gmarini</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_7')" type="checkbox" id="check_78" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>79</td>
+        <td>Daniele</td>
+        <td>Contini</td>
+        <td>daniele.contini@example.com</td>
+        <td>333-9012571</td>
+        <td>05/05/2005</td>
+        <td>dcontini</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_79')" type="checkbox" id="check_79" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>80</td>
+        <td>Claudia</td>
+        <td>Fabbri</td>
+        <td>claudia.fabbri@example.com</td>
+        <td>333-0123682</td>
+        <td>06/06/2010</td>
+        <td>cfabbri</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_80')" type="checkbox" id="check_80" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>81</td>
+        <td>Angelo</td>
+        <td>Greco</td>
+        <td>angelo.greco@example.com</td>
+        <td>333-1234783</td>
+        <td>07/07/2015</td>
+        <td>agreco</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_81')" type="checkbox" id="check_81" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>82</td>
+        <td>Sofia</td>
+        <td>Fontana</td>
+        <td>sofia.fontana@example.com</td>
+        <td>333-2345894</td>
+        <td>08/08/2018</td>
+        <td>sfontana</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_82')" type="checkbox" id="check_82" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>83</td>
+        <td>Michele</td>
+        <td>Neri</td>
+        <td>michele.neri@example.com</td>
+        <td>333-3456905</td>
+        <td>09/09/2022</td>
+        <td>mneri</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_83')" type="checkbox" id="check_83" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>84</td>
+        <td>Francesca</td>
+        <td>Rossi</td>
+        <td>francesca.rossi@example.com</td>
+        <td>333-4567016</td>
+        <td>10/10/2026</td>
+        <td>frossi</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_84')" type="checkbox" id="check_84" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>85</td>
+        <td>Riccardo</td>
+        <td>Carloni</td>
+        <td>riccardo.carloni@example.com</td>
+        <td>333-5678128</td>
+        <td>01/01/1987</td>
+        <td>rcarloni</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_85')" type="checkbox" id="check_85" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>86</td>
+        <td>Stefania</td>
+        <td>Morelli</td>
+        <td>stefania.morelli@example.com</td>
+        <td>333-6789239</td>
+        <td>02/02/1993</td>
+        <td>smorelli</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_86')" type="checkbox" id="check_86" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>87</td>
+        <td>Federico</td>
+        <td>Ruggiero</td>
+        <td>federico.ruggiero@example.com</td>
+        <td>333-7890350</td>
+        <td>03/03/1998</td>
+        <td>fruggiero</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_87')" type="checkbox" id="check_87" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>88</td>
+        <td>Valeria</td>
+        <td>Colombo</td>
+        <td>valeria.colombo@example.com</td>
+        <td>333-8901461</td>
+        <td>04/04/2002</td>
+        <td>vcolombo</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_88')" type="checkbox" id="check_88" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>89</td>
+        <td>Gianluca</td>
+        <td>Monti</td>
+        <td>gianluca.monti@example.com</td>
+        <td>333-9012572</td>
+        <td>05/05/2006</td>
+        <td>gmonti</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_89')" type="checkbox" id="check_89" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>90</td>
+        <td>Bianca</td>
+        <td>Romani</td>
+        <td>bianca.romani@example.com</td>
+        <td>333-0123683</td>
+        <td>06/06/2011</td>
+        <td>bromani</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_90')" type="checkbox" id="check_90" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>91</td>
+        <td>Nicola</td>
+        <td>Ferraro</td>
+        <td>nicola.ferraro@example.com</td>
+        <td>333-1234784</td>
+        <td>07/07/2016</td>
+        <td>nferraro</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_91')" type="checkbox" id="check_91" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>92</td>
+        <td>Alessandra</td>
+        <td>Pellegrini</td>
+        <td>alessandra.pellegrini@example.com</td>
+        <td>333-2345895</td>
+        <td>08/08/2019</td>
+        <td>apellegrini</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_92')" type="checkbox" id="check_92" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>93</td>
+        <td>Alessio</td>
+        <td>Marchetti</td>
+        <td>alessio.marchetti@example.com</td>
+        <td>333-3456906</td>
+        <td>09/09/2023</td>
+        <td>amarchetti</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_93')" type="checkbox" id="check_93" class="check">
+        </td>
+    </tr>
+    <t>
+        <td>94</td>
+        <td>Vittoria</td>
+        <td>Orsini</td>
+        <td>vittoria.orsini@example.com</td>
+        <td>333-4567017</td>
+        <td>10/10/2027</td>
+        <td>vorsini</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_94')" type="checkbox" id="check_94" class="check">
+        </td>
+    </tr>
+    <t>
+        <td>95</td>
+        <td>Fabio</td>
+        <td>Testa</td>
+        <td>fabio.testa@example.com</td>
+        <td>333-5678129</td>
+        <td>01/01/1988</td>
+        <td>ftesta</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_95')" type="checkbox" id="check_95" class="check">
+        </td>
+    </tr>
+    <t>
+        <td>96</td>
+        <td>Lucia</td>
+        <td>Greco</td>
+        <td>lucia.greco@example.com</td>
+        <td>333-6789240</td>
+        <td>02/02/1994</td>
+        <td>lgreco</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_96')" type="checkbox" id="check_96" class="check">
+        </td>
+    </tr>
+    <t>
+        <td>97</td>
+        <td>Carlo</td>
+        <td>Neri</td>
+        <td>carlo.neri@example.com</td>
+        <td>333-7890351</td>
+        <td>03/03/1999</td>
+        <td>cneri</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_97')" type="checkbox" id="check_97" class="check">
+        </td>
+    </tr>
+    <t>
+        <td>98</td>
+        <td>Sabrina</td>
+        <td>Verdi</td>
+        <td>sabrina.verdi@example.com</td>
+        <td>333-8901462</td>
+        <td>04/04/2003</td>
+        <td>sverdi</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_98')" type="checkbox" id="check_98" class="check">
+        </td>
+    </tr>
+    <t>
+        <td>99</td>
+        <td>Gianmarco</td>
+        <td>Landi</td>
+        <td>gianmarco.landi@example.com</td>
+        <td>333-9012573</td>
+        <td>05/05/2007</td>
+        <td>glandi</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_99')" type="checkbox" id="check_99" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>100</td>
+        <td>Alessia</td>
+        <td>Fiorini</td>
+        <td>alessia.fiorini@example.com</td>
+        <td>333-0123684</td>
+        <td>06/06/2012</td>
+        <td>afiorini</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+            <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_100')" type="checkbox" id="check_100" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>101</td>
+        <td>Filippo</td>
+        <td>Pavone</td>
+        <td>filippo.pavone@example.com</td>
+        <td>333-1234785</td>
+        <td>07/07/2016</td>
+        <td>fpavone</td>
+        <td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_101')" type="checkbox" id="check_101" class="check">
+        </td>>
+    </tr>
+
+    <tr>
+        <td>102</td>
+        <td>Raffaela</td>
+        <td>Motta</td>
+        <td>raffaela.motta@example.com</td>
+        <td>323-1597634</td>
+        <td>10/12/2009</td>
+        <td>Moraf</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_102')" type="checkbox" id="check_102" class="check">
+        </td>
+    </tr>
+
+    <tr>
+        <td>103</td>
+        <td>Paolo</td>
+        <td>Grosso</td>
+        <td>paolo.grosso@example.com</td>
+        <td>378-0126478</td>
+        <td>05/26/2023</td>
+        <td>fgentile</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_103')" type="checkbox" id="check_103" class="check">
+        </td>
+    </tr>
+
+    <tr>
+        <td>104</td>
+        <td>Ettore</td>
+        <td>Leoni</td>
+        <td>ettore.leoni@example.com</td>
+        <td>356-3156789</td>
+        <td>10/10/2000</td>
+        <td>Eleoni</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_104')" type="checkbox" id="check_104" class="check">
+        </td>
+    </tr>
+
+       <tr>
+        <td>105</td>
+        <td>Felice</td>
+        <td>Triste</td>
+        <td>felice.triste@example.com</td>
+        <td>312-8955646</td>
+        <td>02/01/2001</td>
+        <td>tristes</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_105')" type="checkbox" id="check_105" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>106</td>
+        <td>Luce</td>
+        <td>Scura</td>
+        <td>luce.bella@example.com</td>
+        <td>343-9078945</td>
+        <td>31/01/2007</td>
+        <td>Scuras</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_106')" type="checkbox" id="check_106" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>107</td>
+        <td>Bruno</td>
+        <td>Sedia</td>
+        <td>Bruno.sedia@example.com</td>
+        <td>323-01151345</td>
+        <td>23/12/2012</td>
+        <td>BrunoComodo</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_107')" type="checkbox" id="check_107" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>108</td>
+        <td>Roberta</td>
+        <td>Bella</td>
+        <td>Roberta.bella@example.com</td>
+        <td>398-1274562</td>
+        <td>10/02/2016</td>
+        <td>Bellissima</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_108')" type="checkbox" id="check_108" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>109</td>
+        <td>Elisa</td>
+        <td>Taurisani</td>
+        <td>taurisani.elisa@example.com</td>
+        <td>343-2378410</td>
+        <td>11/25/2019</td>
+        <td>Struzzo</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_109')" type="checkbox" id="check_109" class="check">
+        </td>
+    </tr>
+    <tr>
+        <td>110</td>
+        <td>Nicolò</td>
+        <td>Lampada</td>
+        <td>lampada.nicolo@example.com</td>
+        <td>333-7823165</td>
+        <td>12/03/2023</td>
+        <td>Roberto</td><td id="azione">
+            <button onclick="aperturaFinestraElimina(this)"><img src="img/cestino.png" alt="cestino" id="immCestino"></button>
+             <button onclick="aperturaFinestra(this)"><img src="img/penna.jpg" alt="penna" id="immPenna"></button>
+            <input onclick="abilita(this,'check_110')" type="checkbox" id="check_110" class="check">
+        </td>
+    </tr>
+    
+</table>
+
+</body>
+</html>
