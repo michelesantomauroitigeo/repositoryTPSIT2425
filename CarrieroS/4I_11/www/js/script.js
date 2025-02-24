@@ -19,7 +19,6 @@ function elimina(button) {
     };
 }
 
-
 function elimina(button) {
     document.getElementById('finesta_Eliminazione').style.display = 'block';
     let riga = button.closest('tr');
