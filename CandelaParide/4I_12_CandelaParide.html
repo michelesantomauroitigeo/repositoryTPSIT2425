@@ -82,3 +82,77 @@
                                 <..... id="numero-Mod">
 
                                 </form>
+
+JavaScript
+
+let PASSWORD = "Password123"
+let NOME = Gigio1;
+
+"popup"
+
+function popup(){
+    querySelectorAll("#popup").forEach(button => {
+        button.addEventListener("click", function(){
+            document.getElementById("overlay").style.display="flex";
+        });
+        
+    });
+
+
+
+"confronto password"
+
+function valida(){
+    let nomeIns = document.getElementById("NomeCon");
+    let passIns = document.getElementById("PassCon");
+
+    if(nomeIns === NOME){
+        document.getElementById(".SpanCon").style.display="none";
+    }
+    else{
+        document.getElementById(".SpanCon").style.display="span";
+
+    }
+
+    if(passIns === PASSWORD){
+        document.getElementById(".SpanCon").style.display="none";
+    }
+    else{
+        document.getElementById(".SpanCon").style.display="span";
+
+    }
+    }
+
+    "aggiungi dati"
+
+    querySelectorAll(".agg").forEach(button => {
+        button.addEventListener("click" , function(){
+            document.getElementById("popup Mod").style.display="flex"
+            let riga = this.closest("tr")
+            riga.cells [0].textContent=document.getElementById("nome-Mod").add()
+            riga.cells [1].textContent=document.getElementById("numero-Mod").add()
+        });
+    });
+
+
+    "aggiungi dati fatto a meta"
+
+    querySelectorAll(".mod").forEach(button => {
+        button.addEventListener("click", function(){
+            document.getElementById(.popup-Agg).style.display="flex";
+            let riga =this.closest("tr")
+        })
+    })
+
+
+
+
+    CSS
+
+    .popup{
+    display: none;
+}
+
+#overlay{
+    display: none;
+}
