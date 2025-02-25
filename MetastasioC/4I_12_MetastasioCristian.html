@@ -1,0 +1,96 @@
+!Doctype Html
+
+<link rel="stylesheet" href="css/style.css">
+<script src="js/java.js">
+
+    <div id="finestra">
+        <div id="visualizzazione">
+            <span onclick="CloseFinestra()"></span>
+            <h3>Finestra di Registrazione</h3>
+                <form>
+                    <label for="nome">nome:</label>
+                    <input type ="text" id="fname" nome ="fname"><br>
+                    <label for="cognome">cognome:</label>
+                    <input type ="text" id="sname" cognome ="sname"><br>
+                    <label for="nusername">username:</label>
+                    <input type ="text" id="username" nome ="username"><br>
+                    <label for="password">password:</label>
+                    <input type ="text" id="password" nome ="password"><br>
+                    <label for="numero">numero di telefono:</label>
+                    <input type ="number" id="numero" nome ="numero"><br>
+                    <label for="sesso">sesso:</label>
+                    <input type ="text" id="sesso" nome ="sesso"><br>
+                    <button type="button" id="pulsanteChiudi">chiudi</button>
+                    </form>
+        </div>
+    </div>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th> Nome
+                <th> cognome
+                <th> Numero di telefono
+            </tr>
+
+            <tr>
+                <td> Mario
+                <td> Arno
+                <td> 377 458 9173
+            </tr>
+        </thead>
+
+        <div id="pop-up">
+            <div id="visualizzazione">
+                <span onclick="CloseFinestra()"></span>
+                <h3>Modifica</h3>
+                <form>
+                    <label for="nome">nome:</label>
+                    <input type ="text" id="name" nome ="name"><br>
+                    <label for="surname">cognome:</label>
+                    <input type ="text" id="surname" cognome ="surname"><br>
+                    <label for="number">numero di telefono:</label>
+                    <input type ="number" id="numero" nome ="number"><br>
+                    <button type="button" id="pulsanteAggiungi">aggiungi</button>
+                    <button type="button" id="pulsanteModifica">modifica</button>
+                    <button type="button" id="elimina">elimina</button>
+                </form>
+            </div>
+    </div>
+
+    </body>
+
+
+
+
+    //css
+
+    #finestra{
+        display:none ;
+        position fixed;
+        padding top 200px
+        left:0;
+        top:0;
+        right:0;
+    }
+
+
+    #Visualizzazione{
+        color background:white;
+        width: 30%;
+        margin auto;
+    }
+
+
+    //javascript
+    document.get.ElementbyID("finestra").style.display="block;
+
+
+    let rigaS=null;
+    function Modifica("button"){
+        rigaS=pulsante.Closest("tr");
+        let datiCelle=rigaS.getElementBytagname("td");
+        documentgetElementById("name").value=datiCelle[1];
+    }
+        

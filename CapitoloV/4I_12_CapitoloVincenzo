@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>	
+	<head>
+		<script src="js/script.js"></script>
+		<link rel="stylesheet" href="css/stile.css"/>
+	</head>
+	<body>
+		<button onclick="registratiPopoup()"> REGISTRATI </button>
+		<button onclick="accediPopup()"> ACCEDI </button>
+		<table>
+			<thead>
+				<tr>
+					<th>NOME<th>
+					....
+					....
+					....
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td> Vincenzo </td>
+					<td> Capitolo </td>
+					<td> 375 3080 9061 </td>
+					<button class="modifica"> MODIFICA </button>
+					<button class="elimina"> ELIMINA </button>
+					<button class="condividi"> CONDIVIDI </button>
+				</tr>
+			</tbody>
+		</table>
+		<div class="registrati">
+			<form>
+				<label type="nome"> NOME </label>
+				<input type="text" id="nome"/>
+
+				<label type="cognome"> COGNOME </label>
+				<input type="text" id="cognome"/>
+
+				<label type="numero"> NUMERO </label>
+				<input type="numero" id="numero"/>
+
+				<button onclick="chiudiFinestra()"> INVIO </button>
+			</form>
+		</div>
+		<div class="accedi">
+			<form>
+				<label type="username"> USERNAME </label>
+				<input type="text" id="username"/>
+
+				<label type="password"> COGNOME </label>
+				<input type="password" id="password"/>
+
+				<button onclick="chiudiFinestra()"> 
+			</form>
+		</div>
+		<div class="modDati">
+			<form>
+				<label type="nome"> NOME </label>
+				<input type="text" id="nome"/>
+
+				<label type="cognome"> COGNOME </label>
+				<input type="text" id="cognome"/>
+
+				<label type="numero"> NUMERO </label>
+				<input type="numero" id="numero"/>
+
+				<button onclick="chiudiFinestra()"> CHIUDI </button>
+				<button onclick="chiudiFinestra()"> SALVA </button>
+			</form>
+		</div>
+	<body>
+</html>
+
+
+
+document.addEventListener("DOMContentLoaded", function(){
+	document.quertSelectorAll(".modifica", for each((buttin,index)=>{
+		document.addEventListener("click",function(){
+			ApriFinestraModifica(this.closest("tr"))
+		});
+	});
+
+	document.querySelectorAll(".elimina", for each(button=>{
+		document.addEventListener("click",function(){
+			this.closest("tr").remove();
+		});
+	});
+});
+
+ApriFinestraModifica(riga){
+	document.querySelector(".modifica").style.display("block");
+	document.getElementbyId("none").value=riga.cells[0].value;
+	......
+	......
+	riga.cells[0].value=document.getElementbyId("none").value;
+	......
+	......
+}
+chiudiFinestra(){
+	document.querySelectorAll(div).style.display("none");
+}
+ApriFinestraRegistrati(){
+	document.querySelectorAll(".registrati").style.display("block");
+}
+ApriFinestraAccedi(){
+	document.querySelectorAll(".accedi").style.display("block");
+}
+
+/*css*/
+div{
+	display: none;
+}
+
+/*html*/
+<div class="condividi">
+	<h1> CONDIVIDI CONTATTO </h1>
+	<form>
+		<label type="numero"> INSERISCI NUMERO </label>
+		<input type="numero" id="numero"/>
+		<button onclick="chiudiFinestra()"> CHIUDI </button>
+		<button onclick="chiudiFinestra()"> CONDIVIDI </button>
+	</form>
+</div>
+
