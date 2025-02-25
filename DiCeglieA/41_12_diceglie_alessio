@@ -1,0 +1,47 @@
+--------------------LOGINSCRIPT.JS--------------------
+function apriModaleLogin()
+{
+	document.getelementbyid("modaleLogin").style.display= block;
+}
+function inviaLogin()
+{
+	var username="kemkera";
+	var password="12345678%";
+	var valid=true;
+	if(document.forms[formLogin][formLoginUsername].value !== username);
+	{
+	valid=false;
+	document.getElementByName(formLoginUsername).style.border-color = rgb(255,0,0);
+
+	}
+	if(document.forms[formLogin][formLoginPassword].value !== password);
+	{
+	valid=false;
+	document.getElementByName(formLoginPassword).style.border-color = rgb(255,0,0);
+	}
+	if(valid===true) 
+	{
+	document.getElementByTagName("input").style.border-color=rgb(0,255,0);
+	}
+}//fine inviaLogin
+
+--------------------index.html--------------------------
+
+<html>
+	<head>
+		<script src="js/loginJavascript.js" defer></script>
+		<link rel="stylesheet" href="css/style.css">
+		<title> homepage</title>
+	</head>
+	<body>
+		<button value="login" onclick="apriModaleLogin()">
+			<div class="center">
+				<div id="modaleLogin">
+					<form name="formLogin" onsubmit="return inviaLogin()">
+						<label>username</lable>
+						<input type="text" name="formLoginUsername">
+						<label>password</lable>
+						<input type="password" name="formLoginPassword">
+						<input type="submit" value="invia">
+					</form>
+					<button value="annulla" onclick="chiudiModaleLogin">
