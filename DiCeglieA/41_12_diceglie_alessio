@@ -35,13 +35,50 @@ function inviaLogin()
 	</head>
 	<body>
 		<button value="login" onclick="apriModaleLogin()">
-			<div class="center">
-				<div id="modaleLogin">
-					<form name="formLogin" onsubmit="return inviaLogin()">
-						<label>username</lable>
-						<input type="text" name="formLoginUsername">
-						<label>password</lable>
-						<input type="password" name="formLoginPassword">
-						<input type="submit" value="invia">
+		<div class="center">
+			<div id="modaleLogin">
+				<form name="formLogin" onsubmit="return inviaLogin()">
+					<label>username</lable>
+					<input type="text" name="formLoginUsername">
+					<label>password</lable>
+					<input type="password" name="formLoginPassword">
+					<input type="submit" value="invia">
 					</form>
-					<button value="annulla" onclick="chiudiModaleLogin">
+					<button value="annulla" onclick="chiudiModaleLogin()">
+				</div> //modale login
+			</div>//center
+	</body>
+---------------------------------STYLE.CSS----------------------------
+
+#modaleLogin{
+	display:none;
+	z-index:1;
+background-color: rgba(0,0,0,0.5);
+}
+.center{
+	dysplay: flex;
+	text-align:center;
+	align-items:center;
+	justify-content:center;
+}
+input {
+	border-width: 3%;
+	botder-color: black;
+}
+
+-------------------------------------SEGNALAZIONESCRIPT.js----------------------
+function inviaReport()
+{
+	valid=true
+	if(document.forms[reportForm][reportNomeGioco].value==="")
+	{
+	valid=false;
+	document.getElementByName(reportNomeGioco).style.border-color = rgb(255,0,0);
+	}
+
+	if(document.forms[reportForm][reportAzienda].value==="")
+	{
+	valid=false;
+	document.getElementByName(reportAzienda).style.border-color = rgb(255,0,0);
+	}
+if(document.forms[reportForm]
