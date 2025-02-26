@@ -120,4 +120,9 @@ div{
 		<button onclick="chiudiFinestra()"> CONDIVIDI </button>
 	</form>
 </div>
+/*javascript*/
+ApriFnestraCondvd(){
+	document.querySelector(".condvidi").style.display("block");
+}
+
 
