@@ -22,7 +22,7 @@
              </form>
          </div>
           <div id= "finestra1">    
-         <div id="visualizzazione1">
+        
          <span onclick="chiusuraFinestra1()">&times;</span>
         <h3>Sei sicuro di voler eliminare la pagina?</h3>
          <button type="button" id="Elimina" onclick="confermaEliminazione()">Elimina</button>
@@ -169,7 +169,7 @@ function chiusuraFinestra(){
        <span id="bravo">LE CREDENZIALI SONO GIUSTE</span>    
        <span id="error">SBAGLIATO</span>  
    </form>
-  <input type="submit" id="invio">
+  <button onclick="areaRis()">area</button>
 </div>
 
 
@@ -182,13 +182,13 @@ Function validaLogin()
    if(nome.value.trim() ==='Mario_1')
     {
        document.getElementById("bravo").style.display = 'block';
-         //nome.classList.add('errore');
-        // controllo=false;
+         nome.classList.add('errore');
+        controllo=false;
      }
      
     else{
           document.getElementById("error").style.display = 'none';
-          // nome.classList.remove('errore');
+           nome.classList.remove('errore');
     }
 
      return Controllo; 
@@ -220,7 +220,7 @@ let controllo
 if(nome.value.trim==="")
 document.getelementBYid=
 }
-
+//tabella dove ho aggiunto la funzione aggiungi contatto
 <html>
 <head>
 	<title>CONTATTI</title>
@@ -244,45 +244,45 @@ document.getelementBYid=
 				<button type="button" onclick="salvaAGGiungi()">Salva Modifiche</button>
              </form>
          </div>
-          <div id= "finestra1">    
-         <div id="visualizzazione1">
-         <span onclick="chiusuraFinestra1()">&times;</span>
-        <h3>Sei sicuro di voler eliminare la pagina?</h3>
-         <button type="button" id="Elimina" onclick="confermaEliminazione()">Elimina</button>
-     </div>
+       
      <table>
         <thead>
             <tr>
                 <th>Nome</th>
                 <th>Cognome</th>
+		    <th>TELEFONO</th>
                 </tr>
         </thead>
         <tbody>
             <tr>
             	<td>Arno</td>
             	<td>Mario</td>
+		<td>0971</td>
             	<td>
                      <button onclick="elimina(this)">Elimina</button>
 
                      <button onclick="Modifica(this)">Modifica</button>
+		   <button onclick="Condividi(this)">Modifica</button>
+			<button onclick="Aggiungi(this)">Modifica</button>
                        
                 </td>
             </tr>
-             <tr>
-            	<td>Egidio</td>
-            	<td>Dimichino</td>
-            	<td>
-                     <button onclick="elimina(this)">Elimina</button>
-
-                     <button onclick="Modifica(this)">Modifica</button>
-                       
-                </td>
-            </tr>
+             
         </tbody>
     </table>
 </body>
 </html>
-	
+//SCRIPT
+function aggiungi()
+{
+document.getElementBYid('finestra').style.display=block;
+}
+function chiusuraFinestra()
+
+{
+document.getElementBYid('finestra').style.display=none;
+
+}
 
 
 
