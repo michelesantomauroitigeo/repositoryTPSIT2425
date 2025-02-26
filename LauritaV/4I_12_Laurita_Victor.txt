@@ -22,7 +22,9 @@ ____HTML____
 
 			<label for="InputSesso">Sesso: </label>
 			<input type="text" id="InputSesso" name="sesso">
-			…
+
+			…………
+
 			<label for="InputPassword">Password: </label>
 			<input type="password" id="InputPassword" name="password">
 			
@@ -34,6 +36,7 @@ ____HTML____
 </html>
 
 ____Javascript____
+
 function submit() {
 	let valido = false;
 	let contaerrori = 0;
@@ -42,8 +45,9 @@ function submit() {
 		document.getElementById("ValidaNome").style.display = "block";
 		contaerrori ++;
 	} else document.getElementById("NomeCorretto").style.display = "block";
-	//
-	//
+	
+	……………
+
 	let sesso = document.getElementById("InputSesso").value;
 	
 	if (sesso.length > 1 || sesso === null) {
@@ -61,3 +65,45 @@ _____ HTML ______
 FINESTRA POP UP:
 
 <button id="Accesso">Area Riservata</button>
+<div id="finestra">
+	<span id="chiusura">x</span>
+	<div id="contenuti">
+		<label for="username">Nome Utente: </label>
+		<input type="text" id="username" name="username">
+		
+		<label for="password">Password: </label>
+		<input type="password" id="password">
+	</div>
+</div>
+
+_______CSS________
+
+#finestra {
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.7);
+}
+
+
+____Javascript_____
+
+
+let aerear=document.getElementById("accesso");
+arear.onclick = function() {
+	document.getElementById("finestra").style.display = "block";
+}
+
+let chiusura = document.getElementById ("Chiusura");
+chiusura.onclick = function () {
+	document.getElementById("finestra").style.display = "none";
+}
+
+-------------------------- GESTIONE DEI CONTATTI ----------------------------------------
+
+____Javascript_____
+
+let modifica = document.getElementById(
