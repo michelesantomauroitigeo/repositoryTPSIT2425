@@ -86,3 +86,43 @@ document.addEventListener("DOMContentLoaded", function(){
 	});
 });
 
+ApriFinestraModifica(riga){
+	document.querySelector(".modifica").style.display("block");
+	document.getElementbyId("none").value=riga.cells[0].value;
+	......
+	......
+	riga.cells[0].value=document.getElementbyId("none").value;
+	......
+	......
+}
+chiudiFinestra(){
+	document.querySelectorAll(div).style.display("none");
+}
+ApriFinestraRegistrati(){
+	document.querySelectorAll(".registrati").style.display("block");
+}
+ApriFinestraAccedi(){
+	document.querySelectorAll(".accedi").style.display("block");
+}
+
+/*css*/
+div{
+	display: none;
+}
+
+/*html*/
+<div class="condividi">
+	<h1> CONDIVIDI CONTATTO </h1>
+	<form>
+		<label type="numero"> INSERISCI NUMERO </label>
+		<input type="numero" id="numero"/>
+		<button onclick="chiudiFinestra()"> CHIUDI </button>
+		<button onclick="chiudiFinestra()"> CONDIVIDI </button>
+	</form>
+</div>
+/*javascript*/
+ApriFnestraCondvd(){
+	document.querySelector(".condvidi").style.display("block");
+}
+
+

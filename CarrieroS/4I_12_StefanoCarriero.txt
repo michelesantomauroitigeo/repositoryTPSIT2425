@@ -1,0 +1,78 @@
+<!documentype>
+<html>
+	<header>
+		<link scr"stayl.css">
+		<title>giochi online</title>
+		<link scr"script.js">
+	</header>
+	<dody>
+		<h1>giochi online</h1>
+		<buton id="apri_popup_riservato">area riservata</buton>
+		<buton id="apri_segnialazioni">segniala nuovi giochi</buton>
+
+		//area riservata
+		<div classe"popup>
+			<div id="riservato">
+				<h3>nome utente:</h3>
+				<type="texs">
+				<h3>password:</h3>
+				<type="texs">
+			</div>
+		</div>
+
+		//segnialazione nuovi giochi
+		<div id="segnialazioni">
+			<div id="giochi">
+				<h3>nome nome gioco</h3>
+				<type="texs">
+				<h3>produtore</h3>
+				<type="texs">
+				<h3>data di publicazione</h3>
+				<type="data">
+				<h3>clasificazione</h3>
+				<type="texs">
+				<h3>codice a barre</h3>
+				<type=">
+
+				<buton id="chiudi_finestra_segnialazione">chiudi</buton>
+				<buton id="segnialazione">segniala</buton>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+					//stayl.CSS
+
+body{
+
+
+
+					//script.js
+
+fuction apri_popup_riservato(){
+	document.by     .(popup)=block;
+}
+
+fuction chiudi_popup_riservato(){
+	document.by     .(popup)=none;
+}
+
+fuction nome_utente(){
+	
+
+
+
+}
+
+fuction password(){
+	
+
+
+	
+}
+
+fuction chiudi_finestra_segnialazione(){
+	document.by     .(segnialazioni)=none;
+}

@@ -9,6 +9,17 @@
   <button  type="text" src="html/registrazione.html">REGISTRAZIONE</button>
   <button  type="text" onclick="AperturaFinestra()">AREA RISERVATA</button>
   <button  type="text" src="html/contatti.html">GESTIONE UTENTE</button>
+  <div id="FinestraModale">
+     <div id="visualizzazione">
+        <form onsubmit="return controlloArea()">
+          <label for="nome">USERNAME:</label>;
+          <input id="username" type="text"><br>;
+          <label for="password">USERNAME:</label>;
+          <input id="password" type="text"><br>;
+          <button type="submit" id=pulsante">Salva</button>
+        <form>
+    </div>
+ </div>
  </body>
 </html>
 
@@ -97,7 +108,7 @@ function Controllo()
   validita=true;
  }
 
- let nascita=document.getElementById('nascita');
+ let nascita=document.getElementById('anno');
  let errorNascita=document.getElementById('errorNascita');
  let giustoNascita=document.getElementById('giustoNascita');
  if(nascita.value.trim===""){
@@ -108,7 +119,98 @@ function Controllo()
   validita=true;
  }
 
-}
- 
 
-		
+let carattere = document.getElementById('sesso');
+let giustoSesso= document.getElementById('giustoSesso');
+let errorSesso= document.getElementById('ErrorSesso');
+
+if(carattere.value.trimm()===''){
+ errorSesso.style.display='block';
+ validita=false;
+}else{
+ giustosesso.style.display='block';
+ validita=true;
+}
+}
+
+
+CSS.
+form{
+ text-align:center;
+}
+
+#giustoNome{
+ display:none;
+ color:red;
+ font-sixe:75px;
+}
+
+#ErrorNome{
+ display:none;
+ color: darkred;
+ font-sixe:75px;
+}S
+
+
+CSS. FINESTRA POPUP
+#finestraModale{
+ display:none;
+ position:fixed;
+ left:0%;
+ top:0%;
+ right:0%;
+ marign-top:200px;
+ whidth:100%;
+ height:100%;
+ background-color:rgba(0,0,0,0.4);
+}
+#visulizzazione{
+ backgkround-colo:white;
+ margin:0%;
+ whidth:22%;
+ height:22%;
+}
+
+JS FINESTRA POPUP
+function AperturaFInestra(){
+ document.getElementById('finestraModale').style.display='block';
+ const pulsante =document.getElemetById('pulsante');
+ pulsante.onclick=function(){
+  let validita= true;
+  username = document.getElementById('username');
+  if(username=="pippo"){
+   document.getElementById('username').style.border='o,25 px solid green';
+   validita = true;
+ }else{
+ document.getElementById('Username').style.block='0,25 ox solid red';
+ validita = false;
+}
+password = document.getElementById('password');
+if(password =="salameAlCioccolato"){
+ document.getElementById('password').style.borde='0,25 px solid green';
+ validita=true;
+};
+}
+
+
+CONTATTI.HTML
+
+
+<body>
+ <table>
+   <tr>
+     <th>Nome<th>
+     <th>Username<th>
+     <th>Data di nascita<th>
+   <tr>
+   <tr>
+     <td>gabriele<td>
+     <td>banco19<td>
+     <td>31/01/2008<td>
+   <tr>
+     <button type="button" id="Aggoiungere">Aggiungere</button>
+ <table>
+<body>
+
+<div id="finestraAggiugere">
+  <div id="finestra">

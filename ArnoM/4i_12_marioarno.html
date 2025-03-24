@@ -1,8 +1,8 @@
-//tabella modifica elimina
+//tabella modifica elimina//
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ARNO</title
+	<title>ARNO</title>
 		<link rel="stylesheet" href="css/stile.css">
 		<script src="js/script.js"></script>
 	</head>
@@ -10,15 +10,19 @@
 		<div id='finestra'>
 			<span onclick="chiusuraFinestra()">&times;</span>
 			<form>
-				<label for="name">nome</label>
-				<imput type="text" id="nome" name="nome" value="mario">
-				<label for="name">cognome</label>
-				<imput type="text" id="cognome" name="cognome" value="arno">
+                <div>
+                    <label for="name">nome</label>
+                    <imput type="text" id="nome" name="nome" value="mario">
+                </div>
+				<div>
+                    <label for="name">cognome</label>
+                    <imput type="text" id="cognome" name="cognome" value="arno">            
+                </div>
 				<button type="button" onclick="salvaModifiche()">Salva Modifiche</button>
              </form>
          </div>
           <div id= "finestra1">    
-         <div id="visualizzazione1">
+        
          <span onclick="chiusuraFinestra1()">&times;</span>
         <h3>Sei sicuro di voler eliminare la pagina?</h3>
          <button type="button" id="Elimina" onclick="confermaEliminazione()">Elimina</button>
@@ -58,7 +62,7 @@
 
 //script per aprire pop up modifica elimina e salvare le modifiche eliminare la riga
 
-function Modifica(){
+    function Modifica(){
     document.getElementById('finestra').style.display='block';
 }
 
@@ -116,16 +120,20 @@ functionElimina(pulsante)
 {
 let rigaSelezione=pulsante.closest("tr")
 rigaSelezione.remove()}
+
+//css per salva modifica ed elimina
 #finestra
 {
-	display:none;
+    display:none;
 }
 #finestra1
 {
-	display:none;
+    display:none;
 }
 
-//condividi
+
+
+//pop up condividi
 <div="finsestra">
 <span onclick="chiusuraFinestra()">&times</span>
 <form>
@@ -135,9 +143,147 @@ rigaSelezione.remove()}
 </form>
 </div>
 
+//pulsante da inserire nella tabella 
+ <button onclick="Condividi(this)">Condividi</button>
+                       
 //script
-function condividi()
-{
-	document.getElementById
+function Condividi(){
+    document.getElementById('finestra').style.display='block';
 }
+
+function chiusuraFinestra(){
+    document.getElementById('finestra').style.display='none';
+}
+
+//AREA RISERVATA 
+
+<div id="finestra">
+    <form onsubmit="return validaLogin()">
+        <label for="nome">NOME UTENTE</label>
+       <input type="text " id="name">
+       <span id="bravo">LE CREDENZIALI SONO GIUSTE</span>    
+       <span id="error">SBAGLIATO</span>    
+       <label for="password">PASSWORD</label>
+       <input type="text " id="password">
+       <input type="text " id="name">
+       <span id="bravo">LE CREDENZIALI SONO GIUSTE</span>    
+       <span id="error">SBAGLIATO</span>  
+   </form>
+  <button onclick="areaRis()">area</button>
+</div>
+
+
+//script area riservata
+Function validaLogin()
+{
+    const nome = document.getElementById("nome");
+    const password = document.getElementById("password");
+    let controllo=true;
+   if(nome.value.trim() ==='Mario_1')
+    {
+       document.getElementById("bravo").style.display = 'block';
+         nome.classList.add('errore');
+        controllo=false;
+     }
+     
+    else{
+          document.getElementById("error").style.display = 'none';
+           nome.classList.remove('errore');
+    }
+
+     return Controllo; 
+}
+//stile css area riservata
+#bravo{
+
+    display:none;
+}
+
+#error{
+
+    display:none;
+}
+
+//registarti
+<form onsubmit="return validaLogin()">
+<label for="name">nome</label>
+<input type="text" id="nome">
+<span id="n-error">sba</span>
+<label for="date">DATA</label>
+<input type="date" id="nome">
+<span id="d-error">sba</span>
+</form>
+
+function validaLogin()
+{
+let controllo
+if(nome.value.trim==="")
+document.getelementBYid=
+}
+//tabella dove ho aggiunto la funzione aggiungi contatto
+<html>
+<head>
+	<title>CONTATTI</title>
+		<link rel="stylesheet" href="css/stile.css">
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<div id='finestra'>
+			<span onclick="chiusuraFinestra()">&times;</span>
+			<form>
+                <div>
+                    <label for="name">nome</label>
+                    <imput type="text" id="nome" name="nome" value="mario">
+                </div>
+				<div>
+                    <label for="name">cognome</label>
+                    <imput type="text" id="cognome" name="cognome" value="arno">            
+                </div>
+		    <label for="telefono">telefono</label>
+                     
+				<button type="button" onclick="salvaAGGiungi()">Salva Modifiche</button>
+             </form>
+         </div>
+       
+     <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cognome</th>
+		    <th>TELEFONO</th>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+            	<td>Arno</td>
+            	<td>Mario</td>
+		<td>0971</td>
+            	<td>
+                     <button onclick="elimina(this)">Elimina</button>
+
+                     <button onclick="Modifica(this)">Modifica</button>
+		   <button onclick="Condividi(this)">Modifica</button>
+			<button onclick="Aggiungi(this)">Aggiungi</button>
+                       
+                </td>
+            </tr>
+             
+        </tbody>
+    </table>
+</body>
+</html>
+//SCRIPT
+function aggiungi()
+{
+document.getElementBYid('finestra').style.display=block;
+}
+function chiusuraFinestra()
+
+{
+document.getElementBYid('finestra').style.display=none;
+
+}
+
+
+
 

@@ -125,7 +125,11 @@
 		</table>
 	</body>
 	<script>
-		
+		var aggiungi = document.ElementById ("A");
+		var modifica = document.ElementById ("M");
+		var condividi = document.ElementById ("C");
+		var elimina = document.ElementById ("E");
+		aggiungi.onclick function () {
 	</script>
 </html>
 
