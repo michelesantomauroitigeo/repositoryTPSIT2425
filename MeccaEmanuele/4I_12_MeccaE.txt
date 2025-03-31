@@ -1,0 +1,142 @@
+<html>
+	<head>
+		<style>
+			body{
+			
+				background-color: gray;
+
+			}
+			.form{
+			
+				position : center;
+				text-agline : center;
+				background-color: black;
+				height : 100%;
+				width : 100%;
+			}
+			p{
+				color : White;
+			}
+
+		<style>
+	<head>
+
+	<body>
+		<label class = "form" id = "fr">
+			<p>Nome : </p>
+			<p>Cognome : </p>
+			<p>Sesso : </p>
+			<p>Telefono : </p>
+			<p>Username : </p>
+			<p>Password : </p>
+			<botton>Registrati id = "btn" </botton>
+		</label>
+	</body>
+	<script>
+		var form = document.ElementById ("fr");
+		var botton = document.ElementById ("btn");
+		btn.onclick function () {
+			form.   .display = "area_riservata.html";
+			form.style.display = " text-color : green";
+		if (form != )
+		
+		}
+	</script>
+</html>
+
+
+<html>
+	<head>
+		<style>
+			.modal{
+				position :  fixed;
+				heigth : 100%;
+				width : 100%
+				overflow : auto;
+				z-indext :  1;
+				left : 0;
+				top : 0;
+			}
+			.modal-heder{
+				color : white;
+				padding : 6px 12px;
+				background-color : gray;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class = "modal" id = "modale">
+			<div class = "modal-header">
+				<h1>Accesso</h1>
+			</div>
+			<div class = "modal-body">
+				<h1>Inserisci nome utente e password</h1>
+				<p>Nome Utente : </p>
+				<p>Password : </p>
+				<botton>Accedi id = "btn"</botton>
+			</div>
+		</div>
+	</body>
+	<script>
+		var modal = document.ElementById ("modale");
+		var botton = document.ElementById ("btn");
+		btn.onclick function () {
+			modal.body.display = "html/Contatti.html";
+			modal.body.display = " Giulio";
+			modal.body.display = "Nonlosofare";<
+	</script>
+</html>
+
+<html>
+	<head>
+		<style>
+			table{
+				border-collopse :collopse;
+				witdh : 100%;
+			}
+			td, th{
+				text-agline : left;
+				padding : 8px;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th>Nome</th>
+				<th>Cognome</th>
+				<th>Telefono</th>
+				<th>Aggiungi</th>
+				<th>Modifica</th>
+				<th>Elimina</th>
+				<th>Condividi</th>
+			</tr>
+			<tr>
+				<td>Franco</td>
+				<td>Senzatempo</td>
+				<td><+39 5942156/td>
+				<botton>id = "A" Aggiungi</botton>
+				<botton>id  "M" Modifica</botton>
+				<botton>"E" Elimina</botton>
+				<botton>"C" Condividi</botton>
+
+			</tr>
+		</table>
+	</body>
+	<script>
+		var aggiungi = document.ElementById ("A");
+		var modifica = document.ElementById ("M");
+		var condividi = document.ElementById ("C");
+		var elimina = document.ElementById ("E");
+		aggiungi.onclick function () {
+	</script>
+</html>
+
+
+
+
+
+
+
+

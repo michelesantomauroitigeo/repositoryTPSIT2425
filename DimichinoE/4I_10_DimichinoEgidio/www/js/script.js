@@ -34,4 +34,11 @@ function disabilita(){
 function chiusuraFinestra3(){
     document.getElementById('finestra3').style.display='none';
 }
-
+function Abilita(checkbox) {
+        var riga = checkbox.closest('tr'); // Trova la riga più vicina al checkbox
+        if (checkbox.checked) {
+          riga.style.backgroundColor = 'red'; // Cambia il colore di sfondo della riga quando è selezionato
+        } else {
+          riga.style.backgroundColor = 'white'; // Ripristina il colore di sfondo della riga quando non è selezionato
+        }
+      }
