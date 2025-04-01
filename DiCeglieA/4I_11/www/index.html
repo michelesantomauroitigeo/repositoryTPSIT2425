@@ -11,10 +11,10 @@
         
   <div id="modale-header">
     <span id="chiudi" onclick="chiudiModale()">X</span>
-    <h2>Modal Header</h2>
+    <h2>Modifica</h2>
   </div>
   <div id="modale-body">
-    <form class="modifica" name="form-modifica">
+    <form class="modifica" name="form-modifica" >
         <label for="editNome">Nome</label>
         <input type="text" id="editNome" name="edit-nome" value="">
         <br>
@@ -33,12 +33,27 @@
         <label for="editUsername">Username</label>
         <input type="text" id="editUsername" name="edit-username" value="">
         <br>
-        <button id="btn-Modifica">Modifica</button>
+        <button id="btn-Modifica" type="button" onclick="modificaInfo(),chiudiModale()">Modifica</button>
     </form>
   </div>
         
       </div>
 
+    </div><!--- fine modale modifica -->
+
+    <div id="modale-elimina">
+      <div id="contenuto-modale">
+        <div id="modale-header">
+          <span id="chiudi" onclick="chiudiModale()">X</span>
+          <h2>Elimina Utente</h2>
+        </div>
+        <div id="modale-body">
+          <p>Sei sicuro di voler eliminare l'utente selezionato?</p>
+          <button id="btn-Elimina" type="button" onclick="eliminaUtente(),chiudiModale()">Elimina</button>
+          <button id="btn-Elimina" type="button" onclick="chiudiModale()">Annulla</button>
+    
+      </div>
+    </div>
     </div>
 
     <table id="table">
@@ -66,7 +81,7 @@
           <td>luca_rossi</td>
            <td>
             <button type="button" onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -82,7 +97,7 @@
           <td>maria_bianchi</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -100,7 +115,7 @@
           <td>giovanni_verdi</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -118,7 +133,7 @@
           <td>anna_neri</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -136,7 +151,7 @@
           <td>paolo_gialli</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -154,7 +169,7 @@
           <td>francesca_marrone</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -172,7 +187,7 @@
           <td>marco_ferrari</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -190,7 +205,7 @@
           <td>laura_russo</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -208,7 +223,7 @@
           <td>simone_esposito</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -226,7 +241,7 @@
           <td>elisa_romano</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -244,7 +259,7 @@
           <td>andrea_colombo</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -262,7 +277,7 @@
           <td>chiara_ricci</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -280,7 +295,7 @@
           <td>davide_marino</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -298,7 +313,7 @@
           <td>valentina_greco</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -316,7 +331,7 @@
           <td>roberto_bruno</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -334,7 +349,7 @@
           <td>sara_galli</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -352,7 +367,7 @@
           <td>fabio_conti</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -370,7 +385,7 @@
           <td>elena_deluca</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -388,7 +403,7 @@
           <td>giuseppe_mancini</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -406,7 +421,7 @@
           <td>martina_costa</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -424,7 +439,7 @@
           <td>federico_giordano</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -442,7 +457,7 @@
           <td>alessia_rizzo</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -460,7 +475,7 @@
           <td>stefano_lombardi</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -478,7 +493,7 @@
           <td>monica_moretti</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -496,7 +511,7 @@
           <td>antonio_barbieri</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -514,7 +529,7 @@
           <td>giorgia_fontana</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -532,7 +547,7 @@
           <td>daniele_santoro</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -550,7 +565,7 @@
           <td>veronica_mariani</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -568,7 +583,7 @@
           <td>riccardo_rinaldi</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -586,7 +601,7 @@
           <td>silvia_caruso</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -604,7 +619,7 @@
           <td>vincenzo_ferri</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -622,7 +637,7 @@
           <td>eleonora_gatti</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -640,7 +655,7 @@
           <td>michele_pellegrini</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -658,7 +673,7 @@
           <td>claudia_palumbo</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -676,7 +691,7 @@
           <td>gabriele_sanna</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -694,7 +709,7 @@
           <td>rosa_parisi</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -712,7 +727,7 @@
           <td>salvatore_villa</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -730,7 +745,7 @@
           <td>daniela_conte</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -748,7 +763,7 @@
           <td>luigi_serra</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -766,7 +781,7 @@
           <td>greta_martini</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -784,7 +799,7 @@
           <td>pietro_dangelo</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -802,7 +817,7 @@
           <td>beatrice_marchetti</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -820,7 +835,7 @@
           <td>samuele_leone</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -838,7 +853,7 @@
           <td>alice_longo</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -856,7 +871,7 @@
           <td>dario_gentile</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -874,7 +889,7 @@
           <td>camilla_martinelli</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -892,7 +907,7 @@
           <td>emanuele_vitale</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -910,7 +925,7 @@
           <td>noemi_coppola</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -928,7 +943,7 @@
           <td>mirko_ferretti</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -946,7 +961,7 @@
           <td>serena_desantis</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -964,7 +979,7 @@
           <td>massimo_fabbri</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -982,7 +997,7 @@
           <td>debora_pellegrino</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1000,7 +1015,7 @@
           <td>gianluca_valentini</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1018,7 +1033,7 @@
           <td>ilaria_piras</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1036,7 +1051,7 @@
           <td>enrico_benedetti</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1054,7 +1069,7 @@
           <td>federica_bernardi</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1072,7 +1087,7 @@
           <td>roberta_rossetti</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1090,7 +1105,7 @@
           <td>alberto_orlando</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1108,7 +1123,7 @@
           <td>erika_deangelis</td>
            <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1124,7 +1139,7 @@
           <td>gconti</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1143,7 +1158,7 @@
           <td>aromano</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1160,7 +1175,7 @@
           <td>eserena</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1177,7 +1192,7 @@
           <td>gmoretti</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1194,7 +1209,7 @@
           <td>emazzi</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1212,7 +1227,7 @@
           <td>gsala</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1229,7 +1244,7 @@
           <td>bcatalano</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1246,7 +1261,7 @@
           <td>pferri</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1263,7 +1278,7 @@
           <td>alongo</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1280,7 +1295,7 @@
           <td>norlando</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1297,7 +1312,7 @@
           <td>cvalli</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1314,7 +1329,7 @@
           <td>gricci</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1331,7 +1346,7 @@
           <td>cbertoli</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1348,7 +1363,7 @@
           <td>vmeli</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1365,7 +1380,7 @@
           <td>gsartori</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1382,7 +1397,7 @@
           <td>lmancini</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1399,7 +1414,7 @@
           <td>mdesantis</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1416,7 +1431,7 @@
           <td>sleone</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1433,7 +1448,7 @@
           <td>gmarini</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1450,7 +1465,7 @@
           <td>dcontini</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1467,7 +1482,7 @@
           <td>cfabbri</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1484,7 +1499,7 @@
           <td>agreco</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1501,7 +1516,7 @@
           <td>sfontana</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1518,7 +1533,7 @@
           <td>mneri</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1535,7 +1550,7 @@
           <td>frossi</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1552,7 +1567,7 @@
           <td>rcarloni</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1569,7 +1584,7 @@
           <td>smorelli</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1586,7 +1601,7 @@
           <td>fruggiero</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1603,7 +1618,7 @@
           <td>vcolombo</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1620,7 +1635,7 @@
           <td>gmonti</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1637,7 +1652,7 @@
           <td>bromani</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1654,7 +1669,7 @@
           <td>nferraro</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1671,7 +1686,7 @@
           <td>apellegrini</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1688,7 +1703,7 @@
           <td>amarchetti</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1705,7 +1720,7 @@
           <td>vorsini</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1722,7 +1737,7 @@
           <td>ftesta</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1739,7 +1754,7 @@
           <td>lgreco</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1756,7 +1771,7 @@
           <td>cneri</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1773,7 +1788,7 @@
           <td>sverdi</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1790,7 +1805,7 @@
           <td>glandi</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
@@ -1807,7 +1822,7 @@
           <td>afiorini</td>
           <td>
             <button type="button"onclick="apriModale(this.parentElement.parentElement.firstElementChild.innerHTML)">Modifica</button>
-            <button type="button">Elimina</button>
+            <button type="button" onclick="apriModaleElimina(this.parentElement.parentElement.firstElementChild.innerHTML)">Elimina</button>
           </td>
           <td>
             <input type="checkbox">
