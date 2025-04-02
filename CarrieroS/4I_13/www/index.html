@@ -2,6 +2,7 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>ilmegliodellatavola.com</title>
@@ -11,6 +12,11 @@
         Sapori Autentici - Il Meglio della Tradizione in Tavola!
     </header>
     <div class="container">
+        <ul class="destra">
+            <li>
+                <button type="button" class="Finestra" onclick="finestralogin()">login</button>
+            </li>
+        </ul>
         <nav>
             <a href="#">Home</a>
             <a href="#">Prodotti</a>
@@ -82,6 +88,13 @@
                 <h3>Caffè Espresso</h3>
                 <p>Miscela di caffè arabica e robusta per un aroma perfetto.</p>
             </div>
+        </div>
+    </div>
+    <div id="finesta_Login">
+        <div id="finestra">
+            <h2>Accedi al tuo account</h2>
+            <button type="button" class="button_salva" onclick="chiudiFinestra()">Chiudi</button>
+            <button type="button" class="button_chiudi" onclick="acedi()">Acedi</button>
         </div>
     </div>
     <script src="js/script.js"></script>
