@@ -118,3 +118,21 @@ body{
     padding: 1.5rem;
     margin-top: 3rem;
 }
+
+.accesso{
+    margin-left:10px;
+}
+
+overlay{
+    display:none;
+}
+
+span{
+    display: none;
+    color: red;
+}
+
+
+.errore {
+    outline: 2px solid red;
+}

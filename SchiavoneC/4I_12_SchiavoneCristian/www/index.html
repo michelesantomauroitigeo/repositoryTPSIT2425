@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="css/stile.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <form id="idFormAccesso" name="formRegistrazione" onsubmit="return verificaForm()" method="get">
+            Nome: <input type="text" name="campoNome">
+            <span id="messaggioErroreNome"></span>
+            <br/>
+            Password: <input type="password" name="campoPassword">
+            <span id="messaggioErrorePassword"></span>
+            <br/>
+            N.Telefono: <input type="tel" name="campoTelefono">
+            <span id="messaggioErroreTelefono"></span>
+            <br/>
+            <input type="submit" value="Invia">
+        </form>
+    </body>
+</html>

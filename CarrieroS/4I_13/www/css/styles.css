@@ -17,6 +17,9 @@ header {
     font-size: 24px;
     font-weight: bold;
 }
+.destra {
+    text-align: right;
+}
 nav {
     text-align: center;
     margin-top: 10px;
@@ -72,4 +75,42 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+}
+
+#finesta_Login {
+    display: none;
+    /* Nasconde inizialmente la finestra */
+    position: fixed;
+    /* Posizione fissa rispetto alla viewport */
+    padding-top: 200px;
+    /* Posizione dello sfondo sopra la tabella */
+    left: 0;
+    /* Posizione della finestra sulla sinistra della pagina */
+    top: 0;
+    /* Posizione della finestra sull'alto della pagina */
+    right: 0;
+    /* Posizione della finestra sulla destra della pagina */
+    width: 100%;
+    /* Larghezza della finestra */
+    height: 100%;
+    /* Altezza della finestra */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Sfondo scuro con trasparenza */
+}
+
+#finestra {
+    background-color: white;
+    /* Sfondo bianco */
+    border: solid black 1px;
+    /* Bordo nero */
+    border-radius: 7px;
+    /* Arrotondamento degli angoli */
+    width: 20%;
+    /* Larghezza della finestra */
+    margin: auto;
+    /* Centra la finestra orizzontalmente */
+    text-align: center;
+    /* Allineamento del testo */
+    padding: 10px;
+    /* Spaziatura interna */
 }
