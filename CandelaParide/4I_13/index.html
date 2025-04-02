@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroChipMania - Elettronica Online</title>
+    <link rel="stylesheet" href="css/stile.css">
+    <script src="js/script.js" defer></script>
+
+</head>
+<body>
+    <header class="intestazione">
+        <div class="logo">MicroChipMania</div>
+        <nav class="navigazione">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <button id="accesso" onclick="popup()"><li>Accesso</li></button>
+                <li><a href="#">Carrello</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="contenitore-principale">
+        <h1 class="titolo-principale">I nostri prodotti più venduti</h1>
+        
+        <div class="griglia-prodotti">
+            <div class="scheda-prodotto">
+                <div class="immagine-prodotto">
+                    <img src="img/iPhone16.jpg" alt="Smartphone">
+                </div>
+                <div class="info-prodotto">
+                    <h2>Smartphone Gamma Alta</h2>
+                    <div class="prezzo">€499,99</div>
+                    <div class="valutazione">★★★★☆ (128)</div>
+                    <button class="pulsante-aggiungi">Aggiungi al carrello</button>
+                </div>
+            </div>
+            
+            <div class="scheda-prodotto">
+                <div class="immagine-prodotto">
+                    <img src="img/cuffie-wireless.jpg" alt="Cuffie">
+                </div>
+                <div class="info-prodotto">
+                    <h2>Cuffie Wireless</h2>
+                    <div class="prezzo">€89,99</div>
+                    <div class="valutazione">★★★★★ (256)</div>
+                    <button class="pulsante-aggiungi">Aggiungi al carrello</button>
+                </div>
+            </div>
+            
+            <div class="scheda-prodotto">
+                <div class="immagine-prodotto">
+                    <img src="img/tablet.jpg" alt="Tablet">
+                </div>
+                <div class="info-prodotto">
+                    <h2>Tablet 10 Pollici</h2>
+                    <div class="prezzo">€299,99</div>
+                    <div class="valutazione">★★★★☆ (87)</div>
+                    <button class="pulsante-aggiungi">Aggiungi al carrello</button>
+                </div>
+            </div>
+            
+            <div class="scheda-prodotto">
+                <div class="immagine-prodotto">
+                    <img src="img/smartwatch.jpg" alt="Smartwatch">
+                </div>
+                <div class="info-prodotto">
+                    <h2>Smartwatch Fitness</h2>
+                    <div class="prezzo">€159,99</div>
+                    <div class="valutazione">★★★★★ (192)</div>
+                    <button class="pulsante-aggiungi">Aggiungi al carrello</button>
+                </div>
+            </div>
+            
+            <div class="scheda-prodotto">
+                <div class="immagine-prodotto">
+                    <img src="img/monitor.jpg" alt="Monitor">
+                </div>
+                <div class="info-prodotto">
+                    <h2>Monitor 24" Full HD</h2>
+                    <div class="prezzo">€179,99</div>
+                    <div class="valutazione">★★★★☆ (64)</div>
+                    <button class="pulsante-aggiungi">Aggiungi al carrello</button>
+                </div>
+            </div>
+            
+            <div class="scheda-prodotto">
+                <div class="immagine-prodotto">
+                    <img src="img/tastiera-gaming.jpg" alt="Tastiera">
+                </div>
+                <div class="info-prodotto">
+                    <h2>Tastiera Gaming</h2>
+                    <div class="prezzo">€69,99</div>
+                    <div class="valutazione">★★★★★ (143)</div>
+                    <button class="pulsante-aggiungi">Aggiungi al carrello</button>
+                </div>
+            </div>
+            
+            <div class="scheda-prodotto">
+                <div class="immagine-prodotto">
+                    <img src="img/mouse-wireless.jpg" alt="Mouse">
+                </div>
+                <div class="info-prodotto">
+                    <h2>Mouse Wireless</h2>
+                    <div class="prezzo">€29,99</div>
+                    <div class="valutazione">★★★★☆ (78)</div>
+                    <button class="pulsante-aggiungi">Aggiungi al carrello</button>
+                </div>
+            </div>
+            
+            <div class="scheda-prodotto">
+                <div class="immagine-prodotto">
+                    <img src="img/altoparlante.jpg" alt="Altoparlante">
+                </div>
+                <div class="info-prodotto">
+                    <h2>Altoparlante Bluetooth</h2>
+                    <div class="prezzo">€49,99</div>
+                    <div class="valutazione">★★★★★ (210)</div>
+                    <button class="pulsante-aggiungi">Aggiungi al carrello</button>
+                </div>
+            </div>
+            
+            <div class="scheda-prodotto">
+                <div class="immagine-prodotto">
+                    <img src="img/powerbank.jpg" alt="Powerbank">
+                </div>
+                <div class="info-prodotto">
+                    <h2>Powerbank 10000mAh</h2>
+                    <div class="prezzo">€29,99</div>
+                    <div class="valutazione">★★★★☆ (92)</div>
+                    <button class="pulsante-aggiungi">Aggiungi al carrello</button>
+                </div>
+            </div>
+            
+            <div class="scheda-prodotto">
+                <div class="immagine-prodotto">
+                    <img src="img/webcam.jpg" alt="Webcam">
+                </div>
+                <div class="info-prodotto">
+                    <h2>Webcam HD</h2>
+                    <div class="prezzo">€39,99</div>
+                    <div class="valutazione">★★★★★ (175)</div>
+                    <button class="pulsante-aggiungi">Aggiungi al carrello</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="overlay"> 
+            <div id="popup">
+                <button class="chiudi" onclick="chiudi()">X</button>
+                <label>Username</label>
+                <input type="text" id="username">
+                <span id="errore"> Compila questo campo </span>
+
+                
+                <label>Password</label>
+                <input type="password" id="password">
+                <span id="errore"> Compila questo campo </span>
+
+                <button href="html/pagina2.html">Invia</button>
+            </div>
+        </div>
+    
+    <footer class="piè-di-pagina">
+        <p> 2023 MicroChipMania - Tutti i diritti riservati</p>
+    </footer>
+</body>
+</html>

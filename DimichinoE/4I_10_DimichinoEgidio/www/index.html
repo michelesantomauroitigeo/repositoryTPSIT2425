@@ -3,7 +3,7 @@
 <head>
   <title>Tabella Persone</title>
   <link rel="stylesheet" href="css/stile.css" />
-  <script src="js/script.js" ></script>
+  <script src="js/script.js"defer></script>
 </head>
 <body>
   <div id= "finestra">    
@@ -21,11 +21,21 @@
             <label for="residenza">RESIDENZA:</label>
             <input type="text" id="residenza" name="residenza" value="Villa d'Este (Tivoli)"><br>
             <button type=button id="pulsanteModifica">Modifica</button>
-            <button type=button id="pulsanteElimina">Elimina</button>
+            <button type=button id="pulsanteIndietro">Indietro</button>
         </form>
     </div>
 </div>
 
+    <div id= "finestra1">    
+    <div id="visualizzazione1">
+        <span onclick="chiusuraFinestra1()">&times;</span>
+        <h3>Procedi qui ad eliminare la tua pagina!</h3>
+        <form>
+        <button type=button id="pulsanteElimina">Elimina</button>
+        <button type=button id="pulsanteIndietro">Indietro</button>
+        </form>
+ </div>
+</div>
   <h1>Elenco di 100 Persone</h1>
   <table>
     <thead>
@@ -48,9 +58,9 @@
         <td>fredopertini@trapani.org</td>
         <td>Villa d'Este (Tivoli)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -61,9 +71,9 @@
         <td>menneaagnolo@virgilio.it</td>
         <td>Palazzo Pitti (Firenze)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -74,9 +84,9 @@
         <td>stefanibuonauro@libero.it</td>
         <td>Villa Adriana (Tivoli)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -87,9 +97,9 @@
         <td>fiorino94@chiaramonte.com</td>
         <td>Palazzo Reale (Napoli)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -100,9 +110,10 @@
         <td>parmitanocalogero@libero.it</td>
         <td>Castello di Miramare (Trieste)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+         <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
+
         </td>
       </tr>
       <tr>
@@ -113,9 +124,10 @@
         <td>soleubaldi@vodafone.it</td>
         <td>Palazzo Ducale (Venezia)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+         <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
+
         </td>
       </tr>
       <tr>
@@ -126,9 +138,10 @@
         <td>giampiero54@polani.com</td>
         <td>Villa Farnesina (Roma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+         <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
+
         </td>
       </tr>
       <tr>
@@ -139,9 +152,10 @@
         <td>borronifredo@hotmail.it</td>
         <td>Palazzo Madama (Torino)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
+
         </td>
       </tr>
       <tr>
@@ -152,9 +166,10 @@
         <td>qbramante@ciani-piccio.it</td>
         <td>Villa Borghese (Roma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
+
         </td>
       </tr>
       <tr>
@@ -165,9 +180,10 @@
         <td>dginese@bettoni.net</td>
         <td>Villa Lante (Bagnaia)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
+
         </td>
       </tr>
       <tr>
@@ -178,9 +194,10 @@
         <td>leoneadriana@golino.net</td>
         <td>Palazzo dei Normanni (Palermo)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
+
         </td>
       </tr>
       <tr>
@@ -191,9 +208,10 @@
         <td>francesco20@caironi.com</td>
         <td>Castello Sforzesco (Milano)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
+
         </td>
       </tr>
       <tr>
@@ -204,9 +222,10 @@
         <td>ballaricciotti@hotmail.com</td>
         <td>Villa Giulia (Roma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+         <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
+
         </td>
       </tr>
       <tr>
@@ -217,9 +236,10 @@
         <td>antonia54@hotmail.com</td>
         <td>Palazzo Barberini (Roma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
+
         </td>
       </tr>
       <tr>
@@ -230,9 +250,9 @@
         <td>gianlucaabatantuono@fastwebnet.it</td>
         <td>Castello di Caccamo (Caccamo, Sicilia)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -243,9 +263,9 @@
         <td>adele18@live.com</td>
         <td>Palazzo Doria Pamphili (Roma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -256,9 +276,9 @@
         <td>grossifilippa@lercari-campise.eu</td>
         <td>Villa Reale di Monza (Monza)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+         <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -269,9 +289,9 @@
         <td>xmanacorda@tin.it</td>
         <td>Palazzo Strozzi (Firenze)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -282,9 +302,9 @@
         <td>uferretti@tin.it</td>
         <td>Villa del Balbianello (Lenno, Lago di Como)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -295,9 +315,9 @@
         <td>qtrotta@tele2.it</td>
         <td>Palazzo Altemps (Roma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -308,9 +328,9 @@
         <td>costalongaalina@castelli.it</td>
         <td>Villa Medici (Firenze)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -321,9 +341,9 @@
         <td>gregoriomarissa@virgilio.it</td>
         <td>Castello di Torrechiara (Langhirano, Parma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -334,9 +354,9 @@
         <td>michelecrespi@callegari-condoleo.it</td>
         <td>Palazzo del Quirinale (Roma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -347,9 +367,9 @@
         <td>carolinacibin@niscoromni-zamengo.it</td>
         <td>Villa Pisani (Stra, Venezia)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -360,9 +380,9 @@
         <td>nmoccia@tin.it</td>
         <td>Villa Bellini (Catania)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+         <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -373,9 +393,9 @@
         <td>anita43@gualandi.it</td>
         <td>Villa Chigi (Siena)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+         <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -386,9 +406,9 @@
         <td>gustavosabatini@vivaldi.com</td>
         <td>Palazzo del Capitano (Verona)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -399,9 +419,9 @@
         <td>vmazzeo@vodafone.it</td>
         <td>Palazzo Zambeccari (Bologna)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+         <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -412,9 +432,9 @@
         <td>ninetta65@lucchesi-boccaccio.it</td>
         <td>Palazzo Rospigliosi (Roma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -425,9 +445,9 @@
         <td>fabiotrotta@aporti.net</td>
         <td>Palazzo Vescovile di Treviso</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -438,9 +458,9 @@
         <td>imonti@tim.it</td>
         <td>Villa Giulia (Firenze)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -451,9 +471,9 @@
         <td>moresibenvenuto@monduzzi.com</td>
         <td>Villa di Poggio Imperiale (Firenze)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -464,9 +484,9 @@
         <td>ceciliaferrucci@verdone.it</td>
         <td>Palazzo della Pilotta (Parma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -477,9 +497,9 @@
         <td>michela43@libero.it</td>
         <td>esidenza di Campagna di Agnello (Sicilia)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -490,9 +510,9 @@
         <td>dallaraalfredo@yahoo.com</td>
         <td>Palazzo Gangi (Palermo)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -503,9 +523,9 @@
         <td>frespighi@gramsci.it</td>
         <td>Palazzo del Vescovado (Trapani)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -516,9 +536,9 @@
         <td>ottonebrenna@hotmail.com</td>
         <td>Villa del Casale (Sicilia)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -529,9 +549,9 @@
         <td>ebeccaria@foa-manzoni.com</td>
         <td>Palazzo San Giovanni (Catania)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+         <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -542,9 +562,9 @@
         <td>sabatinienrico@libero.it</td>
         <td>Castello di Cagliari (Sardegna</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -555,9 +575,9 @@
         <td>luiginarossini@live.com</td>
         <td>Palazzo di Città (Catania)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -568,9 +588,9 @@
         <td>bsanudo@outlook.com</td>
         <td>Villa Romana del Casale (Piazza Armerina)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -581,9 +601,9 @@
         <td>maria56@libero.it</td>
         <td>Villa Giulia (Catania)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -594,9 +614,9 @@
         <td>mirkogaliazzo@hotmail.it</td>
         <td>Palazzo dei Normanni (Palermo)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -607,9 +627,9 @@
         <td>pmaspero@alice.it</td>
         <td>Castello Aragonese (Cagliari)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -620,9 +640,9 @@
         <td>paolo27@bacosi-rienzo.org</td>
         <td>Monastero di San Benedetto (Subiaco)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -633,9 +653,9 @@
         <td>verdidomenico@petrucelli.eu</td>
         <td>Santuario di Santa Rita (Cascia)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -646,9 +666,9 @@
         <td>vzamengo@sanudo.com</td>
         <td>Convento di Santa Maria di Leuca (Lecce)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -659,9 +679,9 @@
         <td>arnulfo42@libero.it</td>
         <td>Santuario della Madonna del Sasso (Biella)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -672,9 +692,9 @@
         <td>kferragamo@donini.it</td>
         <td>Monastero di Sant'Anna (Roma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -685,9 +705,9 @@
         <td>usemitecolo@tin.it</td>
         <td>Monastero di Bose (Biella)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -698,9 +718,9 @@
         <td>qcantimori@alice.it</td>
         <td>Convento di San Francesco (Assisi)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -711,9 +731,9 @@
         <td>hoscuro@yahoo.com</td>
         <td>Santuario di Loreto (Ancona)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -724,9 +744,9 @@
         <td>guarino93@poste.it</td>
         <td>Abbazia di San Galgano (Siena)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -737,9 +757,9 @@
         <td>fpetrassi@libero.it</td>
         <td>Abbazia di Montecassino (Frosinone)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -750,9 +770,9 @@
         <td>bianca22@iannotti.it</td>
         <td>Castello di San Giusto (Trieste)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -763,9 +783,9 @@
         <td>rcombi@michelangeli-giannone.eu</td>
         <td>Castello di Lonato (Brescia)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -776,9 +796,9 @@
         <td>vcardano@giradello-mercalli.it</td>
         <td>Castello di Bracciano (Roma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -789,9 +809,9 @@
         <td>tedescodonato@libero.it</td>
         <td>Castello di Cerenova (Cerveteri)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -802,9 +822,9 @@
         <td>mariorenier@tim.it</td>
         <td>Castello di Alviano (Terni)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -815,9 +835,9 @@
         <td>saliericamillo@gmail.com</td>
         <td>Castello di Rocca di Angera (Lago Maggiore)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+         <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -828,9 +848,9 @@
         <td>toninelliamleto@libero.it</td>
         <td>Castello di Coccaglio (Brescia)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -841,9 +861,9 @@
         <td>nossani@bragaglia-pezzali.it</td>
         <td>Castello di Sorci (Arezzo)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -854,9 +874,9 @@
         <td>arnulforomano@mercati.com</td>
         <td>Castello di Roncade (Treviso)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+         <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -867,9 +887,9 @@
         <td>munariantonella@poste.it</td>
         <td>Castello di Torrechiara (Parma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -880,9 +900,9 @@
         <td>piergiuseppeliverotti@berengario-garrone.com</td>
         <td>Villa delle Rose (Firenze)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -893,9 +913,9 @@
         <td>valentina07@poste.it</td>
         <td>Villa della Pergola (Alassio)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -906,9 +926,9 @@
         <td>piergiuseppe15@libero.it</td>
         <td>Villa Doria Pamphili (Roma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -919,9 +939,9 @@
         <td>giorgia17@schiavone.it</td>
         <td>Mergellina (Napoli)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -932,9 +952,9 @@
         <td>rcapecchi@ferragni.com</td>
         <td>Villa Torlonia (Roma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -945,9 +965,9 @@
         <td>fabioasprucci@poste.it</td>
         <td>Villa di Maser (Maser)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -958,9 +978,9 @@
         <td>wpisaroni@gmail.com</td>
         <td>Villa Medicea di Poggio a Caiano (Firenze)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -971,9 +991,9 @@
         <td>romolo95@panicucci.it</td>
         <td>Villa di Castello (Firenze)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -984,9 +1004,9 @@
         <td>palomasantorio@gmail.com</td>
         <td>Villa Comunale (Napoli)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -997,9 +1017,9 @@
         <td>dbacosi@galuppi.net</td>
         <td>Villa Sciarra (Roma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1010,9 +1030,9 @@
         <td>pchittolini@hotmail.com</td>
         <td>Villa Borghese (Roma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1023,9 +1043,9 @@
         <td>gregoriotina@gmail.com</td>
         <td>Palazzo Einaudi (Torino)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1036,9 +1056,9 @@
         <td>ecasarin@tin.it</td>
         <td>Palazzo del Vescovado (Lucca)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1049,9 +1069,9 @@
         <td>guaranaberenice@necci-galiazzo.com</td>
         <td>Palazzo Chigi (Ariccia)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1062,9 +1082,9 @@
         <td>riccardimarcello@parini.it</td>
         <td>Palazzo Salviati (Firenze)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1075,9 +1095,9 @@
         <td>camillo63@curci-siffredi.it</td>
         <td>Palazzo Colonna (Roma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1088,9 +1108,9 @@
         <td>emodigliani@pastine-bruscantini.org</td>
         <td>Palazzo Corsini (Firenze)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1101,9 +1121,9 @@
         <td>carfagnabernardo@bosio-carosone.org</td>
         <td>Palazzo Spada (Roma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1114,9 +1134,9 @@
         <td>paridealfonsi@outlook.com</td>
         <td>Palazzo Soranzo Cappello (Venezia)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1127,9 +1147,9 @@
         <td>milena09@live.com</td>
         <td>Palazzo Doria Pamphili (Roma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />>
         </td>
       </tr>
       <tr>
@@ -1140,9 +1160,9 @@
         <td>costanzo29@gigli-battisti.net</td>
         <td>Palazzo Strozzi (Firenze)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1153,9 +1173,9 @@
         <td>abategloria@bossi-guidone.org</td>
         <td>Residenza Sant’Elisabetta (Venezia)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1166,9 +1186,9 @@
         <td>alessia44@libero.it</td>
         <td>Casa d’arte (Rimini)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+         <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1179,9 +1199,9 @@
         <td>martino10@libero.it</td>
         <td>Casa Ronchese (Lodi)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1192,9 +1212,9 @@
         <td>golgiagostino@libero.it</td>
         <td>Casa Gioia (Milano)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1205,9 +1225,9 @@
         <td>claudiozacchia@pizzetti-cerutti.it</td>
         <td>Casa Zegna (Trivero)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+         <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1218,9 +1238,9 @@
         <td>olivettiricciotti@yahoo.com</td>
         <td>Casa Malaparte (Capri)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1231,9 +1251,9 @@
         <td>ferdinandotrevisani@zamengo.it</td>
         <td>Residenza Luminosa (Milano)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1244,9 +1264,9 @@
         <td>sophiagiannini@yahoo.com</td>
         <td>Casa Bardi (Firenze)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1257,9 +1277,9 @@
         <td>lodovico40@libero.it</td>
         <td>Residenza d'epoca Cavour (Torino)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1270,9 +1290,9 @@
         <td>stefano03@gmail.com</td>
         <td>Palazzo Comunale (Siena)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1283,9 +1303,9 @@
         <td>scondoleo@roero.it</td>
         <td>Casa Olivetti (Ivrea)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1296,9 +1316,9 @@
         <td>rpriuli@gmail.com</td>
         <td>Palazzo Montecitorio (Roma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1309,9 +1329,9 @@
         <td>ocremonesi@ferraris.com</td>
         <td>Palazzo Barberini (Roma)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>
@@ -1322,9 +1342,9 @@
         <td>vantonini@carriera.it</td>
         <td>Palazzo della Ragione (Padova)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       </tr>
@@ -1336,9 +1356,9 @@
         <td>michela64@virgilio.it</td>
         <td>Castello di Fenis (Aosta)</td>
         <td>
-          <button class='elimina'>Elimina</button>
+          <button onclick="elimina()">Elimina</button>
           <button onclick="Modifica()">Modifica</button>
-          <button class='abilita'>Abilita</button>
+          <input onclick="Abilita(this)" type="checkbox" class="checkbox" />
         </td>
       </tr>
       <tr>

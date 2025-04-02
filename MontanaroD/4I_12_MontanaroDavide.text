@@ -1,0 +1,155 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>Registrazione</title>
+	<link rel="stylesheet" href="css/stile.css"></link>
+	<script src ="js/script.js"></script>
+</head>
+<body>
+	<form id="Registrati">
+		<label for ="nome">nome:</label>
+		<input type="text" id="nome">
+		<label for ="cognome">cognome:</label>
+		<input type="text" id="cognome">
+		<label for ="D.nascita">:</DATA DI NASCITA>
+		<input type="data" id="D.nascita">
+		<label for ="sesso">sesso:</label>
+		<input type="caracter" id="SESSO">
+		<label for ="TELEFONO">TELEFONO:</label>
+		<input type="Number" id="Telefono">
+		<label for ="username">username:</label>
+		<input type="text" id="username">
+		<label for ="password">password:</label>
+		<input type="password" id="password">
+		<botton onclick="INVIO(this)"></botton>
+	</form>
+	</body>
+	</html>
+
+css
+
+
+Javascript
+
+function INVIO(pulsante){
+	let=controllo;
+	let nome;
+	if(nome=="")
+		consol.log("ATTENZIONE COMPILA IL CAMPO");
+	}else{
+		controllo=true;
+	}
+	let cognome;
+	if(cognome==""){
+		consol.log("ATTENZIONE COMPILA");
+	}else{
+		controllo=true;
+	}
+	let datanascita;
+	if(D.NASCITA==""){
+		consol.log("....");
+	}else{
+		controllo=true;
+	}
+	let sesso;
+	if("sesso'==""){
+		consol.log("....");
+	}else{
+		controllo=true;
+	}
+	let N.TELEFONO;
+	if("telefono'==""){
+		consol.log("....");
+	}else{
+		controllo=true;
+	}
+	let username;
+	if('username'==""){
+		consol.log("....");
+	}else{
+		controllo=true;
+	}
+	
+
+2.Accesso all'area riservata
+
+< div id "finestraP()"&times
+<form>
+	<label for"name" > nome: Davide</label>
+	<input type ="text" id="username">
+	<label for"password" > password: ciao1234</label>
+	<input type ="password" id="password">
+	<botton onclick="SALVA()"></botton>
+</form>
+</div>
+
+css:
+
+#finestraP{
+	style display: none;
+}
+
+javascript
+
+function Salva(){
+	document.getElementById('finestra')style.display'block';
+}
+functon FinestraP(){
+	document.getElementById('finestra')style.display'none';
+}
+
+3.Gestione contatti
+
+<div id "chiusurafinestra()">&times
+	<div id 'visualizzazione'>
+		<form>
+			<label for ="Nome">Nome:</label>
+			<input type="text" id="nome">
+			<label for ="cognome">cognome:</label>
+			<input type="text" id="cognome">
+			<label for "N.TEL" id="TELEFONO">
+			<input type="Number" id="Telefono">
+			<botton onclcick Salva()></botton><br>
+		</form>
+	</div>
+</div>		
+
+	<table>
+		<tr>
+		<th> NOME </th>
+		<th> COGNOME3 </th>
+		<th> TELEFONO </th>
+		<botton onclcick Modifica(this)></botton>
+						 Elimina(this)
+		</tr>
+		<tr>
+		<td>DAVIDE</td>
+		<td> COGNOME3 </td>
+		<td> TELEFONO </td>
+		<botton onclcick="Modifica(this)" ></botton>
+		<botton onclcick="Elimina(this)"></botton>
+	<table>
+
+javascript
+
+let daticelle;
+let rigaCorrente=false
+
+function Elimina(pulsante){
+	ragaCorrente=pulsante.closest("td");
+	pulsante.remove()
+}
+
+function Moddifica(pulsante){
+	document.getElementById('nome')=daticelle[1].value.textcontent;
+	document.getElementById('cognome')=daticelle[2].value.textcontent;
+	document.getElementById('telefono')=daticelle[3].value.textcontent;
+}
+
+function Salva(pulsante){
+		daticelle[1].value.textcontent=document.getelementByid('nome');
+		daticelle[2].value.textcontent=document.getelementByid('cognome');
+		daticelle[3].value.textcontent=document.getelementByid('telefono');
+		chiusuraFinestra();
+	}
+}

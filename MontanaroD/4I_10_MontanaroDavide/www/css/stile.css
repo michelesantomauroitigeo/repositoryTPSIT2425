@@ -72,3 +72,6 @@ footer {
     border: solid black 1px;
 
 }
+#finestra{
+    display: none;
+}
