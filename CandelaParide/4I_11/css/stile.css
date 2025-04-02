@@ -1,0 +1,108 @@
+table {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f8f8ff;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: blue;
+    color: white;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+
+tr:hover {
+    background-color: #e6f7ff;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Pulsante elimina */
+button.elimina {
+    background-color: #f44336;
+    color: white;
+}
+
+button.elimina:hover {
+    background-color: #d32f2f;
+}
+
+button.modifica {
+    background-color: #ff9800;
+    color: white;
+}
+
+button.modifica:hover {
+    background-color: #e68900;
+}
+
+
+.abilita {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.abilita input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    cursor: pointer;
+}
+
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#popup {
+
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    height: 50vh;
+    width: 50vw;
+    position:relative;
+}
+
+.chiudi{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#informazioni{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 24px;
+}
+

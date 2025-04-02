@@ -74,4 +74,11 @@ function abilita(button,idCheck){
     }
 
 }
+function elimina(pulsante) {
+    // Trova la riga della tabella corrispondente al pulsante cliccato
+    let rigaSelezionata = pulsante.closest("tr");
+    
+    // Rimuove la riga dalla tabella
+    rigaSelezionata.remove();
+}
 

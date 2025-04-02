@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>title</title>
+        <style>
+            #ValidaNome, #ValidaSesso {
+                display: none;
+                color: red;
+            }
+            #NomeCorretto, #SessoCorretto {
+                color: green;
+            }
+            
+            #finestra {
+                display:none;
+                position:fixed;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                z-index: 1;
+                background-color: rgba(0,0,0,0.7);
+            }
+            #contenuti {
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                color: white;
+            }
+            #chiusura:hover {
+                cursor: pointer;
+                color: grey;
+            }
+        </style>
+    </head>
+    <body>
+        <form onsubmit="return validateForm()">
+
+			<label for="InputNome">Nome: </label>
+			<input type="text" id="InputNome" name="nome">
+			<small id="ValidaNome">Errori nel campo</small>
+			<small id="NomeCorretto">Corretto</small>
+
+			<label for="InputCognome">Cognome: </label>
+			<input type="text" id="InputCognome" name="cognome">
+			
+
+			<label for="InputDatadiNascita">Data di Nascita:</label>
+			<input type="date" id="InputDatadiNascita" nome="nascita">
+
+			<label for="InputSesso">Sesso: </label>
+			<input type="text" id="InputSesso" name="sesso">
+            <small id="ValidaSesso">Errori nel campo</small>
+			<small id="SessoCorretto">Corretto</small>
+		
+
+			<label for="InputPassword">Password: </label>
+			<input type="password" id="InputPassword" name="password">
+			
+			<input type="submit" id="Registrazione" value="Registrati">
+		</form>
+
+        <button id="Accesso">Area Riservata</button>
+        <div id="finestra">
+            
+            <div id="contenuti">
+                <span id="chiusura">x</span>
+                <label for="username">Nome Utente: </label>
+                <input type="text" id="username" name="username">
+                
+                <label for="password">Password: </label>
+                <input type="password" id="password">
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
