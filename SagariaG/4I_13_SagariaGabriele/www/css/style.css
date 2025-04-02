@@ -189,3 +189,14 @@ a{
 	width: 2%;
 	margin-left: 1%;
 }
+
+
+#errorNome{
+	color:red;
+        font-size:105%;
+}
+
+#errorPassword{
+	color:red;
+        font-size:105%;
+}
