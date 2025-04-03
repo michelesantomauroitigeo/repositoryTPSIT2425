@@ -1,0 +1,44 @@
+body {
+	font-family: Calibri;
+}
+
+header {
+	text-align: center;
+	background-color: #abcbab;
+	border-bottom: 1px solid;
+}
+
+h1 {
+	text-align: center;
+}
+
+#loginButton {
+	background-color: #abcbab;
+}
+
+#finestraLogin {
+	display: none;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.contenitore {
+	margin: auto;
+}
+
+.prodotto1, .prodotto4, .prodotto7 {
+	padding: 3%;
+	float: left;
+}
+
+.prodotto2, .prodotto5, .prodotto8 {
+	padding: 3%;
+	float: center;
+}
+
+.prodotto3, .prodotto6, .prodotto9 {
+	padding: 3%;
+	float: right;
+}
