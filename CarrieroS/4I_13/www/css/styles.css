@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.destra {
+    text-align: right;
+}
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+nav a:hover {
+    background-color: #555;
+    color: #fff;
+}
+.content {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.product {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+.product h3 {
+    margin: 0;
+    color: #333;
+}
+.product p {
+    font-size: 14px;
+    color: #666;
+}
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+#finesta_Login {
+    display: none;
+    /* Nasconde inizialmente la finestra */
+    position: fixed;
+    /* Posizione fissa rispetto alla viewport */
+    padding-top: 200px;
+    /* Posizione dello sfondo sopra la tabella */
+    left: 0;
+    /* Posizione della finestra sulla sinistra della pagina */
+    top: 0;
+    /* Posizione della finestra sull'alto della pagina */
+    right: 0;
+    /* Posizione della finestra sulla destra della pagina */
+    width: 100%;
+    /* Larghezza della finestra */
+    height: 100%;
+    /* Altezza della finestra */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Sfondo scuro con trasparenza */
+}
+
+#finestra {
+    background-color: white;
+    /* Sfondo bianco */
+    border: solid black 1px;
+    /* Bordo nero */
+    border-radius: 7px;
+    /* Arrotondamento degli angoli */
+    width: 20%;
+    /* Larghezza della finestra */
+    margin: auto;
+    /* Centra la finestra orizzontalmente */
+    text-align: center;
+    /* Allineamento del testo */
+    padding: 10px;
+    /* Spaziatura interna */
+}

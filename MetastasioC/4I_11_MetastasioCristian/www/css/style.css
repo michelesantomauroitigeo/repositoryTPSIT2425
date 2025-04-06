@@ -1,0 +1,121 @@
+/* Impostazioni generali per il corpo della tabella */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Stile per le intestazioni della tabella */
+th {
+    background-color: #4CAF50; /* Colore di sfondo verde */
+    color: white;              /* Colore del testo bianco */
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Stile per le celle della tabella */
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;    /* Bordo leggero grigio */
+    font-size: 13px;
+}
+
+/* Colore alternato per le righe */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Colore di sfondo grigio chiaro per le righe pari */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* Colore di sfondo bianco per le righe dispari */
+}
+
+/* Impostazione bordo per la tabella */
+table, th, td {
+    border: 1px solid #ddd;    /* Bordo grigio chiaro per tabella e celle */
+}
+
+/* Impostazioni per il passaggio del mouse sulle righe */
+tr:hover {
+    background-color: #ddd;   /* Colore di sfondo grigio chiaro quando si passa il mouse */
+}
+
+/* Stile per la tabella quando il testo è troppo lungo */
+td {
+    word-wrap: break-word;     /* Impedisce che il testo esca dalla cella */
+}
+
+/* Impostazioni per la larghezza delle colonne */
+th, td {
+    width: 11%;                /* Imposta una larghezza uniforme per tutte le colonne */
+}
+
+/* Stile per le righe evidenziate */
+tr.highlight {
+    background-color: #f4c542; /* Colore giallo per le righe evidenziate */
+
+}
+
+.finestra {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.finestra form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.finestra label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.finestra input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.finestra button {
+    padding: 8px 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.finestra button:nth-child(1) {
+    background-color: #f44336;
+    color: white;
+}
+
+.finestra button:nth-child(2) {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.finestra .bottoni {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.oscuramento {
+    background-color: rgba(0, 0, 0, 0.5);
+}
