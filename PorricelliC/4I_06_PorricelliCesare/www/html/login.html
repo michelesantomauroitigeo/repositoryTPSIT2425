@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <!-- Definisce il set di caratteri utilizzato nella pagina, in questo caso UTF-8 -->
+    <meta charset="UTF-8">
+    
+    <!-- Imposta il viewport per il supporto di dispositivi mobili, ottimizzando la visualizzazione per schermi più piccoli -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Titolo della pagina, che apparirà nella barra del browser -->
+    <title>Login</title>
+</head>
+<body>
+    <!-- Un contenitore centrato per il contenuto della pagina -->
+    <div style="text-align: center;">
+        <!-- Logo del panificio con una larghezza fissa di 150px -->
+        <img src="pane.jpeg" alt="Logo Panificio delle Donne" style="width: 150px; height: auto;"><br><br>
+        
+        <!-- Titolo della sezione di login -->
+        <h2>Login</h2>
+        
+        <!-- Form per il login, i dati verranno inviati al file "login_process.php" con il metodo POST -->
+        <form action="login_process.php" method="post">
+            <!-- Etichetta e campo per l'inserimento dello username -->
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br><br>
+            
+            <!-- Etichetta e campo per l'inserimento della password, tipo password maschera l'input -->
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            
+            <!-- Bottone per inviare il form -->
+            <input type="submit" value="Accedi">
+        </form>
+    </div>
+</body>
+</html>

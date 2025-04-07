@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MicroChipMania - Elettronica Online</title>
     <link rel="stylesheet" href="css/stile.css">
+    <script src="js/script.js" defer></script>
+
 </head>
 <body>
     <header class="intestazione">
@@ -12,7 +14,7 @@
         <nav class="navigazione">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Prodotti</a></li>
+                <button id="accesso" onclick="popup()"><li>Accesso</li></button>
                 <li><a href="#">Carrello</a></li>
             </ul>
         </nav>
@@ -142,7 +144,22 @@
                 </div>
             </div>
         </div>
-    </main>
+
+        <div id="overlay"> 
+            <div id="popup">
+                <button class="chiudi" onclick="chiudi()">X</button>
+                <label>Username</label>
+                <input type="text" id="username">
+                <span id="errore"> Compila questo campo </span>
+
+                
+                <label>Password</label>
+                <input type="password" id="password">
+                <span id="errore"> Compila questo campo </span>
+
+                <button href="html/pagina2.html">Invia</button>
+            </div>
+        </div>
     
     <footer class="piè-di-pagina">
         <p> 2023 MicroChipMania - Tutti i diritti riservati</p>

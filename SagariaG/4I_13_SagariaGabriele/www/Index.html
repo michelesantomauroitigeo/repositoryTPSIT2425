@@ -5,14 +5,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Lacasadeisogni.it</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/script.js" defer></script>
 </head>
 <body>
+  <div id="finestraModale">
+    <div class="finestra">
+      <h2>PAGINA DI LOGIN</h2>
+      <form id="formLogin" onsubmit="return controllo(event)">
+        <label for="nome">USERNAME:</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+        <p id="errorNome">Username non inserito correttamente</p>
+        <label for="password">PASSWORD:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <p id="errorPassword">Password non inserita correttamente</p><br><br>
+        <button type="submit">ACCEDI</button>
+      </form>
+    </div>
+  </div>
+
 	<nav>
 		<img src="img/logo.png">
 		<input type="text" value="Cosa sta cercando?" src="img/lente.png">
 		<div class="login">
 			<img src="img/user.png" id="immLogin">
-			<a href="">Login</a>
+			<button onclick="aperturaFinestra()">Login</button>
 		</div>
 	</nav>
 

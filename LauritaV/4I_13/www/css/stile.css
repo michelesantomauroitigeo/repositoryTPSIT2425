@@ -25,41 +25,38 @@ body {
     padding: 10px;
 }
 
-#sinistra {
+.sinistra {
     display: flex;
     align-items: center;
     left: 0;
     gap: 10px;
 }
-#logo {
+.logo {
     width: 30%;  
 }
-#centro {
+.centro {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 20px;
 }
-#centro a {
+.centro a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
-#centro a:hover {
+.centro a:hover {
     color: grey;
 }
 
-#destra {
-    right: 0;
+.destra {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-#sinistra, #destra {
+.sinistra, .destra {
     width: 200px; 
-    display: flex;
-    align-items: center;
 }
 
 
@@ -123,7 +120,9 @@ header {
 .add-carrello:hover {
     background-color: #ff3300;
 }
+
 /*footer*/
+
 .footer {
     background-color: #333;
     color: white;
@@ -161,4 +160,152 @@ header {
 .footer-bottom {
     margin-top: 20px;
     font-size: 14px;
+}
+
+/*finestra login*/
+
+.tasto-login {
+    padding: 5px;
+}
+.tasto-login:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+.finestra-login {
+    display: none;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1000;
+    position: fixed;
+}
+.login-contenuti {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#chiudi-login {
+    position: absolute;
+    top: 4.5%;
+    right: 4.5%;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+}
+#chiudi-login:hover {
+    color: #ff6600;
+}
+.login-contenuti form {
+    display: flex;
+    flex-direction: column;
+}
+.login-contenuti label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+.login-contenuti input[type="text"],
+.login-contenuti input[type="password"] {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.login-contenuti input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.login-contenuti input[type="submit"]:hover {
+    background-color: #ff3300;
+}
+.login-contenuti small {
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/*Gestione Prodotti*/
+.admin-container {
+    width: 80%;
+    margin: 100px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.admin-header h1 {
+    color: #ff6600;
+}
+.tasto-home {
+    background-color: #ff6600;
+    color: white;
+    padding: 4% 8%;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.tasto-home:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background-color: #ff3300;
+}
+.admin-azioni {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.admin-button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.admin-button:hover {
+    background-color: #ff3300;
+}
+.lista-prodotto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+}
+.elemento-lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.elemento-lista:hover {
+    background-color: #f2f2f2;
+}
+.elemento-lista:last-child {
+    border-bottom: none;
 }
