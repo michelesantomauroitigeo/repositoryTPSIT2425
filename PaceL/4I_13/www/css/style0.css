@@ -6,39 +6,97 @@ header {
 	text-align: center;
 	background-color: #abcbab;
 	border-bottom: 1px solid;
+	position: sticky;
+	top: 0;
 }
 
-h1 {
+footer {
 	text-align: center;
+	background-color: #abcbab;
+	border-top: 1px solid;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+#aggiungiProdotto {
+	position: relative;
+	left: 75%;
+	margin: auto;
+	padding: 15px;
+	background-color: green;
 }
 
 #loginButton {
 	background-color: #abcbab;
 }
 
+#erroreUsername, #errorePassword {
+	color: red;
+}
+
 #finestraLogin {
-	display: none;
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    overflow: auto;
+}
+
+#contenutoFinestraLogin {
+	background-color: #fefefe;
+  	margin: 15% auto; 
+  	padding: 20px;
+ 	border: 1px solid #888;
+  	width: 80%;
+  	text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .contenitore {
-	margin: auto;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 5%;
+    max-width: 1600px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuisce lo spazio tra i prodotti */
 }
 
-.prodotto1, .prodotto4, .prodotto7 {
-	padding: 3%;
-	float: left;
+.prodotto1, .prodotto2, .prodotto3, .prodotto4, .prodotto5, .prodotto6, .prodotto7, .prodotto8, .prodotto9 {
+    width: 48%; /* Imposta la larghezza dei prodotti al 48% per fare in modo che due possano stare sulla stessa riga */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Per includere padding e border nel calcolo della larghezza */
+    border-bottom: 1px solid;
 }
 
-.prodotto2, .prodotto5, .prodotto8 {
-	padding: 3%;
-	float: center;
+/* Alternare la direzione del float per ogni prodotto */
+.prodotto1, .prodotto3, .prodotto5, .prodotto7, .prodotto9 {
+    text-align: left; /* Allineamento sinistro */
 }
 
-.prodotto3, .prodotto6, .prodotto9 {
-	padding: 3%;
-	float: right;
+.prodotto2, .prodotto4, .prodotto6, .prodotto8 {
+    text-align: right; /* Allineamento destro */
+}
+
+.prodotto1 img, .prodotto2 img, .prodotto3 img, .prodotto4 img, .prodotto5 img, .prodotto6 img, .prodotto7 img, .prodotto8 img, .prodotto9 img {
+    height: auto;
 }
