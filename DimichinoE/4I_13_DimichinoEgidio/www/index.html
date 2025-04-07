@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="it">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Fashion Store</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/script.js" defer></script>
 </head>
 <body>
     <header>Dimichino Style</header>
@@ -13,7 +13,23 @@
         <a href="#">Shop</a>
         <a href="#">Contatti</a>
         <a href="#">Chi Siamo</a>
+        <button id="pulsante" onclick="Finestra()">Accedi</button>
     </nav>
+
+    <div id="finestra">
+      <div class="login">
+        <h2>PAGINA DI ACCESSO</h2>
+        <form id="formLogin" onsubmit="return invio(event)"><!-- Event è un paramatro che si passa per evetira che il form invia i dati -->
+          <label for="nome">NOME:</label><br>
+          <input type="text" id="nome"><br>
+          <p id="nomeErrato">Nome non inserito correttamente</p>
+          <label for="password">PASSWORD:</label><br>
+          <input type="password" id="password"><br>
+          <p id="passwordErrata">Password non inserita correttamente</p><br>
+          <button type="submit">LOGIN</button>
+        </form>
+      </div>
+    </div>
     <div class="banner">IL MEGLIO SOLO DA NOI!</div>
     <div class="products">
         <div class="product">
