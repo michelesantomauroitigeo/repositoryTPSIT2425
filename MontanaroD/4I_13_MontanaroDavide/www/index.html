@@ -3,22 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartoleria Online</title>
+    <title>CartoleriaOnline.com</title>
     <link rel="stylesheet" href="css/stile.css">
+    <script type="text/javascript" src="js/script.js" defer></script>
 </head>
 <body>
+
+ <div id="finestraModale">
+    <div class="finestra">
+        <button id="chiudiFinestra" onclick="chiudiFinestra()">X</button>
+
+        <form id="formLogin" onsubmit="return verifica()">
+            <label for="nome">USERNAME</label>
+            <input type="text" id="nome" name="nome"><br>
+            <p id="errorNome">Username non inserito correttamente</p>
+            <label for="password">PASSWORD</label>
+
+            <input type="password" id="password" name="password"><br>
+            <p id="errorPassword">Password non inserita correttamente</p>
+            <button type="submit">ACCEDI</button>
+        </form>
+    </div>
+</div>
+
     <header>
         <h1>Cartoleria Online</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Prodotti</a></li>
+                <li><a href="html/carica.html">Carica Prodotto</a></li>
                 <li><a href="#">Contatti</a></li>
+                <li><button id="buttonAccedi">Accedi</button></li>
             </ul>
         </nav>
     </header>
-
-    <main>
         <h2>Prodotti in evidenza</h2>
         <div class="contenitore-prodotti">
             <div class="prodotto">
@@ -101,8 +119,6 @@
                 <button class="acquista">Acquista</button>
             </div>
         </div>
-    </main>
-
     <footer>
         <p>&copy; 2025 Cartoleria Online - Tutti i diritti riservati.</p>
     </footer>

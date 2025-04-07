@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Carica Prodotto - Cartoleria Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stile.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cartoleria Online</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="carica.html">Carica Prodotto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="carica-prodotto">
+        <h2>Carica un Nuovo Prodotto</h2>
+        <form>
+            <label for="nomeProdotto">Nome prodotto:</label>
+            <input type="text" id="nomeProdotto" name="nomeProdotto" required><br>
+
+            <label for="descrizioneProdotto">Descrizione:</label>
+            <input type="text" id="descrizioneProdotto" name="descrizioneProdotto" required><br>
+
+            <label for="prezzoProdotto">Prezzo (€):</label>
+            <input type="number" step="0.01" id="prezzoProdotto" name="prezzoProdotto" required><br>
+
+            <label for="immagineProdotto">URL Immagine:</label>
+            <input type="text" id="immagineProdotto" name="immagineProdotto" required><br>
+
+            <button type="submit" class="acquista">Carica Prodotto</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Cartoleria Online - Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
