@@ -1,0 +1,31 @@
+body {
+	font-family: Calibri;
+}
+
+header {
+	text-align: center;
+	background-color: #abcbab;
+	border-bottom: 1px solid;
+	position: sticky;
+	top: 0;
+}
+
+footer {
+	text-align: center;
+	background-color: #abcbab;
+	border-top: 1px solid;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+#aggiungiProdotto {
+	text-align: center;
+	margin: auto;
+	background-color: #baeaee;
+}
+
+#loginButton {
+	display: none;
+}

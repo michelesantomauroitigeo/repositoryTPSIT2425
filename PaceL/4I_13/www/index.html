@@ -1,0 +1,107 @@
+<html>
+	<head>
+			<meta charset="UTF-8">
+			<title>PaceCalzature.com</title>
+			<link rel="stylesheet" type="text/css" href="css/style0.css">
+			<script type="text/javascript" src="js/script.js" defer></script>
+	</head>
+	<body>
+			<header>
+				<h1>Pace Calzature</h1>
+				<span><a href="index.html">Home</a> &nbsp; &nbsp;
+					  <button type="button" id="loginButton" onclick="apriFinestraLogin()">Login</button>
+				</span>
+			</header>
+
+			<div id="finestraLogin">
+				<div id="contenutoFInestraLogin">
+					<span class="close">&times;</span>
+					<h2>Login</h2>
+					<form id="login">
+						<label for="username">Username</label>
+						<input type="text" id="username" name="username">
+						<span id="erroreUsername"></span>
+						<br>
+						<label for="password">Password</label>
+						<input type="password" id="password" name="password">
+						<span id="errorePassword"></span>
+						<br>
+						<button type="submit" onclick="verificaCampi()">Invia</button>
+					</form>
+				</div>
+			</div>
+			<h1>Trova tutti i tipi di calzatura adatti a te</h1>
+			<div class="contenitore">
+				<div class="prodotto1">
+					<h4>Scarpe Dolce e Gabbana</h4>
+					<img src="imgs/Dolce_e_Gabbana.jpg">
+					<p id="descrizione">Scarpe di marca comode da uomo.</p>
+					<p>Prezzo: 520.00€</p>
+				</div>
+				
+				<div class="prodotto2">
+					<h4>Sneakers donna</h4>
+					<img src="imgs/Sneakers_Donna.jpg">
+					<p id="descrizione">Scarpe Sneakers sportive da donna.</p>
+					<p>Prezzo: 75.00€</p>
+				</div>
+				
+				<div class="prodotto3">
+					<h4>Scarpe da calcio in pelle</h4>
+					<img src="imgs/Scarpe_Calcio.jpg">
+					<p id="descrizione">Scarpe da calcio in pelle adatte a terreni naturali e artificiali.</p>
+					<p>Prezzo: 120.00€</p>
+				</div>
+				
+				<div class="prodotto4">
+					<h4>Scarpe Adidas da calcio</h4>
+					<img src="imgs/Adidas_Calcio.jpg">
+					<p id="descrizione">Scarpe Adidas F50 League LI Fg Mg Bianco - Scarpe da calcio uomo.</p>
+					<p>Prezzo: 150.00€</p>
+				</div>
+				
+				<div class="prodotto5">
+					<h4>Scarpe riarse Varese</h4>
+					<img src="imgs/Scarpe_Varese.jpg">
+					<p id="descrizione">Scarpe riarse Varese nuova collezione Guidomaggi - Scarpe moda uomo.</p>
+					<p>Prezzo: 100.00€</p>
+				</div>
+				
+				<div class="prodotto6">
+					<h4>Scarpe da ballo donna</h4>
+					<img src="imgs/Scarpe_Da_Ballo.jpg">
+					<p id="descrizione">Scarpe da ballo per donna Modello 217 Bd Dance.</p>
+					<p>Prezzo: 95.00€</p>
+				</div>
+				
+				<div class="prodotto7">
+					<h4>Scarpe da corsa uomo</h4>
+					<img src="imgs/Scarpe_Da_Corsa.jpg">
+					<p id="descrizione">Scarpe sportive da uomo, scarpe da corsa casual.</p>
+					<p>Prezzo: 85.00€</p>
+				</div>
+				
+				<div class="prodotto8">
+					<h4>Scarpe da calcio Nike</h4>
+					<img src="imgs/Nike_Calcio.jpg">
+					<p id="descrizione">Scarpe da calcio Nike Superfly 9 Elite Fg Nero - Scarpe da calcio uomo.</p>
+					<p>Prezzo: 130.00€</p>
+				</div>
+				
+				<div class="prodotto9">
+					<h4>Scarpe Blast</h4>
+					<img src="imgs/Scarpa_Blast.jpg">
+					<p id="descrizione">Scarpe Blast comode per uomo e donna.</p>
+					<p>Prezzo: 50.00€</p>
+				</div>
+			</div>
+			
+			<a href="html/AggiungiProdotto.html">
+				<button type="button" id="aggiungiProdotto">Aggiungi Prodotto</button>
+			</a>
+
+			<footer>
+				<small>©2025 Calzature Pace. Diritti riservati.</small>
+			</footer>
+	</body>
+</html>

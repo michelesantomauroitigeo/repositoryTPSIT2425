@@ -1,0 +1,79 @@
+/* Impostazioni generali */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Stile per l'intestazione */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Stile per il contenitore principale */
+.container {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Stile per il titolo dei prodotti */
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Stile per la lista dei prodotti */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Stile per ogni singolo prodotto */
+li {
+    background-color: #ffffff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+/* Stile per l'immagine del prodotto */
+.product img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+/* Stile per le informazioni del prodotto */
+.product-info {
+    flex: 1;
+}
+
+/* Stile per il nome del prodotto */
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Stile per il prezzo del prodotto */
+.product-price {
+    color: green;
+    font-weight: bold;
+}
+
+/* Stile per il piè di pagina */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
