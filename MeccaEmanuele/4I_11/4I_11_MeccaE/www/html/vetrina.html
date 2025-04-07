@@ -1,7 +1,8 @@
 <html lang="it">
 <head>
-    <title>LupenStyle</title>
+    <title>LupinStyle</title>
     <link rel="stylesheet" href="../css/vetrina.css">
+    
 </head>
 <body>
 
@@ -11,10 +12,11 @@
         </div>
         <h1>LupinStyle</h1>
         <div class="header-right">
-            <a href="#">Login</a>
+            <a href="../login.html">Login</a>
         </div>
     </header>
 
+    <!-- Container prodotti -->
     <div class="container">
         <div class="product">
             <img src="https://d18c63gzk0ps2w.cloudfront.net/media/catalog/product/cache/8f568ca51e2bd5270292b106648095e7/N/E/NEWE10531939_NAVY_04_e61e.jpg" alt="Cappello">
@@ -36,7 +38,7 @@
 
         <div class="product">
             <img src="https://www.sportlandweb.it/81431-tm_thickbox_default/eastpak-marsupio-springer-fantasia-blu.jpg" alt="Marsupio">
-            <div class="price">11,99</div>
+            <div class="price">€11,99</div>
             <a href=" " class="btn">Scopri di più</a>
         </div>
 
@@ -47,7 +49,28 @@
         </div>
     </div>
 
+    <!-- Pulsante per aprire il modale (aggiungi prodotto) sotto il login -->
+    <div class="add-product-btn" id="openModalBtn">Aggiungi Prodotto</div>
+
+    <!-- Modale -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <label for="productName">Nome Prodotto:</label>
+                <input type="text" id="productName" placeholder="Inserisci il nome del prodotto">
+                <label for="productPrice">Prezzo:</label>
+                <input type="text" id="productPrice" placeholder="Inserisci il prezzo">
+                <label for="productDescription">Descrizione:</label>
+                <textarea id="productDescription" rows="4" placeholder="Inserisci la descrizione del prodotto"></textarea>
+            </div>
+        </div>
+    </div>
+
     <footer></footer>
+
+
+     <script src="../js/vetrina.js"></script>
+
 
 </body>
 </html>
