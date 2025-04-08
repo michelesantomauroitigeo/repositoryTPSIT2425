@@ -1,31 +1,39 @@
-function popup(){
-        document.getElementById("overlay").style.display = "flex";
+function login(event) {
+    event.preventDefault();
+    document.getElementById("errore-credenziali").style.display = "none";
+    document.getElementById("errore-username").style.display = "none";
+    document.getElementById("errore-password").style.display = "none";
+
+    // Credenziali corrette
+    const USERNAME_CORRETTO = "Paride";
+    const PASSWORD_CORRETTA = "Gigio1";
+    
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value.trim();
+    
+    //  Controllo campi vuoti
+    if(username === "" || password === "") {
+        if(username === "") {
+            document.getElementById("errore-username").style.display = "block";
+        }
+        if(password === "") {
+            document.getElementById("errore-password").style.display = "block";
+        }
+        return false;
+    }
+    //  Controllo credenziali 
+    if(username !== USERNAME_CORRETTO || password !== PASSWORD_CORRETTA) {
+        document.getElementById("errore-credenziali").style.display = "block";
+        return false;
+    }
+    window.location.href = "html/area_riservata.html";
+    return true;
 }
 
-function chiudi(){
+function popup() {
+    document.getElementById("overlay").style.display = "flex";
+}
+
+function chiudi() {
     document.getElementById("overlay").style.display = "none";
-}
-
-function login() {
-    const username = document.getElementById("username");
-    const password = document.getElementById("password");
-
-    let valida = true;
-
-    if (username.value.trim() === ''|| username.value.trim()=== "Paride") {
-        document.getElementById("errore").style.display = 'block';
-        valida = false;
-    } else {
-        document.getElementById("errore").style.display = 'none';
-    }
-
-    if (password.value.trim() === ''|| password.value.trim()=== "Gigio1") {
-        document.getElementById("errore").style.display = 'block';
-        valida = false;
-    } else {
-        document.getElementById("errore").style.display = 'none';
-
-    }
-
-    return valida;
 }

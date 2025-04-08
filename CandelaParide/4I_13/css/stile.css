@@ -53,12 +53,12 @@ body{
 .griglia-prodotti {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px; /* spazio tra gli elementi */
-    justify-content: center; /* centra le card */
+    gap: 15px; 
+    justify-content: center; 
 }
 
 .scheda-prodotto {
-    width: 250px; /* larghezza fissa */
+    width: 250px;
     margin-bottom: 15px;
 }
 
@@ -90,11 +90,6 @@ body{
     font-size: 1.2rem;
 }
 
-.valutazione {
-    color: #f39c12;
-    margin-bottom: 1rem;
-}
-
 .pulsante-aggiungi {
     width: 100%;
     padding: 0.5rem;
@@ -123,16 +118,39 @@ body{
     margin-left:10px;
 }
 
-overlay{
-    display:none;
-}
-
-span{
+#overlay {
     display: none;
-    color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 300px;
+    position: relative; 
+    margin: auto;
+}
+
+#errore-username{
+  display: none;  
+  color: red;
+}
+#errore-password{
+    display: none; 
+    color: red; 
+}
+
+#errore-credenziali{
+    display: none; 
+    color: red; 
 }
 
 
-.errore {
-    outline: 2px solid red;
-}

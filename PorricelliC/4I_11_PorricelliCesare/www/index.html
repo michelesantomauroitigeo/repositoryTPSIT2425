@@ -1,69 +1,21 @@
 <!DOCTYPE html>
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmacia San Giovanni</title>
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            flex: 1;
-            padding: 20px;
-        }
-        h2 {
-            margin-bottom: 20px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            background-color: #ffffff;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            display: flex;
-            align-items: center;
-        }
-        .product img {
-            width: 100px;
-            height: auto;
-            margin-right: 15px;
-            border-radius: 5px;
-        }
-        .product-info {
-            flex: 1;
-        }
-        .product-name {
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .product-price {
-            color: green;
-            font-weight: bold;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            width: 100%;
-        }
-    </style>
+    <title>Farmacia San Rocco</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <script type="text/javascript" src="js/script.js" defer></script>
+ <nav>       
+        <div class="login">
+            <button onclick="aperturaFinestra()">Login</button>
+        </div>
+    </nav>
+
+
 </head>
+
 <body>
 
 <header>
@@ -75,11 +27,11 @@
     <h2>I nostri prodotti:</h2>
     <ul>
         <li class="PRODOTTO">
-            <img src=imgs/aspirina.jpeg" alt="Aspirina 500mg">
+            <img src="imgs/aspirina.jpeg" alt="Aspirina 500mg">
             <div class="INFO">
                 <span class="NOME">Aspirina 500mg</span>
                 <p>Un'ottima soluzione per il mal di testa e altri dolori.</p>
-                <span class="pPREZZO">€4,50</span>
+                <span class="PREZZO">€4,50</span>
             </div>
         </li>
         <li class="PRODOTTO">
@@ -87,7 +39,7 @@
             <div class="INFO">
                 <span class="NOME">Paracetamolo 1000mg</span>
                 <p>Antidolorifico e antipiretico.</p>
-                <span class="PREZZO>€5,00</span>
+                <span class="PREZZO">€5,00</span>
             </div>
         </li>
         <li class="PRODOTTO">
@@ -114,7 +66,7 @@
                 <span class="PREZZO">€7,00</span>
             </div>
         </li>
-        <li class=" PRODOTTO">
+        <li class="PRODOTTO">
             <img src="imgs/cefalexina.jpeg" alt="Cefalexina 500mg">
             <div class="INFO">
                 <span class="NOME">Cefalexina 500mg</span>
@@ -143,7 +95,7 @@
             <div class="INFO">
                 <span class="NOME">Faringegutt Spray</span>
                 <p>Per il sollievo da mal di gola.</p>
-                <span class="PREZZO>€5,80</span>
+                <span class="PREZZO">€5,80</span>
             </div>
         </li>
         <li class="PRODOTTO">
@@ -157,8 +109,25 @@
     </ul>
 </div>
 
+
+    <div id="finestraModale">
+    <div class="finestra">
+      <form id="formLogin" onsubmit="return controllo(event)">
+        <label for="nome">USERNAME</label>
+        <input type="text" id="nome" name="nome"><br>
+        <p id="errorNome">Username non inserito correttamente</p>
+        <label for="password">PASSWORD</label>
+        <input type="password" id="password" name="password"><br>
+        <p id="errorPassword">Password non inserita correttamente</p>
+        <button type="submit">ACCEDI</button>
+      </form>
+    </div>
+  </div>
+
+
+
 <footer>
-    <p>&copy; 2025 Farmacia Rocco - Tutti i diritti riservati</p>
+    <p>&copy; 2025 Farmacia San Rocco - Tutti i diritti riservati</p>
 </footer>
 
 </body>
