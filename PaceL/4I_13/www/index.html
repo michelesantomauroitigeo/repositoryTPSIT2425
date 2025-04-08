@@ -17,7 +17,7 @@
 				<div id="contenutoFInestraLogin">
 					<span class="close">&times;</span>
 					<h2>Login</h2>
-					<form id="login">
+					<form action="html/Amministrazione.html" target="_blank" id="login">
 						<label for="username">Username</label>
 						<input type="text" id="username" name="username">
 						<span id="erroreUsername"></span>
@@ -26,11 +26,14 @@
 						<input type="password" id="password" name="password">
 						<span id="errorePassword"></span>
 						<br>
+						<span id="erroreCredenziali"></span>
+						<br>
 						<button type="submit" onclick="verificaCampi()">Invia</button>
 					</form>
 				</div>
 			</div>
 			<h1>Trova tutti i tipi di calzatura adatti a te</h1>
+			<p>Scarpe adatte a uomini e donne</p>
 			<div class="contenitore">
 				<div class="prodotto1">
 					<h4>Scarpe Dolce e Gabbana</h4>
@@ -96,10 +99,6 @@
 				</div>
 			</div>
 			
-			<a href="html/AggiungiProdotto.html">
-				<button type="button" id="aggiungiProdotto">Aggiungi Prodotto</button>
-			</a>
-
 			<footer>
 				<small>©2025 Calzature Pace. Diritti riservati.</small>
 			</footer>
