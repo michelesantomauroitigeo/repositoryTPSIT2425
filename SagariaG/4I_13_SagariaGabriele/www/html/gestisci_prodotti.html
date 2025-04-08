@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/stile_gestione_prodotti.css">
+	<title>Caricamento Prodotti</title>
+<script src="../js/script_gestione_prodotti.js" defer></script>
+</head>
+<body>
+	<nav>
+		<img src="../img/logo.png">
+		<h2>GESTIONE PRODOTTI</h2>
+		<div class="login">
+			<a href="amministratore.html">Indietro</a>
+		</div>
+	</nav>
+
+<div id="finestraModale">
+	<div class="visualizzazione">
+		<div class="allinea">
+        <button class="chiudi" onclick="chiusuraFinestra()">X</button>
+        <h1>Carica prodotti</h1>
+      </div>
+			<form onsubmit="return controllo()">
+				<label for="scelta">Selezionare in quale reparto vuoi modificare/aggiungere un prodotto:</label>
+				<select id="scelta" name="scelta">
+				    <option >Promozione</option>
+				    <option >Novita'</option>
+				</select><br><br>
+				<p id="errorNome">Campo vuoto</p>
+				<label for="nome">Inserire il NOME del prodotto:</label><br>
+				<input type="text" name="nome" id="nome"><br><br>
+
+				<p id="errorDescrizione">Campo vuoto</p>
+				<label for="descrizione">Inserire la DESCRIZIONE del prodotto:</label><br>
+				<input type="text" name="descrizione" id="descrizione"><br><br>
+
+				<p id="errorPrezzo">Campo vuoto</p>
+				<label for="prezzo">Inserire il PREZZO (€) del prodotto:</label><br>
+				<input type="number" name="prezzo" id="prezzo"><br><br>
+
+				<p id="errorSconto">Campo vuoto</p>
+				<label for="sconto">Inserire lo SCONTO (%) sul prezzo se presente:</label><br>
+				<input type="number" name="sconto" id="sconto"><br><br>
+				
+				<p id="errorImmagine">Campo vuoto</p>
+				<label for="immagine">Inserire l'IMMAGINE del prodotto:</label><br>
+				<input type="file" name="immagine" id="file"><br><br>
+				
+				<button type="submit">SALVA</button>
+			</form>
+	</div>
+</div>
+
+<div id="finestraLista">
+	<div id="visualizzazioneLista">
+		<div class="allinea">
+        <button class="chiudi" onclick="chisuraFinestraLista()">X</button>
+        <h1>Tabella Prodotti</h1>
+      </div>
+		<table>
+			<tr>
+				<th>Nome</th>
+				<th>Descrizione</th>
+				<th>Prezzo</th>
+				<th>Sconto</th>
+				<th>Immagine</th>
+				<th>Scelta</th>
+			</tr>
+			<tr>
+				<td>Set di bicchieri</td>
+				<td>Un set di bicchieri da 6</td>
+				<td>7,95 €</td>
+				<td>9,99 € (-20%)</td>
+				<td><img src="../img/bicchieri.png"></td>
+				<td>
+            <button  type="button" id="elimina">Elimina</button>
+            <button type="button" id="modifica">Modifica</button>
+        </td>
+			</tr>
+			<tr>
+				<td>Set di piatti</td>
+				<td>Piatto piano e fondo</td>
+				<td>9,99 €</td>
+				<td>12,99 € (-20%)</td>
+				<td><img src="../img/piatti.png"></td>
+				<td>
+            <button  type="button" id="elimina">Elimina</button>
+            <button type="button" id="modifica">Modifica</button>
+        </td>
+			</tr>
+			<tr>
+				<td>Saliera e Pepiera</td>
+				<td>Coppia di saliera e pepiera</td>
+				<td>7,99 €</td>
+				<td>9,99 € (-25%)</td>
+				<td><img src="../img/sale.png"></td>
+				<td>
+            <button  type="button" id="elimina">Elimina</button>
+            <button type="button" id="modifica">Modifica</button>
+        </td>
+			</tr>
+			<tr>
+				<td>Set di pentole</td>
+				<td>Set di pentole</td>
+				<td>54,99 €</td>
+				<td>68,99 € (-25%)</td>
+				<td><img src="../img/pentole.png"></td>
+				<td>
+            <button  type="button" id="elimina">Elimina</button>
+            <button type="button" id="modifica">Modifica</button>
+        </td>
+			</tr>
+			<tr>
+				<td>Acqua micellare</td>
+				<td>300ml di acqua micellare</td>
+				<td>6,50 €</td>
+				<td>-</td>
+				<td><img src="../img/micellare.png"></td>
+				<td>
+            <button  type="button" id="elimina">Elimina</button>
+            <button type="button" id="modifica">Modifica</button>
+        </td>
+			</tr>
+			<tr>
+				<td>Profumatore per ambiente</td>
+				<td>Gusto muschio selvatico</td>
+				<td>25,98 €</td>
+				<td>-</td>
+				<td><img src="../img/profumatore.png"></td>
+				<td>
+            <button  type="button" id="elimina">Elimina</button>
+            <button type="button" id="modifica">Modifica</button>
+        </td>
+			</tr>
+			<tr>
+				<td>Fertilizzante</td>
+				<td>400ml Fertilizzate per piante</td>
+				<td>17,30 €</td>
+				<td>-</td>
+				<td><img src="../img/fertilizzante.png"></td>
+				<td>
+            <button  type="button" id="elimina">Elimina</button>
+            <button type="button" id="modifica">Modifica</button>
+        </td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div class="centra">
+		<table>
+			<tr>
+				<th>Funzione</th>
+			</tr>
+			<tr>
+				<td>
+					<button onclick="aperturaFinestra()">Aggiungi prodotto</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button onclick="aperturaFinestraLista()">Lista Prodotti</button>
+				</td>
+			</tr>
+		</table>
+</div>
+
+  <footer class="footer_promozione">
+    <div class="footer_content">
+      <h2>Non perdere le promozioni della settimana!</h2>
+      <p>Scopri tutte le offerte e risparmia sui tuoi acquisti.</p>
+      <p>Ci puoi trovare a Potenza!!</p>
+      <p>Seguiteci sulle nostre pagine Social</p>
+    </div>
+    <div class="social">
+    	<img src="../img/facebook.png" alt="immagine di facebook">
+    	<img src="../img/instagram.png" alt="immagine di instagram">
+    	<img src="../img/whatsapp.png" alt="immagine di whatsapp">
+    </div>
+  </footer>
+
+</body>
+</html>
