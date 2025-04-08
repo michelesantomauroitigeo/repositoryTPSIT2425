@@ -14,10 +14,16 @@ footer {
 	text-align: center;
 	background-color: #abcbab;
 	border-top: 1px solid;
+    position: sticky;
+    bottom: 0;
 }
 
 h1, h2 {
 	text-align: center;
+}
+
+p {
+    text-align: center;
 }
 
 #aggiungiProdotto {

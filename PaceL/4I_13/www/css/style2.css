@@ -1,0 +1,32 @@
+body {
+	font-family: Calibri;
+}
+
+header {
+	text-align: center;
+	background-color: #abcbab;
+	border-bottom: 1px solid;
+	position: sticky;
+	top: 0;
+}
+
+footer {
+	margin-top: 38%;
+	text-align: center;
+	background-color: #abcbab;
+	border-top: 1px solid;
+    position: sticky;
+    bottom: 0;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+#loginButton {
+	display: none;
+}
