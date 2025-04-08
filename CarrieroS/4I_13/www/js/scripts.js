@@ -16,6 +16,7 @@ function accedi() {
     if (utente === utenteCorretto && pass === passwordCorretta) {
         alert("Accesso effettuato con successo!");
         chiudiFinestra();
+        window.open("html/amministrazione.html", "_blank"); // <-- aggiunto qui
     } else {
         alert("Nome utente o password errati.");
     }
@@ -44,4 +45,61 @@ document.addEventListener("DOMContentLoaded", function () {
 
         form.reset();
     });
+});
+
+function gestprodotti() {
+    window.open("gestione-prodotti.html", "_blank");
+}
+
+function modpassword() {
+    window.open("modifica-password.html", "_blank");
+}
+
+document.getElementById("password-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    document.getElementById("old-password-error").textContent = "";
+    document.getElementById("new-password-error").textContent = "";
+    document.getElementById("confirm-password-error").textContent = "";
+
+    let valid = true;
+
+    const oldPasswordElement = document.getElementById("old-password");
+    if (oldPasswordElement) {
+        const oldPassword = oldPasswordElement.value;
+        const correctOldPassword = "1234";
+
+        if (oldPassword.trim() === "") {
+            document.getElementById("old-password-error").textContent = "La vecchia password e obbligatoria.";
+            valid = false;
+        } else if (oldPassword.trim() !== correctOldPassword) {
+            document.getElementById("old-password-error").textContent = "La vecchia password non e corretta.";
+            valid = false;
+        }
+    }
+
+    const newPasswordElement = document.getElementById("new-password");
+    if (newPasswordElement) {
+        const newPassword = newPasswordElement.value;
+        if (newPassword.trim() === "") {
+            document.getElementById("new-password-error").textContent = "La nuova password e obbligatoria.";
+            valid = false;
+        }
+    }
+
+    const confirmPasswordElement = document.getElementById("confirm-password");
+    if (confirmPasswordElement) {
+        const confirmPassword = confirmPasswordElement.value;
+        if (confirmPassword.trim() === "") {
+            document.getElementById("confirm-password-error").textContent = "La conferma della password e obbligatoria.";
+            valid = false;
+        } else if (confirmPassword !== newPassword.value) {
+            document.getElementById("confirm-password-error").textContent = "Le password non corrispondono.";
+            valid = false;
+        }
+    }
+
+    if (valid) {
+        alert("Password cambiata con successo!");
+    }
 });
