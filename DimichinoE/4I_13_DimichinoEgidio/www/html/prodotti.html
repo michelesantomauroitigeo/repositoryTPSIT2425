@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Modifica Prodotti</title>
-    <link rel="stylesheet" href="../css/stile.css"> <!-- percorso corretto -->
+    <link rel="stylesheet" href="../css/stile.css">
 </head>
 <body>
     <h1>Gestione Prodotti</h1>
+
+    <!-- Pulsanti -->
     <button onclick="mostraForm()">Aggiungi Prodotti</button>
-    <button onclick="mostraLista()">Lista Prodotti</button>
+    <a href="lista_prodotti.html">
+        <button>Lista Prodotti</button>
+    </a>
 
     <!-- FORM -->
     <div id="formProdotto" class="hidden">
@@ -41,30 +45,6 @@
         </form>
     </div>
 
-    <!-- LISTA -->
-    <div id="listaProdotti" class="hidden">
-        <h2>Elenco Prodotti</h2>
-        <table>
-            <tr>
-                <th>Nome</th>
-                <th>Descrizione</th>
-                <th>Prezzo</th>
-                <th>Sconto</th>
-                <th>Azioni</th>
-            </tr>
-            <tr>
-                <td>Maglietta</td>
-                <td>Maglietta in cotone</td>
-                <td>19.99€</td>
-                <td>10%</td>
-                <td>
-                    <button>Modifica</button>
-                    <button>Elimina</button>
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <script src="../js/script.js"></script> <!-- percorso corretto -->
+    <script src="../js/script.js"></script>
 </body>
 </html>

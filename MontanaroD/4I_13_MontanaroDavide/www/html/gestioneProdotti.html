@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/prodotti.css">
+    <script src="../js/prodotti.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Cartoleria Online - Gestione Prodotti</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#contatti" id="contatti">Contatti</a></li>
+                <li><a href="#altre infromazioni" id="modificaPassword">Modifica Password</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="pagina-gestione-prodotti">
+        <div class="opzioni-gestione">
+            <button onclick="apriAggiungiProdotto()">Aggiungi Prodotto</button>
+            <button onclick="apriListaProdotti()">Lista Prodotti</button>
+        </div>
+        <div id="modaleAggiungiProdotto" class="modale">
+            <div class="contenuto-modale">
+                <button onclick="chiudiModale('modaleAggiungiProdotto')" class="chiudi">&times;</button>
+                <h2>Aggiungi Prodotto</h2>
+
+                <form id="formAggiungiProdotto">
+                    <label for="nomeProdotto">Nome Prodotto</label>
+                    <input type="text" id="nomeProdotto" name="nomeProdotto" required>
+
+                    <label for="descrizioneProdotto">Descrizione</label>
+                    <textarea id="descrizioneProdotto" name="descrizioneProdotto" required></textarea>
+
+                    <label for="urlImmagine">URL Immagine</label>
+                    <input type="url" id="urlImmagine" name="urlImmagine" required>
+
+                    <button type="submit">Aggiungi Prodotto</button>
+                </form>
+            </div>
+        </div>
+<div id="modaleListaProdotti" class="modale">
+    <div class="contenuto-modale">
+        <button onclick="chiudiModale('modaleListaProdotti')" class="chiudi">&times;</button>
+        <h2>Lista Prodotti</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrizione</th>
+                    <th>Immagine</th>
+                    <th>Azioni</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Penna a Sfera</td>
+                    <td>Scrittura scorrevole, inchiostro nero.</td>
+                    <td><img src="../imgs/penna.jpg" alt="Penna a sfera" width="50"></td>
+                    <td>
+                        <button>Modifica</button>
+                        <button>Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Matita HB</td>
+                    <td>Matita in grafite con gommino.</td>
+                    <td><img src="../imgs/matita.jpg" alt="Matita HB" width="50"></td>
+                    <td>
+                        <button>Modifica</button>
+                        <button>Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gomma da Cancellare</td>
+                    <td>Ideale per matite e carboncini.</td>
+                    <td><img src="../imgs/gomma.jpg" alt="Gomma da cancellare" width="50"></td>
+                    <td>
+                        <button>Modifica</button>
+                        <button>Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Evidenziatore</td>
+                    <td>Colore fluorescente, lunga durata.</td>
+                    <td><img src="../imgs/evidenziatore.jpeg" alt="Evidenziatore" width="50"></td>
+                    <td>
+                        <button>Modifica</button>
+                        <button>Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Forbici</td>
+                    <td>Lame in acciaio inox, impugnatura ergonomica.</td>
+                    <td><img src="../imgs/forbici.jpeg" alt="Forbici" width="50"></td>
+                    <td>
+                        <button>Modifica</button>
+                        <button>Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Quaderno A4</td>
+                    <td>80 pagine a righe.</td>
+                    <td><img src="../imgs/quaderno.jpg" alt="Quaderno A4" width="50"></td>
+                    <td>
+                        <button>Modifica</button>
+                        <button>Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Raccoglitore</td>
+                    <td>Ad anelli per fogli formato A4.</td>
+                    <td><img src="../imgs/raccoglitore.jpg" alt="Raccoglitore" width="50"></td>
+                    <td>
+                        <button>Modifica</button>
+                        <button>Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Blocco Note Adesivo</td>
+                    <td>100 fogli riposizionabili.</td>
+                    <td><img src="../imgs/postit.jpeg" alt="Blocco Note Adesivo" width="50"></td>
+                    <td>
+                        <button>Modifica</button>
+                        <button>Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Correttore a Nastro</td>
+                    <td>Copertura perfetta, asciugatura immediata.</td>
+                    <td><img src="../imgs/correttore.jpg" alt="Correttore a nastro" width="50"></td>
+                    <td>
+                        <button>Modifica</button>
+                        <button>Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nastro Adesivo</td>
+                    <td>Trasparente e resistente.</td>
+                    <td><img src="../imgs/scotch.jpeg" alt="Nastro adesivo" width="50"></td>
+                    <td>
+                        <button>Modifica</button>
+                        <button>Elimina</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</html>
