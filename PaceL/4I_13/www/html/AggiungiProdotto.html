@@ -13,28 +13,26 @@
 			  	<button type="button" id="loginButton" onclick="apriFinestraLogin()">Login</button>
 			</span>
 		</header>
-
-		<form id="aggiungiProdotto">
-			<h1>Aggiungi Prodotto</h1>
-			<label for="nome">Nome del prodotto</label>
-			<input type="text" id="nomeProdotto" name="nomeProdotto">
-			<br>
-			<br>
-			<br>
-			<p>Inserisci un'immagine del prodotto</p>
-			<input type="image" src="" alt="" width="249" height="249" id="immagineProdotto" name="immagineProdotto">
-			<br>
-			<br>
-			<br>
-			<textarea id="descrizioneProdotto" name="descrizioneProdotto" rows="2" cols="30" placeholder="Inserisci una descrizione del prodotto"></textarea>
-			<br>
-			<br>
-			<label for="prezzo">Prezzo del prodotto</label>
-			<input type="number" id="prezzoProdotto" name="prezzoProdotto">
-			<br>
-			<br>
-			<button type="submit" id="inviaProdotto">Invia</button>
-		</form>
+		<div>
+			<form id="aggiungiProdotto">
+				<h1>Aggiungi Prodotto</h1>
+				<input type="text" id="nomeProdotto" name="nomeProdotto" placeholder="Inserisci il nome del prodotto">
+				<br>
+				<br>
+				<p>Inserisci un'immagine del prodotto</p>
+				<input type="image" src="" alt="" width="249" height="249" id="immagineProdotto" name="immagineProdotto">
+				<br>
+				<br>
+				<br>
+				<textarea id="descrizioneProdotto" name="descrizioneProdotto" rows="2" cols="30" placeholder="Inserisci una descrizione del prodotto"></textarea>
+				<br>
+				<br>
+				<input type="number" id="prezzoProdotto" name="prezzoProdotto" placeholder="Inserisci il prezzo del prodotto">
+				<br>
+				<br>
+				<button type="submit" id="inviaProdotto">Aggiungi Prodotto</button>
+			</form>
+		</div>
 
 		<footer>
 			<small>©2025 Calzature Pace. Diritti riservati.</small>
