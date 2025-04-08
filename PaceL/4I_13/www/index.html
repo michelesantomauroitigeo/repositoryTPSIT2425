@@ -17,7 +17,7 @@
 				<div id="contenutoFInestraLogin">
 					<span class="close">&times;</span>
 					<h2>Login</h2>
-					<form id="login">
+					<form action="html/Amministrazione.html" target="_blank" id="login">
 						<label for="username">Username</label>
 						<input type="text" id="username" name="username">
 						<span id="erroreUsername"></span>
@@ -25,6 +25,8 @@
 						<label for="password">Password</label>
 						<input type="password" id="password" name="password">
 						<span id="errorePassword"></span>
+						<br>
+						<span id="erroreCredenziali"></span>
 						<br>
 						<button type="submit" onclick="verificaCampi()">Invia</button>
 					</form>

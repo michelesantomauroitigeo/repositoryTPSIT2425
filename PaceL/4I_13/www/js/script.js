@@ -25,6 +25,11 @@ function verificaCampi() {
 	if (username === "") {
 		event.preventDefault();
 		document.getElementById("erroreUsername").textContent = "Compila questo campo.";
+	} else if (username !== "Lorenzo17") {
+		event.preventDefault();
+		document.getElementById("erroreUsername").textContent = "";
+		document.getElementById("erroreCredenziali").textContent = "Username o password invalidi.";
+		document.getElementById("erroreCredenziali").style.color = "red";
 	} else {
 		document.getElementById("erroreUsername").textContent = "";
 	}
@@ -32,6 +37,11 @@ function verificaCampi() {
 	if (password === "") {
 		event.preventDefault();
 		document.getElementById("errorePassword").textContent = "Compila questo campo.";
+	} else if (password !== "admin17") {
+		event.preventDefault();
+		document.getElementById("errorePassword").textContent = "";
+		document.getElementById("erroreCredenziali").textContent = "Username o password invalidi.";
+		document.getElementById("erroreCredenziali").style.color = "red";
 	} else {
 		document.getElementById("errorePassword").textContent = "";
 	}

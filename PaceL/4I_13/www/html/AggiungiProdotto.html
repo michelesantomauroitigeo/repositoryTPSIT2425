@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Aggiungi Prodotto</title>
+		<link rel="stylesheet" type="text/css" href="../css/style1.css">
+	</head>
+	<body>
+		<header>
+			<h1>Pace Calzature</h1>
+			<span>
+				<a href="../index.html">Home</a> &nbsp; &nbsp;
+			  	<button type="button" id="loginButton" onclick="apriFinestraLogin()">Login</button>
+			  	<a href="GestioneProdotti.html">Gestione Prodotti</a>
+			</span>
+		</header>
+		<div>
+			<form id="aggiungiProdotto">
+				<h1>Aggiungi Prodotto</h1>
+				<input type="text" id="nomeProdotto" name="nomeProdotto" placeholder="Inserisci il nome del prodotto">
+				<br>
+				<br>
+				<p>Inserisci un'immagine del prodotto</p>
+				<input type="image" src="" alt="" width="249" height="249" id="immagineProdotto" name="immagineProdotto">
+				<br>
+				<br>
+				<br>
+				<textarea id="descrizioneProdotto" name="descrizioneProdotto" rows="2" cols="30" placeholder="Inserisci una descrizione del prodotto"></textarea>
+				<br>
+				<br>
+				<input type="number" id="prezzoProdotto" name="prezzoProdotto" placeholder="Inserisci il prezzo del prodotto">
+				<br>
+				<br>
+				<button type="submit" id="inviaProdotto">Aggiungi Prodotto</button>
+			</form>
+		</div>
+
+		<footer>
+			<small>©2025 Calzature Pace. Diritti riservati.</small>
+		</footer>
+	</body>
+</html>
