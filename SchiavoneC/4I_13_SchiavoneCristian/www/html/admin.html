@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Area Amministratore</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <h1>Area Amministratore</h1>
+  </header>
+
+  <main style="text-align: center; padding: 2rem;">
+    <button onclick="location.href='modifica-password.html'" id="loginBtn">Modifica Password</button>
+    <button onclick="location.href='gestione-prodotti.html'" id="loginBtn">Gestione Prodotti</button>
+    <button onclick="openProductList()" id="loginBtn">Lista Prodotti</button>
+  </main>
+
+  <div id="productListModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="document.getElementById('productListModal').style.display='none'">&times;</span>
+      <h2>Lista Prodotti</h2>
+      <table border="1" style="width: 100%; margin-top: 1rem;">
+        <tr>
+          <th>Nome</th>
+          <th>Prezzo</th>
+          <th>Azioni</th>
+        </tr>
+        <tr>
+          <td>Occhiale Fashion</td>
+          <td>€49,99</td>
+          <td><button>Modifica</button> <button>Elimina</button></td>
+        </tr>
+                <tr>
+          <td>Occhiale Sport 2</td>
+          <td>€69,99</td>
+          <td><button>Modifica</button> <button>Elimina</button></td>
+        </tr>
+           <tr>
+          <td>Occhiale Classico</td>
+          <td>€39,99</td>
+          <td><button>Modifica</button> <button>Elimina</button></td>
+        </tr>
+                <tr>
+          <td>Occhiale Moda 4</td>
+          <td>€59,99</td>
+          <td><button>Modifica</button> <button>Elimina</button></td>
+        </tr>
+                <tr>
+          <td>Occhiale Tendenze 5</td>
+          <td>€79,99</td>
+          <td><button>Modifica</button> <button>Elimina</button></td>
+        </tr>
+                <tr>
+          <td>Occhiale Vintage 6</td>
+          <td>€89,99</td>
+          <td><button>Modifica</button> <button>Elimina</button></td>
+        </tr>
+                <tr>
+          <td>Occhiale Elegante 6</td>
+          <td>€99,99</td>
+          <td><button>Modifica</button> <button>Elimina</button></td>
+        </tr>
+                <tr>
+          <td>Occhiale Trendy 8</td>
+          <td>€54,99</td>
+          <td><button>Modifica</button> <button>Elimina</button></td>
+        </tr>
+                <tr>
+          <td>Occhiale Sportivo 9</td>
+          <td>€64,99</td>
+          <td><button>Modifica</button> <button>Elimina</button></td>
+        </tr>
+                <tr>
+          <td>Occhiale Lussuoso 10</td>
+          <td>€149,99</td>
+          <td><button>Modifica</button> <button>Elimina</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    function openProductList() {
+      document.getElementById('productListModal').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

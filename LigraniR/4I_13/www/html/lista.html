@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestione Prodotti - FaiDaTeShop</title>
+    <link rel="stylesheet" href="../css/lista.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>FaiDaTeShop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Prodotti</a></li>
+                <li><a href="#">Categorie</a></li>
+                <li><a href="#">Offerte</a></li>
+                <li><a href="#">Carrello</a></li>
+                <li><a href="gestione.html">Gestione</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sezione Prodotti -->
+    <main>
+        <section class="prodotti">
+            <h3>Gestisci Prodotti</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID Prodotto</th>
+                        <th>Nome Prodotto</th>
+                        <th>Prezzo</th>
+                        <th>Azioni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dati di esempio -->
+                    <tr>
+                        <td>001</td>
+                        <td>Trapano Elettrico</td>
+                        <td>€ 59,99</td>
+                        <td>
+                            <button class="rosso elimina">🗑️</button>
+                            <button class="blu modifica">✍️</button>
+                            <button class="verde">✅</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Set di viti</td>
+                        <td>€ 9,99</td>
+                        <td>
+                            <button class="rosso elimina">🗑️</button>
+                            <button class="blu modifica">✍️</button>
+                            <button class="verde">✅</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Sega Circolare</td>
+                        <td>€ 89,99</td>
+                        <td>
+                            <button class="rosso elimina">🗑️</button>
+                            <button class="blu modifica">✍️</button>
+                            <button class="verde">✅</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>004</td>
+                        <td>Martello Elettrico</td>
+                        <td>€ 99,99</td>
+                        <td>
+                            <button class="rosso elimina">🗑️</button>
+                            <button class="blu modifica">✍️</button>
+                            <button class="verde">✅</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>Set di chiodi</td>
+                        <td>€ 5,99</td>
+                        <td>
+                            <button class="rosso elimina">🗑️</button>
+                            <button class="blu modifica">✍️</button>
+                            <button class="verde">✅</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Pop-up Modifica -->
+            <div id="overlay"> 
+                <div id="popup">
+                    <button class="chiudi" onclick="chiudi()">X</button>
+                    <h2>Modifica Prodotto</h2>
+
+                    <label>Prodotto:</label>
+                    <input type="text" id="prodotto">
+
+                    <label>Prezzo (€):</label>
+                    <input type="number" min="0" step="0.01" id="prezzo">
+
+                    <button onclick="modifica()">Salva Modifiche</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="../js/scriptprodotti.js"></script>
+</body>
+</html>
