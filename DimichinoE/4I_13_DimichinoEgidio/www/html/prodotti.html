@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Modifica Prodotti</title>
+    <link rel="stylesheet" href="../css/stile.css">
+</head>
+<body>
+    <h1>Gestione Prodotti</h1>
+
+    <!-- Pulsanti -->
+    <button onclick="mostraForm()">Aggiungi Prodotti</button>
+    <a href="lista_prodotti.html">
+        <button>Lista Prodotti</button>
+    </a>
+
+    <!-- FORM -->
+    <div id="formProdotto" class="hidden">
+        <h2>Nuovo Prodotto</h2>
+        <form id="formAggiungiProdotto" onsubmit="return validaForm()">
+            <label>Nome Prodotto:
+                <input type="text" id="nomeProdotto">
+                <div class="errore" id="erroreNome"></div>
+            </label><br>
+
+            <label>Descrizione:
+                <input type="text" id="descrizione">
+                <div class="errore" id="erroreDescrizione"></div>
+            </label><br>
+
+            <label>Prezzo:
+                <input type="text" id="prezzo">
+                <div class="errore" id="errorePrezzo"></div>
+            </label><br>
+
+            <label>Sconto:
+                <input type="text" id="sconto">
+            </label><br>
+
+            <label>Immagine:
+                <input type="file" id="immagine">
+            </label><br>
+
+            <button type="submit">Salva</button>
+        </form>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

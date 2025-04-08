@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>FaiDaTeShop - Articoli Fai da Te</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/login.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="image/logo1.png" alt="FaiDaTeShop Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Prodotti</a></li>
+                <li><a href="#">Categorie</a></li>
+                <li><a href="#">Offerte</a></li>
+                <li><a href="#">Carrello</a></li>
+                <li><a href="#" onclick="Login()">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Promozionale -->
+    <section class="banner-promozionale">
+        <div class="testo-promo">
+            <h2>Scopri le Offerte Esclusive di Primavera!</h2>
+            <p>Fai da te con i migliori articoli a prezzi scontati.</p>
+            <a href="#" class="pulsante-azione">Scopri le Offerte</a>
+        </div>
+    </section>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Hero Section -->
+        <section class="principale">
+            <h2>Benvenuti su FaiDaTeShop</h2>
+            <p>Scopri i migliori articoli per il tuo fai da te! Trova tutto ciò che ti serve per realizzare i tuoi progetti.</p>
+            <a href="#" class="pulsante-azione">Acquista ORA!</a>
+        </section>
+
+        <!-- Categorie di Prodotti -->
+        <section class="categorie">
+            <h3>Le Nostre Categorie</h3>
+            <div class="categoria">
+                <img src="image/strumentiElettrici.png" alt="Strumenti Elettrici">
+                
+            </div>
+            <div class="categoria">
+                <img src="image/FAI_DA_TE.png" alt="Materiale per Fai da Te">
+                
+            </div>
+            <div class="categoria">
+                <img src="image/GIARDINAGGIO.png" alt="Giardinaggio">
+                
+            </div>
+            <div class="categoria">
+                <img src="image/FERRAMENTA.png" alt="Ferramenta">
+                
+            </div>
+        </section>
+
+        <!-- Prodotti in Evidenza -->
+        <section class="prodotti-evidenza">
+            <h3>Prodotti in Evidenza</h3>
+            <div class="prodotto">
+                <img src="image/trapano.png" alt="Trapano">
+                <h4>Trapano Elettrico</h4>
+                <p>€ 59,99</p>
+                <button>Aggiungi al Carrello</button>
+            </div>
+            <div class="prodotto">
+                <img src="image/viti.png" alt="Viti">
+                <h4>Set di Viti</h4>
+                <p>€ 9,99</p>
+                <button>Aggiungi al Carrello</button>
+            </div>
+            <div class="prodotto">
+                <img src="image/sega.png" alt="Sega">
+                <h4>Sega Circolare</h4>
+                <p>€ 89,99</p>
+                <button>Aggiungi al Carrello</button>
+            </div>
+        </section>
+
+        <!-- Offerte Speciali -->
+        <section class="offerte-speciali">
+            <h3>Offerte Speciali</h3>
+            <div class="offerta">
+                <img src="image/trapano2.png" alt="Sconto Trapano">
+                <h4>Trapano Elettrico - Sconto 20%</h4>
+                <p>€ 47,99</p>
+                <button>Aggiungi al Carrello</button>
+            </div>
+            <div class="offerta">
+                <img src="image/viti2.png" alt="Set di Viti">
+                <h4>Set di Viti - Sconto 15%</h4>
+                <p>€ 8,49</p>
+                <button>Aggiungi al Carrello</button>
+            </div>
+        </section>
+
+        <!-- Novità -->
+        <section class="nuovi-arrivi">
+            <h3>Novità in Arrivo</h3>
+            <div class="prodotto">
+                <img src="image/martello2.png" alt="Martello Elettrico">
+                <h4>Martello Elettrico</h4>
+                <p>€ 99,99</p>
+                <button>Aggiungi al Carrello</button>
+            </div>
+            <div class="prodotto">
+                <img src="image/setchiodi.png" alt="Set di Chiodi">
+                <h4>Set di Chiodi</h4>
+                <p>€ 5,99</p>
+                <button>Aggiungi al Carrello</button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="chi-siamo">
+            <h3>Chi Siamo</h3>
+            <p>FaiDaTeShop è il tuo negozio online di fiducia per tutti gli articoli di bricolage e fai da te. Offriamo un'ampia gamma di strumenti, attrezzi e materiali per aiutarti a realizzare ogni progetto, dalla riparazione alla decorazione della casa.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 FaiDaTeShop - Tutti i diritti riservati</p>
+    </footer>
+
+    <div id="finestra" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);">
+        <div style="background:white; padding:20px; margin:100px auto; width:300px; position:relative;">
+            <h3>Login</h3>
+
+<form id="loginForm">
+    <input type="text" id="nomeUtente" placeholder="Nome utente"><br>
+    <span id="n-errore" style="color:red; display:none;">Inserisci il nome utente</span><br>
+
+    <input type="password" id="Password" placeholder="Password"><br>
+    <span id="p-errore" style="color:red; display:none;">Inserisci la password</span><br>
+
+    <button type="submit">Accedi</button>
+    <button type="button" onclick="chiusuraFinestra()">Chiudi</button>
+    <span id="errore-credenziali" style="color:red; display:none;"> Username e password non corrispondono</span>
+</form>
+        </div>
+    </div>
+    
+</body>
+</html>

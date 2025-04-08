@@ -3,6 +3,7 @@
 <head>
     <title>arnoauto.com</title>
     <link rel="stylesheet" href="css/stile.css">
+     <script src="js/script.js" ></script>
 </head>
 <body>
     <!-- Header -->
@@ -16,11 +17,32 @@
     <nav>
         <ul>
             
-            <li><a href="">Login</a></li>
-            <li><a href="">Registrati</a></li>
+            <button class="bottone" onclick="Login()">Login</button>
+           
         </ul>
     </nav>
 </header>
+    <div id="finestra">
+    <div id="visualizzazione">
+        <span onclick="chiusuraFinestra()">&times;</span>
+                
+      <h2>PAGINA DI LOGIN</h2>
+      <form onsubmit="return validaLogin(event)">
+            <label for="name"> NomeUtente: </label>
+            <br> <br>
+            <input type="text" id="nomeUtente" name="name" placeholder="INSERISCI IL NOME UTENTE">
+            <span id="n-errore"> È obbligatorio compilare questo campo!! </span>
+
+            <label for="name"> Password: </label>
+            <br> <br>
+            <input type="text" id="Password" name="name" placeholder="INSERISCI LA PASSWORD">
+            <span id="p-errore"> È obbligatorio compilare questo campo!! </span>
+        <button type="submit">ACCEDI</button>
+      </form>
+    </div>
+  </div>
+
+
 
     <!-- Contenuto principale -->
     <main class="contenuto">

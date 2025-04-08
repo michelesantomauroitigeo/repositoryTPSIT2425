@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>Tabella utenti</title>
+        <script src="../js/script-prodotti.js" defer></script>
+        <link rel="stylesheet" href="../css/stile.css">
+    </head>
+    <body>
+
+        <h1>Tabella Prodotti</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Immagine</th>
+                    <th>Prodotto</th>
+                    <th>Prezzo in €</th>
+                    <th>FUNZIONI</th>
+                </tr>
+            </thead>
+                <tr>
+                    <td><img src="../img/iPhone16.jpg" class="img-lista"></td>
+                    <td>Smartphone Gamma Alta</td>
+                    <td>499,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+
+                        </label>                
+                    </td>      
+                </tr>
+                <tr>
+                    <td><img src="../img/cuffie-wireless.jpg" class="img-lista"></td>
+                    <td>Cuffie Wireless</td>
+                    <td>89,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+
+                        </label>                
+                    </td>      
+                </tr>
+                <tr>
+                    <td><img src="../img/tablet.jpg" class="img-lista"></td>
+                    <td>Tablet 10 Pollici</td>
+                    <td>299,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+
+                        </label>                
+                    </td>      
+                </tr>
+                <tr>
+                    <td><img src="../img/smartwatch.jpg" class="img-lista"></td>
+                    <td>Smartwatch Fitness</td>
+                    <td>159,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+
+                        </label>                
+                    </td>      
+                </tr>
+                <tr>
+                    <td><img src="../img/monitor.jpg" class="img-lista"></td>
+                    <td>Monitor 24" Full HD</td>
+                    <td>179,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+
+                        </label>                
+                    </td>      
+                </tr>
+                <tr>
+                    <td><img src="../img/tastiera-gaming.jpg" class="img-lista"></td>
+                    <td>Tastiera Gaming</td>
+                    <td>69,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+
+                        </label>                
+                    </td>      
+                </tr>
+                <tr>
+                    <td><img src="../img/mouse-wireless.jpg" class="img-lista"></td>
+                    <td>Mouse Wireless</td>
+                    <td>29,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+
+                        </label>                
+                    </td>      
+                </tr>
+                <tr>
+                    <td><img src="../img/altoparlante.jpg" class="img-lista"></td>
+                    <td>Altoparlante Bluetooth</td>
+                    <td>49,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+
+                        </label>                
+                    </td>      
+                </tr>
+                <tr>
+                    <td><img src="../img/powerbank.jpg" class="img-lista"></td>
+                    <td>Powerbank 10000mAh</td>
+                    <td>29,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+
+                        </label>                
+                    </td>      
+                </tr>
+                <tr>
+                    <td><img src="../img/webcam.jpg" class="img-lista"></td>
+                    <td>Webcam HD</td>
+                    <td>39,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+
+                        </label>                
+                    </td>      
+                </tr>
+        </table>
+ 
+                <div id="overlay"> 
+                    <div id="popup">
+                        <button class="chiudi" onclick="chiudi()">X</button>
+                        <h2>Modifica Prodotto</h2>
+                                                
+                        <label>Prodotto:</label>
+                        <input type="text" id="prodotto">
+        
+                        <label>Prezzo (€):</label>
+                        <input type="number" min="0" step="0.01" id="prezzo" >
+                        
+                        <button onclick="modifica()">Salva Modifiche</button>
+                    </div>
+                </div>
+        
+
+    </body>
+</html>
