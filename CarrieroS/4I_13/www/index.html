@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>ilmegliodellatavola.com</title>
+</head>
+<body>
+    <header>
+        Sapori Autentici - Il Meglio della Tradizione in Tavola!
+    </header>
+    <div class="container">
+        <ul class="destra">
+            <li>
+                <button type="button" class="Finestra" onclick="finestralogin()">login</button>
+            </li>
+        </ul>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Prodotti</a>
+            <a href="#">Chi Siamo</a>
+            <a href="#">Contatti</a>
+        </nav>
+        <div class="content">
+            <h2>Benvenuto nel Nostro Sito Vetrina!</h2>
+            <p>Qui puoi trovare una selezione dei nostri migliori prodotti.</p>
+            <p>Scorri la pagina per scoprire di più!</p>
+        </div>
+
+        <div class="aggiuntaprodotti">
+            <h2>Aggiungi un Nuovo Prodotto</h2>
+            <form id="prodottiform">
+                <input type="text" id="productName" placeholder="Nome Prodotto" required>
+                <input type="text" id="productDescription" placeholder="Descrizione" required>
+                <input type="text" id="productImage" placeholder="Percorso Immagine (es: imgs/nuovo.jpg)" required>
+                <button type="submit">Aggiungi Prodotto</button>
+            </form>
+        </div>
+
+        <div class="prodotti-container">
+            <div class="prodotti">
+                <img src="imgs/Olio Extra Vergine.jpeg" alt="Bottiglia di Olio Extra Vergine">
+                <h3>Olio Extra Vergine</h3>
+                <p>Olio d'oliva 100% italiano, spremuto a freddo.</p>
+            </div>
+            
+            <div class="prodotti">
+                <img src="imgs/Parmigiano Reggiano.jpeg" alt="Forma di Parmigiano Reggiano">
+                <h3>Parmigiano Reggiano</h3>
+                <p>Formaggio stagionato 24 mesi, gusto intenso.</p>
+            </div>
+            
+            <div class="prodotti">
+                <img src="imgs/Salame Toscano.jpg" alt="Salame Toscano artigianale">
+                <h3>Salame Toscano</h3>
+                <p>Salume tradizionale dal sapore unico.</p>
+            </div>
+            
+            <div class="prodotti">
+                <img src="imgs/Pasta Artigianale.png" alt="Pacco di Pasta Artigianale">
+                <h3>Pasta Artigianale</h3>
+                <p>Pasta di semola di grano duro, trafilata al bronzo.</p>
+            </div>
+            
+            <div class="prodotti">
+                <img src="imgs/Miele Millefiori.jpeg" alt="Vasetto di Miele Millefiori">
+                <h3>Miele Millefiori</h3>
+                <p>Miele naturale prodotto nelle colline italiane.</p>
+            </div>
+            
+            <div class="prodotti">
+                <img src="imgs/Vino Chianti.jpeg" alt="Bottiglia di Vino Chianti">
+                <h3>Vino Chianti</h3>
+                <p>Un classico vino rosso toscano DOCG.</p>
+            </div>
+            
+            <div class="prodotti">
+                <img src="imgs/Aceto Balsamico.jpg" alt="Bottiglia di Aceto Balsamico">
+                <h3>Aceto Balsamico</h3>
+                <p>Aceto balsamico di Modena IGP, invecchiato.</p>
+            </div>
+            
+            <div class="prodotti">
+                <img src="imgs/Tartufo Nero.jpg" alt="Tartufo Nero pregiato">
+                <h3>Tartufo Nero</h3>
+                <p>Pregiato tartufo nero italiano, ideale per ogni piatto.</p>
+            </div>
+            
+            <div class="prodotti">
+                <img src="imgs/Cioccolato Artigianale.jpg" alt="Tavoletta di Cioccolato Artigianale">
+                <h3>Cioccolato Artigianale</h3>
+                <p>Cioccolato fondente al 70%, prodotto a mano.</p>
+            </div>
+            
+            <div class="prodotti">
+                <img src="imgs/Caffè Espresso.jpg" alt="Tazza di Caffè Espresso">
+                <h3>Caffè Espresso</h3>
+                <p>Miscela di caffè arabica e robusta per un aroma perfetto.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="finestra_Login">
+        <div id="finestra">
+            <h2>Accedi al tuo account</h2>
+            <input type="text" id="username" placeholder="Nome utente"><br><br>
+            <input type="password" id="password" placeholder="Password"><br><br>
+            <button type="button" class="button_salva" onclick="chiudiFinestra()">Chiudi</button>
+            <button type="button" class="button_chiudi" onclick="accedi()">Accedi</button>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <footer>
+        &copy; 2025 Sapori Autentici. Tutti i diritti riservati.
+    </footer>
+</body>
+</html>

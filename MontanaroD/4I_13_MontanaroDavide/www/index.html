@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartoleriaOnline.com</title>
+    <link rel="stylesheet" href="css/stile.css">
+    <script type="text/javascript" src="js/script.js" defer></script>
+</head>
+<body>
+
+ <div id="finestraModale">
+    <div class="finestra">
+        <button id="chiudiFinestra" onclick="chiudiFinestra()">X</button>
+
+        <form id="formLogin" onsubmit="return verifica()">
+            <label for="nome">USERNAME</label>
+            <input type="text" id="nome" name="nome"><br>
+            <p id="errorNome">Username non inserito correttamente</p>
+            <label for="password">PASSWORD</label>
+
+            <input type="password" id="password" name="password"><br>
+            <p id="errorPassword">Password non inserita correttamente</p>
+            <button type="submit">ACCEDI</button>
+        </form>
+    </div>
+</div>
+
+    <header>
+        <h1>Cartoleria Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="html/carica.html">Carica Prodotto</a></li>
+                <li><a href="#">Contatti</a></li>
+                <li><button id="buttonAccedi">Accedi</button></li>
+            </ul>
+        </nav>
+    </header>
+        <h2>Prodotti in evidenza</h2>
+        <div class="contenitore-prodotti">
+            <div class="prodotto">
+                <img src="imgs/penna.jpg" alt="Penna a sfera">
+                <h3>Penna a Sfera</h3>
+                <p>Scrittura scorrevole, inchiostro nero.</p>
+                <span class="prezzo">€1.50</span>
+                <button class="acquista">Acquista</button>
+            </div>
+
+            <div class="prodotto">
+                <img src="imgs/matita.jpg" alt="Matita HB">
+                <h3>Matita HB</h3>
+                <p>Matita in grafite con gommino.</p>
+                <span class="prezzo">€0.80</span>
+                <button class="acquista">Acquista</button>
+            </div>
+
+            <div class="prodotto">
+                <img src="imgs/gomma.jpg" alt="Gomma da cancellare">
+                <h3>Gomma da Cancellare</h3>
+                <p>Ideale per matite e carboncini.</p>
+                <span class="prezzo">€1.20</span>
+                <button class="acquista">Acquista</button>
+            </div>
+
+            <div class="prodotto">
+                <img src="imgs/evidenziatore.jpeg" alt="Evidenziatore">
+                <h3>Evidenziatore</h3>
+                <p>Colore fluorescente, lunga durata.</p>
+                <span class="prezzo">€2.00</span>
+                <button class="acquista">Acquista</button>
+            </div>
+
+            <div class="prodotto">
+                <img src="imgs/forbici.jpeg" alt="Forbici">
+                <h3>Forbici</h3>
+                <p>Lame in acciaio inox, impugnatura ergonomica.</p>
+                <span class="prezzo">€3.50</span>
+                <button class="acquista">Acquista</button>
+            </div>
+
+            <div class="prodotto">
+                <img src="imgs/quaderno.jpg" alt="Quaderno A4">
+                <h3>Quaderno A4</h3>
+                <p>80 pagine a righe.</p>
+                <span class="prezzo">€2.50</span>
+                <button class="acquista">Acquista</button>
+            </div>
+
+            <div class="prodotto">
+                <img src="imgs/raccoglitore.jpg" alt="Raccoglitore">
+                <h3>Raccoglitore</h3>
+                <p>Ad anelli per fogli formato A4.</p>
+                <span class="prezzo">€4.00</span>
+                <button class="acquista">Acquista</button>
+            </div>
+
+            <div class="prodotto">
+                <img src="imgs/postit.jpeg" alt="Blocco Note Adesivo">
+                <h3>Blocco Note Adesivo</h3>
+                <p>100 fogli riposizionabili.</p>
+                <span class="prezzo">€1.80</span>
+                <button class="acquista">Acquista</button>
+            </div>
+
+            <div class="prodotto">
+                <img src="imgs/correttore.jpg" alt="Correttore a nastro">
+                <h3>Correttore a Nastro</h3>
+                <p>Copertura perfetta, asciugatura immediata.</p>
+                <span class="prezzo">€2.30</span>
+                <button class="acquista">Acquista</button>
+            </div>
+
+            <div class="prodotto">
+                <img src="imgs/scotch.jpeg" alt="Nastro adesivo">
+                <h3>Nastro Adesivo</h3>
+                <p>Trasparente e resistente.</p>
+                <span class="prezzo">€1.90</span>
+                <button class="acquista">Acquista</button>
+            </div>
+        </div>
+    <footer>
+        <p>&copy; 2025 Cartoleria Online - Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>

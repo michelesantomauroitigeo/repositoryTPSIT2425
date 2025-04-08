@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>arnoauto.com</title>
+    <link rel="stylesheet" href="css/stile.css">
+     <script src="js/script.js" ></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+    <div class="logo">
+        <img src="img/logo.jpg" alt="Logo">
+    </div>
+    <div class="title">
+        <h1>Ricambi Auto Shop</h1>
+    </div>
+    <nav>
+        <ul>
+            
+            <button onclick="Login()">Login</button>
+            <li><a href="">Registrati</a></li>
+        </ul>
+    </nav>
+</header>
+    <div id="finestra">
+    <div id="visualizzazione">
+        <span onclick="chiusuraFinestra()">&times;</span>
+                
+      <h2>PAGINA DI LOGIN</h2>
+      <form onsubmit="return validaLogin()">
+            <label for="name"> NomeUtente: </label>
+            <br> <br>
+            <input type="text" id="nomeUtente" name="name" placeholder="INSERISCI IL NOME UTENTE">
+            <span id="n-errore"> È obbligatorio compilare questo campo!! </span>
+
+            <label for="name"> Password: </label>
+            <br> <br>
+            <input type="text" id="Password" name="name" placeholder="INSERISCI LA PASSWORD">
+            <span id="p-errore"> È obbligatorio compilare questo campo!! </span>
+        <button type="submit">ACCEDI</button>
+      </form>
+    </div>
+  </div>
+
+
+
+    <!-- Contenuto principale -->
+    <main class="contenuto">
+        <section class="prodotti">
+            <h2>I Nostri Ricambi Auto</h2>
+            <div class="lista-prodotti">
+                <!-- Prodotto 1 -->
+                <div class="elemento-prodotto">
+                    <img src="img/motore.jpg" alt="Prolungatore motore">
+                    <h3>Motore</h3>
+                    <p>Descrizione breve del ricambio motore, ottimo per diverse marche.</p>
+                    <button class="pulsante-carrello">Aggiungi al carrello</button>
+                </div>
+                <!-- Prodotto 2 -->
+                <div class="elemento-prodotto">
+                    <img src="img/faro.jpg" alt="Faro anteriore">
+                    <h3>Faro Anteriore</h3>
+                    <p>Faro anteriore di alta qualità per veicoli compatibili.</p>
+                    <button class="pulsante-carrello">Aggiungi al carrello</button>
+                </div>
+                <!-- Prodotto 3 -->
+                <div class="elemento-prodotto">
+                    <img src="img/pastigliefreno.jpg" alt="Pastiglie Freno">
+                    <h3>Pastiglie Freno</h3>
+                    <p>Pastiglie freno resistenti per garantire la sicurezza del veicolo.</p>
+                    <button class="pulsante-carrello">Aggiungi al carrello</button>
+                </div>
+                <!-- Prodotto 4 -->
+                <div class="elemento-prodotto">
+                    <img src="img/batteriaauto.jpg" alt="Batteria Auto">
+                    <h3>Batteria Auto</h3>
+                    <p>Batteria di lunga durata, compatibile con vari modelli.</p>
+                    <button class="pulsante-carrello">Aggiungi al carrello</button>
+                </div>
+                <!-- Prodotto 5 -->
+                <div class="elemento-prodotto">
+                    <img src="img/filtroolio.jpg" alt="Filtro Olio">
+                    <h3>Filtro Olio</h3>
+                    <p>Filtro olio di alta qualità per il mantenimento del motore.</p>
+                    <button class="pulsante-carrello">Aggiungi al carrello</button>
+                </div>
+                <!-- Prodotto 6 -->
+                <div class="elemento-prodotto">
+                    <img src="img/cinghiadistribuzione.jpg" alt="Cinghia Distribuzione">
+                    <h3>Cinghia Distribuzione</h3>
+                    <p>Cinghia distribuzione adatta a diversi modelli di auto.</p>
+                    <button class="pulsante-carrello">Aggiungi al carrello</button>
+                </div>
+                <!-- Prodotto 7 -->
+                <div class="elemento-prodotto">
+                    <img src="img/ammortizzatore.png" alt="Ammortizzatore">
+                    <h3>Ammortizzatore</h3>
+                    <p>Ammortizzatore per veicoli, per una guida più sicura e confortevole.</p>
+                    <button class="pulsante-carrello">Aggiungi al carrello</button>
+                </div>
+                <!-- Prodotto 8 -->
+                <div class="elemento-prodotto">
+                    <img src="img/filtroaria.jpg" alt="Filtro Aria">
+                    <h3>Filtro Aria</h3>
+                    <p>Filtro aria per migliorare le performance del motore.</p>
+                    <button class="pulsante-carrello">Aggiungi al carrello</button>
+                </div>
+                <!-- Prodotto 9 -->
+                <div class="elemento-prodotto">
+                    <img src="img/liquidofreni.jpg" alt="Liquido Freni">
+                    <h3>Liquido Freni</h3>
+                    <p>Liquido freni di alta qualità per un'efficienza ottimale.</p>
+                    <button class="pulsante-carrello">Aggiungi al carrello</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Ricambi Auto Shop | Tutti i diritti riservati</p>
+    </footer>
+</body>
+</html>

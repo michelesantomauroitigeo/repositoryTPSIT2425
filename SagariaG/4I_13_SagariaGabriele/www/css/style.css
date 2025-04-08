@@ -1,0 +1,238 @@
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+img{
+	width: 13%;
+	height: 13%;
+}
+
+input{
+	background-color: #e3e1e1;
+	border-radius: 25px;
+	width: 25%;
+	height: 10%;
+	font-size: 25px;
+	color: #757474;
+	text-align: center;
+}
+
+nav button{
+	color:#de9947;
+	font-size: 195%;
+}
+
+.login{
+	width: 6.5%;
+	height: 49%;
+	display: flex;
+	justify-content: space-between;
+	margin-right:2%;
+}
+
+.login:hover{
+	border-radius: 5px;
+	background-color: #e3e1e1;
+}
+
+#immLogin{
+	width: 33px;
+}
+
+.promozione-settimana {
+  padding: 20px;
+  background-color: #f2f0f0;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1{
+	color:#de9947 ;
+}
+
+.prodotti {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top:3%;
+  margin-bottom: 1.5%;
+}
+
+.prodotto {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0,0.1) 0px 4px 6px;
+  padding: 15px;
+}
+
+.prodotto img {
+  width: 100%;
+  max-width: 200px; /*per modificare la crandezza del prodotto*/
+  height: auto; 
+  display: block; 
+  margin: auto; 
+}
+
+.prodotto span{
+	color: darkorange;
+	font-size: 140%;
+}
+
+.prodotto:hover
+{
+	background-color: #dedcdc;
+
+}
+
+
+.novita {
+  padding: 20px;
+  background-color: #f2f0f0;
+  margin-top: 5%;
+
+}
+
+.header_novita {
+  text-align: center;
+}
+
+.header_novita h1{
+	color:darkblue ;
+}
+
+
+.prodotto_novita {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0,0.1) 0px 4px 6px;
+  padding: 15px;
+}
+
+.prodotto_novita img {
+  width: 100%;
+  max-width: 200px; /*per modificare la crandezza del prodotto*/
+  height: auto; 
+  display: block; 
+  margin: auto; 
+}
+
+.prodotto_novita span{
+	color: darkblue;
+	font-size: 140%;
+}
+.prodotto_novita img {
+  width: 100%;
+  max-width: 200px; /*per modificare la crandezza del prodotto*/
+  height: auto; 
+  display: block; 
+  margin: auto; 
+}
+
+.prodotto_novita:hover
+{
+	background-color: #dedcdc;
+	
+}
+
+
+.pulsante {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.pulsante-promozioni {
+  background-color:#de9947; 
+  color: white; 
+  border: none; 
+  padding: 15px ; 
+  font-size: 18px;
+  border-radius: 25px; 
+}
+
+.pulsante_novita {
+  background-color:darkblue; 
+  color: white; 
+  border: none; 
+  padding: 15px ; 
+  font-size: 18px;
+  border-radius: 25px; 
+}
+
+
+.footer_promozione {
+  background-color:#de9947; /* Colore arancione simile all'immagine */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top:5% ;
+}
+
+.footer_content h2 {
+  font-size: 24px;
+}
+
+.footer-content p {
+  font-size: 20px;
+}
+
+.social img{
+	width: 2%;
+	margin-left: 1%;
+}
+
+
+#errorNome{
+	color:red;
+  font-size:105%;
+  display: none;
+}
+
+#errorPassword{
+	color:red;
+  font-size:105%;
+  display: none;
+}
+
+#finestraModale{
+  display: none; 
+  position: fixed; /*Serve a mantenera il div fisso al centro della pagina indipendentemente dal suo scorrimento*/
+  padding-top: 200px; 
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.finestra{
+  background-color: white;
+  border: solid black 1px;
+  border-radius: 15px;
+  width: 22% ;
+  margin: auto;
+  text-align: center;
+  padding: 1%;
+}
+
+.finestra label{
+  font-size: 125%;
+}
+
+.finestra input{
+  background-color: #e3e1e1;
+  border-radius: 25px;
+  width: 65%;
+  height: 10%;
+  font-size: 25px;
+}
+
+.finestra button{
+  color:#de9947;
+  font-size: 115%;
+}

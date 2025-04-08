@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <title>Fashion Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/script.js" defer></script>
+</head>
+<body>
+    <header>Dimichino Style</header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Contatti</a>
+        <a href="#">Chi Siamo</a>
+        <button id="pulsante" onclick="Finestra()">Accedi</button>
+    </nav>
+
+    <div id="finestra">
+      <div class="login">
+        <h2>PAGINA DI ACCESSO</h2>
+        <form id="formLogin" onsubmit="return invio(event)"><!-- Event è un paramatro che si passa per evetira che il form invia i dati -->
+          <label for="nome">NOME:</label><br>
+          <input type="text" id="nome"><br>
+          <p id="nomeErrato">Nome non inserito correttamente</p>
+          <label for="password">PASSWORD:</label><br>
+          <input type="password" id="password"><br>
+          <p id="passwordErrata">Password non inserita correttamente</p><br>
+          <button type="submit">LOGIN</button>
+        </form>
+      </div>
+    </div>
+    <div class="banner">IL MEGLIO SOLO DA NOI!</div>
+    <div class="products">
+        <div class="product">
+            <img src="imgs/magliaBianca.jpg" alt="Prodotto 1">
+            <h3>Maglietta Bianca</h3>
+            <p>€19.99</p>
+        </div>
+        <div class="product">
+            <img src="imgs/PantaloniNeri.jpg" alt="Prodotto 1">
+            <h3>Pantaloni Neri</h3>
+            <p>€29.99</p>
+        </div>
+        <div class="product">
+            <img src="imgs/GiaccaDiJeans.jpg" alt="Prodotto 3">
+            <h3>Giacca Jeans</h3>
+            <p>€49.99</p>
+        </div>
+        <div class="product">
+            <img src="imgs/ScarpeSportive.jpg" alt="Prodotto 4">
+            <h3>Scarpe Sportive</h3>
+            <p>€59.99</p>
+        </div>
+        <div class="product">
+            <img src="imgs/GiubbiniInvernali.jpg" alt="Prodotto 5">
+            <h3>Giubbotto Invernale</h3>
+            <p>€79.99</p>
+        </div>
+        <div class="product">
+            <img src="imgs/Cappelli.jpg" alt="Prodotto 6">
+            <h3>Cappellino Casual</h3>
+            <p>€14.99</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Dimichino Style  - Tutti i diritti riservati
+    </footer>
+</body>
+</html>
