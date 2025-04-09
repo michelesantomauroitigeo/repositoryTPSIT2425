@@ -16,16 +16,14 @@
     </div>
 </nav>
 
-<!-- HEADER -->
 <header>
     <h1>Farmacia San Rocco</h1>
     <p>Benvenuti nella nostra farmacia online</p>
 </header>
 
-<!-- CONTENUTO -->
 <div class="container">
     <h2>I nostri prodotti:</h2>
-    <ul>
+    <ul id="listaProdotti">
         <li class="PRODOTTO">
             <img src="imgs/aspirina.jpeg" alt="Aspirina 500mg">
             <div class="INFO">
@@ -107,10 +105,27 @@
             </div>
         </li>
     </ul>
-    <button onclick="mostraListaProdotti()" class="bottone-amministrazione">Carica Prodotti</button>
+
+    <button id="btnListaProdotti" style="display:none;" onclick="caricaProdotti()">Lista Prodotti</button>
+    <button id="btnCaricaProdotto" style="display:none;" onclick="apriFormCarica()">Carica Prodotto</button>
+
+    <div id="aggiungiProdottoForm" style="display:none;">
+        <h3>Aggiungi un nuovo prodotto</h3>
+        <form id="formAggiungi" onsubmit="aggiungiProdotto(event)">
+            <label for="nomeProdotto">Nome</label>
+            <input type="text" id="nomeProdotto" required><br>
+
+            <label for="descrizioneProdotto">Descrizione</label>
+            <input type="text" id="descrizioneProdotto" required><br>
+
+            <label for="prezzoProdotto">Prezzo</label>
+            <input type="text" id="prezzoProdotto" required><br>
+
+            <button type="submit">Aggiungi Prodotto</button>
+        </form>
+    </div>
 </div>
 
-<!-- Modale per visualizzare i prodotti -->
 <div id="finestraLista" style="display:none;">
     <div class="finestra" style="background:white; padding:20px; border-radius:10px; width:80%; margin:50px auto;">
         <h2>Lista Prodotti</h2>
@@ -120,30 +135,26 @@
                     <th>Nome</th>
                     <th>Descrizione</th>
                     <th>Prezzo</th>
-                    <th>Azioni</th>
                 </tr>
             </thead>
-            <tbody id="corpo-tabella">
-                <!-- Qui andranno i prodotti -->
-            </tbody>
+            <tbody id="corpoTabella"></tbody>
         </table>
         <br>
-        <button onclick="chiudiListaProdotti()">Chiudi</button>
+        <button onclick="chiusuraFinestraLista()">Chiudi</button>
     </div>
 </div>
 
-<!-- Modale di Login -->
 <div id="finestraModale" style="display:none;">
     <div class="finestra">
         <span onclick="chiusuraFinestra()" style="cursor:pointer; float:right; font-size:20px;">&times;</span>
         <h2>Accesso Area Riservata</h2>
-        <form id="formLogin" onsubmit="return controllo(event)">
-            <label for="nome">USERNAME</label>
-            <input type="text" id="nome" name="nome"><br>
+        <form id="formLogin" onsubmit="login(event)">
+            <label for="nomeUtente">USERNAME</label>
+            <input type="text" id="nomeUtente" name="nomeUtente"><br>
             <p id="errorNome" style="display:none; color:red;">Username non inserito correttamente</p>
             
-            <label for="password">PASSWORD</label>
-            <input type="password" id="password" name="password"><br>
+            <label for="passwordUtente">PASSWORD</label>
+            <input type="password" id="passwordUtente" name="passwordUtente"><br>
             <p id="errorPassword" style="display:none; color:red;">Password non inserita correttamente</p>
             
             <button type="submit">ACCEDI</button>
@@ -157,4 +168,3 @@
 
 </body>
 </html>
-
