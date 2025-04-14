@@ -1,226 +1,240 @@
-/* Resetta alcune impostazioni di base del browser */
+/* Reset generale */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Corpo della pagina */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    padding: 0;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
 /* Header */
 header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 header h1 {
-    font-size: 2rem;
-    margin: 0;
+  margin: 0;
 }
 
-/* Pulsante di login */
-#loginBtn {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 5px;
-    margin-top: 1rem;
+/* Pulsanti */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
 }
 
-#loginBtn:hover {
-    background-color: #45a049;
+button:hover {
+  background-color: #0056b3;
 }
 
-/* Sezione Prodotti */
-main {
-    padding: 2rem;
-    text-align: center;
+/* Stile generico per sezioni */
+section {
+  padding: 20px;
+  margin: 10px;
 }
 
-#prodotti h2 {
-    margin-bottom: 2rem;
-    font-size: 1.8rem;
+/* Stile box di login */
+.login-box {
+  width: 300px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Lista prodotti */
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+}
+
+/* Stile dei prodotti nella homepage */
+#prodotti {
+  padding: 20px;
+  background-color: white;
+}
+
 .product-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 .product {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    padding: 15px;
-    width: 100%;
-    max-width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product img {
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid #eee;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 
 .product h3 {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    color: #333;
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
 
 .product p {
-    color: #666;
-    margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
 }
 
-.price {
-    display: block;
-    margin-top: 1rem;
-    font-weight: bold;
-    color: #4CAF50;
+.product .price {
+  font-size: 1.3rem;
+  color: #007bff;
+  margin-top: 10px;
 }
 
-/* Modal di Login */
-.modal {
-    display: none; 
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 50px;
+/* Gestione degli utenti */
+#users-list {
+  margin-top: 20px;
 }
 
-.modal-content {
-    background-color: white;
-    margin: auto;
-    padding: 2rem;
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+.user-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.close-btn {
-    font-size: 1.5rem;
-    color: #aaa;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 20px;
+.user-item p {
+  font-size: 1rem;
+  color: #333;
+  margin: 5px 0;
 }
 
-.close-btn:hover {
-    color: #333;
+.user-item button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.modal h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+.user-item button:hover {
+  background-color: #0056b3;
 }
 
-#loginForm input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-#loginForm button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#loginForm button:hover {
-    background-color: #45a049;
-}
-
-.error-message {
-    color: red;
-    font-size: 0.9rem;
-}
-
-/* Form di aggiunta prodotto */
-#productSection {
-    background-color: #fff;
-    padding: 2rem;
-    margin-top: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    display: none;
-}
-
-#productSection h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-#addProductForm input, #addProductForm textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-#addProductForm button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#addProductForm button:hover {
-    background-color: #45a049;
-}
-
-/* Pulsante di logout */
-#logoutBtn {
-    background-color: #f44336;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 5px;
-    margin-top: 1rem;
-    display: none;
-}
-
-#logoutBtn:hover {
-    background-color: #e53935;
-}
-.error-message {
+.user-item .disabled {
   color: red;
-  font-size: 0.875rem;
-  margin-top: 0.25rem;
+}
+
+.user-item .enabled {
+  color: green;
+}
+
+/* Tabelle e liste */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+/* Stile per la pagina amministrativa */
+#admin-dashboard {
+  padding: 20px;
+}
+
+.admin-section {
+  margin-bottom: 30px;
+}
+
+.admin-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.admin-section .admin-button {
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.admin-section .admin-button:hover {
+  background-color: #218838;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .login-box {
+    width: 250px;
+  }
+
+  .user-item {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+
+  .login-box {
+    width: 100%;
+    margin: 20px;
+  }
 }
