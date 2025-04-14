@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestione Prodotti</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Gestione Prodotti</h1>
+  </header>
+
+  <main class="admin-panel">
+    <h2>Aggiungi Prodotto</h2>
+    <form id="formProdotto">
+      <input type="text" id="nome" placeholder="Nome prodotto" required>
+      <input type="text" id="descrizione" placeholder="Descrizione" required>
+      <input type="number" id="prezzo" placeholder="Prezzo" required>
+      <input type="text" id="immagine" placeholder="Percorso immagine" required>
+      <button type="submit">Aggiungi</button>
+    </form>
+
+    <h2>Elenco Prodotti</h2>
+    <table id="tabellaProdotti">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Descrizione</th>
+          <th>Prezzo</th>
+          <th>Immagine</th>
+          <th>Azioni</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Prodotti dinamici -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="js/gestione_prodotti.js"></script>
+</body>
+</html>

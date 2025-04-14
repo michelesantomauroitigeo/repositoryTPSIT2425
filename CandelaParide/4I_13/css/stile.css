@@ -6,7 +6,6 @@ body{
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     color: #333;
-    line-height: 1.6;
 }
 
 .intestazione {
@@ -51,28 +50,71 @@ body{
 }
 
 .griglia-prodotti {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px; 
-    justify-content: center; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 15px;
 }
 
 .scheda-prodotto {
-    width: 250px;
-    margin-bottom: 15px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
 }
-
 
 .immagine-prodotto {
     height: 200px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
 }
 
 .immagine-prodotto img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 200px;
+    overflow: hidden;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+.info-prodotto {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-prodotto h2 {
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+    min-height: 40px;
+}
+
+.prezzo {
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.pulsante-aggiungi {
+    margin-top: auto; 
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 
 .info-prodotto {
     padding: 1rem;
@@ -98,7 +140,6 @@ body{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .pulsante-aggiungi:hover {
@@ -114,23 +155,38 @@ body{
     margin-top: 3rem;
 }
 
-.accesso{
-    margin-left:10px;
-}
+#accesso{
+    background: none;  
+    border: none;           
+    font: inherit;         
+    color: white; 
+    cursor: pointer;    
+    text-decoration: underline;
+    display: inline; 
+  }
 
-#overlay {
+  #overlay, #overlay-registrazione {
     display: none;
     position: fixed;
     top: 0;
     left: 0;
-    margin: auto;
     width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
-.chiudi{
+
+#popup, #popup-registrazione {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 300px;
+    position: relative;
+}
+
+.chiudi {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -140,28 +196,80 @@ body{
     cursor: pointer;
 }
 
-#popup {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    width: 300px;
-    position: relative; 
-    margin: auto;
+.registrati-btn, .accedi-btn {
+    background: none;
+    border: none;
+    color: #3498db;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
 }
 
-#errore-username{
-  display: none;  
-  color: red;
-}
-#errore-password{
-    display: none; 
-    color: red; 
+.registrati-btn:hover, .accedi-btn:hover {
+    color: #2980b9;
 }
 
-#errore-credenziali{
-    display: none; 
-    color: red; 
+#errore-credenziali, 
+#errore-username, 
+#errore-password,
+#errore-registrazione,
+#errore-email-reg,
+#errore-username-reg,
+#errore-password-reg,
+#errore-conf-password-reg {
+    display: none;
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
 }
+
+
+#popup h2, #popup-registrazione h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    font-size: 1.5rem;
+}
+
+#popup form, #popup-registrazione form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+#popup label, #popup-registrazione label {
+    font-weight: 600;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+#popup input, #popup-registrazione input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+#popup button[type="submit"], #popup-registrazione button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+#popup button[type="submit"]:hover, #popup-registrazione button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
 
 
 /*Sezione tabella*/
