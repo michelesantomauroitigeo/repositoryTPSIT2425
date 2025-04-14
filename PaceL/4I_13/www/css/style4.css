@@ -11,22 +11,40 @@ header {
 }
 
 footer {
-	margin-top: 38%;
 	text-align: center;
 	background-color: #abcbab;
 	border-top: 1px solid;
-    position: sticky;
-    bottom: 0;
+	position: sticky;
+	top: 0;
+	margin-top: 19%;
 }
 
 h1, h2 {
 	text-align: center;
 }
 
-p {
-	text-align: center;
+div {
+	margin: auto;
+	max-width: 700px;
 }
 
 #loginButton, #registerButton, #adminButton {
 	display: none;
+}
+
+td {
+	border: 1px solid;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+}
+
+.abilita {
+	padding: 10px;
+	background-color: green;
+}
+
+.disabilita {
+	padding: 10px;
+	background-color: red;
 }
