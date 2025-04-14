@@ -2,42 +2,49 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Prodotti</title>
+    <title>Modifica Prodotti</title>
     <link rel="stylesheet" href="../css/stile.css">
 </head>
 <body>
-    <header>Dimichino Style</header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">Contatti</a>
-        <a href="#">Chi Siamo</a>
-        <a href="../index.html">HOME</a>
-    </nav>
+    <h1>Gestione Prodotti</h1>
 
-    <div class="form">
-      <form id="prodotti">
-          <h2>Inserisci Prodotto</h2>
-          <label for="nomeProdotto">Nome Prodotto:</label>
-          <input type="text" id="nomeProdotto" name="nomeProdotto" >
+    <!-- Pulsanti -->
+    <button onclick="mostraForm()">Aggiungi Prodotti</button>
+    <a href="lista_prodotti.html">
+        <button>Lista Prodotti</button>
+    </a>
 
-          <label for="descrizione">Descrizione:</label>
-          <input id="descrizione" name="descrizione" ></input>
+    <!-- FORM -->
+    <div id="formProdotto" class="hidden">
+        <h2>Nuovo Prodotto</h2>
+        <form id="formAggiungiProdotto" onsubmit="return validaForm()">
+            <label>Nome Prodotto:
+                <input type="text" id="nomeProdotto">
+                <div class="errore" id="erroreNome"></div>
+            </label><br>
 
-          <label for="prezzo">Prezzo:</label>
-          <input type="text" id="prezzo" name="prezzo" >
+            <label>Descrizione:
+                <input type="text" id="descrizione">
+                <div class="errore" id="erroreDescrizione"></div>
+            </label><br>
 
-          <label for="sconto">Sconto:</label>
-          <input type="text" id="sconto" name="sconto">
+            <label>Prezzo:
+                <input type="text" id="prezzo">
+                <div class="errore" id="errorePrezzo"></div>
+            </label><br>
 
-          <label for="immagine">Immagine:</label>
-          <input type="file" id="immagine" name="immagine">
+            <label>Sconto:
+                <input type="text" id="sconto">
+            </label><br>
 
-          <button type="submit">Salva Prodotto</button>
-      </form>
+            <label>Immagine:
+                <input type="file" id="immagine">
+            </label><br>
+
+            <button type="submit">Salva</button>
+        </form>
     </div>
 
-    <footer>&copy; 2025 Dimichino Style - Tutti i diritti riservati</footer>
+    <script src="../js/script.js"></script>
 </body>
 </html>

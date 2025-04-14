@@ -1,35 +1,44 @@
+/* Stile generale */
 body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
 }
 
+/* Header */
 .header {
     background-color: #d0e2f2;
     color: #bfa14f;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 2% 5%;
 }
 
 .title h1 {
-    color: #bfa14f;
-    font-size: 2rem;
+    font-size: 2.5em;
     margin: 0;
 }
 
+/* Link */
+nav a {
+    font-size: 1.3em;
+    color: #bfa14f;
+    text-decoration: none;
+}
+
+/* Mini-sezione */
 .mini-section {
     background-color: #e1ecf4;
     padding: 0.5rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
+    font-size: 1.3em;
 }
 
+/* Contenitore prodotti */
 .immagini-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -48,22 +57,89 @@ body {
 .immagine img {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Aggiungi un bordo arrotondato all'immagine */
-    object-fit: cover;  /* Mantiene l'immagine proporzionata */
-    display: block; /* Rimuove eventuali spazi indesiderati sotto l'immagine */
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
 }
 
 .immagine:hover {
     transform: scale(1.03);
 }
 
-.mini-section1 {
-    margin-bottom: 0.5rem;
+/* Form di login */
+.login-form {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    width: 300px;
 }
 
-.mini-section1 a {
-    color: #bfa14f;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1rem;
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #bfa14f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Pannello di amministrazione */
+.product-management {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    width: 80%;
+}
+
+.product-management h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+#product-list {
+    list-style: none;
+    padding: 0;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100px;
+    height: auto;
+}
+
+.action-button {
+    background-color: #bfa14f;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.action-button:hover {
+    background-color: #8d7f3f;
 }

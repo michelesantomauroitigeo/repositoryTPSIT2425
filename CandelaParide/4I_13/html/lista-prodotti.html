@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <title>Tabella prodotti casa</title>
+        <script src="../js/script-prodotti.js" defer></script>
+        <link rel="stylesheet" href="../css/stile.css">
+    </head>
+    <body>
+
+        <h1>Tabella Prodotti per la Casa</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Immagine</th>
+                    <th>Prodotto</th>
+                    <th>Prezzo in €</th>
+                    <th>FUNZIONI</th>
+                </tr>
+            </thead>
+                <tr>
+                    <td><img src="../img/aspirapolvere.jpg" class="img-lista"></td>
+                    <td>Aspirapolvere Senza Fili</td>
+                    <td>199,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+                    </td>      
+                </tr>
+                <tr>
+                    <td><img src="../img/televisore.jpg" class="img-lista"></td>
+                    <td>Televisore 55" 4K Smart TV</td>
+                    <td>599,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+                    </td>      
+                </tr>
+                <tr>
+                    <td><img src="../img/lavatrice.jpg" class="img-lista"></td>
+                    <td>Lavatrice Carica Frontale 8kg</td>
+                    <td>449,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+                    </td>      
+                </tr>
+                <tr>
+                    <td><img src="../img/frigorifero.jpg" class="img-lista"></td>
+                    <td>Frigorifero Doppia Porta</td>
+                    <td>899,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+                    </td>      
+                </tr>
+                <tr>
+                    <td><img src="../img/forno.jpg" class="img-lista"></td>
+                    <td>Forno Elettrico Multifunzione</td>
+                    <td>349,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+                    </td>      
+                </tr>
+                <tr>
+                    <td><img src="../img/lavastoviglie.jpg" class="img-lista"></td>
+                    <td>Lavastoviglie 12 Posti</td>
+                    <td>529,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+                    </td>      
+                </tr>
+                <tr>
+                    <td><img src="../img/microonde.jpg" class="img-lista"></td>
+                    <td>Forno a Microonde 25L</td>
+                    <td>129,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+                    </td>      
+                </tr>
+                <tr>
+                    <td><img src="../img/condizionatore.jpg" class="img-lista"></td>
+                    <td>Condizionatore Portatile</td>
+                    <td>299,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+                    </td>      
+                </tr>
+                <tr>
+                    <td><img src="../img/robot-cucina.jpg" class="img-lista"></td>
+                    <td>Robot da Cucina Multifunzione</td>
+                    <td>249,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+                    </td>      
+                </tr>
+                <tr>
+                    <td><img src="../img/stufa.jpg" class="img-lista"></td>
+                    <td>Stufa Elettrica a Olio</td>
+                    <td>89,99</td>
+                    <td>
+                        <button class="elimina" title="Elimina">X</button>
+                        <button class="modifica" title="Modifica">M</button>
+                    </td>      
+                </tr>
+        </table>
+ 
+        <div id="overlay"> 
+            <div id="popup">
+                <button class="chiudi" onclick="chiudi()">X</button>
+                <h2>Modifica Prodotto</h2>
+                                        
+                <label>Prodotto:</label>
+                <input type="text" id="prodotto">
+
+                <label>Prezzo (€):</label>
+                <input type="number" min="0" step="0.01" id="prezzo" >
+                
+                <button onclick="modifica()">Salva Modifiche</button>
+            </div>
+        </div>
+    </body>
+</html>

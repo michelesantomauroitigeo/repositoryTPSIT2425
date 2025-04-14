@@ -1,0 +1,104 @@
+
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Utenti Registrati</title>
+    <link rel="stylesheet" href="../css/stile2.css">
+    <script src="../js/script.js" defer></script>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+    <div class="logo">
+        <img src="../img/logo.jpg" alt="Logo">
+    </div>
+    <div class="title">
+        <h1>Ricambi Auto Shop</h1>
+    </div>
+    <nav>
+        <ul>
+            
+             <li><button onclick="window.location.href='amministrazione.html'">Torna all'Area Riservata</button></li>
+            <li><button onclick="window.location.href='../index.html'">Home</button></li>
+           
+        </ul>
+    </nav>
+</header>
+
+    <h2>Elenco Utenti Registrati</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Data di Registrazione</th>
+                <th>Data Ultimo Accesso</th>
+                <th>Abilita</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>luca89</td>
+                <td>2022-05-17</td>
+                <td>2025-03-30</td>
+                <td><input onclick="abilita(this, 'check_1')" type="checkbox" id="check_1"></td>
+            </tr>
+            <tr>
+                <td>giulia_r</td>
+                <td>2023-01-10</td>
+                <td>2025-04-10</td>
+                <td><input onclick="abilita(this, 'check_2')" type="checkbox" id="check_2"></td>
+            </tr>
+            <tr>
+                <td>mario22</td>
+                <td>2021-08-22</td>
+                <td>2025-04-01</td>
+                <td><input onclick="abilita(this, 'check_3')" type="checkbox" id="check_3"></td>
+            </tr>
+            <tr>
+                <td>francy_p</td>
+                <td>2020-11-05</td>
+                <td>2025-02-18</td>
+                <td><input onclick="abilita(this, 'check_4')" type="checkbox" id="check_4"></td>
+            </tr>
+            <tr>
+                <td>alessio98</td>
+                <td>2022-03-14</td>
+                <td>2025-04-12</td>
+                <td><input onclick="abilita(this, 'check_5')" type="checkbox" id="check_5"></td>
+            </tr>
+            <tr>
+                <td>vale.m</td>
+                <td>2023-09-03</td>
+                <td>2025-04-09</td>
+                <td><input onclick="abilita(this, 'check_6')" type="checkbox" id="check_6"></td>
+            </tr>
+            <tr>
+                <td>nina_ross</td>
+                <td>2022-12-27</td>
+                <td>2025-03-25</td>
+                <td><input onclick="abilita(this, 'check_7')" type="checkbox" id="check_7"></td>
+            </tr>
+            <tr>
+                <td>davide_z</td>
+                <td>2021-06-19</td>
+                <td>2025-01-15</td>
+                <td><input onclick="abilita(this, 'check_8')" type="checkbox" id="check_8"></td>
+            </tr>
+            <tr>
+                <td>elena.l</td>
+                <td>2020-02-02</td>
+                <td>2024-12-28</td>
+                <td><input onclick="abilita(this, 'check_9')" type="checkbox" id="check_9"></td>
+            </tr>
+            <tr>
+                <td>tommyk</td>
+                <td>2023-07-25</td>
+                <td>2025-04-13</td>
+                <td><input onclick="abilita(this, 'check_10')" type="checkbox" id="check_10"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Modifica Prodotti</title>
+    <link rel="stylesheet" href="../css/stile1.css">
+    <script src="../js/script.js" ></script>
+</head>
+<body>
+
+<!-- Intestazione -->
+<header class="intestazione">
+    <div class="logo">
+        <img src="../img/logo.jpg" alt="Logo">
+    </div>
+    <div class="titolo">
+        <h1>Ricambi Auto Shop</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><button onclick="window.location.href='amministrazione.html'">Torna all'Area Riservata</button></li>
+            <li><button onclick="window.location.href='../index.html'">Home</button></li>
+        </ul>
+    </nav>
+</header>
+<div id="finestraModifica">
+        <div id="visualizzazione">
+                <span onclick="chiusuraFinestraModifica()">&times;</span>
+                
+    <h2>Modifica Dati</h2>
+    <form >
+        <div class="form">
+            <label for="nome">Titolo</label>
+            <input type="text" id="nome" name="nome" >
+        </div>
+        <div class="form">
+            <label for="descrizione">Descrizione</label>
+            <input type="text" id="descrizione" name="descrizione">
+        </div>
+     <button type="button" onclick="salvaModifiche()">Salva Modifiche</button>
+    </form>
+</div>
+</div>
+<!-- Contenuto -->
+<main class="contenuto-principale">
+    <h2>Gestione Prodotti</h2>
+
+    <button class="bottone-amministrazione" onclick="aggiungi()">Aggiungi Prodotto</button>
+
+    <!-- Lista prodotti visibile direttamente nella pagina -->
+    <section class="lista-prodotti">
+        <h2>Lista Prodotti</h2>
+        <table class="tabella-prodotti">
+            <thead>
+                <tr>
+                    <th>Titolo</th>
+                    <th>Descrizione</th>
+                    <th>Azioni</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Motore</td>
+                    <td>Descrizione breve del ricambio motore, ottimo per diverse marche.</td>
+                    <td>
+                        <button class="azione" onclick="modifica(this)">Modifica</button>
+                        <button class="azione elimina" onclick="elimina(this)">Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Faro Anteriore</td>
+                    <td>Faro anteriore di alta qualità per veicoli compatibili.</td>
+                    <td>
+                        <button class="azione" onclick="modifica(this)">Modifica</button>
+                        <button class="azione elimina" onclick="elimina(this)">Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pastiglie Freno</td>
+                    <td>Pastiglie freno resistenti per garantire la sicurezza del veicolo.</td>
+                    <td>
+                        <button class="azione" onclick="modifica(this)">Modifica</button>
+                        <button class="azione elimina" onclick="elimina(this)">Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Batteria Auto</td>
+                    <td>Batteria di lunga durata, compatibile con vari modelli.</td>
+                    <td>
+                        <button class="azione" onclick="modifica(this)">Modifica</button>
+                        <button class="azione elimina" onclick="elimina(this)">Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Filtro Olio</td>
+                    <td>Filtro olio di alta qualità per il mantenimento del motore.</td>
+                    <td>
+                        <button class="azione" onclick="modifica(this)">Modifica</button>
+                        <button class="azione elimina" onclick="elimina(this)">Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cinghia Distribuzione</td>
+                    <td>Cinghia distribuzione adatta a diversi modelli di auto.</td>
+                    <td>
+                        <button class="azione" onclick="modifica(this)">Modifica</button>
+                        <button class="azione elimina" onclick="elimina(this)">Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ammortizzatore</td>
+                    <td>Ammortizzatore per veicoli, per una guida più sicura e confortevole.</td>
+                    <td>
+                       <button class="azione" onclick="modifica(this)">Modifica</button>
+                        <button class="azione elimina" onclick="elimina(this)">Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Filtro Aria</td>
+                    <td>Filtro aria per migliorare le performance del motore.</td>
+                    <td>
+                        <button class="azione" onclick="modifica(this)">Modifica</button>
+                        <button class="azione elimina" onclick="elimina(this)">Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Liquido Freni</td>
+                    <td>Liquido freni di alta qualità per un'efficienza ottimale.</td>
+                    <td>
+                        <button class="azione" onclick="modifica(this)">Modifica</button>
+                        <button class="azione elimina" onclick="elimina(this)">Elimina</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<!-- Popup per aggiungere prodotto -->
+<div id="finestraAggiungi" >
+    <div id="visualizzazione">
+        <span onclick="chiusuraFinestraAggiungi()">&times;</span>
+        <form onsubmit="return valida(event)">
+            <label for="immagine">Immagine del Prodotto:</label><br><br>
+            <input type="file" id="immagine" name="immagine" accept="image/*">
+            <span id="errore-immagine">È obbligatorio caricare un'immagine!</span><br><br>
+
+            <label for="titolo">Titolo del Prodotto:</label><br><br>
+            <input type="text" id="titolo" name="titolo" placeholder="INSERISCI IL TITOLO DEL PRODOTTO">
+            <span id="errore-titolo">È obbligatorio inserire un titolo!</span><br><br>
+
+            <label for="descrizione">Descrizione:</label><br><br>
+            <textarea id="descrizione" name="descrizione" placeholder="INSERISCI LA DESCRIZIONE" rows="4"></textarea>
+            <span id="errore-descrizione">È obbligatorio inserire una descrizione!</span><br><br>
+
+            <button type="submit">AGGIUNGI PRODOTTO</button>
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="piè-di-pagina">
+    <p>&copy; 2025 Ricambi Auto Shop. Tutti i diritti riservati.</p>
+</footer>
+
+</body>
+</html>

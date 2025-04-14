@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luce & Perle</title>
+    <title>Bagliore Glamour – Gioielli & Bigiotteria</title>
     <link rel="stylesheet" href="css/stile.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
 
-    <header class="header">
+     <header class="header">
         <div class="title">
-            <div class="logo"></div>
-            <h1>Luce & Perle</h1>
+            <h1>Bagliore Glamour</h1>
         </div>
-        <nav class="link-section">
-            <span class="link">Collezione</span>
-            <span class="link">Offerte</span>
-            <span class="link">Chi siamo</span>
-        </nav>
+<nav>
+    <a href="html/login.html" class="link">Collezione</a>
+</nav>
+
     </header>
-    
-    <nav class="mini-section">
+
+    <nav class="mini-section" style="font-size: 1.3em;">
         <span>Home</span>
         <span>Anelli</span>
         <span>Bracciali</span>
@@ -31,54 +30,76 @@
     <main class="immagini-container">
         <div class="immagine">
             <div class="mini-section1">
-                <span>Collana in argento 925 con perla naturale</span>
+                <span>Collana in argento 925 con perla naturale</span><br>
+                <strong>€49,90</strong>
             </div> 
             <img src="imgs/collana.png" alt="Collana in argento">
         </div>
         <div class="immagine">
             <div class="mini-section1">
-                <span>Orecchini pendenti in oro rosa</span>
+                <span>Orecchini pendenti in oro rosa</span><br>
+                <strong>€59,90</strong>
             </div>
             <img src="imgs/orecchini.png" alt="Orecchini eleganti">
         </div>
         <div class="immagine">
             <div class="mini-section1">
-                <span>Bracciale con charm cuore</span>
+                <span>Bracciale con charm cuore</span><br>
+                <strong>€39,90</strong>
             </div>
             <img src="imgs/bracciale.png" alt="Bracciale donna">
         </div>
         <div class="immagine">
             <div class="mini-section1">
-                <span>Anello regolabile con zirconi</span>
+                <span>Anello regolabile con zirconi</span><br>
+                <strong>€29,90</strong>
             </div>
             <img src="imgs/anello.png" alt="Anello moda">
         </div>
+
         <!-- Nuovi prodotti -->
         <div class="immagine">
             <div class="mini-section1">
-                <span>Collana con pendente a cuore</span>
+                <span>Collana con pendente a cuore</span><br>
+                <strong>€45,00</strong>
             </div>
             <img src="imgs/collana-cuore.png" alt="Collana con cuore">
         </div>
         <div class="immagine">
             <div class="mini-section1">
-                <span>Orecchini a cerchio con zirconi</span>
+                <span>Orecchini a cerchio con zirconi</span><br>
+                <strong>€34,90</strong>
             </div>
             <img src="imgs/orecchini-cerchio.png" alt="Orecchini a cerchio">
         </div>
         <div class="immagine">
             <div class="mini-section1">
-                <span>Bracciale rigido placcato oro</span>
+                <span>Bracciale rigido placcato oro</span><br>
+                <strong>€44,90</strong>
             </div>
             <img src="imgs/bracciale-rigido.png" alt="Bracciale rigido">
         </div>
         <div class="immagine">
             <div class="mini-section1">
-                <span>Anello a fascia intrecciata</span>
+                <span>Anello a fascia intrecciata</span><br>
+                <strong>€27,50</strong>
             </div>
             <img src="imgs/anello-fascia.png" alt="Anello intrecciato">
         </div>
     </main>
+
+    <!-- Popup di accesso -->
+    <div id="login-popup" class="popup">
+        <div class="popup-content">
+            <h2>Accedi alla Collezione</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" required><br>
+                <input type="password" id="password" placeholder="Password" required><br>
+                <button type="submit">Accedi</button>
+            </form>
+            <button id="close-popup">Chiudi</button>
+        </div>
+    </div>
 
 </body>
 </html>

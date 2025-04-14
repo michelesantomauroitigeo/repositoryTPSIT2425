@@ -17,17 +17,64 @@
     <nav>
         <ul>
             
-            <button onclick="Login()">Login</button>
-            <li><a href="">Registrati</a></li>
+            <button class="bottone" onclick="Login()">Login</button>
+            <button class="bottone" onclick="Registrati()">Registrati</button>
+           
         </ul>
     </nav>
 </header>
+        <div id="finestraRegistrazione" style="display:none;">
+  <div id="visualizzazioneRegistrazione">
+    <span onclick="chiusuraFinestraRegistrazione()">&times;</span>
+    <h2>REGISTRAZIONE UTENTE</h2>
+    <form onsubmit="return validaRegistrazione(event)">
+        <label for="reg-nome">Nome:</label><br>
+        <input type="text" id="reg-nome" placeholder="Inserisci il nome"><br>
+        <span id="errore-nome">Il nome è obbligatorio</span><br>
+
+        <label for="reg-cognome">Cognome:</label><br>
+        <input type="text" id="reg-cognome" placeholder="Inserisci il cognome"><br>
+        <span id="errore-cognome">Il cognome è obbligatorio</span><br>
+
+        <label for="reg-email">Email:</label><br>
+        <input type="email" id="reg-email" placeholder="Inserisci l'email"><br>
+        <span id="errore-email">L'email è obbligatoria</span><br>
+
+        <label for="reg-utente">Nome Utente:</label><br>
+        <input type="text" id="reg-utente" placeholder="Scegli un nome utente"><br>
+        <span id="errore-utente">Il nome utente è obbligatorio</span><br>
+
+        <label for="reg-password">Password:</label><br>
+        <input type="password" id="reg-password" placeholder="Inserisci la password"><br>
+        <span id="errore-password">La password è obbligatoria</span><br>
+
+        <label for="reg-conferma-password">Conferma Password:</label><br>
+        <input type="password" id="reg-conferma-password" placeholder="Ripeti la password"><br>
+        <span id="errore-conferma-password">Le password non corrispondono</span><br>
+
+        <label for="reg-data">Data di nascita:</label><br>
+        <input type="date" id="reg-data"><br>
+        <span id="errore-data">La data di nascita è obbligatoria</span><br>
+
+        <label for="reg-telefono">Telefono:</label><br>
+        <input type="tel" id="reg-telefono" placeholder="Inserisci il numero di telefono"><br>
+        <span id="errore-telefono">Il telefono è obbligatorio</span><br>
+
+        <label for="reg-indirizzo">Indirizzo:</label><br>
+        <input type="text" id="reg-indirizzo" placeholder="Inserisci l'indirizzo"><br>
+        <span id="errore-indirizzo">L'indirizzo è obbligatorio</span><br><br>
+
+        <button type="submit">Registrati</button>
+
+    </form>
+  </div>
+</div>
     <div id="finestra">
     <div id="visualizzazione">
         <span onclick="chiusuraFinestra()">&times;</span>
                 
       <h2>PAGINA DI LOGIN</h2>
-      <form onsubmit="return validaLogin()">
+      <form onsubmit="return validaLogin(event)">
             <label for="name"> NomeUtente: </label>
             <br> <br>
             <input type="text" id="nomeUtente" name="name" placeholder="INSERISCI IL NOME UTENTE">

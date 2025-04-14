@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Registrazione - VedoChiaro</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Registrazione</h1>
+  </header>
+  <section>
+    <h2>Crea un nuovo account</h2>
+    <form id="registration-form">
+      <input type="text" id="new-username" placeholder="Username" required>
+      <input type="password" id="new-password" placeholder="Password" required>
+      <input type="password" id="confirm-password" placeholder="Conferma Password" required>
+      <span id="error-message" class="error-message"></span>
+      <button type="button" onclick="registerUser()">Registrati</button>
+    </form>
+  </section>
+  <script src="js/script.js"></script>
+</body>
+</html>

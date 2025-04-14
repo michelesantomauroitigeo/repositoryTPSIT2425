@@ -1,0 +1,228 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+img{
+	width: 13%;
+	height: 13%;
+}
+
+
+nav a{
+	color:#de9947;
+	font-size: 195%;
+}
+
+nav h2{
+	font-size: 175%;
+}
+.login{
+	width: 6.5%;
+	height: 49%;
+	display: flex;
+	justify-content: space-between;
+	margin-right:2%;
+}
+
+.login:hover{
+	border-radius: 5px;
+	background-color: #e3e1e1;
+}
+
+#immLogin{
+	width: 33px;
+}
+
+
+table {
+  width: 100%;
+  background-color: #fff;
+  font-size: 155%;
+  width: 70%;
+  height: 25%;
+  margin-top: 7%;
+  margin-bottom: 8%;
+  padding-top:2% ;
+}
+th {
+  text-align: center;
+  border: 1px solid lightgrey;
+  background-color: #074fad;
+  color: white;
+  text-align: center;
+	padding-top:0.5% ;
+  padding-bottom:0.5% ;
+}
+
+td {
+  text-align: left;
+  border: 1px solid lightgrey;
+  text-align: center;
+  padding-top:0.5% ;
+  padding-bottom:0.5% ;
+}
+
+table button{
+  font-size: 80%;
+}
+.centra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer_promozione {
+  background-color:#de9947; /* Colore arancione simile all'immagine */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top:5% ;
+}
+
+.footer_content h2 {
+  font-size: 24px;
+}
+
+.footer-content p {
+  font-size: 20px;
+}
+
+.social img{
+	width: 2%;
+	margin-left: 1%;
+}
+
+
+#finestraModale{
+  display: none; 
+  position: fixed; /*Serve a mantenera il div fisso al centro della pagina indipendentemente dal suo scorrimento*/
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.visualizzazione{
+  background-color: white;
+  border: solid black 1px;
+  border-radius: 15px;
+  width: 22% ;
+  margin: auto;
+  text-align: center;
+  background-color: #f2f0f0; 
+}
+#finestraModale button{
+  color:#de9947;
+  font-size: 115%;
+}
+
+
+.visualizzazione input{
+  width: 75%;
+  background-color: #e3e1e1;
+  border-radius: 5px;
+  height: 10%;
+  font-size: 25px;
+  color: #757474;
+  text-align: center;
+}
+
+.visualizzazione label{
+  font-size: 115%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.visualizzazione select{
+  font-size: 100%;
+}
+
+#file{
+  font-size: 15px;
+  border-radius: 0px;
+}
+
+.allinea{
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  position: relative;
+}
+
+.chiudi{
+  position: absolute;
+  left: 0; 
+  margin-left: 1%;
+  color:#de9947;
+  font-size: 115%;
+  margin-bottom: 5px;
+}
+
+.allinea h2{
+  margin: 0;
+}
+
+form p{
+  color: red;
+  display: none;
+  margin: 0%;
+}
+
+#finestraLista{
+  display: none; 
+  position: fixed; /*Serve a mantenera il div fisso al centro della pagina indipendentemente dal suo scorrimento*/
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+#visualizzazioneLista{
+  background-color: white;
+  border: solid black 1px;
+  border-radius: 15px;
+  width: 60% ;
+  height: 75%;
+  margin: auto;
+  text-align: center;
+  background-color: #f2f0f0; 
+}
+
+#finestraLista table{
+  width: 100%;
+  margin-top: 1%;
+}
+
+#finestraLista img{
+  height: 45%;
+  width: 20%;
+}
+
+#elimina{
+  background-color: darkred;
+  color:white;
+  width: auto;
+  font-size: 65%;
+
+}
+
+#modifica{
+  background-color: darkgreen;
+  color: white;
+  font-size: 65%;
+  width: auto;              
+}

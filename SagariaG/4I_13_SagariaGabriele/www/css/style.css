@@ -236,3 +236,20 @@ nav button{
   color:#de9947;
   font-size: 115%;
 }
+
+
+.allinea{
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  position: relative;
+}
+
+#chiudi{
+  position: absolute;
+  left: 0; 
+}
+
+.allinea h2{
+  margin: 0;
+}
