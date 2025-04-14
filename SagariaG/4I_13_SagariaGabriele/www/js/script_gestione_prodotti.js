@@ -7,14 +7,6 @@ function chiusuraFinestra(){
         document.getElementById("finestraModale").style.display = 'none'; 
 }
 
-function aperturaFinestraLista(){
-    document.getElementById("finestraLista").style.display = 'block'; 
-}
-
-function chisuraFinestraLista(){
-    document.getElementById("finestraLista").style.display = 'none'; 
-}
-
 
 function controllo(){
     console.log("ciao");
@@ -71,4 +63,49 @@ function controllo(){
     console.log(validita);
     
     return validita;  
+}
+
+
+function eliminaRiga(button){
+    let riga= button.closest('tr');
+    riga.style.display="none";
+}
+
+function modificaRiga(button) {
+    document.getElementById("finestraModale_Modifica").style.display = "block";
+    
+    let riga = button.closest("tr");
+
+
+    let valore1 = riga.cells[0].textContent;
+    let valore2 = riga.cells[1].textContent;
+    let valore3 = riga.cells[2].textContent;
+
+    document.getElementById("nome_modifica").value = valore1;
+    document.getElementById("descrizione_modifica").value = valore2;
+    document.getElementById("prezzo_modifica").value = valore3;
+
+
+    let pulsante = document.getElementById("pulsante_salva");
+
+    pulsante.onclick = null;
+    
+    pulsante.onclick = function(event) {
+        event.preventDefault(); 
+
+        console.log("Salvataggio attivato");
+
+        // Aggiorna la riga con i nuovi valori
+        riga.cells[0].textContent = document.getElementById("nome_modifica").value;
+        riga.cells[1].textContent = document.getElementById("descrizione_modifica").value;
+        riga.cells[2].textContent = document.getElementById("prezzo_modifica").value;
+
+
+        chiusuraFinestraModifica();
+    };
+}
+
+// Funzione per chiudere la finestra modale
+function chiusuraFinestraModifica() {
+    document.getElementById("finestraModale_Modifica").style.display = "none";
 }
