@@ -243,4 +243,15 @@ ul {
 .azione:hover {
     opacity: 0.9;
 }
+#finestraModifica {
+    display: none;
+    position: fixed;
+    z-index: 999; /* Alto per sovrapporsi a tutto */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Sfondo scuro semi-trasparente */
+}
 
