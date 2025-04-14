@@ -45,4 +45,12 @@ h1{
     text-align:center ;
 }
 
+.nav{
+    display: flex;
+    flex-direction: row;
 
+}
+
+.nav h2{
+    margin-right: 2%;
+}
