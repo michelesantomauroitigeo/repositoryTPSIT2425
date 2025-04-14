@@ -1,24 +1,24 @@
 <html lang="it">
 <head>
     <title>LupinStyle</title>
-    <link rel="stylesheet" href="../css/vetrina.css">
+    <link rel="stylesheet" href="css/vetrina.css">
     
 </head>
 <body>
 
     <header>
         <div class="header-left">
-            <a href="#">Contattaci</a>
+            <a href="#" id="registerLink">Registrati</a> <!-- Aggiunto id="registerLink" -->
+
         </div>
         <div class="header-right">
-            <a href="area_riservata.html">LupinStyle</a>
+            <h1>LupinStyle</h1>
         </div>
         <div class="header-right">
-            <a href="../login.html">Login</a>
+            <a href="#" id="loginLink">Login</a>
         </div>
     </header>
 
-    <!-- Container prodotti -->
     <div class="container">
         <div class="product">
             <img src="https://d18c63gzk0ps2w.cloudfront.net/media/catalog/product/cache/8f568ca51e2bd5270292b106648095e7/N/E/NEWE10531939_NAVY_04_e61e.jpg" alt="Cappello">
@@ -51,10 +51,33 @@
         </div>
     </div>
 
+    <!-- Modale Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Nome utente">
+            <input type="password" id="password" placeholder="Password">
+            <button id="loginBtn">Accedi</button>
+            <p id="error" style="color:red; display:none;">Nome utente o password errate</p>
+        </div>
+    </div>
+
+    <div id="RegisterModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Registrati</h2>
+            <input type="text" id="email" placeholder="Email">
+            <input type="text" id="username" placeholder="Nome Utente">
+            <input type="password" id="password" placeholder="Password">
+            <button id="loginBtn">Registrati</button>
+            <p id="error" style="color:red; display:none;">Nome utente o già utilizz</p>
+        </div>
+    </div>
 
 
 
-     <script src="../js/vetrina.js"></script>
+     <script src="js/vetrina.js"></script>
 
 
 </body>

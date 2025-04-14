@@ -1,0 +1,73 @@
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        table {
+            width: 30%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            padding: 5px 10px;
+            margin: 5px;
+            border: none;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        .btn a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Stile per il container del contenuto */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .header-right a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        /* Stile per gli utenti disabilitati */
+        .disabled {
+            color: #aaa;
+            text-decoration: line-through;
+        }
+
+        .disabled button {
+            background-color: #f0ad4e;
+        }
+
+        /* Stile per il modulo di aggiunta prodotto (rimosso, ma lasciato per coerenza) */
+        .add-product {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        input[type="text"], input[type="number"] {
+            padding: 5px;
+            margin: 5px;
+        }
