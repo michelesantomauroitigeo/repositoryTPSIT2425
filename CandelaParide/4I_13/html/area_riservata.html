@@ -5,14 +5,18 @@
     <link rel="stylesheet" href="../css/stile-aggiunta.css">
 </head>
 <body>
-    <h2><a href="../index.html">Home</a></h2>
-    
+    <div class="nav">
+        <h2><a href="../index.html">Home</a></h2>
+        <h2><a href="lista-prodotti.html">Lista prodotti</a></h2>
+    </div>
+
     <div class="contenitore">
         <h1>Inserisci Prodotto</h1>
         
         <form id="formProdotto">
             <div class="gruppo-form">
                 <label for="nome">Nome Prodotto*</label>
+
                 <input type="text" id="nome" required>
             </div>
             
@@ -22,17 +26,14 @@
             </div>
             
             <div class="gruppo-form">
-                <label for="descrizione">Descrizione</label>
-                <input type="text" id="descrizione">
-            </div>
-            
-            <div class="gruppo-form">
                 <label for="immagine">Immagine del prodotto</label>
                 <input type="file" id="immagine" accept="image/*">
                 <div class="anteprima-immagine" id="anteprimaImmagine"></div>
             </div>
             
             <button type="submit">Salva Prodotto</button>
+
+
         </form>
     </div>
 </body>

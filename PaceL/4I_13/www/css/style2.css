@@ -27,6 +27,6 @@ p {
 	text-align: center;
 }
 
-#loginButton {
+#loginButton, #registerButton, #adminButton {
 	display: none;
 }

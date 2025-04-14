@@ -1,0 +1,38 @@
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+nav a:hover {
+    background-color: #555;
+    color: #fff;
+}
+.content {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.but {
+    display: block;
+    width: 200px;
+    padding: 15px 20px;
+    margin: 10px auto;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.but:hover {
+    background-color: #45a049;
+}
