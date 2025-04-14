@@ -33,7 +33,7 @@ div {
 	background-color: #baeaee;
 }
 
-#loginButton {
+#loginButton, #registerButton, #adminButton {
 	display: none;
 }
 

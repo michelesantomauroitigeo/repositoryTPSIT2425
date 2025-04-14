@@ -3,6 +3,10 @@ function aperturaFinestra(){
         document.getElementById("finestraModale").style.display = 'block'; 
 }
 
+function chiusuraFinestra(){
+        document.getElementById("finestraModale").style.display = 'none'; 
+}
+
 
 function controllo(event){
 event.preventDefault(); // Blocca l'invio del form 
@@ -27,8 +31,7 @@ event.preventDefault(); // Blocca l'invio del form
 
     console.log(validita);
     if(validita == true){
-        window.location.href = "html/carica_prodotti.html"; // se ritorna true apre un altra pagina
-        console.log("Sto per aprire la nuova pagina...");
+        window.location.href = "html/amministratore.html"; // se ritorna true apre un altra pagina
     }
     return validita;  
 }

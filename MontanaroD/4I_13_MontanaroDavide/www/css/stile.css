@@ -3,6 +3,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    background-image: url('../imgs/sfondo2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 header {
@@ -120,6 +124,7 @@ footer {
     padding: 40px;
     width: 300px;
     text-align: center;
+    position: relative;
 }
 
 label, input {
@@ -137,9 +142,9 @@ button {
     cursor: pointer;
     font-size: 16px;
     border-radius: 4px;
-    display: inline-block; /* Uniforma l'aspetto dei pulsanti */
+    display: inline-block;
     text-align: center;
-}
+} 
 
 #chiudiFinestra {
     position: absolute;
