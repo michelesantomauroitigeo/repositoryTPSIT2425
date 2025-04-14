@@ -14,29 +14,21 @@
     <div class="container">
         <ul class="destra">
             <li>
-                <button type="button" class="Finestra" onclick="finestralogin()">login</button>
+                <button type="button" class="Finestra" id="btnAccedi" onclick="finestralogin()">Accedi</button>
+            </li>
+            <li>
+                <button type="button" class="Finestra" id="btnRegistrati" onclick="finestralogin()">Registrati</button>
             </li>
         </ul>
         <nav>
             <a href="#">Home</a>
-            <a href="#">Prodotti</a>
-            <a href="#">Chi Siamo</a>
-            <a href="#">Contatti</a>
+            <a href="html/chi siamo.html">Chi Siamo</a>
+            <a href="html/cantati.html">Contatti</a>
         </nav>
         <div class="content">
             <h2>Benvenuto nel Nostro Sito Vetrina!</h2>
             <p>Qui puoi trovare una selezione dei nostri migliori prodotti.</p>
             <p>Scorri la pagina per scoprire di più!</p>
-        </div>
-
-        <div class="aggiuntaprodotti">
-            <h2>Aggiungi un Nuovo Prodotto</h2>
-            <form id="prodottiform">
-                <input type="text" id="productName" placeholder="Nome Prodotto" required>
-                <input type="text" id="productDescription" placeholder="Descrizione" required>
-                <input type="text" id="productImage" placeholder="Percorso Immagine (es: imgs/nuovo.jpg)" required>
-                <button type="submit">Aggiungi Prodotto</button>
-            </form>
         </div>
 
         <div class="prodotti-container">
@@ -104,11 +96,12 @@
 
     <div id="finestra_Login">
         <div id="finestra">
+            <span onclick="chiudiFinestra()" style="float:right; cursor:pointer;">&times;</span>
             <h2>Accedi al tuo account</h2>
             <input type="text" id="username" placeholder="Nome utente"><br><br>
             <input type="password" id="password" placeholder="Password"><br><br>
-            <button type="button" class="button_salva" onclick="chiudiFinestra()">Chiudi</button>
-            <button type="button" class="button_chiudi" onclick="accedi()">Accedi</button>
+            <button type="button" class="button_chiudi" onclick="chiudiFinestra()">Chiudi</button>
+            <button type="button" class="button_salva" onclick="accedi()">Accedi</button>
         </div>
     </div>
 

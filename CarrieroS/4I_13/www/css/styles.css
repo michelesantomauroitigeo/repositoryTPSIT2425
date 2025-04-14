@@ -4,11 +4,13 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
+
 header {
     background-color: #333;
     color: #fff;
@@ -17,25 +19,74 @@ header {
     font-size: 24px;
     font-weight: bold;
 }
+
 .destra {
-    list-style: none;
     display: flex;
     justify-content: flex-end;
-    margin: 10px 20px;
+    gap: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
 }
+
+ul.destra {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Finestra {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    width: 100%;
+    max-width: 220px;
+}
+
+.Finestra:hover {
+    background-color: #007bb5;
+    transform: translateY(-3px);
+}
+
+.Finestra:first-child {
+    background-color: #008CBA;
+}
+
+.Finestra:first-child:hover {
+    background-color: #007bb5;
+}
+
+.Finestra:last-child {
+    background-color: #0099cc;
+}
+
+.Finestra:last-child:hover {
+    background-color: #007bb5;
+}
+
 nav {
     text-align: center;
     margin-top: 10px;
 }
+
 nav a {
     color: #333;
     text-decoration: none;
     padding: 10px 20px;
 }
+
 nav a:hover {
     background-color: #555;
     color: #fff;
 }
+
 .content {
     padding: 20px;
     background-color: #fff;
@@ -44,12 +95,14 @@ nav a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
 .prodotti-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
 }
+
 .prodotti {
     background-color: white;
     padding: 15px;
@@ -59,19 +112,23 @@ nav a:hover {
     width: 250px;
     text-align: center;
 }
+
 .prodotti h3 {
     margin: 0;
     color: #333;
 }
+
 .prodotti p {
     font-size: 14px;
     color: #666;
 }
+
 .prodotti img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
+
 footer {
     background-color: #333;
     color: #fff;
@@ -79,49 +136,58 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+
 #finestra_Login {
-    display: none; /* Nasconde la finestra all'avvio */
+    display: none;
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #finestra {
-    background: white;
+    background: #fff;
     padding: 30px;
     border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 
-.aggiuntaprodotti {
-    padding: 20px;
-    background-color: #fff;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-#prodottiform input {
-    margin: 5px;
-    padding: 8px;
-    border-radius: 6px;
+#finestra input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
     border: 1px solid #ccc;
 }
 
-#prodottiform button {
+.button_chiudi, .button_salva {
     padding: 10px 20px;
-    background-color: #333;
-    color: white;
+    margin: 5px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
-#prodottiform button:hover {
-    background-color: #555;
+.button_chiudi {
+    background-color: #dc3545;
+    color: #000;
+}
+
+.button_salva {
+    background-color: #007bff;
+    color: white;
+}
+
+.button_salva:hover {
+    background-color: #0056b3;
+}
+
+.button_chiudi:hover {
+    background-color: #c82333;
 }
