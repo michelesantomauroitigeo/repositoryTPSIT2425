@@ -3,13 +3,14 @@
 <head>
     <title>Libreria Online</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
         <div class="logo">
             <img src="imgs/logo.jpg" alt="Logo">
             <h2>📚 Dove puoi trovare tutti i libri che fanno al caso tuo 📚</h2>
-	    <button onclick="ApriLogin()"> Login </button>	
+            <button class="bottone" onclick="ApriLogin()">Login</button>
         </div>
     </header>
         
@@ -87,18 +88,16 @@
             </div>
         </section>
 	<div id="finestra-login">
-	    <form onsubmit="ValidaLogin()">
+	    <form onsubmit="ValidaLogin(event)">
             	<label for="username">Nome Utente:</label>
             	<input type="text" id="username" name="username" placeholder="Inserisci l'username">
-		<p id="mess1"></p>
-
-		<label for="password"> Password: </label>
-		<input type="password" id="password" name="password" placeholder="Inserisci la password">
-		<p id="mess2"></p>
-            
-            	<button type="button" onclick="chiudiFinestra()">Chiudi</button>
-            	<button type="button" onclick="chiudiFinestra()">Invio</button>
-            </form>
+                <p id="mess1"></p>
+                <label for="password"> Password: </label>
+                <input type="password" id="password" name="password" placeholder="Inserisci la password">
+                <p id="mess2"></p>
+            	<button type="submit" onclick="salvaFinestra()">Invio</button>
+                <button type="submit" onclick="chiudiFinestra()">Chiudi</button>
+        </form>
 	</div>     
 </body>
 </html>
