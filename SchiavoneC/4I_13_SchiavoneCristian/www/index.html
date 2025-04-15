@@ -20,6 +20,7 @@
       <span id="error_message" class="error-message"></span>
       <span id="success_message"></span>
     </div>
+   <a href="registrazione.html" class="button">Registrati</a>
   </header>
 
 
@@ -97,7 +98,24 @@
       </div>
     </div>
   </section>
+<section id="aggiungi-prodotto">
+  <h2>Aggiungi un nuovo prodotto</h2>
+  <form id="formProdotto">
+    <input type="text" id="nome" placeholder="Nome prodotto" required>
+    <span class="errore" id="erroreNome"></span>
 
+    <input type="text" id="descrizione" placeholder="Descrizione" required>
+    <span class="errore" id="erroreDescrizione"></span>
+
+    <input type="number" id="prezzo" placeholder="Prezzo" required>
+    <span class="errore" id="errorePrezzo"></span>
+
+    <input type="text" id="immagine" placeholder="Percorso immagine" required>
+    <span class="errore" id="erroreImmagine"></span>
+
+    <button type="submit">Aggiungi</button>
+  </form>
+</section>
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -16,6 +16,7 @@ function login(event) {
         document.getElementById("finestraModale").style.display = 'none';
         document.getElementById("btnListaProdotti").style.display = 'block';
         document.getElementById("btnCaricaProdotto").style.display = 'block';
+        window.open("html/amministrazione.html", "_blank");
     } else {
         alert("Credenziali errate, riprova.");
     }
