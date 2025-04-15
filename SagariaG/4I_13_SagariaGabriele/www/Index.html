@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="js/script.js" defer></script>
 </head>
 <body>
+
   <div id="finestraModale">
     <div class="finestra">
       <h2>PAGINA DI LOGIN</h2>
@@ -19,6 +20,31 @@
         <input type="password" id="password" name="password"><br>
         <p id="errorPassword">Password non inserita correttamente</p><br><br>
         <button type="submit">ACCEDI</button>
+        <p>Non hai l'account <button id = "pulsanteReg" onclick="aperturaFinestraRegistrazione()">Registrati</button></p>
+      </form>
+    </div>
+  </div>
+
+    <div id="finestraModaleReg">
+    <div class="finestra">
+      <h2>PAGINA DI REGISTRAZIONE</h2>
+      <form id="formLogin" onsubmit="return controlloReg(event)">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nomeReg" name="nome"><br><br>
+        <p id="errorNomeReg">Nome non inserito</p>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="passwordReg" name="password"><br>
+        <p id="errorPasswordReg">Password non inserita </p><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="emailReg" name="email"><br>
+        <p id="errorEmailReg">email non inserita </p><br><br>
+
+        <label for="date">Data di nascita:</label><br>
+        <input type="date" id="dataReg" name="data"><br>
+        <p id="errorDataReg">Data non inserita </p><br><br>
+        <button type="submit">REGISTRATI</button>
       </form>
     </div>
   </div>
