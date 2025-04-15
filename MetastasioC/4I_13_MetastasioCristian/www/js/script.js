@@ -16,14 +16,15 @@ event.preventDefault(); // Blocca l'invio del form
     let validita = true;
 
     
-    if (nome.value.trim() === '' || nome.value.trim() !== "potodo" ) {  
+     if (nome.value.trim() === '' || nome.value.trim() !== "potodo" ) {  
         document.getElementById("errorNome").style.display = 'block'; 
         validita = false;
     } else {
         document.getElementById("errorNome").style.display = 'none'; 
     }
+    
 
-    if (password.value.trim() === '' || password.value.trim() !== "ciao") { 
+   if (password.value.trim() === '' || password.value.trim() !== "ciao") { 
         document.getElementById("errorPassword").style.display = 'block'; 
         validita = false;
     } else {
