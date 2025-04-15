@@ -92,7 +92,6 @@ function registrati(event) {
         validaReg = false;
     }
 
-    // Solo se tutto è valido, procedi
     if(validaReg) {
         chiudiRegistrazione();
         window.location.href = "html/area_riservata.html"; 
