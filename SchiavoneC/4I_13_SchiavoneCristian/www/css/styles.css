@@ -238,3 +238,13 @@ th {
     margin: 20px;
   }
 }
+.errore {
+  color: red;
+  font-size: 0.9em;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input.errore-input {
+  border: 2px solid red;
+}

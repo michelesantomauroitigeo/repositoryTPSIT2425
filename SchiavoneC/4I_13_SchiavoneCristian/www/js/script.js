@@ -2,11 +2,11 @@
 function login() {
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
-  
+
   // Verifica delle credenziali
   if (username === "admin" && password === "admin123") {
     // Successo nel login, reindirizza alla pagina di amministrazione
-    window.location.href = "amministrazione.html";
+    window.location.href = "html/amministrazione.html";
   } else {
     // Messaggio di errore per login errato
     document.getElementById("error_username").textContent = "Credenziali errate!";
@@ -61,6 +61,60 @@ function aggiungiProdotto() {
   alert("Prodotto aggiunto con successo!");
   window.location.href = "gestione_prodotti.html"; // Reindirizza alla pagina di gestione prodotti
 }
+document.getElementById('formProdotto').addEventListener('submit', function (e) {
+  e.preventDefault(); // Previene invio se ci sono errori
+
+  let valid = true;
+
+  // Campi
+  const nome = document.getElementById('nome');
+  const descrizione = document.getElementById('descrizione');
+  const prezzo = document.getElementById('prezzo');
+  const immagine = document.getElementById('immagine');
+
+  // Errori
+  const erroreNome = document.getElementById('erroreNome');
+  const erroreDescrizione = document.getElementById('erroreDescrizione');
+  const errorePrezzo = document.getElementById('errorePrezzo');
+  const erroreImmagine = document.getElementById('erroreImmagine');
+
+  // Reset errori
+  [nome, descrizione, prezzo, immagine].forEach(input => input.classList.remove('errore-input'));
+  [erroreNome, erroreDescrizione, errorePrezzo, erroreImmagine].forEach(span => span.textContent = '');
+
+  // Validazioni
+  if (nome.value.trim() === '') {
+    erroreNome.textContent = 'Il nome è obbligatorio';
+    nome.classList.add('errore-input');
+    valid = false;
+  }
+
+  if (descrizione.value.trim() === '') {
+    erroreDescrizione.textContent = 'La descrizione è obbligatoria';
+    descrizione.classList.add('errore-input');
+    valid = false;
+  }
+
+  if (prezzo.value.trim() === '' || parseFloat(prezzo.value) <= 0) {
+    errorePrezzo.textContent = 'Inserisci un prezzo valido';
+    prezzo.classList.add('errore-input');
+    valid = false;
+  }
+
+  if (immagine.value.trim() === '') {
+    erroreImmagine.textContent = 'Il percorso dell\'immagine è obbligatorio';
+    immagine.classList.add('errore-input');
+    valid = false;
+  }
+
+  if (valid) {
+    alert("Prodotto aggiunto con successo!");
+    // Qui puoi procedere con l'aggiunta del prodotto o resettare il form
+    // this.submit(); // Se vuoi inviarlo a un server
+    this.reset();
+  }
+});
+
 
 // Funzione per visualizzare i prodotti nella pagina di gestione
 function visualizzaProdotti() {
