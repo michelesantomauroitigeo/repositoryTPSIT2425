@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestione Prodotti</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h2>Gestione Prodotti</h2>
+
+    <div class="aggiungi-prodotto">
+        <h3>Aggiungi Prodotto</h3>
+        <form onsubmit="aggiungiProdotto(event)">
+            <input type="text" id="titolo" placeholder="Titolo" required>
+            <input type="text" id="descrizione" placeholder="Descrizione" required>
+            <input type="text" id="prezzo" placeholder="Prezzo (€)" required>
+            <button type="submit">Aggiungi</button>
+        </form>
+    </div>
+
+    <div class="lista-prodotti">
+        <h3>Elenco Prodotti</h3>
+        <table id="tabella-prodotti">
+            <thead>
+                <tr>
+                    <th>Titolo</th>
+                    <th>Descrizione</th>
+                    <th>Prezzo (€)</th>
+                    <th>Gestione</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Moby Dick</td>
+                    <td>€19.99</td>
+                    <td>Un libro avvincente che ti terrà incollato alle pagine.</td>
+                    <td>   
+                        <button> Modifica </button>
+                        <button> Elimina </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>I Promessi Sposi</td>
+                    <td>€24.99</td>
+                    <td>Un classico romando della letteratura, imperdibile.</td>
+                    <td>   
+                        <button> Modifica </button>
+                        <button> Elimina </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Percy Jackson e gli Dei dell'Olimpo</td>
+                    <td>€14.99</td>
+                    <td>Un'avventura emozionante tra le pagine.</td>
+                    <td> 
+                        <button> Modifica </button>
+                        <button> Elimina </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Assassinio sull'Orient Express</td>
+                    <td>€16.99</td>
+                    <td>Un giallo che ti terrà teso.</td>
+                    <td>    
+                        <button> Modifica </button>
+                        <button> Elimina </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

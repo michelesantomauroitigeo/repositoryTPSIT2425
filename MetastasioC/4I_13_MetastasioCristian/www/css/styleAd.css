@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  background-color: #e6f0ff;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h1 {
+  color: #003366;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.static-btn {
+  background-color: #3399ff;
+  color: white;
+}
+
+.link-btn {
+  background-color: #0059b3;
+  color: white;
+}
+
+.link-btn:hover {
+  background-color: #004080;
+}

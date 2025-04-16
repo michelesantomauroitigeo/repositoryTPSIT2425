@@ -4,11 +4,13 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
+
 header {
     background-color: #333;
     color: #fff;
@@ -17,22 +19,74 @@ header {
     font-size: 24px;
     font-weight: bold;
 }
+
 .destra {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
 }
+
+ul.destra {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Finestra {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    width: 100%;
+    max-width: 220px;
+}
+
+.Finestra:hover {
+    background-color: #007bb5;
+    transform: translateY(-3px);
+}
+
+.Finestra:first-child {
+    background-color: #008CBA;
+}
+
+.Finestra:first-child:hover {
+    background-color: #007bb5;
+}
+
+.Finestra:last-child {
+    background-color: #0099cc;
+}
+
+.Finestra:last-child:hover {
+    background-color: #007bb5;
+}
+
 nav {
     text-align: center;
     margin-top: 10px;
 }
+
 nav a {
     color: #333;
     text-decoration: none;
     padding: 10px 20px;
 }
+
 nav a:hover {
     background-color: #555;
     color: #fff;
 }
+
 .content {
     padding: 20px;
     background-color: #fff;
@@ -41,13 +95,15 @@ nav a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-.products {
+
+.prodotti-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
 }
-.product {
+
+.prodotti {
     background-color: white;
     padding: 15px;
     margin: 10px;
@@ -56,19 +112,23 @@ nav a:hover {
     width: 250px;
     text-align: center;
 }
-.product h3 {
+
+.prodotti h3 {
     margin: 0;
     color: #333;
 }
-.product p {
+
+.prodotti p {
     font-size: 14px;
     color: #666;
 }
-.product img {
+
+.prodotti img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
+
 footer {
     background-color: #333;
     color: #fff;
@@ -77,40 +137,57 @@ footer {
     margin-top: 20px;
 }
 
-#finesta_Login {
+#finestra_Login {
     display: none;
-    /* Nasconde inizialmente la finestra */
     position: fixed;
-    /* Posizione fissa rispetto alla viewport */
-    padding-top: 200px;
-    /* Posizione dello sfondo sopra la tabella */
-    left: 0;
-    /* Posizione della finestra sulla sinistra della pagina */
-    top: 0;
-    /* Posizione della finestra sull'alto della pagina */
-    right: 0;
-    /* Posizione della finestra sulla destra della pagina */
-    width: 100%;
-    /* Larghezza della finestra */
-    height: 100%;
-    /* Altezza della finestra */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Sfondo scuro con trasparenza */
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
 }
 
 #finestra {
-    background-color: white;
-    /* Sfondo bianco */
-    border: solid black 1px;
-    /* Bordo nero */
-    border-radius: 7px;
-    /* Arrotondamento degli angoli */
-    width: 20%;
-    /* Larghezza della finestra */
-    margin: auto;
-    /* Centra la finestra orizzontalmente */
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
-    /* Allineamento del testo */
+}
+
+#finestra input {
+    width: 80%;
     padding: 10px;
-    /* Spaziatura interna */
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button_chiudi, .button_salva {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button_chiudi {
+    background-color: #dc3545;
+    color: #000;
+}
+
+.button_salva {
+    background-color: #007bff;
+    color: white;
+}
+
+.button_salva:hover {
+    background-color: #0056b3;
+}
+
+.button_chiudi:hover {
+    background-color: #c82333;
 }

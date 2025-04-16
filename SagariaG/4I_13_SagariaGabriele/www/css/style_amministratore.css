@@ -1,0 +1,102 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+img{
+	width: 13%;
+	height: 13%;
+}
+
+
+nav a{
+	color:#de9947;
+	font-size: 195%;
+}
+
+nav h2{
+	font-size: 175%;
+}
+.login{
+	width: 6.5%;
+	height: 49%;
+	display: flex;
+	justify-content: space-between;
+	margin-right:2%;
+}
+
+.login:hover{
+	border-radius: 5px;
+	background-color: #e3e1e1;
+}
+
+#immLogin{
+	width: 33px;
+}
+
+
+table {
+  width: 100%;
+  background-color: #fff;
+  font-size: 155%;
+  width: 70%;
+  height: 25%;
+  margin-top: 7%;
+  margin-bottom: 8%;
+  padding-top:2% ;
+}
+th {
+  text-align: center;
+  border: 1px solid lightgrey;
+  background-color: #074fad;
+  color: white;
+  text-align: center;
+	padding-top:0.5% ;
+  padding-bottom:0.5% ;
+}
+
+td {
+  text-align: left;
+  border: 1px solid lightgrey;
+  text-align: center;
+  padding-top:0.5% ;
+  padding-bottom:0.5% ;
+}
+
+table a{
+	color: black;
+}
+
+.centra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer_promozione {
+  background-color:#de9947; /* Colore arancione simile all'immagine */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top:5% ;
+}
+
+.footer_content h2 {
+  font-size: 24px;
+}
+
+.footer-content p {
+  font-size: 20px;
+}
+
+.social img{
+	width: 2%;
+	margin-left: 1%;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestione Utenti</title>
+  <link rel="stylesheet" href="../css/styleUtenti.css">
+  <script type="text/javascript" src="../js/scriptU.js" defer></script>
+</head>
+<body>
+
+<h1>Lista Utenti</h1>
+
+<div class="modale-utente">
+  <button onclick="apriModaleUtente('aggiungi')">Aggiungi Utente</button>
+</div>
+
+<table class="tabella-utenti">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Azioni</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mario Rossi</td>
+      <td>mario@example.com</td>
+      <td><button onclick="apriModaleUtente('modifica')">Modifica</button></td>
+    </tr>
+    <tr>
+      <td>Anna Verdi</td>
+      <td>anna@example.com</td>
+      <td><button onclick="apriModaleUtente('modifica')">Modifica</button></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<div id="modaleUtente" class="modale-utente-overlay">
+  <div class="modal-box">
+    <h2 id="titoloModale">Utente</h2>
+    <form>
+      <label>Nome:</label><br><input type="text"><br>
+      <label>Email:</label><br><input type="email"><br>
+      <button type="submit">Salva</button>
+      <button type="button" onclick="chiudiModaleUtente()">Chiudi</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

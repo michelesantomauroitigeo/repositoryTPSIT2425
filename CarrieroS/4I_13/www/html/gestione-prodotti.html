@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/prodotti.css">
+    <title>Prodotti</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Prodotti</a>
+            <a href="#">Chi Siamo</a>
+            <a href="#">Contatti</a>
+        </nav>
+
+        <div class="aggiuntaprodotti">
+            <h2>Aggiungi un Nuovo Prodotto</h2>
+            <form id="prodottiform">
+                <input type="text" id="prodottiName" placeholder="Nome Prodotto" required>
+                <input type="text" id="prodottiDescription" placeholder="Descrizione" required>
+                <input type="text" id="prodottiImage" placeholder="Percorso Immagine (es: imgs/nuovo.jpg)" required>
+                <button type="submit">Aggiungi Prodotto</button>
+            </form>
+        </div>
+
+        <h2>Elenco Prodotti</h2>
+        <table id="tabellaProdotti">
+            <thead>
+                <tr>
+                    <th>Immagine</th>
+                    <th>Nome</th>
+                    <th>Descrizione</th>
+                    <th>Azioni</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                        <th>Immagine</th>
+                        <th>Nome</th>
+                        <th>Descrizione</th>
+                        <th>Azioni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="../imgs/Olio Extra Vergine.jpeg" alt="Olio Extra Vergine" width="100"></td>
+                        <td>Olio Extra Vergine</td>
+                        <td>Olio d'oliva 100% italiano, spremuto a freddo.</td>
+                        <td>
+                            <button onclick="modificaProdotto('Olio Extra Vergine')">Modifica</button>
+                            <button onclick="eliminaProdotto('Olio Extra Vergine')">Elimina</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="../imgs/Parmigiano Reggiano.jpeg" alt="Parmigiano Reggiano" width="100"></td>
+                        <td>Parmigiano Reggiano</td>
+                        <td>Formaggio stagionato 24 mesi, gusto intenso.</td>
+                        <td>
+                            <button onclick="modificaProdotto('Parmigiano Reggiano')">Modifica</button>
+                            <button onclick="eliminaProdotto('Parmigiano Reggiano')">Elimina</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="../imgs/Salame Toscano.jpg" alt="Salame Toscano" width="100"></td>
+                        <td>Salame Toscano</td>
+                        <td>Salume tradizionale dal sapore unico.</td>
+                        <td>
+                            <button onclick="modificaProdotto('Salame Toscano')">Modifica</button>
+                            <button onclick="eliminaProdotto('Salame Toscano')">Elimina</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="../imgs/Pasta Artigianale.png" alt="Pasta Artigianale" width="100"></td>
+                        <td>Pasta Artigianale</td>
+                        <td>Pasta di semola di grano duro, trafilata al bronzo.</td>
+                        <td>
+                            <button onclick="modificaProdotto('Pasta Artigianale')">Modifica</button>
+                            <button onclick="eliminaProdotto('Pasta Artigianale')">Elimina</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="../imgs/Miele Millefiori.jpeg" alt="Miele Millefiori" width="100"></td>
+                        <td>Miele Millefiori</td>
+                        <td>Miele naturale prodotto nelle colline italiane.</td>
+                        <td>
+                            <button onclick="modificaProdotto('Miele Millefiori')">Modifica</button>
+                            <button onclick="eliminaProdotto('Miele Millefiori')">Elimina</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="../imgs/Vino Chianti.jpeg" alt="Vino Chianti" width="100"></td>
+                        <td>Vino Chianti</td>
+                        <td>Un classico vino rosso toscano DOCG.</td>
+                        <td>
+                            <button onclick="modificaProdotto('Vino Chianti')">Modifica</button>
+                            <button onclick="eliminaProdotto('Vino Chianti')">Elimina</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="../imgs/Aceto Balsamico.jpg" alt="Aceto Balsamico" width="100"></td>
+                        <td>Aceto Balsamico</td>
+                        <td>Aceto balsamico di Modena IGP, invecchiato.</td>
+                        <td>
+                            <button onclick="modificaProdotto('Aceto Balsamico')">Modifica</button>
+                            <button onclick="eliminaProdotto('Aceto Balsamico')">Elimina</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="../imgs/Tartufo Nero.jpg" alt="Tartufo Nero" width="100"></td>
+                        <td>Tartufo Nero</td>
+                        <td>Pregiato tartufo nero italiano, ideale per ogni piatto.</td>
+                        <td>
+                            <button onclick="modificaProdotto('Tartufo Nero')">Modifica</button>
+                            <button onclick="eliminaProdotto('Tartufo Nero')">Elimina</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="../imgs/Cioccolato Artigianale.jpg" alt="Cioccolato Artigianale" width="100"></td>
+                        <td>Cioccolato Artigianale</td>
+                        <td>Cioccolato fondente al 70%, prodotto a mano.</td>
+                        <td>
+                            <button onclick="modificaProdotto('Cioccolato Artigianale')">Modifica</button>
+                            <button onclick="eliminaProdotto('Cioccolato Artigianale')">Elimina</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="../imgs/Caffè Espresso.jpg" alt="Caffè Espresso" width="100"></td>
+                        <td>Caffè Espresso</td>
+                        <td>Miscela di caffè arabica e robusta per un aroma perfetto.</td>
+                        <td>
+                            <button onclick="modificaProdotto('Caffè Espresso')">Modifica</button>
+                            <button onclick="eliminaProdotto('Caffè Espresso')">Elimina</button>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="finestra-conferma" class="sfondo-popup" style="display: none;">
+            <div class="popup">
+            <p>Sei sicuro di voler eliminare <strong id="nome-prodotto"></strong>?</p>
+            <div class="bottoni-popup">
+                <button onclick="chiudiPopup()" class="bottone-annulla">Annulla</button>
+                <button onclick="confermaEliminazione()" class="bottone-conferma">Conferma</button>
+            </div>
+            </div>
+        </div>
+
+        <div id="finestra-modifica" class="sfondo-popup" style="display: none;">
+            <div class="popup">
+            <p>Stai modificando: <strong id="nome-prodotto-modifica"></strong></p>
+            <div class="bottoni-popup">
+                <button onclick="chiudiPopupModifica()" class="bottone-annulla">Chiudi</button>
+            </div>
+            </div>
+        </div>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

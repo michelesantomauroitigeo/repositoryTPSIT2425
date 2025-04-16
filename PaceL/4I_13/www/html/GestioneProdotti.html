@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Gestione Prodotti</title>
+		<link rel="stylesheet" type="text/css" href="../css/style3.css">
+		<script type="text/javascript" src="../js/script1.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Pace Calzature</h1>
+			<span>
+				<a href="../index.html">Home</a> &nbsp; &nbsp;  &nbsp; &nbsp;
+				<button type="button" id="loginButton" onclick="apriFinestraLogin()">Login</button>
+				<button type="button" id="registerButton" onclick="apriFinestraRegistrazione()">Registrati</button>
+				<button type="button" id="adminButton" onclick="apriFinestraAmministrazione()">Amministrazione</button>
+				<a href="Amministrazione.html">Amministrazione</a>
+			</span>
+		</header>
+
+		<div id="divGestioneProdotti">
+			<table id="tabellaGestioneProdotti">
+				<thead>
+					<tr>
+						<td>Nome prodotto</td>
+						<td>Immagine prodotto</td>
+						<td>Descrizione prodotto</td>
+						<td>Prezzo prodotto</td>
+						<td>Azioni</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Scarpe Dolce e Gabbana</td>
+						<td><img src="../imgs/Dolce_e_Gabbana.jpg" alt="Scarpe Dolce e Gabbana"></td>
+						<td>Scarpe di marca comode da uomo.</td>
+						<td>520.00€</td>
+						<td>
+							<button type="button" class="buttonModifica">Modifica</button>
+							<button type="button" class="buttonElimina">Elimina</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Sneakers donna</td>
+						<td><img src="../imgs/Sneakers_Donna.jpg" alt="Sneakers da donna"></td>
+						<td>Scarpe Sneakers sportive da donna.</td>
+						<td>75.00€</td>
+						<td>
+							<button type="button" class="buttonModifica">Modifica</button>
+							<button type="button" class="buttonElimina">Elimina</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Scarpe da calcio in pelle</td>
+						<td><img src="../imgs/Scarpe_Calcio.jpg" alt="Scarpe da calcio in pelle"></td>
+						<td>Scarpe da calcio in pelle adatte a terreni naturali e artificiali.</td>
+						<td>120.00€</td>
+						<td>
+							<button type="button" class="buttonModifica">Modifica</button>
+							<button type="button" class="buttonElimina">Elimina</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Scarpe Adidas da calcio</td>
+						<td><img src="../imgs/Adidas_Calcio.jpg" alt="Scarpe da calcio Adidas"></td>
+						<td>Scarpe Adidas F50 League LI Fg Mg Bianco - Scarpe da calcio uomo.</td>
+						<td>150.00€</td>
+						<td>
+							<button type="button" class="buttonModifica">Modifica</button>
+							<button type="button" class="buttonElimina">Elimina</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Scarpe riarse Varese</td>
+						<td><img src="../imgs/Scarpe_Varese.jpg" alt="Scarpe riarse Varese"></td>
+						<td>Scarpe riarse Varese nuova collezione Guidomaggi - Scarpe moda uomo.</td>
+						<td>100.00€</td>
+						<td>
+							<button type="button" class="buttonModifica">Modifica</button>
+							<button type="button" class="buttonElimina">Elimina</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Scarpe da ballo donna</td>
+						<td><img src="../imgs/Scarpe_Da_Ballo.jpg" alt="Scarpe da ballo Donna"></td>
+						<td>Scarpe da ballo per donna Modello 217 Bd Dance.</td>
+						<td>95.00€</td>
+						<td>
+							<button type="button" class="buttonModifica">Modifica</button>
+							<button type="button" class="buttonElimina">Elimina</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Scarpe da corsa uomo</td>
+						<td><img src="../imgs/Scarpe_Da_Corsa.jpg" alt="Scarpe da corsa Uomo"></td>
+						<td>Scarpe sportive da uomo, scarpe da corsa casual.</td>
+						<td>85.00€</td>
+						<td>
+							<button type="button" class="buttonModifica">Modifica</button>
+							<button type="button" class="buttonElimina">Elimina</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Scarpe da calcio Nike</td>
+						<td><img src="../imgs/Nike_Calcio.jpg" alt="Scarpe da caalcio Nike"></td>
+						<td>Scarpe da calcio Nike Superfly 9 Elite Fg Nero - Scarpe da calcio uomo.</td>
+						<td>130.00€</td>
+						<td>
+							<button type="button" class="buttonModifica">Modifica</button>
+							<button type="button" class="buttonElimina">Elimina</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Scarpe Blast</td>
+						<td><img src="../imgs/Scarpa_Blast.jpg" alt="Scarpe Blast"></td>
+						<td>carpe Blast comode per uomo e donna.</td>
+						<td>50.00€</td>
+						<td>
+							<button type="button" class="buttonModifica">Modifica</button>
+							<button type="button" class="buttonElimina">Elimina</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<a href="AggiungiProdotto.html">
+				<button type="button" id="buttonAggiungiProdotto">Aggiungi Prodotto</button>
+			</a>
+		</div>
+
+		<footer>
+			<small>©2025 Calzature Pace. Diritti riservati.</small>
+		</footer>
+	</body>
+</html>

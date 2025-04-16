@@ -101,9 +101,13 @@ footer {
 }
 
 #errorNome{
+ 
     color: red;
+     display: none;
 }
+
 
 #errorPassword{
     color: red  ;
+     display: none;
 }

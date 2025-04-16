@@ -1,0 +1,82 @@
+
+<html lang="it">
+<head>
+
+    <title>LupinStyle</title>
+
+    <link rel="stylesheet" href="../css/articoli.css">
+
+</head>
+<body>
+
+    <header>
+        
+        <h1>LupinStyle</h1>
+        <div class="header-right">
+            <a href="area_riservata.html">Indietro</a>
+        </div>
+    </header>
+
+    <!-- Form per aggiungere un nuovo prodotto -->
+    <div class="add-product">
+        <input type="text" id="productName" placeholder="Nome prodotto" required>
+        <input type="number" id="productPrice" placeholder="Prezzo" required>
+        <button id="addProductButton">Aggiungi prodotto</button>
+    </div>
+
+    <!-- Container della tabella -->
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Articolo</th>
+                    <th>Prezzo</th>
+                    <th>Azioni</th>
+                </tr>
+            </thead>
+            <tbody id="productTable">
+                <!-- Righe della tabella senza il bottone "Aggiungi" -->
+                <tr>
+                    <td>Zaino</td>
+                    <td>€49.99</td>
+                    <td>
+                        <button class="delete">Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cappello</td>
+                    <td>€30.99</td>
+                    <td>
+                        <button class="delete">Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Orologio</td>
+                    <td>€22.99</td>
+                    <td>
+                        <button class="delete">Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Anelli</td>
+                    <td>€9.99</td>
+                    <td>
+                        <button class="delete">Elimina</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Marsupio</td>
+                    <td>€11.99</td>
+                    <td>
+                        <button class="delete">Elimina</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../js/amministrazione.js"></script>
+
+
+</body>
+</html>

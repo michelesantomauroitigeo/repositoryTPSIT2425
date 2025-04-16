@@ -10,14 +10,65 @@
 				<h1>Pace Calzature</h1>
 				<span><a href="index.html">Home</a> &nbsp; &nbsp;
 					  <button type="button" id="loginButton" onclick="apriFinestraLogin()">Login</button>
+					  <button type="button" id="registerButton" onclick="apriFinestraRegistrazione()">Registrati</button>
+					  <button type="button" id="adminButton" onclick="apriFinestraAmministrazione()">Amministrazione</button>
 				</span>
 			</header>
 
 			<div id="finestraLogin">
-				<div id="contenutoFInestraLogin">
+				<div id="contenutoFinestraLogin">
 					<span class="close">&times;</span>
 					<h2>Login</h2>
 					<form id="login">
+						<label for="username">Username</label>
+						<input type="text" id="usernameLogin" name="usernameLogin">
+						<span id="erroreUsernameLogin"></span>
+						<br>
+						<label for="password">Password</label>
+						<input type="password" id="passwordLogin" name="passwordLogin">
+						<span id="errorePasswordLogin"></span>
+						<br>
+						<button type="submit" onclick="verificaCampiLogin()">Invia</button>
+					</form>
+				</div>
+			</div>
+
+			<div id="finestraRegistrazione">
+				<div id="contenutoFinestraRegistrazione">
+					<span class="close">&times;</span>
+					<h2>Registrati</h2>
+					<form id="registrazione">
+						<label for="nome">Nome</label>
+						<input type="text" id="nome" name="nome" required>
+						<span id="erroreNome"></span>
+						<br>
+						<label for="cognome">Cognome</label>
+						<input type="text" id="cognome" name="cognome" required>
+						<span id="erroreCognome"></span>
+						<br>
+						<label for="data_nascita">Data di nascita</label>
+						<input type="date" id="data_nascita" name="data_nascita" required>
+						<span id="erroreDataNascita"></span>
+						<br>
+						<label for="email">Email</label>
+						<input type="text" id="email" name="email" required>
+						<span id="erroreEmail"></span>
+						<br>
+						<label for="password">Password</label>
+						<input type="password" id="passwordRegistrazione" name="passwordRegistrazione" required>
+						<span id="errorePasswordRegistrazione"></span>
+						<br>
+						<button type="submit" onclick="verificaCampiRegistrazione()">Invia</button>
+					</form>
+				</div>
+			</div>
+
+			<div id="finestraAmministrazione">
+				<div id="contenutoFinestraLogin">
+					<span class="close">&times;</span>
+					<h2>Login</h2>
+					<p>Accedi con le tue credenziali da amministratore</p>
+					<form action="html/Amministrazione.html" target="_blank" id="amministrazione">
 						<label for="username">Username</label>
 						<input type="text" id="username" name="username">
 						<span id="erroreUsername"></span>
@@ -26,10 +77,13 @@
 						<input type="password" id="password" name="password">
 						<span id="errorePassword"></span>
 						<br>
-						<button type="submit" onclick="verificaCampi()">Invia</button>
+						<span id="erroreCredenziali"></span>
+						<br>
+						<button type="submit" onclick="verificaCampiAmministrazione()">Invia</button>
 					</form>
 				</div>
 			</div>
+
 			<h1>Trova tutti i tipi di calzatura adatti a te</h1>
 			<p>Scarpe adatte a uomini e donne</p>
 			<div class="contenitore">
@@ -97,10 +151,6 @@
 				</div>
 			</div>
 			
-			<a href="html/AggiungiProdotto.html">
-				<button type="button" id="aggiungiProdotto">Aggiungi Prodotto</button>
-			</a>
-
 			<footer>
 				<small>©2025 Calzature Pace. Diritti riservati.</small>
 			</footer>

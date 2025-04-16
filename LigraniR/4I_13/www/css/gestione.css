@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+main {
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: #2d3e50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.prodotto {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.prodotto h3 {
+    margin: 0 0 10px 0;
+}
+
+.azioni button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.azioni .modifica {
+    background-color: #007bff;
+    color: white;
+}
+
+.azioni .elimina {
+    background-color: #dc3545;
+    color: white;
+}
+
+.aggiungi {
+    background: #fff;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+}
+
+.aggiungi input {
+    padding: 10px;
+    width: calc(50% - 20px);
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.aggiungi button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Nuovo stilo per la sezione "Vai alla Lista" */
+.navigazione {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navigazione h3 {
+    margin-bottom: 15px;
+}
+
+.navigazione .vai-lista {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navigazione .vai-lista:hover {
+    background-color: #0056b3;
+}
