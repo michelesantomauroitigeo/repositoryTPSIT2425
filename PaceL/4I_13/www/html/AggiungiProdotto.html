@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Aggiungi Prodotto</title>
 		<link rel="stylesheet" type="text/css" href="../css/style1.css">
+		<script type="text/javascript" src="../js/script1.js"></script>
 	</head>
 	<body>
 		<header>
@@ -18,25 +19,27 @@
 			</span>
 		</header>
 		
-		<div>
-			<form id="aggiungiProdotto">
-				<h1>Aggiungi Prodotto</h1>
-				<input type="text" id="nomeProdotto" name="nomeProdotto" placeholder="Inserisci il nome del prodotto">
-				<br>
-				<br>
-				<p>Inserisci un'immagine del prodotto</p>
-				<input type="image" src="" alt="" width="249" height="249" id="immagineProdotto" name="immagineProdotto">
-				<br>
-				<br>
-				<br>
-				<textarea id="descrizioneProdotto" name="descrizioneProdotto" rows="2" cols="30" placeholder="Inserisci una descrizione del prodotto"></textarea>
-				<br>
-				<br>
-				<input type="number" id="prezzoProdotto" name="prezzoProdotto" placeholder="Inserisci il prezzo del prodotto">
-				<br>
-				<br>
-				<button type="submit" id="inviaProdotto">Aggiungi Prodotto</button>
-			</form>
+		<div id="finestraAggiungiProdotto">
+			<div id="contenutoFinestraAggiungiProdotto">
+				<span class="close">&times;</span>
+				<form id="aggiungiProdotto">
+					<h1>Aggiungi Prodotto</h1>
+					<input type="text" id="nomeProdotto" name="nomeProdotto" placeholder="Inserisci il nome del prodotto">
+					<br>
+					<br>
+					<input type="text" id="immagineProdotto" name="immagineProdotto" placeholder="Inserisci il percorso dell'immagine del prodotto">
+					<br>
+					<br>
+					<br>
+					<textarea id="descrizioneProdotto" name="descrizioneProdotto" rows="2" cols="30" placeholder="Inserisci una descrizione del prodotto"></textarea>
+					<br>
+					<br>
+					<input type="number" id="prezzoProdotto" name="prezzoProdotto" placeholder="Inserisci il prezzo del prodotto">
+					<br>
+					<br>
+					<button type="submit" id="inviaProdotto" onclick="aggiungiProdotto()">Aggiungi Prodotto</button>
+				</form>
+			</div>
 		</div>
 
 		<footer>
