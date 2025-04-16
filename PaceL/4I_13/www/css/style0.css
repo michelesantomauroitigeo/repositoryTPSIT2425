@@ -152,5 +152,5 @@ p {
 }
 
 .prodotto1 img, .prodotto2 img, .prodotto3 img, .prodotto4 img, .prodotto5 img, .prodotto6 img, .prodotto7 img, .prodotto8 img, .prodotto9 img {
-    height: auto;
+    height: 300px;
 }
