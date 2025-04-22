@@ -31,9 +31,9 @@ function Login() {
     }
 
     if (usern.value === "admin" && passw.value === "12345") {
-        window.location.href = "html/gestioneprod.html";
+        window.location.href = "html/admin.html";
         return false; 
-    } else {
+    } else document.getElementById("campo-sbagliato").style.display = 'block'; {
         return false;
     }
 }

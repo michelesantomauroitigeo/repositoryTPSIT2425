@@ -19,10 +19,8 @@
             <a href="html/resi.html">Resi</a>
         </div>
         <div class="destra">
-            <div class="tasto-login">
-                <span id="apri-login" onclick="apriLogin()">Login</span>
-                <i class="fas fa-shopping-cart"></i>
-            </div>
+            <span id="apri-login" onclick="apriLogin()">Login</span>
+            <i class="fas fa-shopping-cart"></i>
         </div>
     </header>
     <div class="finestra-login">
@@ -36,6 +34,7 @@
                 <label for="password">Password:</label>
                 <input type="password" name="password" id="password">
                 <small id="password-errore">È obbligatorio compilare questo campo</small>
+                <small id="campo-sbagliato">Le credenziali sono sbagliate</small>
 
                 <input type="submit" id="Invio" value="Invio">
             </form>
