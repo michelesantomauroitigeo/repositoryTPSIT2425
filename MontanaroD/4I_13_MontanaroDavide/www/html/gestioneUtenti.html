@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Utenti</title>
+    <link rel="stylesheet" href="../css/utenti.css">
+    <script type="text/javascript" src="../js/gestioneUtenti.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Gestione Utenti</h1>
+        <nav>
+            <ul>
+                <li><a href="amministratore.html">Pannello Amministrativo</a></li>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gestione-utenti">
+            <h2>Lista Utenti</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Data Registrazione</th>
+                        <th>Ultimo Accesso</th>
+                        <th>Stato</th>
+                        <th>Azioni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>mario.rossi</td>
+                        <td>2025-04-10</td>
+                        <td>2025-04-20</td>
+                        <td><span class="stato abilitato">Abilitato</span></td>
+                        <td><button onclick="toggleStato(this)">Disabilita</button></td>
+                    </tr>
+                    <tr>
+                        <td>anna.bianchi</td>
+                        <td>2025-03-22</td>
+                        <td>2025-04-05</td>
+                        <td><span class="stato disabilitato">Disabilitato</span></td>
+                        <td><button onclick="toggleStato(this)">Abilita</button></td>
+                    </tr>
+                    <tr>
+                        <td>luca.verdi</td>
+                        <td>2025-04-01</td>
+                        <td>2025-04-10</td>
+                        <td><span class="stato abilitato">Abilitato</span></td>
+                        <td><button onclick="toggleStato(this)">Disabilita</button></td>
+                    </tr>
+                    <tr>
+                        <td>giulia.neri</td>
+                        <td>2025-02-15</td>
+                        <td>2025-03-30</td>
+                        <td><span class="stato disabilitato">Disabilitato</span></td>
+                        <td><button onclick="toggleStato(this)">Abilita</button></td>
+                    </tr>
+                    <tr>
+                        <td>marco.gialli</td>
+                        <td>2025-03-10</td>
+                        <td>2025-04-12</td>
+                        <td><span class="stato abilitato">Abilitato</span></td>
+                        <td><button onclick="toggleStato(this)">Disabilita</button></td>
+                    </tr>
+                    <tr>
+                        <td>francesca.ferri</td>
+                        <td>2025-01-28</td>
+                        <td>2025-04-15</td>
+                        <td><span class="stato disabilitato">Disabilitato</span></td>
+                        <td><button onclick="toggleStato(this)">Abilita</button></td>
+                    </tr>
+                    <tr>
+                        <td>alessandro.blu</td>
+                        <td>2025-03-05</td>
+                        <td>2025-03-25</td>
+                        <td><span class="stato abilitato">Abilitato</span></td>
+                        <td><button onclick="toggleStato(this)">Disabilita</button></td>
+                    </tr>
+                    <tr>
+                        <td>elena.petroli</td>
+                        <td>2025-04-12</td>
+                        <td>2025-04-18</td>
+                        <td><span class="stato disabilitato">Disabilitato</span></td>
+                        <td><button onclick="toggleStato(this)">Abilita</button></td>
+                    </tr>
+                    <tr>
+                        <td>paolo.martini</td>
+                        <td>2025-03-28</td>
+                        <td>2025-04-14</td>
+                        <td><span class="stato abilitato">Abilitato</span></td>
+                        <td><button onclick="toggleStato(this)">Disabilita</button></td>
+                    </tr>
+                    <tr>
+                        <td>claudia.pirlo</td>
+                        <td>2025-02-20</td>
+                        <td>2025-04-01</td>
+                        <td><span class="stato disabilitato">Disabilitato</span></td>
+                        <td><button onclick="toggleStato(this)">Abilita</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
