@@ -1,0 +1,111 @@
+   <!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagliore Glamour – Gioielli & Bigiotteria</title>
+    <link rel="stylesheet" href="../css/stile.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+     <header class="header">
+        <div class="title">
+            <h1>Bagliore Glamour</h1>
+        </div>
+<nav>
+    <a href="../html/login.html" class="link">Login</a>
+</nav>
+
+    </header>
+
+    <nav class="mini-section" style="font-size: 1.3em;">
+        <a href="../index.html">Home</a>
+        <a>Anelli</a>
+        <a>Bracciali</a>
+        <a>Orecchini</a>
+        <a>Contatti</a>
+    </nav>
+
+
+    <main>
+        <section class="prodotti">
+            <h3>Gestisci Prodotti</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID Prodotto</th>
+                        <th>Nome Prodotto</th>
+                        <th>Prezzo</th>
+                        <th>Azioni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dati di esempio -->
+                    <tr>
+                        <td>001</td>
+                        <td>Collana SMG</td>
+                        <td><strong>€ 849,99</strong></td>
+                        <td>
+                            <button class="rosso elimina">🗑️</button>
+                            <button class="blu modifica">✍️</button>
+                            <button class="verde">✅</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Ricambi di diamanti</td>
+                        <td><strong>€ 49,99</strong></td>
+                        <td>
+                            <button class="rosso elimina">🗑️</button>
+                            <button class="blu modifica">✍️</button>
+                            <button class="verde">✅</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Set di perline</td>
+                        <td><strong>€ 89,99</strong></td>
+                        <td>
+                            <button class="rosso elimina">🗑️</button>
+                            <button class="blu modifica">✍️</button>
+                            <button class="verde">✅</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>004</td>
+                        <td>Dente placcato in oro</td>
+                        <td><strong>€ 250,00 </strong></td>
+                        <td> 
+                            <button class="rosso elimina">🗑️</button>
+                            <button class="blu modifica">✍️</button>
+                            <button class="verde">✅</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <!-- Pop-up Modifica -->
+            <div id="overlay"> 
+                <div id="popup">
+                    <button class="chiudi" onclick="chiudi()">X</button>
+                    <h2>Modifica Prodotto</h2>
+
+                    <label>Prodotto:</label>
+                    <input type="text" id="prodotto">
+
+                    <label>Prezzo (€):</label>
+                    <input type="number" min="0" step="0.01" id="prezzo">
+
+                    <button onclick="modifica()">Salva Modifiche</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+     <script src="../js/script.js"></script>
+</body>
+</html>
