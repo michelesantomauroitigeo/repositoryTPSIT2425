@@ -1,0 +1,100 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+img{
+	width: 13%;
+	height: 13%;
+}
+
+
+nav a{
+	color:#de9947;
+	font-size: 195%;
+}
+
+nav h2{
+	font-size: 175%;
+}
+.login{
+	width: 6.5%;
+	height: 49%;
+	display: flex;
+	justify-content: space-between;
+	margin-right:2%;
+}
+
+.login:hover{
+	border-radius: 5px;
+	background-color: #e3e1e1;
+}
+
+#immLogin{
+	width: 33px;
+}
+
+
+h2{
+  text-align: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+th {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid black;
+  background-color: #074fad;
+  color: white;
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.check {
+  width: 33px; 
+  height: 33px;
+  display: inline-block;/* un elemento venga visualizzato come un blocco, ma in linea con altri elementi. 
+  Significa che gli elementi possono essere affiancati senza andare a capo, come avviene con gli elementi inline.*/
+}
+
+#azione{
+  width: 9%;
+}
+
+.footer_promozione {
+  background-color:#de9947; /* Colore arancione simile all'immagine */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top:5% ;
+}
+
+.footer_content h2 {
+  font-size: 24px;
+}
+
+.footer-content p {
+  font-size: 20px;
+}
+
+.social img{
+	width: 2%;
+	margin-left: 1%;
+}
+
+

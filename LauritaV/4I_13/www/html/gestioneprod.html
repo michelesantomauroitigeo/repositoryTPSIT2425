@@ -13,39 +13,69 @@
             <img class="logo" src="../imgs/logo.png" alt="logo">
         </div>
         <div class="centro">
-            <h2>Pannello Admin</h2>
+            <h2>Gestione Prodotti</h2>
         </div>
         <div class="destra">
-            <a href="../index.html" class="tasto-home">Torna alla Homepage</a>
+            <a href="admin.html" class="tasto-home">Torna Indietro</a>
         </div>
     </header>
 
-    <div class="admin-container">
+    <div class="prodotti-container">
         <div class="admin-header">
             <h1>Gestione Prodotti</h1>
             
         </div>
-        <div class="admin-azioni">
-            <button class="admin-button">Aggiungi Prodotto</button>
-            <button class="admin-button">Modifica Prodotto</button>
-            <button class="admin-button">Rimuovi Prodotto</button>
+        <div class="prodotti-azioni">
+            <button class="prodotti-button">Aggiungi Prodotto</button>
         </div>
-        <div class="lista-prodotto">
-            
-            <div class="elemento-lista">
-                <span>Macchinina Rossa</span>
-                <span>€9.99</span>
-            </div>
-            <div class="elemento-lista">
-                <span>Orsetto di Peluche</span>
-                <span>€14.99</span>
-            </div>
-            <div class="elemento-lista">
-                <span>Set Lego</span>
-                <span>€29.99</span>
-            </div>
-            
-        </div>
+        <table class="lista-prodotto">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Nome Prodotto</th>
+                <th>Prezzo</th>
+                <th>Disponibilità</th>
+                <th>Categoria</th>
+                <th>Azioni</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Macchinina Rossa</td>
+                <td>€9.99</td>
+                <td>In magazzino</td>
+                <td>Veicoli</td>
+                <td>
+                  <button class="action-prodotti edit" title="Modifica"><i class="fas fa-edit"></i></button>
+                  <button class="action-prodotti delete" title="Elimina"><i class="fas fa-trash-alt"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Orsetto di Peluche</td>
+                <td>€14.99</td>
+                <td>Esaurito</td>
+                <td>Peluche</td>
+                <td>
+                  <button class="action-prodotti edit" title="Modifica"><i class="fas fa-edit"></i></button>
+                  <button class="action-prodotti delete" title="Elimina"><i class="fas fa-trash-alt"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Set Lego</td>
+                <td>€29.99</td>
+                <td>In magazzino</td>
+                <td>Costruzioni</td>
+                <td>
+                  <button class="action-prodotti edit" title="Modifica"><i class="fas fa-edit"></i></button>
+                  <button class="action-prodotti delete" title="Elimina"><i class="fas fa-trash-alt"></i></button>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
     </div>
 
     <footer class="footer">

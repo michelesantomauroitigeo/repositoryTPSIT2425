@@ -5,7 +5,7 @@ body {
     padding: 0;
     color: #333;
     background-image: url('../imgs/sfondo2.jpeg');
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
@@ -38,11 +38,10 @@ nav ul li a {
     cursor: pointer;
 }
 
-header,h1 {
+header, h1 {
     font-size: 28px;
     margin-bottom: 20px;
 }
-
 
 h1 {
     text-align: center;
@@ -134,9 +133,6 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    max-height: 400px; 
-    overflow-y: auto;  
-    display: block;
 }
 
 th, td {
@@ -168,3 +164,4 @@ td button {
     border-radius: 5px;
     cursor: pointer;
 }
+

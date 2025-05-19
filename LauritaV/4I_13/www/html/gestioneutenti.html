@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin - Gestione Utenti</title>
+        <link rel="stylesheet" href="../css/stile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+    
+        <header class="navbar">
+            <div class="sinistra">
+            <img class="logo" src="../imgs/logo.png" alt="logo">
+            </div>
+            <div class="centro">
+            <h2>Pannello Admin</h2>
+            </div>
+            <div class="destra">
+            <a href="admin.html" class="tasto-indietro">Torna Indietro</a>
+            </div>
+        </header>
+
+        <!-- Contenuto Principale -->
+        <div class="admin-container">
+            <div class="admin-header">
+            <h1>Gestione Utenti</h1>
+            </div>
+            <table class="lista-utenti">
+            <thead>
+                <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Ruolo</th>
+                <th>Data Registrazione</th>
+                <th>Azioni</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>1</td>
+                <td>mario.rossi</td>
+                <td>mario.rossi@example.com</td>
+                <td>Amministratore</td>
+                <td>2024-11-15</td>
+                <td>
+                    <button class="action edit" title="Modifica Utente"><i class="fas fa-edit"></i></button>
+                    <button class="action delete" title="Elimina Utente"><i class="fas fa-trash-alt"></i></button>
+                </td>
+                </tr>
+                <tr>
+                <td>2</td>
+                <td>anna.bianchi</td>
+                <td>anna.bianchi@example.com</td>
+                <td>Utente</td>
+                <td>2025-02-10</td>
+                <td>
+                    <button class="action edit" title="Modifica Utente"><i class="fas fa-edit"></i></button>
+                    <button class="action delete" title="Elimina Utente"><i class="fas fa-trash-alt"></i></button>
+                </td>
+                </tr>
+                <tr>
+                <td>3</td>
+                <td>lorenzo.verdi</td>
+                <td>lorenzo.verdi@example.com</td>
+                <td>Utente</td>
+                <td>2025-03-05</td>
+                <td>
+                    <button class="action edit" title="Modifica Utente"><i class="fas fa-edit"></i></button>
+                    <button class="action delete" title="Elimina Utente"><i class="fas fa-trash-alt"></i></button>
+                </td>
+                </tr>
+                
+            </tbody>
+            </table>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+            <div class="footer-sezione">
+                <h3>Chi Siamo</h3>
+                <p>Il miglior negozio online di giocattoli per bambini di tutte le età!</p>
+            </div>
+            <div class="footer-sezione">
+                <h3>Contatti</h3>
+                <p>Email: support@toystore.com</p>
+                <p>Telefono: +39 0123 456 789</p>
+            </div>
+            <div class="footer-sezione">
+                <h3>Seguici</h3>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            </div>
+            <p class="footer-bottom">© 2025 ToyStore - Tutti i diritti riservati.</p>
+        </footer>
+    </body>
+</html>

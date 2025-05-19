@@ -1,3 +1,4 @@
+
 html, body {
   height: 100%;
   margin: 0;
@@ -47,10 +48,10 @@ table {
   font-size: 155%;
   width: 70%;
   height: 25%;
-  margin-top: 7%;
-  margin-bottom: 8%;
   padding-top:2% ;
+
 }
+
 th {
   text-align: center;
   border: 1px solid lightgrey;
@@ -69,15 +70,24 @@ td {
   padding-bottom:0.5% ;
 }
 
+.centra_tabella{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 table button{
   font-size: 80%;
 }
 .centra {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: right;
+  margin-right: 2%;
 }
 
+.centra button{
+
+}
 
 .footer_promozione {
   background-color:#de9947; /* Colore arancione simile all'immagine */
@@ -122,11 +132,37 @@ table button{
   text-align: center;
   background-color: #f2f0f0; 
 }
-#finestraModale button{
+#visualizzazione_Modifica {
+  background-color: white;
+  border: solid black 1px;
+  border-radius: 15px;
+  width: 22%;
+  margin: auto;
+  text-align: center;
+  background-color: #f2f0f0;
+}
+
+#finestraModale_Modifica{
+  display: none; 
+  position: fixed; /*Serve a mantenera il div fisso al centro della pagina indipendentemente dal suo scorrimento*/
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+#finestraModale_Modifica button{
   color:#de9947;
   font-size: 115%;
 }
 
+#finestraModale button{
+  color:#de9947;
+  font-size: 115%;
+}
 
 .visualizzazione input{
   width: 75%;
@@ -144,10 +180,29 @@ table button{
   padding-right: 5px;
 }
 
-.visualizzazione select{
+#visualizzazione_Modifica select{
   font-size: 100%;
 }
 
+#visualizzazione_Modifica input{
+  width: 75%;
+  background-color: #e3e1e1;
+  border-radius: 5px;
+  height: 10%;
+  font-size: 25px;
+  color: #757474;
+  text-align: center;
+}
+
+#visualizzazione_Modifica label{
+  font-size: 115%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#visualizzazione_Modifica select{
+  font-size: 100%;
+}
 #file{
   font-size: 15px;
   border-radius: 0px;
@@ -158,16 +213,10 @@ table button{
   align-items: center; 
   justify-content: center; 
   position: relative;
+
 }
 
-.chiudi{
-  position: absolute;
-  left: 0; 
-  margin-left: 1%;
-  color:#de9947;
-  font-size: 115%;
-  margin-bottom: 5px;
-}
+
 
 .allinea h2{
   margin: 0;
@@ -179,35 +228,9 @@ form p{
   margin: 0%;
 }
 
-#finestraLista{
-  display: none; 
-  position: fixed; /*Serve a mantenera il div fisso al centro della pagina indipendentemente dal suo scorrimento*/
-  padding-top: 100px; 
-  left: 0;
-  top: 0;
-  right: 0;
-  width: 100%; 
-  height: 100%; 
-  background-color: rgba(0,0,0,0.4); 
-}
 
-#visualizzazioneLista{
-  background-color: white;
-  border: solid black 1px;
-  border-radius: 15px;
-  width: 60% ;
-  height: 75%;
-  margin: auto;
-  text-align: center;
-  background-color: #f2f0f0; 
-}
 
-#finestraLista table{
-  width: 100%;
-  margin-top: 1%;
-}
-
-#finestraLista img{
+table img{
   height: 45%;
   width: 20%;
 }
@@ -225,4 +248,15 @@ form p{
   color: white;
   font-size: 65%;
   width: auto;              
+}
+
+#bottone_prodotti{
+  color:#de9947;
+  font-size: 115%;
+  position: absolute;
+  right: 2%;
+  top: 10%;
+  width: 10%;
+  height: 3%;
+  margin-top: 1%;
 }

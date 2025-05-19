@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestione Utenti - VedoChiaro</title>
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Gestione Utenti</h1>
+    <button onclick="window.location.href='amministrazione.html'">Indietro</button>
+  </header>
+  <section>
+    <h2>Elenco Utenti</h2>
+    <div id="users-list">
+      <!-- Gli utenti predefiniti vengono aggiunti direttamente nell'HTML -->
+      <div class="user-item">
+        <p><strong>Username:</strong> utente1</p>
+        <p><strong>Email:</strong> utente1@example.com</p>
+        <p><strong>Data Registrazione:</strong> 2025-04-10</p>
+        <p><strong>Ultimo Accesso:</strong> 2025-04-11</p>
+        <button onclick="abilitaDisabilitaUtente(this)">Disabilita</button>
+        <button onclick="abilitaDisabilitaUtente(this)">Abilita</button>
+      </div>
+
+      <div class="user-item">
+        <p><strong>Username:</strong> utente2</p>
+        <p><strong>Email:</strong> utente2@example.com</p>
+        <p><strong>Data Registrazione:</strong> 2025-04-12</p>
+        <p><strong>Ultimo Accesso:</strong> 2025-04-13</p>
+         <button onclick="abilitaDisabilitaUtente(this)">Disabilita</button>
+        <button onclick="abilitaDisabilitaUtente(this)">Abilita</button>
+      </div>
+
+      <div class="user-item">
+        <p><strong>Username:</strong> utente3</p>
+        <p><strong>Email:</strong> utente3@example.com</p>
+        <p><strong>Data Registrazione:</strong> 2025-04-14</p>
+        <p><strong>Ultimo Accesso:</strong> 2025-04-15</p>
+         <button onclick="abilitaDisabilitaUtente(this)">Disabilita</button>
+        <button onclick="abilitaDisabilitaUtente(this)">Abilita</button>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+
+  <script>
+    // Funzione per abilitare/disabilitare un utente
+    function abilitatoDisabilitaUtente(button) {
+      var userItem = button.parentElement;
+      var isAbilitato = button.innerText === 'Abilita'; // Se il testo del pulsante è "Abilita", l'utente è disabilitato
+
+      if (isAbilitato) {
+        // Cambia il testo e lo stato dell'utente
+        button.innerText = 'Disabilita';
+        userItem.querySelector('p:nth-child(4)').innerHTML = '<strong>Ultimo Accesso:</strong> -';
+        userItem.classList.add('enabled');
+        userItem.classList.remove('disabled');
+      } else {
+        // Cambia il testo e lo stato dell'utente
+        button.innerText = 'Abilita';
+        userItem.querySelector('p:nth-child(4)').innerHTML = '<strong>Ultimo Accesso:</strong> -';
+        userItem.classList.add('disabled');
+        userItem.classList.remove('enabled');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,135 +1,121 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vedichiaro - Home</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <title>VedoChiaro - Vendita Occhiali</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Benvenuto su Vedichiaro - Il tuo negozio di occhiali online</h1>
-        <button id="loginBtn">Accedi</button>
-        <button id="logoutBtn" style="display: none;">Logout</button>
-    </header>
-
-    <main>
-        <section id="prodotti">
-            <h2>I nostri occhiali</h2>
-            <div class="product-list">
-                <div class="product">
-                    <img src="img/occhiale1.jpg" alt="Occhiale 1">
-                    <h3>Occhiale Fashion 1</h3>
-                    <p>Occhiali da sole eleganti per ogni occasione.</p>
-                    <span class="price">€49,99</span>
-                </div>
-
-                <div class="product">
-                    <img src="img/occhiale2.jpeg" alt="Occhiale 2">
-                    <h3>Occhiale Sport 2</h3>
-                    <p>Ideali per sport e attività all'aperto.</p>
-                    <span class="price">€69,99</span>
-                </div>
-
-                <div class="product">
-                    <img src="img/occhiale3.jpeg" alt="Occhiale 3">
-                    <h3>Occhiale Classico 3</h3>
-                    <p>Design classico, perfetti per ogni giorno.</p>
-                    <span class="price">€39,99</span>
-                </div>
-
-                <div class="product">
-                    <img src="img/occhiale4.jpeg" alt="Occhiale 4">
-                    <h3>Occhiale Moda 4</h3>
-                    <p>Occhiali alla moda con lenti UV.</p>
-                    <span class="price">€59,99</span>
-                </div>
-
-                <div class="product">
-                    <img src="img/occhiale5.jpeg" alt="Occhiale 5">
-                    <h3>Occhiale Tendenze 5</h3>
-                    <p>Occhiali con un tocco di stile moderno.</p>
-                    <span class="price">€79,99</span>
-                </div>
-
-                <div class="product">
-                    <img src="img/occhiale6.jpeg" alt="Occhiale 6">
-                    <h3>Occhiale Vintage 6</h3>
-                    <p>Design retrò per un look unico.</p>
-                    <span class="price">€89,99</span>
-                </div>
-
-                <div class="product">
-                    <img src="img/occhiale7.jpeg" alt="Occhiale 7">
-                    <h3>Occhiale Elegante 7</h3>
-                    <p>Occhiali eleganti per serate speciali.</p>
-                    <span class="price">€99,99</span>
-                </div>
-
-                <div class="product">
-                    <img src="img/occhiale8.jpeg" alt="Occhiale 8">
-                    <h3>Occhiale Trendy 8</h3>
-                    <p>Occhiali trendy con lenti colorate.</p>
-                    <span class="price">€54,99</span>
-                </div>
-
-                <div class="product">
-                    <img src="img/occhiale9.jpeg" alt="Occhiale 9">
-                    <h3>Occhiale Sportivo 9</h3>
-                    <p>Perfetti per chi ama il movimento.</p>
-                    <span class="price">€64,99</span>
-                </div>
-
-                <div class="product">
-                    <img src="img/occhiale10.jpeg" alt="Occhiale 10">
-                    <h3>Occhiale Lussuoso 10</h3>
-                    <p>Occhiali di lusso con dettagli in oro.</p>
-                    <span class="price">€149,99</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sezione per aggiungere un prodotto (appare solo dopo il login) -->
-        <section id="productSection" style="display: none;">
-            <h2>Aggiungi un nuovo prodotto</h2>
-            <form id="addProductForm">
-                <label for="nome">Nome del prodotto:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="descrizione">Descrizione:</label>
-                <textarea id="descrizione" name="descrizione" required></textarea>
-
-                <label for="prezzo">Prezzo:</label>
-                <input type="number" id="prezzo" name="prezzo" required>
-
-                <label for="immagine">URL immagine:</label>
-                <input type="text" id="immagine" name="immagine" required>
-
-                <button type="submit">Aggiungi Prodotto</button>
-            </form>
-        </section>
-    </main>
-
-    <!-- Modal di login -->
-    <div id="loginModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" id="closeBtn">&times;</span>
-            <h2>Login</h2>
-            <form id="loginForm">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username">
-                <div id="usernameError" class="error-message"></div>
-
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password">
-                <div id="passwordError" class="error-message"></div>
-
-                <button type="submit">Login</button>
-                <p id="error-message" style="color: red; display: none;">Dati errati, riprova.</p>
-            </form>
-        </div>
+  <header>
+    <h1>VedoChiaro</h1>
+    <div class="login-box">
+      <h2>Login Amministratore</h2>
+      <input type="text" id="username" placeholder="Username">
+      <span id="error_username" class="error-message"></span>
+      
+      <input type="password" id="password" placeholder="Password">
+      <span id="error_password" class="error-message"></span>
+      
+      <button onclick="login()">Accedi</button>
+      <span id="error_message" class="error-message"></span>
+      <span id="success_message"></span>
     </div>
+   <a href="registrazione.html" class="button">Registrati</a>
+  </header>
 
-    <script src="js/script.js"></script>
+
+  <section id="prodotti">
+    <h2>I nostri occhiali</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="img/occhiale1.jpg" alt="Occhiale 1">
+        <h3>Occhiale Fashion 1</h3>
+        <p>Occhiali da sole eleganti per ogni occasione.</p>
+        <span class="price">€49,99</span>
+      </div>
+
+      <div class="product">
+        <img src="img/occhiale2.jpeg" alt="Occhiale 2">
+        <h3>Occhiale Sport 2</h3>
+        <p>Ideali per sport e attività all'aperto.</p>
+        <span class="price">€69,99</span>
+      </div>
+
+      <div class="product">
+        <img src="img/occhiale3.jpeg" alt="Occhiale 3">
+        <h3>Occhiale Classico 3</h3>
+        <p>Design classico, perfetti per ogni giorno.</p>
+        <span class="price">€39,99</span>
+      </div>
+
+      <div class="product">
+        <img src="img/occhiale4.jpeg" alt="Occhiale 4">
+        <h3>Occhiale Moda 4</h3>
+        <p>Occhiali alla moda con lenti UV.</p>
+        <span class="price">€59,99</span>
+      </div>
+
+      <div class="product">
+        <img src="img/occhiale5.jpeg" alt="Occhiale 5">
+        <h3>Occhiale Tendenze 5</h3>
+        <p>Occhiali con un tocco di stile moderno.</p>
+        <span class="price">€79,99</span>
+      </div>
+
+      <div class="product">
+        <img src="img/occhiale6.jpeg" alt="Occhiale 6">
+        <h3>Occhiale Vintage 6</h3>
+        <p>Design retrò per un look unico.</p>
+        <span class="price">€89,99</span>
+      </div>
+
+      <div class="product">
+        <img src="img/occhiale7.jpeg" alt="Occhiale 7">
+        <h3>Occhiale Elegante 7</h3>
+        <p>Occhiali eleganti per serate speciali.</p>
+        <span class="price">€99,99</span>
+      </div>
+
+      <div class="product">
+        <img src="img/occhiale8.jpeg" alt="Occhiale 8">
+        <h3>Occhiale Trendy 8</h3>
+        <p>Occhiali trendy con lenti colorate.</p>
+        <span class="price">€54,99</span>
+      </div>
+
+      <div class="product">
+        <img src="img/occhiale9.jpeg" alt="Occhiale 9">
+        <h3>Occhiale Sportivo 9</h3>
+        <p>Perfetti per chi ama il movimento.</p>
+        <span class="price">€64,99</span>
+      </div>
+
+      <div class="product">
+        <img src="img/occhiale10.jpeg" alt="Occhiale 10">
+        <h3>Occhiale Lussuoso 10</h3>
+        <p>Occhiali di lusso con dettagli in oro.</p>
+        <span class="price">€149,99</span>
+      </div>
+    </div>
+  </section>
+<section id="aggiungi-prodotto">
+  <h2>Aggiungi un nuovo prodotto</h2>
+  <form id="formProdotto">
+    <input type="text" id="nome" placeholder="Nome prodotto" required>
+    <span class="errore" id="erroreNome"></span>
+
+    <input type="text" id="descrizione" placeholder="Descrizione" required>
+    <span class="errore" id="erroreDescrizione"></span>
+
+    <input type="number" id="prezzo" placeholder="Prezzo" required>
+    <span class="errore" id="errorePrezzo"></span>
+
+    <input type="text" id="immagine" placeholder="Percorso immagine" required>
+    <span class="errore" id="erroreImmagine"></span>
+
+    <button type="submit">Aggiungi</button>
+  </form>
+</section>
+  <script src="js/script.js"></script>
 </body>
 </html>

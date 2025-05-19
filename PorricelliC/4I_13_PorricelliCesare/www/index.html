@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia San Rocco</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/script.js" defer></script>
+</head>
+
+<body>
+
+<nav>       
+    <div class="login">
+        <button onclick="aperturaFinestra()">Login</button>
+    </div>
+</nav>
+
+<header>
+    <h1>Farmacia San Rocco</h1>
+    <p>Benvenuti nella nostra farmacia online</p>
+</header>
+
+<div class="container">
+    <h2>I nostri prodotti:</h2>
+    <ul id="listaProdotti">
+        <li class="PRODOTTO">
+            <img src="imgs/aspirina.jpeg" alt="Aspirina 500mg">
+            <div class="INFO">
+                <span class="NOME">Aspirina 500mg</span>
+                <p>Un'ottima soluzione per il mal di testa e altri dolori.</p>
+                <span class="PREZZO">€4,50</span>
+            </div>
+        </li>
+        <li class="PRODOTTO">
+            <img src="imgs/paracetamolo.jpeg" alt="Paracetamolo 1000mg">
+            <div class="INFO">
+                <span class="NOME">Paracetamolo 1000mg</span>
+                <p>Antidolorifico e antipiretico.</p>
+                <span class="PREZZO">€5,00</span>
+            </div>
+        </li>
+        <li class="PRODOTTO">
+            <img src="imgs/amuchina.jpeg" alt="Amuchina Gel">
+            <div class="INFO">
+                <span class="NOME">Amuchina Gel</span>
+                <p>Gel igienizzante per mani.</p>
+                <span class="PREZZO">€2,80</span>
+            </div>
+        </li>
+        <li class="PRODOTTO">
+            <img src="imgs/zyrtec.jpeg" alt="Zyrtec 10mg">
+            <div class="INFO">
+                <span class="NOME">Zyrtec 10mg</span>
+                <p>Antistaminico per allergie stagionali.</p>
+                <span class="PREZZO">€8,50</span>
+            </div>
+        </li>
+        <li class="PRODOTTO">
+            <img src="imgs/fluimucil.jpeg" alt="Fluimucil 600mg">
+            <div class="INFO">
+                <span class="NOME">Fluimucil 600mg</span>
+                <p>Per il trattamento della tosse e del raffreddore.</p>
+                <span class="PREZZO">€7,00</span>
+            </div>
+        </li>
+        <li class="PRODOTTO">
+            <img src="imgs/cefalexina.jpeg" alt="Cefalexina 500mg">
+            <div class="INFO">
+                <span class="NOME">Cefalexina 500mg</span>
+                <p>Antibiotico per infezioni batteriche.</p>
+                <span class="PREZZO">€6,20</span>
+            </div>
+        </li>
+        <li class="PRODOTTO">
+            <img src="imgs/bepanthenol.jpeg" alt="Bepanthenol Crema">
+            <div class="INFO">
+                <span class="NOME">Bepanthenol Crema</span>
+                <p>Crema lenitiva per la pelle irritata.</p>
+                <span class="PREZZO">€10,00</span>
+            </div>
+        </li>
+        <li class="PRODOTTO">
+            <img src="imgs/enterogermina.jpeg" alt="Enterogermina 8 fiale">
+            <div class="INFO">
+                <span class="NOME">Enterogermina 8 fiale</span>
+                <p>Per il riequilibrio della flora intestinale.</p>
+                <span class="PREZZO">€14,90</span>
+            </div>
+        </li>
+        <li class="PRODOTTO">
+            <img src="imgs/faringegutt.jpeg" alt="Faringegutt Spray">
+            <div class="INFO">
+                <span class="NOME">Faringegutt Spray</span>
+                <p>Per il sollievo da mal di gola.</p>
+                <span class="PREZZO">€5,80</span>
+            </div>
+        </li>
+        <li class="PRODOTTO">
+            <img src="imgs/neosaldina.jpeg" alt="Neosaldina 12 compresse">
+            <div class="INFO">
+                <span class="NOME">Neosaldina 12 compresse</span>
+                <p>Per il trattamento del mal di testa.</p>
+                <span class="PREZZO">€6,50</span>
+            </div>
+        </li>
+    </ul>
+
+    <button id="btnListaProdotti" style="display:none;" onclick="caricaProdotti()">Lista Prodotti</button>
+    <button id="btnCaricaProdotto" style="display:none;" onclick="apriFormCarica()">Carica Prodotto</button>
+
+    <div id="aggiungiProdottoForm" style="display:none;">
+        <h3>Aggiungi un nuovo prodotto</h3>
+        <form id="formAggiungi" onsubmit="aggiungiProdotto(event)">
+            <label for="nomeProdotto">Nome</label>
+            <input type="text" id="nomeProdotto" required><br>
+
+            <label for="descrizioneProdotto">Descrizione</label>
+            <input type="text" id="descrizioneProdotto" required><br>
+
+            <label for="prezzoProdotto">Prezzo</label>
+            <input type="text" id="prezzoProdotto" required><br>
+
+            <button type="submit">Aggiungi Prodotto</button>
+        </form>
+    </div>
+</div>
+
+<div id="finestraLista" style="display:none;">
+    <div class="finestra" style="background:white; padding:20px; border-radius:10px; width:80%; margin:50px auto;">
+        <h2>Lista Prodotti</h2>
+        <table class="tabella-prodotti" style="width:100%; border-collapse:collapse;">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrizione</th>
+                    <th>Prezzo</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabella"></tbody>
+        </table>
+        <br>
+        <button onclick="chiusuraFinestraLista()">Chiudi</button>
+    </div>
+</div>
+
+<div id="finestraModale" style="display:none;">
+    <div class="finestra">
+        <span onclick="chiusuraFinestra()" style="cursor:pointer; float:right; font-size:20px;">&times;</span>
+        <h2>Accesso Area Riservata</h2>
+        <form id="formLogin" onsubmit="login(event)">
+            <label for="nomeUtente">USERNAME</label>
+            <input type="text" id="nomeUtente" name="nomeUtente"><br>
+            <p id="errorNome" style="display:none; color:red;">Username non inserito correttamente</p>
+            
+            <label for="passwordUtente">PASSWORD</label>
+            <input type="password" id="passwordUtente" name="passwordUtente"><br>
+            <p id="errorPassword" style="display:none; color:red;">Password non inserita correttamente</p>
+            
+            <button type="submit">ACCEDI</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Farmacia San Rocco - Tutti i diritti riservati</p>
+</footer>
+
+</body>
+</html>

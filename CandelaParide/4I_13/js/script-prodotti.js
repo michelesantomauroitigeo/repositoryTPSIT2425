@@ -33,3 +33,12 @@ document.querySelectorAll(".elimina").forEach(button => {
 
     });
 });
+
+
+function apriPopupProdotto() {
+    document.getElementById('overlay-prodotto').style.display = 'flex';
+}
+
+function chiudiPopupProdotto() {
+    document.getElementById('overlay-prodotto').style.display = 'none';
+}

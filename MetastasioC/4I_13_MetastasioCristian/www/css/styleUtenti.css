@@ -1,0 +1,38 @@
+.modale-utente {
+  text-align: right;
+  margin: 10px 20px;
+}
+
+.tabella-utenti {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.tabella-utenti th, .tabella-utenti td {
+  border: 1px solid #99ccff;
+  padding: 10px;
+}
+
+.tabella-utenti th {
+  background-color: #cce5ff;
+}
+
+.modale-utente-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+  z-index: 10;
+}
+
+.modal-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  display: inline-block;
+  margin-top: 10%;
+}

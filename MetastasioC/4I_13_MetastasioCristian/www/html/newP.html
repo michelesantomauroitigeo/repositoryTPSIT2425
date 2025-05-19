@@ -34,61 +34,70 @@
         <td><img src="../img/prodotto1.jpg" alt="Scarpe da corsa" width="100"></td>
         <td>Scarpe da corsa</td>
         <td>Comode e resistenti per ogni tipo di sport.</td>
-        <td><button class="edit-btn">Modifica</button></td>
+        <td><button onclick="apriModifica()" class="edit-btn">Modifica</button></td>
       </tr>
       <tr>
         <td><img src="../img/prodotto2.jpg" alt="Tuta sportiva"></td>
         <td>Tuta sportiva</td>
         <td>Perfetta per allenamenti intensi.</td>
-        <td><button class="edit-btn">Modifica</button></td>
+       <td><button onclick="apriModifica()" class="edit-btn">Modifica</button></td>
+
       </tr>
       <tr>
         <td><img src="../img/prodotto3.jpg" alt="Pallone da calcio"></td>
         <td>Pallone da calcio</td>
         <td>Qualità professionale per ogni partita.</td>
-        <td><button class="edit-btn">Modifica</button></td>
+       <td><button onclick="apriModifica()" class="edit-btn">Modifica</button></td>
+
       </tr>
       <tr>
         <td><img src="../img/prodotto4.jpg" alt="Guanti da palestra"></td>
         <td>Guanti da palestra</td>
         <td>Protezione e grip per il sollevamento pesi.</td>
-        <td><button class="edit-btn">Modifica</button></td>
+       <td><button onclick="apriModifica()" class="edit-btn">Modifica</button></td>
+
       </tr>
       <tr>
         <td><img src="../img/prodotto5.jpg" alt="Pantaloncini sportivi"></td>
         <td>Pantaloncini sportivi</td>
         <td>Traspiranti e confortevoli.</td>
-        <td><button class="edit-btn">Modifica</button></td>
+       <td><button onclick="apriModifica()" class="edit-btn">Modifica</button></td>
+
       </tr>
       <tr>
         <td><img src="../img/prodotto6.jpg" alt="Felpa con cappuccio"></td>
         <td>Felpa con cappuccio</td>
         <td>Ideale per il tempo libero e l’allenamento.</td>
-        <td><button class="edit-btn">Modifica</button></td>
+       <td><button onclick="apriModifica()" class="edit-btn">Modifica</button></td>
+
       </tr>
       <tr>
         <td><img src="../img/prodotto7.jpg" alt="Zaino sportivo"></td>
         <td>Zaino sportivo</td>
         <td>Capiente e resistente per la palestra.</td>
-        <td><button class="edit-btn">Modifica</button></td>
+       <td><button onclick="apriModifica()" class="edit-btn">Modifica</button></td>
+
       </tr>
       <tr>
         <td><img src="../img/prodotto8.jpg" alt="Fascia per capelli"></td>
         <td>Fascia per capelli</td>
         <td>Assorbe il sudore e mantiene i capelli in ordine.</td>
-        <td><button class="edit-btn">Modifica</button></td>
+       <td><button onclick="apriModifica()" class="edit-btn">Modifica</button></td>
+
       </tr>
       <tr>
         <td><img src="../img/prodotto9.jpg" alt="Smartwatch fitness"></td>
         <td>Smartwatch fitness</td>
         <td>Monitora i tuoi allenamenti e la salute.</td>
-        <td><button class="edit-btn">Modifica</button></td>
+       <td><button onclick="apriModifica()" class="edit-btn">Modifica</button></td>
+
       </tr>
       <tr>
         <td><img src="../img/prodotto10.jpg" alt="Borraccia sportiva"></td>
         <td>Borraccia sportiva</td>
         <td>Per rimanere idratato durante l'attività fisica.</td>
-        <td><button class="edit-btn">Modifica</button></td>
+       <td><button onclick="apriModifica()" class="edit-btn">Modifica</button></td>
+
       </tr>
     </tbody>
   </table>
@@ -108,6 +117,26 @@
 
         <button type="button">SALVA</button>
         <button type="button" onclick="chiudiFinestra()">ESCI</button>
+      </form>
+    </div>
+  </div>
+
+
+ <div class="modificaP" id="modificaP" style="display: none;">
+    <div class="modifica">
+      <h2>Modifica prodotto</h2>
+      <form>
+        <label for="nome">Nome prodotto:</label><br>
+        <input type="text" name="nome"><br><br>
+
+        <label for="descrizione">Descrizione prodotto:</label><br>
+        <input type="text" name="descrizione"><br><br>
+
+        <label for="immagine">Immagine prodotto:</label><br>
+        <input type="file" name="immagine"><br><br>
+
+        <button type="button">SALVA</button>
+        <button type="button" onclick="chiudiModifica()">ESCI</button>
       </form>
     </div>
   </div>

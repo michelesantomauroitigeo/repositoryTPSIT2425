@@ -38,11 +38,41 @@ p {
 	background-color: #abcbab;
 }
 
+#registerButton {
+    background-color: #abcbab;
+}
+
+#adminButton {
+    background-color: #abcbab;
+}
+
 #erroreUsername, #errorePassword {
 	color: red;
 }
 
 #finestraLogin {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    overflow: auto;
+}
+
+#finestraRegistrazione {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    overflow: auto;
+}
+
+#finestraAmministrazione {
     display: none;
     position: fixed;
     z-index: 1;
@@ -60,6 +90,24 @@ p {
  	border: 1px solid #888;
   	width: 80%;
   	text-align: center;
+}
+
+#contenutoFinestraRegistrazione {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+}
+
+#contenutoFinestraAmministrazione {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
 }
 
 .close {
@@ -104,5 +152,5 @@ p {
 }
 
 .prodotto1 img, .prodotto2 img, .prodotto3 img, .prodotto4 img, .prodotto5 img, .prodotto6 img, .prodotto7 img, .prodotto8 img, .prodotto9 img {
-    height: auto;
+    height: 300px;
 }

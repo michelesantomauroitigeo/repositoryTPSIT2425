@@ -53,119 +53,137 @@
 	</div>
 </div>
 
-<div id="finestraLista">
-	<div id="visualizzazioneLista">
+<div id="finestraModale_Modifica">
+	<div id="visualizzazione_Modifica">
 		<div class="allinea">
-        <button class="chiudi" onclick="chisuraFinestraLista()">X</button>
-        <h1>Tabella Prodotti</h1>
+        <button class="chiudi" onclick="chiusuraFinestraModifica()">X</button>
+        <h1>Modifica prodotti</h1>
       </div>
-		<table>
-			<tr>
-				<th>Nome</th>
-				<th>Descrizione</th>
-				<th>Prezzo</th>
-				<th>Sconto</th>
-				<th>Immagine</th>
-				<th>Scelta</th>
-			</tr>
-			<tr>
-				<td>Set di bicchieri</td>
-				<td>Un set di bicchieri da 6</td>
-				<td>7,95 €</td>
-				<td>9,99 € (-20%)</td>
-				<td><img src="../img/bicchieri.png"></td>
-				<td>
-            <button  type="button" id="elimina">Elimina</button>
-            <button type="button" id="modifica">Modifica</button>
-        </td>
-			</tr>
-			<tr>
-				<td>Set di piatti</td>
-				<td>Piatto piano e fondo</td>
-				<td>9,99 €</td>
-				<td>12,99 € (-20%)</td>
-				<td><img src="../img/piatti.png"></td>
-				<td>
-            <button  type="button" id="elimina">Elimina</button>
-            <button type="button" id="modifica">Modifica</button>
-        </td>
-			</tr>
-			<tr>
-				<td>Saliera e Pepiera</td>
-				<td>Coppia di saliera e pepiera</td>
-				<td>7,99 €</td>
-				<td>9,99 € (-25%)</td>
-				<td><img src="../img/sale.png"></td>
-				<td>
-            <button  type="button" id="elimina">Elimina</button>
-            <button type="button" id="modifica">Modifica</button>
-        </td>
-			</tr>
-			<tr>
-				<td>Set di pentole</td>
-				<td>Set di pentole</td>
-				<td>54,99 €</td>
-				<td>68,99 € (-25%)</td>
-				<td><img src="../img/pentole.png"></td>
-				<td>
-            <button  type="button" id="elimina">Elimina</button>
-            <button type="button" id="modifica">Modifica</button>
-        </td>
-			</tr>
-			<tr>
-				<td>Acqua micellare</td>
-				<td>300ml di acqua micellare</td>
-				<td>6,50 €</td>
-				<td>-</td>
-				<td><img src="../img/micellare.png"></td>
-				<td>
-            <button  type="button" id="elimina">Elimina</button>
-            <button type="button" id="modifica">Modifica</button>
-        </td>
-			</tr>
-			<tr>
-				<td>Profumatore per ambiente</td>
-				<td>Gusto muschio selvatico</td>
-				<td>25,98 €</td>
-				<td>-</td>
-				<td><img src="../img/profumatore.png"></td>
-				<td>
-            <button  type="button" id="elimina">Elimina</button>
-            <button type="button" id="modifica">Modifica</button>
-        </td>
-			</tr>
-			<tr>
-				<td>Fertilizzante</td>
-				<td>400ml Fertilizzate per piante</td>
-				<td>17,30 €</td>
-				<td>-</td>
-				<td><img src="../img/fertilizzante.png"></td>
-				<td>
-            <button  type="button" id="elimina">Elimina</button>
-            <button type="button" id="modifica">Modifica</button>
-        </td>
-			</tr>
-		</table>
+      <form>
+				<label for="scelta">Modifica Reparto</label>
+				<select id="scelta" name="scelta">
+				    <option >Promozione</option>
+				    <option >Novita'</option>
+				</select><br><br>
+				<p id="errorNome">Campo vuoto</p>
+				<label for="nome">Modifica Nome il NOME del prodotto:</label><br>
+				<input type="text" name="nome" id="nome_modifica"><br><br>
+
+				<p id="errorDescrizione">Campo vuoto</p>
+				<label for="descrizione">Modifica la DESCRIZIONE del prodotto:</label><br>
+				<input type="text" name="descrizione" id="descrizione_modifica"><br><br>
+
+				<p id="errorPrezzo">Campo vuoto</p>
+				<label for="prezzo">Modifica il PREZZO (€) del prodotto:</label><br>
+				<input type="number" name="prezzo" id="prezzo_modifica"><br><br>
+
+				<p id="errorSconto">Campo vuoto</p>
+				<label for="sconto">Modifica  lo SCONTO (%) sul prezzo se presente:</label><br>
+				<input type="number" name="sconto" id="sconto_modifica"><br><br>
+				
+				<p id="errorImmagine">Campo vuoto</p>
+				<label for="immagine">Modifica  l'IMMAGINE del prodotto:</label><br>
+				<input type="file" name="immagine" id="file_modifica"><br><br>
+				
+				<button type="submit" id="pulsante_salva">SALVA</button>
+			</form>
+		
 	</div>
+</div> 
+
+<button onclick="aperturaFinestra()" id="bottone_prodotti">Aggiungi prodotto</button>
+<div class="centra_tabella">
+	<table>
+		<tr>
+			<th>Nome</th>
+			<th>Descrizione</th>
+			<th>Prezzo</th>
+			<th>Sconto</th>
+			<th>Immagine</th>
+			<th>Scelta</th>
+		</tr>
+		<tr>
+			<td>Set di bicchieri</td>
+			<td>Un set di bicchieri da 6</td>
+			<td>7,95 €</td>
+			<td>9,99 € (-20%)</td>
+			<td><img src="../img/bicchieri.png"></td>
+			<td>
+	        <button  type="button" id="elimina" onclick="eliminaRiga(this)">Elimina</button>
+	        <button type="button" id="modifica" onclick="modificaRiga(this)">Modifica</button>
+	    </td>
+		</tr>
+		<tr>
+			<td>Set di piatti</td>
+			<td>Piatto piano e fondo</td>
+			<td>9,99 €</td>
+			<td>12,99 € (-20%)</td>
+			<td><img src="../img/piatti.png"></td>
+			<td>
+	        <button  type="button" id="elimina" onclick="eliminaRiga(this)">Elimina</button>
+	        <button type="button" id="modifica" onclick="modificaRiga(this)">Modifica</button>
+	    </td>
+		</tr>
+		<tr>
+			<td>Saliera e Pepiera</td>
+			<td>Coppia di saliera e pepiera</td>
+			<td>7,99 €</td>
+			<td>9,99 € (-25%)</td>
+			<td><img src="../img/sale.png"></td>
+			<td>
+	        <button  type="button" id="elimina" onclick="eliminaRiga(this)">Elimina</button>
+	        <button type="button" id="modifica" onclick="modificaRiga(this)">Modifica</button>
+	    </td>
+		</tr>
+		<tr>
+			<td>Set di pentole</td>
+			<td>Set di pentole</td>
+			<td>54,99 €</td>
+			<td>68,99 € (-25%)</td>
+			<td><img src="../img/pentole.png"></td>
+			<td>
+	        <button  type="button" id="elimina" onclick="eliminaRiga(this)">Elimina</button>
+	        <button type="button" id="modifica" onclick="modificaRiga(this)">Modifica</button>
+	    </td>
+		</tr>
+		<tr>
+			<td>Acqua micellare</td>
+			<td>300ml di acqua micellare</td>
+			<td>6,50 €</td>
+			<td>-</td>
+			<td><img src="../img/micellare.png"></td>
+			<td>
+	        <button  type="button" id="elimina" onclick="eliminaRiga(this)">Elimina</button>
+	        <button type="button" id="modifica" onclick="modificaRiga(this)">Modifica</button>
+	    </td>
+		</tr>
+		<tr>
+			<td>Profumatore per ambiente</td>
+			<td>Gusto muschio selvatico</td>
+			<td>25,98 €</td>
+			<td>-</td>
+			<td><img src="../img/profumatore.png"></td>
+			<td>
+	        <button  type="button" id="elimina" onclick="eliminaRiga(this)">Elimina</button>
+	        <button type="button" id="modifica" onclick="modificaRiga(this)">Modifica</button>
+	    </td>
+		</tr>
+		<tr>
+			<td>Fertilizzante</td>
+			<td>400ml Fertilizzate per piante</td>
+			<td>17,30 €</td>
+			<td>-</td>
+			<td><img src="../img/fertilizzante.png"></td>
+			<td>
+	        <button  type="button" id="elimina" onclick="eliminaRiga(this)">Elimina</button>
+	        <button type="button" id="modifica" onclick="modificaRiga(this)">Modifica</button>
+	    </td>
+		</tr>
+	</table>
 </div>
 
-<div class="centra">
-		<table>
-			<tr>
-				<th>Funzione</th>
-			</tr>
-			<tr>
-				<td>
-					<button onclick="aperturaFinestra()">Aggiungi prodotto</button>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<button onclick="aperturaFinestraLista()">Lista Prodotti</button>
-				</td>
-			</tr>
-		</table>
-</div>
+
+
 
   <footer class="footer_promozione">
     <div class="footer_content">

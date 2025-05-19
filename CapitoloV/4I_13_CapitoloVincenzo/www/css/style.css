@@ -74,3 +74,142 @@ button {
 button:hover {
     background-color: #ff6600;
 }
+
+#finestra-login {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #ccc;
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+}
+
+#finestra-login input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#finestra-login p {
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+/* Finestra di login ancora più grande */
+#finestra-login {
+    width: 500px;
+    padding: 40px;
+}
+
+/* Stile originale ripristinato per i bottoni */
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ff6600;
+}
+
+/* Pulsante Login nella navbar rimpicciolito */
+header .logo button {
+    width: auto;
+    padding: 6px 12px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Gestione prodotti */
+.aggiungi-prodotto, .lista-prodotti {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Area amministrazione estetica */
+.admin-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.admin-nav {
+    margin-top: 20px;
+}
+
+.admin-nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.admin-nav a:hover {
+    background-color: #ff6600;
+}
+
+/* Tabella prodotti migliorata */
+.lista-prodotti table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.lista-prodotti th, .lista-prodotti td {
+    padding: 12px;
+    text-align: left;
+}
+
+.lista-prodotti th {
+    background-color: #ff6600;
+    color: white;
+}
+
+.tabella-utenti {
+    margin: 40px auto;
+    max-width: 1000px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* Tabella utenti */
+.tabella-utenti table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabella-utenti th, .tabella-utenti td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabella-utenti th {
+    background-color: #ff6600;
+    color: white;
+    font-size: 16px;
+}
+
+.tabella-utenti tr:hover {
+    background-color: #f1f1f1;
+}
+
+.tabella-utenti .checkbox {
+    text-align: center;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestione Prodotti</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Gestione Prodotti</h1>
+  </header>
+
+  <main class="admin-panel">
+    <h2>Aggiungi Prodotto</h2>
+<form id="formProdotto">
+  <input type="text" id="nome" placeholder="Nome prodotto" required>
+  <span class="errore" id="erroreNome"></span>
+
+  <input type="text" id="descrizione" placeholder="Descrizione" required>
+  <span class="errore" id="erroreDescrizione"></span>
+
+  <input type="number" id="prezzo" placeholder="Prezzo" required>
+  <span class="errore" id="errorePrezzo"></span>
+
+  <input type="text" id="immagine" placeholder="Percorso immagine" required>
+  <span class="errore" id="erroreImmagine"></span>
+
+  <button type="submit">Aggiungi</button>
+</form>
+
+    <h2>Elenco Prodotti</h2>
+    <table id="tabellaProdotti">
+      
+      <tbody>
+<section id="prodotti">
+  <h2>I nostri occhiali</h2>
+  <table border="1" cellpadding="10" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Immagine</th>
+        <th>Nome</th>
+        <th>Descrizione</th>
+        <th>Prezzo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="../img/occhiale1.jpg" alt="Occhiale 1" width="100"></td>
+        <td>Occhiale Fashion 1</td>
+        <td>Occhiali da sole eleganti per ogni occasione.</td>
+        <td>€49,99</td>
+      </tr>
+      <tr>
+        <td><img src="../img/occhiale2.jpeg" alt="Occhiale 2" width="100"></td>
+        <td>Occhiale Sport 2</td>
+        <td>Ideali per sport e attività all'aperto.</td>
+        <td>€69,99</td>
+      </tr>
+      <tr>
+        <td><img src="../img/occhiale3.jpeg" alt="Occhiale 3" width="100"></td>
+        <td>Occhiale Classico 3</td>
+        <td>Design classico, perfetti per ogni giorno.</td>
+        <td>€39,99</td>
+      </tr>
+      <tr>
+        <td><img src="../img/occhiale4.jpeg" alt="Occhiale 4" width="100"></td>
+        <td>Occhiale Moda 4</td>
+        <td>Occhiali alla moda con lenti UV.</td>
+        <td>€59,99</td>
+      </tr>
+      <tr>
+        <td><img src="../img/occhiale5.jpeg" alt="Occhiale 5" width="100"></td>
+        <td>Occhiale Tendenze 5</td>
+        <td>Occhiali con un tocco di stile moderno.</td>
+        <td>€79,99</td>
+      </tr>
+      <tr>
+        <td><img src="../img/occhiale6.jpeg" alt="Occhiale 6" width="100"></td>
+        <td>Occhiale Vintage 6</td>
+        <td>Design retrò per un look unico.</td>
+        <td>€89,99</td>
+      </tr>
+      <tr>
+        <td><img src="../img/occhiale7.jpeg" alt="Occhiale 7" width="100"></td>
+        <td>Occhiale Elegante 7</td>
+        <td>Occhiali eleganti per serate speciali.</td>
+        <td>€99,99</td>
+      </tr>
+      <tr>
+        <td><img src="../img/occhiale8.jpeg" alt="Occhiale 8" width="100"></td>
+        <td>Occhiale Trendy 8</td>
+        <td>Occhiali trendy con lenti colorate.</td>
+        <td>€54,99</td>
+      </tr>
+      <tr>
+        <td><img src="../img/occhiale9.jpeg" alt="Occhiale 9" width="100"></td>
+        <td>Occhiale Sportivo 9</td>
+        <td>Perfetti per chi ama il movimento.</td>
+        <td>€64,99</td>
+      </tr>
+      <tr>
+        <td><img src="../img/occhiale10.jpeg" alt="Occhiale 10" width="100"></td>
+        <td>Occhiale Lussuoso 10</td>
+        <td>Occhiali di lusso con dettagli in oro.</td>
+        <td>€149,99</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+      </tbody>
+    </table>
+  </main>
+
+  <script type="text/javascript" src="../js/script.js" defer></script>
+</body>
+</html>
