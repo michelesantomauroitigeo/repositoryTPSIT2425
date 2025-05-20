@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const password = document.getElementById('password').value;
 
             // Credenziali fisse di esempio
-            if (username === 'admin' && password === '1234') {
+            if (username === 'vittorio' && password === '3103') {
                 // Reindirizza alla pagina della collezione
                 window.location.href = 'collezione.html';
             } else {
