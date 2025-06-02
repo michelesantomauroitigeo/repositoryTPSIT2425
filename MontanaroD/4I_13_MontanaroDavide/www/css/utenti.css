@@ -1,0 +1,127 @@
+/* Impostazioni generali */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+/* Gestione Utenti */
+.gestione-utenti {
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #0073e6;
+    color: white;
+}
+
+td {
+    text-align: center;
+}
+
+.stato {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.stato.abilitato {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.stato.disabilitato {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+button {
+    background-color: #0073e6;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h4 {
+    margin: 0;
+    font-size: 16px;
+}

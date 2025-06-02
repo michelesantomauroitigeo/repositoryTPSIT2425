@@ -164,10 +164,12 @@ header {
 
 /*finestra login*/
 
-.tasto-login {
+#apri-login {
     padding: 5px;
+    margin-right: 10px;
+    border-radius: 7px;
 }
-.tasto-login:hover {
+#apri-login:hover {
     cursor: pointer;
     background-color: grey;
 }
@@ -241,22 +243,143 @@ header {
 }
 
 /*Gestione Prodotti*/
-.admin-container {
+.prodotti-container {
     width: 80%;
     margin: 100px auto;
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
 }
-.admin-header {
+.prodotti-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
+.prodotti-header h1 {
+    color: #ff6600;
+}
+.tasto-indietro {
+    background-color: #ff6600;
+    color: white;
+    padding: 4% 8%;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.tasto-indietro:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background-color: #ff3300;
+}
+.prodotti-azioni {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.prodotti-button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.prodotti-button:hover {
+    background-color: #ff3300;
+}
+
+.lista-prodotto {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.lista-prodotto th,
+.lista-prodotto td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+.lista-prodotto thead {
+    background-color: #ff6600;
+    color: white;
+}
+.lista-prodotto tbody tr:hover {
+    background-color: #f1f1f1;
+}
+.action-prodotti {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 4px;
+}
+.action-prodotti.edit {
+    color: white;
+    background-color: #ff6600;
+}
+.action-prodotti.delete {
+    color: white;
+    background-color: #ff3300;
+}
+.action-prodotti.edit:hover {
+    background-color: #e65500;
+}
+.action-prodotti.delete:hover {
+    background-color: #cc2900;
+}
+
+/*Pagina Admin*/
+
+.admin-container {
+    width: 80%;
+    margin: 100px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+.admin-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
 .admin-header h1 {
     color: #ff6600;
+    font-size: 28px;
+}
+.admin-azioni {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.admin-button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+}
+.admin-button i {
+    font-size: 20px;
+}
+.admin-button:hover {
+    background-color: #ff3300;
 }
 .tasto-home {
     background-color: #ff6600;
@@ -274,38 +397,37 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     background-color: #ff3300;
 }
-.admin-azioni {
-    display: flex;
-    justify-content: space-around;
+
+/*Gestione Utenti*/
+table.lista-utenti {
+    width: 100%;
+    border-collapse: collapse;
     margin-bottom: 20px;
 }
-.admin-button {
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.admin-button:hover {
-    background-color: #ff3300;
-}
-.lista-prodotto {
+table.lista-utenti th,
+table.lista-utenti td {
     border: 1px solid #ddd;
     padding: 10px;
-    height: 300px;
-    overflow-y: auto;
+    text-align: left;
 }
-.elemento-lista {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #eee;
+table.lista-utenti thead {
+    background-color: #ff6600;
+    color: white;
 }
-.elemento-lista:hover {
-    background-color: #f2f2f2;
+table.lista-utenti tbody tr:hover {
+    background-color: #f1f1f1;
 }
-.elemento-lista:last-child {
-    border-bottom: none;
+.action {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
 }
+.action.edit { background-color: #ff6600; }
+.action.delete { background-color: #ff3300; }
+.action.edit:hover { background-color: #e65500; }
+.action.delete:hover { background-color: #cc2900; }

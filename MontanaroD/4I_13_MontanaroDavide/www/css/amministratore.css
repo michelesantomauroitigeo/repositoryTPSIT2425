@@ -79,3 +79,12 @@ footer p {
     color: #0073e6; 
     font-size: 14px;
 }
+
+.stato.abilitato {
+    color: green;
+    font-weight: bold;
+}
+.stato.disabilitato {
+    color: red;
+    font-weight: bold;
+}

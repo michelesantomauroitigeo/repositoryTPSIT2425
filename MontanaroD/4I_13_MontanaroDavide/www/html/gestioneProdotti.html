@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/prodotti.css">
-    <script src="../js/prodotti.js"></script>
+    <script src="../js/prodotti.js" defer></script>
 </head>
 <body>
     <header>
@@ -13,67 +13,47 @@
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="#contatti" id="contatti">Contatti</a></li>
-                <li><a href="#altre infromazioni" id="modificaPassword">Modifica Password</a></li>
+                <li><a href="amministratore.html">Amministratore</a></li>
             </ul>
         </nav>
     </header>
-    <div class="pagina-gestione-prodotti">
+
+    <main class="pagina-gestione-prodotti">
         <div class="opzioni-gestione">
             <button onclick="apriAggiungiProdotto()">Aggiungi Prodotto</button>
-            <button onclick="apriListaProdotti()">Lista Prodotti</button>
         </div>
-        <div id="modaleAggiungiProdotto" class="modale">
-            <div class="contenuto-modale">
-                <button onclick="chiudiModale('modaleAggiungiProdotto')" class="chiudi">&times;</button>
-                <h2>Aggiungi Prodotto</h2>
 
-                <form id="formAggiungiProdotto">
-                    <label for="nomeProdotto">Nome Prodotto</label>
-                    <input type="text" id="nomeProdotto" name="nomeProdotto" required>
-
-                    <label for="descrizioneProdotto">Descrizione</label>
-                    <textarea id="descrizioneProdotto" name="descrizioneProdotto" required></textarea>
-
-                    <label for="urlImmagine">URL Immagine</label>
-                    <input type="url" id="urlImmagine" name="urlImmagine" required>
-
-                    <button type="submit">Aggiungi Prodotto</button>
-                </form>
-            </div>
-        </div>
-<div id="modaleListaProdotti" class="modale">
-    <div class="contenuto-modale">
-        <button onclick="chiudiModale('modaleListaProdotti')" class="chiudi">&times;</button>
-        <h2>Lista Prodotti</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Descrizione</th>
-                    <th>Immagine</th>
-                    <th>Azioni</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Penna a Sfera</td>
-                    <td>Scrittura scorrevole, inchiostro nero.</td>
-                    <td><img src="../imgs/penna.jpg" alt="Penna a sfera" width="50"></td>
-                    <td>
-                        <button>Modifica</button>
-                        <button>Elimina</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Matita HB</td>
-                    <td>Matita in grafite con gommino.</td>
-                    <td><img src="../imgs/matita.jpg" alt="Matita HB" width="50"></td>
-                    <td>
-                        <button>Modifica</button>
-                        <button>Elimina</button>
-                    </td>
-                </tr>
-                <tr>
+        <!-- Lista Prodotti visibile -->
+        <section id="listaProdotti">
+            <h2>Lista Prodotti</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descrizione</th>
+                        <th>Immagine</th>
+                        <th>Azioni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Penna a Sfera</td>
+                        <td>Scrittura scorrevole, inchiostro nero.</td>
+                        <td><img src="../imgs/penna.jpg" alt="Penna a sfera" width="50"></td>
+                        <td>
+                            <button>Modifica</button>
+                            <button>Elimina</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Matita HB</td>
+                        <td>Matita in grafite con gommino.</td>
+                        <td><img src="../imgs/matita.jpg" alt="Matita HB" width="50"></td>
+                        <td>
+                            <button>Modifica</button>
+                            <button>Elimina</button>
+                        </td>
+                    </tr>
                     <td>Gomma da Cancellare</td>
                     <td>Ideale per matite e carboncini.</td>
                     <td><img src="../imgs/gomma.jpg" alt="Gomma da cancellare" width="50"></td>
@@ -147,6 +127,28 @@
                 </tr>
             </tbody>
         </table>
-    </div>
+        </section>
+        <div id="modaleAggiungiProdotto" class="modale" style="display:none;">
+            <div class="contenuto-modale">
+                <button onclick="chiudiModale('modaleAggiungiProdotto')" class="chiudi">&times;</button>
+                <h2>Aggiungi Prodotto</h2>
+                <form id="formAggiungiProdotto">
+                    <label for="nomeProdotto">Nome Prodotto</label>
+                    <input type="text" id="nomeProdotto" name="nomeProdotto" required>
+
+                    <label for="descrizioneProdotto">Descrizione</label>
+                    <textarea id="descrizioneProdotto" name="descrizioneProdotto" required></textarea>
+
+                    <label for="urlImmagine">URL Immagine</label>
+                    <input type="url" id="urlImmagine" name="urlImmagine" required>
+
+                    <button type="submit">Aggiungi Prodotto</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+</div>
 </div>
 </html>
