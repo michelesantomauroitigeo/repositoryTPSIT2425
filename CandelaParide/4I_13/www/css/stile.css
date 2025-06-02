@@ -1,0 +1,382 @@
+/* Reset */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.intestazione {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navigazione ul {
+    display: flex;
+    list-style: none;
+}
+
+.navigazione ul li {
+    margin-left: 1rem;
+}
+
+.navigazione ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.contenitore-principale {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.titolo-principale {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.griglia-prodotti {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+    gap: 20px;
+    padding: 0 15px;
+}
+
+.scheda-prodotto {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+
+.immagine-prodotto {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+}
+
+.immagine-prodotto img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 200px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-prodotto {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-prodotto h2 {
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+    min-height: 40px;
+}
+
+.prezzo {
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.pulsante-aggiungi {
+    margin-top: auto; 
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.info-prodotto {
+    padding: 1rem;
+}
+
+.info-prodotto h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.prezzo {
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.pulsante-aggiungi {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pulsante-aggiungi:hover {
+    background-color: #2980b9;
+}
+
+
+.piè-di-pagina {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+#accesso{
+    background: none;  
+    border: none;           
+    font: inherit;         
+    color: white; 
+    cursor: pointer;    
+    text-decoration: underline;
+    display: inline; 
+  }
+
+  #overlay, #overlay-registrazione,#overlay-prodotto{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+#popup, #popup-registrazione, #popup-prodotto{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 300px;
+    position: relative;
+}
+
+.chiudi {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.registrati-btn{
+    background: none;
+    border: none;
+    color: #3498db;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.registrati-btn:hover, .accedi-btn:hover {
+    color: #2980b9;
+}
+
+#errore-credenziali, 
+#errore-username, 
+#errore-password,
+#errore-registrazione,
+#errore-email-reg,
+#errore-username-reg,
+#errore-password-reg,
+#errore-conf-password-reg {
+    display: none;
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+#popup h2, #popup-registrazione h2, #popup-prodotto h2{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    font-size: 1.5rem;
+}
+
+#popup form, #popup-registrazione form, #popup-prodotto form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+#popup label, #popup-registrazione label, #popup-prodotto label{
+    font-weight: 600;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+#popup input, #popup-registrazione input, #popup-prodotto input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+
+}
+
+#popup button[type="submit"], 
+#popup-registrazione button[type="submit"],
+#popup-prodotto button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    align-items: center;
+}
+
+#popup button[type="submit"]:hover,
+#popup-registrazione button[type="submit"]:hover,
+#popup-prodotto button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+
+
+/*Sezione tabella*/
+table {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f8f8ff;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: blue;
+    color: white;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+
+tr:hover {
+    background-color: #e6f7ff;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 25%;
+}
+
+
+button.elimina {
+    background-color: #f44336;
+    color: white;
+    padding: 5%;
+}
+
+button.elimina:hover {
+    background-color: #d32f2f;
+}
+
+button.modifica {
+    background-color: #ff9800;
+    color: white;
+    padding: 5%;
+
+}
+
+button.modifica:hover {
+    background-color: #e68900;
+}
+
+
+.abilita {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+.abilita input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    cursor: pointer;
+    padding: 5%;
+}
+
+
+
+.img-lista{
+    max-width: 25%;
+    max-height:25% ;
+    padding: 0 33%;
+}
+
+.btn-nuovo-prodotto {
+    float: right;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #2980b9; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-nuovo-prodotto:hover {
+    background-color: #2c3e50;
+}
+
+
+.flex-pulsante {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 10px;
+}
+
